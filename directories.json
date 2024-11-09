@@ -7,8 +7,8 @@
         "content": "Subsection content 1.1"
       }
     ],
-    "content": "Section content 1",
-    "link": "notes/ubuntu/ssh_keys.html"
+    "content": "SSH Key",
+    "link": "notes/ubuntu/ssh_key"
   },
   {
     "name": "Git",
