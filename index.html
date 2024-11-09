@@ -6,7 +6,7 @@
     <title>Sito con Sezioni</title>
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/default_style.css">
-<!--    remote css-->
+    <!-- remote css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -14,38 +14,9 @@
 <a href="notes/cv" target="_blank" class="cv-link">
     <i class="fas fa-file-alt"></i> CV
 </a>
-<!-- Section -->
-<div class="section">
-    <div class="section-header">
-        <span>Section 1</span>
-        <button class="toggle-btn">+</button>
-    </div>
-    <div class="section-content">
-        <p>Section content 1</p>
-        <!-- Subsection -->
-        <div class="section">
-            <div class="section-header">
-                <span>Subsection title 1.1</span>
-                <button class="toggle-btn">+</button>
-            </div>
-            <div class="section-content">
-                <p>Subsection content 1.1</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Section 2 -->
-<div class="section">
-    <div class="section-header">
-        <span>Section 2</span>
-        <button class="toggle-btn">+</button>
-    </div>
-    <div class="section-content">
-        <p>Section content 2</p>
-    </div>
-</div>
-<!--Scripts-->
+<!-- Sections will be dynamically added here -->
+<div id="sections-container"></div>
+<!-- Scripts -->
 <script src="assets/script/script.js"></script>
 </body>
 </html>

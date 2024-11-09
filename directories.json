@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Ubuntu",
+    "subsections": [
+      {
+        "name": "Subsection 1.1",
+        "content": "Subsection content 1.1"
+      }
+    ],
+    "content": "Section content 1",
+    "link": "notes/ubuntu/ssh_keys.html"
+  },
+  {
+    "name": "Git",
+    "content": "Section content 2",
+    "link": "notes/git/installation.html"
+  },
+  {
+    "name": "Docker",
+    "content": "Section content 3",
+    "link": "notes/docker/setup.html"
+  }
+]
