@@ -3,7 +3,6 @@ layout: default
 title: Resume
 css: cv_style.css
 ---
-<link rel="stylesheet" type="text/css" href="cv_style.css">
 
 # Matteo Moi - Software Developer
 
@@ -146,5 +145,3 @@ On this GitHub repository, I upload notes about my daily studies and overall kno
 - **Sapporo (JP)**: 08/2019 - 10/2019
 - **Fukuoka (JP)**: 07/2018 - 09/2018
 - **Kobe (JP)**: 06/2017 - 07/2017
-
-<link rel="stylesheet" type="text/css" href="Utils/style.css">
