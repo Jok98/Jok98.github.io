@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const span = document.createElement('span');
         span.textContent = section.name;
+        span.classList.add('section-name');
 
         const button = document.createElement('button');
         button.classList.add('toggle-btn');
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const contentLink = document.createElement('a');
                 contentLink.href = contentItem.link;
                 contentLink.textContent = contentItem.content;
+                contentLink.classList.add('content-link');
                 contentDiv.appendChild(contentLink);
                 contentDiv.appendChild(document.createElement('br'));
             });
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (section.subsections) {
             section.subsections.forEach(subsection => {
                 const subsectionElement = createSectionElement(subsection);
+                subsectionElement.classList.add('subsection');
                 contentDiv.appendChild(subsectionElement);
             });
         }
