@@ -9,14 +9,13 @@ title: Resume
 
 ## [LinkedIn](https://www.linkedin.com/in/matteo-moi/) | [GitHub](https://github.com/Jok98)
 
-> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development, <br>
-> not focusing on a specific language or technology but trying to develop a mindset capable of adapting in any environment.
+> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development, not focusing on a specific language or technology but trying to develop a mindset capable of adapting in any environment.
 >
 > Started studying programming independently in 2016, deepening and enhancing my skills at university and through
 > participation in various professional training courses.
 >
-> I make daily notes documenting my studies and knowledge development. These notes are regularly uploaded to
-> GitHub, contributing to my continuous learning and sharing my progress in the field.
+> I make daily notes documenting my studies and knowledge development.<br> 
+> These notes are regularly uploaded to my [site](https://jok98.github.io) and [GitHub](https://github.com/Jok98/Jok98.github.io), contributing to my continuous learning and sharing my progress.
 
 #### Education : Bachelor’s Degree in Computer Science @ Ecampus (ongoing)
 
