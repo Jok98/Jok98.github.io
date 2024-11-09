@@ -39,10 +39,20 @@ body {
     cursor: pointer;
     color: #9cdcfe;
 }
-.commit {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+
+a.cv-link {
+    display: inline-flex;
+    align-items: center;
+    color: #9cdcfe;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+a.cv-link:hover {
+    color: #007acc;
+}
+
+a.cv-link i {
+    margin-right: 8px;
 }
