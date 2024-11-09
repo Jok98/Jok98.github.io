@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cv
 title: Resume
 css: cv_style.css
 ---
