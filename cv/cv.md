@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Curriculum Vitae
 css: cv_style.css
 ---
 

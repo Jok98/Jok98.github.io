@@ -1,10 +1,14 @@
 body {
   align-items: center;
   font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
 }
 
 h1, h2 {
   text-align: center;
+  color: #9cdcfe;
 }
 
 h3 {
@@ -16,6 +20,7 @@ h3 {
 h4 {
   text-align: center;
   font-size: 12px;
+  color: #9cdcfe;
 }
 
 /* Center the table on the page */
@@ -31,14 +36,13 @@ th, td {
   text-align: center;
   vertical-align: middle;
   padding: 10px; /* Adds padding inside cells */
-  border: 1px solid black; /* Add internal borders to table headers and cells */
+  border: 1px solid #3c3c3c; /* Add internal borders to table headers and cells */
   font-size: 8px;
+  color: #d4d4d4;
 }
 
 /* Optional: Adds style to headers (bold is default for <th>) */
 th {
   font-weight: bold;
+  background-color: #333333;
 }
-
-
-
