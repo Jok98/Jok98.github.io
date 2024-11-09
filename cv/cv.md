@@ -1,7 +1,9 @@
 ---
 layout: default
+title: Resume
 css: cv_style.css
 ---
+<link rel="stylesheet" type="text/css" href="cv_style.css">
 
 # Matteo Moi - Software Developer
 
