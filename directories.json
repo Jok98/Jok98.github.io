@@ -5,19 +5,19 @@
       {
         "content": "SSH Key",
         "link": "notes/ubuntu/ssh_key"
-      },
-      {
-        "content": "Installation",
-        "link": "notes/ubuntu/installation"
       }
     ],
     "subsections": [
       {
-        "name": "Subsection 1.1",
+        "name": "conf",
         "contents": [
           {
-            "content": "Subsection content 1.1",
-            "link": "notes/ubuntu/subsection1.1"
+            "content": "ubuntu_conf.sh",
+            "link": "notes/ubuntu/conf/ubuntu_conf.sh"
+          },
+          {
+            "content": "unistall_ubuntu_conf.sh",
+            "link": "notes/ubuntu/conf/unistall_ubuntu_conf.sh"
           }
         ]
       }
