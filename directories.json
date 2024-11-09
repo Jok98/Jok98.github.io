@@ -1,23 +1,44 @@
 [
   {
     "name": "Ubuntu",
+    "contents": [
+      {
+        "content": "SSH Key",
+        "link": "notes/ubuntu/ssh_key"
+      },
+      {
+        "content": "Installation",
+        "link": "notes/ubuntu/installation"
+      }
+    ],
     "subsections": [
       {
         "name": "Subsection 1.1",
-        "content": "Subsection content 1.1"
+        "contents": [
+          {
+            "content": "Subsection content 1.1",
+            "link": "notes/ubuntu/subsection1.1"
+          }
+        ]
       }
-    ],
-    "content": "SSH Key",
-    "link": "notes/ubuntu/ssh_key"
+    ]
   },
   {
     "name": "Git",
-    "content": "Section content 2",
-    "link": "notes/git/installation.html"
+    "contents": [
+      {
+        "content": "Section content 2",
+        "link": "notes/git/installation.html"
+      }
+    ]
   },
   {
     "name": "Docker",
-    "content": "Section content 3",
-    "link": "notes/docker/setup.html"
+    "contents": [
+      {
+        "content": "Section content 3",
+        "link": "notes/docker/setup.html"
+      }
+    ]
   }
 ]

@@ -41,10 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         contentDiv.classList.add('section-content');
         contentDiv.style.display = 'none';
 
-        const contentLink = document.createElement('a');
-        contentLink.href = section.link;
-        contentLink.textContent = section.content;
-        contentDiv.appendChild(contentLink);
+        if (section.contents) {
+            section.contents.forEach(contentItem => {
+                const contentLink = document.createElement('a');
+                contentLink.href = contentItem.link;
+                contentLink.textContent = contentItem.content;
+                contentDiv.appendChild(contentLink);
+                contentDiv.appendChild(document.createElement('br'));
+            });
+        }
 
         if (section.subsections) {
             section.subsections.forEach(subsection => {
