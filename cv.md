@@ -1,3 +1,8 @@
+---
+layout: default
+title: Curriculum Vitae
+---
+
 # Matteo Moi - Software Developer
 
 #### Location: Sondrio, Italy | Date of Birth: 05/02/1998 | Email: matteo.moi1998@gmail.com
