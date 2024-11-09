@@ -9,7 +9,7 @@ title: Resume
 
 ## [LinkedIn](https://www.linkedin.com/in/matteo-moi/) | [GitHub](https://github.com/Jok98)
 
-> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development, not focusing on a specific language or technology but trying to develop a mindset capable of adapting in any environment.
+> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development. 
 >
 > Started studying programming independently in 2016, deepening and enhancing my skills at university and through
 > participation in various professional training courses.
