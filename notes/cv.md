@@ -1,7 +1,6 @@
 ---
 layout: cv
 title: Resume
-css: cv_style.css
 ---
 
 # Matteo Moi - Software Developer

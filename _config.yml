@@ -2,3 +2,8 @@
 theme: minima
 # will create url without extensions
 permalink: pretty
+
+markdown: kramdown
+include:
+  - assets
+  - notes
