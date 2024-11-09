@@ -1,9 +1,11 @@
-const toggleButtons = document.querySelectorAll('.toggle-btn');
+// Seleziona tutte le intestazioni delle sezioni
+const sectionHeaders = document.querySelectorAll('.section-header');
 
-toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Trova il contenuto associato al pulsante
-        const content = button.parentElement.nextElementSibling;
+sectionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        // Trova il contenuto associato all'intestazione
+        const content = header.nextElementSibling;
+        const button = header.querySelector('.toggle-btn');
 
         if (content.style.display === 'none' || content.style.display === '') {
             // Espandi la sezione
