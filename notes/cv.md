@@ -28,64 +28,57 @@ title: Resume
 <tr>
     <td>
 
-### Languages & Frameworks
+<h3>Languages & Frameworks</h3>
 
-**Languages**: Java | SQL
+<p><strong>Languages</strong>: Java | SQL</p>
 
-**Frameworks**: Spring Boot | Hibernate
+<p><strong>Frameworks</strong>: Spring Boot | Hibernate</p>
 
-**Testing**: JUnit | Mockito
+<p><strong>Testing</strong>: JUnit | Mockito</p>
 
-**Databases**: MySQL | PostgreSQL | Oracle | MongoDB
-
-
-
----
-
----
-
-### Tools & Platforms
-
-**Version Control**: Git
-
-**Pdf**: JasperReports
-
-**IDE**: IntelliJ IDEA
-
-**Build Tools**: Maven
-
-**Collaboration**: Jira | Confluence
+<p><strong>Databases</strong>: MySQL | PostgreSQL | Oracle | MongoDB</p>
 
 </td>
 
 <td>
 
+<h3>Tools & Platforms</h3>
+
+<p><strong>Version Control</strong>: Git</p>
+
+<p><strong>Pdf</strong>: JasperReports</p>
+
+<p><strong>IDE</strong>: IntelliJ IDEA</p>
+
+<p><strong>Build Tools</strong>: Maven</p>
+
+<p><strong>Collaboration</strong>: Jira | Confluence</p>
 
 </td>
 
 <td>
 
-### Microservices & Architecture
+<h3>Microservices & Architecture</h3>
 
-**API Gateway**: Spring Cloud Gateway, Nginx
+<p><strong>API Gateway</strong>: Spring Cloud Gateway, Nginx</p>
 
-**Service Discovery**: Netflix Eureka, Zookeeper
+<p><strong>Service Discovery</strong>: Netflix Eureka, Zookeeper</p>
 
-**Centralized Configuration**: Spring Cloud Config
+<p><strong>Centralized Configuration</strong>: Spring Cloud Config</p>
 
-**Circuit Breaker**: Resilience4j
+<p><strong>Circuit Breaker</strong>: Resilience4j</p>
 
-**Asynchronous Communication**: Apache Kafka
+<p><strong>Asynchronous Communication</strong>: Apache Kafka</p>
 
-**Distributed Logging & Tracing**: Spring Cloud Zipkin
+<p><strong>Distributed Logging & Tracing</strong>: Spring Cloud Zipkin</p>
 
-**Security**: Spring Security, OAuth2, JWT
+<p><strong>Security</strong>: Spring Security, OAuth2, JWT</p>
 
-**Containerization & Orchestration**: Docker, Kubernetes
+<p><strong>Containerization & Orchestration</strong>: Docker, Kubernetes</p>
 
-**CI/CD**: GitLab CI/CD, Jenkins
+<p><strong>CI/CD</strong>: GitLab CI/CD, Jenkins</p>
 
-**Monitoring & Alerting**: Prometheus, Grafana
+<p><strong>Monitoring & Alerting</strong>: Prometheus, Grafana</p>
 
 </td>
 </tr>
@@ -100,23 +93,21 @@ title: Resume
 
 <td>
 
-> **Objectway** 01/2024 - Present
+<p><strong>Objectway</strong> 01/2024 - Present</p>
 
+<p><strong>Iriscube Reply (SistemItaly)</strong> 08/2023 - 01/2024</p>
 
-> **Iriscube Reply (SistemItaly)** 08/2023 - 01/2024
-
-
-> **Blue Reply (SistemItaly)** 11/2022 - 08/2023
+<p><strong>Blue Reply (SistemItaly)</strong> 11/2022 - 08/2023</p>
 
 </td>
 
 <td>
 
-> **Architecture**: Microservices | Monolithic
+<p><strong>Architecture</strong>: Microservices | Monolithic</p>
 
-> **Industry**: Fintech | Banking | Insurance
+<p><strong>Industry</strong>: Fintech | Banking | Insurance</p>
 
-> **Working Method**: Agile (Scrum)
+<p><strong>Working Method</strong>: Agile (Scrum)</p>
 
 </td>
 
