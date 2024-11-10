@@ -1,12 +1,7 @@
 [
   {
     "name": "notes",
-    "contents": [
-      {
-        "content": "cv.md",
-        "link": "notes/cv"
-      }
-    ],
+    "contents": [],
     "subsections": [
   {
     "name": "ubuntu",
