@@ -1,44 +1,35 @@
 [
   {
-    "name": "Ubuntu",
+    "name": "notes",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "ubuntu",
     "contents": [
       {
-        "content": "SSH Key",
-        "link": "notes/ubuntu/ssh_key"
+        "content": "ssh_key.md",
+        "link": "ubuntu/ssh_key.md"
       }
     ],
     "subsections": [
-      {
-        "name": "conf",
-        "contents": [
-          {
-            "content": "ubuntu_conf.sh",
-            "link": "notes/ubuntu/conf/ubuntu_conf.sh"
-          },
-          {
-            "content": "unistall_ubuntu_conf.sh",
-            "link": "notes/ubuntu/conf/unistall_ubuntu_conf.sh"
-          }
-        ]
-      }
-    ]
-  },
   {
-    "name": "Git",
+    "name": "conf",
     "contents": [
       {
-        "content": "Section content 2",
-        "link": "notes/git/installation.html"
-      }
-    ]
-  },
-  {
-    "name": "Docker",
-    "contents": [
+        "content": "ubuntu_conf.sh",
+        "link": "ubuntu/conf/ubuntu_conf.sh"
+      },
       {
-        "content": "Section content 3",
-        "link": "notes/docker/setup.html"
+        "content": "uninstall_ubuntu_conf.sh",
+        "link": "ubuntu/conf/uninstall_ubuntu_conf.sh"
       }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+
     ]
   }
 ]
