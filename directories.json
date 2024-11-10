@@ -1,14 +1,19 @@
 [
   {
     "name": "notes",
-    "contents": [],
+    "contents": [
+      {
+        "content": "cv.md",
+        "link": "notes/cv"
+      }
+    ],
     "subsections": [
   {
     "name": "ubuntu",
     "contents": [
       {
         "content": "ssh_key.md",
-        "link": "ubuntu/ssh_key.md"
+        "link": "notes/ubuntu/ssh_key"
       }
     ],
     "subsections": [
@@ -17,11 +22,11 @@
     "contents": [
       {
         "content": "ubuntu_conf.sh",
-        "link": "ubuntu/conf/ubuntu_conf.sh"
+        "link": "notes/ubuntu/conf/ubuntu_conf"
       },
       {
         "content": "uninstall_ubuntu_conf.sh",
-        "link": "ubuntu/conf/uninstall_ubuntu_conf.sh"
+        "link": "notes/ubuntu/conf/uninstall_ubuntu_conf"
       }
     ],
     "subsections": []

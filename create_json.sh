@@ -18,10 +18,11 @@ generate_json() {
     echo "    \"contents\": ["
     for file in "${files[@]}"; do
       local filename=$(basename "$file")
-      local relative_path="${file/$BASE_DIR\//}"
+      local relative_path="${file%.*}" # Rimuove l'estensione
+      relative_path="${relative_path/$BASE_DIR\//}"
       echo "      {"
       echo "        \"content\": \"$filename\","
-      echo "        \"link\": \"$relative_path\""
+      echo "        \"link\": \"notes/$relative_path\""
       echo "      },"
     done | sed '$s/,$//'
     echo "    ],"
