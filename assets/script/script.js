@@ -23,16 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const button = document.createElement('button');
         button.classList.add('toggle-btn');
         button.textContent = '+';
-        button.addEventListener('click', () => {
-            const contentDiv = sectionDiv.querySelector('.section-content');
-            if (contentDiv.style.display === 'none') {
-                contentDiv.style.display = 'block';
-                button.textContent = '-';
-            } else {
-                contentDiv.style.display = 'none';
-                button.textContent = '+';
-            }
-        });
 
         headerDiv.appendChild(span);
         headerDiv.appendChild(button);
@@ -41,6 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('section-content');
         contentDiv.style.display = 'none';
+
+        headerDiv.addEventListener('click', () => {
+            if (contentDiv.style.display === 'none') {
+                contentDiv.style.display = 'block';
+                button.textContent = '-';
+            } else {
+                contentDiv.style.display = 'none';
+                button.textContent = '+';
+            }
+        });
 
         if (section.contents) {
             section.contents.forEach(contentItem => {
