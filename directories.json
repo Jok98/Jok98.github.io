@@ -9,35 +9,35 @@
     ],
     "subsections": [
   {
-    "name": "Microservices",
+    "name": "microservices",
     "contents": [
       {
-        "content": "ApiGateway.md",
-        "link": "notes/Microservices/ApiGateway"
+        "content": "api_gateway.md",
+        "link": "notes/microservices/api_gateway"
       },
       {
-        "content": "Centralized_Configuration.md",
-        "link": "notes/Microservices/Centralized_Configuration"
+        "content": "centralized_configuration.md",
+        "link": "notes/microservices/centralized_configuration"
       },
       {
-        "content": "Circuit_Breaker.md",
-        "link": "notes/Microservices/Circuit_Breaker"
+        "content": "circuit_breaker.md",
+        "link": "notes/microservices/circuit_breaker"
       },
       {
-        "content": "Distributed_Tracing.md",
-        "link": "notes/Microservices/Distributed_Tracing"
+        "content": "distributed_tracing.md",
+        "link": "notes/microservices/distributed_tracing"
       },
       {
-        "content": "Feign.md",
-        "link": "notes/Microservices/Feign"
+        "content": "feign.md",
+        "link": "notes/microservices/feign"
       },
       {
-        "content": "Naming_Server.md",
-        "link": "notes/Microservices/Naming_Server"
+        "content": "naming_server.md",
+        "link": "notes/microservices/naming_server"
       },
       {
-        "content": "Ports_Std.md",
-        "link": "notes/Microservices/Ports_Std"
+        "content": "ports_std.md",
+        "link": "notes/microservices/ports_std"
       }
     ],
     "subsections": []

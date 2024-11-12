@@ -48,4 +48,4 @@ echo "[" > "$OUTPUT_FILE"
 generate_json "$BASE_DIR" >> "$OUTPUT_FILE"
 echo "]" >> "$OUTPUT_FILE"
 
-echo "Struttura JSON generata in $OUTPUT_FILE"
+echo "Generated json : $OUTPUT_FILE"
