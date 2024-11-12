@@ -1,24 +1,21 @@
 #!/bin/bash
 
-# Directory di partenza
 BASE_DIR="notes"
 
-# File di output JSON
 OUTPUT_FILE="directories.json"
 
-# Funzione ricorsiva per generare il JSON
 generate_json() {
   local current_dir="$1"
   echo "  {"
   echo "    \"name\": \"$(basename "$current_dir")\","
 
-  # Elenca i file diretti
+  # Iterate over files
   local files=($(find "$current_dir" -mindepth 1 -maxdepth 1 -type f | sort))
   if [ ${#files[@]} -gt 0 ]; then
     echo "    \"contents\": ["
     for file in "${files[@]}"; do
       local filename=$(basename "$file")
-      local relative_path="${file%.*}" # Rimuove l'estensione
+      local relative_path="${file%.*}" # Remove extension
       relative_path="${relative_path/$BASE_DIR\//}"
       echo "      {"
       echo "        \"content\": \"$filename\","
@@ -30,7 +27,7 @@ generate_json() {
     echo "    \"contents\": [],"
   fi
 
-  # Elenca le sottocartelle
+  # Iterate over subdirectories
   local folders=($(find "$current_dir" -mindepth 1 -maxdepth 1 -type d | sort))
   if [ ${#folders[@]} -gt 0 ]; then
     echo "    \"subsections\": ["
@@ -46,7 +43,7 @@ generate_json() {
   echo "  }"
 }
 
-# Genera il file JSON
+# Generate JSON
 echo "[" > "$OUTPUT_FILE"
 generate_json "$BASE_DIR" >> "$OUTPUT_FILE"
 echo "]" >> "$OUTPUT_FILE"
