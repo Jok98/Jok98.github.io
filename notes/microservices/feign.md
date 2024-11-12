@@ -1,3 +1,7 @@
+---
+layout: default
+title: Feign
+---
 # Feign
 
 It is used to make HTTP requests to other services in a declarative way.

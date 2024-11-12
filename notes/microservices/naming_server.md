@@ -1,3 +1,7 @@
+---
+layout: default
+title: Naming Server
+---
 # Naming Server
 ## On Server side
 ### Dependencies

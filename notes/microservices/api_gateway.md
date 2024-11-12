@@ -1,3 +1,7 @@
+---
+layout: default
+title: API Gateway
+---
 # API Gateway
 
 **Matteo Moi**

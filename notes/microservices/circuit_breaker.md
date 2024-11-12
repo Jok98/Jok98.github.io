@@ -1,3 +1,7 @@
+---
+layout: default
+title: Resilience4j Circuit Breaker
+---
 # Resilience4j Circuit Breaker
 
 ## Purpose

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Distributed Tracing
+---
 # Distributed Tracing
 
 Is a method used to monitor and track requests as they flow through a system of distributed services, 
