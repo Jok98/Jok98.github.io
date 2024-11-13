@@ -137,3 +137,21 @@ button {
 button:hover {
     background-color: #007f67;
 }
+
+/* Style for code snippets */
+code {
+    background-color: #2d2d2d;
+    color: #dcdcdc;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #2d2d2d;
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
