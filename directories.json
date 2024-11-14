@@ -3,8 +3,8 @@
     "name": "notes",
     "contents": [
       {
-        "content": "Architecture.md",
-        "link": "notes/Architecture"
+        "content": "architecture.md",
+        "link": "notes/architecture"
       }
     ],
     "subsections": [
@@ -41,6 +41,98 @@
       }
     ],
     "subsections": []
+  }
+,
+  {
+    "name": "springboot",
+    "contents": [
+      {
+        "content": "actuactor.md",
+        "link": "notes/springboot/actuactor"
+      },
+      {
+        "content": "aop.md",
+        "link": "notes/springboot/aop"
+      },
+      {
+        "content": "SpringBoot.md",
+        "link": "notes/springboot/SpringBoot"
+      },
+      {
+        "content": "SpringBoot_Study_Plan.md",
+        "link": "notes/springboot/SpringBoot_Study_Plan"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "rest_api",
+    "contents": [
+      {
+        "content": "api_documentation.md",
+        "link": "notes/springboot/rest_api/api_documentation"
+      },
+      {
+        "content": "exception_handling.md",
+        "link": "notes/springboot/rest_api/exception_handling"
+      },
+      {
+        "content": "filtering.md",
+        "link": "notes/springboot/rest_api/filtering"
+      },
+      {
+        "content": "hateos.md",
+        "link": "notes/springboot/rest_api/hateos"
+      },
+      {
+        "content": "negotiation_content.md",
+        "link": "notes/springboot/rest_api/negotiation_content"
+      },
+      {
+        "content": "rest_api.md",
+        "link": "notes/springboot/rest_api/rest_api"
+      },
+      {
+        "content": "validation.md",
+        "link": "notes/springboot/rest_api/validation"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "spring_cloud",
+    "contents": [
+      {
+        "content": "spring_cloud.md",
+        "link": "notes/springboot/spring_cloud/spring_cloud"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "spring_data",
+    "contents": [
+      {
+        "content": "spring_data.md",
+        "link": "notes/springboot/spring_data/spring_data"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "spring_security",
+    "contents": [
+      {
+        "content": "Spring_Security.md",
+        "link": "notes/springboot/spring_security/Spring_Security"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
   }
 ,
   {
