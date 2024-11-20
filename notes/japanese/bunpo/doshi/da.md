@@ -1,3 +1,7 @@
+---
+layout: default
+title: Japanese
+---
 # だ (Essere)
 ##  Jisho-kei (辞書形) - Forma del dizionario Presente/Futuro
 - ### Informale　だ

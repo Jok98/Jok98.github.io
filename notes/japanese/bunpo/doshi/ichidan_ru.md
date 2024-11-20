@@ -1,3 +1,7 @@
+---
+layout: default
+title: Japanese
+---
 # Ichidan (一段)  -る
 ## Presente/Futuro
 - ### Informale　る

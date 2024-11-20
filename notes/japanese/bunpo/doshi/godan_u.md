@@ -1,3 +1,7 @@
+---
+layout: default
+title: Japanese
+---
 # Godan (五段)  -う
 ## Presente/Futuro
 - ### Informale　う

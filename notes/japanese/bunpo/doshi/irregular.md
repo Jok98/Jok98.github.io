@@ -1,3 +1,7 @@
+---
+layout: default
+title: Japanese
+---
 # Irregular Verbs
 ## する (Fare)
 | Tempo | Informale | Formale |
