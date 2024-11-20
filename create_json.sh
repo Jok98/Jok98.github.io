@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BASE_DIR="notes"
-
 OUTPUT_FILE="directories.json"
 
 generate_json() {
   local current_dir="$1"
+  local base_dir="$2"
   echo "  {"
   echo "    \"name\": \"$(basename "$current_dir")\","
 
@@ -16,7 +16,7 @@ generate_json() {
     for file in "${files[@]}"; do
       local filename=$(basename "$file")
       local relative_path="${file%.*}" # Remove extension
-      relative_path="${relative_path/$BASE_DIR\//}"
+      relative_path="${relative_path/$base_dir\//}"
       echo "      {"
       echo "        \"content\": \"$filename\","
       echo "        \"link\": \"notes/$relative_path\""
@@ -32,7 +32,7 @@ generate_json() {
   if [ ${#folders[@]} -gt 0 ]; then
     echo "    \"subsections\": ["
     for folder in "${folders[@]}"; do
-      generate_json "$folder"
+      generate_json "$folder" "$base_dir"
       echo ","
     done | sed '$s/,$//'
     echo "    ]"
@@ -45,7 +45,11 @@ generate_json() {
 
 # Generate JSON
 echo "[" > "$OUTPUT_FILE"
-generate_json "$BASE_DIR" >> "$OUTPUT_FILE"
+for folder in $(find "$BASE_DIR" -mindepth 1 -maxdepth 1 -type d | sort); do
+  generate_json "$folder" "$BASE_DIR" >> "$OUTPUT_FILE"
+  echo "," >> "$OUTPUT_FILE"
+done
+sed -i '$ s/,$//' "$OUTPUT_FILE"
 echo "]" >> "$OUTPUT_FILE"
 
 echo "Generated json : $OUTPUT_FILE"

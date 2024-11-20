@@ -1,43 +1,203 @@
 [
   {
-    "name": "notes",
+    "name": "dev",
     "contents": [
       {
         "content": "architecture.md",
-        "link": "notes/architecture"
+        "link": "notes/dev/architecture"
       }
     ],
     "subsections": [
+  {
+    "name": "devops",
+    "contents": [
+      {
+        "content": "TODO.md",
+        "link": "notes/dev/devops/TODO"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "docker",
+    "contents": [
+      {
+        "content": "Docker.md",
+        "link": "notes/dev/devops/docker/Docker"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "helm",
+    "contents": [
+      {
+        "content": "Helm.md",
+        "link": "notes/dev/devops/helm/Helm"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "common",
+    "contents": [
+      {
+        "content": "common_library_chart.md",
+        "link": "notes/dev/devops/helm/common/common_library_chart"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "template",
+    "contents": [
+      {
+        "content": "template.md",
+        "link": "notes/dev/devops/helm/common/template/template"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "configmap_template",
+    "contents": [
+      {
+        "content": "configmap_template.md",
+        "link": "notes/dev/devops/helm/common/template/configmap_template/configmap_template"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "deployment_template",
+    "contents": [
+      {
+        "content": "deployment_template.md",
+        "link": "notes/dev/devops/helm/common/template/deployment_template/deployment_template"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "secret_template",
+    "contents": [
+      {
+        "content": "secret_template.md",
+        "link": "notes/dev/devops/helm/common/template/secret_template/secret_template"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "service_template",
+    "contents": [
+      {
+        "content": "service_template.md",
+        "link": "notes/dev/devops/helm/common/template/service_template/service_template"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+
+    ]
+  }
+,
+  {
+    "name": "components",
+    "contents": [
+      {
+        "content": "component_charts.md",
+        "link": "notes/dev/devops/helm/components/component_charts"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "environment",
+    "contents": [
+      {
+        "content": "environment_chart.md",
+        "link": "notes/dev/devops/helm/environment/environment_chart"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
+    "name": "kubernetes",
+    "contents": [
+      {
+        "content": "Kubectl.md",
+        "link": "notes/dev/devops/kubernetes/Kubectl"
+      },
+      {
+        "content": "Kubernetes.md",
+        "link": "notes/dev/devops/kubernetes/Kubernetes"
+      },
+      {
+        "content": "Kubernetes_Services.md",
+        "link": "notes/dev/devops/kubernetes/Kubernetes_Services"
+      },
+      {
+        "content": "Minikube.md",
+        "link": "notes/dev/devops/kubernetes/Minikube"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "microservices_integration",
+    "contents": [
+      {
+        "content": "kube_microservices_integration.md",
+        "link": "notes/dev/devops/kubernetes/microservices_integration/kube_microservices_integration"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+
+    ]
+  }
+,
   {
     "name": "microservices",
     "contents": [
       {
         "content": "api_gateway.md",
-        "link": "notes/microservices/api_gateway"
+        "link": "notes/dev/microservices/api_gateway"
       },
       {
         "content": "centralized_configuration.md",
-        "link": "notes/microservices/centralized_configuration"
+        "link": "notes/dev/microservices/centralized_configuration"
       },
       {
         "content": "circuit_breaker.md",
-        "link": "notes/microservices/circuit_breaker"
+        "link": "notes/dev/microservices/circuit_breaker"
       },
       {
         "content": "distributed_tracing.md",
-        "link": "notes/microservices/distributed_tracing"
+        "link": "notes/dev/microservices/distributed_tracing"
       },
       {
         "content": "feign.md",
-        "link": "notes/microservices/feign"
+        "link": "notes/dev/microservices/feign"
       },
       {
         "content": "naming_server.md",
-        "link": "notes/microservices/naming_server"
+        "link": "notes/dev/microservices/naming_server"
       },
       {
         "content": "ports_std.md",
-        "link": "notes/microservices/ports_std"
+        "link": "notes/dev/microservices/ports_std"
       }
     ],
     "subsections": []
@@ -48,19 +208,19 @@
     "contents": [
       {
         "content": "actuactor.md",
-        "link": "notes/springboot/actuactor"
+        "link": "notes/dev/springboot/actuactor"
       },
       {
         "content": "aop.md",
-        "link": "notes/springboot/aop"
+        "link": "notes/dev/springboot/aop"
       },
       {
         "content": "SpringBoot.md",
-        "link": "notes/springboot/SpringBoot"
+        "link": "notes/dev/springboot/SpringBoot"
       },
       {
         "content": "SpringBoot_Study_Plan.md",
-        "link": "notes/springboot/SpringBoot_Study_Plan"
+        "link": "notes/dev/springboot/SpringBoot_Study_Plan"
       }
     ],
     "subsections": [
@@ -69,31 +229,31 @@
     "contents": [
       {
         "content": "api_documentation.md",
-        "link": "notes/springboot/rest_api/api_documentation"
+        "link": "notes/dev/springboot/rest_api/api_documentation"
       },
       {
         "content": "exception_handling.md",
-        "link": "notes/springboot/rest_api/exception_handling"
+        "link": "notes/dev/springboot/rest_api/exception_handling"
       },
       {
         "content": "filtering.md",
-        "link": "notes/springboot/rest_api/filtering"
+        "link": "notes/dev/springboot/rest_api/filtering"
       },
       {
         "content": "hateos.md",
-        "link": "notes/springboot/rest_api/hateos"
+        "link": "notes/dev/springboot/rest_api/hateos"
       },
       {
         "content": "negotiation_content.md",
-        "link": "notes/springboot/rest_api/negotiation_content"
+        "link": "notes/dev/springboot/rest_api/negotiation_content"
       },
       {
         "content": "rest_api.md",
-        "link": "notes/springboot/rest_api/rest_api"
+        "link": "notes/dev/springboot/rest_api/rest_api"
       },
       {
         "content": "validation.md",
-        "link": "notes/springboot/rest_api/validation"
+        "link": "notes/dev/springboot/rest_api/validation"
       }
     ],
     "subsections": []
@@ -104,7 +264,7 @@
     "contents": [
       {
         "content": "spring_cloud.md",
-        "link": "notes/springboot/spring_cloud/spring_cloud"
+        "link": "notes/dev/springboot/spring_cloud/spring_cloud"
       }
     ],
     "subsections": []
@@ -115,7 +275,7 @@
     "contents": [
       {
         "content": "spring_data.md",
-        "link": "notes/springboot/spring_data/spring_data"
+        "link": "notes/dev/springboot/spring_data/spring_data"
       }
     ],
     "subsections": []
@@ -126,7 +286,7 @@
     "contents": [
       {
         "content": "Spring_Security.md",
-        "link": "notes/springboot/spring_security/Spring_Security"
+        "link": "notes/dev/springboot/spring_security/Spring_Security"
       }
     ],
     "subsections": []
@@ -140,7 +300,7 @@
     "contents": [
       {
         "content": "ssh_key.md",
-        "link": "notes/ubuntu/ssh_key"
+        "link": "notes/dev/ubuntu/ssh_key"
       }
     ],
     "subsections": [
@@ -149,11 +309,11 @@
     "contents": [
       {
         "content": "ubuntu_conf.sh",
-        "link": "notes/ubuntu/conf/ubuntu_conf"
+        "link": "notes/dev/ubuntu/conf/ubuntu_conf"
       },
       {
         "content": "uninstall_ubuntu_conf.sh",
-        "link": "notes/ubuntu/conf/uninstall_ubuntu_conf"
+        "link": "notes/dev/ubuntu/conf/uninstall_ubuntu_conf"
       }
     ],
     "subsections": []
@@ -164,4 +324,75 @@
 
     ]
   }
+,
+  {
+    "name": "japanese",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "bunpo",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "doshi",
+    "contents": [
+      {
+        "content": "da.md",
+        "link": "notes/japanese/bunpo/doshi/da"
+      },
+      {
+        "content": "godan_u.md",
+        "link": "notes/japanese/bunpo/doshi/godan_u"
+      },
+      {
+        "content": "ichidan_ru.md",
+        "link": "notes/japanese/bunpo/doshi/ichidan_ru"
+      },
+      {
+        "content": "irregular.md",
+        "link": "notes/japanese/bunpo/doshi/irregular"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
+    "name": "kakitori_yomutori",
+    "contents": [
+      {
+        "content": "Hiragana.md",
+        "link": "notes/japanese/kakitori_yomutori/Hiragana"
+      },
+      {
+        "content": "Katakana.md",
+        "link": "notes/japanese/kakitori_yomutori/Katakana"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "Trip",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "Sapporo_2019",
+    "contents": [
+      {
+        "content": "IMG_20191002_123759_650.jpg",
+        "link": "notes/japanese/Trip/Sapporo_2019/IMG_20191002_123759_650"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+
+    ]
+  }
+
 ]
