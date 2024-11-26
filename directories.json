@@ -131,6 +131,17 @@
   }
 ,
   {
+    "name": "istio",
+    "contents": [
+      {
+        "content": "istio.md",
+        "link": "notes/dev/devops/istio/istio"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "kubernetes",
     "contents": [
       {
@@ -166,6 +177,21 @@
   }
 
     ]
+  }
+,
+  {
+    "name": "dsa",
+    "contents": [
+      {
+        "content": "algorithms.md",
+        "link": "notes/dev/dsa/algorithms"
+      },
+      {
+        "content": "dsa_study_plan.md",
+        "link": "notes/dev/dsa/dsa_study_plan"
+      }
+    ],
+    "subsections": []
   }
 ,
   {
@@ -375,15 +401,15 @@
   }
 ,
   {
-    "name": "Trip",
+    "name": "trip",
     "contents": [],
     "subsections": [
   {
-    "name": "Sapporo_2019",
+    "name": "sapporo_2019",
     "contents": [
       {
         "content": "IMG_20191002_123759_650.jpg",
-        "link": "notes/japanese/Trip/Sapporo_2019/IMG_20191002_123759_650"
+        "link": "notes/japanese/trip/sapporo_2019/IMG_20191002_123759_650"
       }
     ],
     "subsections": []
