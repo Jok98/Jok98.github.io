@@ -1,4 +1,4 @@
-name: Execute SH Script
+name: Generate and Replace directories.json
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  run-sh:
+  update-json:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,12 +14,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Verifica i file presenti nella workspace
+      # Verifica i file nella workspace
       - name: List files in workspace
         run: ls -R
 
-      # Esegui lo script per generare il JSON
+      # Esegui lo script per generare il file JSON
       - name: Run JSON Generator Script
         run: |
           chmod +x create_json.sh
           ./create_json.sh
+
+      # Verifica il contenuto del file generato
+      - name: Show generated JSON
+        run: cat directories.json
+
+      # Configura Git per il commit
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Commit e push del nuovo file
+      - name: Commit and Push Changes
+        run: |
+          git add directories.json
+          git commit -m "Update directories.json [CI]"
+          git push origin main
