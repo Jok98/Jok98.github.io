@@ -1,0 +1,21 @@
+name: Execute SH Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-sh:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout del codice del repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Esecuzione dello script SH
+      - name: Run SH script
+        run: |
+          chmod +x create_json.sh
+          ./create_json.sh
