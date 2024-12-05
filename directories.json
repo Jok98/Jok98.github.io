@@ -352,6 +352,17 @@
   }
 ,
   {
+    "name": "hell",
+    "contents": [
+      {
+        "content": "hello.md",
+        "link": "notes/hell/hello"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "japanese",
     "contents": [],
     "subsections": [
@@ -377,10 +388,6 @@
       {
         "content": "irregular.md",
         "link": "notes/japanese/bunpo/doshi/irregular"
-      },
-      {
-        "content": "try.md",
-        "link": "notes/japanese/bunpo/doshi/try"
       }
     ],
     "subsections": []
