@@ -1,4 +1,4 @@
-name: Generate and Replace directories.json
+name: Update directories.json
 
 on:
   push:
@@ -10,33 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Esegui il checkout del repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Verifica i file nella workspace
-      - name: List files in workspace
-        run: ls -R
+      - name: Remove cached JSON
+        run: rm -f directories.json
 
-      # Esegui lo script per generare il file JSON
       - name: Run JSON Generator Script
         run: |
           chmod +x create_json.sh
           ./create_json.sh
+          echo "Generated JSON content:"
+          cat directories.json
 
-      # Verifica il contenuto del file generato
-      - name: Show generated JSON
-        run: cat directories.json
-
-      # Configura Git per il commit
-      - name: Configure Git
+      - name: Debug Git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+          git diff directories.json
 
-      # Commit e push del nuovo file
-      - name: Commit and Push Changes
+      - name: Force Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add directories.json
-          git commit -m "Update directories.json [CI]"
-          git push origin main
+          git add directories.json --force
+          git commit -m "Update directories.json [CI]" || echo "No changes to commit"
+          git push origin main || echo "Push failed"
