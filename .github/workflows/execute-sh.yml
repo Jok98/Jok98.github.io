@@ -1,4 +1,4 @@
-name: Execute SH Script
+name: Generate Directories JSON
 
 on:
   push:
@@ -6,16 +6,19 @@ on:
       - main
 
 jobs:
-  run-sh:
+  generate-json:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del codice del repository
+    
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Esecuzione dello script SH
-      - name: Run SH script
+      - name: Check if script exists
+        run: ls -la script.sh
+
+      # execute .sh
+      - name: Run JSON Generator Script
         run: |
           chmod +x create_json.sh
           ./create_json.sh
