@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Check if script exists
-        run: ls -la script.sh
+        run: ls -la create_json.sh
 
       # execute .sh
       - name: Run JSON Generator Script
