@@ -233,20 +233,20 @@
     "name": "springboot",
     "contents": [
       {
-        "content": "actuactor.md",
-        "link": "notes/dev/springboot/actuactor"
-      },
-      {
-        "content": "aop.md",
-        "link": "notes/dev/springboot/aop"
-      },
-      {
         "content": "SpringBoot.md",
         "link": "notes/dev/springboot/SpringBoot"
       },
       {
         "content": "SpringBoot_Study_Plan.md",
         "link": "notes/dev/springboot/SpringBoot_Study_Plan"
+      },
+      {
+        "content": "actuactor.md",
+        "link": "notes/dev/springboot/actuactor"
+      },
+      {
+        "content": "aop.md",
+        "link": "notes/dev/springboot/aop"
       }
     ],
     "subsections": [
@@ -377,6 +377,10 @@
       {
         "content": "irregular.md",
         "link": "notes/japanese/bunpo/doshi/irregular"
+      },
+      {
+        "content": "try.md",
+        "link": "notes/japanese/bunpo/doshi/try"
       }
     ],
     "subsections": []
