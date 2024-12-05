@@ -10,21 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Backup del file JSON attuale (se esiste)
       - name: Backup Current JSON
         run: cp directories.json directories.json.bak || echo "No previous JSON to backup"
 
-      # Debug della directory notes
       - name: List Notes Directory
         run: |
           echo "Contents of notes directory:"
           ls -R notes || echo "Notes directory not found"
 
-      # Esecuzione dello script per generare il nuovo JSON
       - name: Run JSON Generator Script
         run: |
           chmod +x create_json.sh
@@ -32,24 +28,20 @@ jobs:
           echo "Generated JSON content:"
           cat directories.json
 
-      # Confronto tra vecchio e nuovo JSON
       - name: Compare JSON Files
         run: |
           if diff directories.json directories.json.bak; then
             echo "No changes in directories.json"
-            exit 0
           else
             echo "directories.json has changed:"
-            diff directories.json directories.json.bak
+            diff directories.json directories.json.bak || true
           fi
 
-      # Debug Git per verificare modifiche
       - name: Debug Git
         run: |
           git status
           git diff directories.json
 
-      # Commit e push delle modifiche
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
