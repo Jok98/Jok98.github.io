@@ -412,7 +412,19 @@
         "link": "notes/japanese/trip/osaka_2024/diary"
       }
     ],
+    "subsections": [
+  {
+    "name": "utils",
+    "contents": [
+      {
+        "content": "init.md",
+        "link": "notes/japanese/trip/osaka_2024/utils/init"
+      }
+    ],
     "subsections": []
+  }
+
+    ]
   }
 ,
   {
