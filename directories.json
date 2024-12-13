@@ -421,7 +421,27 @@
         "link": "notes/japanese/trip/osaka_2024/utils/init"
       }
     ],
+    "subsections": [
+  {
+    "name": "06_12_24",
+    "contents": [
+      {
+        "content": "airplane.jpg",
+        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/airplane"
+      },
+      {
+        "content": "airplane_food.jpg",
+        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/airplane_food"
+      },
+      {
+        "content": "gate.jpg",
+        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/gate"
+      }
+    ],
     "subsections": []
+  }
+
+    ]
   }
 
     ]
