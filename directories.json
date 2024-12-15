@@ -399,6 +399,9 @@
     ],
     "subsections": []
   }
+
+    ]
+  }
 ,
   {
     "name": "trip",
@@ -409,7 +412,7 @@
     "contents": [
       {
         "content": "diary.md",
-        "link": "notes/japanese/trip/osaka_2024/diary"
+        "link": "notes/trip/osaka_2024/diary"
       }
     ],
     "subsections": [
@@ -422,15 +425,15 @@
     "contents": [
       {
         "content": "airplane.jpg",
-        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/airplane"
+        "link": "notes/trip/osaka_2024/utils/06_12_24/airplane"
       },
       {
         "content": "airplane_food.jpg",
-        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/airplane_food"
+        "link": "notes/trip/osaka_2024/utils/06_12_24/airplane_food"
       },
       {
         "content": "gate.jpg",
-        "link": "notes/japanese/trip/osaka_2024/utils/06_12_24/gate"
+        "link": "notes/trip/osaka_2024/utils/06_12_24/gate"
       }
     ],
     "subsections": []
@@ -447,13 +450,10 @@
     "contents": [
       {
         "content": "IMG_20191002_123759_650.jpg",
-        "link": "notes/japanese/trip/sapporo_2019/IMG_20191002_123759_650"
+        "link": "notes/trip/sapporo_2019/IMG_20191002_123759_650"
       }
     ],
     "subsections": []
-  }
-
-    ]
   }
 
     ]
