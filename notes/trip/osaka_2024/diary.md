@@ -15,3 +15,12 @@ title: Osaka 2024
 
 # 07/12/2024
 
+|                         |                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| Beijing View            | ![BeijingView](../../../assets/utils/trip/07_12_24/1_beijing_view.jpg)          |
+| Beijing Airoport Temple | ![Beijing](../../../assets/utils/trip/07_12_24/2_beijing_airport_temple.jpg)    |
+| Sky view                | ![SkyViewToJapan](../../../assets/utils/trip/07_12_24/3_sky_view_to_japan.jpg)  |
+| Welcome to Japan        | ![WelcomeToJapan](../../../assets/utils/trip/07_12_24/4_welcome_to_japan.jpg)   |
+| Cypress Inn             | ![HotelCypressInn](../../../assets/utils/trip/07_12_24/5_hotel_cypress_inn.jpg) |
+| First Katsukare         | ![Katsukare](../../../assets/utils/trip/07_12_24/6_first_katsukare.jpg)         |
+| Shinkoiwa               | ![7_shinkoiwa](../../../assets/utils/trip/07_12_24/7_shinkoiwa.jpg)             |
