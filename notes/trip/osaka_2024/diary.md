@@ -36,3 +36,26 @@ title: Osaka 2024
 | Akihabara   | ![Akihabara](../../../assets/utils/trip/08_12_24/3_akihabara_2.jpg)        |
 | First Ramen | ![Ramen](../../../assets/utils/trip/08_12_24/4_first_ramen.jpg)            |
 | Akihabara   | ![Akihabara](../../../assets/utils/trip/08_12_24/5_akihabara_3.jpg)        |
+
+---
+
+# 09/12/2024
+
+|                    |                                                                               |
+|--------------------|-------------------------------------------------------------------------------|
+| to fuji            | ![ToFuji](../../../assets/utils/trip/09_12_24/1_to_fuji_1.jpg)                |
+| to fuji            | ![ToFuji](../../../assets/utils/trip/09_12_24/2_to_fuji_2.jpg)                |
+| First view of Fuji | ![FirstViewOfFuji](../../../assets/utils/trip/09_12_24/3_first_view_fuji.jpg) |
+| Square             | ![Square](../../../assets/utils/trip/09_12_24/4_square_1.jpg)                 |
+| Square             | ![Square](../../../assets/utils/trip/09_12_24/5_square_2.jpg)                 |
+| To the Pagoda      | ![ToThePagoda](../../../assets/utils/trip/09_12_24/6_to_pagoda_1.jpg)         |
+| To the Pagoda      | ![ToThePagoda](../../../assets/utils/trip/09_12_24/7_to_pagoda_2.jpg)         |
+| Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/8_fuji_1.jpg)                     |
+| Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/9_fuji_2.jpg)                     |
+| Pagoda             | ![Pagoda](../../../assets/utils/trip/09_12_24/10_pagoda_1.jpg)                |
+| Pagoda             | ![Pagoda](../../../assets/utils/trip/09_12_24/11_pagoda_2.jpg)                |
+| Fuji Pagoda        | ![FujiPagoda](../../../assets/utils/trip/09_12_24/12_fuji_pagoda.jpg)         |
+| Fuji Pagoda        | ![FujiPagoda](../../../assets/utils/trip/09_12_24/13_fuji_pagoda_2.jpg)       |
+| Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/14_fuji_3.jpg)                    |
+| Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/15_fuji_night.jpg)                |
+| Sushi              | ![Sushi](../../../assets/utils/trip/09_12_24/16_sushi_sushiro.jpg)            |
