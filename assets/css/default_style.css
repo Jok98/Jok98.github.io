@@ -158,7 +158,7 @@ pre {
 
 img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   object-fit: cover;
   max-width: 100vw;
   max-height: 100vh;
