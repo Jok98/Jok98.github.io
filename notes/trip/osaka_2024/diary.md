@@ -24,3 +24,15 @@ title: Osaka 2024
 | Cypress Inn             | ![HotelCypressInn](../../../assets/utils/trip/07_12_24/5_hotel_cypress_inn.jpg) |
 | First Katsukare         | ![Katsukare](../../../assets/utils/trip/07_12_24/6_first_katsukare.jpg)         |
 | Shinkoiwa               | ![7_shinkoiwa](../../../assets/utils/trip/07_12_24/7_shinkoiwa.jpg)             |
+
+---
+
+# 08/12/2024
+
+|             |                                                                            |
+|-------------|----------------------------------------------------------------------------|
+| Akihabara   | ![Akihabara](../../../assets/utils/trip/08_12_24/1_akihabara_1.jpg)        |
+| Ufo catcher | ![UfoCatcher](../../../assets/utils/trip/08_12_24/2_first_ufo_catcher.jpg) |
+| Akihabara   | ![Akihabara](../../../assets/utils/trip/08_12_24/3_akihabara_2.jpg)        |
+| First Ramen | ![Ramen](../../../assets/utils/trip/08_12_24/4_first_ramen.jpg)            |
+| Akihabara   | ![Akihabara](../../../assets/utils/trip/08_12_24/5_akihabara_3.jpg)        |
