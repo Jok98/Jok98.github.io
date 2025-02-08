@@ -117,7 +117,7 @@ fi
 
 # Install graphical libraries necessary for IntelliJ IDEA
 log "Installing graphical libraries for IntelliJ IDEA..."
-sudo apt-get install -y libgtk-3-dev libcanberra-gtk-module
+sudo apt-get install -y libgtk-3-dev libcanberra-gtk3-module || echo "Warning: libcanberra-gtk-module not found, skipping..."
 check_command "Graphical libraries installation"
 
 # Set up kubectl autocompletion and alias
