@@ -59,3 +59,21 @@ title: Osaka 2024
 | Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/14_fuji_3.jpg)                    |
 | Fuji               | ![Fuji](../../../assets/utils/trip/09_12_24/15_fuji_night.jpg)                |
 | Sushi              | ![Sushi](../../../assets/utils/trip/09_12_24/16_sushi_sushiro.jpg)            |
+
+# 10/12/2024
+
+|            |                                                                     |
+|------------|---------------------------------------------------------------------|
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_1.jpg) |
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_2.jpg) |
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_3.jpg) |
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_4.jpg) |
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_5.jpg) |
+| Disneyland | ![Disneyland](../../../assets/utils/trip/10_12_24/Disneyland_6.jpg) |
+| Katsukare  | ![Disneyland](../../../assets/utils/trip/10_12_24/katsukare.jpg)    |
+
+
+
+
+
+
