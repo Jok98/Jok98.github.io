@@ -20,6 +20,9 @@ log "Updating package lists..."
 sudo apt update
 check_command "Package list update"
 
+sudo apt update
+sudo apt install -y curl
+
 # Check and install zip and unzip
 if ! command -v zip &> /dev/null; then
     log "Installing zip..."
