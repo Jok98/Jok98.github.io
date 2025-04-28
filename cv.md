@@ -120,7 +120,7 @@ title: Resume
 I have been developing several personal projects to improve my skills and knowledge focusing on :
 | Java | Spring Boot | Microservices | DevOps |
 
-**[Study Notes]([https://github.com/Jok98/Jok98](https://github.com/Jok98/Jok98.github.io/tree/main/notes/dev))**
+**[Study Notes](https://github.com/Jok98/Jok98.github.io/tree/main/notes/dev)**
 On this GitHub repository, I upload notes about my daily studies and overall knowledge, mainly focused on IT and software development.
 
 ---
