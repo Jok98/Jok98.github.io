@@ -135,4 +135,39 @@ public class AppConfig {
 }
 ```
 
+---
 
+### UserDetailsService
+Is the standard mechanism for SpringBoot to retrive a user from the db when it validates a token(jwt) or do a login.
+
+- implementation
+```java
+@Service
+public class CustomUserDetailsService implements UserDetailsService {
+  private final UserRepository userRepository;
+
+  public CustomUserDetailsService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+  }
+
+  @Override
+  public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    User u = userRepository.findByEmail(username)
+        .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
+    return new org.springframework.security.core.userdetails.User(
+        u.getEmail(),
+        u.getPasswordHash(),
+        List.of(new SimpleGrantedAuthority(u.getRole()))
+    );
+  }
+}
+
+```
+
+part of the user info are inside the token(called sub).
+
+**Flow**
+- The client sends an `Authorization: Bearer <token>`
+- Jwt Filter extracts the token, evaluate it(sing + expired date), read the sub(ex. email)
+- Invoke CustomUserDetailsService with the email to retrive all the data about the user from the db
+- Build an Authentication with the auth and continues the protect request
