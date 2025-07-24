@@ -319,7 +319,19 @@
         "link": "notes/dev/springboot/spring_security/Spring_Security"
       }
     ],
+    "subsections": [
+  {
+    "name": "jwt",
+    "contents": [
+      {
+        "content": "refresh_token.md",
+        "link": "notes/dev/springboot/spring_security/jwt/refresh_token"
+      }
+    ],
     "subsections": []
+  }
+
+    ]
   }
 
     ]
