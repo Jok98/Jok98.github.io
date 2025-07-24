@@ -278,6 +278,10 @@
         "link": "notes/dev/springboot/rest_api/rest_api"
       },
       {
+        "content": "servlet-mvc-webflux.md",
+        "link": "notes/dev/springboot/rest_api/servlet-mvc-webflux"
+      },
+      {
         "content": "validation.md",
         "link": "notes/dev/springboot/rest_api/validation"
       }
