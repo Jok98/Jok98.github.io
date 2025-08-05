@@ -364,10 +364,6 @@
       {
         "content": "ubuntu_conf.sh",
         "link": "notes/dev/ubuntu/conf/ubuntu_conf"
-      },
-      {
-        "content": "uninstall_ubuntu_conf.sh",
-        "link": "notes/dev/ubuntu/conf/uninstall_ubuntu_conf"
       }
     ],
     "subsections": []
