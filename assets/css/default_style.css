@@ -94,6 +94,33 @@ a.cv-link i {
   margin-right: 8px;
 }
 
+.cv-link-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #009879;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #007f67;
+  color: #ffffff;
+}
+
+.cv-button i {
+  margin-right: 8px;
+}
+
 /* Improved table styles */
 table {
   width: 100%;
