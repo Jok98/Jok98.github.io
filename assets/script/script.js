@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let allContents = [];
+
     fetch('directories.json')
         .then(response => response.json())
         .then(data => {
@@ -7,7 +9,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 const sectionElement = createSectionElement(section);
                 container.appendChild(sectionElement);
             });
+            allContents = collectContents(data);
         });
+
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        searchResults.innerHTML = '';
+        if (!query) {
+            return;
+        }
+        const matches = allContents.filter(item =>
+            item.content.toLowerCase().includes(query)
+        );
+        matches.forEach(item => {
+            const link = document.createElement('a');
+            link.href = item.link;
+            link.textContent = item.content;
+            link.classList.add('content-link');
+            searchResults.appendChild(link);
+            searchResults.appendChild(document.createElement('br'));
+        });
+    });
+
+    function collectContents(sections) {
+        let results = [];
+        sections.forEach(section => {
+            if (section.contents) {
+                results = results.concat(section.contents);
+            }
+            if (section.subsections) {
+                results = results.concat(collectContents(section.subsections));
+            }
+        });
+        return results;
+    }
 
     function createSectionElement(section) {
         const sectionDiv = document.createElement('div');
