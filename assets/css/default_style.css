@@ -2,7 +2,41 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #1e1e1e;
     color: #d4d4d4;
-    margin: 20px;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333333;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.nav-logo {
+    color: #9cdcfe;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #9cdcfe;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #007acc;
 }
 
 .section {
