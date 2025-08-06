@@ -1,4 +1,4 @@
-#!/bin/bash
+
 # chmod +x setup_ubuntu.sh
 # ./setup_ubuntu.sh
 
@@ -250,23 +250,13 @@ fi
 
 
 # -----------------------
-# Install kubectl
+# Install kubectl via snap
 # -----------------------
 if ! command -v kubectl &> /dev/null; then
-    log "📦 Installing kubectl..."
-    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-    echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
-    if check_command "kubectl checksum verification"; then
-        sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-        if check_command "kubectl installation"; then
-            installed_components+=("kubectl")
-            rm kubectl kubectl.sha256
-        fi
-    else
-        log "❌ kubectl checksum verification failed."
-        failed_components+=("kubectl")
-        rm -f kubectl kubectl.sha256
+    log "📦 Installing kubectl via snap..."
+    snap install kubectl --classic
+    if check_command "kubectl installation"; then
+        installed_components+=("kubectl")
     fi
 else
     log "✅ kubectl already installed."
@@ -288,6 +278,20 @@ else
 fi
 
 # -----------------------
+# Install Node.js and npm
+# -----------------------
+if ! command -v npm &> /dev/null; then
+    log "📦 Installing Node.js and npm..."
+    sudo apt install -y nodejs npm
+    if check_command "Node.js and npm installation"; then
+        installed_components+=("Node.js and npm")
+    fi
+else
+    log "✅ Node.js and npm already installed."
+    skipped_components+=("Node.js and npm")
+fi
+
+# -----------------------
 # Set up useful aliases
 # -----------------------
 if ! grep -q "alias k=" ~/.bashrc; then
@@ -295,7 +299,6 @@ if ! grep -q "alias k=" ~/.bashrc; then
     echo "alias k='kubectl'" >> ~/.bashrc
     check_command "Alias k setup"
 fi
-
 
 # -----------------------
 # Final summary
