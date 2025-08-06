@@ -3,81 +3,75 @@ layout: cv
 title: Resume
 ---
 
-# Matteo Moi - Software Developer
+# Matteo Moi - Senior Software Engineer
 
-#### Location: Sondrio, Italy | Date of Birth: 05/02/1998 | Email: matteo.moi1998@gmail.com
+<div align="center">
 
-## [LinkedIn](https://www.linkedin.com/in/matteo-moi/) | [GitHub](https://github.com/Jok98)
+#### Location: Sondrio, Italy | Email: matteo.moi1998@gmail.com
 
-> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development. 
+### [LinkedIn](https://www.linkedin.com/in/matteo-moi/) | [GitHub](https://github.com/Jok98) | [Personal Website](https://jok98.github.io)
+
+</div>
+
+## Professional Summary
+
+> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development.
 >
 > Started studying programming independently in 2016, deepening and enhancing my skills at university and through
 > participation in various professional training courses.
 >
-> I make daily notes documenting my studies and knowledge development.<br> 
+> I make daily notes documenting my studies and knowledge development.<br>
 > These notes are regularly uploaded to my [site](https://jok98.github.io) and [GitHub](https://github.com/Jok98/Jok98.github.io), contributing to my continuous learning and sharing my progress.
 
-#### Education : Bachelor’s Degree in Computer Science @ Ecampus (ongoing)
+## Education
+
+- **Bachelor's Degree in Computer Science** - Ecampus University (ongoing)
+- **Self-directed Learning** - Continuous professional development through courses, documentation, and hands-on projects since 2016
 
 ---
 
-## Technical Skills
+## Technical Expertise
 
 <table border="1">
 <tr>
-    <td>
+<td width="33%">
 
-<h3>Languages & Frameworks</h3>
+### Core Technologies
 
-<p><strong>Languages</strong>: Java | SQL</p>
-
-<p><strong>Frameworks</strong>: Spring Boot | Hibernate</p>
-
-<p><strong>Testing</strong>: JUnit | Mockito</p>
-
-<p><strong>Databases</strong>: MySQL | PostgreSQL | Oracle | MongoDB</p>
-
-</td>
-
-<td>
-
-<h3>Tools & Platforms</h3>
-
-<p><strong>Version Control</strong>: Git</p>
-
-<p><strong>Pdf</strong>: JasperReports</p>
-
-<p><strong>IDE</strong>: IntelliJ IDEA</p>
-
-<p><strong>Build Tools</strong>: Maven</p>
-
-<p><strong>Collaboration</strong>: Jira | Confluence</p>
+- **Languages**: Java, SQL
+- **Frameworks**: Spring Boot, Spring Cloud, Hibernate/JPA
+- **Testing**: JUnit, Mockito, Test Containers
+- **Databases**:
+    - Relational: MySQL, PostgreSQL, Oracle
+    - NoSQL: MongoDB
+- **Build Tools**: Maven
 
 </td>
+<td width="33%">
 
-<td>
+### DevOps & Tools
 
-<h3>Microservices & Architecture</h3>
+- **Version Control**: Git, GitHub, GitLab
+- **CI/CD**: GitLab CI/CD, Jenkins, GitHub Actions
+- **Containerization**: Docker, Kubernetes, Helm
+- **Monitoring**: Prometheus, Grafana, Spring Actuator
+- **Documentation**: Swagger/OpenAPI, Confluence
+- **Project Management**: Jira, Agile/Scrum
+- **Reporting**: JasperReports
 
-<p><strong>API Gateway</strong>: Spring Cloud Gateway, Nginx</p>
+</td>
+<td width="33%">
 
-<p><strong>Service Discovery</strong>: Netflix Eureka, Zookeeper</p>
+### Microservices Architecture
 
-<p><strong>Centralized Configuration</strong>: Spring Cloud Config</p>
-
-<p><strong>Circuit Breaker</strong>: Resilience4j</p>
-
-<p><strong>Asynchronous Communication</strong>: Apache Kafka</p>
-
-<p><strong>Distributed Logging & Tracing</strong>: Spring Cloud Zipkin</p>
-
-<p><strong>Security</strong>: Spring Security, OAuth2, JWT</p>
-
-<p><strong>Containerization & Orchestration</strong>: Docker, Kubernetes</p>
-
-<p><strong>CI/CD</strong>: GitLab CI/CD, Jenkins</p>
-
-<p><strong>Monitoring & Alerting</strong>: Prometheus, Grafana</p>
+- **API Gateway**: Spring Cloud Gateway, Nginx
+- **Service Discovery**: Netflix Eureka, Zookeeper
+- **Configuration**: Spring Cloud Config
+- **Resilience**: Resilience4j, Circuit Breakers
+- **Messaging**: RabbitMQ, Apache Kafka
+- **Distributed Tracing**: Spring Cloud Sleuth, Zipkin
+- **Security**: Spring Security, OAuth2, JWT
+- **Cloud Platforms**: Azure
 
 </td>
 </tr>
@@ -89,48 +83,107 @@ title: Resume
 
 <table border="1">
 <tr>
+<td width="30%">
 
-<td>
-
-<p><strong>Objectway</strong> 01/2024 - Present</p>
-
-<p><strong>Iriscube Reply (SistemItaly)</strong> 08/2023 - 01/2024</p>
-
-<p><strong>Blue Reply (SistemItaly)</strong> 11/2022 - 08/2023</p>
+### Objectway
+**Senior Software Engineer**
+*January 2024 - Present*
 
 </td>
+<td width="70%">
 
-<td>
+- Developing and maintaining microservices-based financial applications using Spring Boot and Java 17
+- Implementing secure authentication and authorization mechanisms with OAuth2 and JWT
+- Collaborating with cross-functional teams to design and implement new features
+- Contributing to architectural decisions and technical documentation
+- Working in an Agile environment with CI/CD pipelines for continuous deployment
 
-<p><strong>Architecture</strong>: Microservices | Monolithic</p>
-
-<p><strong>Industry</strong>: Fintech | Banking | Insurance</p>
-
-<p><strong>Working Method</strong>: Agile (Scrum)</p>
+**Technologies**: Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ
 
 </td>
+</tr>
+<tr>
+<td>
 
+### Iriscube Reply (SistemItaly)
+**Software Engineer**
+*August 2023 - January 2024*
+
+</td>
+<td>
+
+- Developed RESTful APIs for banking applications using Spring Boot
+- Implemented data persistence layers with Hibernate/JPA and PostgreSQL
+- Collaborated on the design and implementation of microservices architecture
+- Created comprehensive unit and integration tests using JUnit and Mockito
+- Participated in code reviews and knowledge sharing sessions
+
+**Technologies**: Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git
+
+</td>
+</tr>
+<tr>
+<td>
+
+### Blue Reply (SistemItaly)
+**Junior Software Engineer**
+*November 2022 - August 2023*
+
+</td>
+<td>
+
+- Contributed to the development of insurance management systems
+- Implemented backend services using Java and Spring framework
+- Worked with relational databases (Oracle, MySQL) for data persistence
+- Participated in Agile ceremonies and sprint planning
+- Collaborated with senior developers to improve code quality and performance
+
+**Technologies**: Java, Spring Framework, Oracle, MySQL, Git, Maven
+
+</td>
 </tr>
 </table>
 
 ---
 
-## Personal Projects
+### Technical Study Notes
+A comprehensive collection of technical notes covering various aspects of software development, architecture, and DevOps practices.
 
-I have been developing several personal projects to improve my skills and knowledge focusing on :
-| Java | Spring Boot | Microservices | DevOps |
-
-**[Study Notes](https://github.com/Jok98/Jok98.github.io/tree/main/notes/dev)**
-On this GitHub repository, I upload notes about my daily studies and overall knowledge, mainly focused on IT and software development.
+- **[Study Notes Repository](https://github.com/Jok98/Jok98.github.io/tree/main/notes/dev)**
+- Topics include: Java, Spring, Microservices, Docker, Kubernetes, Design Patterns, and more
+- Regular updates with new learnings and discoveries
 
 ---
 
 ## International Experience
 
-> **Japan (Studying language and culture at international schools)** <br>
-> Developed strong adaptability and problem-solving skills through immersion in diverse cultural settings. <br>
-> Gained proficiency in Japanese and English, strengthened cross-cultural communication skills
+> **Japan (Language and Cultural Studies)**
+>
+> Immersive experiences at international schools in Japan, developing strong adaptability, problem-solving skills, and cross-cultural communication abilities.
 
-- **Sapporo (JP)**: 08/2019 - 10/2019
-- **Fukuoka (JP)**: 07/2018 - 09/2018
-- **Kobe (JP)**: 06/2017 - 07/2017
+- **Sapporo Language School**: August 2019 - October 2019
+- **Fukuoka International Academy**: July 2018 - September 2018
+- **Kobe Cultural Exchange Program**: June 2017 - July 2017
+
+**Skills Gained**: Japanese language proficiency, cross-cultural communication, adaptability, global perspective
+
+---
+
+## Languages
+
+- **Italian**: Native
+- **English**: Professional working proficiency
+- **Japanese**: Intermediate
+
+---
+
+## Soft Skills
+
+- **Problem Solving**: Analytical approach to complex technical challenges
+- **Communication**: Clear and effective technical and non-technical communication
+- **Teamwork**: Collaborative approach in cross-functional teams
+- **Adaptability**: Quick to learn new technologies and methodologies
+- **Time Management**: Efficient prioritization and task completion
+- **Leadership**: Mentoring junior developers and leading technical discussions
+
+---
