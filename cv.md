@@ -34,48 +34,48 @@ title: Resume
 ## Technical Expertise
 
 <table border="1">
-<tr>
-<td width="33%">
-
-### Core Technologies
-
-- **Languages**: Java, SQL
-- **Frameworks**: Spring Boot, Spring Cloud, Hibernate/JPA
-- **Testing**: JUnit, Mockito, Test Containers
-- **Databases**:
-    - Relational: MySQL, PostgreSQL, Oracle
-    - NoSQL: MongoDB
-- **Build Tools**: Maven
-
-</td>
-<td width="33%">
-
-### DevOps & Tools
-
-- **Version Control**: Git, GitHub, GitLab
-- **CI/CD**: GitLab CI/CD, Jenkins, GitHub Actions
-- **Containerization**: Docker, Kubernetes, Helm
-- **Monitoring**: Prometheus, Grafana, Spring Actuator
-- **Documentation**: Swagger/OpenAPI, Confluence
-- **Project Management**: Jira, Agile/Scrum
-- **Reporting**: JasperReports
-
-</td>
-<td width="33%">
-
-### Microservices Architecture
-
-- **API Gateway**: Spring Cloud Gateway, Nginx
-- **Service Discovery**: Netflix Eureka, Zookeeper
-- **Configuration**: Spring Cloud Config
-- **Resilience**: Resilience4j, Circuit Breakers
-- **Messaging**: RabbitMQ, Apache Kafka
-- **Distributed Tracing**: Spring Cloud Sleuth, Zipkin
-- **Security**: Spring Security, OAuth2, JWT
-- **Cloud Platforms**: Azure
-
-</td>
-</tr>
+  <tr>
+    <td width="33%">
+      <h3>Core Technologies</h3>
+      <ul>
+        <li><strong>Languages</strong>: Java, SQL</li>
+        <li><strong>Frameworks</strong>: Spring Boot, Spring Cloud, Hibernate/JPA</li>
+        <li><strong>Testing</strong>: JUnit, Mockito, Test Containers</li>
+        <li><strong>Databases</strong>:
+          <ul>
+            <li>Relational: MySQL, PostgreSQL, Oracle</li>
+            <li>NoSQL: MongoDB</li>
+          </ul>
+        </li>
+        <li><strong>Build Tools</strong>: Maven</li>
+      </ul>
+    </td>
+    <td width="33%">
+      <h3>DevOps &amp; Tools</h3>
+      <ul>
+        <li><strong>Version Control</strong>: Git, GitHub, GitLab</li>
+        <li><strong>CI/CD</strong>: GitLab CI/CD, Jenkins, GitHub Actions</li>
+        <li><strong>Containerization</strong>: Docker, Kubernetes, Helm</li>
+        <li><strong>Monitoring</strong>: Prometheus, Grafana, Spring Actuator</li>
+        <li><strong>Documentation</strong>: Swagger/OpenAPI, Confluence</li>
+        <li><strong>Project Management</strong>: Jira, Agile/Scrum</li>
+        <li><strong>Reporting</strong>: JasperReports</li>
+      </ul>
+    </td>
+    <td width="33%">
+      <h3>Microservices Architecture</h3>
+      <ul>
+        <li><strong>API Gateway</strong>: Spring Cloud Gateway, Nginx</li>
+        <li><strong>Service Discovery</strong>: Netflix Eureka, Zookeeper</li>
+        <li><strong>Configuration</strong>: Spring Cloud Config</li>
+        <li><strong>Resilience</strong>: Resilience4j, Circuit Breakers</li>
+        <li><strong>Messaging</strong>: RabbitMQ, Apache Kafka</li>
+        <li><strong>Distributed Tracing</strong>: Spring Cloud Sleuth, Zipkin</li>
+        <li><strong>Security</strong>: Spring Security, OAuth2, JWT</li>
+        <li><strong>Cloud Platforms</strong>: Azure</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -83,66 +83,57 @@ title: Resume
 ## Professional Experience
 
 <table border="1">
-<tr>
-<td width="30%">
-
-### Objectway
-**Senior Software Engineer**
-*January 2024 - Present*
-
-</td>
-<td width="70%">
-
-- Developing and maintaining microservices-based financial applications using Spring Boot and Java 17
-- Implementing secure authentication and authorization mechanisms with OAuth2 and JWT
-- Collaborating with cross-functional teams to design and implement new features
-- Contributing to architectural decisions and technical documentation
-- Working in an Agile environment with CI/CD pipelines for continuous deployment
-
-**Technologies**: Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ
-
-</td>
-</tr>
-<tr>
-<td>
-
-### Iriscube Reply (SistemItaly)
-**Software Engineer**
-*August 2023 - January 2024*
-
-</td>
-<td>
-
-- Developed RESTful APIs for banking applications using Spring Boot
-- Implemented data persistence layers with Hibernate/JPA and PostgreSQL
-- Collaborated on the design and implementation of microservices architecture
-- Created comprehensive unit and integration tests using JUnit and Mockito
-- Participated in code reviews and knowledge sharing sessions
-
-**Technologies**: Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git
-
-</td>
-</tr>
-<tr>
-<td>
-
-### Blue Reply (SistemItaly)
-**Junior Software Engineer**
-*November 2022 - August 2023*
-
-</td>
-<td>
-
-- Contributed to the development of insurance management systems
-- Implemented backend services using Java and Spring framework
-- Worked with relational databases (Oracle, MySQL) for data persistence
-- Participated in Agile ceremonies and sprint planning
-- Collaborated with senior developers to improve code quality and performance
-
-**Technologies**: Java, Spring Framework, Oracle, MySQL, Git, Maven
-
-</td>
-</tr>
+  <tr>
+    <td width="30%">
+      <h3>Objectway</h3>
+      <strong>Senior Software Engineer</strong><br/>
+      <em>January 2024 - Present</em>
+    </td>
+    <td width="70%">
+      <ul>
+        <li>Developing and maintaining microservices-based financial applications using Spring Boot and Java 17</li>
+        <li>Implementing secure authentication and authorization mechanisms with OAuth2 and JWT</li>
+        <li>Collaborating with cross-functional teams to design and implement new features</li>
+        <li>Contributing to architectural decisions and technical documentation</li>
+        <li>Working in an Agile environment with CI/CD pipelines for continuous deployment</li>
+      </ul>
+      <p><strong>Technologies</strong>: Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Iriscube Reply (SistemItaly)</h3>
+      <strong>Software Engineer</strong><br/>
+      <em>August 2023 - January 2024</em>
+    </td>
+    <td>
+      <ul>
+        <li>Developed RESTful APIs for banking applications using Spring Boot</li>
+        <li>Implemented data persistence layers with Hibernate/JPA and PostgreSQL</li>
+        <li>Collaborated on the design and implementation of microservices architecture</li>
+        <li>Created comprehensive unit and integration tests using JUnit and Mockito</li>
+        <li>Participated in code reviews and knowledge sharing sessions</li>
+      </ul>
+      <p><strong>Technologies</strong>: Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Blue Reply (SistemItaly)</h3>
+      <strong>Junior Software Engineer</strong><br/>
+      <em>November 2022 - August 2023</em>
+    </td>
+    <td>
+      <ul>
+        <li>Contributed to the development of insurance management systems</li>
+        <li>Implemented backend services using Java and Spring framework</li>
+        <li>Worked with relational databases (Oracle, MySQL) for data persistence</li>
+        <li>Participated in Agile ceremonies and sprint planning</li>
+        <li>Collaborated with senior developers to improve code quality and performance</li>
+      </ul>
+      <p><strong>Technologies</strong>: Java, Spring Framework, Oracle, MySQL, Git, Maven</p>
+    </td>
+  </tr>
 </table>
 
 ---
