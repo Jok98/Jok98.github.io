@@ -5,7 +5,8 @@ title: Resume
 
 # Matteo Moi - Senior Software Engineer
 
-<div align="center">
+
+<div class="cv-header">
 
 #### Location: Sondrio, Italy | Email: matteo.moi1998@gmail.com
 
