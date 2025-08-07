@@ -231,3 +231,33 @@ img {
   display: block;
   margin-bottom: 5px;
 }
+/* Photo grid for trip diaries */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.photo-grid figure {
+  margin: 0;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-grid figcaption {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #d4d4d4;
+}
