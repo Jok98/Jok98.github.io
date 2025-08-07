@@ -1,6 +1,6 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e1e;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
   color: #d4d4d4;
   margin: 0;
   line-height: 1.6;
@@ -8,24 +8,27 @@ body {
 
 main {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  background-color: #252526;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2 {
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
   color: #9cdcfe;
 }
 
 h3 {
-  color: #9cdcfe;
   margin-top: 30px;
-  text-align: center;
 }
 
 h4 {
   color: #d4d4d4;
-  text-align: center;
   font-weight: normal;
 }
 
@@ -34,10 +37,23 @@ h4 {
   margin-bottom: 20px;
 }
 
+.cv-header a {
+  color: #009879;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cv-header a:hover {
+  color: #00bfa6;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
@@ -47,9 +63,21 @@ th, td {
 }
 
 tr:nth-child(even) {
-  background-color: #252526;
+  background-color: #2a2a2a;
 }
 
 tr:nth-child(odd) {
   background-color: #1e1e1e;
+}
+
+tr:hover {
+  background-color: #333333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
 }
