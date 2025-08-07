@@ -1,12 +1,25 @@
 body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #1e1e1e;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
   color: #d4d4d4;
   margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #9cdcfe;
+  line-height: 1.3;
 }
 
 main {
   padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -14,8 +27,9 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333333;
+  background: linear-gradient(90deg, #333333, #222222);
   border-bottom: 1px solid #3c3c3c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-logo {
@@ -33,18 +47,41 @@ main {
 .nav-link {
   color: #9cdcfe;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #007acc;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #007acc;
+  color: #ffffff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .section {
   margin-bottom: 20px;
   background-color: #252526;
   border: 1px solid #3c3c3c;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
 }
 
 .section > summary {
@@ -109,12 +146,14 @@ a.cv-link i {
   border-radius: 8px;
   text-decoration: none;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .cv-button:hover {
   background-color: #007f67;
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .cv-button i {
@@ -129,6 +168,9 @@ table {
   font-size: 1em;
   font-family: "Arial", sans-serif;
   color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 table thead tr {
@@ -161,6 +203,10 @@ table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
 
+table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
 /* Improved button styles */
 button {
   background-color: #009879;
@@ -174,11 +220,13 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
   background-color: #007f67;
+  transform: translateY(-2px);
 }
 
 /* Style for code snippets */
