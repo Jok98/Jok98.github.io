@@ -185,3 +185,34 @@ title: Osaka 2024
   </figure>
 </div>
 
+## 10/12/2024
+<div class="photo-grid">
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_1.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_2.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_3.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_4.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_5.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_6.jpg" alt="Disneyland">
+    <figcaption>Disneyland</figcaption>
+  </figure>
+  <figure>
+    <img src="../../../../assets/utils/trip/10_12_24/katsukare.jpg" alt="Katsukare">
+    <figcaption>Katsukare</figcaption>
+  </figure>
+</div>
