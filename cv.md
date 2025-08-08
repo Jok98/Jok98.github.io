@@ -7,22 +7,91 @@ title: Resume
 
 
 <div class="cv-header">
-
-#### Location: Sondrio, Italy | Email: matteo.moi1998@gmail.com
-
-### [LinkedIn](https://www.linkedin.com/in/matteo-moi/) | [GitHub](https://github.com/Jok98) | [Personal Website](https://jok98.github.io)
-
+  <strong>Location:</strong> Sondrio, Italy | <strong>Email:</strong> matteo.moi1998@gmail.com<br/>
+  <a href="https://www.linkedin.com/in/matteo-moi/">LinkedIn</a> |
+  <a href="https://github.com/Jok98">GitHub</a> |
+  <a href="https://jok98.github.io">Personal Website</a>
 </div>
 
-## Professional Summary
+## About Me
+IT enthusiast always seeking to broaden my knowledge in software development. I document my learning journey on [my site](https://jok98.github.io) and [GitHub](https://github.com/Jok98/Jok98.github.io).
 
-> As an IT enthusiast I'm always looking for increase my knowledge in the field of software development.
->
-> Started studying programming independently in 2016, deepening and enhancing my skills at university and through
-> participation in various professional training courses.
->
-> I make daily notes documenting my studies and knowledge development.<br>
-> These notes are regularly uploaded to my [site](https://jok98.github.io) and [GitHub](https://github.com/Jok98/Jok98.github.io), contributing to my continuous learning and sharing my progress.
+## Tech Stack
+
+<div class="tech-grid">
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java"/>
+    <span>Java</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring"/>
+    <span>Spring</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-plain.svg" alt="Hibernate"/>
+    <span>Hibernate</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker"/>
+    <span>Docker</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/>
+    <span>Kubernetes</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg" alt="Maven"/>
+    <span>Maven</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-plain.svg" alt="JUnit"/>
+    <span>JUnit</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git"/>
+    <span>Git</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub"/>
+    <span>GitHub</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab"/>
+    <span>GitLab</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins"/>
+    <span>Jenkins</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL"/>
+    <span>MySQL</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
+    <span>PostgreSQL</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+    <span>MongoDB</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ"/>
+    <span>RabbitMQ</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg" alt="Kafka"/>
+    <span>Kafka</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg" alt="Prometheus"/>
+    <span>Prometheus</span>
+  </div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg" alt="Grafana"/>
+    <span>Grafana</span>
+  </div>
+</div>
 
 ## Education
 

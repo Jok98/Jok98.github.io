@@ -81,3 +81,35 @@ ul {
 li {
   margin-bottom: 5px;
 }
+
+
+/* Tech Stack grid (based on notes/README.md) */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #202020;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+}
+
+.tech-item img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 5px;
+}
