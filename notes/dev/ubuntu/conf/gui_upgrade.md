@@ -8,6 +8,8 @@ https://www.opendesktop.org/s/OpenSuse-Packages/p/1136805/
 # Install theme
 https://www.gnome-look.org/browse/
 
+[Orchis gtk theme](https://www.gnome-look.org/p/1357889)
+
 ## Download Extension Manager with gnome-software
 ### then install into Extension Manager :
 - User Themes
