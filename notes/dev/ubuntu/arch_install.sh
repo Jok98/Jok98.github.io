@@ -1,24 +1,31 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ====== CONFIG ======
+# ====== CONFIG (puoi cambiarli) ======
 HOSTNAME="archbox"
 USERNAME="jok"
-USERPASS="changeme"          # change after first boot
-LOCALE="en_US.UTF-8"         # system language
-KEYMAP="us"                  # console keyboard
+USERPASS="changeme"          # cambia dopo il primo boot
+LOCALE="en_US.UTF-8"         # lingua sistema
+KEYMAP="us"                  # layout tastiera console
 TIMEZONE="Europe/Rome"
 SWAP_SIZE="8G"
-# ====================
+# =====================================
 
 say() { echo -e "\n[+] $*"; }
 die() { echo "ERR: $*" >&2; exit 1; }
 need_cmd() { command -v "$1" >/dev/null 2>&1 || die "missing command: $1"; }
 online() { ping -c1 -W2 archlinux.org >/dev/null 2>&1; }
 
-need_cmd sgdisk; need_cmd mkfs.btrfs; need_cmd pacstrap; need_cmd lsblk
+need_cmd sgdisk; need_cmd mkfs.btrfs; need_cmd pacstrap; need_cmd lsblk; need_cmd blkid
 
-# Build partition path that works for /dev/sdX and /dev/nvmeYpn
+# --- argomento obbligatorio: disco target ---
+if [[ $# -lt 1 ]]; then
+  die "Usage: $0 <disk>   e.g.  $0 nvme0n1   or   $0 /dev/nvme0n1"
+fi
+if [[ "$1" == /dev/* ]]; then DISK="$1"; else DISK="/dev/$1"; fi
+[[ -b "$DISK" ]] || die "Block device not found: $DISK"
+
+# path partizioni (gestisce /dev/sda vs /dev/nvme0n1)
 partpath() {
   local disk="$1" num="$2"
   if [[ "$disk" =~ (nvme|mmcblk|loop|nbd) ]]; then
@@ -27,46 +34,10 @@ partpath() {
     echo "${disk}${num}"
   fi
 }
+ESP="$(partpath "$DISK" 1)"
+ROOT="$(partpath "$DISK" 2)"
 
-choose_disk() {
-  say "Detecting disks (excluding live USB)..."
-  local iso_src iso_parent
-  iso_src=$(findmnt -n -o SOURCE /run/archiso/bootmnt 2>/dev/null || true)
-  if [[ -n "${iso_src:-}" ]]; then
-    iso_parent="/dev/$(lsblk -no PKNAME "$iso_src" 2>/dev/null || true)"
-  fi
-
-  mapfile -t ROWS < <(lsblk -dpno NAME,SIZE,MODEL,TYPE | awk '$4=="disk"{print}')
-  if ((${#ROWS[@]}==0)); then die "No disks found."; fi
-
-  local idx=0
-  declare -a DISKS
-  for row in "${ROWS[@]}"; do
-    dev=$(awk '{print $1}' <<<"$row")
-    size=$(awk '{print $2}' <<<"$row")
-    model=$(awk '{$1=$2=""; sub(/^  */,""); print}' <<<"$row")
-    if [[ -n "${iso_parent:-}" && "$dev" == "$iso_parent" ]]; then
-      continue
-    fi
-    printf "  [%d] %-20s  %-8s  %s\n" "$idx" "$dev" "$size" "$model"
-    DISKS[$idx]="$dev"
-    ((idx++))
-  done
-
-  if ((${#DISKS[@]}==0)); then
-    die "Only the live USB disk is visible; cannot proceed."
-  fi
-
-  read -r -p "Select disk index to WIPE and install Arch on: " CHOICE
-  DISK="${DISKS[$CHOICE]:-}"
-  [[ -z "${DISK:-}" ]] && die "Invalid selection."
-
-  echo -e "\n>>> You selected: $DISK"
-  read -r -p "Type EXACTLY 'YES' to confirm FULL WIPE of $DISK: " CONF
-  [[ "$CONF" == "YES" ]] || die "Aborted."
-}
-
-get_uuid() { blkid -s UUID -o value "$1"; }
+get_uuid()      { blkid -s UUID -o value "$1"; }
 
 write_arch_entry() {
   local esp="$1" root_uuid="$2" ucode_line=""
@@ -89,14 +60,23 @@ final_uuid_fix() {
   say "Root UUID verified in arch.conf: ${rootuuid}"
 }
 
-# ---- MAIN ----
+# --- preflight ---
 say "Checking network..."
-online || die "No network. Connect with 'iwctl' first (station <iface> connect <SSID>)."
+online || die "No network. Connect first with 'iwctl' (station <iface> connect <SSID>)."
 
-choose_disk
-ESP=$(partpath "$DISK" 1)
-ROOT=$(partpath "$DISK" 2)
+echo "****************************"
+echo "  Arch install FULL DISK"
+echo "  Disk target: $DISK"
+echo "  FS: Btrfs (subvolumes)"
+echo "  Bootloader: systemd-boot"
+echo "  Desktop: Hyprland (Wayland) + Firefox"
+echo "  GPU: NVIDIA (proprietary)"
+echo "  Locale: $LOCALE | Keymap: $KEYMAP"
+echo "****************************"
+read -r -p "Type EXACTLY 'YES' to confirm FULL WIPE of $DISK: " CONF
+[[ "$CONF" == "YES" ]] || die "Aborted."
 
+# --- partizionamento ---
 say "Partitioning $DISK (GPT: ESP 512M + ROOT Btrfs)..."
 sgdisk -Z "$DISK"
 sgdisk -g "$DISK"
@@ -104,10 +84,12 @@ sgdisk -n 1:0:+512M -t 1:ef00 -c 1:"EFI System" "$DISK"
 sgdisk -n 2:0:0      -t 2:8300 -c 2:"Linux Btrfs" "$DISK"
 partprobe "$DISK"
 
+# --- format ---
 say "Formatting..."
 mkfs.fat -F32 "$ESP"
 mkfs.btrfs -f -L archroot "$ROOT"
 
+# --- subvolumi ---
 say "Creating Btrfs subvolumes..."
 mount "$ROOT" /mnt
 btrfs subvolume create /mnt/@
@@ -118,6 +100,7 @@ btrfs subvolume create /mnt/@pkg
 btrfs subvolume create /mnt/@snapshots
 umount /mnt
 
+# --- mount ---
 say "Mounting subvolumes..."
 mount -o subvol=@,compress=zstd,noatime "$ROOT" /mnt
 mkdir -p /mnt/{boot,home,var,log,pkg,.snapshots}
@@ -128,13 +111,15 @@ mount -o subvol=@pkg,compress=zstd,noatime       "$ROOT" /mnt/pkg
 mount -o subvol=@snapshots,compress=zstd,noatime "$ROOT" /mnt/.snapshots
 mount "$ESP" /mnt/boot
 
+# --- pacstrap ---
 say "Installing base system..."
 pacstrap -K /mnt base linux linux-firmware btrfs-progs vim sudo \
   networkmanager iwd git base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-say "Configuring system (chroot)..."
+# --- chroot config ---
+say "Configuring system in chroot..."
 arch-chroot /mnt /bin/bash -e <<EOFCHROOT
 set -euo pipefail
 HOSTNAME="$HOSTNAME"; USERNAME="$USERNAME"; USERPASS="$USERPASS"
@@ -142,7 +127,8 @@ LOCALE="$LOCALE"; TIMEZONE="$TIMEZONE"; SWAP_SIZE="$SWAP_SIZE"; KEYMAP="$KEYMAP"
 
 ln -sf /usr/share/zoneinfo/\$TIMEZONE /etc/localtime
 hwclock --systohc
-sed -i 's/^#\('\$LOCALE'\)/\1/' /etc/locale.gen
+# abilita e genera en_US.UTF-8
+sed -i 's/^#\(en_US.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 echo "LANG=\$LOCALE" > /etc/locale.conf
 echo "KEYMAP=\$KEYMAP" > /etc/vconsole.conf
@@ -159,7 +145,7 @@ useradd -m -G wheel,audio,video,storage -s /bin/bash "\$USERNAME"
 echo "\$USERNAME:\$USERPASS" | chpasswd
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-# Network stack
+# Network stack (iwd + NM)
 mkdir -p /etc/NetworkManager/conf.d
 cat >/etc/NetworkManager/conf.d/wifi_backend.conf <<EOT
 [device]
@@ -182,7 +168,7 @@ if lscpu | grep -qi amd;   then pacman --noconfirm -S amd-ucode;   fi
 # Bootloader
 bootctl install
 
-# swapfile on Btrfs
+# swapfile su Btrfs
 mkdir -p /swap
 btrfs filesystem mkswapfile --size \$SWAP_SIZE --uuid clear /swap/swapfile
 swapon /swap/swapfile
@@ -196,9 +182,9 @@ systemctl enable bluetooth
 pacman --noconfirm -S nvidia nvidia-utils nvidia-settings
 mkinitcpio -P
 
-# Hyprland + tools + Firefox
+# Hyprland + tools + Firefox + nm-applet
 pacman --noconfirm -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal \
-  waybar hyprpaper rofi-wayland kitty firefox \
+  waybar hyprpaper rofi-wayland kitty alacritty firefox network-manager-applet \
   noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-font-awesome
 
 # greetd (agreety)
@@ -212,10 +198,9 @@ user = "greeter"
 EOT
 systemctl enable greetd
 
-# Hyprland user config (US layout + basic binds)
+# Hyprland config utente (US layout + bind base)
 mkdir -p /home/\$USERNAME/.config/{hypr,waybar,rofi,hyprpaper}
 cat >/home/\$USERNAME/.config/hypr/hyprland.conf <<'EOT'
-# Hyprland config
 monitor=,preferred,auto,1
 exec-once = waybar &
 exec-once = hyprpaper &
@@ -223,7 +208,7 @@ exec-once = nm-applet --indicator &
 
 input { kb_layout = us }
 
-# Keybinds
+# Binds
 bind = SUPER, Return, exec, kitty
 bind = SUPER, D, exec, rofi -show drun
 bind = SUPER, Q, killactive
@@ -232,7 +217,7 @@ bind = SUPER, V, togglefloating
 bind = SUPER, F, fullscreen
 EOT
 
-# Waybar minimal config
+# Waybar config minima
 cat >/home/\$USERNAME/.config/waybar/config <<'EOT'
 {
   "layer": "top",
@@ -243,14 +228,19 @@ cat >/home/\$USERNAME/.config/waybar/config <<'EOT'
 }
 EOT
 
-# Hyprpaper wallpaper config (fallback path; you can change later)
+# Hyprpaper (wallpaper base)
 cat >/home/\$USERNAME/.config/hyprpaper/hyprpaper.conf <<'EOT'
 wallpaper = ,/usr/share/pixmaps/archlinux-logo.png
 EOT
 
 chown -R \$USERNAME:\$USERNAME /home/\$USERNAME/.config
+
+# pacman QoL
+sed -i 's/^#Color/Color/' /etc/pacman.conf
+sed -i 's/^#ParallelDownloads = .*/ParallelDownloads = 10/' /etc/pacman.conf
 EOFCHROOT
 
+# --- boot entry + fix UUID ---
 say "Writing boot entry..."
 ROOT_UUID=$(get_uuid "$ROOT") || die "Root UUID not found"
 mkdir -p /mnt/boot/loader/entries
@@ -259,7 +249,7 @@ final_uuid_fix "$ROOT"
 arch-chroot /mnt bootctl update || true
 chmod 600 /mnt/boot/loader/random-seed 2>/dev/null || true
 
-# Optional Wi-Fi profile via NM (so you're online at first boot)
+# --- profilo Wi-Fi NM (opzionale) ---
 echo
 read -r -p "Create Wi-Fi autoconnect profile now? (y/N) " W
 if [[ "${W:-N}" =~ ^[yY]$ ]]; then
