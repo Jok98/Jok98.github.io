@@ -1,4 +1,3 @@
-
 # chmod +x setup_ubuntu.sh
 # ./setup_ubuntu.sh
 
@@ -110,37 +109,6 @@ else
     skipped_components+=("Git")
 fi
 
-# -----------------------
-# Install PostgreSQL
-# -----------------------
-if ! command -v psql &> /dev/null; then
-    log "🐘 Installing PostgreSQL..."
-    sudo apt install -y postgresql postgresql-contrib
-    if check_command "PostgreSQL installation"; then
-        installed_components+=("PostgreSQL")
-
-        # Enable and start PostgreSQL service
-        sudo systemctl enable postgresql
-        sudo systemctl start postgresql
-        check_command "Start PostgreSQL service"
-
-        # Create default user and database
-        log "👤 Creating PostgreSQL user and database for $USER..."
-        sudo -u postgres psql -c "DO \$\$
-BEGIN
-   IF NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = '$USER') THEN
-      CREATE ROLE $USER WITH SUPERUSER CREATEDB CREATEROLE LOGIN PASSWORD '$USER';
-   END IF;
-END
-\$\$;" 2>/dev/null
-        sudo -u postgres createdb $USER 2>/dev/null
-        check_command "Create default PostgreSQL user and database"
-    fi
-else
-    log "✅ PostgreSQL already installed."
-    skipped_components+=("PostgreSQL")
-fi
-
 
 # -----------------------
 # Install Helm (binary version)
@@ -224,28 +192,6 @@ if ! command -v docker &> /dev/null; then
 else
     log "✅ Docker already installed."
     skipped_components+=("Docker")
-fi
-
-# -----------------------
-# Ask for Docker Hub login
-# -----------------------
-read -p "🔑 Do you want to log in to Docker Hub now? [y/N]: " docker_login_choice
-if [[ "$docker_login_choice" =~ ^[Yy]$ ]]; then
-    log "🔐 Docker Hub login..."
-    read -p "📝 Enter Docker Hub username: " docker_username
-    read -s -p "🔑 Enter Docker Hub password: " docker_password
-    echo    # move to new line after password input
-    echo "$docker_password" | docker login --username "$docker_username" --password-stdin
-    if check_command "Docker Hub login"; then
-        installed_components+=("Docker Hub login")
-        log "✅ Docker Hub login successful."
-    else
-        log "⚠️ Docker Hub login failed. You can try manually with: docker login"
-        failed_components+=("Docker Hub login")
-    fi
-else
-    log "ℹ️ Skipping Docker Hub login."
-    skipped_components+=("Docker Hub login")
 fi
 
 
