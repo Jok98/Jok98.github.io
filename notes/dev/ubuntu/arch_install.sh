@@ -2,14 +2,13 @@
 set -euo pipefail
 
 # ====== PARAMETRI ======
-DISK="/dev/nvme0n1"          # VERRA' AZZERATO
+DISK="/dev/nvme0n1"          # VERRA' AZZERATO COMPLETAMENTE
 HOSTNAME="archbox"
 USERNAME="jok"
-USERPASS="changeme"          # cambia dopo il primo boot
+USERPASS="changeme"          # cambiala dopo il primo boot
 LOCALE="it_IT.UTF-8"
 TIMEZONE="Europe/Rome"
 SWAP_SIZE="8G"
-WIFI_IF="wlan0"
 # ========================
 
 say() { echo -e "\n[+] $*"; }
@@ -17,6 +16,8 @@ die() { echo "ERR: $*" >&2; exit 1; }
 
 need_cmd() { command -v "$1" >/dev/null 2>&1 || die "comando mancante: $1"; }
 need_cmd sgdisk; need_cmd mkfs.btrfs; need_cmd pacstrap
+
+online() { ping -c1 -W2 archlinux.org >/dev/null 2>&1; }
 
 confirm_wipe() {
   echo "****************************"
@@ -34,46 +35,14 @@ confirm_wipe() {
   esac
 }
 
-online() { ping -c1 -W2 archlinux.org >/dev/null 2>&1; }
-
-ensure_network() {
-  if online; then
-    say "Rete già attiva, salto configurazione Wi-Fi."
-    return
-  fi
-  say "Configuro iwd per DHCP..."
-  mkdir -p /var/lib/iwd
-  cat >/var/lib/iwd/main.conf <<'EOF'
-[General]
-EnableNetworkConfiguration=true
-[Network]
-NameResolvingService=systemd
-EOF
-  systemctl restart iwd
-
-  read -r -p "SSID Wi-Fi: " WIFI_SSID
-  read -r -s -p "Password Wi-Fi: " WIFI_PSK; echo
-  iwctl station "$WIFI_IF" scan || true
-  iwctl station "$WIFI_IF" connect "$WIFI_SSID" <<<"$WIFI_PSK" || die "Connessione Wi-Fi fallita"
-
-  say "Attendo assegnazione IP..."
-  for i in {1..15}; do
-    online && break
-    sleep 1
-  done
-  online || die "Nessuna rete. Verifica SSID/PSK e riprova."
-}
-
 get_root_part() { echo "${DISK}p2"; }
 get_esp_part()  { echo "${DISK}p1"; }
 get_uuid()      { blkid -s UUID -o value "$1"; }
 
 write_arch_entry() {
   local esp="$1" root_uuid="$2" ucode_line=""
-  # microcode verrà installato in chroot; l'entry lo gestisce comunque
   [ -f /mnt/boot/intel-ucode.img ] && ucode_line="initrd  /intel-ucode.img"
   [ -f /mnt/boot/amd-ucode.img ]   && ucode_line="initrd  /amd-ucode.img"
-
   cat >"$esp/loader/entries/arch.conf" <<EOT
 title   Arch Linux
 linux   /vmlinuz-linux
@@ -87,13 +56,14 @@ final_uuid_fix() {
   local rootp rootuuid
   rootp=$(get_root_part)
   rootuuid=$(get_uuid "$rootp") || die "Impossibile leggere UUID di $rootp"
-  sed -i "s|root=UUID=[^ ]* |root=UUID=${rootuuid} |" /mnt/boot/loader/entries/arch.conf
+  sed -i "s|root=UUID=[^ ]*|root=UUID=${rootuuid}|" /mnt/boot/loader/entries/arch.conf
   grep -q "root=UUID=${rootuuid}" /mnt/boot/loader/entries/arch.conf || die "Patch UUID fallita"
   say "UUID root verificato in arch.conf: ${rootuuid}"
 }
 
+# --- prerequisiti ---
 confirm_wipe
-ensure_network
+online || die "Nessuna rete: connettiti manualmente con 'iwctl' e rilancia lo script."
 
 # --- 1) Partizionamento ---
 say "Partiziono $DISK (GPT: ESP 512M + ROOT Btrfs)..."
@@ -167,6 +137,7 @@ useradd -m -G wheel,audio,video,storage -s /bin/bash "$USERNAME"
 echo "${USERNAME}:${USERPASS}" | chpasswd
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
+# Network: NM + iwd backend
 mkdir -p /etc/NetworkManager/conf.d
 cat >/etc/NetworkManager/conf.d/wifi_backend.conf <<EOT
 [device]
@@ -175,7 +146,7 @@ EOT
 systemctl enable NetworkManager iwd
 systemctl enable fstrim.timer
 
-# microcode
+# microcode CPU
 if lscpu | grep -qi intel; then pacman --noconfirm -S intel-ucode; fi
 if lscpu | grep -qi amd;   then pacman --noconfirm -S amd-ucode;   fi
 
@@ -201,13 +172,15 @@ pacman --noconfirm -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal \
   waybar hyprpaper rofi-wayland alacritty \
   noto-fonts noto-fonts-cjk ttf-jetbrains-mono
 
-# greetd + tuigreet
-pacman --noconfirm -S greetd tuigreet
+# greetd (con agreety)
+pacman --noconfirm -S greetd
 cat >/etc/greetd/config.toml <<'EOT'
 [terminal]
 vt = 1
+
 [default_session]
-command = "tuigreet --time --cmd Hyprland"
+# agreety mostra un prompt TUI, poi avvia Hyprland dopo il login
+command = "agreety --cmd Hyprland"
 user = "greeter"
 EOT
 systemctl enable greetd
@@ -217,13 +190,12 @@ sed -i 's/^#Color/Color/' /etc/pacman.conf
 sed -i 's/^#ParallelDownloads = .*/ParallelDownloads = 10/' /etc/pacman.conf
 EOFCHROOT
 
-# --- 8) Entry di boot robusta con UUID certo ---
+# --- 8) Entry di boot con UUID certo + update ---
 say "Scrivo entry systemd-boot con UUID certo..."
 ROOT_UUID=$(get_uuid "$ROOT") || die "UUID root non trovato"
 mkdir -p /mnt/boot/loader/entries
 write_arch_entry "/mnt/boot" "$ROOT_UUID"
 
-# --- 9) Verifica/Patch UUID e aggiornamento bootloader ---
 final_uuid_fix
 arch-chroot /mnt bootctl update || true
 chmod 600 /mnt/boot/loader/random-seed 2>/dev/null || true
