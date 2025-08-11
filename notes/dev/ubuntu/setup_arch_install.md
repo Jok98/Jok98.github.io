@@ -16,8 +16,6 @@ lsblk -o NAME,SIZE,TYPE,MOUNTPOINTS
 Mount the usb
 ```shell
 mount /dev/sdb1 /mnt
-cd /mnt
-ls -l | grep arch_install.sh
 ```
 
 Run the sh
