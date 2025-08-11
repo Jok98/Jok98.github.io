@@ -1,6 +1,5 @@
 Connect to internet
 ```shell
-loadkeys it
 iwctl
 [iwd]# device list
 [iwd]# station wlan0 scan
