@@ -374,6 +374,10 @@
     "name": "conf",
     "contents": [
       {
+        "content": "arch_conf.sh",
+        "link": "notes/dev/ubuntu/conf/arch_conf"
+      },
+      {
         "content": "gui_upgrade.md",
         "link": "notes/dev/ubuntu/conf/gui_upgrade"
       },
