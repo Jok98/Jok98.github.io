@@ -357,6 +357,10 @@
         "link": "notes/dev/ubuntu/arch_install"
       },
       {
+        "content": "mount-arch.sh",
+        "link": "notes/dev/ubuntu/mount-arch"
+      },
+      {
         "content": "ssh_key.md",
         "link": "notes/dev/ubuntu/ssh_key"
       }
