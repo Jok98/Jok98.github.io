@@ -13,6 +13,14 @@ Find the usb with the sh
 lsblk -o NAME,SIZE,TYPE,MOUNTPOINTS
 ```
 
+### - via curl
+```shell
+curl -fsSL https://raw.githubusercontent.com/Jok98/Jok98.github.io/main/notes/dev/ubuntu/arch_install.sh | bash -s -- nvme0n1
+```
+
+
+
+### - via usb
 Mount the usb
 ```shell
 mount /dev/sdb1 /mnt
