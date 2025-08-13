@@ -206,7 +206,9 @@ exec-once = waybar &
 exec-once = hyprpaper &
 exec-once = nm-applet --indicator &
 
-input { kb_layout = us }
+input {
+  kb_layout = us
+}
 
 # Binds
 bind = SUPER, Return, exec, kitty
@@ -249,19 +251,6 @@ final_uuid_fix "$ROOT"
 arch-chroot /mnt bootctl update || true
 chmod 600 /mnt/boot/loader/random-seed 2>/dev/null || true
 
-# --- profilo Wi-Fi NM (opzionale) ---
-echo
-read -r -p "Create Wi-Fi autoconnect profile now? (y/N) " W
-if [[ "${W:-N}" =~ ^[yY]$ ]]; then
-  read -r -p "SSID: " SSID
-  read -r -s -p "Password: " PSK; echo
-  arch-chroot /mnt nmcli connection add type wifi ifname "*" con-name home-wifi ssid "$SSID"
-  arch-chroot /mnt nmcli connection modify home-wifi wifi-sec.key-mgmt wpa-psk wifi-sec.psk "$PSK"
-  arch-chroot /mnt nmcli connection modify home-wifi connection.autoconnect yes ipv4.method auto ipv6.method auto
-  say "Wi-Fi profile 'home-wifi' created with autoconnect."
-else
-  say "Skipped Wi-Fi profile creation."
-fi
 
 say "All done. Unmounting and rebooting..."
 swapoff /mnt/swap/swapfile 2>/dev/null || true
