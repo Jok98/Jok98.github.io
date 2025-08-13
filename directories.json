@@ -195,6 +195,56 @@
   }
 ,
   {
+    "name": "linux",
+    "contents": [
+      {
+        "content": "ssh_key.md",
+        "link": "notes/dev/linux/ssh_key"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "arch",
+    "contents": [
+      {
+        "content": "arch_conf.sh",
+        "link": "notes/dev/linux/arch/arch_conf"
+      },
+      {
+        "content": "arch_install.sh",
+        "link": "notes/dev/linux/arch/arch_install"
+      },
+      {
+        "content": "mount-arch.sh",
+        "link": "notes/dev/linux/arch/mount-arch"
+      },
+      {
+        "content": "setup_arch_install.md",
+        "link": "notes/dev/linux/arch/setup_arch_install"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "ubuntu",
+    "contents": [
+      {
+        "content": "gui_upgrade.md",
+        "link": "notes/dev/linux/ubuntu/gui_upgrade"
+      },
+      {
+        "content": "ubuntu_conf.sh",
+        "link": "notes/dev/linux/ubuntu/ubuntu_conf"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
     "name": "microservices",
     "contents": [
       {
@@ -344,49 +394,6 @@
   }
 
     ]
-  }
-
-    ]
-  }
-,
-  {
-    "name": "ubuntu",
-    "contents": [
-      {
-        "content": "arch_install.sh",
-        "link": "notes/dev/ubuntu/arch_install"
-      },
-      {
-        "content": "mount-arch.sh",
-        "link": "notes/dev/ubuntu/mount-arch"
-      },
-      {
-        "content": "setup_arch_install.md",
-        "link": "notes/dev/ubuntu/setup_arch_install"
-      },
-      {
-        "content": "ssh_key.md",
-        "link": "notes/dev/ubuntu/ssh_key"
-      }
-    ],
-    "subsections": [
-  {
-    "name": "conf",
-    "contents": [
-      {
-        "content": "arch_conf.sh",
-        "link": "notes/dev/ubuntu/conf/arch_conf"
-      },
-      {
-        "content": "gui_upgrade.md",
-        "link": "notes/dev/ubuntu/conf/gui_upgrade"
-      },
-      {
-        "content": "ubuntu_conf.sh",
-        "link": "notes/dev/ubuntu/conf/ubuntu_conf"
-      }
-    ],
-    "subsections": []
   }
 
     ]
