@@ -215,10 +215,6 @@
         "link": "notes/dev/linux/arch/arch_install"
       },
       {
-        "content": "mount-arch.sh",
-        "link": "notes/dev/linux/arch/mount-arch"
-      },
-      {
         "content": "setup_arch_install.md",
         "link": "notes/dev/linux/arch/setup_arch_install"
       }
