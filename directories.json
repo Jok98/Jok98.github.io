@@ -195,6 +195,52 @@
   }
 ,
   {
+    "name": "linux",
+    "contents": [
+      {
+        "content": "ssh_key.md",
+        "link": "notes/dev/linux/ssh_key"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "arch",
+    "contents": [
+      {
+        "content": "arch_conf.sh",
+        "link": "notes/dev/linux/arch/arch_conf"
+      },
+      {
+        "content": "arch_install.sh",
+        "link": "notes/dev/linux/arch/arch_install"
+      },
+      {
+        "content": "setup_arch_install.md",
+        "link": "notes/dev/linux/arch/setup_arch_install"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
+    "name": "ubuntu",
+    "contents": [
+      {
+        "content": "gui_upgrade.md",
+        "link": "notes/dev/linux/ubuntu/gui_upgrade"
+      },
+      {
+        "content": "ubuntu_conf.sh",
+        "link": "notes/dev/linux/ubuntu/ubuntu_conf"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
     "name": "microservices",
     "contents": [
       {
@@ -226,7 +272,19 @@
         "link": "notes/dev/microservices/ports_std"
       }
     ],
+    "subsections": [
+  {
+    "name": "rabbitMQ",
+    "contents": [
+      {
+        "content": "rabbbitmq.md",
+        "link": "notes/dev/microservices/rabbitMQ/rabbbitmq"
+      }
+    ],
     "subsections": []
+  }
+
+    ]
   }
 ,
   {
@@ -278,6 +336,10 @@
         "link": "notes/dev/springboot/rest_api/rest_api"
       },
       {
+        "content": "servlet-mvc-webflux.md",
+        "link": "notes/dev/springboot/rest_api/servlet-mvc-webflux"
+      },
+      {
         "content": "validation.md",
         "link": "notes/dev/springboot/rest_api/validation"
       }
@@ -315,31 +377,13 @@
         "link": "notes/dev/springboot/spring_security/Spring_Security"
       }
     ],
-    "subsections": []
-  }
-
-    ]
-  }
-,
-  {
-    "name": "ubuntu",
-    "contents": [
-      {
-        "content": "ssh_key.md",
-        "link": "notes/dev/ubuntu/ssh_key"
-      }
-    ],
     "subsections": [
   {
-    "name": "conf",
+    "name": "jwt",
     "contents": [
       {
-        "content": "ubuntu_conf.sh",
-        "link": "notes/dev/ubuntu/conf/ubuntu_conf"
-      },
-      {
-        "content": "uninstall_ubuntu_conf.sh",
-        "link": "notes/dev/ubuntu/conf/uninstall_ubuntu_conf"
+        "content": "refresh_token.md",
+        "link": "notes/dev/springboot/spring_security/jwt/refresh_token"
       }
     ],
     "subsections": []
@@ -350,7 +394,14 @@
 
     ]
   }
+
+    ]
+  }
 ,
+  {
+    "name": "other",
+    "contents": [],
+    "subsections": [
   {
     "name": "japanese",
     "contents": [],
@@ -364,19 +415,19 @@
     "contents": [
       {
         "content": "da.md",
-        "link": "notes/japanese/bunpo/doshi/da"
+        "link": "notes/other/japanese/bunpo/doshi/da"
       },
       {
         "content": "godan_u.md",
-        "link": "notes/japanese/bunpo/doshi/godan_u"
+        "link": "notes/other/japanese/bunpo/doshi/godan_u"
       },
       {
         "content": "ichidan_ru.md",
-        "link": "notes/japanese/bunpo/doshi/ichidan_ru"
+        "link": "notes/other/japanese/bunpo/doshi/ichidan_ru"
       },
       {
         "content": "irregular.md",
-        "link": "notes/japanese/bunpo/doshi/irregular"
+        "link": "notes/other/japanese/bunpo/doshi/irregular"
       }
     ],
     "subsections": []
@@ -390,11 +441,11 @@
     "contents": [
       {
         "content": "Hiragana.md",
-        "link": "notes/japanese/kakitori_yomutori/Hiragana"
+        "link": "notes/other/japanese/kakitori_yomutori/Hiragana"
       },
       {
         "content": "Katakana.md",
-        "link": "notes/japanese/kakitori_yomutori/Katakana"
+        "link": "notes/other/japanese/kakitori_yomutori/Katakana"
       }
     ],
     "subsections": []
@@ -412,7 +463,7 @@
     "contents": [
       {
         "content": "diary.md",
-        "link": "notes/trip/osaka_2024/diary"
+        "link": "notes/other/trip/osaka_2024/diary"
       }
     ],
     "subsections": []
@@ -423,10 +474,13 @@
     "contents": [
       {
         "content": "IMG_20191002_123759_650.jpg",
-        "link": "notes/trip/sapporo_2019/IMG_20191002_123759_650"
+        "link": "notes/other/trip/sapporo_2019/IMG_20191002_123759_650"
       }
     ],
     "subsections": []
+  }
+
+    ]
   }
 
     ]
