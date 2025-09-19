@@ -10,12 +10,7 @@
     "subsections": [
   {
     "name": "devops",
-    "contents": [
-      {
-        "content": "TODO.md",
-        "link": "notes/dev/devops/TODO"
-      }
-    ],
+    "contents": [],
     "subsections": [
   {
     "name": "docker",
