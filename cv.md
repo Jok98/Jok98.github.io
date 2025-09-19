@@ -87,10 +87,6 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg" alt="Prometheus"/>
     <span>Prometheus</span>
   </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg" alt="Grafana"/>
-    <span>Grafana</span>
-  </div>
 </div>
 
 ## Education
