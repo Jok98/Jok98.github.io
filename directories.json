@@ -195,6 +195,17 @@
   }
 ,
   {
+    "name": "java",
+    "contents": [
+      {
+        "content": "main_features.md",
+        "link": "notes/dev/java/main_features"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "linux",
     "contents": [
       {
