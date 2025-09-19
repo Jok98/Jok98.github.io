@@ -3,7 +3,7 @@ layout: cv
 title: Resume
 ---
 
-# Matteo Moi - Senior Software Engineer
+# Matteo Moi - Software Engineer
 
 
 <div class="cv-header">
