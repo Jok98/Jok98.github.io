@@ -151,7 +151,7 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
   <tr>
     <td width="30%">
       <h3>Objectway</h3>
-      <strong>Senior Software Engineer</strong><br/>
+      <strong>Software Engineer</strong><br/>
       <em>January 2024 - Present</em>
     </td>
     <td width="70%">
