@@ -340,3 +340,39 @@ a:focus-visible,
     padding: 8px 12px;
   }
 }
+
+/* Enhanced visibility and spacing for file items on the main page */
+.section ul {
+  margin-top: 14px;              /* more space under directory title */
+  padding-top: 8px;              /* breathing space above the list */
+  border-top: 1px dashed #3c3c3c;/* subtle separator from directory header */
+}
+
+.section ul li {               /* vertical spacing between items */
+  margin: 8px 0;
+}
+
+/* Style only direct file links (not subsections) */
+.section ul li > a.content-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  border: 1px solid transparent;
+}
+
+.section ul li > a.content-link::before {
+  content: "📄"; /* simple document icon */
+}
+
+.section ul li > a.content-link:hover {
+  background-color: #252526;
+  border-color: #3c3c3c;
+}
+
+/* Give nested directories a bit of space from the files list */
+.section details.subsection {
+  margin-top: 10px;
+}
