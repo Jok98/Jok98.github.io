@@ -213,16 +213,8 @@
     "name": "arch",
     "contents": [
       {
-        "content": "arch_conf.sh",
-        "link": "notes/dev/linux/arch/arch_conf"
-      },
-      {
-        "content": "arch_install.sh",
-        "link": "notes/dev/linux/arch/arch_install"
-      },
-      {
-        "content": "setup_arch_install.md",
-        "link": "notes/dev/linux/arch/setup_arch_install"
+        "content": "arch_installation.md",
+        "link": "notes/dev/linux/arch/arch_installation"
       }
     ],
     "subsections": []
