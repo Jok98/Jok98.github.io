@@ -9,6 +9,25 @@
     ],
     "subsections": [
   {
+    "name": "c",
+    "contents": [
+      {
+        "content": "1_c_init.md",
+        "link": "notes/dev/c/1_c_init"
+      },
+      {
+        "content": "2_preprocessor.md",
+        "link": "notes/dev/c/2_preprocessor"
+      },
+      {
+        "content": "3_function.md",
+        "link": "notes/dev/c/3_function"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "devops",
     "contents": [],
     "subsections": [
