@@ -1,0 +1,46 @@
+# C
+
+- Hello World program in C : hello.c
+```text
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+---
+
+- Compiler : GCC
+```bash
+❯ cc --version
+cc (GCC) 15.2.1 20250813
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
+---
+
+- To compile :
+```bash
+cc hello.c -o hello
+```
+Switches:
+- `-o` : specify the output file name, w/out -o, the output file will be a.out by default
+- `-S` : generate assembly code (ex hello.s)
+- `-O` : optimize the code (ex -O2), the compiler will try to optimize the code maintaining the same functionality
+- `-g` : generate debug information (ex hello with gdb)
+- `-Wall` : enable all warnings
+- `-Werror` : treat warnings as errors
+- `-std=cXX` : specify the C standard to use (ex -std=c11, -std=c99, -std=c89)
+
+---
+
+- To run :
+
+Is a binary executable file
+```bash
+./hello
+```

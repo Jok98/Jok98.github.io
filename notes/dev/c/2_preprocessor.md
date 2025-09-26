@@ -1,0 +1,15 @@
+# Preprocessor
+es. `# include <stdio.h>`
+
+.h stands for header file
+
+The preprocessor is a program that processes the source code before it is compiled.
+
+It handles directives for including files, macro definitions, and conditional compilation.
+
+Keywords : 
+- `include` : includes the contents of a file
+- `define` : defines a macro
+- `ifdef` : checks if a macro is defined
+- `ifndef` : checks if a macro is not defined
+- `endif` : ends a conditional directive
