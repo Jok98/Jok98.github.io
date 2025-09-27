@@ -12,16 +12,20 @@
     "name": "c",
     "contents": [
       {
-        "content": "1_c_init.md",
-        "link": "notes/dev/c/1_c_init"
+        "content": "1.0_c_init.md",
+        "link": "notes/dev/c/1.0_c_init"
       },
       {
-        "content": "2_preprocessor.md",
-        "link": "notes/dev/c/2_preprocessor"
+        "content": "1.1_variable_lifecycle.md",
+        "link": "notes/dev/c/1.1_variable_lifecycle"
       },
       {
-        "content": "3_function.md",
-        "link": "notes/dev/c/3_function"
+        "content": "2.0_preprocessor.md",
+        "link": "notes/dev/c/2.0_preprocessor"
+      },
+      {
+        "content": "3.0_function.md",
+        "link": "notes/dev/c/3.0_function"
       }
     ],
     "subsections": []
