@@ -5,6 +5,10 @@
       {
         "content": "architecture.md",
         "link": "notes/dev/architecture"
+      },
+      {
+        "content": "books.md",
+        "link": "notes/dev/books"
       }
     ],
     "subsections": [
