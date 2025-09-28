@@ -29,7 +29,7 @@
 
 ## 7) Databases and data-intensive systems
 
-* [Database System Concepts](https://www.db-book.com/) ([DB Book][18])
+* [Database System Concepts](https://www.db-book.com/)
 
 ## 9) Software engineering and design
 
