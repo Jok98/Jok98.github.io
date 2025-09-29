@@ -4,6 +4,6 @@ theme: minima
 permalink: pretty
 
 markdown: kramdown
-include:
-  - assets
-  - notes
+kramdown:
+  input: GFM
+  parse_block_html: true
