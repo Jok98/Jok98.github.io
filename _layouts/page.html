@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign is_note = page.path | default: '' %}
+{% assign hide_title = false %}
+{% if is_note contains 'notes/' %}
+  {% assign hide_title = true %}
+{% endif %}
+{% if page.show_title == true %}
+  {% assign hide_title = false %}
+{% elsif page.show_title == false %}
+  {% assign hide_title = true %}
+{% endif %}
+
+<article class="post">
+  {% unless hide_title %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  {% endunless %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
