@@ -1,14 +1,10 @@
 # Jok98.github.io
 
-Before push to github
-```bash
-./create_json.sh
-```
-to recreate directories.json file
+The site is reachable at: [https://jok98.github.io](https://jok98.github.io)
+
+It contains my notes about my studies.
+
 
 ---
 
-To test locally
-```bash
-jekyll build
-```
+The deployment is managed through github actions [execute-sh.yml](.github/workflows/execute-sh.yml)
