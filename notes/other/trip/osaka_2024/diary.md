@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Osaka 2024
+extra_css: /assets/css/photo_grid.css
 ---
 
 # Osaka 2024
