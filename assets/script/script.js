@@ -95,6 +95,44 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  const sidebarLayout = document.querySelector('.page-layout');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+  const notesSidebar = document.getElementById('notes-sidebar');
+
+  if (sidebarLayout && sidebarToggle && notesSidebar) {
+    const collapsedClass = 'sidebar-collapsed';
+    const expandedClass = 'sidebar-expanded';
+    const label = sidebarToggle.querySelector('.toggle-label');
+
+    const setState = (expanded) => {
+      if (expanded) {
+        sidebarLayout.classList.add(expandedClass);
+        sidebarLayout.classList.remove(collapsedClass);
+        notesSidebar.setAttribute('aria-hidden', 'false');
+        sidebarToggle.setAttribute('aria-expanded', 'true');
+        if (label) {
+          label.textContent = 'Nascondi navigazione';
+        }
+      } else {
+        sidebarLayout.classList.add(collapsedClass);
+        sidebarLayout.classList.remove(expandedClass);
+        notesSidebar.setAttribute('aria-hidden', 'true');
+        sidebarToggle.setAttribute('aria-expanded', 'false');
+        if (label) {
+          label.textContent = 'Mostra navigazione';
+        }
+      }
+    };
+
+    setState(false);
+
+    sidebarToggle.addEventListener('click', () => {
+      const isExpanded = sidebarLayout.classList.contains(expandedClass);
+      setState(!isExpanded);
+    });
+  }
+
+
   function createSectionElement(section) {
     const details = document.createElement("details");
     details.classList.add("section");

@@ -24,8 +24,13 @@
         {{ content }}
     </main>
 {% else %}
-    <div class="page-layout">
-        <aside class="notes-sidebar">
+    <div class="sidebar-controls">
+        <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-controls="notes-sidebar">
+            <span class="toggle-label">Mostra navigazione</span>
+        </button>
+    </div>
+    <div class="page-layout sidebar-collapsed">
+        <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true">
             <h2 class="sidebar-title">Notes &amp; Resources</h2>
             <div id="search-container">
                 <input type="text" id="search-input" placeholder="Search documents by title...">
