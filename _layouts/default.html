@@ -23,13 +23,13 @@
     </nav>
 </header>
 {% if page.sidebar == false %}
-    <main class="page-content">
+    <main class="page-content{% if page.page_class %} {{ page.page_class }}{% endif %}">
         {{ content }}
     </main>
 {% else %}
     <div class="sidebar-controls">
         <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-controls="notes-sidebar">
-            <span class="toggle-label">Show navbar</span>
+            <span class="toggle-label">Mostra navigazione</span>
         </button>
     </div>
     <div class="page-layout sidebar-collapsed">
@@ -41,7 +41,7 @@
             </div>
             <div id="sections-container"></div>
         </aside>
-        <main class="content-area">
+        <main class="content-area{% if page.page_class %} {{ page.page_class }}{% endif %}">
             {{ content }}
         </main>
     </div>

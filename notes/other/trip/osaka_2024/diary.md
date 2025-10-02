@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Osaka 2024
+sidebar: false
+page_class: diary-content
 extra_css: /assets/css/photo_grid.css
 ---
 
