@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(sectionElement);
       });
       allContents = collectContents(data);
+      highlightCurrentEntry();
     });
 
   const searchInput = document.getElementById("search-input");
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     matches.forEach((item) => {
       const link = document.createElement("a");
-      link.href = item.link;
+      link.href = formatPath(item.link);
       link.textContent = item.content;
       link.classList.add("content-link");
       searchResults.appendChild(link);
@@ -46,6 +47,48 @@ document.addEventListener("DOMContentLoaded", () => {
     return results;
   }
 
+  function formatPath(path) {
+    if (!path) {
+      return "#";
+    }
+    return path.startsWith("/") ? path : `/${path}`;
+  }
+
+  function highlightCurrentEntry() {
+    const current = normalizePath(window.location.pathname);
+    const links = document.querySelectorAll("#sections-container a.content-link");
+    links.forEach((link) => {
+      const linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
+      if (linkPath === current) {
+        link.classList.add("active-link");
+        expandParents(link);
+      }
+    });
+  }
+
+  function normalizePath(path) {
+    if (!path) {
+      return "/";
+    }
+    let normalized = path.startsWith("/") ? path : `/${path}`;
+    normalized = normalized.replace(/\/index\.html$/, "/");
+    if (normalized.length > 1 && normalized.endsWith("/")) {
+      normalized = normalized.slice(0, -1);
+    }
+    return normalized;
+  }
+
+  function expandParents(element) {
+    let parent = element.parentElement;
+    while (parent) {
+      if (parent.tagName === "DETAILS") {
+        parent.open = true;
+      }
+      parent = parent.parentElement;
+    }
+  }
+
+
   function createSectionElement(section) {
     const details = document.createElement("details");
     details.classList.add("section");
@@ -60,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       section.contents.forEach((contentItem) => {
         const item = document.createElement("li");
         const link = document.createElement("a");
-        link.href = contentItem.link;
+        link.href = formatPath(contentItem.link);
         link.textContent = contentItem.content;
         link.classList.add("content-link");
         item.appendChild(link);

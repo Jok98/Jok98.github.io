@@ -456,3 +456,12 @@ a:focus-visible,
     width: 100%;
   }
 }
+
+.notes-sidebar .content-link.active-link {
+  background-color: #1e3a5f;
+  border-color: #1e90ff;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px rgba(30, 144, 255, 0.4);
+}
+
