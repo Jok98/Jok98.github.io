@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let allContents = [];
 
-  fetch("directories.json")
+  fetch("/directories.json")
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("sections-container");
