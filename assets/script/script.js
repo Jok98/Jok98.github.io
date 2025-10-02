@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         notesSidebar.setAttribute('aria-hidden', 'true');
         sidebarToggle.setAttribute('aria-expanded', 'false');
         if (label) {
-          label.textContent = 'Mostra navigazione';
+          label.textContent = 'Show navbar';
         }
       }
     };
