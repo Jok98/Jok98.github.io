@@ -22,13 +22,12 @@ extra_css: /assets/css/photo_grid.css
         </td>
     </tr>
     <tr>
-                <td>
-            <img src="/assets/utils/trip/06_12_24/gate.jpg" />
-            <br>Malpensa airport
+        <td>
+            <img src="/assets/utils/trip/06_12_24/airplane_food.jpg" width="400" height="400" />
+            <br>Airplane food
         </td>
         <td>
-            <img src="/assets/utils/trip/06_12_24/airplane.jpg" />
-            <br>Airplane
+            <br>
         </td>
     </tr>
   </tbody>
