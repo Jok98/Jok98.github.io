@@ -383,13 +383,16 @@ a:focus-visible,
   grid-template-columns: minmax(320px, 1fr) minmax(0, 2fr);
   align-items: start;
   gap: 24px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 32px;
   box-sizing: border-box;
 }
 
 .notes-sidebar {
+  width: 100%;
+  box-sizing: border-box;
   background-color: #252526;
   border: 1px solid #3c3c3c;
   border-radius: 8px;
