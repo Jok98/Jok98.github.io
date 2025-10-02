@@ -19,19 +19,25 @@
         </div>
     </nav>
 </header>
-<div class="page-layout">
-    <aside class="notes-sidebar">
-        <h2 class="sidebar-title">Notes &amp; Resources</h2>
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search documents by title...">
-            <div id="search-results"></div>
-        </div>
-        <div id="sections-container"></div>
-    </aside>
-    <main class="content-area">
+{% if page.sidebar == false %}
+    <main class="page-content">
         {{ content }}
     </main>
-</div>
+{% else %}
+    <div class="page-layout">
+        <aside class="notes-sidebar">
+            <h2 class="sidebar-title">Notes &amp; Resources</h2>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search documents by title...">
+                <div id="search-results"></div>
+            </div>
+            <div id="sections-container"></div>
+        </aside>
+        <main class="content-area">
+            {{ content }}
+        </main>
+    </div>
+{% endif %}
 <script src="/assets/script/script.js"></script>
 </body>
 </html>

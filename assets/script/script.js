@@ -5,34 +5,40 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("sections-container");
-      data.forEach((section) => {
-        const sectionElement = createSectionElement(section);
-        container.appendChild(sectionElement);
-      });
+      if (container) {
+        data.forEach((section) => {
+          const sectionElement = createSectionElement(section);
+          container.appendChild(sectionElement);
+        });
+      }
       allContents = collectContents(data);
-      highlightCurrentEntry();
+      if (container) {
+        highlightCurrentEntry();
+      }
     });
 
   const searchInput = document.getElementById("search-input");
   const searchResults = document.getElementById("search-results");
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
-    searchResults.innerHTML = "";
-    if (!query) {
-      return;
-    }
-    const matches = allContents.filter((item) =>
-      item.content.toLowerCase().includes(query),
-    );
-    matches.forEach((item) => {
-      const link = document.createElement("a");
-      link.href = formatPath(item.link);
-      link.textContent = item.content;
-      link.classList.add("content-link");
-      searchResults.appendChild(link);
-      searchResults.appendChild(document.createElement("br"));
+  if (searchInput && searchResults) {
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase();
+      searchResults.innerHTML = "";
+      if (!query) {
+        return;
+      }
+      const matches = allContents.filter((item) =>
+        item.content.toLowerCase().includes(query),
+      );
+      matches.forEach((item) => {
+        const link = document.createElement("a");
+        link.href = formatPath(item.link);
+        link.textContent = item.content;
+        link.classList.add("content-link");
+        searchResults.appendChild(link);
+        searchResults.appendChild(document.createElement("br"));
+      });
     });
-  });
+  }
 
   function collectContents(sections) {
     let results = [];
