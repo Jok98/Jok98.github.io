@@ -72,7 +72,7 @@
 ## Handwriten version :
 <details open> 
 
-<img src="../../../assets/utils/dev/java/main_features/main_feature-1.png" alt="main_feature-1" style="width:595px; height:842px; object-fit:cover; display:block; margin:auto;" />
+<img src="/assets/utils/dev/java/main_features/main_feature-1.png" alt="main_feature-1" style="width:595px; height:842px; object-fit:cover; display:block; margin:auto;" />
 
 ![main_feature-2.png](../../../assets/utils/dev/java/main_features/main_feature-2.png)
 
