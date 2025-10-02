@@ -39,13 +39,7 @@
   height: 100%;
 }
 
-.photo-grid figure > p {
-  flex: 1;
-  margin: 0;
-  display: flex;
-}
-
-.photo-grid figure > p > img {
+.photo-grid figure > img {
   width: 100%;
   height: 160px;
   object-fit: cover;
@@ -64,7 +58,7 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
 
-  .photo-grid figure > p > img {
+  .photo-grid figure > img {
     height: 200px;
   }
 }
@@ -79,7 +73,7 @@
     gap: 12px;
   }
 
-  .photo-grid figure > p > img {
+  .photo-grid figure > img {
     height: 140px;
   }
 }
