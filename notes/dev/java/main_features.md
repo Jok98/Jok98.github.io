@@ -1,5 +1,8 @@
 # Java Milestones & Main Features
 
+## Digital version :
+<details>
+
 ## 8 (LTS): 
 - lambdas
 - streams
@@ -63,3 +66,14 @@
 - module imports
 - vector API (10th incubator)
 - generational Shenandoah
+
+</details>
+
+## Handwriten version :
+<details open> 
+
+![main_feature-1.png](../../../assets/utils/dev/java/main_features/main_feature-1.png)
+
+![main_feature-2.png](../../../assets/utils/dev/java/main_features/main_feature-2.png)
+
+</details>
