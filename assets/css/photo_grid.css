@@ -1,8 +1,25 @@
+.photo-day {
+  margin: 32px 0;
+  padding: 24px;
+  background: rgba(37, 37, 38, 0.75);
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+}
+
+.photo-day + .photo-day {
+  margin-top: 40px;
+}
+
+.photo-day h2 {
+  margin: 0 0 16px;
+  color: #9cdcfe;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 16px;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 .photo-grid figure {

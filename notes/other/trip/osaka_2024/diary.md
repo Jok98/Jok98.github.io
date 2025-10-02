@@ -6,7 +6,8 @@ extra_css: /assets/css/photo_grid.css
 
 # Osaka 2024
 
-## 06/12/2024
+<div class="photo-day">
+<h2>06/12/2024</h2>
 <div class="photo-grid">
   <figure markdown="1">
   ![Gate](../../../../assets/utils/trip/06_12_24/gate.jpg)
@@ -21,10 +22,10 @@ extra_css: /assets/css/photo_grid.css
   <figcaption>Airplane Food</figcaption>
   </figure>
 </div>
+</div>
 
----
-
-## 07/12/2024
+<div class="photo-day">
+<h2>07/12/2024</h2>
 <div class="photo-grid">
   <figure markdown="1">
   ![Beijing View](../../../../assets/utils/trip/07_12_24/1_beijing_view.jpg)
@@ -55,10 +56,10 @@ extra_css: /assets/css/photo_grid.css
   <figcaption>Shinkoiwa</figcaption>
   </figure>
 </div>
+</div>
 
----
-
-## 08/12/2024
+<div class="photo-day">
+<h2>08/12/2024</h2>
 <div class="photo-grid">
   <figure markdown="1">
   ![Akihabara](../../../../assets/utils/trip/08_12_24/1_akihabara_1.jpg)
@@ -81,10 +82,10 @@ extra_css: /assets/css/photo_grid.css
   <figcaption>Akihabara</figcaption>
   </figure>
 </div>
+</div>
 
----
-
-## 09/12/2024
+<div class="photo-day">
+<h2>09/12/2024</h2>
 <div class="photo-grid">
   <figure markdown="1">
   ![To Fuji](../../../../assets/utils/trip/09_12_24/1_to_fuji_1.jpg)
@@ -151,10 +152,10 @@ extra_css: /assets/css/photo_grid.css
   <figcaption>Sushi</figcaption>
   </figure>
 </div>
+</div>
 
----
-
-## 10/12/2024
+<div class="photo-day">
+<h2>10/12/2024</h2>
 <div class="photo-grid">
   <figure markdown="1">
   ![Disneyland](../../../../assets/utils/trip/10_12_24/Disneyland_1.jpg)
@@ -185,35 +186,4 @@ extra_css: /assets/css/photo_grid.css
   <figcaption>Katsukare</figcaption>
   </figure>
 </div>
-
-## 10/12/2024
-<div class="photo-grid">
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_1.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_2.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_3.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_4.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_5.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/Disneyland_6.jpg" alt="Disneyland">
-    <figcaption>Disneyland</figcaption>
-  </figure>
-  <figure>
-    <img src="../../../../assets/utils/trip/10_12_24/katsukare.jpg" alt="Katsukare">
-    <figcaption>Katsukare</figcaption>
-  </figure>
 </div>
