@@ -379,8 +379,9 @@ a:focus-visible,
 
 
 .page-layout {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(0, 2fr);
+  align-items: start;
   gap: 24px;
   max-width: 1400px;
   margin: 0 auto;
@@ -389,8 +390,6 @@ a:focus-visible,
 }
 
 .notes-sidebar {
-  flex: 0 0 360px;
-  width: 360px;
   background-color: #252526;
   border: 1px solid #3c3c3c;
   border-radius: 8px;
@@ -440,22 +439,27 @@ a:focus-visible,
 }
 
 .content-area {
-  flex: 1;
-  max-width: none;
+  width: 100%;
+  min-width: 0;
   margin: 0;
   padding: 0;
 }
 
 @media (max-width: 900px) {
   .page-layout {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .notes-sidebar {
     position: static;
     max-height: none;
-    width: 100%;
   }
+}
+
+.notes-sidebar .content-link {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .notes-sidebar .content-link.active-link {
