@@ -389,7 +389,8 @@ a:focus-visible,
 }
 
 .notes-sidebar {
-  flex: 0 0 320px;
+  flex: 0 0 360px;
+  width: 360px;
   background-color: #252526;
   border: 1px solid #3c3c3c;
   border-radius: 8px;
