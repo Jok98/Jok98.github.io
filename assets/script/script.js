@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         notesSidebar.setAttribute('aria-hidden', 'false');
         sidebarToggle.setAttribute('aria-expanded', 'true');
         if (label) {
-          label.textContent = 'Nascondi navigazione';
+          label.textContent = 'Hide navbar';
         }
       } else {
         sidebarLayout.classList.add(collapsedClass);
