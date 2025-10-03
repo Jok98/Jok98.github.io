@@ -1,7 +1,7 @@
 # Java Milestones & Main Features
 
 ## Digital version :
-<details>
+<details markdown="1">
 
 ## 8 (LTS): 
 - lambdas
