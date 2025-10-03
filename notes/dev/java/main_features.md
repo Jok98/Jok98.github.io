@@ -72,7 +72,8 @@
 ## Handwriten version :
 <details open> 
 
-![main_feature-2.png](../../../assets/utils/dev/java/main_features/main_feature-1.png)
+<img src="/assets/utils/dev/java/main_features/main_feature-1.png"/>
+
 
 ![main_feature-2.png](../../../assets/utils/dev/java/main_features/main_feature-2.png)
 
