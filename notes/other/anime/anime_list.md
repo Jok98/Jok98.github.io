@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime List
+## Anime List (214)
 
 <div class="anime-gallery">
   <article class="anime-card">
@@ -1079,6 +1079,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx127911-cQVL0dhldFwn.jpg" alt="Shikimori's Not Just a Cutie" />
   </div>
   <span class="anime-card__title">Shikimori's Not Just a Cutie</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx13125-NdLjbmyHmoAD.png" alt="Shinsekai Yori" />
+  </div>
+  <span class="anime-card__title">Shinsekai Yori</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
