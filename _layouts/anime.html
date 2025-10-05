@@ -29,56 +29,51 @@
 </main>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const expandAllButton = document.getElementById('expand-all');
-    const collapseAllButton = document.getElementById('collapse-all');
+    const toggleAllButton = document.getElementById('toggle-all');
     const detailsElements = document.querySelectorAll('details');
 
-    if (expandAllButton) {
-      expandAllButton.addEventListener('click', () => {
+    if (toggleAllButton) {
+      toggleAllButton.addEventListener('click', () => {
+        const allOpen = Array.from(detailsElements).every(details => details.open);
+
         detailsElements.forEach(details => {
-          details.open = true;
+          details.open = !allOpen;
         });
+
+        toggleAllButton.textContent = allOpen ? 'Expand All' : 'Collapse All';
       });
     }
 
-    if (collapseAllButton) {
-      collapseAllButton.addEventListener('click', () => {
+    const searchInput = document.getElementById('anime-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const searchQuery = searchInput.value.toLowerCase();
+        const detailsElements = document.querySelectorAll('details');
+
         detailsElements.forEach(details => {
-          details.open = false;
+          const gallery = details.querySelector('.anime-gallery');
+          const cards = gallery.querySelectorAll('.anime-card');
+          let hasVisibleCard = false;
+
+          cards.forEach(card => {
+            const title = card.querySelector('.anime-card__title').textContent.toLowerCase();
+            if (title.includes(searchQuery)) {
+              card.style.display = 'flex';
+              hasVisibleCard = true;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          if (hasVisibleCard) {
+            details.style.display = 'block';
+          } else {
+            details.style.display = 'none';
+          }
         });
       });
     }
   });
-
-  const searchInput = document.getElementById('anime-search');
-  if (searchInput) {
-    searchInput.addEventListener('input', () => {
-      const searchQuery = searchInput.value.toLowerCase();
-      const detailsElements = document.querySelectorAll('details');
-
-      detailsElements.forEach(details => {
-        const gallery = details.querySelector('.anime-gallery');
-        const cards = gallery.querySelectorAll('.anime-card');
-        let hasVisibleCard = false;
-
-        cards.forEach(card => {
-          const title = card.querySelector('.anime-card__title').textContent.toLowerCase();
-          if (title.includes(searchQuery)) {
-            card.style.display = 'flex';
-            hasVisibleCard = true;
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        if (hasVisibleCard) {
-          details.style.display = 'block';
-        } else {
-          details.style.display = 'none';
-        }
-      });
-    });
-  }
 </script>
 <script src="/assets/script/script.js"></script>
 </body>

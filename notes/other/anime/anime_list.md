@@ -6,8 +6,7 @@ title: Anime List
 ## Anime Counter: 215
 
 <div class="details-controls">
-  <button id="expand-all">Expand All</button>
-  <button id="collapse-all">Collapse All</button>
+  <button id="toggle-all">Collapse All</button>
 </div>
 
 <div class="search-wrapper">
