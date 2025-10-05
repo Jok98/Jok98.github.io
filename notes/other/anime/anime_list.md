@@ -52,12 +52,6 @@ title: Anime List
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
-    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx159074-6sc64nKBa1wE.jpg" alt="Hanako-kun" />
-  </div>
-  <span class="anime-card__title">Hanako-kun</span>
-</article>
-<article class="anime-card">
-  <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101239-iGhniUbzVgpn.jpg" alt="Ahiru no Sora" />
   </div>
   <span class="anime-card__title">Ahiru no Sora</span>
@@ -607,6 +601,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20521-OJZxnuU1uvkN.jpg" alt="Hamatora" />
   </div>
   <span class="anime-card__title">Hamatora</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx159074-6sc64nKBa1wE.jpg" alt="Hanako-kun" />
+  </div>
+  <span class="anime-card__title">Hanako-kun</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
