@@ -18,5 +18,11 @@ title: Anime List
     </div>
     <span class="anime-card__title">91 Days</span>
   </article>
+<article class="anime-card">
+<div class="anime-card__image-wrapper">
+      <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99426-5jWTUs719lQN.png" alt="91 Days" />
+    </div>
+    <span class="anime-card__title">A Place Further Than The Universe</span>
+</article>
 </div>
 
