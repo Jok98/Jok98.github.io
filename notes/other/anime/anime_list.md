@@ -486,6 +486,234 @@ title: Anime List
   </div>
   <span class="anime-card__title">Gate</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx15417-Uc2uNdWEixwi.jpg" alt="Gintama" />
+  </div>
+  <span class="anime-card__title">Gintama</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99420-ROmwm2suzoNJ.png" alt="Girls' Last Tour" />
+  </div>
+  <span class="anime-card__title">Girls' Last Tour</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx129188-zWPBGutZXgjZ.jpg" alt="Goblin Slayer" />
+  </div>
+  <span class="anime-card__title">Goblin Slayer</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99699-mBCjpoWpAVGX.jpg" alt="Golden Kamuy" />
+  </div>
+  <span class="anime-card__title">Golden Kamuy</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx100922-ltoQa6rosUyP.png" alt="Grand Blue" />
+  </div>
+  <span class="anime-card__title">Grand Blue</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx245-By9unwQf1nPZ.jpg" alt="Great Teacher Onizuka" />
+  </div>
+  <span class="anime-card__title">Great Teacher Onizuka</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21428-dFVIHeZ8McBe.jpg" alt="Grimgar: Ashes and Illusions" />
+  </div>
+  <span class="anime-card__title">Grimgar: Ashes and Illusions</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx17729-Xhgile3kCpqB.jpg" alt="Grisaia" />
+  </div>
+  <span class="anime-card__title">Grisaia</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx10793-NopSAxtC1P0Q.jpg" alt="Guilty Crown" />
+  </div>
+  <span class="anime-card__title">Guilty Crown</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20464-eW7ZDBOcn74a.png" alt="Haikyu!!" />
+  </div>
+  <span class="anime-card__title">Haikyu!!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20521-OJZxnuU1uvkN.jpg" alt="Hamatora" />
+  </div>
+  <span class="anime-card__title">Hamatora</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21595-vQ658r2Roe1g.jpg" alt="Haven't You Heard? I'm Sakamoto" />
+  </div>
+  <span class="anime-card__title">Haven't You Heard? I'm Sakamoto</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx128893-l0R0GFHplDKW.jpg" alt="Hell's Paradise" />
+  </div>
+  <span class="anime-card__title">Hell's Paradise</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx100077-B4bfXz0wVOPO.jpg" alt="Hinamatsuri" />
+  </div>
+  <span class="anime-card__title">Hinamatsuri</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21840-e2qT7G7TYaCX.png" alt="Hitori no Shita - The Outcast" />
+  </div>
+  <span class="anime-card__title">Hitori no Shita - The Outcast</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx124080-h8EPH92nyRfS.jpg" alt="Horimiya" />
+  </div>
+  <span class="anime-card__title">Horimiya</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx107226-T8HvVeAN0FWg.png" alt="How Heavy Are the Dumbbells You Lift?" />
+  </div>
+  <span class="anime-card__title">How Heavy Are the Dumbbells You Lift?</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101004-rJLBIWGypbYK.png" alt="How Not to Summon a Demon Lord" />
+  </div>
+  <span class="anime-card__title">How Not to Summon a Demon Lord</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99390-coJQhVNdvOIS.png" alt="How to Keep a Mummy" />
+  </div>
+  <span class="anime-card__title">How to Keep a Mummy</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11061-sIpBprNRfzCe.png" alt="Hunter x Hunter" />
+  </div>
+  <span class="anime-card__title">Hunter x Hunter</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx12189-eBb6fcM21Zh7.jpg" alt="Hyouka" />
+  </div>
+  <span class="anime-card__title">Hyouka</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx116242-JY81Khmbqysn.jpg" alt="I'm Standing on a Million Lives" />
+  </div>
+  <span class="anime-card__title">I'm Standing on a Million Lives</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx107201-XwayV7vVveFS.png" alt="In/Spectre" />
+  </div>
+  <span class="anime-card__title">In/Spectre</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx5231-LOB6lgM2Coto.png" alt="Inazuma Eleven" />
+  </div>
+  <span class="anime-card__title">Inazuma Eleven</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101547-Y0uARlMRaARP.jpg" alt="Isekai Cheat Magician" />
+  </div>
+  <span class="anime-card__title">Isekai Cheat Magician</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx104454-pH5YCR7HteqP.jpg" alt="Isekai Quartet" />
+  </div>
+  <span class="anime-card__title">Isekai Quartet</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx98491-5vyX89aabiHz.jpg" alt="Isekai wa Smartphone to Tomo ni." />
+  </div>
+  <span class="anime-card__title">Isekai wa Smartphone to Tomo ni.</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx113415-bbBWj4pEFseh.jpg" alt="Jujutsu Kaisen" />
+  </div>
+  <span class="anime-card__title">Jujutsu Kaisen</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98820-EVHeNEUOWkh3.jpg" alt="Just Because!" />
+  </div>
+  <span class="anime-card__title">Just Because!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14467-emaCgr1KNGGI.png" alt="K: Project" />
+  </div>
+  <span class="anime-card__title">K: Project</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101921-VvdGQy1ZySYf.jpg" alt="Kaguya-sama: Love is War" />
+  </div>
+  <span class="anime-card__title">Kaguya-sama: Love is War</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx10271-Aep4woDDbXdU.jpg" alt="Kaiji: Against All Rules" />
+  </div>
+  <span class="anime-card__title">Kaiji: Against All Rules</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx153288-tD2OmKy5CJab.jpg" alt="Kaiju No. 8" />
+  </div>
+  <span class="anime-card__title">Kaiju No. 8</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx98314-BWpNNKOmiUoe.jpg" alt="Kakegurui" />
+  </div>
+  <span class="anime-card__title">Kakegurui</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx2593-irF8xIuAOKUc.jpg" alt="Kara no Kyoukai" />
+  </div>
+  <span class="anime-card__title">Kara no Kyoukai</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx1604-H53bcO7VSWGU.png" alt="Katekyo Hitman Reborn!" />
+  </div>
+  <span class="anime-card__title">Katekyo Hitman Reborn!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101903-smbtaZBYXFop.jpg" alt="Kaze ga Tsuyoku Fuiteiru" />
+  </div>
+  <span class="anime-card__title">Kaze ga Tsuyoku Fuiteiru</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx114085-2w5rYZTOa7ER.jpg" alt="Kemono Jihen" />
+  </div>
+  <span class="anime-card__title">Kemono Jihen</span>
+</article>
 
 </div>
 
