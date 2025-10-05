@@ -6,6 +6,8 @@ title: Anime List
 ## Anime List (214)
 
 <div class="anime-gallery">
+<h2>A</h2>
+<details open>
   <article class="anime-card">
     <div class="anime-card__image-wrapper">
       <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21366-qp94AxKx6ZaM.jpg" alt="3-gatsu no Lion" />
@@ -126,6 +128,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Attack on Titan</span>
 </article>
+</details>
+<h2>B</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx2251-kSIwMbTZQDrQ.jpg" alt="Baccano!" />
@@ -210,6 +215,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Bungo Stray Dogs</span>
 </article>
+</details>
+<h2>C</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx141391-rEJ1hm9i2PFa.jpg" alt="Call of the Night" />
@@ -282,6 +290,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Cowboy Bebop</span>
 </article>
+</details>
+<h2>D</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx11843-KK3X2ccAlUwI.jpg" alt="Daily Lives of High School Boys" />
@@ -402,12 +413,18 @@ title: Anime List
   </div>
   <span class="anime-card__title">Durarara!!</span>
 </article>
+</details>
+<h2>E</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21234-v2NMgPyoVRoM.jpg" alt="ERASED" />
   </div>
   <span class="anime-card__title">ERASED</span>
 </article>
+</details>
+<h2>F</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20626-9LTreIofBgnu.jpg" alt="Fairy Tail" />
@@ -462,6 +479,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Fullmetal Alchemist: Brotherhood</span>
 </article>
+</details>
+<h2>G</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx178025-cWJKEsZynkil.jpg" alt="Gachiakuta" />
@@ -540,6 +560,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Guilty Crown</span>
 </article>
+</details>
+<h2>H</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20464-eW7ZDBOcn74a.png" alt="Haikyu!!" />
@@ -612,6 +635,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Hyouka</span>
 </article>
+</details>
+<h2>I</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx110350-uchN78wglmhN.png" alt="ID: Invaded" />
@@ -654,6 +680,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Isekai wa Smartphone to Tomo ni.</span>
 </article>
+</details>
+<h2>J</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx113415-bbBWj4pEFseh.jpg" alt="Jujutsu Kaisen" />
@@ -666,6 +695,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Just Because!</span>
 </article>
+</details>
+<h2>K</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14467-emaCgr1KNGGI.png" alt="K: Project" />
@@ -768,6 +800,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Kuroko no Basket</span>
 </article>
+</details>
+<h2>L</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx126403-0ufstxbwvPK7.png" alt="Link Click" />
@@ -786,6 +821,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Log Horizon</span>
 </article>
+</details>
+<h2>M</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14513-b4C3J03GF6UT.jpg" alt="Magi: The Labyrinth of Magic" />
@@ -864,6 +902,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">My Hero Academia</span>
 </article>
+</details>
+<h2>N</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21051-V4IlRBFhlaOs.jpg" alt="Nanbaka" />
@@ -906,6 +947,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Noragami</span>
 </article>
+</details>
+<h2>O</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx2107-H8bRuRRbhCIJ.jpg" alt="One Piece" />
@@ -948,6 +992,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Overlord</span>
 </article>
+</details>
+<h2>P</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx122441-5qlQC5Ka8k9W.png" alt="Peach Boy Riverside" />
@@ -978,6 +1025,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Psycho-Pass</span>
 </article>
+</details>
+<h2>R</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx101024-4dFUVMKSE0Q1.jpg" alt="Radiant" />
@@ -1026,6 +1076,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Rokudenashi Majutsu Koushi to Akashic Records</span>
 </article>
+</details>
+<h2>S</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx130591-9O1cf7u6SfYa.jpg" alt="Sabikui Bisco" />
@@ -1128,6 +1181,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Sword Art Online</span>
 </article>
+</details>
+<h2>T</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx131565-3W2YEX6V3K3i.jpg" alt="Takt Op. Destiny" />
@@ -1278,6 +1334,9 @@ title: Anime List
   </div>
   <span class="anime-card__title">Tsukimonogatari</span>
 </article>
+</details>
+<h2>U</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/b101597-1hmWoRvno4Tq.jpg" alt="Ultramarine Magmell" />
@@ -1296,12 +1355,18 @@ title: Anime List
   </div>
   <span class="anime-card__title">UQ Holder!</span>
 </article>
+</details>
+<h2>V</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101348-msJS8z91mG0P.jpg" alt="Vinland Saga" />
   </div>
   <span class="anime-card__title">Vinland Saga</span>
 </article>
+</details>
+<h2>W</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx163270-cKmwZN5BIbnJ.jpg" alt="Wind Breaker" />
@@ -1332,12 +1397,18 @@ title: Anime List
   </div>
   <span class="anime-card__title">Wotakoi</span>
 </article>
+</details>
+<h2>Y</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98444-zzhSw9o3LJSy.jpg" alt="Yuru Camp" />
   </div>
   <span class="anime-card__title">Yuru Camp</span>
 </article>
+</details>
+<h2>Z</h2>
+<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/b250-K6QoqgSmtsPo.png" alt="Zatch Bell!" />
@@ -1350,5 +1421,6 @@ title: Anime List
   </div>
   <span class="anime-card__title">Zom 100</span>
 </article>
+</details>
 </div>
 
