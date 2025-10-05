@@ -918,6 +918,230 @@ title: Anime List
   </div>
   <span class="anime-card__title">Oregairu</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx128034-PHcAWDtmPuAK.jpg" alt="Orient" />
+  </div>
+  <span class="anime-card__title">Orient</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx142074-pHe4bX791PJh.jpg" alt="Otome Game" />
+  </div>
+  <span class="anime-card__title">Otome Game</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx20832-Kz7PMdGT0JI6.jpg" alt="Overlord" />
+  </div>
+  <span class="anime-card__title">Overlord</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx122441-5qlQC5Ka8k9W.png" alt="Peach Boy Riverside" />
+  </div>
+  <span class="anime-card__title">Peach Boy Riverside</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx10588-44oPKE7GRXA2.png" alt="Persona 4" />
+  </div>
+  <span class="anime-card__title">Persona 4</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101350-nRjxYT3r6qTC.jpg" alt="Pet" />
+  </div>
+  <span class="anime-card__title">Pet</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101168-LY3XA61byAVo.jpg" alt="Plunderer" />
+  </div>
+  <span class="anime-card__title">Plunderer</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx13601-tgjUlf4eQOyx.jpg" alt="Psycho-Pass" />
+  </div>
+  <span class="anime-card__title">Psycho-Pass</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx101024-4dFUVMKSE0Q1.jpg" alt="Radiant" />
+  </div>
+  <span class="anime-card__title">Radiant</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101291-L71WpAkZPtgm.jpg" alt="Rascal Does Not Dream of Bunny Girl Senpai" />
+  </div>
+  <span class="anime-card__title">Rascal Does Not Dream of Bunny Girl Senpai</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20711-b641DKQpANPv.png" alt="Re: Hamatora" />
+  </div>
+  <span class="anime-card__title">Re: Hamatora</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97980-9NQwPW0igSMk.jpg" alt="Re:Creators" />
+  </div>
+  <span class="anime-card__title">Re:Creators</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21355-IHaS50pvLYd0.jpg" alt="Re:Zero" />
+  </div>
+  <span class="anime-card__title">Re:Zero</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx127399-AAH1pevCZLrB.jpg" alt="Record of Ragnarok" />
+  </div>
+  <span class="anime-card__title">Record of Ragnarok</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20955-MeZp4OtwKGl1.jpg" alt="Rokka no Yuusha" />
+  </div>
+  <span class="anime-card__title">Rokka no Yuusha</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21700-HhTEXPZKxupP.jpg" alt="Rokudenashi Majutsu Koushi to Akashic Records" />
+  </div>
+  <span class="anime-card__title">Rokudenashi Majutsu Koushi to Akashic Records</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx130591-9O1cf7u6SfYa.jpg" alt="Sabikui Bisco" />
+  </div>
+  <span class="anime-card__title">Sabikui Bisco</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx97660-82E7nL8irvuF.jpg" alt="Sagrada Reset" />
+  </div>
+  <span class="anime-card__title">Sagrada Reset</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21804-AAjWfz9JY1EO.jpg" alt="Saiki Kusuo" />
+  </div>
+  <span class="anime-card__title">Saiki Kusuo</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx177709-jBQ965JZG0l8.png" alt="Sakamoto Days" />
+  </div>
+  <span class="anime-card__title">Sakamoto Days</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx205-xxonQKyJtVcw.png" alt="Samurai Champloo" />
+  </div>
+  <span class="anime-card__title">Samurai Champloo</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx5355-TGrgtbiJ5zlH.png" alt="Sengoku Basara" />
+  </div>
+  <span class="anime-card__title">Sengoku Basara</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20829-PYKVvgUqJVUK.png" alt="Seraph of the End" />
+  </div>
+  <span class="anime-card__title">Seraph of the End</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx154-hSYv4EtcBE1p.png" alt="Shaman King" />
+  </div>
+  <span class="anime-card__title">Shaman King</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx127911-cQVL0dhldFwn.jpg" alt="Shikimori's Not Just a Cutie" />
+  </div>
+  <span class="anime-card__title">Shikimori's Not Just a Cutie</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx109020-sRBusiVXbsLH.jpg" alt="Sing &quot;Yesterday&quot; for Me" />
+  </div>
+  <span class="anime-card__title">Sing "Yesterday" for Me</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx9863-G6dAvTVsfLRO.png" alt="SKET Dance" />
+  </div>
+  <span class="anime-card__title">SKET Dance</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx151807-m1gX3iwfIsLu.png" alt="Solo Leveling" />
+  </div>
+  <span class="anime-card__title">Solo Leveling</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx3588-CA8LE5gjm9Qx.png" alt="Soul Eater" />
+  </div>
+  <span class="anime-card__title">Soul Eater</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx104052-8EXD6e4B2AKK.jpg" alt="Stars Align" />
+  </div>
+  <span class="anime-card__title">Stars Align</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx9253-7pdcVzQSkKxT.jpg" alt="Steins;Gate" />
+  </div>
+  <span class="anime-card__title">Steins;Gate</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx11757-Q9P2zjCPICq5.jpg" alt="Sword Art Online" />
+  </div>
+  <span class="anime-card__title">Sword Art Online</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx131565-3W2YEX6V3K3i.jpg" alt="Takt Op. Destiny" />
+  </div>
+  <span class="anime-card__title">Takt Op. Destiny</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20661-T3PD0tyXTito.png" alt="Terror in Resonance" />
+  </div>
+  <span class="anime-card__title">Terror in Resonance</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101280-ezBXqEHi8pg0.jpg" alt="That Time I Got Reincarnated as a Slime" />
+  </div>
+  <span class="anime-card__title">That Time I Got Reincarnated as a Slime</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98436-n7sK6POCd0XV.png" alt="The Ancient Magus' Bride" />
+  </div>
+  <span class="anime-card__title">The Ancient Magus' Bride</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx183161-6uFwjG8vrcAV.jpg" alt="The Beginning After the End" />
+  </div>
+  <span class="anime-card__title">The Beginning After the End</span>
+</article>
+
+
 
 </div>
 
