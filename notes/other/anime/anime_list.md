@@ -11,6 +11,7 @@ title: Anime List
 </div>
 
 <div class="search-wrapper">
+  <i class="fas fa-search search-icon"></i>
   <input type="text" id="anime-search" placeholder="Search for an anime...">
 </div>
 

@@ -166,17 +166,34 @@ summary:hover {
 }
 
 .search-wrapper {
+  position: relative;
   margin-bottom: 1.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #a8f0ff;
+  opacity: 0.7;
 }
 
 #anime-search {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem 0.75rem 3rem; /* Add padding to the left for the icon */
   border: 1px solid rgba(0, 227, 205, 0.35);
   background-color: rgba(17, 24, 31, 0.85);
   color: #e1f6ff;
   border-radius: 8px;
   font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+#anime-search:focus {
+  outline: none;
+  border-color: #7ce7db;
+  box-shadow: 0 0 0 3px rgba(0, 227, 205, 0.2);
 }
 
 #anime-search::placeholder {
