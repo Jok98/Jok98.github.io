@@ -884,6 +884,12 @@ title: Anime List
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx19815-bIo51RMWWhLv.jpg" alt="No Game, No Life" />
+  </div>
+  <span class="anime-card__title">No Game, No Life</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx108478-yHMnmQCtHSDb.jpg" alt="No Guns Life" />
   </div>
   <span class="anime-card__title">No Guns Life</span>
