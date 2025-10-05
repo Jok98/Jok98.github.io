@@ -54,5 +54,48 @@ title: Anime List
   </div>
   <span class="anime-card__title">AHO-GIRL</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20613-4VGGPacciJBL.jpg" alt="Akame ga Kill!" />
+  </div>
+  <span class="anime-card__title">Akame ga Kill!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx116566-6qREQAAfbEDi.jpg" alt="Akudama Drive" />
+  </div>
+  <span class="anime-card__title">Akudama Drive</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx6547-3jWzWyXg34Et.png" alt="Angel Beats!" />
+  </div>
+  <span class="anime-card__title">Angel Beats!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99629-BXyAJ6PDq4sr.jpg" alt="Angels of Death" />
+  </div>
+  <span class="anime-card__title">Angels of Death</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11111-Y4QgkX8gJQCa.png" alt="Another" />
+  </div>
+  <span class="anime-card__title">Another</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20596-fJdMHV8xRMgY.png" alt="Ao Haru Ride" />
+  </div>
+  <span class="anime-card__title">Ao Haru Ride</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx143846-LtV3VNCt1E6l.png" alt="Arifureta" />
+  </div>
+  <span class="anime-card__title">Arifureta</span>
+</article>
+
 </div>
 
