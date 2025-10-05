@@ -614,6 +614,12 @@ title: Anime List
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx110350-uchN78wglmhN.png" alt="ID: Invaded" />
+  </div>
+  <span class="anime-card__title">ID: Invaded</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx116242-JY81Khmbqysn.jpg" alt="I'm Standing on a Million Lives" />
   </div>
   <span class="anime-card__title">I'm Standing on a Million Lives</span>
@@ -1302,6 +1308,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Wise Man's Grandchild</span>
 </article>
+<article class="anime-card">
+    <div class="anime-card__image-wrapper">
+      <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21860-lSIbYJtEbAXu.jpg" alt="WorldEnd" />
+    </div>
+    <span class="anime-card__title">WorldEnd</span>
+  </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20729-DnBXnUxFon1B.png" alt="World Trigger" />
