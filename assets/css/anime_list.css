@@ -144,6 +144,27 @@ summary:hover {
   color: #7ce7db;
 }
 
+.details-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-controls button {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 227, 205, 0.35);
+  background-color: transparent;
+  color: #a8f0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details-controls button:hover {
+  background-color: rgba(0, 227, 205, 0.1);
+  color: #7ce7db;
+}
+
 @media (max-width: 600px) {
   .anime-card {
     padding: 16px 16px 20px;

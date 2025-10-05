@@ -27,6 +27,29 @@
     {{ content }}
   </div>
 </main>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const expandAllButton = document.getElementById('expand-all');
+    const collapseAllButton = document.getElementById('collapse-all');
+    const detailsElements = document.querySelectorAll('details');
+
+    if (expandAllButton) {
+      expandAllButton.addEventListener('click', () => {
+        detailsElements.forEach(details => {
+          details.open = true;
+        });
+      });
+    }
+
+    if (collapseAllButton) {
+      collapseAllButton.addEventListener('click', () => {
+        detailsElements.forEach(details => {
+          details.open = false;
+        });
+      });
+    }
+  });
+</script>
 <script src="/assets/script/script.js"></script>
 </body>
 </html>

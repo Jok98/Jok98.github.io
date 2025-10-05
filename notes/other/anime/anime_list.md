@@ -5,6 +5,11 @@ title: Anime List
 
 ## Anime List (214)
 
+<div class="details-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
+
 
 
 <details open>
