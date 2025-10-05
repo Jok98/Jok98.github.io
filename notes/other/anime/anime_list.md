@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime List (214)
+## Anime Counter: 214
 
 <div class="details-controls">
   <button id="expand-all">Expand All</button>
