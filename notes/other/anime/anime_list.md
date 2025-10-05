@@ -714,6 +714,78 @@ title: Anime List
   </div>
   <span class="anime-card__title">Kemono Jihen</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx107339-3mKBCMAUN896.png" alt="Kemono Michi: Rise Up" />
+  </div>
+  <span class="anime-card__title">Kemono Michi: Rise Up</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx98448-OdfxrjAhkYvp.jpg" alt="Kino no Tabi: The Beautiful World" />
+  </div>
+  <span class="anime-card__title">Kino no Tabi: The Beautiful World</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20623-rVoHgF3Apo7P.jpg" alt="Kiseiju" />
+  </div>
+  <span class="anime-card__title">Kiseiju</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx9260-tbZARfVq8JoX.png" alt="Kizumonogatari" />
+  </div>
+  <span class="anime-card__title">Kizumonogatari</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx133965-9TZBS4m4yvED.png" alt="Komi Can't Communicate" />
+  </div>
+  <span class="anime-card__title">Komi Can't Communicate</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21699-Fkbnkl9ZC6fW.png" alt="Konosuba" />
+  </div>
+  <span class="anime-card__title">Konosuba</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21520-nZKCr7PZrv7e.png" alt="Koyomimonogatari" />
+  </div>
+  <span class="anime-card__title">Koyomimonogatari</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11771-ScM6Hde1NYrd.jpg" alt="Kuroko no Basket" />
+  </div>
+  <span class="anime-card__title">Kuroko no Basket</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx126403-0ufstxbwvPK7.png" alt="Link Click" />
+  </div>
+  <span class="anime-card__title">Link Click</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx19489-jOPAElIhmwmB.jpg" alt="Little Witch Academia" />
+  </div>
+  <span class="anime-card__title">Little Witch Academia</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx17265-95SA9keO8Jtv.jpg" alt="Log Horizon" />
+  </div>
+  <span class="anime-card__title">Log Horizon</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14513-b4C3J03GF6UT.jpg" alt="Magi: The Labyrinth of Magic" />
+  </div>
+  <span class="anime-card__title">Magi: The Labyrinth of Magic</span>
+</article>
 
 </div>
 
