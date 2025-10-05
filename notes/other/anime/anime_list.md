@@ -720,7 +720,7 @@ title: Anime List
 </details>
 <!-- SECTION J -->
 <details open>
-<h2>J</h2>
+<summary>J</summary>
 <div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
