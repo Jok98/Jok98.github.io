@@ -10,6 +10,10 @@ title: Anime List
   <button id="collapse-all">Collapse All</button>
 </div>
 
+<div class="search-wrapper">
+  <input type="text" id="anime-search" placeholder="Search for an anime...">
+</div>
+
 
 
 <details open>

@@ -49,6 +49,36 @@
       });
     }
   });
+
+  const searchInput = document.getElementById('anime-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const searchQuery = searchInput.value.toLowerCase();
+      const detailsElements = document.querySelectorAll('details');
+
+      detailsElements.forEach(details => {
+        const gallery = details.querySelector('.anime-gallery');
+        const cards = gallery.querySelectorAll('.anime-card');
+        let hasVisibleCard = false;
+
+        cards.forEach(card => {
+          const title = card.querySelector('.anime-card__title').textContent.toLowerCase();
+          if (title.includes(searchQuery)) {
+            card.style.display = 'flex';
+            hasVisibleCard = true;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (hasVisibleCard) {
+          details.style.display = 'block';
+        } else {
+          details.style.display = 'none';
+        }
+      });
+    });
+  }
 </script>
 <script src="/assets/script/script.js"></script>
 </body>
