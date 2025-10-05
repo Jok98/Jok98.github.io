@@ -786,6 +786,138 @@ title: Anime List
   </div>
   <span class="anime-card__title">Magi: The Labyrinth of Magic</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx115183-jvILP9lWry4s.jpg" alt="Mars Red" />
+  </div>
+  <span class="anime-card__title">Mars Red</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21857-haPDVD7DKDpg.jpg" alt="Masamune-kun’s Revenge" />
+  </div>
+  <span class="anime-card__title">Masamune-kun’s Revenge</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx151801-wYg28dEaJAw3.png" alt="Mashle" />
+  </div>
+  <span class="anime-card__title">Mashle</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11761-7YQ8cqZp65qy.jpg" alt="Medaka Box" />
+  </div>
+  <span class="anime-card__title">Medaka Box</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx10620-OMnOMuZBgEKy.png" alt="Mirai Nikki" />
+  </div>
+  <span class="anime-card__title">Mirai Nikki</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21507-BICFCVZY3xQb.jpg" alt="Mob Psycho 100" />
+  </div>
+  <span class="anime-card__title">Mob Psycho 100</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx114124-def92qPuIVeK.jpg" alt="Moriarty the Patriot" />
+  </div>
+  <span class="anime-card__title">Moriarty the Patriot</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21261-jLm2IGonsEzU.jpg" alt="Mr. Osomatsu" />
+  </div>
+  <span class="anime-card__title">Mr. Osomatsu</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21306-nXw2pY43S2ox.png" alt="Musaigen no Phantom World" />
+  </div>
+  <span class="anime-card__title">Musaigen no Phantom World</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx108465-B9S9zC68eS5j.jpg" alt="Mushoku Tensei" />
+  </div>
+  <span class="anime-card__title">Mushoku Tensei</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97863-79AXrUZ7VQa5.jpg" alt="My First Girlfriend is a Gal" />
+  </div>
+  <span class="anime-card__title">My First Girlfriend is a Gal</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21459-DUKLgasrgeNO.jpg" alt="My Hero Academia" />
+  </div>
+  <span class="anime-card__title">My Hero Academia</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21051-V4IlRBFhlaOs.jpg" alt="Nanbaka" />
+  </div>
+  <span class="anime-card__title">Nanbaka</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20-YJvLbgJQPCoI.jpg" alt="Naruto" />
+  </div>
+  <span class="anime-card__title">Naruto</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx15689-dUVKJCvuDffq.jpg" alt="Nekomonogatari: Kuro" />
+  </div>
+  <span class="anime-card__title">Nekomonogatari: Kuro</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx10165-1j2Qn8wIIn5S.png" alt="Nichijou" />
+  </div>
+  <span class="anime-card__title">Nichijou</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx108478-yHMnmQCtHSDb.jpg" alt="No Guns Life" />
+  </div>
+  <span class="anime-card__title">No Guns Life</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20447-EoQXeygHaVCK.jpg" alt="Noragami" />
+  </div>
+  <span class="anime-card__title">Noragami</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx2107-H8bRuRRbhCIJ.jpg" alt="One Piece" />
+  </div>
+  <span class="anime-card__title">One Piece</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21386-ZMcREWXeWMow.jpg" alt="One Punch Man" />
+  </div>
+  <span class="anime-card__title">One Punch Man</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21647-GV5JGjhp5QEL.png" alt="Orange" />
+  </div>
+  <span class="anime-card__title">Orange</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx14813-BC8aanHK9fju.jpg" alt="Oregairu" />
+  </div>
+  <span class="anime-card__title">Oregairu</span>
+</article>
 
 </div>
 
