@@ -534,3 +534,16 @@ a:focus-visible,
   box-shadow: 0 0 0 1px rgba(30, 144, 255, 0.4);
 }
 
+.site-version {
+    font-size: 0.85em;
+    color: #7ec3e6;
+    margin-left: 10px;
+    font-weight: normal;
+    background: #23272e;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid #3c3c3c;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
