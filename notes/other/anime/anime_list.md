@@ -96,6 +96,168 @@ title: Anime List
   </div>
   <span class="anime-card__title">Arifureta</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21851-WCBWT6fLgh5z.jpg" alt="Armed Girl's Machiavellism" />
+  </div>
+  <span class="anime-card__title">Armed Girl's Machiavellism</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101001-UERCW0UGi0P7.jpg" alt="Asobi Asobase" />
+  </div>
+  <span class="anime-card__title">Asobi Asobase</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20755-q0b3Ok1cAbPd.jpg" alt="Assassination Classroom" />
+  </div>
+  <span class="anime-card__title">Assassination Classroom</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx107663-eDkgpoa4UWhN.jpg" alt="Astra Lost in Space" />
+  </div>
+  <span class="anime-card__title">Astra Lost in Space</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx16498-C6FPmWm59CyP.jpg" alt="Attack on Titan" />
+  </div>
+  <span class="anime-card__title">Attack on Titan</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx2251-kSIwMbTZQDrQ.jpg" alt="Baccano!" />
+  </div>
+  <span class="anime-card__title">Baccano!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx5081-mzWo8ZayqhES.jpg" alt="Bakemonogatari" />
+  </div>
+  <span class="anime-card__title">Bakemonogatari</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97888-xog2zolFnj12.jpg" alt="Baki" />
+  </div>
+  <span class="anime-card__title">Baki</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx9513-is6YiSgKbyQX.jpg" alt="Beelzebub" />
+  </div>
+  <span class="anime-card__title">Beelzebub</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx33-CTtcRjqe7UnM.jpg" alt="Berserk" />
+  </div>
+  <span class="anime-card__title">Berserk</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97940-bPydLjny8PUw.png" alt="Black Clover" />
+  </div>
+  <span class="anime-card__title">Black Clover</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11633-vIjtabJq64Xt.jpg" alt="Blood Lad" />
+  </div>
+  <span class="anime-card__title">Blood Lad</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx9919-nXS7JOZrWHfS.jpg" alt="Blue Exorcist" />
+  </div>
+  <span class="anime-card__title">Blue Exorcist</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/132070.jpg" alt="Blue Lock" />
+  </div>
+  <span class="anime-card__title">Blue Lock</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx106479-JmPk1F5ubMtm.png" alt="BOFURI" />
+  </div>
+  <span class="anime-card__title">BOFURI</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx100251-zEMVaXyDd1gn.jpg" alt="Boku to 23-nin no Dorei" />
+  </div>
+  <span class="anime-card__title">Boku to 23-nin no Dorei</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21728-gCMH8hDEqzmx.png" alt="Brotherhood Final Fantasy XV" />
+  </div>
+  <span class="anime-card__title">Brotherhood Final Fantasy XV</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14345-JGV1lFS9XW9w.jpg" alt="Btooom!" />
+  </div>
+  <span class="anime-card__title">Btooom!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21311-hAXyT8Yoh6G9.jpg" alt="Bungo Stray Dogs" />
+  </div>
+  <span class="anime-card__title">Bungo Stray Dogs</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx141391-rEJ1hm9i2PFa.jpg" alt="Call of the Night" />
+  </div>
+  <span class="anime-card__title">Call of the Night</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx127230-FlochcFsyoF4.png" alt="Chainsaw Man" />
+  </div>
+  <span class="anime-card__title">Chainsaw Man</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21126-l7MgeoysYBdE.png" alt="Chaos;Child" />
+  </div>
+  <span class="anime-card__title">Chaos;Child</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx20997-FGhaAtfnXCsH.jpg" alt="Charlotte" />
+  </div>
+  <span class="anime-card__title">Charlotte</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/97609-qSAaN9XbRQjj.jpg" alt="Cheating Craft" />
+  </div>
+  <span class="anime-card__title">Cheating Craft</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98449-CxVQsAWFPpMa.jpg" alt="Children of the Whales" />
+  </div>
+  <span class="anime-card__title">Children of the Whales</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21092-1NML6TdngmBq.jpg" alt="Chivalry of a Failed Knight" />
+  </div>
+  <span class="anime-card__title">Chivalry of a Failed Knight</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14741-alxqoP4yx6WF.jpg" alt="Chuunibyou demo Koi ga Shitai!" />
+  </div>
+  <span class="anime-card__title">Chuunibyou demo Koi ga Shitai!</span>
+</article>
 
 </div>
 
