@@ -15,10 +15,8 @@ title: Anime List
   <input type="text" id="anime-search" placeholder="Search for an anime...">
 </div>
 
-
-
 <details open>
-<summary>A</summary>
+<summary>1-9</summary>
 <div class="anime-gallery">
   <article class="anime-card">
     <div class="anime-card__image-wrapper">
@@ -32,6 +30,11 @@ title: Anime List
     </div>
     <span class="anime-card__title">91 Days</span>
   </article>
+</div>
+</details>
+<details open>
+<summary>A</summary>
+<div class="anime-gallery">
 <article class="anime-card">
 <div class="anime-card__image-wrapper">
       <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99426-5jWTUs719lQN.png" alt="91 Days" />
