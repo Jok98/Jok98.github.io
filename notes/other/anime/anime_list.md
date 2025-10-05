@@ -402,6 +402,90 @@ title: Anime List
   </div>
   <span class="anime-card__title">Durarara!!</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21234-v2NMgPyoVRoM.jpg" alt="ERASED" />
+  </div>
+  <span class="anime-card__title">ERASED</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20626-9LTreIofBgnu.jpg" alt="Fairy Tail" />
+  </div>
+  <span class="anime-card__title">Fairy Tail</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98035-rdkjeqUUsG2j.jpg" alt="Fate/Apocrypha" />
+  </div>
+  <span class="anime-card__title">Fate/Apocrypha</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21717-2gU0L4IvrUVC.jpg" alt="Fate/Extra: Last Encore" />
+  </div>
+  <span class="anime-card__title">Fate/Extra: Last Encore</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97815-NnWheNnaKCmS.png" alt="Fate/Grand Order" />
+  </div>
+  <span class="anime-card__title">Fate/Grand Order</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20792-gT1MbiqKpP7q.jpg" alt="Fate/stay night" />
+  </div>
+  <span class="anime-card__title">Fate/stay night</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx10087-el5Bo1VMZwsU.png" alt="Fate/Zero" />
+  </div>
+  <span class="anime-card__title">Fate/Zero</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx105310-x4o2xMlfxIwb.jpg" alt="Fire Force" />
+  </div>
+  <span class="anime-card__title">Fire Force</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx20923-BPzRptpHC9Mw.jpg" alt="Food Wars! Shokugeki no Soma" />
+  </div>
+  <span class="anime-card__title">Food Wars! Shokugeki no Soma</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx5114-KJTQz9AIm6Wk.jpg" alt="Fullmetal Alchemist: Brotherhood" />
+  </div>
+  <span class="anime-card__title">Fullmetal Alchemist: Brotherhood</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx178025-cWJKEsZynkil.jpg" alt="Gachiakuta" />
+  </div>
+  <span class="anime-card__title">Gachiakuta</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97766-AKr0m3uHkKyW.jpg" alt="Gamers!" />
+  </div>
+  <span class="anime-card__title">Gamers!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20773-iqLWVDwei8O3.jpg" alt="Gangsta." />
+  </div>
+  <span class="anime-card__title">Gangsta.</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20994-pSDk4I58jAK5.jpg" alt="Gate" />
+  </div>
+  <span class="anime-card__title">Gate</span>
+</article>
 
 </div>
 
