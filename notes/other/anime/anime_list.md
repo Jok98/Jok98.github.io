@@ -258,6 +258,150 @@ title: Anime List
   </div>
   <span class="anime-card__title">Chuunibyou demo Koi ga Shitai!</span>
 </article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/b98659-sH5z5RfMuyMr.png" alt="Classroom of the Elite" />
+  </div>
+  <span class="anime-card__title">Classroom of the Elite</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx2904-xdm9EZ46VGCs.jpg" alt="Code Geass" />
+  </div>
+  <span class="anime-card__title">Code Geass</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx9479-6Y7eko7qxSDS.png" alt="Coppelion" />
+  </div>
+  <span class="anime-card__title">Coppelion</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx1-CXtrrkMpJ8Zq.png" alt="Cowboy Bebop" />
+  </div>
+  <span class="anime-card__title">Cowboy Bebop</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx11843-KK3X2ccAlUwI.jpg" alt="Daily Lives of High School Boys" />
+  </div>
+  <span class="anime-card__title">Daily Lives of High School Boys</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx171018-2ldCj6QywuOa.jpg" alt="Dan Da Dan" />
+  </div>
+  <span class="anime-card__title">Dan Da Dan</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx16592-HeCjZni3xgPy.jpg" alt="Danganronpa" />
+  </div>
+  <span class="anime-card__title">Danganronpa</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20920-3x2KtyeYQmaR.jpg" alt="DanMachi" />
+  </div>
+  <span class="anime-card__title">DanMachi</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx99423-8MBxtwCeHf8B.png" alt="Darling in the FranXX" />
+  </div>
+  <span class="anime-card__title">Darling in the FranXX</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx105190-veG9YDZa0GzW.jpg" alt="Darwin's Game" />
+  </div>
+  <span class="anime-card__title">Darwin's Game</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21578-XXfNNVseCg2G.jpg" alt="Days" />
+  </div>
+  <span class="anime-card__title">Days</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx6880-4aWqFNTwzqp0.png" alt="Deadman Wonderland" />
+  </div>
+  <span class="anime-card__title">Deadman Wonderland</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx97907-MAOO4oDANGXm.png" alt="Death March to the Parallel World Rhapsody" />
+  </div>
+  <span class="anime-card__title">Death March to the Parallel World Rhapsody</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx1535-lawCwhzhi96X.jpg" alt="Death Note" />
+  </div>
+  <span class="anime-card__title">Death Note</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx20931-bktYqOcxPERi.jpg" alt="Death Parade" />
+  </div>
+  <span class="anime-card__title">Death Parade</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx110353-XGYSsii7qJeK.png" alt="Deca-Dence" />
+  </div>
+  <span class="anime-card__title">Deca-Dence</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101922-PEn1CTc93blC.jpg" alt="Demon Slayer" />
+  </div>
+  <span class="anime-card__title">Demon Slayer</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/138525.jpg" alt="Detective Conan" />
+  </div>
+  <span class="anime-card__title">Detective Conan</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21380-U2PS8WAY1IxN.jpg" alt="Divine Gate" />
+  </div>
+  <span class="anime-card__title">Divine Gate</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx103139-2TfvRyGTE1qp.jpg" alt="Domestic Girlfriend" />
+  </div>
+  <span class="anime-card__title">Domestic Girlfriend</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx101347-2J2p8qJpxpfZ.jpg" alt="Dororo" />
+  </div>
+  <span class="anime-card__title">Dororo</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx105333-BBxkPhen07Zj.jpg" alt="Dr. Stone" />
+  </div>
+  <span class="anime-card__title">Dr. Stone</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx223-Ld6vrSnd081L.png" alt="Dragon Ball" />
+  </div>
+  <span class="anime-card__title">Dragon Ball</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx6746-Q4EmstN2fy0R.png" alt="Durarara!!" />
+  </div>
+  <span class="anime-card__title">Durarara!!</span>
+</article>
 
 </div>
 
