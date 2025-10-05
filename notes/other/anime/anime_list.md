@@ -8,7 +8,7 @@ title: Anime List
 
 
 <details open>
-<h2>A</h2>
+<summary>A</summary>
 <div class="anime-gallery">
   <article class="anime-card">
     <div class="anime-card__image-wrapper">
@@ -133,9 +133,9 @@ title: Anime List
 </div>
 </details>
 <!-- SECTION B -->
-<h2>B</h2>
-<div class="anime-gallery">
 <details open>
+<summary>B</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx2251-kSIwMbTZQDrQ.jpg" alt="Baccano!" />
@@ -220,12 +220,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Bungo Stray Dogs</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION C -->
-<h2>C</h2>
-<div class="anime-gallery">
 <details open>
+<summary>C</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx141391-rEJ1hm9i2PFa.jpg" alt="Call of the Night" />
@@ -298,12 +298,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Cowboy Bebop</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION D -->
-<h2>D</h2>
-<div class="anime-gallery">
 <details open>
+<summary>D</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx11843-KK3X2ccAlUwI.jpg" alt="Daily Lives of High School Boys" />
@@ -424,24 +424,24 @@ title: Anime List
   </div>
   <span class="anime-card__title">Durarara!!</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION E -->
-<h2>E</h2>
-<div class="anime-gallery">
 <details open>
+<summary>E</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21234-v2NMgPyoVRoM.jpg" alt="ERASED" />
   </div>
   <span class="anime-card__title">ERASED</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION F -->
-<h2>F</h2>
-<div class="anime-gallery">
 <details open>
+<summary>F</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20626-9LTreIofBgnu.jpg" alt="Fairy Tail" />
@@ -496,12 +496,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Fullmetal Alchemist: Brotherhood</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION G -->
-<h2>G</h2>
-<div class="anime-gallery">
 <details open>
+<summary>G</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx178025-cWJKEsZynkil.jpg" alt="Gachiakuta" />
@@ -580,12 +580,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Guilty Crown</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION H -->
-<h2>H</h2>
-<div class="anime-gallery">
 <details open>
+<summary>H</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20464-eW7ZDBOcn74a.png" alt="Haikyu!!" />
@@ -658,12 +658,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Hyouka</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION I -->
-<h2>I</h2>
-<div class="anime-gallery">
 <details open>
+<summary>I</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx110350-uchN78wglmhN.png" alt="ID: Invaded" />
@@ -706,12 +706,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Isekai wa Smartphone to Tomo ni.</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION J -->
+<details open>
 <h2>J</h2>
 <div class="anime-gallery">
-<details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx113415-bbBWj4pEFseh.jpg" alt="Jujutsu Kaisen" />
@@ -724,12 +724,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Just Because!</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION K -->
-<h2>K</h2>
-<div class="anime-gallery">
 <details open>
+<summary>K</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14467-emaCgr1KNGGI.png" alt="K: Project" />
@@ -832,12 +832,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Kuroko no Basket</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION L -->
-<h2>L</h2>
-<div class="anime-gallery">
 <details open>
+<summary>L</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx126403-0ufstxbwvPK7.png" alt="Link Click" />
@@ -856,12 +856,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Log Horizon</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION M -->
-<h2>M</h2>
-<div class="anime-gallery">
 <details open>
+<summary>M</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14513-b4C3J03GF6UT.jpg" alt="Magi: The Labyrinth of Magic" />
@@ -940,12 +940,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">My Hero Academia</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION N -->
-<h2>N</h2>
-<div class="anime-gallery">
 <details open>
+<summary>N</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21051-V4IlRBFhlaOs.jpg" alt="Nanbaka" />
@@ -988,12 +988,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Noragami</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION O -->
-<h2>O</h2>
-<div class="anime-gallery">
 <details open>
+<summary>O</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx2107-H8bRuRRbhCIJ.jpg" alt="One Piece" />
@@ -1036,12 +1036,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Overlord</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION P -->
-<h2>P</h2>
-<div class="anime-gallery">
 <details open>
+<summary>P</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx122441-5qlQC5Ka8k9W.png" alt="Peach Boy Riverside" />
@@ -1072,12 +1072,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Psycho-Pass</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION R -->
-<h2>R</h2>
-<div class="anime-gallery">
 <details open>
+<summary>R</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/nx101024-4dFUVMKSE0Q1.jpg" alt="Radiant" />
@@ -1126,12 +1126,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Rokudenashi Majutsu Koushi to Akashic Records</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION S -->
-<h2>S</h2>
-<div class="anime-gallery">
 <details open>
+<summary>S</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx130591-9O1cf7u6SfYa.jpg" alt="Sabikui Bisco" />
@@ -1234,12 +1234,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Sword Art Online</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION T -->
-<h2>T</h2>
-<div class="anime-gallery">
 <details open>
+<summary>T</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx131565-3W2YEX6V3K3i.jpg" alt="Takt Op. Destiny" />
@@ -1390,12 +1390,12 @@ title: Anime List
   </div>
   <span class="anime-card__title">Tsukimonogatari</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION U -->
-<h2>U</h2>
-<div class="anime-gallery">
 <details open>
+<summary>U</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/b101597-1hmWoRvno4Tq.jpg" alt="Ultramarine Magmell" />
@@ -1414,24 +1414,24 @@ title: Anime List
   </div>
   <span class="anime-card__title">UQ Holder!</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION V -->
-<h2>V</h2>
-<div class="anime-gallery">
 <details open>
+<summary>V</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101348-msJS8z91mG0P.jpg" alt="Vinland Saga" />
   </div>
   <span class="anime-card__title">Vinland Saga</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION W -->
-<h2>W</h2>
-<div class="anime-gallery">
 <details open>
+<summary>W</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx163270-cKmwZN5BIbnJ.jpg" alt="Wind Breaker" />
@@ -1462,24 +1462,24 @@ title: Anime List
   </div>
   <span class="anime-card__title">Wotakoi</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION Y -->
-<h2>Y</h2>
-<div class="anime-gallery">
 <details open>
+<summary>Y</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98444-zzhSw9o3LJSy.jpg" alt="Yuru Camp" />
   </div>
   <span class="anime-card__title">Yuru Camp</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION Z -->
-<h2>Z</h2>
-<div class="anime-gallery">
 <details open>
+<summary>Z</summary>
+<div class="anime-gallery">
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/b250-K6QoqgSmtsPo.png" alt="Zatch Bell!" />
@@ -1492,6 +1492,6 @@ title: Anime List
   </div>
   <span class="anime-card__title">Zom 100</span>
 </article>
-</details>
 </div>
+</details>
 
