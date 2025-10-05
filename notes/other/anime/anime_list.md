@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime Counter: 214
+## Anime Counter: 215
 
 <div class="details-controls">
   <button id="expand-all">Expand All</button>
@@ -1498,6 +1498,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/b250-K6QoqgSmtsPo.png" alt="Zatch Bell!" />
   </div>
   <span class="anime-card__title">Zatch Bell!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx14075-EIJcGXq5hd9O.jpg" alt="Zetsuen no Tempest" />
+  </div>
+  <span class="anime-card__title">Zetsuen no Tempest</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
