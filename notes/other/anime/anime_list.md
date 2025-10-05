@@ -5,8 +5,9 @@ title: Anime List
 
 ## Anime List (214)
 
-<div class="anime-gallery">
+
 <h2>A</h2>
+<div class="anime-gallery">
 <details open>
   <article class="anime-card">
     <div class="anime-card__image-wrapper">
@@ -129,7 +130,10 @@ title: Anime List
   <span class="anime-card__title">Attack on Titan</span>
 </article>
 </details>
+</div>
+<!-- SECTION B -->
 <h2>B</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -216,7 +220,10 @@ title: Anime List
   <span class="anime-card__title">Bungo Stray Dogs</span>
 </article>
 </details>
+</div>
+<!-- SECTION C -->
 <h2>C</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -291,7 +298,10 @@ title: Anime List
   <span class="anime-card__title">Cowboy Bebop</span>
 </article>
 </details>
+</div>
+<!-- SECTION D -->
 <h2>D</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -414,7 +424,10 @@ title: Anime List
   <span class="anime-card__title">Durarara!!</span>
 </article>
 </details>
+</div>
+<!-- SECTION E -->
 <h2>E</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -423,7 +436,10 @@ title: Anime List
   <span class="anime-card__title">ERASED</span>
 </article>
 </details>
+</div>
+<!-- SECTION F -->
 <h2>F</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -480,7 +496,10 @@ title: Anime List
   <span class="anime-card__title">Fullmetal Alchemist: Brotherhood</span>
 </article>
 </details>
+</div>
+<!-- SECTION G -->
 <h2>G</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -561,7 +580,10 @@ title: Anime List
   <span class="anime-card__title">Guilty Crown</span>
 </article>
 </details>
+</div>
+<!-- SECTION H -->
 <h2>H</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -636,7 +658,10 @@ title: Anime List
   <span class="anime-card__title">Hyouka</span>
 </article>
 </details>
+</div>
+<!-- SECTION I -->
 <h2>I</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -681,7 +706,10 @@ title: Anime List
   <span class="anime-card__title">Isekai wa Smartphone to Tomo ni.</span>
 </article>
 </details>
+</div>
+<!-- SECTION J -->
 <h2>J</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -696,7 +724,10 @@ title: Anime List
   <span class="anime-card__title">Just Because!</span>
 </article>
 </details>
+</div>
+<!-- SECTION K -->
 <h2>K</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -801,7 +832,10 @@ title: Anime List
   <span class="anime-card__title">Kuroko no Basket</span>
 </article>
 </details>
+</div>
+<!-- SECTION L -->
 <h2>L</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -822,7 +856,10 @@ title: Anime List
   <span class="anime-card__title">Log Horizon</span>
 </article>
 </details>
+</div>
+<!-- SECTION M -->
 <h2>M</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -903,7 +940,10 @@ title: Anime List
   <span class="anime-card__title">My Hero Academia</span>
 </article>
 </details>
+</div>
+<!-- SECTION N -->
 <h2>N</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -948,7 +988,10 @@ title: Anime List
   <span class="anime-card__title">Noragami</span>
 </article>
 </details>
+</div>
+<!-- SECTION O -->
 <h2>O</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -993,7 +1036,10 @@ title: Anime List
   <span class="anime-card__title">Overlord</span>
 </article>
 </details>
+</div>
+<!-- SECTION P -->
 <h2>P</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1026,7 +1072,10 @@ title: Anime List
   <span class="anime-card__title">Psycho-Pass</span>
 </article>
 </details>
+</div>
+<!-- SECTION R -->
 <h2>R</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1077,7 +1126,10 @@ title: Anime List
   <span class="anime-card__title">Rokudenashi Majutsu Koushi to Akashic Records</span>
 </article>
 </details>
+</div>
+<!-- SECTION S -->
 <h2>S</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1182,7 +1234,10 @@ title: Anime List
   <span class="anime-card__title">Sword Art Online</span>
 </article>
 </details>
+</div>
+<!-- SECTION T -->
 <h2>T</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1335,7 +1390,10 @@ title: Anime List
   <span class="anime-card__title">Tsukimonogatari</span>
 </article>
 </details>
+</div>
+<!-- SECTION U -->
 <h2>U</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1356,7 +1414,10 @@ title: Anime List
   <span class="anime-card__title">UQ Holder!</span>
 </article>
 </details>
+</div>
+<!-- SECTION V -->
 <h2>V</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1365,7 +1426,10 @@ title: Anime List
   <span class="anime-card__title">Vinland Saga</span>
 </article>
 </details>
+</div>
+<!-- SECTION W -->
 <h2>W</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1398,7 +1462,10 @@ title: Anime List
   <span class="anime-card__title">Wotakoi</span>
 </article>
 </details>
+</div>
+<!-- SECTION Y -->
 <h2>Y</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
@@ -1407,7 +1474,10 @@ title: Anime List
   <span class="anime-card__title">Yuru Camp</span>
 </article>
 </details>
+</div>
+<!-- SECTION Z -->
 <h2>Z</h2>
+<div class="anime-gallery">
 <details open>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
