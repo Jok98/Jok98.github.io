@@ -53,7 +53,9 @@ body.anime-layout {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  width: 100%;
+  max-width: 220px;
+  align-items: center;
   padding: 18px 18px 22px;
   background: linear-gradient(160deg, rgba(0, 227, 205, 0.10), rgba(0, 170, 255, 0.08) 40%, rgba(22, 27, 32, 0.9) 100%);
   border: 1px solid rgba(0, 227, 205, 0.18);
@@ -86,6 +88,8 @@ body.anime-layout {
 .anime-card__image-wrapper {
   position: relative;
   width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
   aspect-ratio: 210 / 297; /* A4 portrait */
   border-radius: 12px;
   overflow: hidden;
