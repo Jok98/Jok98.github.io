@@ -432,6 +432,17 @@
     "contents": [],
     "subsections": [
   {
+    "name": "anime",
+    "contents": [
+      {
+        "content": "anime_list.md",
+        "link": "notes/other/anime/anime_list"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "japanese",
     "contents": [],
     "subsections": [
