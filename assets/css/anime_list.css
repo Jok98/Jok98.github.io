@@ -125,6 +125,25 @@ body.anime-layout {
   color: #7ce7db;
 }
 
+details {
+  margin-bottom: 1.5rem;
+  border-left: 2px solid rgba(0, 227, 205, 0.2);
+  padding-left: 1.5rem;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #a8f0ff;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+summary:hover {
+  color: #7ce7db;
+}
+
 @media (max-width: 600px) {
   .anime-card {
     padding: 16px 16px 20px;
