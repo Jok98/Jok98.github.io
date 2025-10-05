@@ -180,7 +180,7 @@ summary:hover {
 }
 
 #anime-search {
-  width: 100%;
+  width: 50%;
   padding: 0.75rem 1rem 0.75rem 3rem; /* Add padding to the left for the icon */
   border: 1px solid rgba(0, 227, 205, 0.35);
   background-color: rgba(17, 24, 31, 0.85);
@@ -188,6 +188,7 @@ summary:hover {
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+  box-sizing: border-box;
 }
 
 #anime-search:focus {
