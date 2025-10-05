@@ -1140,8 +1140,191 @@ title: Anime List
   </div>
   <span class="anime-card__title">The Beginning After the End</span>
 </article>
-
-
-
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx15809-5Ddu3w7wq9F9.jpg" alt="The Devil is a Part-Timer!" />
+  </div>
+  <span class="anime-card__title">The Devil is a Part-Timer!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx132473-L64hP24nJyEV.jpg" alt="The Faraway Paladin" />
+  </div>
+  <span class="anime-card__title">The Faraway Paladin</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20458-tGh343Ew10yU.jpg" alt="The Irregular at Magic High School" />
+  </div>
+  <span class="anime-card__title">The Irregular at Magic High School</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx114888-lgecUF3O1AWS.png" alt="The Millionaire Detective" />
+  </div>
+  <span class="anime-card__title">The Millionaire Detective</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx112301-P1K5zjiQfacn.jpg" alt="The Misfit of Demon King Academy" />
+  </div>
+  <span class="anime-card__title">The Misfit of Demon King Academy</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101759-NhSwxv7HY9y9.jpg" alt="The Promised Neverland" />
+  </div>
+  <span class="anime-card__title">The Promised Neverland</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx103572-2MXV30htoCSh.png" alt="The Quintessential Quintuplets" />
+  </div>
+  <span class="anime-card__title">The Quintessential Quintuplets</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx99263-SJSk5d6mhQZO.jpg" alt="The Rising of the Shield Hero" />
+  </div>
+  <span class="anime-card__title">The Rising of the Shield Hero</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20789-SsAI4pvvI9EU.jpg" alt="The Seven Deadly Sins" />
+  </div>
+  <span class="anime-card__title">The Seven Deadly Sins</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21662-pTpbHTs0xqsG.jpg" alt="The Silver Guardian" />
+  </div>
+  <span class="anime-card__title">The Silver Guardian</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx129191-F80AgCUP79yE.jpg" alt="The Strongest Sage with the Weakest Crest" />
+  </div>
+  <span class="anime-card__title">The Strongest Sage with the Weakest Crest</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx137908-50af3lKVbst2.jpg" alt="The Wrong Way to Use Healing Magic" />
+  </div>
+  <span class="anime-card__title">The Wrong Way to Use Healing Magic</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx114535-y3NnjexcqKG1.jpg" alt="To Your Eternity" />
+  </div>
+  <span class="anime-card__title">To Your Eternity</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx20605-fmnHdfurM7m6.jpg" alt="Tokyo Ghoul" />
+  </div>
+  <span class="anime-card__title">Tokyo Ghoul</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx120120-mBmQUtMloszF.jpg" alt="Tokyo Revengers" />
+  </div>
+  <span class="anime-card__title">Tokyo Revengers</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx141014-eRFDPNpf3hI7.jpg" alt="Tomodachi Game" />
+  </div>
+  <span class="anime-card__title">Tomodachi Game</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx4224-3Bh0rm99N6Vl.jpg" alt="Toradora!" />
+  </div>
+  <span class="anime-card__title">Toradora!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx115230-QHOdSN7yt8ab.jpg" alt="Tower of God" />
+  </div>
+  <span class="anime-card__title">Tower of God</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx125206-O2MsOWdW1lVi.jpg" alt="Tsukimichi -Moonlit Fantasy-" />
+  </div>
+  <span class="anime-card__title">Tsukimichi -Moonlit Fantasy-</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20918-2InvV6EsOScm.png" alt="Tsukimonogatari" />
+  </div>
+  <span class="anime-card__title">Tsukimonogatari</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/b101597-1hmWoRvno4Tq.jpg" alt="Ultramarine Magmell" />
+  </div>
+  <span class="anime-card__title">Ultramarine Magmell</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx154116-UetMXpm9W8nC.jpg" alt="Undead Unluck" />
+  </div>
+  <span class="anime-card__title">Undead Unluck</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx21855-4Dpxr8GQ4BKy.jpg" alt="UQ Holder!" />
+  </div>
+  <span class="anime-card__title">UQ Holder!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx101348-msJS8z91mG0P.jpg" alt="Vinland Saga" />
+  </div>
+  <span class="anime-card__title">Vinland Saga</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx163270-cKmwZN5BIbnJ.jpg" alt="Wind Breaker" />
+  </div>
+  <span class="anime-card__title">Wind Breaker</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx100112-eExFpnYG2QAK.jpg" alt="Wise Man's Grandchild" />
+  </div>
+  <span class="anime-card__title">Wise Man's Grandchild</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20729-DnBXnUxFon1B.png" alt="World Trigger" />
+  </div>
+  <span class="anime-card__title">World Trigger</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/nx99578-oO5KChtfhzln.png" alt="Wotakoi" />
+  </div>
+  <span class="anime-card__title">Wotakoi</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx98444-zzhSw9o3LJSy.jpg" alt="Yuru Camp" />
+  </div>
+  <span class="anime-card__title">Yuru Camp</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/b250-K6QoqgSmtsPo.png" alt="Zatch Bell!" />
+  </div>
+  <span class="anime-card__title">Zatch Bell!</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx159831-TxAC0ujoLTK6.png" alt="Zom 100" />
+  </div>
+  <span class="anime-card__title">Zom 100</span>
+</article>
 </div>
 
