@@ -6,9 +6,10 @@ title: Anime List
 ## Anime List (214)
 
 
+
+<details open>
 <h2>A</h2>
 <div class="anime-gallery">
-<details open>
   <article class="anime-card">
     <div class="anime-card__image-wrapper">
       <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21366-qp94AxKx6ZaM.jpg" alt="3-gatsu no Lion" />
@@ -129,8 +130,8 @@ title: Anime List
   </div>
   <span class="anime-card__title">Attack on Titan</span>
 </article>
-</details>
 </div>
+</details>
 <!-- SECTION B -->
 <h2>B</h2>
 <div class="anime-gallery">
