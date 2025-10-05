@@ -220,6 +220,10 @@
     "name": "java",
     "contents": [
       {
+        "content": "1_0_lambda.md",
+        "link": "notes/dev/java/1_0_lambda"
+      },
+      {
         "content": "main_features.md",
         "link": "notes/dev/java/main_features"
       }
