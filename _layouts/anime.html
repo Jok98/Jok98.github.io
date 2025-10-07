@@ -30,10 +30,14 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggleAllButton = document.getElementById('toggle-all');
-    const detailsElements = document.querySelectorAll('details');
 
     if (toggleAllButton) {
       toggleAllButton.addEventListener('click', () => {
+        const detailsElements = document.querySelectorAll('details');
+        if (!detailsElements.length) {
+          return;
+        }
+
         const allOpen = Array.from(detailsElements).every(details => details.open);
 
         detailsElements.forEach(details => {
