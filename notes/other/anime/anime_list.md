@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime Counter: 215
+## Anime Counter: 216
 
 <div class="details-controls">
   <button id="toggle-all">Collapse All</button>
@@ -1119,6 +1119,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21355-IHaS50pvLYd0.jpg" alt="Re:Zero" />
   </div>
   <span class="anime-card__title">Re:Zero</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21049-4AHSLeiDE9eg.png" alt="ReLife" />
+  </div>
+  <span class="anime-card__title">ReLife</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
