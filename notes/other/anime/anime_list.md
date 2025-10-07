@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime Counter: 218
+## Anime Counter: 220
 
 <div class="details-controls">
   <button id="toggle-all">Collapse All</button>
@@ -1302,6 +1302,12 @@ title: Anime List
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx118419-li8RpQcLgiKK.png" alt="The Day I Became a God" />
+  </div>
+  <span class="anime-card__title">The Day I Became a God</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx15809-5Ddu3w7wq9F9.jpg" alt="The Devil is a Part-Timer!" />
   </div>
   <span class="anime-card__title">The Devil is a Part-Timer!</span>
@@ -1317,6 +1323,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20458-tGh343Ew10yU.jpg" alt="The Irregular at Magic High School" />
   </div>
   <span class="anime-card__title">The Irregular at Magic High School</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx21567-G0fAjdtoCsZz.jpg" alt="The Lost Village" />
+  </div>
+  <span class="anime-card__title">The Lost Village</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
