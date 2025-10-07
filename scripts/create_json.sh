@@ -1,7 +1,12 @@
 #!/bin/bash
 
-BASE_DIR="notes"
-OUTPUT_FILE="directories.json"
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+BASE_DIR="$REPO_ROOT/notes"
+OUTPUT_FILE="$REPO_ROOT/assets/data/directories.json"
 
 generate_json() {
   local current_dir="$1"
@@ -16,7 +21,7 @@ generate_json() {
     for file in "${files[@]}"; do
       local filename=$(basename "$file")
       local relative_path="${file%.*}" # Remove extension
-      relative_path="${relative_path/$base_dir\//}"
+      relative_path="${relative_path#"$base_dir/"}"
       echo "      {"
       echo "        \"content\": \"$filename\","
       echo "        \"link\": \"notes/$relative_path\""
@@ -44,6 +49,8 @@ generate_json() {
 }
 
 # Generate JSON
+mkdir -p "$(dirname "$OUTPUT_FILE")"
+
 echo "[" > "$OUTPUT_FILE"
 for folder in $(find "$BASE_DIR" -mindepth 1 -maxdepth 1 -type d | sort); do
   generate_json "$folder" "$BASE_DIR" >> "$OUTPUT_FILE"
@@ -52,4 +59,5 @@ done
 sed -i '$ s/,$//' "$OUTPUT_FILE"
 echo "]" >> "$OUTPUT_FILE"
 
-echo "Generated json : $OUTPUT_FILE"
+relative_output="${OUTPUT_FILE#$REPO_ROOT/}"
+echo "Generated json : ${relative_output:-$OUTPUT_FILE}"

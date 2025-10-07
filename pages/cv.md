@@ -1,6 +1,7 @@
 ---
 layout: cv
 title: Resume
+permalink: /cv/
 ---
 
 # Matteo Moi - Software Engineer

@@ -11,7 +11,7 @@ The deployment is managed through github actions [execute-sh.yml](.github/workfl
 
 The notes are written in markdown and stored in the `notes` directory that will be converted to html by Jekyll and deployed to github pages.
 
-The structure of the site is based on a json that represents the structure/hierarchy of the `notes` dir that is updated automatically by a scrip [create_json.sh](create_json.sh) that is executed by the github action.
+The structure of the site is based on a json that represents the structure/hierarchy of the `notes` dir that is updated automatically by a script [create_json.sh](scripts/create_json.sh) that is executed by the github action and stored in `assets/data/directories.json`.
 
 ---
 

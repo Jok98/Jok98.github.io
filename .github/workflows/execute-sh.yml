@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Backup Current JSON
-        run: cp directories.json directories.json.bak || echo "No previous JSON to backup"
+        run: cp assets/data/directories.json assets/data/directories.json.bak || echo "No previous JSON to backup"
 
       - name: List Notes Directory
         run: |
@@ -23,24 +23,24 @@ jobs:
 
       - name: Run JSON Generator Script
         run: |
-          chmod +x create_json.sh
-          ./create_json.sh
+          chmod +x scripts/create_json.sh
+          ./scripts/create_json.sh
           echo "Generated JSON content:"
-          cat directories.json
+          cat assets/data/directories.json
 
       - name: Compare JSON Files
         run: |
-          if diff directories.json directories.json.bak; then
+          if diff assets/data/directories.json assets/data/directories.json.bak; then
             echo "No changes in directories.json"
           else
             echo "directories.json has changed:"
-            diff directories.json directories.json.bak || true
+            diff assets/data/directories.json assets/data/directories.json.bak || true
           fi
 
       - name: Debug Git
         run: |
           git status
-          git diff directories.json
+          git diff assets/data/directories.json
 
       - name: Configure Git
         run: |
@@ -51,6 +51,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add directories.json
+          git add assets/data/directories.json
           git commit -m "Update directories.json [CI]" || echo "No changes to commit"
           git push origin main || echo "Push failed"
