@@ -1,6 +1,33 @@
+body.trip-layout {
+  background: radial-gradient(160% 120% at 50% -20%, rgba(0, 122, 204, 0.15), transparent 70%),
+              radial-gradient(120% 140% at 100% 100%, rgba(0, 204, 153, 0.12), transparent 65%),
+              linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  min-height: 100vh;
+}
+
 .diary-content {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.trip-wrapper {
+  background: rgba(20, 24, 30, 0.85);
+  border: 1px solid rgba(0, 170, 255, 0.18);
+  border-radius: 16px;
+  padding: 32px 36px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.55);
+}
+
+.trip-wrapper h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.trip-subtitle {
+  text-align: center;
+  margin: 0 0 24px;
+  color: #c4d7f2;
 }
 
 .photo-day {
@@ -53,6 +80,17 @@
   text-align: center;
 }
 
+.diary-loading,
+.diary-error {
+  text-align: center;
+  color: #b0c4de;
+  margin: 32px 0;
+}
+
+.diary-error {
+  color: #ff8a80;
+}
+
 @media (min-width: 1200px) {
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -75,5 +113,9 @@
 
   .photo-grid figure > img {
     height: 140px;
+  }
+
+  .trip-wrapper {
+    padding: 24px 20px;
   }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/default_style.css">
+  <link rel="stylesheet" href="/assets/css/photo_grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="trip-layout">
+<header>
+  <nav class="navbar">
+    <a href="/" class="nav-logo">Matteo Moi - Software Developer</a>
+    <div class="nav-links">
+      <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="/cv" class="nav-link"><i class="fas fa-file-alt"></i> CV</a>
+      <a href="https://github.com/Jok98" target="_blank" class="nav-link"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a>
+      <span class="site-version">V3.0</span>
+    </div>
+  </nav>
+</header>
+<main class="page-content diary-content">
+  <div class="trip-wrapper">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="trip-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+    {{ content }}
+    <div id="trip-diary"
+         data-trip-url="{{ page.data_source | default: page.data_url | relative_url }}">
+      <p class="diary-loading">Loading diary...</p>
+    </div>
+  </div>
+</main>
+<button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<script src="/assets/js/trip_diary.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
