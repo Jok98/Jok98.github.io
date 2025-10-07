@@ -3,7 +3,7 @@ layout: anime
 title: Anime List
 ---
 
-## Anime Counter: 216
+## Anime Counter: 218
 
 <div class="details-controls">
   <button id="toggle-all">Collapse All</button>
@@ -35,14 +35,20 @@ title: Anime List
 <summary>A</summary>
 <div class="anime-gallery">
 <article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx104936-pj2LwAKTPZ4u.png" alt="A Destructive God Sits Next to Me" />
+  </div>
+  <span class="anime-card__title">A Destructive God Sits Next to Me</span>
+</article>
+<article class="anime-card">
 <div class="anime-card__image-wrapper">
-      <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99426-5jWTUs719lQN.png" alt="91 Days" />
+      <img class="anime-card__image" src="https://img.animeunity.so/anime/bx99426-5jWTUs719lQN.png" alt="A Place Further Than The Universe" />
     </div>
     <span class="anime-card__title">A Place Further Than The Universe</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
-    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20954-UMb6Kl7ZL8Ke.jpg" alt="bx20954" />
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx20954-UMb6Kl7ZL8Ke.jpg" alt="A silent Voice" />
   </div>
   <span class="anime-card__title">A silent Voice</span>
 </article>
@@ -825,6 +831,12 @@ title: Anime List
     <img class="anime-card__image" src="https://img.animeunity.so/anime/bx133965-9TZBS4m4yvED.png" alt="Komi Can't Communicate" />
   </div>
   <span class="anime-card__title">Komi Can't Communicate</span>
+</article>
+<article class="anime-card">
+  <div class="anime-card__image-wrapper">
+    <img class="anime-card__image" src="https://img.animeunity.so/anime/bx11887-h8SRoEslkQYX.jpg" alt="Kokoro Connect" />
+  </div>
+  <span class="anime-card__title">Kokoro Connect</span>
 </article>
 <article class="anime-card">
   <div class="anime-card__image-wrapper">
