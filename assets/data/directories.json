@@ -428,20 +428,14 @@
   }
 ,
   {
-    "name": "other",
-    "contents": [],
-    "subsections": [
-  {
-    "name": "anime",
+    "name": "etc",
     "contents": [
       {
         "content": "anime_list.md",
-        "link": "notes/other/anime/anime_list"
+        "link": "notes/etc/anime_list"
       }
     ],
-    "subsections": []
-  }
-,
+    "subsections": [
   {
     "name": "japanese",
     "contents": [],
@@ -455,19 +449,19 @@
     "contents": [
       {
         "content": "da.md",
-        "link": "notes/other/japanese/bunpo/doshi/da"
+        "link": "notes/etc/japanese/bunpo/doshi/da"
       },
       {
         "content": "godan_u.md",
-        "link": "notes/other/japanese/bunpo/doshi/godan_u"
+        "link": "notes/etc/japanese/bunpo/doshi/godan_u"
       },
       {
         "content": "ichidan_ru.md",
-        "link": "notes/other/japanese/bunpo/doshi/ichidan_ru"
+        "link": "notes/etc/japanese/bunpo/doshi/ichidan_ru"
       },
       {
         "content": "irregular.md",
-        "link": "notes/other/japanese/bunpo/doshi/irregular"
+        "link": "notes/etc/japanese/bunpo/doshi/irregular"
       }
     ],
     "subsections": []
@@ -481,11 +475,11 @@
     "contents": [
       {
         "content": "Hiragana.md",
-        "link": "notes/other/japanese/kakitori_yomutori/Hiragana"
+        "link": "notes/etc/japanese/kakitori_yomutori/Hiragana"
       },
       {
         "content": "Katakana.md",
-        "link": "notes/other/japanese/kakitori_yomutori/Katakana"
+        "link": "notes/etc/japanese/kakitori_yomutori/Katakana"
       }
     ],
     "subsections": []
@@ -503,7 +497,7 @@
     "contents": [
       {
         "content": "diary.md",
-        "link": "notes/other/trip/osaka_2024/diary"
+        "link": "notes/etc/trip/osaka_2024/diary"
       }
     ],
     "subsections": []
@@ -514,7 +508,7 @@
     "contents": [
       {
         "content": "IMG_20191002_123759_650.jpg",
-        "link": "notes/other/trip/sapporo_2019/IMG_20191002_123759_650"
+        "link": "notes/etc/trip/sapporo_2019/IMG_20191002_123759_650"
       }
     ],
     "subsections": []
