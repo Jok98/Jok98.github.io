@@ -106,16 +106,16 @@ body.cv-page * {
 
 .skill-lines {
   list-style: none;
-  margin: 6px 0 0;
+  margin: 0;
   padding: 0;
   display: grid;
-  gap: 6px 18px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4px 14px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .skill-lines li {
-  font-size: 0.9rem;
-  line-height: 1.35;
+  font-size: 0.88rem;
+  line-height: 1.32;
   color: #2e3a4e;
 }
 
@@ -125,6 +125,16 @@ body.cv-page * {
   display: inline-block;
   margin-right: 6px;
   white-space: nowrap;
+}
+
+.education-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #2e3a4e;
+}
+
+.education-list li {
+  margin-bottom: 4px;
 }
 
 .experience-list {
@@ -181,12 +191,14 @@ body.cv-page * {
   color: #475569;
 }
 
+.section-cards,
 .projects-section {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
+.cv-card,
 .project-card {
   padding: 18px 20px;
   border: 1px solid #d8e2f1;
@@ -312,6 +324,7 @@ body.cv-page * {
     color: #111827;
   }
 
+  .cv-card,
   .experience-item,
   .project-card {
     box-shadow: none;
@@ -321,6 +334,7 @@ body.cv-page * {
     page-break-inside: avoid;
   }
 
+  .cv-card,
   .experience-item,
   .project-card {
     padding: 14px 16px;
@@ -347,6 +361,10 @@ body.cv-page * {
   .project-details {
     column-count: 2;
     column-gap: 16px;
+  }
+
+  .education-list li {
+    margin-bottom: 3px;
   }
 
   .languages-list,

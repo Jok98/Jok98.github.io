@@ -19,17 +19,27 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
 
 ## Tech Stack
 
-<ul class="skill-lines">
-  <li><strong>Backend Core:</strong> Java 17, Spring Boot 3, Spring Cloud, Spring Security, Hibernate/JPA, OpenAPI-first, JUnit, Mockito, Testcontainers, Maven</li>
-  <li><strong>Architecture:</strong> Spring Cloud Gateway, Nginx, Netflix Eureka, Zookeeper, Spring Cloud Config, Resilience4j, Spring Cloud Sleuth, Zipkin, OAuth2, JWT</li>
-  <li><strong>Data &amp; Messaging:</strong> PostgreSQL, MySQL, Oracle, MongoDB, RabbitMQ, Apache Kafka, Flyway</li>
-  <li><strong>Delivery &amp; Operations:</strong> Docker, Kubernetes, Helm, GitHub Actions, GitLab CI/CD, Jenkins, Prometheus, Grafana, Loki, Spring Actuator, Swagger/OpenAPI, Confluence, Jira, JasperReports</li>
-</ul>
+<div class="section-cards">
+  <section class="cv-card">
+    <ul class="skill-lines">
+      <li><strong>Backend Core:</strong> Java 17, Spring Boot 3, Spring Cloud, Spring Security, Hibernate/JPA, OpenAPI-first, JUnit, Mockito, Testcontainers, Maven</li>
+      <li><strong>Architecture:</strong> Spring Cloud Gateway, Nginx, Netflix Eureka, Zookeeper, Spring Cloud Config, Resilience4j, Spring Cloud Sleuth, Zipkin, OAuth2, JWT</li>
+      <li><strong>Data &amp; Messaging:</strong> PostgreSQL, MySQL, Oracle, MongoDB, RabbitMQ, Apache Kafka, Flyway</li>
+      <li><strong>Delivery &amp; Operations:</strong> Docker, Kubernetes, Helm, GitHub Actions, GitLab CI/CD, Jenkins, Prometheus, Grafana, Loki, Spring Actuator, Swagger/OpenAPI, Confluence, Jira, JasperReports</li>
+    </ul>
+  </section>
+</div>
 
 ## Education
 
-- **Bachelor's Degree in Computer Science** - Ecampus University (ongoing)
-- **Self-directed Learning** - Continuous professional development through courses, documentation, and hands-on projects since 2016
+<div class="section-cards">
+  <section class="cv-card">
+    <ul class="education-list">
+      <li><strong>Bachelor's Degree in Computer Science</strong> - Ecampus University (ongoing)</li>
+      <li><strong>Self-directed Learning</strong> - Continuous professional development through courses, documentation, and hands-on projects since 2016</li>
+    </ul>
+  </section>
+</div>
 
 ---
 
@@ -74,7 +84,7 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
       <h3>Blue Reply (SistemItaly)</h3>
       <div>
         <span class="experience-role">Junior Software Engineer</span>
-        <span class="experience-dates">November 2022 – August 2023</span>
+        <span class="experience-dates">April 2022 – August 2023</span>
       </div>
     </div>
     <ul>
