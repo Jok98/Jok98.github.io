@@ -171,6 +171,15 @@ body.cv-page * {
   margin-right: 10px;
 }
 
+.experience-domain {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f766e;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
 .experience-dates {
   font-size: 0.9rem;
   color: #64748b;
@@ -352,6 +361,10 @@ body.cv-page * {
   .experience-tech {
     color: #1f2937;
     font-size: 0.85rem;
+  }
+
+  .experience-domain {
+    color: #0f172a;
   }
 
   .project-details li {

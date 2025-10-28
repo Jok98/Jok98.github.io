@@ -51,49 +51,55 @@ As an IT enthusiast I'm always looking for increase my knowledge in the field of
       <h3>Objectway</h3>
       <div>
         <span class="experience-role">Software Engineer</span>
+        <span class="experience-domain">Fintech</span>
         <span class="experience-dates">January 2024 – Present</span>
       </div>
     </div>
     <ul>
-      <li>Develop and maintain microservices-based financial applications using Spring Boot and Java 17</li>
-      <li>Design secure authentication and authorization flows with OAuth2 and JWT</li>
-      <li>Co-design new features with cross-functional teams and document architectural decisions</li>
-      <li>Operate in Agile squads with automated CI/CD pipelines for continuous delivery</li>
+<li>Delivered features across multiple projects based on <strong>Advice</strong>, a modular portfolio-management platform sold stand-alone or integrated in banks’ core systems.</li>
+    <li>Client implementations and customizations for <strong>Credit Suisse</strong>, <strong>Allianz</strong>, <strong>Mediobanca</strong>, and <strong>TNB</strong> (Azimut spin-off), each with different Advice versions, module sets, and integration needs.</li>
+    <li>Built microservices with <strong>Java 17</strong> and <strong>Spring Boot</strong>; API-first development with OpenAPI, versioning, and backward compatibility.</li>
+    <li>Owned frontend slices using <strong>JSF</strong>: Facelets views, backing beans, component wiring, and integration with backend APIs.</li>
+    <li>Partnered 1:1 with business analysts to refine requirements and align domain models, user journeys, and API contracts.</li>
+    <li>At <strong>Allianz</strong>: integrated <strong>Keycloak</strong> (OIDC) for authentication/authorization, role mapping, and claim design.</li>
+    <li>At <strong>TNB</strong>: migrated selected flows/code from Azimut, focusing on <strong>Spring Batch</strong> jobs and orchestration.</li>
+    <li>At <strong>Mediobanca</strong> and <strong>Credit Suisse</strong>: developed and maintained reporting with <strong>JasperReports/JasperSoft</strong>.</li>
+    <li>Collaborated with DevOps on CI/CD workflows, environment configuration, release coordination, and observability requirements; provided log/metric needs and deployment readiness checks.</li>
     </ul>
-    <p class="experience-tech"><strong>Technologies:</strong> Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ</p>
   </section>
   <section class="experience-item">
     <div class="experience-header">
       <h3>Iriscube Reply (SistemItaly)</h3>
       <div>
         <span class="experience-role">Software Engineer</span>
+        <span class="experience-domain">Banking</span>
         <span class="experience-dates">August 2023 – January 2024</span>
       </div>
     </div>
     <ul>
-      <li>Delivered RESTful APIs for banking services with Spring Boot and Hibernate/JPA</li>
-      <li>Built robust persistence layers backed by PostgreSQL</li>
-      <li>Contributed to microservices architecture design and integration</li>
-      <li>Wrote unit and integration tests with JUnit and Mockito to ensure quality</li>
-      <li>Actively participated in code reviews and shared knowledge across the team</li>
+    <li>Delivered customer dashboard and back-office dashboard for Crédit Agricole, covering related backend services end to end.</li>
+    <li>API-first delivery: authored documentation, defined Swagger/OpenAPI YAML contracts, then implemented services from the specs.</li>
+    <li>Built RESTful microservices with Spring Boot and JPA/Hibernate; designed robust PostgreSQL persistence layers.</li>
+    <li>Worked 1:1 with the frontend team to co-design API signatures, enforce versioning, and keep backward compatibility.</li>
+    <li>Wrote unit and integration tests with JUnit 5 and Mockito; supported Agile sprints, code reviews, and CI.</li>
     </ul>
-    <p class="experience-tech"><strong>Technologies:</strong> Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git</p>
   </section>
   <section class="experience-item">
     <div class="experience-header">
       <h3>Blue Reply (SistemItaly)</h3>
       <div>
         <span class="experience-role">Junior Software Engineer</span>
+        <span class="experience-domain">Insurance</span>
         <span class="experience-dates">April 2022 – August 2023</span>
       </div>
     </div>
     <ul>
-      <li>Implemented backend services for insurance management platforms with Java and Spring</li>
-      <li>Worked with Oracle and MySQL databases to guarantee reliable data persistence</li>
-      <li>Supported Agile ceremonies, sprint planning, and iterative delivery</li>
-      <li>Collaborated with senior engineers to enhance code quality and performance</li>
+    <li>Owned the project end to end for 6 months, coordinating delivery, quality, and release cadence.</li>
+    <li>Developed both frontend and backend features: REST API design and implementation, UI development, API versioning, and backward compatibility.</li>
+    <li>Analyzed and implemented Business Requirements (BR), Change Requests (CR), and hotfixes with impact assessment and controlled rollouts.</li>
+    <li>Managed test and production environments: deployments, configuration, monitoring, and incident root-cause analysis.</li>
+    <li>Technical lead for the migration from Vaadin 8 to Vaadin 24.</li>
     </ul>
-    <p class="experience-tech"><strong>Technologies:</strong> Java, Spring Framework, Oracle, MySQL, Git, Maven</p>
   </section>
 </div>
 
