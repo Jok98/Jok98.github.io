@@ -31,40 +31,64 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
   </ul>
 </div>
 
-<div class="skills-grid">
-  <section class="skills-card">
-    <h3>Languages &amp; Frameworks</h3>
-    <ul>
-      <li>Java, SQL, Spring Boot, Spring Cloud, Spring Security, Hibernate/JPA</li>
-      <li>Testing with JUnit, Mockito, Testcontainers</li>
-      <li>Build orchestration with Maven</li>
+<div class="skills-matrix">
+  <section class="skill-block">
+    <h3>Backend Core</h3>
+    <ul class="skill-inline">
+      <li>Java 17</li>
+      <li>Spring Boot 3</li>
+      <li>Spring Cloud</li>
+      <li>Spring Security</li>
+      <li>Hibernate/JPA</li>
+      <li>OpenAPI-first</li>
+      <li>JUnit &amp; Mockito</li>
+      <li>Testcontainers</li>
+      <li>Maven</li>
     </ul>
   </section>
-  <section class="skills-card">
+  <section class="skill-block">
+    <h3>Architecture</h3>
+    <ul class="skill-inline">
+      <li>Spring Cloud Gateway</li>
+      <li>Nginx</li>
+      <li>Netflix Eureka</li>
+      <li>Zookeeper</li>
+      <li>Spring Cloud Config</li>
+      <li>Resilience4j</li>
+      <li>Spring Cloud Sleuth</li>
+      <li>Zipkin</li>
+      <li>OAuth2 &amp; JWT</li>
+    </ul>
+  </section>
+  <section class="skill-block">
     <h3>Data &amp; Messaging</h3>
-    <ul>
-      <li>Relational: PostgreSQL, MySQL, Oracle</li>
-      <li>NoSQL: MongoDB</li>
-      <li>Event-driven messaging with RabbitMQ and Apache Kafka</li>
+    <ul class="skill-inline">
+      <li>PostgreSQL</li>
+      <li>MySQL</li>
+      <li>Oracle</li>
+      <li>MongoDB</li>
+      <li>RabbitMQ</li>
+      <li>Apache Kafka</li>
+      <li>Flyway</li>
     </ul>
   </section>
-  <section class="skills-card">
-    <h3>Microservices Platform</h3>
-    <ul>
-      <li>API Gateways with Spring Cloud Gateway and Nginx</li>
-      <li>Service discovery via Netflix Eureka and Zookeeper</li>
-      <li>Centralized config, resilience, and tracing with Spring Cloud Config, Resilience4j, Spring Cloud Sleuth, Zipkin</li>
-      <li>Security with OAuth2, JWT, and Spring Security</li>
-    </ul>
-  </section>
-  <section class="skills-card">
-    <h3>DevOps &amp; Delivery</h3>
-    <ul>
-      <li>Containerization with Docker, Kubernetes, and Helm</li>
-      <li>CI/CD pipelines using GitLab CI/CD, Jenkins, and GitHub Actions</li>
-      <li>Observability with Prometheus, Grafana, Spring Actuator</li>
-      <li>Documentation &amp; collaboration through Swagger/OpenAPI, Confluence, Jira, Agile/Scrum</li>
-      <li>Reporting with JasperReports</li>
+  <section class="skill-block">
+    <h3>Delivery &amp; Ops</h3>
+    <ul class="skill-inline">
+      <li>Docker</li>
+      <li>Kubernetes</li>
+      <li>Helm</li>
+      <li>GitHub Actions</li>
+      <li>GitLab CI/CD</li>
+      <li>Jenkins</li>
+      <li>Prometheus</li>
+      <li>Grafana</li>
+      <li>Loki</li>
+      <li>Spring Actuator</li>
+      <li>Swagger/OpenAPI</li>
+      <li>Confluence</li>
+      <li>Jira</li>
+      <li>JasperReports</li>
     </ul>
   </section>
 </div>
