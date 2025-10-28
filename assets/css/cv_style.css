@@ -3,7 +3,8 @@ body.cv-page {
   background: #f6f8fb;
   color: #1f2933;
   margin: 0;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.45;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
@@ -18,63 +19,63 @@ body.cv-page * {
 }
 
 .cv-main {
-  max-width: 960px;
-  margin: 48px auto;
-  padding: 48px 56px;
+  max-width: 880px;
+  margin: 32px auto;
+  padding: 32px 36px;
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 14px;
   border: 1px solid #dde7f5;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
 .cv-main h1 {
-  margin: 0 0 12px;
-  font-size: 2.3rem;
+  margin: 0 0 8px;
+  font-size: 1.9rem;
   text-align: center;
   color: #0f172a;
   letter-spacing: -0.01em;
 }
 
 .cv-main h2 {
-  margin: 36px 0 16px;
-  font-size: 1.4rem;
+  margin: 28px 0 12px;
+  font-size: 1.2rem;
   color: #1f2937;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .cv-main h3 {
-  margin: 0 0 10px;
-  font-size: 1.12rem;
+  margin: 0 0 6px;
+  font-size: 1.05rem;
   color: #27364a;
 }
 
 .cv-main h4 {
-  margin: 0 0 8px;
-  font-size: 1rem;
+  margin: 0 0 6px;
+  font-size: 0.95rem;
   color: #334155;
 }
 
 .cv-main p {
-  margin: 12px 0;
+  margin: 8px 0;
   color: #364152;
 }
 
 .cv-main hr {
   border: none;
   border-top: 1px solid #e2e8f0;
-  margin: 36px 0;
+  margin: 24px 0;
 }
 
 .cv-main ul {
-  margin: 12px 0;
-  padding-left: 20px;
+  margin: 8px 0;
+  padding-left: 18px;
 }
 
 .cv-main li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .cv-main a {
@@ -90,7 +91,7 @@ body.cv-page * {
 
 .cv-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   color: #2b3a4f;
 }
 
@@ -104,18 +105,18 @@ body.cv-page * {
 }
 
 .skill-intro {
-  margin: 12px 0 24px;
+  margin: 8px 0 18px;
 }
 
 .skill-intro p {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 .skill-tag-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -123,53 +124,52 @@ body.cv-page * {
 .skill-tag-list li {
   background: #e8f0fe;
   color: #1c3d75;
-  padding: 6px 14px;
+  padding: 4px 10px;
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border: 1px solid #d0dffb;
 }
 
 .skills-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  margin-top: 24px;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  margin-top: 18px;
 }
 
 .skills-card {
   background: #f8fbff;
   border: 1px solid #d6e4f7;
-  border-radius: 14px;
-  padding: 22px 24px;
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .skills-card ul {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 16px;
 }
 
 .skills-card li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: #3b4c64;
 }
 
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
 }
 
 .experience-item {
-  padding: 24px 26px;
-  border: 1px solid #dbe6f5;
-  border-radius: 14px;
+  padding: 18px 20px;
+  border: 1px solid #d8e2f1;
+  border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
 }
 
 .experience-header {
@@ -177,93 +177,100 @@ body.cv-page * {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 12px 20px;
-  margin-bottom: 12px;
+  gap: 8px 16px;
+  margin-bottom: 8px;
 }
 
 .experience-header h3 {
   margin: 0;
-  font-size: 1.18rem;
+  font-size: 1.08rem;
   color: #13233a;
 }
 
 .experience-role {
   font-weight: 600;
   color: #2b3a4f;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .experience-dates {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #64748b;
 }
 
 .experience-item ul {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 .experience-item li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: #344256;
 }
 
 .experience-tech {
-  margin: 10px 0 0;
-  font-size: 0.95rem;
+  margin: 6px 0 0;
+  font-size: 0.9rem;
   color: #475569;
 }
 
 .projects-section {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 18px;
 }
 
 .project-card {
-  padding: 24px 26px;
-  border: 1px solid #dbe6f5;
-  border-radius: 14px;
-  background: #f8fbff;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+  padding: 18px 20px;
+  border: 1px solid #d8e2f1;
+  border-radius: 12px;
+  background: #f9fbff;
 }
 
 .project-header {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 4px;
+  margin-bottom: 8px;
 }
 
 .project-header h3 {
   margin: 0;
-  font-size: 1.18rem;
+  font-size: 1.08rem;
   color: #13233a;
 }
 
 .project-tagline {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #3a4c66;
   font-weight: 500;
 }
 
 .project-summary {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   color: #364152;
   font-style: italic;
 }
 
 .project-details {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
   color: #303d52;
+  column-count: 2;
+  column-gap: 18px;
+}
+
+.project-details li {
+  margin-bottom: 4px;
+  break-inside: avoid;
 }
 
 .cv-main blockquote {
-  margin: 20px 0;
-  padding: 16px 20px;
+  margin: 16px 0;
+  padding: 12px 16px;
   border-left: 4px solid #93c5fd;
   background: #f5f9ff;
   color: #1e293b;
+  font-size: 0.95rem;
 }
 
 .cv-main blockquote strong {
@@ -271,12 +278,12 @@ body.cv-page * {
 }
 
 .cv-main blockquote + ul {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .languages-list,
 .soft-skills-list {
-  column-gap: 32px;
+  column-gap: 24px;
   column-count: 2;
 }
 
@@ -287,9 +294,9 @@ body.cv-page * {
 
 @media (max-width: 768px) {
   .cv-main {
-    margin: 24px;
-    padding: 32px 24px;
-    border-radius: 12px;
+    margin: 20px;
+    padding: 24px 20px;
+    border-radius: 10px;
   }
 
   .skills-grid {
@@ -300,18 +307,23 @@ body.cv-page * {
   .soft-skills-list {
     column-count: 1;
   }
+
+  .project-details {
+    column-count: 1;
+  }
 }
 
 @page {
   size: A4;
-  margin: 0.6in;
+  margin: 0.5in;
 }
 
 @media print {
   body.cv-page {
     background: #ffffff;
     color: #111827;
-    font-size: 11pt;
+    font-size: 10.8pt;
+    line-height: 1.35;
   }
 
   .cv-page-nav,
@@ -336,6 +348,8 @@ body.cv-page * {
     background: none;
     border: 1px solid #9ca3af;
     color: #111827;
+    font-size: 0.78rem;
+    padding: 2px 8px;
   }
 
   .skills-card,
@@ -348,21 +362,29 @@ body.cv-page * {
     page-break-inside: avoid;
   }
 
-  .experience-item {
-    padding: 18px 20px;
-  }
-
+  .experience-item,
   .project-card {
-    padding: 18px 20px;
+    padding: 14px 16px;
   }
 
   .experience-tech {
     color: #1f2937;
+    font-size: 0.85rem;
+  }
+
+  .project-details li {
+    margin-bottom: 3px;
+  }
+
+  .project-details {
+    column-count: 2;
+    column-gap: 16px;
   }
 
   .languages-list,
   .soft-skills-list {
     column-count: 2;
+    column-gap: 18px;
   }
 
   .cv-main a {
