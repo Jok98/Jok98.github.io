@@ -104,78 +104,27 @@ body.cv-page * {
   font-weight: 500;
 }
 
-.skill-intro {
-  margin: 8px 0 18px;
-}
-
-.skill-intro p {
-  margin: 0 0 8px;
-}
-
-.skill-tag-list {
+.skill-lines {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0;
+  margin: 6px 0 0;
   padding: 0;
-}
-
-.skill-tag-list li {
-  background: #e8f0fe;
-  color: #1c3d75;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border: 1px solid #d0dffb;
-}
-
-.skills-matrix {
   display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  margin-top: 16px;
+  gap: 6px 18px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.skill-block {
-  padding: 14px 16px;
-  border: 1px solid #d7e2f3;
-  border-radius: 10px;
-  background: #f9fbff;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.skill-lines li {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #2e3a4e;
 }
 
-.skill-block h3 {
-  margin: 0;
-  font-size: 1.02rem;
-  color: #23324c;
-}
-
-.skill-inline {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  margin: 0;
-  padding: 0;
-}
-
-.skill-inline li {
-  position: relative;
-  padding-left: 10px;
-  color: #334057;
-  font-size: 0.88rem;
-  line-height: 1.3;
-}
-
-.skill-inline li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #6b7280;
+.skill-lines strong {
+  color: #15253d;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 6px;
+  white-space: nowrap;
 }
 
 .experience-list {
@@ -318,7 +267,7 @@ body.cv-page * {
     border-radius: 10px;
   }
 
-  .skills-matrix {
+  .skill-lines {
     grid-template-columns: 1fr;
   }
 
@@ -363,15 +312,6 @@ body.cv-page * {
     color: #111827;
   }
 
-  .skill-tag-list li {
-    background: none;
-    border: 1px solid #9ca3af;
-    color: #111827;
-    font-size: 0.78rem;
-    padding: 2px 8px;
-  }
-
-  .skill-block,
   .experience-item,
   .project-card {
     box-shadow: none;
@@ -381,10 +321,18 @@ body.cv-page * {
     page-break-inside: avoid;
   }
 
-  .skill-block,
   .experience-item,
   .project-card {
     padding: 14px 16px;
+  }
+
+  .skill-lines {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 4px 14px;
+  }
+
+  .skill-lines li {
+    break-inside: avoid;
   }
 
   .experience-tech {

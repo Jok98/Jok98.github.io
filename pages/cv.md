@@ -19,79 +19,12 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
 
 ## Tech Stack
 
-<div class="skill-intro">
-  <p><strong>Primary focus:</strong> Backend microservices in Java 17 and Spring Boot, deployed through automated CI/CD pipelines onto Kubernetes.</p>
-  <ul class="skill-tag-list">
-    <li>Java 17</li>
-    <li>Spring Boot &amp; Spring Cloud</li>
-    <li>Kubernetes &amp; Docker</li>
-    <li>PostgreSQL &amp; MongoDB</li>
-    <li>RabbitMQ &amp; Apache Kafka</li>
-    <li>Prometheus &amp; Grafana</li>
-  </ul>
-</div>
-
-<div class="skills-matrix">
-  <section class="skill-block">
-    <h3>Backend Core</h3>
-    <ul class="skill-inline">
-      <li>Java 17</li>
-      <li>Spring Boot 3</li>
-      <li>Spring Cloud</li>
-      <li>Spring Security</li>
-      <li>Hibernate/JPA</li>
-      <li>OpenAPI-first</li>
-      <li>JUnit &amp; Mockito</li>
-      <li>Testcontainers</li>
-      <li>Maven</li>
-    </ul>
-  </section>
-  <section class="skill-block">
-    <h3>Architecture</h3>
-    <ul class="skill-inline">
-      <li>Spring Cloud Gateway</li>
-      <li>Nginx</li>
-      <li>Netflix Eureka</li>
-      <li>Zookeeper</li>
-      <li>Spring Cloud Config</li>
-      <li>Resilience4j</li>
-      <li>Spring Cloud Sleuth</li>
-      <li>Zipkin</li>
-      <li>OAuth2 &amp; JWT</li>
-    </ul>
-  </section>
-  <section class="skill-block">
-    <h3>Data &amp; Messaging</h3>
-    <ul class="skill-inline">
-      <li>PostgreSQL</li>
-      <li>MySQL</li>
-      <li>Oracle</li>
-      <li>MongoDB</li>
-      <li>RabbitMQ</li>
-      <li>Apache Kafka</li>
-      <li>Flyway</li>
-    </ul>
-  </section>
-  <section class="skill-block">
-    <h3>Delivery &amp; Ops</h3>
-    <ul class="skill-inline">
-      <li>Docker</li>
-      <li>Kubernetes</li>
-      <li>Helm</li>
-      <li>GitHub Actions</li>
-      <li>GitLab CI/CD</li>
-      <li>Jenkins</li>
-      <li>Prometheus</li>
-      <li>Grafana</li>
-      <li>Loki</li>
-      <li>Spring Actuator</li>
-      <li>Swagger/OpenAPI</li>
-      <li>Confluence</li>
-      <li>Jira</li>
-      <li>JasperReports</li>
-    </ul>
-  </section>
-</div>
+<ul class="skill-lines">
+  <li><strong>Backend Core:</strong> Java 17, Spring Boot 3, Spring Cloud, Spring Security, Hibernate/JPA, OpenAPI-first, JUnit, Mockito, Testcontainers, Maven</li>
+  <li><strong>Architecture:</strong> Spring Cloud Gateway, Nginx, Netflix Eureka, Zookeeper, Spring Cloud Config, Resilience4j, Spring Cloud Sleuth, Zipkin, OAuth2, JWT</li>
+  <li><strong>Data &amp; Messaging:</strong> PostgreSQL, MySQL, Oracle, MongoDB, RabbitMQ, Apache Kafka, Flyway</li>
+  <li><strong>Delivery &amp; Operations:</strong> Docker, Kubernetes, Helm, GitHub Actions, GitLab CI/CD, Jenkins, Prometheus, Grafana, Loki, Spring Actuator, Swagger/OpenAPI, Confluence, Jira, JasperReports</li>
+</ul>
 
 ## Education
 
