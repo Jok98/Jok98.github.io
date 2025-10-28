@@ -15,7 +15,7 @@ permalink: /cv/
 </div>
 
 ## About Me
-IT enthusiast always seeking to broaden my knowledge in software development. I document my learning journey on [my site](https://jok98.github.io) and [GitHub](https://github.com/Jok98/Jok98.github.io).
+As an IT enthusiast I'm always looking for increase my knowledge in the field of software, not focusing on a specific language or technology but trying to develop a mind set capable of adapting in any environment.
 
 ## Tech Stack
 
@@ -110,7 +110,6 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
     <p class="project-summary">Focus on performance, security, and clean architecture from end to end.</p>
     <ul class="project-details">
       <li><strong>Backend</strong>: Java 21, Spring Boot 3.3, OpenAPI-first design</li>
-      <li><strong>Services</strong>: auth-service, user-service, review-service, points-service, config-server, api-gateway, frontend</li>
       <li><strong>Infrastructure</strong>: Kubernetes with Istio (mTLS, RBAC, JWT validation)</li>
       <li><strong>Communication</strong>: Feign (sync) plus Kafka (async, Outbox pattern)</li>
       <li><strong>Database</strong>: PostgreSQL per service with Flyway migrations</li>
