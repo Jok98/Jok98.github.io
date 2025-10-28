@@ -156,7 +156,7 @@ A comprehensive collection of technical notes covering various aspects of softwa
 <ul class="languages-list">
   <li><strong>Italian</strong>: Native</li>
   <li><strong>English</strong>: Professional working proficiency</li>
-  <li><strong>Japanese</strong>: Intermediate</li>
+  <li><strong>Japanese</strong>: Amateur</li>
 </ul>
 
 ---
