@@ -19,75 +19,54 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
 
 ## Tech Stack
 
-<div class="tech-grid">
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java"/>
-    <span>Java</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring"/>
-    <span>Spring</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-plain.svg" alt="Hibernate"/>
-    <span>Hibernate</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker"/>
-    <span>Docker</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/>
-    <span>Kubernetes</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg" alt="Maven"/>
-    <span>Maven</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-plain.svg" alt="JUnit"/>
-    <span>JUnit</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git"/>
-    <span>Git</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub"/>
-    <span>GitHub</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab"/>
-    <span>GitLab</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins"/>
-    <span>Jenkins</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL"/>
-    <span>MySQL</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
-    <span>PostgreSQL</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
-    <span>MongoDB</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ"/>
-    <span>RabbitMQ</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg" alt="Kafka"/>
-    <span>Kafka</span>
-  </div>
-  <div class="tech-item">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg" alt="Prometheus"/>
-    <span>Prometheus</span>
-  </div>
+<div class="skill-intro">
+  <p><strong>Primary focus:</strong> Backend microservices in Java 17 and Spring Boot, deployed through automated CI/CD pipelines onto Kubernetes.</p>
+  <ul class="skill-tag-list">
+    <li>Java 17</li>
+    <li>Spring Boot &amp; Spring Cloud</li>
+    <li>Kubernetes &amp; Docker</li>
+    <li>PostgreSQL &amp; MongoDB</li>
+    <li>RabbitMQ &amp; Apache Kafka</li>
+    <li>Prometheus &amp; Grafana</li>
+  </ul>
+</div>
+
+<div class="skills-grid">
+  <section class="skills-card">
+    <h3>Languages &amp; Frameworks</h3>
+    <ul>
+      <li>Java, SQL, Spring Boot, Spring Cloud, Spring Security, Hibernate/JPA</li>
+      <li>Testing with JUnit, Mockito, Testcontainers</li>
+      <li>Build orchestration with Maven</li>
+    </ul>
+  </section>
+  <section class="skills-card">
+    <h3>Data &amp; Messaging</h3>
+    <ul>
+      <li>Relational: PostgreSQL, MySQL, Oracle</li>
+      <li>NoSQL: MongoDB</li>
+      <li>Event-driven messaging with RabbitMQ and Apache Kafka</li>
+    </ul>
+  </section>
+  <section class="skills-card">
+    <h3>Microservices Platform</h3>
+    <ul>
+      <li>API Gateways with Spring Cloud Gateway and Nginx</li>
+      <li>Service discovery via Netflix Eureka and Zookeeper</li>
+      <li>Centralized config, resilience, and tracing with Spring Cloud Config, Resilience4j, Spring Cloud Sleuth, Zipkin</li>
+      <li>Security with OAuth2, JWT, and Spring Security</li>
+    </ul>
+  </section>
+  <section class="skills-card">
+    <h3>DevOps &amp; Delivery</h3>
+    <ul>
+      <li>Containerization with Docker, Kubernetes, and Helm</li>
+      <li>CI/CD pipelines using GitLab CI/CD, Jenkins, and GitHub Actions</li>
+      <li>Observability with Prometheus, Grafana, Spring Actuator</li>
+      <li>Documentation &amp; collaboration through Swagger/OpenAPI, Confluence, Jira, Agile/Scrum</li>
+      <li>Reporting with JasperReports</li>
+    </ul>
+  </section>
 </div>
 
 ## Education
@@ -97,110 +76,83 @@ IT enthusiast always seeking to broaden my knowledge in software development. I 
 
 ---
 
-## Technical Expertise
+## Professional Experience
 
-<table border="1">
-  <tr>
-    <td width="33%">
-      <h3>Core Technologies</h3>
-      <ul>
-        <li><strong>Languages</strong>: Java, SQL</li>
-        <li><strong>Frameworks</strong>: Spring Boot, Spring Cloud, Hibernate/JPA</li>
-        <li><strong>Testing</strong>: JUnit, Mockito, Test Containers</li>
-        <li><strong>Databases</strong>:
-          <ul>
-            <li>Relational: MySQL, PostgreSQL, Oracle</li>
-            <li>NoSQL: MongoDB</li>
-          </ul>
-        </li>
-        <li><strong>Build Tools</strong>: Maven</li>
-      </ul>
-    </td>
-    <td width="33%">
-      <h3>DevOps &amp; Tools</h3>
-      <ul>
-        <li><strong>Version Control</strong>: Git, GitHub, GitLab</li>
-        <li><strong>CI/CD</strong>: GitLab CI/CD, Jenkins, GitHub Actions</li>
-        <li><strong>Containerization</strong>: Docker, Kubernetes, Helm</li>
-        <li><strong>Monitoring</strong>: Prometheus, Grafana, Spring Actuator</li>
-        <li><strong>Documentation</strong>: Swagger/OpenAPI, Confluence</li>
-        <li><strong>Project Management</strong>: Jira, Agile/Scrum</li>
-        <li><strong>Reporting</strong>: JasperReports</li>
-      </ul>
-    </td>
-    <td width="33%">
-      <h3>Microservices Architecture</h3>
-      <ul>
-        <li><strong>API Gateway</strong>: Spring Cloud Gateway, Nginx</li>
-        <li><strong>Service Discovery</strong>: Netflix Eureka, Zookeeper</li>
-        <li><strong>Configuration</strong>: Spring Cloud Config</li>
-        <li><strong>Resilience</strong>: Resilience4j, Circuit Breakers</li>
-        <li><strong>Messaging</strong>: RabbitMQ, Apache Kafka</li>
-        <li><strong>Distributed Tracing</strong>: Spring Cloud Sleuth, Zipkin</li>
-        <li><strong>Security</strong>: Spring Security, OAuth2, JWT</li>
-        <li><strong>Cloud Platforms</strong>: Azure</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class="experience-list">
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Objectway</h3>
+      <div>
+        <span class="experience-role">Software Engineer</span>
+        <span class="experience-dates">January 2024 – Present</span>
+      </div>
+    </div>
+    <ul>
+      <li>Develop and maintain microservices-based financial applications using Spring Boot and Java 17</li>
+      <li>Design secure authentication and authorization flows with OAuth2 and JWT</li>
+      <li>Co-design new features with cross-functional teams and document architectural decisions</li>
+      <li>Operate in Agile squads with automated CI/CD pipelines for continuous delivery</li>
+    </ul>
+    <p class="experience-tech"><strong>Technologies:</strong> Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ</p>
+  </section>
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Iriscube Reply (SistemItaly)</h3>
+      <div>
+        <span class="experience-role">Software Engineer</span>
+        <span class="experience-dates">August 2023 – January 2024</span>
+      </div>
+    </div>
+    <ul>
+      <li>Delivered RESTful APIs for banking services with Spring Boot and Hibernate/JPA</li>
+      <li>Built robust persistence layers backed by PostgreSQL</li>
+      <li>Contributed to microservices architecture design and integration</li>
+      <li>Wrote unit and integration tests with JUnit and Mockito to ensure quality</li>
+      <li>Actively participated in code reviews and shared knowledge across the team</li>
+    </ul>
+    <p class="experience-tech"><strong>Technologies:</strong> Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git</p>
+  </section>
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Blue Reply (SistemItaly)</h3>
+      <div>
+        <span class="experience-role">Junior Software Engineer</span>
+        <span class="experience-dates">November 2022 – August 2023</span>
+      </div>
+    </div>
+    <ul>
+      <li>Implemented backend services for insurance management platforms with Java and Spring</li>
+      <li>Worked with Oracle and MySQL databases to guarantee reliable data persistence</li>
+      <li>Supported Agile ceremonies, sprint planning, and iterative delivery</li>
+      <li>Collaborated with senior engineers to enhance code quality and performance</li>
+    </ul>
+    <p class="experience-tech"><strong>Technologies:</strong> Java, Spring Framework, Oracle, MySQL, Git, Maven</p>
+  </section>
+</div>
 
 ---
 
-## Professional Experience
+## Personal Projects
 
-<table border="1">
-  <tr>
-    <td width="30%">
-      <h3>Objectway</h3>
-      <strong>Software Engineer</strong><br/>
-      <em>January 2024 - Present</em>
-    </td>
-    <td width="70%">
-      <ul>
-        <li>Developing and maintaining microservices-based financial applications using Spring Boot and Java 17</li>
-        <li>Implementing secure authentication and authorization mechanisms with OAuth2 and JWT</li>
-        <li>Collaborating with cross-functional teams to design and implement new features</li>
-        <li>Contributing to architectural decisions and technical documentation</li>
-        <li>Working in an Agile environment with CI/CD pipelines for continuous deployment</li>
-      </ul>
-      <p><strong>Technologies</strong>: Java 17, Spring Boot, Spring Cloud, Kubernetes, Docker, PostgreSQL, RabbitMQ</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Iriscube Reply (SistemItaly)</h3>
-      <strong>Software Engineer</strong><br/>
-      <em>August 2023 - January 2024</em>
-    </td>
-    <td>
-      <ul>
-        <li>Developed RESTful APIs for banking applications using Spring Boot</li>
-        <li>Implemented data persistence layers with Hibernate/JPA and PostgreSQL</li>
-        <li>Collaborated on the design and implementation of microservices architecture</li>
-        <li>Created comprehensive unit and integration tests using JUnit and Mockito</li>
-        <li>Participated in code reviews and knowledge sharing sessions</li>
-      </ul>
-      <p><strong>Technologies</strong>: Java, Spring Boot, Hibernate, PostgreSQL, Docker, Git</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Blue Reply (SistemItaly)</h3>
-      <strong>Junior Software Engineer</strong><br/>
-      <em>November 2022 - August 2023</em>
-    </td>
-    <td>
-      <ul>
-        <li>Contributed to the development of insurance management systems</li>
-        <li>Implemented backend services using Java and Spring framework</li>
-        <li>Worked with relational databases (Oracle, MySQL) for data persistence</li>
-        <li>Participated in Agile ceremonies and sprint planning</li>
-        <li>Collaborated with senior developers to improve code quality and performance</li>
-      </ul>
-      <p><strong>Technologies</strong>: Java, Spring Framework, Oracle, MySQL, Git, Maven</p>
-    </td>
-  </tr>
-</table>
+<div class="projects-section">
+  <section class="project-card">
+    <div class="project-header">
+      <h3>Taskete</h3>
+      <span class="project-tagline">Global favor-exchange platform engineered on a microservices backbone.</span>
+    </div>
+    <p class="project-summary">Focus on performance, security, and clean architecture from end to end.</p>
+    <ul class="project-details">
+      <li><strong>Backend</strong>: Java 21, Spring Boot 3.3, OpenAPI-first design</li>
+      <li><strong>Services</strong>: auth-service, user-service, review-service, points-service, config-server, api-gateway, frontend</li>
+      <li><strong>Infrastructure</strong>: Kubernetes with Istio (mTLS, RBAC, JWT validation)</li>
+      <li><strong>Communication</strong>: Feign (sync) plus Kafka (async, Outbox pattern)</li>
+      <li><strong>Database</strong>: PostgreSQL per service with Flyway migrations</li>
+      <li><strong>CI/CD</strong>: GitHub Actions and Helm charts</li>
+      <li><strong>Observability</strong>: Prometheus, Grafana, Loki, OpenTelemetry</li>
+      <li><strong>Frontend</strong>: Angular 17 served via NGINX</li>
+    </ul>
+  </section>
+</div>
 
 ---
 
@@ -229,19 +181,23 @@ A comprehensive collection of technical notes covering various aspects of softwa
 
 ## Languages
 
-- **Italian**: Native
-- **English**: Professional working proficiency
-- **Japanese**: Intermediate
+<ul class="languages-list">
+  <li><strong>Italian</strong>: Native</li>
+  <li><strong>English</strong>: Professional working proficiency</li>
+  <li><strong>Japanese</strong>: Intermediate</li>
+</ul>
 
 ---
 
 ## Soft Skills
 
-- **Problem Solving**: Analytical approach to complex technical challenges
-- **Communication**: Clear and effective technical and non-technical communication
-- **Teamwork**: Collaborative approach in cross-functional teams
-- **Adaptability**: Quick to learn new technologies and methodologies
-- **Time Management**: Efficient prioritization and task completion
-- **Leadership**: Mentoring junior developers and leading technical discussions
+<ul class="soft-skills-list">
+  <li><strong>Problem Solving</strong>: Analytical approach to complex technical challenges</li>
+  <li><strong>Communication</strong>: Clear and effective technical and non-technical communication</li>
+  <li><strong>Teamwork</strong>: Collaborative approach in cross-functional teams</li>
+  <li><strong>Adaptability</strong>: Quick to learn new technologies and methodologies</li>
+  <li><strong>Time Management</strong>: Efficient prioritization and task completion</li>
+  <li><strong>Leadership</strong>: Mentoring junior developers and leading technical discussions</li>
+</ul>
 
 ---
