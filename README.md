@@ -42,6 +42,9 @@ The script generates:
 - `dist/cv.html`: standalone HTML with the local CSS inlined.
 - `dist/cv.pdf`: PDF rendered from that HTML through headless Chromium.
 
+The GitHub Action also runs this script on pushes to `main` and commits the generated `dist/cv.html` and `dist/cv.pdf`.
+The public CV page links the generated PDF at `/dist/cv.pdf`.
+
 If Chromium is installed under a custom path:
 
 ```shell

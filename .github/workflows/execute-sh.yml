@@ -1,4 +1,4 @@
-name: Update content indexes
+name: Update generated site assets
 
 on:
   push:
@@ -6,24 +6,26 @@ on:
       - main
 
 jobs:
-  update-json:
+  update-generated-assets:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Backup Current JSON indexes
+      - name: Backup current generated assets
         run: |
           cp assets/data/directories.json assets/data/directories.json.bak || echo "No previous directories.json to backup"
           cp assets/data/content-index.json assets/data/content-index.json.bak || echo "No previous content-index.json to backup"
+          cp dist/cv.html dist/cv.html.bak || echo "No previous cv.html to backup"
+          cp dist/cv.pdf dist/cv.pdf.bak || echo "No previous cv.pdf to backup"
 
       - name: List Notes Directory
         run: |
           echo "Contents of notes directory:"
           ls -R notes || echo "Notes directory not found"
 
-      - name: Run JSON Generator Scripts
+      - name: Generate content indexes
         run: |
           chmod +x scripts/create_json.sh
           chmod +x scripts/create_content_index.py
@@ -34,7 +36,18 @@ jobs:
           echo "Generated content-index.json content:"
           cat assets/data/content-index.json
 
-      - name: Compare JSON Files
+      - name: Generate CV PDF
+        run: |
+          chmod +x scripts/render_cv_pdf.py
+          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
+          if [ -z "$CHROME_BIN" ]; then
+            echo "Chrome/Chromium executable not found"
+            exit 1
+          fi
+          "$CHROME_BIN" --version
+          python3 scripts/render_cv_pdf.py --chromium "$CHROME_BIN"
+
+      - name: Compare generated files
         run: |
           if diff assets/data/directories.json assets/data/directories.json.bak; then
             echo "No changes in directories.json"
@@ -48,11 +61,22 @@ jobs:
             echo "content-index.json has changed:"
             diff assets/data/content-index.json assets/data/content-index.json.bak || true
           fi
+          if diff dist/cv.html dist/cv.html.bak; then
+            echo "No changes in cv.html"
+          else
+            echo "cv.html has changed"
+          fi
+          if cmp -s dist/cv.pdf dist/cv.pdf.bak; then
+            echo "No changes in cv.pdf"
+          else
+            echo "cv.pdf has changed"
+          fi
 
       - name: Debug Git
         run: |
           git status
-          git diff assets/data/directories.json assets/data/content-index.json
+          git diff assets/data/directories.json assets/data/content-index.json dist/cv.html
+          git diff --stat dist/cv.pdf
 
       - name: Configure Git
         run: |
@@ -63,6 +87,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add assets/data/directories.json assets/data/content-index.json
-          git commit -m "Update content indexes [CI]" || echo "No changes to commit"
+          git add assets/data/directories.json assets/data/content-index.json dist/cv.html dist/cv.pdf
+          git commit -m "Update generated site assets [CI]" || echo "No changes to commit"
           git push origin main || echo "Push failed"
