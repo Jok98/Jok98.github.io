@@ -11,7 +11,19 @@ The deployment is managed through github actions [execute-sh.yml](.github/workfl
 
 The notes are written in markdown and stored in the `notes` directory that will be converted to html by Jekyll and deployed to github pages.
 
-The structure of the site is based on a json that represents the structure/hierarchy of the `notes` dir that is updated automatically by a script [create_json.sh](scripts/create_json.sh) that is executed by the github action and stored in `assets/data/directories.json`.
+The structure of the site is based on generated JSON indexes:
+
+- [`assets/data/directories.json`](assets/data/directories.json): filesystem tree used by the current sidebar.
+- [`assets/data/content-index.json`](assets/data/content-index.json): metadata-aware index with titles, topics, headings, summaries, and search text.
+
+Regenerate them locally with:
+
+```shell
+./scripts/create_json.sh
+python3 scripts/create_content_index.py
+```
+
+The GitHub Action [execute-sh.yml](.github/workflows/execute-sh.yml) regenerates both indexes on pushes to `main`.
 
 ---
 

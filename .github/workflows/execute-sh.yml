@@ -1,4 +1,4 @@
-name: Update directories.json
+name: Update content indexes
 
 on:
   push:
@@ -13,20 +13,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Backup Current JSON
-        run: cp assets/data/directories.json assets/data/directories.json.bak || echo "No previous JSON to backup"
+      - name: Backup Current JSON indexes
+        run: |
+          cp assets/data/directories.json assets/data/directories.json.bak || echo "No previous directories.json to backup"
+          cp assets/data/content-index.json assets/data/content-index.json.bak || echo "No previous content-index.json to backup"
 
       - name: List Notes Directory
         run: |
           echo "Contents of notes directory:"
           ls -R notes || echo "Notes directory not found"
 
-      - name: Run JSON Generator Script
+      - name: Run JSON Generator Scripts
         run: |
           chmod +x scripts/create_json.sh
+          chmod +x scripts/create_content_index.py
           ./scripts/create_json.sh
-          echo "Generated JSON content:"
+          python3 scripts/create_content_index.py
+          echo "Generated directories.json content:"
           cat assets/data/directories.json
+          echo "Generated content-index.json content:"
+          cat assets/data/content-index.json
 
       - name: Compare JSON Files
         run: |
@@ -36,11 +42,17 @@ jobs:
             echo "directories.json has changed:"
             diff assets/data/directories.json assets/data/directories.json.bak || true
           fi
+          if diff assets/data/content-index.json assets/data/content-index.json.bak; then
+            echo "No changes in content-index.json"
+          else
+            echo "content-index.json has changed:"
+            diff assets/data/content-index.json assets/data/content-index.json.bak || true
+          fi
 
       - name: Debug Git
         run: |
           git status
-          git diff assets/data/directories.json
+          git diff assets/data/directories.json assets/data/content-index.json
 
       - name: Configure Git
         run: |
@@ -51,6 +63,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add assets/data/directories.json
-          git commit -m "Update directories.json [CI]" || echo "No changes to commit"
+          git add assets/data/directories.json assets/data/content-index.json
+          git commit -m "Update content indexes [CI]" || echo "No changes to commit"
           git push origin main || echo "Push failed"

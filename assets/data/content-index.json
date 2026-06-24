@@ -1,0 +1,3508 @@
+{
+  "schemaVersion": 1,
+  "sourceRoot": "notes",
+  "items": [
+    {
+      "id": "dev-architecture",
+      "title": "Microservices Architecture",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "architecture",
+        "label": "Architecture"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/architecture.md",
+      "url": "/notes/dev/architecture/",
+      "breadcrumbs": [
+        "Dev"
+      ],
+      "headings": [],
+      "searchText": "microservices architecture dev"
+    },
+    {
+      "id": "dev-books",
+      "title": "Study Path: Books by Macro-Topic",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "books",
+        "label": "Books"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/books.md",
+      "url": "/notes/dev/books/",
+      "breadcrumbs": [
+        "Dev"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Study Path: Books by Macro-Topic",
+          "anchor": "study-path-books-by-macro-topic"
+        },
+        {
+          "level": 2,
+          "text": "1) Computer architecture and systems",
+          "anchor": "1-computer-architecture-and-systems"
+        },
+        {
+          "level": 2,
+          "text": "2) Operating systems",
+          "anchor": "2-operating-systems"
+        },
+        {
+          "level": 2,
+          "text": "3) Linux from the kernel upward",
+          "anchor": "3-linux-from-the-kernel-upward"
+        },
+        {
+          "level": 2,
+          "text": "4) Low-level programming: C",
+          "anchor": "4-low-level-programming-c"
+        },
+        {
+          "level": 2,
+          "text": "5) Data structures and algorithms",
+          "anchor": "5-data-structures-and-algorithms"
+        },
+        {
+          "level": 2,
+          "text": "6) Computer networking",
+          "anchor": "6-computer-networking"
+        },
+        {
+          "level": 2,
+          "text": "7) Databases and data-intensive systems",
+          "anchor": "7-databases-and-data-intensive-systems"
+        },
+        {
+          "level": 2,
+          "text": "9) Software engineering and design",
+          "anchor": "9-software-engineering-and-design"
+        },
+        {
+          "level": 2,
+          "text": "10) Security",
+          "anchor": "10-security"
+        },
+        {
+          "level": 2,
+          "text": "12) Containers, Kubernetes, SRE, observability",
+          "anchor": "12-containers-kubernetes-sre-observability"
+        }
+      ],
+      "searchText": "study path: books by macro-topic dev study path: books by macro-topic 1) computer architecture and systems 2) operating systems 3) linux from the kernel upward 4) low-level programming: c 5) data structures and algorithms 6) computer networking 7) databases and data-intensive systems 9) software engineering and design 10) security 12) containers, kubernetes, sre, observability"
+    },
+    {
+      "id": "dev-c-1-0-c-init",
+      "title": "C Init",
+      "summary": "Switches:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "c",
+        "label": "C"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/c/1.0_c_init.md",
+      "url": "/notes/dev/c/1.0_c_init/",
+      "breadcrumbs": [
+        "Dev",
+        "C"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "C",
+          "anchor": "c"
+        }
+      ],
+      "searchText": "c init switches: dev c c"
+    },
+    {
+      "id": "dev-c-1-1-variable-lifecycle",
+      "title": "The Life of Local Variables in C",
+      "summary": "All microprocessors, from the 40-year-old MOS 6502 to a modern one, operate on data in two main ways:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "c",
+        "label": "C"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/c/1.1_variable_lifecycle.md",
+      "url": "/notes/dev/c/1.1_variable_lifecycle/",
+      "breadcrumbs": [
+        "Dev",
+        "C"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "The Life of Local Variables in C",
+          "anchor": "the-life-of-local-variables-in-c"
+        },
+        {
+          "level": 2,
+          "text": "1. High-Level vs. Low-Level View",
+          "anchor": "1-high-level-vs-low-level-view"
+        },
+        {
+          "level": 2,
+          "text": "2. How Microprocessors Handle Data",
+          "anchor": "2-how-microprocessors-handle-data"
+        },
+        {
+          "level": 2,
+          "text": "3. Example 1: The MOS 6502 Processor",
+          "anchor": "3-example-1-the-mos-6502-processor"
+        },
+        {
+          "level": 2,
+          "text": "4. Example 2: The Intel 386 Processor and The Stack",
+          "anchor": "4-example-2-the-intel-386-processor-and-the-stack"
+        },
+        {
+          "level": 3,
+          "text": "The Function Call Convention",
+          "anchor": "the-function-call-convention"
+        }
+      ],
+      "searchText": "the life of local variables in c all microprocessors, from the 40-year-old mos 6502 to a modern one, operate on data in two main ways: dev c the life of local variables in c 1. high-level vs. low-level view 2. how microprocessors handle data 3. example 1: the mos 6502 processor 4. example 2: the intel 386 processor and the stack the function call convention"
+    },
+    {
+      "id": "dev-c-2-0-preprocessor",
+      "title": "Preprocessor",
+      "summary": "es. # include",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "c",
+        "label": "C"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/c/2.0_preprocessor.md",
+      "url": "/notes/dev/c/2.0_preprocessor/",
+      "breadcrumbs": [
+        "Dev",
+        "C"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Digital version :",
+          "anchor": "digital-version"
+        },
+        {
+          "level": 2,
+          "text": "Preprocessor",
+          "anchor": "preprocessor"
+        },
+        {
+          "level": 2,
+          "text": "Handwriten version :",
+          "anchor": "handwriten-version"
+        }
+      ],
+      "searchText": "preprocessor es. # include dev c digital version : preprocessor handwriten version :"
+    },
+    {
+      "id": "dev-c-3-0-function",
+      "title": "Function",
+      "summary": "In this example, %d is a format specifier that tells printf to expect an integer argument, which is provided by the sum(10, 20) function call.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "c",
+        "label": "C"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/c/3.0_function.md",
+      "url": "/notes/dev/c/3.0_function/",
+      "breadcrumbs": [
+        "Dev",
+        "C"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "printf()",
+          "anchor": "printf"
+        }
+      ],
+      "searchText": "function in this example, %d is a format specifier that tells printf to expect an integer argument, which is provided by the sum(10, 20) function call. dev c printf()"
+    },
+    {
+      "id": "dev-devops-docker-docker",
+      "title": "Docker",
+      "summary": "Docker is a platform for developing, shipping, and running applications inside containers. Containers are lightweight, portable units that package an application along with its dependencies, allowing it to run consistently across different computing environments.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/docker/Docker.md",
+      "url": "/notes/dev/devops/docker/Docker/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Docker"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Docker",
+          "anchor": "docker"
+        },
+        {
+          "level": 2,
+          "text": "Commands",
+          "anchor": "commands"
+        },
+        {
+          "level": 2,
+          "text": "Components",
+          "anchor": "components"
+        },
+        {
+          "level": 2,
+          "text": "Advatages",
+          "anchor": "advatages"
+        },
+        {
+          "level": 2,
+          "text": "Dockerfile",
+          "anchor": "dockerfile"
+        },
+        {
+          "level": 1,
+          "text": "First stage: Build the application",
+          "anchor": "first-stage-build-the-application"
+        },
+        {
+          "level": 1,
+          "text": "Second stage: Run the application",
+          "anchor": "second-stage-run-the-application"
+        },
+        {
+          "level": 3,
+          "text": "Layer Caching",
+          "anchor": "layer-caching"
+        },
+        {
+          "level": 1,
+          "text": "Copy the pom.xml file to cache the dependencies",
+          "anchor": "copy-the-pom-xml-file-to-cache-the-dependencies"
+        },
+        {
+          "level": 1,
+          "text": "Copy the source code to build the application",
+          "anchor": "copy-the-source-code-to-build-the-application"
+        },
+        {
+          "level": 3,
+          "text": "Example Console Logs",
+          "anchor": "example-console-logs"
+        },
+        {
+          "level": 3,
+          "text": "Create an Image with Spring Boot",
+          "anchor": "create-an-image-with-spring-boot"
+        },
+        {
+          "level": 2,
+          "text": "Create Container Image",
+          "anchor": "create-container-image"
+        },
+        {
+          "level": 3,
+          "text": "Pom.xml",
+          "anchor": "pom-xml"
+        },
+        {
+          "level": 2,
+          "text": "Docker Compose",
+          "anchor": "docker-compose"
+        },
+        {
+          "level": 3,
+          "text": "docker-compose.yml",
+          "anchor": "docker-compose-yml"
+        },
+        {
+          "level": 3,
+          "text": "Run Docker Compose",
+          "anchor": "run-docker-compose"
+        }
+      ],
+      "searchText": "docker docker is a platform for developing, shipping, and running applications inside containers. containers are lightweight, portable units that package an application along with its dependencies, allowing it to run consistently across different computing environments. dev devops docker docker commands components advatages dockerfile first stage: build the application second stage: run the application layer caching copy the pom.xml file to cache the dependencies copy the source code to build the application example console logs create an image with spring boot create container image pom.xml docker compose docker-compose.yml run docker compose"
+    },
+    {
+      "id": "dev-devops-helm-common-common-library-chart",
+      "title": "DevOps",
+      "summary": "This chart contains reusable templates called named templates as they can be invoked in other charts by name. The structure and content of the chart are based on the output from a helm create command. File _helpers.tpl is an autogenerated file that contains functions that defne best practices for naming conventions, for example : _. is used to prevent Helm from trying to create manifests using that specific chart.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/common_library_chart.md",
+      "url": "/notes/dev/devops/helm/common/common_library_chart/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common"
+      ],
+      "headings": [
+        {
+          "level": 3,
+          "text": "Common library template",
+          "anchor": "common-library-template"
+        }
+      ],
+      "searchText": "devops this chart contains reusable templates called named templates as they can be invoked in other charts by name. the structure and content of the chart are based on the output from a helm create command. file _helpers.tpl is an autogenerated file that contains functions that defne best practices for naming conventions, for example : _. is used to prevent helm from trying to create manifests using that specific chart. dev devops helm common common library template"
+    },
+    {
+      "id": "dev-devops-helm-common-template-configmap-template-configmap-template",
+      "title": "Source: config-server/templates/configmap_from_file.yaml",
+      "summary": "Is designed to create ConfigMaps from files in the folder config-repo. A ConfigMap will contain all non-sensitive configuration required by a specific Deployment. The ConfigMap will be mounted as a volume in the Pod that runs the Deployment. The Pod will read the configuration from the ConfigMap as files in its local filesystem. Ex. _configmap_from_file.yaml explaination: Ex. output:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/template/configmap_template/configmap_template.md",
+      "url": "/notes/dev/devops/helm/common/template/configmap_template/configmap_template/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common",
+        "Template",
+        "Configmap Template"
+      ],
+      "headings": [
+        {
+          "level": 3,
+          "text": "ConfigMap template",
+          "anchor": "configmap-template"
+        },
+        {
+          "level": 1,
+          "text": "Source: config-server/templates/configmap_from_file.yaml",
+          "anchor": "source-config-server-templates-configmap-from-file-yaml"
+        }
+      ],
+      "searchText": "source: config-server/templates/configmap_from_file.yaml is designed to create configmaps from files in the folder config-repo. a configmap will contain all non-sensitive configuration required by a specific deployment. the configmap will be mounted as a volume in the pod that runs the deployment. the pod will read the configuration from the configmap as files in its local filesystem. ex. _configmap_from_file.yaml explaination: ex. output: dev devops helm common template configmap template configmap template source: config-server/templates/configmap_from_file.yaml"
+    },
+    {
+      "id": "dev-devops-helm-common-template-deployment-template-deployment-template",
+      "title": "DevOps",
+      "summary": "Optional part of the Deployment manifest that are optional for the use by the components:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/template/deployment_template/deployment_template.md",
+      "url": "/notes/dev/devops/helm/common/template/deployment_template/deployment_template/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common",
+        "Template",
+        "Deployment Template"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Deployment template",
+          "anchor": "deployment-template"
+        }
+      ],
+      "searchText": "devops optional part of the deployment manifest that are optional for the use by the components: dev devops helm common template deployment template deployment template"
+    },
+    {
+      "id": "dev-devops-helm-common-template-secret-template-secret-template",
+      "title": "DevOps",
+      "summary": "Is designed to create Secrets defined by values like credentials provided by the environments(ex. dev-env) The Secrets will be mapped as environment variables in the Pods The template is designed to create multiple Secret manifests using the range function in Helm. Ex. _secret.yaml Each key/value pair is assigned by the range function to the variables $key and $val. The value in the $val variable is piped to the b64enc function to get it properly Base64-encoded as required by a Secret manifest.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/template/secret_template/secret_template.md",
+      "url": "/notes/dev/devops/helm/common/template/secret_template/secret_template/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common",
+        "Template",
+        "Secret Template"
+      ],
+      "headings": [
+        {
+          "level": 3,
+          "text": "Secret template",
+          "anchor": "secret-template"
+        }
+      ],
+      "searchText": "devops is designed to create secrets defined by values like credentials provided by the environments(ex. dev-env) the secrets will be mapped as environment variables in the pods the template is designed to create multiple secret manifests using the range function in helm. ex. _secret.yaml each key/value pair is assigned by the range function to the variables $key and $val. the value in the $val variable is piped to the b64enc function to get it properly base64-encoded as required by a secret manifest. dev devops helm common template secret template secret template"
+    },
+    {
+      "id": "dev-devops-helm-common-template-service-template-service-template",
+      "title": "DevOps",
+      "summary": "The Service template introduces support for overriding default values from the common chart, with values specific to the charts that use the common chart. Usually the common chart provides default values for the service type and what port will it be exposed on, but you can override these values through the values.yaml file of the chart of the specific microservice. Ex. _service.yaml",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/template/service_template/service_template.md",
+      "url": "/notes/dev/devops/helm/common/template/service_template/service_template/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common",
+        "Template",
+        "Service Template"
+      ],
+      "headings": [
+        {
+          "level": 3,
+          "text": "Service template",
+          "anchor": "service-template"
+        }
+      ],
+      "searchText": "devops the service template introduces support for overriding default values from the common chart, with values specific to the charts that use the common chart. usually the common chart provides default values for the service type and what port will it be exposed on, but you can override these values through the values.yaml file of the chart of the specific microservice. ex. _service.yaml dev devops helm common template service template service template"
+    },
+    {
+      "id": "dev-devops-helm-common-template-template",
+      "title": "DevOps",
+      "summary": "To parameterize Kubernetes manifest files define a common template that contains placeholders for where microservice-specific values will be placed in the template, when a manifest is rendered for a specific microservice. kubernetes/helm/common/templates/_deployment.yaml",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/common/template/template.md",
+      "url": "/notes/dev/devops/helm/common/template/template/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Common",
+        "Template"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Templates",
+          "anchor": "templates"
+        }
+      ],
+      "searchText": "devops to parameterize kubernetes manifest files define a common template that contains placeholders for where microservice-specific values will be placed in the template, when a manifest is rendered for a specific microservice. kubernetes/helm/common/templates/_deployment.yaml dev devops helm common template templates"
+    },
+    {
+      "id": "dev-devops-helm-components-component-charts",
+      "title": "Component Charts",
+      "summary": "The charts for the microservices and the resource managers are stored in the components folder, and they all share the same file structure :",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/components/component_charts.md",
+      "url": "/notes/dev/devops/helm/components/component_charts/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Components"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Component Charts",
+          "anchor": "component-charts"
+        }
+      ],
+      "searchText": "component charts the charts for the microservices and the resource managers are stored in the components folder, and they all share the same file structure : dev devops helm components component charts"
+    },
+    {
+      "id": "dev-devops-helm-environment-environment-chart",
+      "title": "Environment Chart",
+      "summary": "Contains the charts for the different environments(ex. dev-env, prod-env). These Charts.yaml file contains dependencies on both the common chart and the charts in the components folder The template folder contains a secrets.yaml template to create environment-specific credentials as Secrets. It is based on the named template for Secrets from the common chart and looks like this:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/environment/environment_chart.md",
+      "url": "/notes/dev/devops/helm/environment/environment_chart/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm",
+        "Environment"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Environment Chart",
+          "anchor": "environment-chart"
+        }
+      ],
+      "searchText": "environment chart contains the charts for the different environments(ex. dev-env, prod-env). these charts.yaml file contains dependencies on both the common chart and the charts in the components folder the template folder contains a secrets.yaml template to create environment-specific credentials as secrets. it is based on the named template for secrets from the common chart and looks like this: dev devops helm environment environment chart"
+    },
+    {
+      "id": "dev-devops-helm-helm",
+      "title": "Helm",
+      "summary": "Is used in a Kubernetes environment to bundle and configure the microservices for deployments. A package is known as a chart. A chart contains templates, default values for the templates and optional dependencies. Each component that needs to be deployed will have its own chart describing how to deploy it. Library charts named common are used to reduce the boilerplate definitions from the component charts. A library chart doesn't contain any deployable definitions but only reusable templates. To deploy all components into different types of environments the concept of parent charts and subcharts will be used. Each environment will be implemented as a parent chart that depends on different sets of subcharts. Helm charts can be published to a helm chart repository.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/helm/Helm.md",
+      "url": "/notes/dev/devops/helm/Helm/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Helm"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Helm",
+          "anchor": "helm"
+        },
+        {
+          "level": 3,
+          "text": "Helm Chart Structure",
+          "anchor": "helm-chart-structure"
+        },
+        {
+          "level": 2,
+          "text": "Commands",
+          "anchor": "commands"
+        }
+      ],
+      "searchText": "helm is used in a kubernetes environment to bundle and configure the microservices for deployments. a package is known as a chart. a chart contains templates, default values for the templates and optional dependencies. each component that needs to be deployed will have its own chart describing how to deploy it. library charts named common are used to reduce the boilerplate definitions from the component charts. a library chart doesn't contain any deployable definitions but only reusable templates. to deploy all components into different types of environments the concept of parent charts and subcharts will be used. each environment will be implemented as a parent chart that depends on different sets of subcharts. helm charts can be published to a helm chart repository. dev devops helm helm helm chart structure commands"
+    },
+    {
+      "id": "dev-devops-istio-istio",
+      "title": "Istio",
+      "summary": "Istio is an open-source service mesh that provides a way to connect, secure, control, and observe services. It is a platform that provides key capabilities for microservices in a Kubernetes environment.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/istio/istio.md",
+      "url": "/notes/dev/devops/istio/istio/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Istio"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Istio",
+          "anchor": "istio"
+        },
+        {
+          "level": 2,
+          "text": "Service Mesh",
+          "anchor": "service-mesh"
+        },
+        {
+          "level": 2,
+          "text": "Components",
+          "anchor": "components"
+        },
+        {
+          "level": 2,
+          "text": "Features",
+          "anchor": "features"
+        },
+        {
+          "level": 2,
+          "text": "Istio Architecture",
+          "anchor": "istio-architecture"
+        },
+        {
+          "level": 2,
+          "text": "How Istio Works",
+          "anchor": "how-istio-works"
+        }
+      ],
+      "searchText": "istio istio is an open-source service mesh that provides a way to connect, secure, control, and observe services. it is a platform that provides key capabilities for microservices in a kubernetes environment. dev devops istio istio service mesh components features istio architecture how istio works"
+    },
+    {
+      "id": "dev-devops-kubernetes-kubectl",
+      "title": "Kubectl",
+      "summary": "Is a combination of :",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/kubernetes/Kubectl.md",
+      "url": "/notes/dev/devops/kubernetes/Kubectl/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Kubernetes"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Kubectl",
+          "anchor": "kubectl"
+        },
+        {
+          "level": 2,
+          "text": "Contexts",
+          "anchor": "contexts"
+        }
+      ],
+      "searchText": "kubectl is a combination of : dev devops kubernetes kubectl contexts"
+    },
+    {
+      "id": "dev-devops-kubernetes-kubernetes",
+      "title": "Kubernetes",
+      "summary": "Is a container orchestration platform for the management of containerized applications.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/kubernetes/Kubernetes.md",
+      "url": "/notes/dev/devops/kubernetes/Kubernetes/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Kubernetes"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Kubernetes",
+          "anchor": "kubernetes"
+        },
+        {
+          "level": 2,
+          "text": "Features",
+          "anchor": "features"
+        },
+        {
+          "level": 2,
+          "text": "Container Orchestration Platforms",
+          "anchor": "container-orchestration-platforms"
+        },
+        {
+          "level": 2,
+          "text": "Kubernetes Api Objects",
+          "anchor": "kubernetes-api-objects"
+        },
+        {
+          "level": 3,
+          "text": "Node",
+          "anchor": "node"
+        },
+        {
+          "level": 3,
+          "text": "Pod",
+          "anchor": "pod"
+        },
+        {
+          "level": 3,
+          "text": "Deployment",
+          "anchor": "deployment"
+        },
+        {
+          "level": 3,
+          "text": "ReplicaSet",
+          "anchor": "replicaset"
+        },
+        {
+          "level": 3,
+          "text": "Service",
+          "anchor": "service"
+        },
+        {
+          "level": 3,
+          "text": "Ingress",
+          "anchor": "ingress"
+        },
+        {
+          "level": 3,
+          "text": "Namespace",
+          "anchor": "namespace"
+        },
+        {
+          "level": 3,
+          "text": "ConfigMap",
+          "anchor": "configmap"
+        },
+        {
+          "level": 3,
+          "text": "Secret",
+          "anchor": "secret"
+        },
+        {
+          "level": 3,
+          "text": "DaemonSet",
+          "anchor": "daemonset"
+        },
+        {
+          "level": 2,
+          "text": "Run Time Components",
+          "anchor": "run-time-components"
+        },
+        {
+          "level": 3,
+          "text": "Api Server",
+          "anchor": "api-server"
+        },
+        {
+          "level": 3,
+          "text": "etcd",
+          "anchor": "etcd"
+        },
+        {
+          "level": 3,
+          "text": "Controller Manager",
+          "anchor": "controller-manager"
+        },
+        {
+          "level": 3,
+          "text": "Scheduler",
+          "anchor": "scheduler"
+        },
+        {
+          "level": 3,
+          "text": "Kubelet",
+          "anchor": "kubelet"
+        },
+        {
+          "level": 3,
+          "text": "Kubeproxy",
+          "anchor": "kubeproxy"
+        },
+        {
+          "level": 3,
+          "text": "Container Runtime",
+          "anchor": "container-runtime"
+        },
+        {
+          "level": 3,
+          "text": "Kubernetes DNS",
+          "anchor": "kubernetes-dns"
+        },
+        {
+          "level": 2,
+          "text": "Sequence of Events",
+          "anchor": "sequence-of-events"
+        }
+      ],
+      "searchText": "kubernetes is a container orchestration platform for the management of containerized applications. dev devops kubernetes kubernetes features container orchestration platforms kubernetes api objects node pod deployment replicaset service ingress namespace configmap secret daemonset run time components api server etcd controller manager scheduler kubelet kubeproxy container runtime kubernetes dns sequence of events"
+    },
+    {
+      "id": "dev-devops-kubernetes-kubernetes-services",
+      "title": "Kubernetes Services",
+      "summary": "Kubernetes has a built-in discovery service based on kubernetes services and the kube-proxy run time component. Kubernetes discovery service doesn't require a client library so it make it independent to the programming language.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/kubernetes/Kubernetes_Services.md",
+      "url": "/notes/dev/devops/kubernetes/Kubernetes_Services/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Kubernetes"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Kubernetes Services",
+          "anchor": "kubernetes-services"
+        },
+        {
+          "level": 3,
+          "text": "Replacing Netflix Eureka",
+          "anchor": "replacing-netflix-eureka"
+        },
+        {
+          "level": 2,
+          "text": "How Kubernetes will be used",
+          "anchor": "how-kubernetes-will-be-used"
+        },
+        {
+          "level": 2,
+          "text": "Spring Boot's support",
+          "anchor": "spring-boot-s-support"
+        }
+      ],
+      "searchText": "kubernetes services kubernetes has a built-in discovery service based on kubernetes services and the kube-proxy run time component. kubernetes discovery service doesn't require a client library so it make it independent to the programming language. dev devops kubernetes kubernetes services replacing netflix eureka how kubernetes will be used spring boot's support"
+    },
+    {
+      "id": "dev-devops-kubernetes-microservices-integration-kube-microservices-integration",
+      "title": "Kube Microservices Integration",
+      "summary": "Microservices design patterns will be handled by kubernetes build-in capabilities.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/devops/kubernetes/microservices_integration/kube_microservices_integration.md",
+      "url": "/notes/dev/devops/kubernetes/microservices_integration/kube_microservices_integration/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Kubernetes",
+        "Microservices Integration"
+      ],
+      "headings": [
+        {
+          "level": 3,
+          "text": "Implementing kubernetes features to simplify the system landscape",
+          "anchor": "implementing-kubernetes-features-to-simplify-the-system-landscape"
+        },
+        {
+          "level": 3,
+          "text": "Replacing the Spring Cloud Config Server",
+          "anchor": "replacing-the-spring-cloud-config-server"
+        }
+      ],
+      "searchText": "kube microservices integration microservices design patterns will be handled by kubernetes build-in capabilities. dev devops kubernetes microservices integration implementing kubernetes features to simplify the system landscape replacing the spring cloud config server"
+    },
+    {
+      "id": "dev-devops-kubernetes-minikube",
+      "title": "Minikube",
+      "summary": "Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on a local machine.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "devops",
+        "label": "DevOps"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/devops/kubernetes/Minikube.md",
+      "url": "/notes/dev/devops/kubernetes/Minikube/",
+      "breadcrumbs": [
+        "Dev",
+        "DevOps",
+        "Kubernetes"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Minikube",
+          "anchor": "minikube"
+        },
+        {
+          "level": 2,
+          "text": "Profile",
+          "anchor": "profile"
+        },
+        {
+          "level": 2,
+          "text": "Create a Cluster",
+          "anchor": "create-a-cluster"
+        },
+        {
+          "level": 2,
+          "text": "Simple Deployment",
+          "anchor": "simple-deployment"
+        },
+        {
+          "level": 3,
+          "text": "Nginx Deployment",
+          "anchor": "nginx-deployment"
+        },
+        {
+          "level": 4,
+          "text": "Create the Deployment",
+          "anchor": "create-the-deployment"
+        },
+        {
+          "level": 4,
+          "text": "Create a Service",
+          "anchor": "create-a-service"
+        }
+      ],
+      "searchText": "minikube minikube is a tool that makes it easy to run kubernetes locally. minikube runs a single-node kubernetes cluster inside a vm on a local machine. dev devops kubernetes minikube profile create a cluster simple deployment nginx deployment create the deployment create a service"
+    },
+    {
+      "id": "dev-dsa-algorithms",
+      "title": "MergeSort",
+      "summary": "It uses two temporary arrays leftArray and rightArray to hold the data, then combines them by comparing the elements.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "dsa",
+        "label": "DSA"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/dsa/algorithms.md",
+      "url": "/notes/dev/dsa/algorithms/",
+      "breadcrumbs": [
+        "Dev",
+        "DSA"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "MergeSort",
+          "anchor": "mergesort"
+        },
+        {
+          "level": 3,
+          "text": "Description: Split the array into two halves and recursively sort them. Then merge the two sorted halves.",
+          "anchor": "description-split-the-array-into-two-halves-and-recursively-sort-them-then-merge-the-two-sorted-halves"
+        },
+        {
+          "level": 3,
+          "text": "Time Complexity: O(nlogn) in all cases",
+          "anchor": "time-complexity-o-nlogn-in-all-cases"
+        },
+        {
+          "level": 3,
+          "text": "Recommended use: When you need a stable sort and have a large dataset.",
+          "anchor": "recommended-use-when-you-need-a-stable-sort-and-have-a-large-dataset"
+        },
+        {
+          "level": 2,
+          "text": "Implementation:",
+          "anchor": "implementation"
+        },
+        {
+          "level": 3,
+          "text": "Explanation:",
+          "anchor": "explanation"
+        },
+        {
+          "level": 3,
+          "text": "Code:",
+          "anchor": "code"
+        }
+      ],
+      "searchText": "mergesort it uses two temporary arrays leftarray and rightarray to hold the data, then combines them by comparing the elements. dev dsa mergesort description: split the array into two halves and recursively sort them. then merge the two sorted halves. time complexity: o(nlogn) in all cases recommended use: when you need a stable sort and have a large dataset. implementation: explanation: code:"
+    },
+    {
+      "id": "dev-dsa-dsa-study-plan",
+      "title": "DSA",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "dsa",
+        "label": "DSA"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/dsa/dsa_study_plan.md",
+      "url": "/notes/dev/dsa/dsa_study_plan/",
+      "breadcrumbs": [
+        "Dev",
+        "DSA"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Complexity Analysis",
+          "anchor": "complexity-analysis"
+        },
+        {
+          "level": 2,
+          "text": "Fundamental Data Structures",
+          "anchor": "fundamental-data-structures"
+        },
+        {
+          "level": 2,
+          "text": "Trees",
+          "anchor": "trees"
+        },
+        {
+          "level": 2,
+          "text": "Advanced Data Structures",
+          "anchor": "advanced-data-structures"
+        },
+        {
+          "level": 2,
+          "text": "Graphs",
+          "anchor": "graphs"
+        },
+        {
+          "level": 2,
+          "text": "Sorting and Searching Algorithms",
+          "anchor": "sorting-and-searching-algorithms"
+        },
+        {
+          "level": 2,
+          "text": "Algorithm Design Techniques",
+          "anchor": "algorithm-design-techniques"
+        },
+        {
+          "level": 2,
+          "text": "Advanced Topics",
+          "anchor": "advanced-topics"
+        }
+      ],
+      "searchText": "dsa dev dsa complexity analysis fundamental data structures trees advanced data structures graphs sorting and searching algorithms algorithm design techniques advanced topics"
+    },
+    {
+      "id": "dev-java-1-0-lambda",
+      "title": "Lambda",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "java",
+        "label": "Java"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/java/1_0_lambda.md",
+      "url": "/notes/dev/java/1_0_lambda/",
+      "breadcrumbs": [
+        "Dev",
+        "Java"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Digital version :",
+          "anchor": "digital-version"
+        },
+        {
+          "level": 2,
+          "text": "try",
+          "anchor": "try"
+        },
+        {
+          "level": 2,
+          "text": "Handwriten version :",
+          "anchor": "handwriten-version"
+        }
+      ],
+      "searchText": "lambda dev java digital version : try handwriten version :"
+    },
+    {
+      "id": "dev-java-main-features",
+      "title": "Java Milestones & Main Features",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "java",
+        "label": "Java"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/java/main_features.md",
+      "url": "/notes/dev/java/main_features/",
+      "breadcrumbs": [
+        "Dev",
+        "Java"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Java Milestones & Main Features",
+          "anchor": "java-milestones-main-features"
+        },
+        {
+          "level": 2,
+          "text": "Digital version :",
+          "anchor": "digital-version"
+        },
+        {
+          "level": 2,
+          "text": "8 (LTS):",
+          "anchor": "8-lts"
+        },
+        {
+          "level": 2,
+          "text": "9:",
+          "anchor": "9"
+        },
+        {
+          "level": 2,
+          "text": "10:",
+          "anchor": "10"
+        },
+        {
+          "level": 2,
+          "text": "11 (LTS):",
+          "anchor": "11-lts"
+        },
+        {
+          "level": 2,
+          "text": "12:",
+          "anchor": "12"
+        },
+        {
+          "level": 2,
+          "text": "16:",
+          "anchor": "16"
+        },
+        {
+          "level": 2,
+          "text": "17 (LTS):",
+          "anchor": "17-lts"
+        },
+        {
+          "level": 2,
+          "text": "21 (LTS):",
+          "anchor": "21-lts"
+        },
+        {
+          "level": 2,
+          "text": "22:",
+          "anchor": "22"
+        },
+        {
+          "level": 2,
+          "text": "23:",
+          "anchor": "23"
+        },
+        {
+          "level": 2,
+          "text": "24:",
+          "anchor": "24"
+        },
+        {
+          "level": 2,
+          "text": "25:",
+          "anchor": "25"
+        },
+        {
+          "level": 2,
+          "text": "Handwriten version :",
+          "anchor": "handwriten-version"
+        }
+      ],
+      "searchText": "java milestones & main features dev java java milestones & main features digital version : 8 (lts): 9: 10: 11 (lts): 12: 16: 17 (lts): 21 (lts): 22: 23: 24: 25: handwriten version :"
+    },
+    {
+      "id": "dev-linux-arch-arch-installation",
+      "title": "Arch Installation",
+      "summary": "I've built a script for installing Arch.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "linux",
+        "label": "Linux"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/linux/arch/arch_installation.md",
+      "url": "/notes/dev/linux/arch/arch_installation/",
+      "breadcrumbs": [
+        "Dev",
+        "Linux",
+        "Arch"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Arch",
+          "anchor": "arch"
+        }
+      ],
+      "searchText": "arch installation i've built a script for installing arch. dev linux arch arch"
+    },
+    {
+      "id": "dev-linux-ssh-key",
+      "title": "SSH Key",
+      "summary": "ED25519",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "linux",
+        "label": "Linux"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/linux/ssh_key.md",
+      "url": "/notes/dev/linux/ssh_key/",
+      "breadcrumbs": [
+        "Dev",
+        "Linux"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "SSH Key",
+          "anchor": "ssh-key"
+        },
+        {
+          "level": 3,
+          "text": "Generate SSH Key",
+          "anchor": "generate-ssh-key"
+        },
+        {
+          "level": 3,
+          "text": "Run agent",
+          "anchor": "run-agent"
+        },
+        {
+          "level": 3,
+          "text": "copy on github",
+          "anchor": "copy-on-github"
+        },
+        {
+          "level": 3,
+          "text": "test connection",
+          "anchor": "test-connection"
+        }
+      ],
+      "searchText": "ssh key ed25519 dev linux ssh key generate ssh key run agent copy on github test connection"
+    },
+    {
+      "id": "dev-linux-ubuntu-gui-upgrade",
+      "title": "Install ocs-url",
+      "summary": "https://www.opendesktop.org/s/OpenSuse-Packages/p/1136805/",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "linux",
+        "label": "Linux"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/linux/ubuntu/gui_upgrade.md",
+      "url": "/notes/dev/linux/ubuntu/gui_upgrade/",
+      "breadcrumbs": [
+        "Dev",
+        "Linux",
+        "Ubuntu"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Install ocs-url",
+          "anchor": "install-ocs-url"
+        },
+        {
+          "level": 1,
+          "text": "Install theme",
+          "anchor": "install-theme"
+        },
+        {
+          "level": 2,
+          "text": "Download Extension Manager with gnome-software",
+          "anchor": "download-extension-manager-with-gnome-software"
+        },
+        {
+          "level": 3,
+          "text": "then install into Extension Manager :",
+          "anchor": "then-install-into-extension-manager"
+        },
+        {
+          "level": 2,
+          "text": "Install GNOME Tweaks with gnome-software",
+          "anchor": "install-gnome-tweaks-with-gnome-software"
+        }
+      ],
+      "searchText": "install ocs-url https://www.opendesktop.org/s/opensuse-packages/p/1136805/ dev linux ubuntu install ocs-url install theme download extension manager with gnome-software then install into extension manager : install gnome tweaks with gnome-software"
+    },
+    {
+      "id": "dev-microservices-api-gateway",
+      "title": "API Gateway",
+      "summary": "An API Gateway is a critical component in a microservices architecture, acting as a single entry point for client requests and routing them to the appropriate backend services.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/api_gateway.md",
+      "url": "/notes/dev/microservices/api_gateway/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "API Gateway",
+          "anchor": "api-gateway"
+        },
+        {
+          "level": 2,
+          "text": "Introduction",
+          "anchor": "introduction"
+        },
+        {
+          "level": 3,
+          "text": "Features",
+          "anchor": "features"
+        },
+        {
+          "level": 3,
+          "text": "Example of API Gateways",
+          "anchor": "example-of-api-gateways"
+        },
+        {
+          "level": 2,
+          "text": "Spring Cloud Gateway",
+          "anchor": "spring-cloud-gateway"
+        },
+        {
+          "level": 3,
+          "text": "Dependencies",
+          "anchor": "dependencies"
+        },
+        {
+          "level": 3,
+          "text": "Properties",
+          "anchor": "properties"
+        },
+        {
+          "level": 3,
+          "text": "Configuration",
+          "anchor": "configuration"
+        },
+        {
+          "level": 3,
+          "text": "Global Filters",
+          "anchor": "global-filters"
+        }
+      ],
+      "searchText": "api gateway an api gateway is a critical component in a microservices architecture, acting as a single entry point for client requests and routing them to the appropriate backend services. dev microservices api gateway introduction features example of api gateways spring cloud gateway dependencies properties configuration global filters"
+    },
+    {
+      "id": "dev-microservices-centralized-configuration",
+      "title": "Spring Cloud Config Server",
+      "summary": "we need to add spring-cloud-starter-config dependency to the pom.xml file.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/centralized_configuration.md",
+      "url": "/notes/dev/microservices/centralized_configuration/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring Cloud Config Server",
+          "anchor": "spring-cloud-config-server"
+        },
+        {
+          "level": 2,
+          "text": "Client side",
+          "anchor": "client-side"
+        },
+        {
+          "level": 2,
+          "text": "Server side",
+          "anchor": "server-side"
+        },
+        {
+          "level": 1,
+          "text": "It points to repo where the configurations are stored",
+          "anchor": "it-points-to-repo-where-the-configurations-are-stored"
+        },
+        {
+          "level": 1,
+          "text": "client side will fetch the configurations from here looking for microservice-name.properties",
+          "anchor": "client-side-will-fetch-the-configurations-from-here-looking-for-microservice-name-properties"
+        },
+        {
+          "level": 2,
+          "text": "Dynamic Refresh",
+          "anchor": "dynamic-refresh"
+        },
+        {
+          "level": 2,
+          "text": "Profiles",
+          "anchor": "profiles"
+        }
+      ],
+      "searchText": "spring cloud config server we need to add spring-cloud-starter-config dependency to the pom.xml file. dev microservices spring cloud config server client side server side it points to repo where the configurations are stored client side will fetch the configurations from here looking for microservice-name.properties dynamic refresh profiles"
+    },
+    {
+      "id": "dev-microservices-circuit-breaker",
+      "title": "Resilience4j Circuit Breaker",
+      "summary": "The Circuit Breaker pattern monitors the number of failed requests to a particular service and transitions between three main states:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/circuit_breaker.md",
+      "url": "/notes/dev/microservices/circuit_breaker/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Resilience4j Circuit Breaker",
+          "anchor": "resilience4j-circuit-breaker"
+        },
+        {
+          "level": 2,
+          "text": "Purpose",
+          "anchor": "purpose"
+        },
+        {
+          "level": 2,
+          "text": "How it works",
+          "anchor": "how-it-works"
+        },
+        {
+          "level": 2,
+          "text": "Implementation",
+          "anchor": "implementation"
+        },
+        {
+          "level": 3,
+          "text": "Properties",
+          "anchor": "properties"
+        },
+        {
+          "level": 3,
+          "text": "Controller",
+          "anchor": "controller"
+        }
+      ],
+      "searchText": "resilience4j circuit breaker the circuit breaker pattern monitors the number of failed requests to a particular service and transitions between three main states: dev microservices resilience4j circuit breaker purpose how it works implementation properties controller"
+    },
+    {
+      "id": "dev-microservices-distributed-tracing",
+      "title": "Distributed Tracing",
+      "summary": "Is a method used to monitor and track requests as they flow through a system of distributed services, through the generation of unique trace IDs for each request it passed through all the services involved in processing that request.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/distributed_tracing.md",
+      "url": "/notes/dev/microservices/distributed_tracing/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Distributed Tracing",
+          "anchor": "distributed-tracing"
+        },
+        {
+          "level": 3,
+          "text": "Dependencies",
+          "anchor": "dependencies"
+        },
+        {
+          "level": 3,
+          "text": "Properties",
+          "anchor": "properties"
+        },
+        {
+          "level": 3,
+          "text": "Logging",
+          "anchor": "logging"
+        },
+        {
+          "level": 2,
+          "text": "Zipkin",
+          "anchor": "zipkin"
+        },
+        {
+          "level": 3,
+          "text": "Run Zipkin with Docker",
+          "anchor": "run-zipkin-with-docker"
+        },
+        {
+          "level": 2,
+          "text": "Trace ID between Microservices",
+          "anchor": "trace-id-between-microservices"
+        },
+        {
+          "level": 3,
+          "text": "Dependencies",
+          "anchor": "dependencies-2"
+        },
+        {
+          "level": 3,
+          "text": "Configuration",
+          "anchor": "configuration"
+        },
+        {
+          "level": 3,
+          "text": "Controller",
+          "anchor": "controller"
+        }
+      ],
+      "searchText": "distributed tracing is a method used to monitor and track requests as they flow through a system of distributed services, through the generation of unique trace ids for each request it passed through all the services involved in processing that request. dev microservices distributed tracing dependencies properties logging zipkin run zipkin with docker trace id between microservices dependencies configuration controller"
+    },
+    {
+      "id": "dev-microservices-feign",
+      "title": "Feign",
+      "summary": "It is used to make HTTP requests to other services in a declarative way.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/feign.md",
+      "url": "/notes/dev/microservices/feign/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Feign",
+          "anchor": "feign"
+        },
+        {
+          "level": 3,
+          "text": "Dependency",
+          "anchor": "dependency"
+        },
+        {
+          "level": 3,
+          "text": "Enable Feign",
+          "anchor": "enable-feign"
+        },
+        {
+          "level": 3,
+          "text": "Create a proxy interface",
+          "anchor": "create-a-proxy-interface"
+        },
+        {
+          "level": 3,
+          "text": "On Service class",
+          "anchor": "on-service-class"
+        }
+      ],
+      "searchText": "feign it is used to make http requests to other services in a declarative way. dev microservices feign dependency enable feign create a proxy interface on service class"
+    },
+    {
+      "id": "dev-microservices-naming-server",
+      "title": "Naming Server",
+      "summary": "@EnableEurekaServer",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/naming_server.md",
+      "url": "/notes/dev/microservices/naming_server/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Naming Server",
+          "anchor": "naming-server"
+        },
+        {
+          "level": 2,
+          "text": "On Server side",
+          "anchor": "on-server-side"
+        },
+        {
+          "level": 3,
+          "text": "Dependencies",
+          "anchor": "dependencies"
+        },
+        {
+          "level": 3,
+          "text": "On Application class",
+          "anchor": "on-application-class"
+        },
+        {
+          "level": 3,
+          "text": "Application properties",
+          "anchor": "application-properties"
+        },
+        {
+          "level": 1,
+          "text": "Disable registration and fetching of registry for itself",
+          "anchor": "disable-registration-and-fetching-of-registry-for-itself"
+        },
+        {
+          "level": 2,
+          "text": "On Client side",
+          "anchor": "on-client-side"
+        },
+        {
+          "level": 3,
+          "text": "Dependencies",
+          "anchor": "dependencies-2"
+        },
+        {
+          "level": 3,
+          "text": "On Application class",
+          "anchor": "on-application-class-2"
+        },
+        {
+          "level": 3,
+          "text": "Application properties",
+          "anchor": "application-properties-2"
+        }
+      ],
+      "searchText": "naming server @enableeurekaserver dev microservices naming server on server side dependencies on application class application properties disable registration and fetching of registry for itself on client side dependencies on application class application properties"
+    },
+    {
+      "id": "dev-microservices-ports-std",
+      "title": "Ports",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/microservices/ports_std.md",
+      "url": "/notes/dev/microservices/ports_std/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices"
+      ],
+      "headings": [],
+      "searchText": "ports dev microservices"
+    },
+    {
+      "id": "dev-microservices-rabbitmq-rabbbitmq",
+      "title": "Rabbbitmq",
+      "summary": "RabbitMQ è un broker di messaggistica open-source che permette a diverse applicazioni o microservizi di comunicare in modo asincrono tramite messaggi.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "microservices",
+        "label": "Microservices"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/microservices/rabbitMQ/rabbbitmq.md",
+      "url": "/notes/dev/microservices/rabbitMQ/rabbbitmq/",
+      "breadcrumbs": [
+        "Dev",
+        "Microservices",
+        "RabbitMQ"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "🐰 Che cos’è RabbitMQ?",
+          "anchor": "che-cos-rabbitmq"
+        },
+        {
+          "level": 2,
+          "text": "🔍 Quando e perché usarlo?",
+          "anchor": "quando-e-perch-usarlo"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Concetti fondamentali di RabbitMQ",
+          "anchor": "concetti-fondamentali-di-rabbitmq"
+        },
+        {
+          "level": 2,
+          "text": "📬 Tipi principali di exchange",
+          "anchor": "tipi-principali-di-exchange"
+        },
+        {
+          "level": 2,
+          "text": "🚀 RabbitMQ con Java e Spring (Spring AMQP)",
+          "anchor": "rabbitmq-con-java-e-spring-spring-amqp"
+        },
+        {
+          "level": 2,
+          "text": "📌 Configurare RabbitMQ con Spring",
+          "anchor": "configurare-rabbitmq-con-spring"
+        },
+        {
+          "level": 2,
+          "text": "🎈 Inviare messaggi (Producer)",
+          "anchor": "inviare-messaggi-producer"
+        },
+        {
+          "level": 2,
+          "text": "📥 Ricevere messaggi (Consumer)",
+          "anchor": "ricevere-messaggi-consumer"
+        },
+        {
+          "level": 2,
+          "text": "📋 Buone pratiche con RabbitMQ e Java/Spring",
+          "anchor": "buone-pratiche-con-rabbitmq-e-java-spring"
+        }
+      ],
+      "searchText": "rabbbitmq rabbitmq è un broker di messaggistica open-source che permette a diverse applicazioni o microservizi di comunicare in modo asincrono tramite messaggi. dev microservices rabbitmq 🐰 che cos’è rabbitmq? 🔍 quando e perché usarlo? 🎯 concetti fondamentali di rabbitmq 📬 tipi principali di exchange 🚀 rabbitmq con java e spring (spring amqp) 📌 configurare rabbitmq con spring 🎈 inviare messaggi (producer) 📥 ricevere messaggi (consumer) 📋 buone pratiche con rabbitmq e java/spring"
+    },
+    {
+      "id": "dev-springboot-actuactor",
+      "title": "API Gateway",
+      "summary": "Actuator is a Spring Boot module that provides monitoring and management capabilities. It provides a number of built-in endpoints that can be used to monitor and interact with your application. Most common endpoints:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/actuactor.md",
+      "url": "/notes/dev/springboot/actuactor/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Actuactor",
+          "anchor": "actuactor"
+        }
+      ],
+      "searchText": "api gateway actuator is a spring boot module that provides monitoring and management capabilities. it provides a number of built-in endpoints that can be used to monitor and interact with your application. most common endpoints: dev spring boot actuactor"
+    },
+    {
+      "id": "dev-springboot-aop",
+      "title": "AOP (Aspect-Oriented Programming)",
+      "summary": "It enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic. This results in cleaner, more modular code, making it easier to maintain.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/aop.md",
+      "url": "/notes/dev/springboot/aop/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "AOP (Aspect-Oriented Programming)",
+          "anchor": "aop-aspect-oriented-programming"
+        },
+        {
+          "level": 2,
+          "text": "Concepts",
+          "anchor": "concepts"
+        },
+        {
+          "level": 3,
+          "text": "Aspect",
+          "anchor": "aspect"
+        },
+        {
+          "level": 3,
+          "text": "Join Point",
+          "anchor": "join-point"
+        },
+        {
+          "level": 3,
+          "text": "Advice",
+          "anchor": "advice"
+        },
+        {
+          "level": 3,
+          "text": "Pointcut",
+          "anchor": "pointcut"
+        },
+        {
+          "level": 3,
+          "text": "Weaving",
+          "anchor": "weaving"
+        },
+        {
+          "level": 2,
+          "text": "Example",
+          "anchor": "example"
+        }
+      ],
+      "searchText": "aop (aspect-oriented programming) it enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic. this results in cleaner, more modular code, making it easier to maintain. dev spring boot aop (aspect-oriented programming) concepts aspect join point advice pointcut weaving example"
+    },
+    {
+      "id": "dev-springboot-rest-api-api-documentation",
+      "title": "API Gateway",
+      "summary": "Using Springdoc OpenAPI",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/api_documentation.md",
+      "url": "/notes/dev/springboot/rest_api/api_documentation/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Api Documentation",
+          "anchor": "api-documentation"
+        }
+      ],
+      "searchText": "api gateway using springdoc openapi dev spring boot rest api api documentation"
+    },
+    {
+      "id": "dev-springboot-rest-api-exception-handling",
+      "title": "API Gateway",
+      "summary": "The correct way to manage exceptions:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/exception_handling.md",
+      "url": "/notes/dev/springboot/rest_api/exception_handling/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Exception Handling",
+          "anchor": "exception-handling"
+        },
+        {
+          "level": 3,
+          "text": "Global Exception Handling",
+          "anchor": "global-exception-handling"
+        },
+        {
+          "level": 3,
+          "text": "Error Class",
+          "anchor": "error-class"
+        },
+        {
+          "level": 3,
+          "text": "Create Custom Exception Handler",
+          "anchor": "create-custom-exception-handler"
+        },
+        {
+          "level": 3,
+          "text": "Define Exception",
+          "anchor": "define-exception"
+        },
+        {
+          "level": 3,
+          "text": "Call the Exception in any Controller",
+          "anchor": "call-the-exception-in-any-controller"
+        },
+        {
+          "level": 4,
+          "text": "Error Response:",
+          "anchor": "error-response"
+        }
+      ],
+      "searchText": "api gateway the correct way to manage exceptions: dev spring boot rest api exception handling global exception handling error class create custom exception handler define exception call the exception in any controller error response:"
+    },
+    {
+      "id": "dev-springboot-rest-api-filtering",
+      "title": "API Gateway",
+      "summary": "Same filter for all requests",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/filtering.md",
+      "url": "/notes/dev/springboot/rest_api/filtering/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Filtering",
+          "anchor": "filtering"
+        }
+      ],
+      "searchText": "api gateway same filter for all requests dev spring boot rest api filtering"
+    },
+    {
+      "id": "dev-springboot-rest-api-hateos",
+      "title": "API Gateway",
+      "summary": "(Hypermedia as the Engine of Application State)",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/hateos.md",
+      "url": "/notes/dev/springboot/rest_api/hateos/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "HATEOAS",
+          "anchor": "hateoas"
+        },
+        {
+          "level": 3,
+          "text": "HAL",
+          "anchor": "hal"
+        }
+      ],
+      "searchText": "api gateway (hypermedia as the engine of application state) dev spring boot rest api hateoas hal"
+    },
+    {
+      "id": "dev-springboot-rest-api-negotiation-content",
+      "title": "API Gateway",
+      "summary": "The client can request the response in XML format by setting the Accept header to application/xml. The conversion is automatic, managed by jackson library.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/negotiation_content.md",
+      "url": "/notes/dev/springboot/rest_api/negotiation_content/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Negotiation Content",
+          "anchor": "negotiation-content"
+        }
+      ],
+      "searchText": "api gateway the client can request the response in xml format by setting the accept header to application/xml. the conversion is automatic, managed by jackson library. dev spring boot rest api negotiation content"
+    },
+    {
+      "id": "dev-springboot-rest-api-rest-api",
+      "title": "Spring REST",
+      "summary": "Also known as:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/rest_api/rest_api.md",
+      "url": "/notes/dev/springboot/rest_api/rest_api/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring REST",
+          "anchor": "spring-rest"
+        },
+        {
+          "level": 2,
+          "text": "Java JSON Data Binding",
+          "anchor": "java-json-data-binding"
+        },
+        {
+          "level": 2,
+          "text": "@RestController",
+          "anchor": "restcontroller"
+        },
+        {
+          "level": 2,
+          "text": "POST",
+          "anchor": "post"
+        },
+        {
+          "level": 3,
+          "text": "POST with Created Location",
+          "anchor": "post-with-created-location"
+        },
+        {
+          "level": 2,
+          "text": "GET",
+          "anchor": "get"
+        },
+        {
+          "level": 2,
+          "text": "PUT",
+          "anchor": "put"
+        },
+        {
+          "level": 2,
+          "text": "DELETE",
+          "anchor": "delete"
+        },
+        {
+          "level": 2,
+          "text": "Key Annotations",
+          "anchor": "key-annotations"
+        },
+        {
+          "level": 2,
+          "text": "Customize Response",
+          "anchor": "customize-response"
+        }
+      ],
+      "searchText": "spring rest also known as: dev spring boot rest api spring rest java json data binding @restcontroller post post with created location get put delete key annotations customize response"
+    },
+    {
+      "id": "dev-springboot-rest-api-servlet-mvc-webflux",
+      "title": "Servlet Mvc Webflux",
+      "summary": "Le Servlet sono la tecnologia fondamentale di Java per gestire le richieste HTTP. Introdotte negli anni '90, rappresentano il modo \"tradizionale\" di sviluppare applicazioni web in Java.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/springboot/rest_api/servlet-mvc-webflux.md",
+      "url": "/notes/dev/springboot/rest_api/servlet-mvc-webflux/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "🔍 Servlet: Le Fondamenta del Web Java",
+          "anchor": "servlet-le-fondamenta-del-web-java"
+        },
+        {
+          "level": 3,
+          "text": "Cosa sono le Servlet?",
+          "anchor": "cosa-sono-le-servlet"
+        },
+        {
+          "level": 4,
+          "text": "Caratteristiche delle Servlet:",
+          "anchor": "caratteristiche-delle-servlet"
+        },
+        {
+          "level": 4,
+          "text": "Problemi del Modello Servlet:",
+          "anchor": "problemi-del-modello-servlet"
+        },
+        {
+          "level": 2,
+          "text": "🌸 Spring MVC: L'Evoluzione delle Servlet",
+          "anchor": "spring-mvc-l-evoluzione-delle-servlet"
+        },
+        {
+          "level": 3,
+          "text": "Architettura Spring MVC:",
+          "anchor": "architettura-spring-mvc"
+        },
+        {
+          "level": 4,
+          "text": "Caratteristiche:",
+          "anchor": "caratteristiche"
+        },
+        {
+          "level": 2,
+          "text": "⚡ Spring WebFlux: La Rivoluzione Reattiva",
+          "anchor": "spring-webflux-la-rivoluzione-reattiva"
+        },
+        {
+          "level": 3,
+          "text": "Concetti Fondamentali:",
+          "anchor": "concetti-fondamentali"
+        },
+        {
+          "level": 4,
+          "text": "1. Non-Blocking I/O",
+          "anchor": "1-non-blocking-i-o"
+        },
+        {
+          "level": 4,
+          "text": "2. Event Loop",
+          "anchor": "2-event-loop"
+        },
+        {
+          "level": 4,
+          "text": "3. Mono e Flux",
+          "anchor": "3-mono-e-flux"
+        },
+        {
+          "level": 2,
+          "text": "🔄 Confronto Pratico: MVC vs WebFlux",
+          "anchor": "confronto-pratico-mvc-vs-webflux"
+        },
+        {
+          "level": 3,
+          "text": "Scenario: 1000 richieste simultanee che attendono 2 secondi per una risposta dal database",
+          "anchor": "scenario-1000-richieste-simultanee-che-attendono-2-secondi-per-una-risposta-dal-database"
+        },
+        {
+          "level": 4,
+          "text": "Spring MVC (Servlet):",
+          "anchor": "spring-mvc-servlet"
+        },
+        {
+          "level": 4,
+          "text": "Spring WebFlux:",
+          "anchor": "spring-webflux"
+        },
+        {
+          "level": 2,
+          "text": "🚪 Spring Cloud Gateway: Perché WebFlux?",
+          "anchor": "spring-cloud-gateway-perch-webflux"
+        },
+        {
+          "level": 3,
+          "text": "Gateway con Spring MVC:",
+          "anchor": "gateway-con-spring-mvc"
+        },
+        {
+          "level": 3,
+          "text": "Gateway con Spring WebFlux:",
+          "anchor": "gateway-con-spring-webflux"
+        },
+        {
+          "level": 2,
+          "text": "📊 Quando Usare Cosa?",
+          "anchor": "quando-usare-cosa"
+        },
+        {
+          "level": 3,
+          "text": "Usa Spring MVC quando:",
+          "anchor": "usa-spring-mvc-quando"
+        },
+        {
+          "level": 3,
+          "text": "Usa Spring WebFlux quando:",
+          "anchor": "usa-spring-webflux-quando"
+        }
+      ],
+      "searchText": "servlet mvc webflux le servlet sono la tecnologia fondamentale di java per gestire le richieste http. introdotte negli anni '90, rappresentano il modo \"tradizionale\" di sviluppare applicazioni web in java. dev spring boot rest api 🔍 servlet: le fondamenta del web java cosa sono le servlet? caratteristiche delle servlet: problemi del modello servlet: 🌸 spring mvc: l'evoluzione delle servlet architettura spring mvc: caratteristiche: ⚡ spring webflux: la rivoluzione reattiva concetti fondamentali: 1. non-blocking i/o 2. event loop 3. mono e flux 🔄 confronto pratico: mvc vs webflux scenario: 1000 richieste simultanee che attendono 2 secondi per una risposta dal database spring mvc (servlet): spring webflux: 🚪 spring cloud gateway: perché webflux? gateway con spring mvc: gateway con spring webflux: 📊 quando usare cosa? usa spring mvc quando: usa spring webflux quando:"
+    },
+    {
+      "id": "dev-springboot-rest-api-validation",
+      "title": "Validation",
+      "summary": "layout: default title: API Gateway",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/springboot/rest_api/validation.md",
+      "url": "/notes/dev/springboot/rest_api/validation/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "REST API"
+      ],
+      "headings": [],
+      "searchText": "validation layout: default title: api gateway dev spring boot rest api"
+    },
+    {
+      "id": "dev-springboot-spring-cloud-spring-cloud",
+      "title": "Spring Cloud",
+      "summary": "pattern. SCS comes with built-in support for Apache Kafka and RabbitMQ.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/spring_cloud/spring_cloud.md",
+      "url": "/notes/dev/springboot/spring_cloud/spring_cloud/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "Spring Cloud"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring Cloud",
+          "anchor": "spring-cloud"
+        },
+        {
+          "level": 2,
+          "text": "Spring Cloud Stream",
+          "anchor": "spring-cloud-stream"
+        },
+        {
+          "level": 3,
+          "text": "Core concepts",
+          "anchor": "core-concepts"
+        },
+        {
+          "level": 2,
+          "text": "System Messaging Implementation",
+          "anchor": "system-messaging-implementation"
+        },
+        {
+          "level": 1,
+          "text": "To make Spring aware of these functions",
+          "anchor": "to-make-spring-aware-of-these-functions"
+        },
+        {
+          "level": 1,
+          "text": "To tell Spring what destination to use for each function",
+          "anchor": "to-tell-spring-what-destination-to-use-for-each-function"
+        }
+      ],
+      "searchText": "spring cloud pattern. scs comes with built-in support for apache kafka and rabbitmq. dev spring boot spring cloud spring cloud spring cloud stream core concepts system messaging implementation to make spring aware of these functions to tell spring what destination to use for each function"
+    },
+    {
+      "id": "dev-springboot-spring-data-spring-data",
+      "title": "Spring Data",
+      "summary": "In Spring Data, an entity represents a database table, and a repository provides an abstraction to perform CRUD operations on the entity. Spring Data JPA automates the creation of the repository based on the interfaces you define.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/spring_data/spring_data.md",
+      "url": "/notes/dev/springboot/spring_data/spring_data/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "Spring Data"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring Data",
+          "anchor": "spring-data"
+        },
+        {
+          "level": 2,
+          "text": "Configuration",
+          "anchor": "configuration"
+        },
+        {
+          "level": 2,
+          "text": "Entity",
+          "anchor": "entity"
+        },
+        {
+          "level": 3,
+          "text": "JPA",
+          "anchor": "jpa"
+        },
+        {
+          "level": 3,
+          "text": "Mongo",
+          "anchor": "mongo"
+        },
+        {
+          "level": 2,
+          "text": "Repository",
+          "anchor": "repository"
+        },
+        {
+          "level": 3,
+          "text": "Reactive Repository",
+          "anchor": "reactive-repository"
+        },
+        {
+          "level": 2,
+          "text": "Service",
+          "anchor": "service"
+        }
+      ],
+      "searchText": "spring data in spring data, an entity represents a database table, and a repository provides an abstraction to perform crud operations on the entity. spring data jpa automates the creation of the repository based on the interfaces you define. dev spring boot spring data spring data configuration entity jpa mongo repository reactive repository service"
+    },
+    {
+      "id": "dev-springboot-spring-security-jwt-refresh-token",
+      "title": "Refresh Token",
+      "summary": "🔄 Cos’è un Refresh Token? Un Refresh Token è un secondo token (separato dal JWT access token) che permette al client di ottenere un nuovo token di accesso senza rifare login.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/springboot/spring_security/jwt/refresh_token.md",
+      "url": "/notes/dev/springboot/spring_security/jwt/refresh_token/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "Spring Security",
+        "JWT"
+      ],
+      "headings": [],
+      "searchText": "refresh token 🔄 cos’è un refresh token? un refresh token è un secondo token (separato dal jwt access token) che permette al client di ottenere un nuovo token di accesso senza rifare login. dev spring boot spring security jwt"
+    },
+    {
+      "id": "dev-springboot-spring-security-spring-security",
+      "title": "Spring Security",
+      "summary": "When you send a request to the server, Spring Security will intercept the request and check if the user is authenticated.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/spring_security/Spring_Security.md",
+      "url": "/notes/dev/springboot/spring_security/Spring_Security/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot",
+        "Spring Security"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring Security",
+          "anchor": "spring-security"
+        },
+        {
+          "level": 2,
+          "text": "How it works",
+          "anchor": "how-it-works"
+        },
+        {
+          "level": 2,
+          "text": "Basic Authentication",
+          "anchor": "basic-authentication"
+        },
+        {
+          "level": 3,
+          "text": "Filter Chain",
+          "anchor": "filter-chain"
+        },
+        {
+          "level": 3,
+          "text": "Custom Filter Chain",
+          "anchor": "custom-filter-chain"
+        }
+      ],
+      "searchText": "spring security when you send a request to the server, spring security will intercept the request and check if the user is authenticated. dev spring boot spring security spring security how it works basic authentication filter chain custom filter chain"
+    },
+    {
+      "id": "dev-springboot-springboot",
+      "title": "SpringBoot",
+      "summary": "code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of objects.",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/SpringBoot.md",
+      "url": "/notes/dev/springboot/SpringBoot/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "SpringBoot",
+          "anchor": "springboot"
+        },
+        {
+          "level": 1,
+          "text": "Spring/SpringBoot fundamental concepts",
+          "anchor": "spring-springboot-fundamental-concepts"
+        },
+        {
+          "level": 2,
+          "text": "Inversion of Control (IoC)",
+          "anchor": "inversion-of-control-ioc"
+        },
+        {
+          "level": 2,
+          "text": "Dependency Injection",
+          "anchor": "dependency-injection"
+        },
+        {
+          "level": 3,
+          "text": "Types of Injection in Spring",
+          "anchor": "types-of-injection-in-spring"
+        },
+        {
+          "level": 2,
+          "text": "SpringBoot Annotation",
+          "anchor": "springboot-annotation"
+        },
+        {
+          "level": 3,
+          "text": "@SpringBootApplication",
+          "anchor": "springbootapplication"
+        },
+        {
+          "level": 3,
+          "text": "@Component",
+          "anchor": "component"
+        },
+        {
+          "level": 4,
+          "text": "Specialized Stereotypes",
+          "anchor": "specialized-stereotypes"
+        },
+        {
+          "level": 3,
+          "text": "@Configuration",
+          "anchor": "configuration"
+        },
+        {
+          "level": 3,
+          "text": "UserDetailsService",
+          "anchor": "userdetailsservice"
+        }
+      ],
+      "searchText": "springboot code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of objects. dev spring boot springboot spring/springboot fundamental concepts inversion of control (ioc) dependency injection types of injection in spring springboot annotation @springbootapplication @component specialized stereotypes @configuration userdetailsservice"
+    },
+    {
+      "id": "dev-springboot-springboot-study-plan",
+      "title": "Spring",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "springboot",
+        "label": "Spring Boot"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/springboot/SpringBoot_Study_Plan.md",
+      "url": "/notes/dev/springboot/SpringBoot_Study_Plan/",
+      "breadcrumbs": [
+        "Dev",
+        "Spring Boot"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Spring",
+          "anchor": "spring"
+        },
+        {
+          "level": 2,
+          "text": "Configuring Spring Applications",
+          "anchor": "configuring-spring-applications"
+        },
+        {
+          "level": 2,
+          "text": "Spring Core Concepts",
+          "anchor": "spring-core-concepts"
+        },
+        {
+          "level": 1,
+          "text": "SpringBoot",
+          "anchor": "springboot"
+        },
+        {
+          "level": 1,
+          "text": "Reactive Programming and WebFlux",
+          "anchor": "reactive-programming-and-webflux"
+        }
+      ],
+      "searchText": "spring dev spring boot spring configuring spring applications spring core concepts springboot reactive programming and webflux"
+    },
+    {
+      "id": "etc-anime-list",
+      "title": "Anime List",
+      "summary": "document.addEventListener('DOMContentLoaded', () => { const sectionsContainer = document.getElementById('anime-sections'); const counterSpan = document.getElementById('anime-counter-value'); const toggleAllButton = document.getElementById('toggle-all'); const searchInput = document.getElementById('anime-search'); const dataUrl = '/assets/data/anime_list.json';",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "anime-list",
+        "label": "Anime List"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "anime",
+      "sourcePath": "notes/etc/anime_list.md",
+      "url": "/notes/etc/anime_list/",
+      "breadcrumbs": [
+        "Etc"
+      ],
+      "headings": [],
+      "searchText": "anime list document.addeventlistener('domcontentloaded', () => { const sectionscontainer = document.getelementbyid('anime-sections'); const counterspan = document.getelementbyid('anime-counter-value'); const toggleallbutton = document.getelementbyid('toggle-all'); const searchinput = document.getelementbyid('anime-search'); const dataurl = '/assets/data/anime_list.json'; etc"
+    },
+    {
+      "id": "etc-japanese-bunpo-doshi-da",
+      "title": "だ (Essere)",
+      "summary": "N. ない è la forma negativa di ある (Essere) e だ (Essere)",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/bunpo/doshi/da.md",
+      "url": "/notes/etc/japanese/bunpo/doshi/da/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Bunpo",
+        "Doshi"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "だ (Essere)",
+          "anchor": "essere"
+        },
+        {
+          "level": 2,
+          "text": "Jisho-kei (辞書形) - Forma del dizionario Presente/Futuro",
+          "anchor": "jisho-kei-forma-del-dizionario-presente-futuro"
+        },
+        {
+          "level": 2,
+          "text": "Passato　だった　/　でした",
+          "anchor": "passato"
+        },
+        {
+          "level": 2,
+          "text": "Negativo　じゃない　/　でわない　/　でわりません",
+          "anchor": "negativo"
+        },
+        {
+          "level": 2,
+          "text": "Negativo Passato　じゃなかった　/　でわなかった　/　でわりませんでした",
+          "anchor": "negativo-passato"
+        },
+        {
+          "level": 2,
+          "text": "だ　Riassunto",
+          "anchor": "riassunto"
+        }
+      ],
+      "searchText": "だ (essere) n. ない è la forma negativa di ある (essere) e だ (essere) etc japanese bunpo doshi だ (essere) jisho-kei (辞書形) - forma del dizionario presente/futuro passato　だった　/　でした negativo　じゃない　/　でわない　/　でわりません negativo passato　じゃなかった　/　でわなかった　/　でわりませんでした だ　riassunto"
+    },
+    {
+      "id": "etc-japanese-bunpo-doshi-godan-u",
+      "title": "Godan (五段)  -う",
+      "summary": "",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/bunpo/doshi/godan_u.md",
+      "url": "/notes/etc/japanese/bunpo/doshi/godan_u/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Bunpo",
+        "Doshi"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Godan (五段)  -う",
+          "anchor": "godan"
+        },
+        {
+          "level": 2,
+          "text": "Presente/Futuro",
+          "anchor": "presente-futuro"
+        },
+        {
+          "level": 2,
+          "text": "Passato",
+          "anchor": "passato"
+        },
+        {
+          "level": 2,
+          "text": "Negativo",
+          "anchor": "negativo"
+        },
+        {
+          "level": 2,
+          "text": "Negativo Passato",
+          "anchor": "negativo-passato"
+        },
+        {
+          "level": 2,
+          "text": "五段 -う　Riassunto",
+          "anchor": "riassunto"
+        }
+      ],
+      "searchText": "godan (五段)  -う etc japanese bunpo doshi godan (五段)  -う presente/futuro passato negativo negativo passato 五段 -う　riassunto"
+    },
+    {
+      "id": "etc-japanese-bunpo-doshi-ichidan-ru",
+      "title": "Ichidan (一段)  -る",
+      "summary": "",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/bunpo/doshi/ichidan_ru.md",
+      "url": "/notes/etc/japanese/bunpo/doshi/ichidan_ru/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Bunpo",
+        "Doshi"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ichidan (一段)  -る",
+          "anchor": "ichidan"
+        },
+        {
+          "level": 2,
+          "text": "Presente/Futuro",
+          "anchor": "presente-futuro"
+        },
+        {
+          "level": 2,
+          "text": "Passato た　/　ました",
+          "anchor": "passato"
+        },
+        {
+          "level": 2,
+          "text": "Negativo　ない　/　ません",
+          "anchor": "negativo"
+        },
+        {
+          "level": 2,
+          "text": "Negativo Passato　なかった　/　ませんでした",
+          "anchor": "negativo-passato"
+        },
+        {
+          "level": 2,
+          "text": "一段 -る　Riassunto",
+          "anchor": "riassunto"
+        }
+      ],
+      "searchText": "ichidan (一段)  -る etc japanese bunpo doshi ichidan (一段)  -る presente/futuro passato た　/　ました negativo　ない　/　ません negativo passato　なかった　/　ませんでした 一段 -る　riassunto"
+    },
+    {
+      "id": "etc-japanese-bunpo-doshi-irregular",
+      "title": "Irregular Verbs",
+      "summary": "",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/bunpo/doshi/irregular.md",
+      "url": "/notes/etc/japanese/bunpo/doshi/irregular/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Bunpo",
+        "Doshi"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Irregular Verbs",
+          "anchor": "irregular-verbs"
+        },
+        {
+          "level": 2,
+          "text": "する (Fare)",
+          "anchor": "fare"
+        },
+        {
+          "level": 2,
+          "text": "くる (Venire)",
+          "anchor": "venire"
+        }
+      ],
+      "searchText": "irregular verbs etc japanese bunpo doshi irregular verbs する (fare) くる (venire)"
+    },
+    {
+      "id": "etc-japanese-kakitori-yomutori-hiragana",
+      "title": "Japanese",
+      "summary": "",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/kakitori_yomutori/Hiragana.md",
+      "url": "/notes/etc/japanese/kakitori_yomutori/Hiragana/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Kakitori Yomutori"
+      ],
+      "headings": [],
+      "searchText": "japanese etc japanese kakitori yomutori"
+    },
+    {
+      "id": "etc-japanese-kakitori-yomutori-katakana",
+      "title": "Japanese",
+      "summary": "",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "japanese",
+        "label": "Japanese"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/etc/japanese/kakitori_yomutori/Katakana.md",
+      "url": "/notes/etc/japanese/kakitori_yomutori/Katakana/",
+      "breadcrumbs": [
+        "Etc",
+        "Japanese",
+        "Kakitori Yomutori"
+      ],
+      "headings": [],
+      "searchText": "japanese etc japanese kakitori yomutori"
+    },
+    {
+      "id": "etc-trip-osaka-2024-diary",
+      "title": "Osaka 2024",
+      "summary": "My 4th trip to Japan in Kansai area, from 06-12-2024 to 20-01-2025.",
+      "area": {
+        "slug": "etc",
+        "label": "Personal"
+      },
+      "topic": {
+        "slug": "trip",
+        "label": "Trip"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "trip",
+      "sourcePath": "notes/etc/trip/osaka_2024/diary.md",
+      "url": "/notes/etc/trip/osaka_2024/diary/",
+      "breadcrumbs": [
+        "Etc",
+        "Trip",
+        "Osaka 2024"
+      ],
+      "headings": [],
+      "searchText": "osaka 2024 my 4th trip to japan in kansai area, from 06-12-2024 to 20-01-2025. etc trip osaka 2024"
+    }
+  ],
+  "tree": [
+    {
+      "slug": "dev",
+      "label": "Dev",
+      "items": [
+        "dev-architecture",
+        "dev-books"
+      ],
+      "children": [
+        {
+          "slug": "c",
+          "label": "C",
+          "items": [
+            "dev-c-1-0-c-init",
+            "dev-c-1-1-variable-lifecycle",
+            "dev-c-2-0-preprocessor",
+            "dev-c-3-0-function"
+          ],
+          "children": []
+        },
+        {
+          "slug": "devops",
+          "label": "DevOps",
+          "items": [],
+          "children": [
+            {
+              "slug": "docker",
+              "label": "Docker",
+              "items": [
+                "dev-devops-docker-docker"
+              ],
+              "children": []
+            },
+            {
+              "slug": "helm",
+              "label": "Helm",
+              "items": [
+                "dev-devops-helm-helm"
+              ],
+              "children": [
+                {
+                  "slug": "common",
+                  "label": "Common",
+                  "items": [
+                    "dev-devops-helm-common-common-library-chart"
+                  ],
+                  "children": [
+                    {
+                      "slug": "template",
+                      "label": "Template",
+                      "items": [
+                        "dev-devops-helm-common-template-template"
+                      ],
+                      "children": [
+                        {
+                          "slug": "configmap-template",
+                          "label": "Configmap Template",
+                          "items": [
+                            "dev-devops-helm-common-template-configmap-template-configmap-template"
+                          ],
+                          "children": []
+                        },
+                        {
+                          "slug": "deployment-template",
+                          "label": "Deployment Template",
+                          "items": [
+                            "dev-devops-helm-common-template-deployment-template-deployment-template"
+                          ],
+                          "children": []
+                        },
+                        {
+                          "slug": "secret-template",
+                          "label": "Secret Template",
+                          "items": [
+                            "dev-devops-helm-common-template-secret-template-secret-template"
+                          ],
+                          "children": []
+                        },
+                        {
+                          "slug": "service-template",
+                          "label": "Service Template",
+                          "items": [
+                            "dev-devops-helm-common-template-service-template-service-template"
+                          ],
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "slug": "components",
+                  "label": "Components",
+                  "items": [
+                    "dev-devops-helm-components-component-charts"
+                  ],
+                  "children": []
+                },
+                {
+                  "slug": "environment",
+                  "label": "Environment",
+                  "items": [
+                    "dev-devops-helm-environment-environment-chart"
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "slug": "istio",
+              "label": "Istio",
+              "items": [
+                "dev-devops-istio-istio"
+              ],
+              "children": []
+            },
+            {
+              "slug": "kubernetes",
+              "label": "Kubernetes",
+              "items": [
+                "dev-devops-kubernetes-kubectl",
+                "dev-devops-kubernetes-kubernetes",
+                "dev-devops-kubernetes-kubernetes-services",
+                "dev-devops-kubernetes-minikube"
+              ],
+              "children": [
+                {
+                  "slug": "microservices-integration",
+                  "label": "Microservices Integration",
+                  "items": [
+                    "dev-devops-kubernetes-microservices-integration-kube-microservices-integration"
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "dsa",
+          "label": "DSA",
+          "items": [
+            "dev-dsa-algorithms",
+            "dev-dsa-dsa-study-plan"
+          ],
+          "children": []
+        },
+        {
+          "slug": "java",
+          "label": "Java",
+          "items": [
+            "dev-java-1-0-lambda",
+            "dev-java-main-features"
+          ],
+          "children": []
+        },
+        {
+          "slug": "linux",
+          "label": "Linux",
+          "items": [
+            "dev-linux-ssh-key"
+          ],
+          "children": [
+            {
+              "slug": "arch",
+              "label": "Arch",
+              "items": [
+                "dev-linux-arch-arch-installation"
+              ],
+              "children": []
+            },
+            {
+              "slug": "ubuntu",
+              "label": "Ubuntu",
+              "items": [
+                "dev-linux-ubuntu-gui-upgrade"
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "slug": "microservices",
+          "label": "Microservices",
+          "items": [
+            "dev-microservices-api-gateway",
+            "dev-microservices-centralized-configuration",
+            "dev-microservices-circuit-breaker",
+            "dev-microservices-distributed-tracing",
+            "dev-microservices-feign",
+            "dev-microservices-naming-server",
+            "dev-microservices-ports-std"
+          ],
+          "children": [
+            {
+              "slug": "rabbitmq",
+              "label": "RabbitMQ",
+              "items": [
+                "dev-microservices-rabbitmq-rabbbitmq"
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "slug": "springboot",
+          "label": "Spring Boot",
+          "items": [
+            "dev-springboot-actuactor",
+            "dev-springboot-aop",
+            "dev-springboot-springboot",
+            "dev-springboot-springboot-study-plan"
+          ],
+          "children": [
+            {
+              "slug": "rest-api",
+              "label": "REST API",
+              "items": [
+                "dev-springboot-rest-api-api-documentation",
+                "dev-springboot-rest-api-exception-handling",
+                "dev-springboot-rest-api-filtering",
+                "dev-springboot-rest-api-hateos",
+                "dev-springboot-rest-api-negotiation-content",
+                "dev-springboot-rest-api-rest-api",
+                "dev-springboot-rest-api-servlet-mvc-webflux",
+                "dev-springboot-rest-api-validation"
+              ],
+              "children": []
+            },
+            {
+              "slug": "spring-cloud",
+              "label": "Spring Cloud",
+              "items": [
+                "dev-springboot-spring-cloud-spring-cloud"
+              ],
+              "children": []
+            },
+            {
+              "slug": "spring-data",
+              "label": "Spring Data",
+              "items": [
+                "dev-springboot-spring-data-spring-data"
+              ],
+              "children": []
+            },
+            {
+              "slug": "spring-security",
+              "label": "Spring Security",
+              "items": [
+                "dev-springboot-spring-security-spring-security"
+              ],
+              "children": [
+                {
+                  "slug": "jwt",
+                  "label": "JWT",
+                  "items": [
+                    "dev-springboot-spring-security-jwt-refresh-token"
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "etc",
+      "label": "Etc",
+      "items": [
+        "etc-anime-list"
+      ],
+      "children": [
+        {
+          "slug": "japanese",
+          "label": "Japanese",
+          "items": [],
+          "children": [
+            {
+              "slug": "bunpo",
+              "label": "Bunpo",
+              "items": [],
+              "children": [
+                {
+                  "slug": "doshi",
+                  "label": "Doshi",
+                  "items": [
+                    "etc-japanese-bunpo-doshi-da",
+                    "etc-japanese-bunpo-doshi-godan-u",
+                    "etc-japanese-bunpo-doshi-ichidan-ru",
+                    "etc-japanese-bunpo-doshi-irregular"
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "slug": "kakitori-yomutori",
+              "label": "Kakitori Yomutori",
+              "items": [
+                "etc-japanese-kakitori-yomutori-hiragana",
+                "etc-japanese-kakitori-yomutori-katakana"
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "slug": "trip",
+          "label": "Trip",
+          "items": [],
+          "children": [
+            {
+              "slug": "osaka-2024",
+              "label": "Osaka 2024",
+              "items": [
+                "etc-trip-osaka-2024-diary"
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "facets": {
+    "areas": [
+      {
+        "slug": "dev",
+        "label": "Engineering",
+        "count": 53
+      },
+      {
+        "slug": "etc",
+        "label": "Personal",
+        "count": 8
+      }
+    ],
+    "topics": [
+      {
+        "slug": "anime-list",
+        "label": "Anime List",
+        "count": 1
+      },
+      {
+        "slug": "architecture",
+        "label": "Architecture",
+        "count": 1
+      },
+      {
+        "slug": "books",
+        "label": "Books",
+        "count": 1
+      },
+      {
+        "slug": "c",
+        "label": "C",
+        "count": 4
+      },
+      {
+        "slug": "devops",
+        "label": "DevOps",
+        "count": 16
+      },
+      {
+        "slug": "dsa",
+        "label": "DSA",
+        "count": 2
+      },
+      {
+        "slug": "japanese",
+        "label": "Japanese",
+        "count": 6
+      },
+      {
+        "slug": "java",
+        "label": "Java",
+        "count": 2
+      },
+      {
+        "slug": "linux",
+        "label": "Linux",
+        "count": 3
+      },
+      {
+        "slug": "microservices",
+        "label": "Microservices",
+        "count": 8
+      },
+      {
+        "slug": "springboot",
+        "label": "Spring Boot",
+        "count": 16
+      },
+      {
+        "slug": "trip",
+        "label": "Trip",
+        "count": 1
+      }
+    ],
+    "tags": []
+  }
+}

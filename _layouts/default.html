@@ -40,11 +40,16 @@
                 <input type="text" id="search-input" placeholder="Search documents by title...">
                 <div id="search-results"></div>
             </div>
+            <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
             <div id="sections-container"></div>
         </aside>
         <main class="content-area{% if page.page_class %} {{ page.page_class }}{% endif %}">
             {{ content }}
         </main>
+        <aside id="page-toc" class="page-toc" aria-label="On this page" hidden>
+            <h2 class="page-toc-title">On this page</h2>
+            <nav id="page-toc-links" class="page-toc-links"></nav>
+        </aside>
     </div>
 {% endif %}
 <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
