@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+/* assets/css/default_style.css */
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+  color: #d4d4d4;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #9cdcfe;
+  line-height: 1.3;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #333333, #222222);
+  border-bottom: 1px solid #3c3c3c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-logo {
+  color: #9cdcfe;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #9cdcfe;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #007acc;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 20px;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.section > summary {
+  cursor: pointer;
+  color: #9cdcfe;
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.section ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.content-link {
+  color: #9cdcfe;
+  text-decoration: none;
+}
+
+.content-link:hover {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.subsection {
+  margin-left: 20px;
+}
+
+a.cv-link {
+  display: inline-flex;
+  align-items: center;
+  color: #9cdcfe;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+a.cv-link:hover {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a.cv-link i {
+  margin-right: 8px;
+}
+
+.cv-link-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #009879;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cv-button:hover {
+  background-color: #007f67;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.cv-button i {
+  margin-right: 8px;
+}
+
+/* Improved table styles (dark theme) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: inherit;
+  color: #d4d4d4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: #1d1d1d;
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #3c3c3c;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #1f1f1f;
+  color: #d4d4d4;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: #242424;
+  color: #d4d4d4;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+table tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Improved button styles */
+button {
+  background-color: #009879;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #007f67;
+  transform: translateY(-2px);
+}
+
+/* Style for code snippets */
+code {
+  background-color: #2d2d2d;
+  color: #dcdcdc;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  background-color: #2d2d2d;
+  color: #dcdcdc;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: block;
+  margin: 0 auto;
+  /* Removed forced square cropping to preserve natural aspect ratio */
+}
+
+#search-container {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+#search-results {
+  margin-top: 10px;
+}
+
+#search-results a {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Photo grid for trip diaries */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.photo-grid figure {
+  margin: 0;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-grid figcaption {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #d4d4d4;
+}
+
+
+/* Accessibility: focus outlines */
+:focus-visible {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+button:focus-visible,
+a:focus-visible,
+.nav-link:focus-visible,
+.cv-button:focus-visible {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+/* Text selection color for dark theme */
+::selection {
+  background: #264f78;
+  color: #ffffff;
+}
+
+/* Responsive spacing */
+@media (max-width: 600px) {
+  main {
+    padding: 12px;
+  }
+  .navbar {
+    padding: 8px 12px;
+  }
+}
+
+/* Enhanced visibility and spacing for file items on the main page */
+.section ul {
+  margin-top: 14px;              /* more space under directory title */
+  padding-top: 8px;              /* breathing space above the list */
+  border-top: 1px dashed #3c3c3c;/* subtle separator from directory header */
+}
+
+.section ul li {               /* vertical spacing between items */
+  margin: 8px 0;
+}
+
+/* Style only direct file links (not subsections) */
+.section ul li > a.content-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  border: 1px solid transparent;
+}
+
+.section ul li > a.content-link::before {
+  content: "📄"; /* simple document icon */
+}
+
+.section ul li > a.content-link:hover {
+  background-color: #252526;
+  border-color: #3c3c3c;
+}
+
+/* Give nested directories a bit of space from the files list */
+.section details.subsection {
+  margin-top: 10px;
+}
+
+
+.page-layout {
+  display: grid;
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 32px;
+  box-sizing: border-box;
+}
+
+.page-layout.sidebar-expanded {
+  grid-template-columns: minmax(320px, 1fr) minmax(0, 2fr);
+}
+
+.page-layout.sidebar-collapsed {
+  grid-template-columns: 1fr;
+}
+
+.page-layout.sidebar-collapsed .notes-sidebar {
+  display: none;
+}
+
+.page-layout.sidebar-collapsed .content-area {
+  grid-column: 1 / -1;
+}
+
+.notes-sidebar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  position: sticky;
+  top: 90px;
+}
+
+.sidebar-controls {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 32px 0;
+}
+
+.sidebar-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #3c3c3c;
+  background-color: #252526;
+  color: #9cdcfe;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus {
+  background-color: #1e1e1e;
+  border-color: #007acc;
+  color: #ffffff;
+}
+
+.sidebar-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.35);
+}
+
+.sidebar-toggle[aria-expanded="true"] {
+  background-color: #007acc;
+  border-color: #1e90ff;
+  color: #ffffff;
+}
+
+.sidebar-title {
+  margin: 0 0 16px;
+  font-size: 1.2em;
+  color: #9cdcfe;
+}
+
+#search-container {
+  margin-bottom: 16px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #3c3c3c;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  box-sizing: border-box;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 0 1px #007acc;
+}
+
+#search-results {
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#search-results .content-link {
+  display: block;
+  padding: 6px 0;
+}
+
+.content-area {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .sidebar-controls {
+    padding: 16px 16px 0;
+  }
+
+  .page-layout {
+    padding: 16px;
+  }
+
+  .page-layout.sidebar-expanded,
+  .page-layout.sidebar-collapsed {
+    grid-template-columns: 1fr;
+  }
+
+  .notes-sidebar {
+    position: static;
+    max-height: none;
+  }
+}
+
+.notes-sidebar .content-link {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.notes-sidebar .content-link.active-link {
+  background-color: #1e3a5f;
+  border-color: #1e90ff;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px rgba(30, 144, 255, 0.4);
+}
+
+.site-version {
+    font-size: 0.85em;
+    color: #7ec3e6;
+    margin-left: 10px;
+    font-weight: normal;
+    background: #23272e;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid #3c3c3c;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #00e3cd;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#back-to-top:hover {
+  background-color: #00afa0;
+}
+
+/* assets/css/cv_style.css */
+body.cv-page {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+  background: #f6f8fb;
+  color: #1f2933;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body.cv-page * {
+  box-sizing: border-box;
+}
+
+.cv-page-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cv-main {
+  max-width: 880px;
+  margin: 32px auto;
+  padding: 32px 36px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #dde7f5;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.cv-main h1 {
+  margin: 0 0 8px;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.cv-main h2 {
+  margin: 28px 0 12px;
+  font-size: 1.2rem;
+  color: #1f2937;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+.cv-main h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: #27364a;
+}
+
+.cv-main h4 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.cv-main p {
+  margin: 8px 0;
+  color: #364152;
+}
+
+.cv-main hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 24px 0;
+}
+
+.cv-main ul {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.cv-main li {
+  margin-bottom: 4px;
+}
+
+.cv-main a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.cv-main a:hover,
+.cv-main a:focus {
+  text-decoration: underline;
+  color: #163fa3;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #2b3a4f;
+}
+
+.cv-header strong {
+  color: #1f2937;
+}
+
+.cv-header a {
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.skill-lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px 14px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.skill-lines li {
+  font-size: 0.88rem;
+  line-height: 1.32;
+  color: #2e3a4e;
+}
+
+.skill-lines strong {
+  color: #15253d;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.education-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #2e3a4e;
+}
+
+.education-list li {
+  margin-bottom: 4px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-item {
+  padding: 18px 20px;
+  border: 1px solid #d8e2f1;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 16px;
+  margin-bottom: 8px;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #13233a;
+}
+
+.experience-role {
+  font-weight: 600;
+  color: #2b3a4f;
+  margin-right: 10px;
+}
+
+.experience-domain {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f766e;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.experience-dates {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.experience-item ul {
+  margin: 0 0 8px;
+}
+
+.experience-item li {
+  margin-bottom: 4px;
+  color: #344256;
+}
+
+.experience-tech {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.section-cards,
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cv-card,
+.project-card {
+  padding: 18px 20px;
+  border: 1px solid #d8e2f1;
+  border-radius: 12px;
+  background: #f9fbff;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #13233a;
+}
+
+.project-tagline {
+  font-size: 0.95rem;
+  color: #3a4c66;
+  font-weight: 500;
+}
+
+.project-summary {
+  margin: 0 0 10px;
+  color: #364152;
+  font-style: italic;
+}
+
+.project-details {
+  margin: 0;
+  padding-left: 18px;
+  color: #303d52;
+  column-count: 2;
+  column-gap: 18px;
+}
+
+.project-details li {
+  margin-bottom: 4px;
+  break-inside: avoid;
+}
+
+.cv-main blockquote {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid #93c5fd;
+  background: #f5f9ff;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.cv-main blockquote strong {
+  color: #0f172a;
+}
+
+.cv-main blockquote + ul {
+  margin-top: 8px;
+}
+
+.languages-list,
+.soft-skills-list {
+  column-gap: 24px;
+  column-count: 2;
+}
+
+.languages-list li,
+.soft-skills-list li {
+  break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+  .cv-main {
+    margin: 20px;
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .skill-lines {
+    grid-template-columns: 1fr;
+  }
+
+  .languages-list,
+  .soft-skills-list {
+    column-count: 1;
+  }
+
+  .project-details {
+    column-count: 1;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0.2in;
+}
+
+@media print {
+  body.cv-page {
+    background: #ffffff;
+    color: #111827;
+    font-size: 9.4pt;
+    line-height: 1.25;
+  }
+
+  .cv-page-nav,
+  #back-to-top {
+    display: none !important;
+  }
+
+  .cv-main {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    max-width: none;
+  }
+
+  .cv-main h1,
+  .cv-main h2,
+  .cv-main h3 {
+    color: #111827;
+  }
+
+  .cv-main h1 {
+    font-size: 16pt;
+    margin: 0 0 3pt;
+  }
+
+  .cv-main h2 {
+    font-size: 10pt;
+    margin: 7pt 0 3pt;
+    padding-bottom: 2pt;
+    letter-spacing: 0.03em;
+  }
+
+  .cv-main h3 {
+    font-size: 9.4pt;
+    margin: 0 0 2.5pt;
+  }
+
+  .cv-main p {
+    margin: 2.5pt 0;
+  }
+
+  .cv-main ul {
+    margin: 2pt 0;
+    padding-left: 12pt;
+  }
+
+  .cv-main li {
+    margin-bottom: 2pt;
+  }
+
+  .cv-header {
+    margin-bottom: 5pt;
+  }
+
+  .section-cards,
+  .projects-section,
+  .experience-list {
+    gap: 5.5pt;
+  }
+
+  .cv-card,
+  .experience-item,
+  .project-card {
+    box-shadow: none;
+    border-color: #cbd5f5;
+    background: #ffffff;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .cv-card,
+  .experience-item,
+  .project-card {
+    padding: 5pt 7pt;
+  }
+
+  .skill-lines {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5pt 10pt;
+  }
+
+  .skill-lines li {
+    font-size: 8.8pt;
+    line-height: 1.22;
+  }
+
+  .experience-header {
+    gap: 2pt 8pt;
+    margin-bottom: 2pt;
+  }
+
+  .experience-role,
+  .experience-domain,
+  .experience-dates {
+    font-size: 8.6pt;
+  }
+
+  .experience-tech {
+    color: #1f2937;
+    font-size: 8.6pt;
+    margin-top: 2.5pt;
+  }
+
+  .experience-domain {
+    color: #0f172a;
+  }
+
+  .project-details li {
+    margin-bottom: 3px;
+  }
+
+  .project-details {
+    column-count: 2;
+    column-gap: 16px;
+  }
+
+  .education-list li {
+    margin-bottom: 3px;
+  }
+
+  .languages-list,
+  .soft-skills-list {
+    column-count: 2;
+    column-gap: 18px;
+  }
+
+  .cv-main a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+/* PDF rendering: keep the generated document focused on the CV content. */
+body.cv-page {
+  background: #ffffff;
+}
+  </style>
+</head>
+<body class="cv-page">
+<main class="cv-main" role="main">
+<h1>Matteo Moi - Software Engineer</h1>
+<div class="cv-header">
+  <strong>Location:</strong> Sondrio, Italy | <strong>Email:</strong> <a href="mailto:matteo.moi1998@gmail.com">matteo.moi1998@gmail.com</a><br/>
+  <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/Jok98" target="_blank">GitHub</a> |
+  <a href="https://jok98.github.io" target="_blank">Personal Website</a>
+</div>
+<h2>Professional Summary</h2>
+<div class="section-cards">
+  <section class="cv-card">
+    <p>
+      Software Engineer focused on Java, Spring Boot, backend services, API contracts, integrations, and DevOps-aware
+      delivery across fintech, banking, and insurance domains. Work spans service refactoring, client customizations,
+      authentication, batch processing, data-adapter integration, OpenAPI boundaries, and CI/runtime diagnostics.
+    </p>
+  </section>
+</div>
+<h2>Education</h2>
+<div class="section-cards">
+  <section class="cv-card">
+    <p><strong>BSc Computer Science</strong> - eCampus University, in progress | <strong>IT Diploma</strong></p>
+  </section>
+</div>
+<h2>Technical Skills</h2>
+<div class="section-cards">
+  <section class="cv-card">
+    <ul class="skill-lines">
+      <li><strong>Backend:</strong> Java 17/21, Spring Boot, Spring Security, OAuth2/OIDC, JWT, REST APIs, OpenAPI, Maven, MapStruct, JPA/Hibernate, Flyway, JUnit, Mockito, Testcontainers.</li>
+      <li><strong>Data &amp; Integration:</strong> Data adapters, DTO/domain conversion, PostgreSQL, Oracle, MySQL, MongoDB, JasperReports/JasperSoft, XML payloads.</li>
+      <li><strong>Architecture/Ops:</strong> Microservices, DDD, event-driven design, Kafka, RabbitMQ, OpenFeign, Resilience4j, Docker, Kubernetes, Helm, Argo CD, GitOps, Istio, Keycloak.</li>
+      <li><strong>Tooling:</strong> GitHub Actions, GitLab CI, Prometheus, Grafana, Loki, OpenTelemetry, Linux, Arch, Hyprland/Omarchy, JavaFX, jlink, jpackage, shell scripting.</li>
+    </ul>
+  </section>
+</div>
+<h2>Professional Experience</h2>
+<div class="experience-list">
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Objectway</h3>
+      <div>
+        <span class="experience-role">Software Engineer</span>
+        <span class="experience-domain">Fintech</span>
+        <span class="experience-dates">January 2024 - Present</span>
+      </div>
+    </div>
+    <ul>
+      <li>Worked on Advice, Objectway's portfolio-management and advisory platform, contributing to backend services, API/data flows, authentication, batch processing, reporting features, and integrations.</li>
+      <li>Refactored and migrated backend generation workflows for multiple business variants, covering request mapping, data loading, domain conversion, composition, and payload preparation.</li>
+      <li>Integrated service/data-adapter layers while preserving clean Params/domain/OpenAPI ownership and avoiding generated DTO leakage into domain code.</li>
+      <li>Delivered client customizations for Credit Suisse, Allianz Bank, Mediobanca, and TNB, including Keycloak/OIDC integration, Spring Batch migration activities, reporting changes, and CI/runtime diagnostics.</li>
+    </ul>
+  </section>
+
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Iriscube Reply (SistemItaly)</h3>
+      <div>
+        <span class="experience-role">Software Engineer</span>
+        <span class="experience-domain">Banking</span>
+        <span class="experience-dates">August 2023 - January 2024</span>
+      </div>
+    </div>
+    <ul>
+      <li>Delivered banking dashboard and back-office functionality for Credit Agricole, covering backend services, OpenAPI contracts, persistence, and frontend integration support.</li>
+      <li>Implemented RESTful services with Spring Boot, JPA/Hibernate, PostgreSQL, JUnit 5, and Mockito, keeping API signatures, versioning, and compatibility aligned with frontend needs.</li>
+    </ul>
+  </section>
+
+  <section class="experience-item">
+    <div class="experience-header">
+      <h3>Blue Reply (SistemItaly)</h3>
+      <div>
+        <span class="experience-role">Junior Software Engineer</span>
+        <span class="experience-domain">Insurance</span>
+        <span class="experience-dates">April 2022 - August 2023</span>
+      </div>
+    </div>
+    <ul>
+      <li>Implemented Business Requirements, Change Requests, hotfixes, REST APIs, frontend features, and environment/release activities with production-readiness attention.</li>
+      <li>Managed test/production environment activities and contributed to the migration from Vaadin 8 to Vaadin 24.</li>
+    </ul>
+  </section>
+</div>
+<h2>Selected Projects</h2>
+<div class="section-cards">
+  <section class="project-card">
+    <ul>
+      <li><strong>Taskete:</strong> in-progress favor-exchange microservice platform with Java 21, Spring Boot 3, Kubernetes, Helm, Argo CD/GitOps, Keycloak, PostgreSQL, Docker, GitHub Actions, JWT validation, Flyway, and service CI/CD.</li>
+      <li><strong>SealForge:</strong> local-first JavaFX tool for Kubernetes SealedSecret authoring, focused on safer plaintext handling, kubeseal integration, and jlink/jpackage release documentation.</li>
+      <li><strong>KirokuForge / Jok98.github.io / omarchy-rice:</strong> project-memory skill, GitHub Pages knowledge base, and Arch/Hyprland workstation automation covering Java, Spring, Docker, Kubernetes, Linux, C, algorithms, systems, and security.</li>
+    </ul>
+  </section>
+</div>
+<h2>Languages</h2>
+<p><strong>Italian:</strong> Native | <strong>English:</strong> Technical working proficiency | <strong>Japanese:</strong> Basic</p>
+<h2>International Experience</h2>
+<p><strong>Japan:</strong> studied Japanese language and culture in Sapporo, Fukuoka, and Kobe, strengthening adaptability and cross-cultural communication.</p>
+</main>
+</body>
+</html>

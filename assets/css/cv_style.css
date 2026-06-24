@@ -304,15 +304,15 @@ body.cv-page * {
 
 @page {
   size: A4;
-  margin: 0.5in;
+  margin: 0.2in;
 }
 
 @media print {
   body.cv-page {
     background: #ffffff;
     color: #111827;
-    font-size: 10.8pt;
-    line-height: 1.35;
+    font-size: 9.4pt;
+    line-height: 1.25;
   }
 
   .cv-page-nav,
@@ -325,6 +325,7 @@ body.cv-page * {
     padding: 0;
     box-shadow: none;
     border: none;
+    max-width: none;
   }
 
   .cv-main h1,
@@ -333,34 +334,87 @@ body.cv-page * {
     color: #111827;
   }
 
+  .cv-main h1 {
+    font-size: 16pt;
+    margin: 0 0 3pt;
+  }
+
+  .cv-main h2 {
+    font-size: 10pt;
+    margin: 7pt 0 3pt;
+    padding-bottom: 2pt;
+    letter-spacing: 0.03em;
+  }
+
+  .cv-main h3 {
+    font-size: 9.4pt;
+    margin: 0 0 2.5pt;
+  }
+
+  .cv-main p {
+    margin: 2.5pt 0;
+  }
+
+  .cv-main ul {
+    margin: 2pt 0;
+    padding-left: 12pt;
+  }
+
+  .cv-main li {
+    margin-bottom: 2pt;
+  }
+
+  .cv-header {
+    margin-bottom: 5pt;
+  }
+
+  .section-cards,
+  .projects-section,
+  .experience-list {
+    gap: 5.5pt;
+  }
+
   .cv-card,
   .experience-item,
   .project-card {
     box-shadow: none;
     border-color: #cbd5f5;
     background: #ffffff;
-    break-inside: avoid;
-    page-break-inside: avoid;
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .cv-card,
   .experience-item,
   .project-card {
-    padding: 14px 16px;
+    padding: 5pt 7pt;
   }
 
   .skill-lines {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 4px 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5pt 10pt;
   }
 
   .skill-lines li {
-    break-inside: avoid;
+    font-size: 8.8pt;
+    line-height: 1.22;
+  }
+
+  .experience-header {
+    gap: 2pt 8pt;
+    margin-bottom: 2pt;
+  }
+
+  .experience-role,
+  .experience-domain,
+  .experience-dates {
+    font-size: 8.6pt;
   }
 
   .experience-tech {
     color: #1f2937;
-    font-size: 0.85rem;
+    font-size: 8.6pt;
+    margin-top: 2.5pt;
   }
 
   .experience-domain {

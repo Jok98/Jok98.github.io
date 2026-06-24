@@ -15,6 +15,29 @@ The structure of the site is based on a json that represents the structure/hiera
 
 ---
 
+## CV PDF export
+
+The CV source is [`pages/cv.md`](pages/cv.md).
+
+To generate an application-ready PDF from the Markdown source, run:
+
+```shell
+python3 scripts/render_cv_pdf.py
+```
+
+The script generates:
+
+- `dist/cv.html`: standalone HTML with the local CSS inlined.
+- `dist/cv.pdf`: PDF rendered from that HTML through headless Chromium.
+
+If Chromium is installed under a custom path:
+
+```shell
+python3 scripts/render_cv_pdf.py --chromium /path/to/chromium
+```
+
+---
+
 For handwritten notes :
 - are stored as pdf on my google drive that is synced with my e-ink 
 - manually (I'll automate that later) have to copy on this repo into `assets/utils/dev` dir
