@@ -237,6 +237,10 @@
       {
         "content": "ssh_key.md",
         "link": "notes/dev/linux/ssh_key"
+      },
+      {
+        "content": "tmux_tailscale.md",
+        "link": "notes/dev/linux/tmux_tailscale"
       }
     ],
     "subsections": [

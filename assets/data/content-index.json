@@ -1410,6 +1410,156 @@
       "searchText": "ssh key ed25519 dev linux ssh key generate ssh key run agent copy on github test connection"
     },
     {
+      "id": "dev-linux-tmux-tailscale",
+      "title": "Tmux e Tailscale",
+      "summary": "Guida pratica per lavorare su una macchina remota in modo stabile:",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "linux",
+        "label": "Linux"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/linux/tmux_tailscale.md",
+      "url": "/notes/dev/linux/tmux_tailscale/",
+      "breadcrumbs": [
+        "Dev",
+        "Linux"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tmux e Tailscale",
+          "anchor": "tmux-e-tailscale"
+        },
+        {
+          "level": 2,
+          "text": "Scenario",
+          "anchor": "scenario"
+        },
+        {
+          "level": 2,
+          "text": "Installazione",
+          "anchor": "installazione"
+        },
+        {
+          "level": 3,
+          "text": "tmux",
+          "anchor": "tmux"
+        },
+        {
+          "level": 3,
+          "text": "Tailscale",
+          "anchor": "tailscale"
+        },
+        {
+          "level": 2,
+          "text": "Connessione remota con SSH",
+          "anchor": "connessione-remota-con-ssh"
+        },
+        {
+          "level": 2,
+          "text": "Uso base di tmux",
+          "anchor": "uso-base-di-tmux"
+        },
+        {
+          "level": 3,
+          "text": "Sessioni",
+          "anchor": "sessioni"
+        },
+        {
+          "level": 3,
+          "text": "Tasti principali",
+          "anchor": "tasti-principali"
+        },
+        {
+          "level": 2,
+          "text": "Workflow consigliato",
+          "anchor": "workflow-consigliato"
+        },
+        {
+          "level": 3,
+          "text": "1. Connetti la macchina alla tailnet",
+          "anchor": "1-connetti-la-macchina-alla-tailnet"
+        },
+        {
+          "level": 3,
+          "text": "2. Entra via SSH",
+          "anchor": "2-entra-via-ssh"
+        },
+        {
+          "level": 3,
+          "text": "3. Avvia o riprendi tmux",
+          "anchor": "3-avvia-o-riprendi-tmux"
+        },
+        {
+          "level": 3,
+          "text": "4. Lavora dentro tmux",
+          "anchor": "4-lavora-dentro-tmux"
+        },
+        {
+          "level": 3,
+          "text": "5. Stacca la sessione prima di chiudere SSH",
+          "anchor": "5-stacca-la-sessione-prima-di-chiudere-ssh"
+        },
+        {
+          "level": 3,
+          "text": "6. Riprendi piu' tardi",
+          "anchor": "6-riprendi-piu-tardi"
+        },
+        {
+          "level": 2,
+          "text": "Configurazione tmux utile",
+          "anchor": "configurazione-tmux-utile"
+        },
+        {
+          "level": 2,
+          "text": "Tailscale: comandi ricorrenti",
+          "anchor": "tailscale-comandi-ricorrenti"
+        },
+        {
+          "level": 2,
+          "text": "Problemi comuni",
+          "anchor": "problemi-comuni"
+        },
+        {
+          "level": 3,
+          "text": "SSH non funziona",
+          "anchor": "ssh-non-funziona"
+        },
+        {
+          "level": 3,
+          "text": "La connessione cade",
+          "anchor": "la-connessione-cade"
+        },
+        {
+          "level": 3,
+          "text": "Il processo e' partito fuori da tmux",
+          "anchor": "il-processo-e-partito-fuori-da-tmux"
+        },
+        {
+          "level": 3,
+          "text": "Non usare tmux come sostituto di systemd",
+          "anchor": "non-usare-tmux-come-sostituto-di-systemd"
+        },
+        {
+          "level": 2,
+          "text": "Checklist rapida",
+          "anchor": "checklist-rapida"
+        },
+        {
+          "level": 2,
+          "text": "Riferimenti",
+          "anchor": "riferimenti"
+        }
+      ],
+      "searchText": "tmux e tailscale guida pratica per lavorare su una macchina remota in modo stabile: dev linux tmux e tailscale scenario installazione tmux tailscale connessione remota con ssh uso base di tmux sessioni tasti principali workflow consigliato 1. connetti la macchina alla tailnet 2. entra via ssh 3. avvia o riprendi tmux 4. lavora dentro tmux 5. stacca la sessione prima di chiudere ssh 6. riprendi piu' tardi configurazione tmux utile tailscale: comandi ricorrenti problemi comuni ssh non funziona la connessione cade il processo e' partito fuori da tmux non usare tmux come sostituto di systemd checklist rapida riferimenti"
+    },
+    {
       "id": "dev-linux-ubuntu-gui-upgrade",
       "title": "Install ocs-url",
       "summary": "https://www.opendesktop.org/s/OpenSuse-Packages/p/1136805/",
@@ -3263,7 +3413,8 @@
           "slug": "linux",
           "label": "Linux",
           "items": [
-            "dev-linux-ssh-key"
+            "dev-linux-ssh-key",
+            "dev-linux-tmux-tailscale"
           ],
           "children": [
             {
@@ -3433,7 +3584,7 @@
       {
         "slug": "dev",
         "label": "Engineering",
-        "count": 53
+        "count": 54
       },
       {
         "slug": "etc",
@@ -3485,7 +3636,7 @@
       {
         "slug": "linux",
         "label": "Linux",
-        "count": 3
+        "count": 4
       },
       {
         "slug": "microservices",
