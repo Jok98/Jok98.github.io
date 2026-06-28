@@ -1,4 +1,4 @@
-# Study Path: Books by Macro-Topic
+# Books
 
 ## 1) Computer architecture and systems
 
