@@ -206,8 +206,15 @@ def build_standalone_html(content_html: str, title: str) -> str:
 {css}
 
 /* PDF rendering: keep the generated document focused on the CV content. */
+html,
 body.cv-page {{
-  background: #ffffff;
+  background: #ffffff !important;
+  margin: 0;
+}}
+
+body.cv-page::before {{
+  content: none !important;
+  display: none !important;
 }}
   </style>
 </head>
