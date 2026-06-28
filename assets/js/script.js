@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let allContents = [];
+  let contentTree = [];
+  let itemsById = new Map();
   let activeArea = 'all';
   let activeTopic = 'all';
   let searchInitialized = false;
@@ -18,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       allContents = normalizeIndexItems(data.items || []);
+      itemsById = new Map(allContents.map((item) => [item.id, item]));
+      contentTree = Array.isArray(data.tree) ? data.tree : [];
       renderTopicFilters(data.facets || {});
       renderIndexedNavigation();
       initializeSearch();
@@ -206,6 +210,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    if (contentTree.length) {
+      renderTreeNavigation(new Set(visibleItems.map((item) => item.id)));
+      return;
+    }
+
     groupByFacet(visibleItems, "area").forEach((areaGroup) => {
       const areaSection = createNavigationSection(areaGroup.label, areaGroup.items.length, "area-section");
 
@@ -225,6 +234,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
       sectionsContainer.appendChild(areaSection);
     });
+  }
+
+  function renderTreeNavigation(visibleIds) {
+    contentTree.forEach((node) => {
+      const section = createTreeNodeElement(node, visibleIds, 0, getAreaLabel(node.slug, node.label));
+      if (section) {
+        sectionsContainer.appendChild(section);
+      }
+    });
+  }
+
+  function createTreeNodeElement(node, visibleIds, depth, labelOverride) {
+    const visibleNodeIds = collectVisibleItemIds(node, visibleIds);
+    if (!visibleNodeIds.length) {
+      return null;
+    }
+
+    const className = depth === 0
+      ? "area-section"
+      : depth === 1
+        ? "topic-section"
+        : "folder-section";
+    const section = createNavigationSection(labelOverride || node.label || node.slug, visibleNodeIds.length, className);
+    section.classList.add(`tree-depth-${Math.min(depth, 4)}`);
+
+    const list = document.createElement("ul");
+    sortItems((node.items || [])
+      .filter((id) => visibleIds.has(id))
+      .map((id) => itemsById.get(id))
+      .filter(Boolean))
+      .forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.appendChild(createContentLink(item));
+        list.appendChild(listItem);
+      });
+
+    sortTreeNodes(node.children || []).forEach((child) => {
+      const childSection = createTreeNodeElement(child, visibleIds, depth + 1);
+      if (childSection) {
+        const listItem = document.createElement("li");
+        listItem.appendChild(childSection);
+        list.appendChild(listItem);
+      }
+    });
+
+    if (list.childElementCount) {
+      section.appendChild(list);
+    }
+
+    return section;
+  }
+
+  function collectVisibleItemIds(node, visibleIds) {
+    const ids = (node.items || []).filter((id) => visibleIds.has(id));
+    (node.children || []).forEach((child) => {
+      ids.push(...collectVisibleItemIds(child, visibleIds));
+    });
+    return ids;
+  }
+
+  function sortTreeNodes(nodes) {
+    return [...nodes].sort((left, right) => {
+      const leftLabel = left.label || left.slug || "";
+      const rightLabel = right.label || right.slug || "";
+      return leftLabel.localeCompare(rightLabel);
+    });
+  }
+
+  function getAreaLabel(slug, fallback) {
+    const areaItem = allContents.find((item) => item.area.slug === slug);
+    return areaItem ? areaItem.area.label : fallback;
   }
 
   function getFilteredItems() {
