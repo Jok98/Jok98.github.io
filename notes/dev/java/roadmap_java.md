@@ -1,21 +1,17 @@
-# Roadmap Java — Basi → Avanzato → Java 26
+# Java Roadmap - Basics -> Advanced -> Java 26
 
-## 1. Ambiente di sviluppo e strumenti
+## 1. Development Environment and Tools
 
-### 1.1 Installazione e gestione JDK
+### 1.1 JDK Installation and Management
 - [ ] JDK
 - [ ] JRE
 - [ ] JVM
-- [ ] JDK 25 LTS
-- [ ] JDK 26
 - [ ] `JAVA_HOME`
 - [ ] `PATH`
 - [ ] SDKMAN
 - [ ] jEnv
-- [ ] Gestione multi-versione JDK
-- [ ] Differenza tra release LTS e feature release
 
-### 1.2 Tool base del JDK
+### 1.2 Basic JDK Tools
 - [ ] `java`
 - [ ] `javac`
 - [ ] `jshell`
@@ -31,35 +27,30 @@
 - [ ] `jstack`
 - [ ] `jfr`
 
-### 1.3 IDE e ambiente locale
-- [ ] IntelliJ IDEA
-- [ ] Eclipse
-- [ ] VS Code
-- [ ] Configurazione SDK progetto
-- [ ] Configurazione compiler level
-- [ ] Configurazione language level
+### 1.3 Local Environment
+- [ ] Project SDK configuration
+- [ ] Compiler level configuration
+- [ ] Language level configuration
 - [ ] Run configuration
 - [ ] Debug configuration
 - [ ] Formatter
 - [ ] Import optimization
 - [ ] Code inspection
 
-### 1.4 Build tool
+### 1.4 Build Tools
 - [ ] Maven
-- [ ] Gradle
 - [ ] Project structure
 - [ ] Dependency management
-- [ ] Plugin
+- [ ] Plugins
 - [ ] Lifecycle
 - [ ] Build profiles
 - [ ] Multi-module project
-- [ ] Wrapper Maven/Gradle
-- [ ] Repository locali/remoti
-- [ ] Version catalog Gradle
-- [ ] BOM Maven
+- [ ] Maven/Gradle wrapper
+- [ ] Local/remote repositories
+- [ ] Maven BOM
 - [ ] Dependency scope
 
-### 1.5 Struttura progetto Java
+### 1.5 Java Project Structure
 - [ ] Package
 - [ ] Source folder
 - [ ] Test folder
@@ -73,23 +64,23 @@
 
 ---
 
-## 2. Fondamenti del linguaggio
+## 2. Language Fundamentals
 
-### 2.1 Sintassi base
-- [ ] Classe
-- [ ] Metodo
-- [ ] Metodo `main`
+### 2.1 Basic Syntax
+- [ ] Class
+- [ ] Method
+- [ ] `main` method
 - [ ] Package declaration
 - [ ] Import
 - [ ] Statement
 - [ ] Expression
 - [ ] Block
-- [ ] Commenti
-- [ ] Naming convention
+- [ ] Comments
+- [ ] Naming conventions
 - [ ] Scope
-- [ ] Lifetime delle variabili
+- [ ] Variable lifetime
 
-### 2.2 Tipi primitivi
+### 2.2 Primitive Types
 - [ ] `byte`
 - [ ] `short`
 - [ ] `int`
@@ -98,17 +89,17 @@
 - [ ] `double`
 - [ ] `char`
 - [ ] `boolean`
-- [ ] Literal numerici
+- [ ] Numeric literals
 - [ ] Binary literal
-- [ ] Underscore nei literal numerici
+- [ ] Underscores in numeric literals
 - [ ] Overflow
 - [ ] Underflow
-- [ ] Cast implicito
-- [ ] Cast esplicito
-- [ ] Promozione numerica
-- [ ] Operazioni aritmetiche
+- [ ] Implicit cast
+- [ ] Explicit cast
+- [ ] Numeric promotion
+- [ ] Arithmetic operations
 
-### 2.3 Wrapper type
+### 2.3 Wrapper Types
 - [ ] `Byte`
 - [ ] `Short`
 - [ ] `Integer`
@@ -120,37 +111,37 @@
 - [ ] Boxing
 - [ ] Unboxing
 - [ ] Autoboxing
-- [ ] Cache degli wrapper
-- [ ] `==` su wrapper
-- [ ] `.equals()` su wrapper
-- [ ] Null pointer con unboxing
+- [ ] Wrapper cache
+- [ ] `==` on wrappers
+- [ ] `.equals()` on wrappers
+- [ ] Null pointer with unboxing
 
-### 2.4 Variabili e costanti
-- [ ] Variabili locali
-- [ ] Campi di istanza
-- [ ] Campi statici
-- [ ] Costanti
+### 2.4 Variables and Constants
+- [ ] Local variables
+- [ ] Instance fields
+- [ ] Static fields
+- [ ] Constants
 - [ ] `final`
 - [ ] `static final`
-- [ ] Inizializzazione
+- [ ] Initialization
 - [ ] Shadowing
-- [ ] `var` locale
-- [ ] Type inference locale
+- [ ] Local `var`
+- [ ] Local type inference
 
-### 2.5 Operatori
-- [ ] Aritmetici
-- [ ] Assegnazione
-- [ ] Comparazione
-- [ ] Logici
+### 2.5 Operators
+- [ ] Arithmetic
+- [ ] Assignment
+- [ ] Comparison
+- [ ] Logical
 - [ ] Bitwise
 - [ ] Shift
-- [ ] Ternario
-- [ ] Incremento/decremento
-- [ ] Precedenza operatori
+- [ ] Ternary
+- [ ] Increment/decrement
+- [ ] Operator precedence
 - [ ] Short-circuit
 - [ ] `instanceof`
 
-### 2.6 Controllo di flusso
+### 2.6 Control Flow
 - [ ] `if`
 - [ ] `else`
 - [ ] `else if`
@@ -166,24 +157,24 @@
 - [ ] Labelled break
 - [ ] Labelled continue
 
-### 2.7 Array
-- [ ] Array monodimensionale
-- [ ] Array multidimensionale
+### 2.7 Arrays
+- [ ] One-dimensional array
+- [ ] Multidimensional array
 - [ ] Array jagged
-- [ ] Inizializzazione array
-- [ ] Accesso per indice
+- [ ] Array initialization
+- [ ] Index access
 - [ ] `ArrayIndexOutOfBoundsException`
-- [ ] Array di primitivi
-- [ ] Array di oggetti
-- [ ] Copia array
+- [ ] Array of primitives
+- [ ] Array of objects
+- [ ] Array copy
 - [ ] `Arrays`
 - [ ] `System.arraycopy`
 
-### 2.8 Stringhe
+### 2.8 Strings
 - [ ] `String`
-- [ ] Immutabilità
+- [ ] Immutability
 - [ ] String pool
-- [ ] Concatenazione
+- [ ] Concatenation
 - [ ] `StringBuilder`
 - [ ] `StringBuffer`
 - [ ] `String.format`
@@ -203,81 +194,81 @@
 
 ---
 
-## 3. Programmazione orientata agli oggetti
+## 3. Object-Oriented Programming
 
-### 3.1 Classi e oggetti
-- [ ] Classe
-- [ ] Oggetto
-- [ ] Istanza
-- [ ] Stato
-- [ ] Comportamento
-- [ ] Costruttore
-- [ ] Costruttore di default
-- [ ] Overload costruttori
+### 3.1 Classes and Objects
+- [ ] Class
+- [ ] Object
+- [ ] Instance
+- [ ] State
+- [ ] Behavior
+- [ ] Constructor
+- [ ] Default constructor
+- [ ] Constructor overloading
 - [ ] Initializer block
 - [ ] Static initializer block
 - [ ] `this`
-- [ ] Riferimenti oggetto
-- [ ] Mutabilità
-- [ ] Identità oggetto
+- [ ] Object references
+- [ ] Mutability
+- [ ] Object identity
 
-### 3.2 Incapsulamento
-- [ ] Campi privati
-- [ ] Metodi pubblici
+### 3.2 Encapsulation
+- [ ] Private fields
+- [ ] Public methods
 - [ ] Getter
 - [ ] Setter
-- [ ] Metodi di dominio
-- [ ] Invarianti
-- [ ] Validazione costruttore
-- [ ] Immutabilità difensiva
+- [ ] Domain methods
+- [ ] Invariants
+- [ ] Constructor validation
+- [ ] Defensive immutability
 - [ ] Defensive copy
 - [ ] Information hiding
 
-### 3.3 Access modifier
+### 3.3 Access Modifiers
 - [ ] `public`
 - [ ] `private`
 - [ ] `protected`
 - [ ] Package-private
-- [ ] Visibilità tra package
-- [ ] Visibilità in ereditarietà
-- [ ] API pubblica
-- [ ] Dettagli interni
+- [ ] Visibility across packages
+- [ ] Visibility in inheritance
+- [ ] Public API
+- [ ] Internal details
 - [ ] Encapsulation boundary
 
-### 3.4 Ereditarietà
+### 3.4 Inheritance
 - [ ] `extends`
-- [ ] Superclasse
-- [ ] Sottoclasse
+- [ ] Superclass
+- [ ] Subclass
 - [ ] `super`
 - [ ] Override
 - [ ] Overload
-- [ ] Polimorfismo
+- [ ] Polymorphism
 - [ ] Dynamic dispatch
 - [ ] Upcasting
 - [ ] Downcasting
 - [ ] `final class`
 - [ ] `final method`
 - [ ] Fragile base class problem
-- [ ] Composizione come alternativa
+- [ ] Composition as an alternative
 
-### 3.5 Classi astratte
+### 3.5 Abstract Classes
 - [ ] `abstract class`
-- [ ] Metodo astratto
-- [ ] Metodo concreto
-- [ ] Costruttore in classe astratta
+- [ ] Abstract method
+- [ ] Concrete method
+- [ ] Constructor in abstract class
 - [ ] Template method
-- [ ] Stato condiviso
-- [ ] Differenza con interfaccia
+- [ ] Shared state
+- [ ] Difference from interface
 
-### 3.6 Interfacce
+### 3.6 Interfaces
 - [ ] `interface`
-- [ ] Implementazione
-- [ ] Contratto
-- [ ] Metodi astratti
-- [ ] Metodi default
-- [ ] Metodi statici
-- [ ] Metodi privati
-- [ ] Costanti in interfaccia
+- [ ] Implementation
+- [ ] Contract
+- [ ] Abstract methods
+- [ ] Default methods
+- [ ] Static methods
+- [ ] Private methods
+- [ ] Constants in interfaces
 - [ ] Multiple inheritance of type
 - [ ] Functional interface
 - [ ] Marker interface
@@ -289,40 +280,40 @@
 - [ ] `getClass`
 - [ ] `clone`
 - [ ] `finalize`
-- [ ] Contratto `equals`
-- [ ] Contratto `hashCode`
+- [ ] `equals` contract
+- [ ] `hashCode` contract
 - [ ] Hash collision
-- [ ] Oggetti come chiavi in `HashMap`
-- [ ] Mutabilità e hash code
+- [ ] Objects as keys in `HashMap`
+- [ ] Mutability and hash code
 
-### 3.8 Classi annidate
+### 3.8 Nested Classes
 - [ ] Static nested class
 - [ ] Inner class
 - [ ] Local class
 - [ ] Anonymous class
-- [ ] Accesso al contesto esterno
-- [ ] Costo di accoppiamento
-- [ ] Uso con listener
-- [ ] Uso con builder
+- [ ] Access to outer context
+- [ ] Coupling cost
+- [ ] Use with listeners
+- [ ] Use with builders
 
 ### 3.9 Enum
 - [ ] `enum`
-- [ ] Costanti enum
-- [ ] Campi in enum
-- [ ] Costruttori in enum
-- [ ] Metodi in enum
-- [ ] Override per costante
+- [ ] Enum constants
+- [ ] Fields in enums
+- [ ] Constructors in enums
+- [ ] Methods in enums
+- [ ] Per-constant override
 - [ ] `values`
 - [ ] `valueOf`
 - [ ] `EnumSet`
 - [ ] `EnumMap`
-- [ ] Enum come state machine
+- [ ] Enums as state machines
 
 ---
 
-## 4. Modellazione del dominio
+## 4. Domain Modeling
 
-### 4.1 Principi di modellazione
+### 4.1 Modeling Principles
 - [ ] Entity
 - [ ] Value object
 - [ ] Aggregate
@@ -337,60 +328,60 @@
 - [ ] Invariant
 - [ ] Ubiquitous language
 
-### 4.2 Immutabilità
-- [ ] Classe immutabile
-- [ ] Campo `final`
-- [ ] Stato non modificabile
+### 4.2 Immutability
+- [ ] Immutable class
+- [ ] `final` field
+- [ ] Unmodifiable state
 - [ ] Copy constructor
 - [ ] Defensive copy
-- [ ] Collection immutabili
-- [ ] Thread-safety per immutabilità
+- [ ] Immutable collections
+- [ ] Thread safety through immutability
 - [ ] Value-based class
-- [ ] Record come value carrier
+- [ ] Records as value carriers
 
 ### 4.3 Record
 - [ ] `record`
-- [ ] Componenti record
+- [ ] Record components
 - [ ] Canonical constructor
 - [ ] Compact constructor
-- [ ] Validazione record
-- [ ] Metodi in record
-- [ ] Campi statici in record
-- [ ] Record annidati
-- [ ] Record come DTO
-- [ ] Record come value object
-- [ ] Limiti con JPA
-- [ ] Limiti con framework reflection-based
+- [ ] Record validation
+- [ ] Methods in records
+- [ ] Static fields in records
+- [ ] Nested records
+- [ ] Records as DTOs
+- [ ] Records as value objects
+- [ ] Limitations with JPA
+- [ ] Limitations with reflection-based frameworks
 
-### 4.4 Sealed types
+### 4.4 Sealed Types
 - [ ] `sealed class`
 - [ ] `sealed interface`
 - [ ] `permits`
 - [ ] `final`
 - [ ] `non-sealed`
 - [ ] `sealed` + `record`
-- [ ] Gerarchie chiuse
-- [ ] Stati di dominio
-- [ ] Errori di dominio
+- [ ] Closed hierarchies
+- [ ] Domain states
+- [ ] Domain errors
 - [ ] Exhaustiveness checking
-- [ ] Modellazione algebrica
+- [ ] Algebraic modeling
 
-### 4.5 Pattern matching per dominio
-- [ ] Pattern matching con `instanceof`
+### 4.5 Pattern Matching for the Domain
+- [ ] Pattern matching with `instanceof`
 - [ ] Pattern matching in `switch`
 - [ ] Record patterns
 - [ ] Guarded patterns
 - [ ] Exhaustive switch
 - [ ] Null handling in switch
-- [ ] Dominio sealed + switch
+- [ ] Sealed domain + `switch`
 - [ ] Primitive patterns
 - [ ] Deconstruction pattern
 
 ---
 
-## 5. Exception handling
+## 5. Exception Handling
 
-### 5.1 Fondamenti
+### 5.1 Fundamentals
 - [ ] `try`
 - [ ] `catch`
 - [ ] `finally`
@@ -404,7 +395,7 @@
 - [ ] `Error`
 - [ ] `Throwable`
 
-### 5.2 Gestione moderna
+### 5.2 Modern Handling
 - [ ] Try-with-resources
 - [ ] Multi-catch
 - [ ] Rethrow
@@ -415,15 +406,15 @@
 - [ ] Business exception
 - [ ] Technical exception
 - [ ] Validation exception
-- [ ] Mapping exception → response
+- [ ] Exception-to-response mapping
 
-### 5.3 Strategie
+### 5.3 Strategies
 - [ ] Fail fast
 - [ ] Fail safe
-- [ ] Errori recuperabili
-- [ ] Errori non recuperabili
-- [ ] Logging exception
-- [ ] Non ingoiare eccezioni
+- [ ] Recoverable errors
+- [ ] Unrecoverable errors
+- [ ] Exception logging
+- [ ] Do not swallow exceptions
 - [ ] Boundary exception handling
 - [ ] Global exception handling
 - [ ] Exception in async code
@@ -433,7 +424,7 @@
 
 ## 6. Collections Framework
 
-### 6.1 Interfacce principali
+### 6.1 Main Interfaces
 - [ ] `Iterable`
 - [ ] `Collection`
 - [ ] `List`
@@ -448,31 +439,31 @@
 - [ ] `Iterator`
 - [ ] `ListIterator`
 
-### 6.2 Implementazioni `List`
+### 6.2 `List` Implementations
 - [ ] `ArrayList`
 - [ ] `LinkedList`
 - [ ] `Vector`
 - [ ] `Stack`
-- [ ] Accesso casuale
-- [ ] Inserimento
-- [ ] Rimozione
-- [ ] Iterazione
-- [ ] Complessità Big-O
-- [ ] Scelta implementazione
+- [ ] Random access
+- [ ] Insertion
+- [ ] Removal
+- [ ] Iteration
+- [ ] Big-O complexity
+- [ ] Implementation choice
 
-### 6.3 Implementazioni `Set`
+### 6.3 `Set` Implementations
 - [ ] `HashSet`
 - [ ] `LinkedHashSet`
 - [ ] `TreeSet`
 - [ ] `EnumSet`
-- [ ] Unicità
-- [ ] Ordinamento naturale
-- [ ] Ordinamento custom
+- [ ] Uniqueness
+- [ ] Natural ordering
+- [ ] Custom ordering
 - [ ] Hashing
-- [ ] Collisione
-- [ ] Mutabilità elementi
+- [ ] Collision
+- [ ] Element mutability
 
-### 6.4 Implementazioni `Map`
+### 6.4 `Map` Implementations
 - [ ] `HashMap`
 - [ ] `LinkedHashMap`
 - [ ] `TreeMap`
@@ -480,16 +471,16 @@
 - [ ] `WeakHashMap`
 - [ ] `IdentityHashMap`
 - [ ] `ConcurrentHashMap`
-- [ ] Chiavi
-- [ ] Valori
+- [ ] Keys
+- [ ] Values
 - [ ] Entry
 - [ ] Hashing
 - [ ] Ordering
 - [ ] Null key
 - [ ] Null value
-- [ ] Mutabilità chiavi
+- [ ] Key mutability
 
-### 6.5 Queue e Deque
+### 6.5 Queues and Deques
 - [ ] `ArrayDeque`
 - [ ] `PriorityQueue`
 - [ ] `BlockingQueue`
@@ -497,8 +488,8 @@
 - [ ] LIFO
 - [ ] Priority ordering
 - [ ] Producer/consumer
-- [ ] Queue bounded
-- [ ] Queue unbounded
+- [ ] Bounded queue
+- [ ] Unbounded queue
 
 ### 6.6 Utility collections
 - [ ] `Collections`
@@ -521,13 +512,13 @@
 - [ ] Last element
 - [ ] Reverse view
 - [ ] Ordered collection API
-- [ ] Migrazione da workaround legacy
+- [ ] Migration from legacy workarounds
 
 ---
 
-## 7. Generics e type system
+## 7. Generics and the Type System
 
-### 7.1 Generics base
+### 7.1 Basic Generics
 - [ ] Generic class
 - [ ] Generic interface
 - [ ] Generic method
@@ -539,16 +530,16 @@
 - [ ] Compile-time check
 - [ ] Runtime type
 
-### 7.2 Bound
+### 7.2 Bounds
 - [ ] Upper bound
 - [ ] Multiple bound
 - [ ] Recursive bound
 - [ ] F-bounded polymorphism
-- [ ] Bound su metodo
-- [ ] Bound su classe
-- [ ] Bound con interfacce
+- [ ] Method bounds
+- [ ] Class bounds
+- [ ] Bounds with interfaces
 
-### 7.3 Wildcard
+### 7.3 Wildcards
 - [ ] Unbounded wildcard
 - [ ] Upper bounded wildcard
 - [ ] Lower bounded wildcard
@@ -556,7 +547,7 @@
 - [ ] PECS
 - [ ] Producer extends
 - [ ] Consumer super
-- [ ] API design con wildcard
+- [ ] API design with wildcards
 
 ### 7.4 Type erasure
 - [ ] Erasure
@@ -567,24 +558,24 @@
 - [ ] Generic array creation
 - [ ] Varargs generics
 - [ ] `@SafeVarargs`
-- [ ] Limiti runtime
+- [ ] Runtime limitations
 
-### 7.5 Generics avanzati
+### 7.5 Advanced Generics
 - [ ] Generic builder
 - [ ] Generic repository
 - [ ] Generic mapper
 - [ ] Type token
 - [ ] Super type token
 - [ ] Generic constraints
-- [ ] Covarianza
-- [ ] Controvarianza
-- [ ] Invarianza
+- [ ] Covariance
+- [ ] Contravariance
+- [ ] Invariance
 
 ---
 
-## 8. I/O, NIO e file system
+## 8. I/O, NIO, and File Systems
 
-### 8.1 I/O classico
+### 8.1 Classic I/O
 - [ ] `InputStream`
 - [ ] `OutputStream`
 - [ ] `Reader`
@@ -614,7 +605,7 @@
 - [ ] Temporary file
 - [ ] Temporary directory
 
-### 8.3 Channel e buffer
+### 8.3 Channels and Buffers
 - [ ] `Channel`
 - [ ] `FileChannel`
 - [ ] `SocketChannel`
@@ -627,7 +618,7 @@
 - [ ] Non-blocking I/O
 - [ ] Memory-mapped file
 
-### 8.4 Watch e monitoring file system
+### 8.4 File System Watch and Monitoring
 - [ ] `WatchService`
 - [ ] File create event
 - [ ] File modify event
@@ -636,7 +627,7 @@
 - [ ] Overflow event
 - [ ] Cross-platform behavior
 
-### 8.5 Serializzazione dati
+### 8.5 Data Serialization
 - [ ] Java serialization
 - [ ] `Serializable`
 - [ ] `serialVersionUID`
@@ -650,9 +641,9 @@
 
 ---
 
-## 9. Date, time, numeri e localizzazione
+## 9. Date, Time, Numbers, and Localization
 
-### 9.1 Date/time moderna
+### 9.1 Modern Date/Time
 - [ ] `LocalDate`
 - [ ] `LocalTime`
 - [ ] `LocalDateTime`
@@ -665,63 +656,63 @@
 - [ ] `ZoneOffset`
 - [ ] `Clock`
 - [ ] `DateTimeFormatter`
-- [ ] Parsing date
-- [ ] Formatting date
+- [ ] Date parsing
+- [ ] Date formatting
 - [ ] Timezone
 - [ ] DST
-- [ ] Timestamp tecnico
-- [ ] Data business
+- [ ] Technical timestamp
+- [ ] Business date
 
-### 9.2 Date/time legacy
+### 9.2 Legacy Date/Time
 - [ ] `Date`
 - [ ] `Calendar`
 - [ ] `GregorianCalendar`
 - [ ] `SimpleDateFormat`
 - [ ] Thread-safety legacy formatter
-- [ ] Migrazione a `java.time`
+- [ ] Migration to `java.time`
 
-### 9.3 Numeri
+### 9.3 Numbers
 - [ ] `BigDecimal`
 - [ ] `BigInteger`
-- [ ] Precisione
-- [ ] Scala
+- [ ] Precision
+- [ ] Scale
 - [ ] Rounding mode
 - [ ] `MathContext`
-- [ ] Comparazione `BigDecimal`
+- [ ] `BigDecimal` comparison
 - [ ] `equals` vs `compareTo`
 - [ ] Money calculation
-- [ ] Percentuali
-- [ ] Tassi
-- [ ] Overflow numerico
+- [ ] Percentages
+- [ ] Rates
+- [ ] Numeric overflow
 
-### 9.4 Localizzazione
+### 9.4 Localization
 - [ ] `Locale`
 - [ ] `Currency`
 - [ ] `NumberFormat`
 - [ ] `DecimalFormat`
 - [ ] `MessageFormat`
 - [ ] `ResourceBundle`
-- [ ] Pluralizzazione
-- [ ] Formati paese-specifici
-- [ ] Formati valuta
-- [ ] Formati percentuale
+- [ ] Pluralization
+- [ ] Country-specific formats
+- [ ] Currency formats
+- [ ] Percentage formats
 
 ---
 
-## 10. Java funzionale
+## 10. Functional Java
 
-### 10.1 Lambda
+### 10.1 Lambdas
 - [ ] Lambda expression
-- [ ] Parametri lambda
+- [ ] Lambda parameters
 - [ ] Body expression
 - [ ] Body block
 - [ ] Variable capture
 - [ ] Effectively final
 - [ ] Target type
 - [ ] Lambda vs anonymous class
-- [ ] Lambda e checked exception
+- [ ] Lambdas and checked exceptions
 
-### 10.2 Functional interface
+### 10.2 Functional Interfaces
 - [ ] `@FunctionalInterface`
 - [ ] `Predicate`
 - [ ] `Function`
@@ -734,13 +725,13 @@
 - [ ] Primitive functional interfaces
 - [ ] Custom functional interface
 
-### 10.3 Method reference
+### 10.3 Method References
 - [ ] Static method reference
 - [ ] Instance method reference
 - [ ] Constructor reference
 - [ ] Bound receiver
 - [ ] Unbound receiver
-- [ ] Ambiguità overload
+- [ ] Overload ambiguity
 
 ### 10.4 Stream API
 - [ ] Stream source
@@ -769,7 +760,7 @@
 - [ ] Short-circuit operation
 - [ ] Infinite stream
 
-### 10.5 Collector
+### 10.5 Collectors
 - [ ] `Collectors.toList`
 - [ ] `Collectors.toSet`
 - [ ] `Collectors.toMap`
@@ -802,11 +793,11 @@
 - [ ] `orElseThrow`
 - [ ] `ifPresent`
 - [ ] `ifPresentOrElse`
-- [ ] Anti-pattern: campo Optional
-- [ ] Anti-pattern: parametro Optional
-- [ ] Optional come return type
+- [ ] Anti-pattern: Optional field
+- [ ] Anti-pattern: Optional parameter
+- [ ] Optional as return type
 
-### 10.7 Programmazione funzionale pratica
+### 10.7 Practical Functional Programming
 - [ ] Pure function
 - [ ] Side effect
 - [ ] Referential transparency
@@ -814,10 +805,10 @@
 - [ ] Pipeline
 - [ ] Declarative style
 - [ ] Imperative style
-- [ ] Immutabilità
-- [ ] Stream paralleli
-- [ ] Limiti degli stream
-- [ ] Debug pipeline stream
+- [ ] Immutability
+- [ ] Parallel streams
+- [ ] Stream limitations
+- [ ] Stream pipeline debugging
 
 ### 10.8 Stream Gatherers
 - [ ] Gatherer
@@ -828,12 +819,12 @@
 - [ ] Custom pipeline
 - [ ] Gatherer lifecycle
 - [ ] Parallel compatibility
-- [ ] Casi d'uso pratici
-- [ ] Alternative con collector
+- [ ] Practical use cases
+- [ ] Alternatives with collectors
 
 ---
 
-## 11. Moduli Java e packaging
+## 11. Java Modules and Packaging
 
 ### 11.1 JPMS
 - [ ] Module system
@@ -857,29 +848,29 @@
 ### 11.2 Classpath vs module path
 - [ ] Classpath
 - [ ] Module path
-- [ ] Migrazione da classpath
-- [ ] Dipendenze legacy
+- [ ] Migration from classpath
+- [ ] Legacy dependencies
 - [ ] Automatic module name
 - [ ] Multi-release JAR
 - [ ] ServiceLoader
-- [ ] Reflection con moduli
-- [ ] Framework e moduli
+- [ ] Reflection with modules
+- [ ] Frameworks and modules
 
-### 11.3 Runtime image
+### 11.3 Runtime Images
 - [ ] `jlink`
 - [ ] Custom runtime image
-- [ ] Moduli richiesti
-- [ ] Riduzione dimensione runtime
+- [ ] Required modules
+- [ ] Runtime size reduction
 - [ ] Startup
 - [ ] Container image
-- [ ] Distribuzione app
+- [ ] App distribution
 - [ ] `jpackage`
 
 ---
 
-## 12. Concorrenza classica
+## 12. Classic Concurrency
 
-### 12.1 Thread base
+### 12.1 Basic Threads
 - [ ] `Thread`
 - [ ] `Runnable`
 - [ ] Thread lifecycle
@@ -904,9 +895,9 @@
 - [ ] Safe publication
 - [ ] Final field semantics
 - [ ] Escape
-- [ ] Immutabilità thread-safe
+- [ ] Thread-safe immutability
 
-### 12.3 Sincronizzazione
+### 12.3 Synchronization
 - [ ] `synchronized`
 - [ ] Monitor
 - [ ] Intrinsic lock
@@ -942,7 +933,7 @@
 - [ ] `Phaser`
 - [ ] `Exchanger`
 
-### 12.5 Lock avanzati e atomics
+### 12.5 Advanced Locks and Atomics
 - [ ] `Lock`
 - [ ] `ReentrantLock`
 - [ ] `ReadWriteLock`
@@ -969,13 +960,13 @@
 - [ ] `whenComplete`
 - [ ] Timeout
 - [ ] Cancellation
-- [ ] Executor custom
+- [ ] Custom executor
 - [ ] Error propagation
 - [ ] Composition vs nesting
 
 ---
 
-## 13. Concorrenza moderna: Project Loom
+## 13. Modern Concurrency: Project Loom
 
 ### 13.1 Virtual threads
 - [ ] Platform thread
@@ -990,9 +981,9 @@
 - [ ] `Executors.newVirtualThreadPerTaskExecutor`
 - [ ] `Thread.ofVirtual`
 - [ ] Debug virtual threads
-- [ ] Thread dump con virtual threads
-- [ ] Limiti CPU-bound
-- [ ] Limiti con lock nativi
+- [ ] Thread dumps with virtual threads
+- [ ] CPU-bound limitations
+- [ ] Limitations with native locks
 
 ### 13.2 Structured Concurrency
 - [ ] Structured task scope
@@ -1005,26 +996,26 @@
 - [ ] Failure propagation
 - [ ] Result aggregation
 - [ ] Timeout
-- [ ] Concorrenza come unità strutturata
-- [ ] Error handling strutturato
+- [ ] Concurrency as a structured unit
+- [ ] Structured error handling
 
 ### 13.3 Scoped Values
 - [ ] Scoped value
-- [ ] Contesto immutabile
-- [ ] Propagazione controllata
-- [ ] Alternativa a `ThreadLocal`
-- [ ] Uso con virtual threads
+- [ ] Immutable context
+- [ ] Controlled propagation
+- [ ] Alternative to `ThreadLocal`
+- [ ] Use with virtual threads
 - [ ] Bound scope
 - [ ] Nested scope
 - [ ] Request context
 - [ ] Security context
 - [ ] Tracing context
 
-### 13.4 Migrazione enterprise
-- [ ] Virtual threads in web service
-- [ ] Virtual threads con JDBC
-- [ ] Virtual threads con HTTP client
-- [ ] Virtual threads con Spring Boot
+### 13.4 Enterprise Migration
+- [ ] Virtual threads in web services
+- [ ] Virtual threads with JDBC
+- [ ] Virtual threads with HTTP client
+- [ ] Virtual threads with Spring Boot
 - [ ] ThreadLocal legacy
 - [ ] Pool sizing
 - [ ] Connection pool
@@ -1035,9 +1026,9 @@
 
 ---
 
-## 14. Networking e HTTP
+## 14. Networking and HTTP
 
-### 14.1 Networking base
+### 14.1 Networking Basics
 - [ ] Socket
 - [ ] ServerSocket
 - [ ] TCP
@@ -1071,25 +1062,25 @@
 - [ ] Connection reuse
 - [ ] Error handling
 
-### 14.3 Resilienza client
+### 14.3 Client Resilience
 - [ ] Retry
 - [ ] Exponential backoff
 - [ ] Timeout budget
 - [ ] Circuit breaker
 - [ ] Bulkhead
 - [ ] Rate limiter
-- [ ] Idempotenza
+- [ ] Idempotency
 - [ ] Correlation ID
 - [ ] Request tracing
 - [ ] Metrics
 - [ ] Logging request/response
-- [ ] Redazione dati sensibili
+- [ ] Sensitive data redaction
 
 ---
 
-## 15. Sicurezza e crittografia
+## 15. Security and Cryptography
 
-### 15.1 Fondamenti security
+### 15.1 Security Fundamentals
 - [ ] Secure coding
 - [ ] Input validation
 - [ ] Output encoding
@@ -1137,17 +1128,17 @@
 
 ### 15.4 Platform security evolution
 - [ ] Security Manager
-- [ ] Deprecazione Security Manager
-- [ ] Disabilitazione Security Manager
-- [ ] Rimozione API legacy
+- [ ] Security Manager deprecation
+- [ ] Security Manager disabling
+- [ ] Removal of legacy APIs
 - [ ] Strong encapsulation
-- [ ] Restrizioni `final` field reflection
-- [ ] Deprecazione `Unsafe`
-- [ ] Migrazione da API interne JDK
+- [ ] Restrictions on `final` field reflection
+- [ ] Deprecation of `Unsafe`
+- [ ] Migration from internal JDK APIs
 
 ---
 
-## 16. Reflection, annotation e metaprogramming
+## 16. Reflection, Annotations, and Metaprogramming
 
 ### 16.1 Reflection
 - [ ] `Class`
@@ -1157,15 +1148,15 @@
 - [ ] `getDeclaredFields`
 - [ ] `getDeclaredMethods`
 - [ ] `setAccessible`
-- [ ] Accesso privato
-- [ ] Performance reflection
-- [ ] Reflection e moduli
-- [ ] Reflection e `final`
-- [ ] Reflection e framework
-- [ ] Reflection e security
+- [ ] Private access
+- [ ] Reflection performance
+- [ ] Reflection and modules
+- [ ] Reflection and `final`
+- [ ] Reflection and frameworks
+- [ ] Reflection and security
 
-### 16.2 Annotation
-- [ ] Annotation custom
+### 16.2 Annotations
+- [ ] Custom annotations
 - [ ] `@Target`
 - [ ] `@Retention`
 - [ ] `@Inherited`
@@ -1173,7 +1164,7 @@
 - [ ] Runtime annotation
 - [ ] Source annotation
 - [ ] Class annotation
-- [ ] Annotation su type use
+- [ ] Annotations on type use
 - [ ] Annotation processing
 - [ ] Compile-time code generation
 
@@ -1184,10 +1175,10 @@
 - [ ] AOP
 - [ ] Logging proxy
 - [ ] Transaction proxy
-- [ ] Limiti proxy JDK
+- [ ] JDK proxy limitations
 - [ ] Proxy vs bytecode generation
 
-### 16.4 MethodHandles e VarHandles
+### 16.4 MethodHandles and VarHandles
 - [ ] `MethodHandle`
 - [ ] `MethodHandles.Lookup`
 - [ ] `invoke`
@@ -1207,9 +1198,9 @@
 - [ ] Field descriptor
 - [ ] Attribute
 - [ ] Bytecode instruction
-- [ ] Parsing class file
-- [ ] Generating class file
-- [ ] Transforming class file
+- [ ] Class file parsing
+- [ ] Class file generation
+- [ ] Class file transformation
 - [ ] Tooling
 - [ ] Framework integration
 
@@ -1217,7 +1208,7 @@
 
 ## 17. JVM internals
 
-### 17.1 Architettura JVM
+### 17.1 JVM Architecture
 - [ ] Bytecode
 - [ ] Class file
 - [ ] Class loader
@@ -1232,7 +1223,7 @@
 - [ ] Initialization
 - [ ] Runtime data areas
 
-### 17.2 Memoria
+### 17.2 Memory
 - [ ] Heap
 - [ ] Stack
 - [ ] Metaspace
@@ -1249,12 +1240,12 @@
 - [ ] Escape analysis
 - [ ] Scalar replacement
 
-### 17.3 JIT e ottimizzazione
+### 17.3 JIT and Optimization
 - [ ] Interpreter
 - [ ] C1 compiler
 - [ ] C2 compiler
 - [ ] Tiered compilation
-- [ ] Profiling runtime
+- [ ] Runtime profiling
 - [ ] Inlining
 - [ ] Deoptimization
 - [ ] Loop optimization
@@ -1264,7 +1255,7 @@
 - [ ] Warmup
 - [ ] Benchmark pitfalls
 
-### 17.4 Class loading e startup
+### 17.4 Class Loading and Startup
 - [ ] Class loading cost
 - [ ] CDS
 - [ ] AppCDS
@@ -1277,7 +1268,7 @@
 - [ ] Startup optimization
 - [ ] Container startup
 
-### 17.5 Osservabilità runtime
+### 17.5 Runtime Observability
 - [ ] Thread dump
 - [ ] Heap dump
 - [ ] GC log
@@ -1292,9 +1283,9 @@
 
 ---
 
-## 18. Garbage Collection e performance
+## 18. Garbage Collection and Performance
 
-### 18.1 Fondamenti GC
+### 18.1 GC Fundamentals
 - [ ] Allocation
 - [ ] Reachability
 - [ ] Root set
@@ -1356,7 +1347,7 @@
 
 ---
 
-## 19. Foreign Function, Memory e native interop
+## 19. Foreign Function, Memory, and Native Interop
 
 ### 19.1 JNI
 - [ ] JNI basics
@@ -1384,7 +1375,7 @@
 - [ ] Native interop
 - [ ] Replacement for JNI in common cases
 
-### 19.3 Off-heap e performance
+### 19.3 Off-Heap and Performance
 - [ ] Direct memory
 - [ ] Off-heap allocation
 - [ ] Memory layout
@@ -1397,7 +1388,7 @@
 
 ---
 
-## 20. Vector API e calcolo ad alte prestazioni
+## 20. Vector API and High-Performance Computing
 
 ### 20.1 SIMD
 - [ ] SIMD
@@ -1406,7 +1397,7 @@
 - [ ] CPU vector register
 - [ ] Lane
 - [ ] Species
-- [ ] Portabilità
+- [ ] Portability
 - [ ] Fallback
 - [ ] Auto-vectorization
 - [ ] Manual vectorization
@@ -1422,10 +1413,10 @@
 - [ ] Blend
 - [ ] Performance benchmark
 - [ ] Incubator module
-- [ ] Use cases numerici
-- [ ] Use cases AI/ML
-- [ ] Use cases crypto
-- [ ] Use cases image processing
+- [ ] Numeric use cases
+- [ ] AI/ML use cases
+- [ ] Crypto use cases
+- [ ] Image processing use cases
 
 ---
 
@@ -1485,7 +1476,7 @@
 
 ---
 
-## 22. Logging, monitoring e observability
+## 22. Logging, Monitoring, and Observability
 
 ### 22.1 Logging
 - [ ] `java.util.logging`
@@ -1496,11 +1487,11 @@
 - [ ] Structured logging
 - [ ] MDC
 - [ ] Correlation ID
-- [ ] Redazione dati sensibili
+- [ ] Sensitive data redaction
 - [ ] Async logging
 - [ ] Log rotation
 
-### 22.2 Metriche
+### 22.2 Metrics
 - [ ] Counter
 - [ ] Gauge
 - [ ] Timer
@@ -1540,9 +1531,9 @@
 
 ---
 
-## 23. Java enterprise e microservizi
+## 23. Enterprise Java and Microservices
 
-### 23.1 JDBC e database
+### 23.1 JDBC and Databases
 - [ ] JDBC
 - [ ] Driver
 - [ ] Connection
@@ -1553,8 +1544,8 @@
 - [ ] Connection pool
 - [ ] Batch insert
 - [ ] SQL injection prevention
-- [ ] Mapping manuale
-- [ ] Migrazione schema
+- [ ] Manual mapping
+- [ ] Schema migration
 
 ### 23.2 Spring Boot
 - [ ] Dependency injection
@@ -1587,7 +1578,7 @@
 - [ ] Projection
 - [ ] DTO mapping
 
-### 23.4 Microservizi
+### 23.4 Microservices
 - [ ] REST API
 - [ ] OpenAPI
 - [ ] JSON serialization
@@ -1619,8 +1610,8 @@
 - [ ] At-least-once semantics
 - [ ] Backpressure
 
-### 23.6 Container e cloud
-- [ ] Dockerfile per Java
+### 23.6 Containers and Cloud
+- [ ] Dockerfile for Java
 - [ ] Layered JAR
 - [ ] JVM in container
 - [ ] Memory limits
@@ -1638,18 +1629,18 @@
 
 ---
 
-## 24. Evoluzione Java per versione
+## 24. Java Evolution by Version
 
 ### 24.1 Java 1.0
-- [ ] Classi
-- [ ] Oggetti
-- [ ] Interfacce
+- [ ] Classes
+- [ ] Objects
+- [ ] Interfaces
 - [ ] Package
 - [ ] Exception
 - [ ] Thread
 - [ ] Applet
 - [ ] AWT
-- [ ] I/O base
+- [ ] Basic I/O
 - [ ] JVM
 - [ ] Bytecode
 
@@ -1974,60 +1965,60 @@
 - [ ] Key Derivation Function API
 
 ### 24.27 Java 26
-- [ ] JEP 500 — Prepare to Make Final Mean Final
-- [ ] JEP 504 — Remove the Applet API
-- [ ] JEP 516 — Ahead-of-Time Object Caching with Any GC
-- [ ] JEP 517 — HTTP/3 for the HTTP Client
-- [ ] JEP 522 — G1 GC: Improve Throughput by Reducing Synchronization
-- [ ] JEP 524 — PEM Encodings of Cryptographic Objects
-- [ ] JEP 525 — Structured Concurrency
-- [ ] JEP 526 — Lazy Constants
-- [ ] JEP 529 — Vector API
-- [ ] JEP 530 — Primitive Types in Patterns, `instanceof`, and `switch`
+- [ ] JEP 500 - Prepare to Make Final Mean Final
+- [ ] JEP 504 - Remove the Applet API
+- [ ] JEP 516 - Ahead-of-Time Object Caching with Any GC
+- [ ] JEP 517 - HTTP/3 for the HTTP Client
+- [ ] JEP 522 - G1 GC: Improve Throughput by Reducing Synchronization
+- [ ] JEP 524 - PEM Encodings of Cryptographic Objects
+- [ ] JEP 525 - Structured Concurrency
+- [ ] JEP 526 - Lazy Constants
+- [ ] JEP 529 - Vector API
+- [ ] JEP 530 - Primitive Types in Patterns, `instanceof`, and `switch`
 
 ---
 
-## 25. Percorso di studio progressivo
+## 25. Progressive Study Path
 
-### 25.1 Fase 1 — Java base
+### 25.1 Phase 1 - Basic Java
 - [ ] Setup JDK
-- [ ] Sintassi base
-- [ ] Tipi primitivi
-- [ ] Stringhe
+- [ ] Basic syntax
+- [ ] Primitive types
+- [ ] Strings
 - [ ] Array
-- [ ] Controllo di flusso
-- [ ] Classi
-- [ ] Oggetti
-- [ ] Metodi
+- [ ] Control flow
+- [ ] Classes
+- [ ] Objects
+- [ ] Methods
 - [ ] Package
 - [ ] Access modifier
-- [ ] Exception base
+- [ ] Basic exceptions
 
-### 25.2 Fase 2 — Java Core
-- [ ] OOP avanzata
+### 25.2 Phase 2 - Java Core
+- [ ] Advanced OOP
 - [ ] Collections
 - [ ] Generics
-- [ ] Exception handling avanzato
+- [ ] Advanced exception handling
 - [ ] I/O
 - [ ] NIO
 - [ ] Date/time
 - [ ] BigDecimal
 - [ ] Enum
-- [ ] Immutabilità
-- [ ] Testing base
+- [ ] Immutability
+- [ ] Basic testing
 
-### 25.3 Fase 3 — Java 8
+### 25.3 Phase 3 - Java 8
 - [ ] Lambda
 - [ ] Functional interface
 - [ ] Method reference
 - [ ] Stream API
 - [ ] Optional
 - [ ] Collector
-- [ ] CompletableFuture base
+- [ ] Basic CompletableFuture
 - [ ] Default methods
 - [ ] `java.time`
 
-### 25.4 Fase 4 — Java 9-17
+### 25.4 Phase 4 - Java 9-17
 - [ ] Module system
 - [ ] JShell
 - [ ] Collection factory methods
@@ -2041,7 +2032,7 @@
 - [ ] JFR
 - [ ] Strong encapsulation
 
-### 25.5 Fase 5 — Java 18-21
+### 25.5 Phase 5 - Java 18-21
 - [ ] UTF-8 by default
 - [ ] Simple Web Server
 - [ ] Virtual Threads
@@ -2053,7 +2044,7 @@
 - [ ] Structured Concurrency preview
 - [ ] KEM API
 
-### 25.6 Fase 6 — Java 22-26
+### 25.6 Phase 6 - Java 22-26
 - [ ] Foreign Function & Memory API
 - [ ] Class-File API
 - [ ] Stream Gatherers
@@ -2074,7 +2065,7 @@
 - [ ] Primitive Types in Patterns
 - [ ] Final field restrictions
 
-### 25.7 Fase 7 — JVM e performance
+### 25.7 Phase 7 - JVM and Performance
 - [ ] Bytecode
 - [ ] Class loading
 - [ ] JIT
@@ -2090,17 +2081,17 @@
 - [ ] Heap dump
 - [ ] Memory leak analysis
 
-### 25.8 Fase 8 — Enterprise Java
-- [ ] Maven/Gradle avanzato
+### 25.8 Phase 8 - Enterprise Java
+- [ ] Advanced Maven/Gradle
 - [ ] JDBC
 - [ ] Spring Boot
 - [ ] JPA/Hibernate
 - [ ] REST API
-- [ ] Microservizi
+- [ ] Microservices
 - [ ] Messaging
-- [ ] Testing integration
+- [ ] Integration testing
 - [ ] Observability
 - [ ] Docker
 - [ ] Kubernetes
-- [ ] Performance in container
+- [ ] Performance in containers
 

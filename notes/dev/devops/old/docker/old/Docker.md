@@ -56,7 +56,7 @@ allowing it to run consistently across different computing environments.
 # First stage: Build the application
 FROM maven:3.8.1-openjdk-11-slim AS build
 WORKDIR /home/app
-COPY . /home/app
+COPY .. /home/app
 RUN mvn -f /home/app/pom.xml clean package
 
 # Second stage: Run the application
