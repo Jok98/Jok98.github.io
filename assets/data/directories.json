@@ -226,6 +226,10 @@
       {
         "content": "main_features.md",
         "link": "notes/dev/java/main_features"
+      },
+      {
+        "content": "roadmap_java.md",
+        "link": "notes/dev/java/roadmap_java"
       }
     ],
     "subsections": []
