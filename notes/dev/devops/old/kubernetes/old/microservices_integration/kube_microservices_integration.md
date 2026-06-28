@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ### Implementing kubernetes features to simplify the system landscape
 
 Microservices design patterns will be handled by kubernetes build-in capabilities.

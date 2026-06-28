@@ -3,10 +3,6 @@
     "name": "dev",
     "contents": [
       {
-        "content": "architecture.md",
-        "link": "notes/dev/architecture"
-      },
-      {
         "content": "books.md",
         "link": "notes/dev/books"
       }
@@ -549,6 +545,21 @@
   }
 ,
   {
+    "name": "system_design",
+    "contents": [
+      {
+        "content": "architecture.md",
+        "link": "notes/dev/system_design/architecture"
+      },
+      {
+        "content": "roadmap_system_design_and_architecture.md",
+        "link": "notes/dev/system_design/roadmap_system_design_and_architecture"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "web",
     "contents": [
       {
@@ -653,6 +664,12 @@
   }
 
     ]
+  }
+,
+  {
+    "name": "uni",
+    "contents": [],
+    "subsections": []
   }
 
 ]

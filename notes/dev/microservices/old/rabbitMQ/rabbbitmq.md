@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ## 🐰 Che cos’è RabbitMQ?
 
 RabbitMQ è un **broker di messaggistica** open-source che permette a diverse applicazioni o microservizi di comunicare in modo **asincrono** tramite messaggi.

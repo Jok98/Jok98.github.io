@@ -1,3 +1,6 @@
+---
+layout: page
+---
 🔄 Cos’è un Refresh Token?
 Un Refresh Token è un secondo token (separato dal JWT access token) che permette al client di ottenere un nuovo token di accesso senza rifare login.
 

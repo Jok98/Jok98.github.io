@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ## 🔍 Servlet: Le Fondamenta del Web Java
 
 ### Cosa sono le Servlet?

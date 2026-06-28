@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

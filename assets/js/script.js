@@ -216,10 +216,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     groupByFacet(visibleItems, "area").forEach((areaGroup) => {
-      const areaSection = createNavigationSection(areaGroup.label, areaGroup.items.length, "area-section");
+      const areaSection = createNavigationSection(areaGroup.label, areaGroup.items.length, "area-section", 0);
 
       groupByFacet(areaGroup.items, "topic").forEach((topicGroup) => {
-        const topicSection = createNavigationSection(topicGroup.label, topicGroup.items.length, "topic-section");
+        const topicSection = createNavigationSection(topicGroup.label, topicGroup.items.length, "topic-section", 1);
         const list = document.createElement("ul");
 
         sortItems(topicGroup.items).forEach((item) => {
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : depth === 1
         ? "topic-section"
         : "folder-section";
-    const section = createNavigationSection(labelOverride || node.label || node.slug, visibleNodeIds.length, className);
+    const section = createNavigationSection(labelOverride || node.label || node.slug, visibleNodeIds.length, className, depth);
     section.classList.add(`tree-depth-${Math.min(depth, 4)}`);
 
     const list = document.createElement("ul");
@@ -344,21 +344,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function createNavigationSection(label, count, className) {
+  function createNavigationSection(label, count, className, depth = 0) {
     const details = document.createElement("details");
     details.classList.add("section", className);
-    details.open = activeArea !== "all" || activeTopic !== "all";
+    details.dataset.depth = depth;
+    details.open = shouldOpenSection(depth);
 
     const summary = document.createElement("summary");
-    summary.textContent = label;
+    summary.classList.add("section-summary");
+
+    const chevron = document.createElement("i");
+    chevron.classList.add("fas", "fa-chevron-right", "section-chevron");
+    chevron.setAttribute("aria-hidden", "true");
+
+    const labelWrap = document.createElement("span");
+    labelWrap.classList.add("section-label");
+
+    const icon = document.createElement("i");
+    icon.classList.add(...getSectionIconClasses(className));
+    icon.setAttribute("aria-hidden", "true");
+
+    const labelText = document.createElement("span");
+    labelText.classList.add("section-name");
+    labelText.textContent = label;
+
+    labelWrap.appendChild(icon);
+    labelWrap.appendChild(labelText);
 
     const badge = document.createElement("span");
     badge.classList.add("nav-count");
     badge.textContent = count;
+
+    summary.appendChild(chevron);
+    summary.appendChild(labelWrap);
     summary.appendChild(badge);
 
     details.appendChild(summary);
     return details;
+  }
+
+  function shouldOpenSection(depth) {
+    if (activeArea !== "all" || activeTopic !== "all") {
+      return depth <= 1;
+    }
+
+    return !sectionsContainer.closest(".notes-sidebar") && depth === 0;
+  }
+
+  function getSectionIconClasses(className) {
+    if (className === "area-section") {
+      return ["fas", "fa-layer-group", "section-icon"];
+    }
+
+    if (className === "topic-section") {
+      return ["fas", "fa-book-open", "section-icon"];
+    }
+
+    return ["fas", "fa-folder", "section-icon"];
   }
 
   function createContentLink(item, compact = false) {
@@ -369,10 +411,18 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("search-result-link");
     }
 
+    const icon = document.createElement("i");
+    icon.classList.add("fas", "fa-file-alt", "content-link-icon");
+    icon.setAttribute("aria-hidden", "true");
+    link.appendChild(icon);
+
+    const body = document.createElement("span");
+    body.classList.add("content-link-body");
+
     const title = document.createElement("span");
     title.classList.add("content-link-title");
     title.textContent = item.title || item.content;
-    link.appendChild(title);
+    body.appendChild(title);
 
     const metaText = compact
       ? item.breadcrumbs.join(" / ")
@@ -381,9 +431,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const meta = document.createElement("span");
       meta.classList.add("content-link-meta");
       meta.textContent = metaText;
-      link.appendChild(meta);
+      body.appendChild(meta);
     }
 
+    link.appendChild(body);
     return link;
   }
 
@@ -458,6 +509,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const collapsedClass = 'sidebar-collapsed';
     const expandedClass = 'sidebar-expanded';
     const label = sidebarToggle.querySelector('.toggle-label');
+    const icon = sidebarToggle.querySelector('i');
 
     const setState = (expanded) => {
       if (expanded) {
@@ -466,7 +518,11 @@ document.addEventListener("DOMContentLoaded", () => {
         notesSidebar.setAttribute('aria-hidden', 'false');
         sidebarToggle.setAttribute('aria-expanded', 'true');
         if (label) {
-          label.textContent = 'Hide navbar';
+          label.textContent = 'Hide navigation';
+        }
+        if (icon) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
         }
       } else {
         sidebarLayout.classList.add(collapsedClass);
@@ -474,7 +530,11 @@ document.addEventListener("DOMContentLoaded", () => {
         notesSidebar.setAttribute('aria-hidden', 'true');
         sidebarToggle.setAttribute('aria-expanded', 'false');
         if (label) {
-          label.textContent = 'Show navbar';
+          label.textContent = 'Show navigation';
+        }
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
         }
       }
     };
@@ -494,7 +554,27 @@ document.addEventListener("DOMContentLoaded", () => {
     details.classList.add("section");
 
     const summary = document.createElement("summary");
-    summary.textContent = section.name;
+    summary.classList.add("section-summary");
+
+    const chevron = document.createElement("i");
+    chevron.classList.add("fas", "fa-chevron-right", "section-chevron");
+    chevron.setAttribute("aria-hidden", "true");
+
+    const labelWrap = document.createElement("span");
+    labelWrap.classList.add("section-label");
+
+    const icon = document.createElement("i");
+    icon.classList.add("fas", "fa-folder", "section-icon");
+    icon.setAttribute("aria-hidden", "true");
+
+    const labelText = document.createElement("span");
+    labelText.classList.add("section-name");
+    labelText.textContent = section.name;
+
+    labelWrap.appendChild(icon);
+    labelWrap.appendChild(labelText);
+    summary.appendChild(chevron);
+    summary.appendChild(labelWrap);
     details.appendChild(summary);
 
     const list = document.createElement("ul");
@@ -504,8 +584,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const item = document.createElement("li");
         const link = document.createElement("a");
         link.href = formatPath(contentItem.link);
-        link.textContent = contentItem.content;
         link.classList.add("content-link");
+
+        const linkIcon = document.createElement("i");
+        linkIcon.classList.add("fas", "fa-file-alt", "content-link-icon");
+        linkIcon.setAttribute("aria-hidden", "true");
+
+        const linkBody = document.createElement("span");
+        linkBody.classList.add("content-link-body");
+
+        const linkTitle = document.createElement("span");
+        linkTitle.classList.add("content-link-title");
+        linkTitle.textContent = contentItem.content;
+
+        linkBody.appendChild(linkTitle);
+        link.appendChild(linkIcon);
+        link.appendChild(linkBody);
         item.appendChild(link);
         list.appendChild(item);
       });
@@ -564,6 +658,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     toc.hidden = false;
+    const pageLayout = document.querySelector('.page-layout');
+    if (pageLayout) {
+      pageLayout.classList.add('has-page-toc');
+    }
 
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(

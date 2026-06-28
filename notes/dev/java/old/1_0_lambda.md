@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ## Digital version :
 <details markdown="1">
 

@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ## Arch
 
 I've built a script for installing Arch.

@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Books
 
 ## 1) Computer architecture and systems

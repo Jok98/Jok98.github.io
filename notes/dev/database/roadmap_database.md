@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Database Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

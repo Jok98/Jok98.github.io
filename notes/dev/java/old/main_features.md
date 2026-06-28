@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Java Milestones & Main Features
 
 ## Digital version :

@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Kubernetes Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

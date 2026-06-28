@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Java Roadmap - Basics -> Advanced -> Java 26
 
 ## 1. Development Environment and Tools

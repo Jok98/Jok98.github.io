@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Data Structures and Algorithms Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

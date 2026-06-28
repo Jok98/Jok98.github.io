@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Spring & Spring Boot Roadmap - Basics -> Advanced
 
 ## 1. Technical Prerequisites

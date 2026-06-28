@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ```shell
 sudo apt install gnome-software
 ```

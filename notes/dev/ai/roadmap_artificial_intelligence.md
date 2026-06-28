@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Artificial Intelligence Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Hardware Fundamentals Roadmap — Basics to Advanced
 
 ## 1. Prerequisites

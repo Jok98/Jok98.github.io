@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Linux Kernel Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

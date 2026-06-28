@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # System Design and Software Architecture Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

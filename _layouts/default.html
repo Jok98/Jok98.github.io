@@ -12,14 +12,14 @@
 </head>
 <body>
 <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <a href="/" class="nav-logo">Matteo Moi - Software Developer</a>
         <div class="nav-links">
-            <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
-            <a href="/cv" class="nav-link"><i class="fas fa-file-alt"></i> CV</a>
-            <a href="/dist/cv.pdf" class="nav-link" download><i class="fas fa-download"></i> PDF</a>
-            <a href="https://github.com/Jok98" target="_blank" class="nav-link"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a>
+            <a href="/" class="nav-link"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+            <a href="/cv" class="nav-link"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
+            <a href="/dist/cv.pdf" class="nav-link" download><i class="fas fa-download" aria-hidden="true"></i> PDF</a>
+            <a href="https://github.com/Jok98" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
             <span class="site-version">V3.1</span>
         </div>
     </nav>
@@ -31,14 +31,16 @@
 {% else %}
     <div class="sidebar-controls">
         <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-controls="notes-sidebar">
-            <span class="toggle-label">Mostra navigazione</span>
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            <span class="toggle-label">Show navigation</span>
         </button>
     </div>
     <div class="page-layout sidebar-collapsed">
         <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true">
             <h2 class="sidebar-title">Notes &amp; Resources</h2>
             <div id="search-container">
-                <input type="text" id="search-input" placeholder="Search documents by title...">
+                <label class="visually-hidden" for="search-input">Search notes</label>
+                <input type="search" id="search-input" placeholder="Search notes..." autocomplete="off">
                 <div id="search-results"></div>
             </div>
             <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
