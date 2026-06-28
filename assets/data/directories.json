@@ -13,23 +13,52 @@
     ],
     "subsections": [
   {
+    "name": "ai",
+    "contents": [
+      {
+        "content": "roadmap_artificial_intelligence.md",
+        "link": "notes/dev/ai/roadmap_artificial_intelligence"
+      }
+    ],
+    "subsections": []
+  }
+,
+  {
     "name": "c",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "old",
     "contents": [
       {
         "content": "1.0_c_init.md",
-        "link": "notes/dev/c/1.0_c_init"
+        "link": "notes/dev/c/old/1.0_c_init"
       },
       {
         "content": "1.1_variable_lifecycle.md",
-        "link": "notes/dev/c/1.1_variable_lifecycle"
+        "link": "notes/dev/c/old/1.1_variable_lifecycle"
       },
       {
         "content": "2.0_preprocessor.md",
-        "link": "notes/dev/c/2.0_preprocessor"
+        "link": "notes/dev/c/old/2.0_preprocessor"
       },
       {
         "content": "3.0_function.md",
-        "link": "notes/dev/c/3.0_function"
+        "link": "notes/dev/c/old/3.0_function"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
+    "name": "database",
+    "contents": [
+      {
+        "content": "roadmap_database.md",
+        "link": "notes/dev/database/roadmap_database"
       }
     ],
     "subsections": []
@@ -37,25 +66,66 @@
 ,
   {
     "name": "devops",
+    "contents": [
+      {
+        "content": "roadmap_kubernetes.md",
+        "link": "notes/dev/devops/roadmap_kubernetes"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "old",
     "contents": [],
     "subsections": [
   {
     "name": "docker",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "old",
     "contents": [
       {
         "content": "Docker.md",
-        "link": "notes/dev/devops/docker/Docker"
+        "link": "notes/dev/devops/old/docker/old/Docker"
       }
     ],
     "subsections": []
   }
+
+    ]
+  }
 ,
+  {
+    "name": "kubernetes",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "old",
+    "contents": [
+      {
+        "content": "Kubectl.md",
+        "link": "notes/dev/devops/old/kubernetes/old/Kubectl"
+      },
+      {
+        "content": "Kubernetes.md",
+        "link": "notes/dev/devops/old/kubernetes/old/Kubernetes"
+      },
+      {
+        "content": "Kubernetes_Services.md",
+        "link": "notes/dev/devops/old/kubernetes/old/Kubernetes_Services"
+      },
+      {
+        "content": "Minikube.md",
+        "link": "notes/dev/devops/old/kubernetes/old/Minikube"
+      }
+    ],
+    "subsections": [
   {
     "name": "helm",
     "contents": [
       {
         "content": "Helm.md",
-        "link": "notes/dev/devops/helm/Helm"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/Helm"
       }
     ],
     "subsections": [
@@ -64,7 +134,7 @@
     "contents": [
       {
         "content": "common_library_chart.md",
-        "link": "notes/dev/devops/helm/common/common_library_chart"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/common_library_chart"
       }
     ],
     "subsections": [
@@ -73,7 +143,7 @@
     "contents": [
       {
         "content": "template.md",
-        "link": "notes/dev/devops/helm/common/template/template"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/template/template"
       }
     ],
     "subsections": [
@@ -82,7 +152,7 @@
     "contents": [
       {
         "content": "configmap_template.md",
-        "link": "notes/dev/devops/helm/common/template/configmap_template/configmap_template"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/template/configmap_template/configmap_template"
       }
     ],
     "subsections": []
@@ -93,7 +163,7 @@
     "contents": [
       {
         "content": "deployment_template.md",
-        "link": "notes/dev/devops/helm/common/template/deployment_template/deployment_template"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/template/deployment_template/deployment_template"
       }
     ],
     "subsections": []
@@ -104,7 +174,7 @@
     "contents": [
       {
         "content": "secret_template.md",
-        "link": "notes/dev/devops/helm/common/template/secret_template/secret_template"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/template/secret_template/secret_template"
       }
     ],
     "subsections": []
@@ -115,7 +185,7 @@
     "contents": [
       {
         "content": "service_template.md",
-        "link": "notes/dev/devops/helm/common/template/service_template/service_template"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/common/template/service_template/service_template"
       }
     ],
     "subsections": []
@@ -132,7 +202,7 @@
     "contents": [
       {
         "content": "component_charts.md",
-        "link": "notes/dev/devops/helm/components/component_charts"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/components/component_charts"
       }
     ],
     "subsections": []
@@ -143,7 +213,7 @@
     "contents": [
       {
         "content": "environment_chart.md",
-        "link": "notes/dev/devops/helm/environment/environment_chart"
+        "link": "notes/dev/devops/old/kubernetes/old/helm/environment/environment_chart"
       }
     ],
     "subsections": []
@@ -157,42 +227,27 @@
     "contents": [
       {
         "content": "istio.md",
-        "link": "notes/dev/devops/istio/istio"
+        "link": "notes/dev/devops/old/kubernetes/old/istio/istio"
       }
     ],
     "subsections": []
   }
 ,
   {
-    "name": "kubernetes",
-    "contents": [
-      {
-        "content": "Kubectl.md",
-        "link": "notes/dev/devops/kubernetes/Kubectl"
-      },
-      {
-        "content": "Kubernetes.md",
-        "link": "notes/dev/devops/kubernetes/Kubernetes"
-      },
-      {
-        "content": "Kubernetes_Services.md",
-        "link": "notes/dev/devops/kubernetes/Kubernetes_Services"
-      },
-      {
-        "content": "Minikube.md",
-        "link": "notes/dev/devops/kubernetes/Minikube"
-      }
-    ],
-    "subsections": [
-  {
     "name": "microservices_integration",
     "contents": [
       {
         "content": "kube_microservices_integration.md",
-        "link": "notes/dev/devops/kubernetes/microservices_integration/kube_microservices_integration"
+        "link": "notes/dev/devops/old/kubernetes/old/microservices_integration/kube_microservices_integration"
       }
     ],
     "subsections": []
+  }
+
+    ]
+  }
+
+    ]
   }
 
     ]
@@ -205,12 +260,35 @@
     "name": "dsa",
     "contents": [
       {
+        "content": "roadmap_dsa.md",
+        "link": "notes/dev/dsa/roadmap_dsa"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "old",
+    "contents": [
+      {
         "content": "algorithms.md",
-        "link": "notes/dev/dsa/algorithms"
+        "link": "notes/dev/dsa/old/algorithms"
       },
       {
         "content": "dsa_study_plan.md",
-        "link": "notes/dev/dsa/dsa_study_plan"
+        "link": "notes/dev/dsa/old/dsa_study_plan"
+      }
+    ],
+    "subsections": []
+  }
+
+    ]
+  }
+,
+  {
+    "name": "hardware",
+    "contents": [
+      {
+        "content": "roadmap_fundamentals_hardware.md",
+        "link": "notes/dev/hardware/roadmap_fundamentals_hardware"
       }
     ],
     "subsections": []
@@ -220,24 +298,36 @@
     "name": "java",
     "contents": [
       {
-        "content": "1_0_lambda.md",
-        "link": "notes/dev/java/1_0_lambda"
-      },
-      {
-        "content": "main_features.md",
-        "link": "notes/dev/java/main_features"
-      },
-      {
         "content": "roadmap_java.md",
         "link": "notes/dev/java/roadmap_java"
       }
     ],
+    "subsections": [
+  {
+    "name": "old",
+    "contents": [
+      {
+        "content": "1_0_lambda.md",
+        "link": "notes/dev/java/old/1_0_lambda"
+      },
+      {
+        "content": "main_features.md",
+        "link": "notes/dev/java/old/main_features"
+      }
+    ],
     "subsections": []
+  }
+
+    ]
   }
 ,
   {
     "name": "linux",
     "contents": [
+      {
+        "content": "roadmap_linux_kernel.md",
+        "link": "notes/dev/linux/roadmap_linux_kernel"
+      },
       {
         "content": "ssh_key.md",
         "link": "notes/dev/linux/ssh_key"
@@ -249,11 +339,15 @@
     ],
     "subsections": [
   {
+    "name": "old",
+    "contents": [],
+    "subsections": [
+  {
     "name": "arch",
     "contents": [
       {
         "content": "arch_installation.md",
-        "link": "notes/dev/linux/arch/arch_installation"
+        "link": "notes/dev/linux/old/arch/arch_installation"
       }
     ],
     "subsections": []
@@ -264,11 +358,11 @@
     "contents": [
       {
         "content": "gui_upgrade.md",
-        "link": "notes/dev/linux/ubuntu/gui_upgrade"
+        "link": "notes/dev/linux/old/ubuntu/gui_upgrade"
       },
       {
         "content": "ubuntu_conf.sh",
-        "link": "notes/dev/linux/ubuntu/ubuntu_conf"
+        "link": "notes/dev/linux/old/ubuntu/ubuntu_conf"
       }
     ],
     "subsections": []
@@ -276,37 +370,44 @@
 
     ]
   }
+
+    ]
+  }
 ,
   {
     "name": "microservices",
+    "contents": [],
+    "subsections": [
+  {
+    "name": "old",
     "contents": [
       {
         "content": "api_gateway.md",
-        "link": "notes/dev/microservices/api_gateway"
+        "link": "notes/dev/microservices/old/api_gateway"
       },
       {
         "content": "centralized_configuration.md",
-        "link": "notes/dev/microservices/centralized_configuration"
+        "link": "notes/dev/microservices/old/centralized_configuration"
       },
       {
         "content": "circuit_breaker.md",
-        "link": "notes/dev/microservices/circuit_breaker"
+        "link": "notes/dev/microservices/old/circuit_breaker"
       },
       {
         "content": "distributed_tracing.md",
-        "link": "notes/dev/microservices/distributed_tracing"
+        "link": "notes/dev/microservices/old/distributed_tracing"
       },
       {
         "content": "feign.md",
-        "link": "notes/dev/microservices/feign"
+        "link": "notes/dev/microservices/old/feign"
       },
       {
         "content": "naming_server.md",
-        "link": "notes/dev/microservices/naming_server"
+        "link": "notes/dev/microservices/old/naming_server"
       },
       {
         "content": "ports_std.md",
-        "link": "notes/dev/microservices/ports_std"
+        "link": "notes/dev/microservices/old/ports_std"
       }
     ],
     "subsections": [
@@ -315,10 +416,13 @@
     "contents": [
       {
         "content": "rabbbitmq.md",
-        "link": "notes/dev/microservices/rabbitMQ/rabbbitmq"
+        "link": "notes/dev/microservices/old/rabbitMQ/rabbbitmq"
       }
     ],
     "subsections": []
+  }
+
+    ]
   }
 
     ]
@@ -328,20 +432,29 @@
     "name": "springboot",
     "contents": [
       {
+        "content": "roadmap_spring_springboot.md",
+        "link": "notes/dev/springboot/roadmap_spring_springboot"
+      }
+    ],
+    "subsections": [
+  {
+    "name": "old",
+    "contents": [
+      {
         "content": "SpringBoot.md",
-        "link": "notes/dev/springboot/SpringBoot"
+        "link": "notes/dev/springboot/old/SpringBoot"
       },
       {
         "content": "SpringBoot_Study_Plan.md",
-        "link": "notes/dev/springboot/SpringBoot_Study_Plan"
+        "link": "notes/dev/springboot/old/SpringBoot_Study_Plan"
       },
       {
         "content": "actuactor.md",
-        "link": "notes/dev/springboot/actuactor"
+        "link": "notes/dev/springboot/old/actuactor"
       },
       {
         "content": "aop.md",
-        "link": "notes/dev/springboot/aop"
+        "link": "notes/dev/springboot/old/aop"
       }
     ],
     "subsections": [
@@ -350,35 +463,35 @@
     "contents": [
       {
         "content": "api_documentation.md",
-        "link": "notes/dev/springboot/rest_api/api_documentation"
+        "link": "notes/dev/springboot/old/rest_api/api_documentation"
       },
       {
         "content": "exception_handling.md",
-        "link": "notes/dev/springboot/rest_api/exception_handling"
+        "link": "notes/dev/springboot/old/rest_api/exception_handling"
       },
       {
         "content": "filtering.md",
-        "link": "notes/dev/springboot/rest_api/filtering"
+        "link": "notes/dev/springboot/old/rest_api/filtering"
       },
       {
         "content": "hateos.md",
-        "link": "notes/dev/springboot/rest_api/hateos"
+        "link": "notes/dev/springboot/old/rest_api/hateos"
       },
       {
         "content": "negotiation_content.md",
-        "link": "notes/dev/springboot/rest_api/negotiation_content"
+        "link": "notes/dev/springboot/old/rest_api/negotiation_content"
       },
       {
         "content": "rest_api.md",
-        "link": "notes/dev/springboot/rest_api/rest_api"
+        "link": "notes/dev/springboot/old/rest_api/rest_api"
       },
       {
         "content": "servlet-mvc-webflux.md",
-        "link": "notes/dev/springboot/rest_api/servlet-mvc-webflux"
+        "link": "notes/dev/springboot/old/rest_api/servlet-mvc-webflux"
       },
       {
         "content": "validation.md",
-        "link": "notes/dev/springboot/rest_api/validation"
+        "link": "notes/dev/springboot/old/rest_api/validation"
       }
     ],
     "subsections": []
@@ -389,7 +502,7 @@
     "contents": [
       {
         "content": "spring_cloud.md",
-        "link": "notes/dev/springboot/spring_cloud/spring_cloud"
+        "link": "notes/dev/springboot/old/spring_cloud/spring_cloud"
       }
     ],
     "subsections": []
@@ -400,7 +513,7 @@
     "contents": [
       {
         "content": "spring_data.md",
-        "link": "notes/dev/springboot/spring_data/spring_data"
+        "link": "notes/dev/springboot/old/spring_data/spring_data"
       }
     ],
     "subsections": []
@@ -411,7 +524,7 @@
     "contents": [
       {
         "content": "Spring_Security.md",
-        "link": "notes/dev/springboot/spring_security/Spring_Security"
+        "link": "notes/dev/springboot/old/spring_security/Spring_Security"
       }
     ],
     "subsections": [
@@ -420,10 +533,13 @@
     "contents": [
       {
         "content": "refresh_token.md",
-        "link": "notes/dev/springboot/spring_security/jwt/refresh_token"
+        "link": "notes/dev/springboot/old/spring_security/jwt/refresh_token"
       }
     ],
     "subsections": []
+  }
+
+    ]
   }
 
     ]
@@ -526,6 +642,12 @@
   }
 
     ]
+  }
+,
+  {
+    "name": "uni",
+    "contents": [],
+    "subsections": []
   }
 
 ]

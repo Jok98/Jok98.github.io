@@ -2,6 +2,25 @@
 
 ## 1. Technical Prerequisites
 
+### 1.1 Required Java
+- [ ] Java Core
+- [ ] OOP
+- [ ] Generics
+- [ ] Collections
+- [ ] Stream API
+- [ ] Optional
+- [ ] Exception handling
+- [ ] Basic concurrency
+- [ ] Virtual threads
+- [ ] Reflection
+- [ ] Annotations
+- [ ] Records
+- [ ] Sealed classes
+- [ ] Pattern matching
+- [ ] Maven
+- [ ] Gradle
+- [ ] JUnit
+
 ### 1.2 Web and HTTP
 - [ ] HTTP request
 - [ ] HTTP response

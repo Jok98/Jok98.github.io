@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   update-generated-assets:
     runs-on: ubuntu-latest
@@ -89,4 +92,4 @@ jobs:
         run: |
           git add assets/data/directories.json assets/data/content-index.json dist/cv.html dist/cv.pdf
           git commit -m "Update generated site assets [CI]" || echo "No changes to commit"
-          git push origin main || echo "Push failed"
+          git push origin main
