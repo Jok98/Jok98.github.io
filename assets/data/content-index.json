@@ -14468,6 +14468,151 @@
       ],
       "headings": [],
       "searchText": "osaka 2024 my 4th trip to japan in kansai area, from 06-12-2024 to 20-01-2025. etc trip osaka 2024"
+    },
+    {
+      "id": "uni-sistemisupportodecisioni-roadmap-sistemi-supporto-decisioni",
+      "title": "1. Introduction and Database Review",
+      "summary": "",
+      "area": {
+        "slug": "uni",
+        "label": "Uni"
+      },
+      "topic": {
+        "slug": "sistemisupportodecisioni",
+        "label": "Sistemisupportodecisioni"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/uni/SistemiSupportoDecisioni/roadmap_Sistemi_Supporto_Decisioni.md",
+      "url": "/notes/uni/SistemiSupportoDecisioni/roadmap_Sistemi_Supporto_Decisioni/",
+      "breadcrumbs": [
+        "Uni",
+        "Sistemisupportodecisioni"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "1. Introduction and Database Review",
+          "anchor": "1-introduction-and-database-review"
+        },
+        {
+          "level": 2,
+          "text": "1.1 Course Structure",
+          "anchor": "1-1-course-structure"
+        },
+        {
+          "level": 2,
+          "text": "1.2 Database Fundamentals",
+          "anchor": "1-2-database-fundamentals"
+        },
+        {
+          "level": 2,
+          "text": "1.3 Normalization of Relations",
+          "anchor": "1-3-normalization-of-relations"
+        },
+        {
+          "level": 1,
+          "text": "2. Business Intelligence and DSS",
+          "anchor": "2-business-intelligence-and-dss"
+        },
+        {
+          "level": 2,
+          "text": "2.1 Decision Supporting Systems (DSS)",
+          "anchor": "2-1-decision-supporting-systems-dss"
+        },
+        {
+          "level": 2,
+          "text": "2.2 Recommender Systems",
+          "anchor": "2-2-recommender-systems"
+        },
+        {
+          "level": 1,
+          "text": "3. Data Warehouse and ETL Processes",
+          "anchor": "3-data-warehouse-and-etl-processes"
+        },
+        {
+          "level": 2,
+          "text": "3.1 Components and Architecture",
+          "anchor": "3-1-components-and-architecture"
+        },
+        {
+          "level": 2,
+          "text": "3.2 Logical Modeling",
+          "anchor": "3-2-logical-modeling"
+        },
+        {
+          "level": 2,
+          "text": "3.3 ETL Subsystems",
+          "anchor": "3-3-etl-subsystems"
+        },
+        {
+          "level": 1,
+          "text": "4. Dimensional Modelling",
+          "anchor": "4-dimensional-modelling"
+        },
+        {
+          "level": 2,
+          "text": "4.1 Fundamentals of the Multidimensional Model",
+          "anchor": "4-1-fundamentals-of-the-multidimensional-model"
+        },
+        {
+          "level": 2,
+          "text": "4.2 OLAP Operations",
+          "anchor": "4-2-olap-operations"
+        },
+        {
+          "level": 2,
+          "text": "4.3 Practical Applications",
+          "anchor": "4-3-practical-applications"
+        },
+        {
+          "level": 1,
+          "text": "5. Data Visualization with Tableau",
+          "anchor": "5-data-visualization-with-tableau"
+        },
+        {
+          "level": 2,
+          "text": "5.1 Basic Operations",
+          "anchor": "5-1-basic-operations"
+        },
+        {
+          "level": 2,
+          "text": "5.2 Advanced Features",
+          "anchor": "5-2-advanced-features"
+        },
+        {
+          "level": 2,
+          "text": "5.3 Report Creation",
+          "anchor": "5-3-report-creation"
+        },
+        {
+          "level": 1,
+          "text": "6. Data Mining",
+          "anchor": "6-data-mining"
+        },
+        {
+          "level": 2,
+          "text": "6.1 Data Preparation and Exploration",
+          "anchor": "6-1-data-preparation-and-exploration"
+        },
+        {
+          "level": 2,
+          "text": "6.2 Tools",
+          "anchor": "6-2-tools"
+        },
+        {
+          "level": 2,
+          "text": "6.3 Classification Models",
+          "anchor": "6-3-classification-models"
+        },
+        {
+          "level": 2,
+          "text": "6.4 Analysis and Clustering",
+          "anchor": "6-4-analysis-and-clustering"
+        }
+      ],
+      "searchText": "1. introduction and database review uni sistemisupportodecisioni 1. introduction and database review 1.1 course structure 1.2 database fundamentals 1.3 normalization of relations 2. business intelligence and dss 2.1 decision supporting systems (dss) 2.2 recommender systems 3. data warehouse and etl processes 3.1 components and architecture 3.2 logical modeling 3.3 etl subsystems 4. dimensional modelling 4.1 fundamentals of the multidimensional model 4.2 olap operations 4.3 practical applications 5. data visualization with tableau 5.1 basic operations 5.2 advanced features 5.3 report creation 6. data mining 6.1 data preparation and exploration 6.2 tools 6.3 classification models 6.4 analysis and clustering"
     }
   ],
   "tree": [
@@ -14906,6 +15051,21 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "uni",
+      "label": "Uni",
+      "items": [],
+      "children": [
+        {
+          "slug": "sistemisupportodecisioni",
+          "label": "Sistemisupportodecisioni",
+          "items": [
+            "uni-sistemisupportodecisioni-roadmap-sistemi-supporto-decisioni"
+          ],
+          "children": []
+        }
+      ]
     }
   ],
   "facets": {
@@ -14919,6 +15079,11 @@
         "slug": "etc",
         "label": "Personal",
         "count": 8
+      },
+      {
+        "slug": "uni",
+        "label": "Uni",
+        "count": 1
       }
     ],
     "topics": [
@@ -14981,6 +15146,11 @@
         "slug": "microservices",
         "label": "Microservices",
         "count": 8
+      },
+      {
+        "slug": "sistemisupportodecisioni",
+        "label": "Sistemisupportodecisioni",
+        "count": 1
       },
       {
         "slug": "springboot",
