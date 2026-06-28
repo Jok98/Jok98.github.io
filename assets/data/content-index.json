@@ -1328,31 +1328,8 @@
       "searchText": "artificial intelligence roadmap — fundamentals to advanced dev ai artificial intelligence roadmap — fundamentals to advanced 1. prerequisites 1.1 programming fundamentals 1.2 software engineering fundamentals 1.3 data fundamentals 1.4 computer science fundamentals 1.5 hardware fundamentals 2. ai landscape 2.1 artificial intelligence fundamentals 2.2 core ai disciplines 2.3 ai system types 2.4 ai development lifecycle 2.5 ai roles 3. mathematics for ai 3.1 linear algebra 3.2 calculus 3.3 probability 3.4 statistics 3.5 optimization 3.6 information theory 4. python ai ecosystem 4.1 core libraries 4.2 deep learning frameworks 4.3 nlp and llm libraries 4.4 computer vision libraries 4.5 mlops libraries 4.6 inference libraries 5. data engineering for ai 5.1 data collection 5.2 data storage 5.3 data formats 5.4 data cleaning 5.5 data labeling 5.6 data pipelines 6. exploratory data analysis 6.1 dataset understanding 6.2 visualization 6.3 statistical analysis 6.4 data leakage analysis 7. classical machine learning 7.1 ml fundamentals 7.2 supervised learning 7.3 unsupervised learning 7.4 semi-supervised and weakly supervised learning 7.5 feature engineering 7.6 model selection 7.7 classical ml evaluation 8. deep learning foundations 8.1 neural network basics 8.2 activation functions 8.3 loss functions 8.4 optimization in deep learning 8.5 regularization 8.6 neural network architectures 8.7 training diagnostics 9. computer vision 9.1 image fundamentals 9.2 cnns 9.3 vision architectures 9.4 vision tasks 9.5 object detection 9.6 image segmentation 9.7 vision data engineering 10. natural language processing 10.1 text fundamentals 10.2 tokenization 10.3 classical nlp 10.4 word embeddings 10.5 sequence models 10.6 nlp evaluation 11. transformers 11.1 transformer fundamentals 11.2 attention mechanisms 11.3 transformer model families 11.4 training transformers 11.5 transformer limitations 12. large language models 12.1 llm fundamentals 12.2 llm capabilities 12.3 llm limitations 12.4 llm model selection 12.5 llm apis 12.6 llm decoding 13. prompt engineering 13.1 prompt fundamentals 13.2 prompting techniques 13.3 structured output 13.4 prompt evaluation 13.5 prompt security 14. retrieval-augmented generation 14.1 rag fundamentals 14.2 document ingestion 14.3 chunking strategies 14.4 embeddings 14.5 vector databases 14.6 retrieval strategies 14.7 rag evaluation 14.8 advanced rag 15. ai agents 15.1 agent fundamentals 15.2 agent architectures 15.3 tool use 15.4 model context protocol 15.5 agent memory 15.6 agent planning 15.7 agent evaluation 15.8 agent safety 16. multimodal ai 16.1 multimodal fundamentals 16.2 vision-language models 16.3 audio ai 16.4 video ai 16.5 multimodal rag 17. generative ai 17.1 generative modeling fundamentals 17.2 diffusion models 17.3 generative adversarial networks 17.4 variational autoencoders 17.5 generative ai product patterns 17.6 generative ai risks 18. fine-tuning and adaptation 18.1 fine-tuning fundamentals 18.2 parameter-efficient fine-tuning 18.3 llm fine-tuning data 18.4 alignment methods 18.5 fine-tuning evaluation 18.6 fine-tuning operations 19. reinforcement learning 19.1 rl fundamentals 19.2 classical rl 19.3 deep rl 19.4 rlhf and preference optimization 19.5 rl applications 20. recommendation systems 20.1 recommender fundamentals 20.2 collaborative filtering 20.3 content-based recommendation 20.4 deep recommenders 20.5 recommender evaluation 21. graph machine learning 21.1 graph fundamentals 21.2 graph neural networks 21.3 graph ml tasks 21.4 knowledge graphs and ai 22. time-series ai 22.1 time-series fundamentals 22.2 classical time-series models 22.3 deep time-series models 22.4 time-series tasks 22.5 time-series evaluation 23. evaluation and benchmarking 23.1 evaluation fundamentals 23.2 ml evaluation 23.3 llm evaluation 23.4 rag evaluation 23.5 agent evaluation 23.6 evaluation methods 23.7 evaluation risks 24. ai safety and security 24.1 ai safety fundamentals 24.2 llm security risks 24.3 adversarial ml 24.4 guardrails 24.5 ai application security 24.6 privacy 24.7 responsible ai 25. explainability and interpretability 25.1 explainability fundamentals 25.2 classical ml explainability 25.3 deep learning interpretability 25.4 llm interpretability 26. mlops 26.1 mlops fundamentals 26.2 experiment management 26.3 feature stores 26.4 model registry 26.5 ml pipelines 26.6 model monitoring 27. llmops and agentops 27.1 llmops fundamentals 27.2 prompt operations 27.3 llm observability 27.4 agent operations 27.5 model gateway 28. deployment and inference 28.1 deployment patterns 28.2 model serving 28.3 llm inference optimization 28.4 quantization 28.5 distillation and compression 28.6 edge ai deployment 29. ai infrastructure 29.1 compute infrastructure 29.2 distributed training 29.3 storage infrastructure 29.4 network infrastructure 29.5 kubernetes for ai 29.6 cost optimization 30. ai product engineering 30.1 product discovery 30.2 ai ux 30.3 human-in-the-loop workflows 30.4 ai product metrics 30.5 ai product risks 31. ai governance and compliance 31.1 governance fundamentals 31.2 documentation artifacts 31.3 ai risk management 31.4 regulatory awareness 31.5 ai audit readiness 32. ai ethics and societal impact 32.1 fairness 32.2 transparency 32.3 accountability 32.4 environmental impact 33. ai for software engineering 33.1 code intelligence 33.2 ai coding agents 33.3 code rag 33.4 ai-assisted sdlc 33.5 risks in ai coding 34. ai research literacy 34.1 reading papers 34.2 research evaluation 34.3 keeping up to date 34.4 reproducibility 35. current ecosystem awareness 35.1 core ml ecosystem 35.2 gpu and acceleration ecosystem 35.3 llm ecosystem 35.4 safety and governance ecosystem 35.5 deployment ecosystem 36. learning path 36.1 phase 1 — foundations 36.2 phase 2 — classical machine learning 36.3 phase 3 — deep learning 36.4 phase 4 — nlp, vision, and multimodal 36.5 phase 5 — llm engineering 36.6 phase 6 — agents and ai applications 36.7 phase 7 — mlops and production 36.8 phase 8 — advanced ai engineering 37. practical projects 37.1 project 1 — classical ml pipeline 37.2 project 2 — deep learning image classifier 37.3 project 3 — nlp text classifier 37.4 project 4 — rag document assistant 37.5 project 5 — tool-calling agent 37.6 project 6 — ai coding assistant for a repository 37.7 project 7 — fine-tuned domain assistant 37.8 project 8 — llm evaluation platform 37.9 project 9 — ai observability stack 37.10 project 10 — production inference service 37.11 project 11 — multimodal assistant 37.12 project 12 — ai governance registry 38. competency checklist 38.1 junior ai competency 38.2 mid-level ai competency 38.3 senior ai competency 38.4 advanced ai engineering competency 38.5 ai safety and governance competency"
     },
     {
-      "id": "dev-architecture",
-      "title": "Microservices Architecture",
-      "summary": "",
-      "area": {
-        "slug": "dev",
-        "label": "Engineering"
-      },
-      "topic": {
-        "slug": "architecture",
-        "label": "Architecture"
-      },
-      "tags": [],
-      "order": null,
-      "layout": "default",
-      "sourcePath": "notes/dev/architecture.md",
-      "url": "/notes/dev/architecture/",
-      "breadcrumbs": [
-        "Dev"
-      ],
-      "headings": [],
-      "searchText": "microservices architecture dev"
-    },
-    {
       "id": "dev-books",
-      "title": "Study Path: Books by Macro-Topic",
+      "title": "Books",
       "summary": "",
       "area": {
         "slug": "dev",
@@ -1373,8 +1350,8 @@
       "headings": [
         {
           "level": 1,
-          "text": "Study Path: Books by Macro-Topic",
-          "anchor": "study-path-books-by-macro-topic"
+          "text": "Books",
+          "anchor": "books"
         },
         {
           "level": 2,
@@ -1427,7 +1404,7 @@
           "anchor": "12-containers-kubernetes-sre-observability"
         }
       ],
-      "searchText": "study path: books by macro-topic dev study path: books by macro-topic 1) computer architecture and systems 2) operating systems 3) linux from the kernel upward 4) low-level programming: c 5) data structures and algorithms 6) computer networking 7) databases and data-intensive systems 9) software engineering and design 10) security 12) containers, kubernetes, sre, observability"
+      "searchText": "books dev books 1) computer architecture and systems 2) operating systems 3) linux from the kernel upward 4) low-level programming: c 5) data structures and algorithms 6) computer networking 7) databases and data-intensive systems 9) software engineering and design 10) security 12) containers, kubernetes, sre, observability"
     },
     {
       "id": "dev-c-old-1-0-c-init",
@@ -11928,6 +11905,1190 @@
       "searchText": "spring & spring boot roadmap - basics -> advanced dev spring boot spring & spring boot roadmap - basics -> advanced 1. technical prerequisites 1.1 required java 1.2 web and http 1.3 database 1.4 application architecture 2. spring ecosystem 2.1 spring framework 2.2 spring boot 2.3 spring data 2.4 spring security 2.5 spring cloud 2.6 spring integration 2.7 spring batch 2.8 spring for graphql 2.9 spring modulith 2.10 spring ai 3. spring framework core 3.1 inversion of control 3.2 applicationcontext 3.3 bean definition 3.4 bean scope 3.5 dependency injection 3.6 component scanning 3.7 java configuration 3.8 xml configuration 3.9 bean lifecycle 3.10 container extension points 4. configuration, environment, and properties 4.1 environment abstraction 4.2 profiles 4.3 externalized configuration 4.4 configuration properties 4.5 conditional configuration 4.6 spring expression language 4.7 @value 5. aop and cross-cutting concerns 5.1 aop concepts 5.2 spring aop 5.3 advice types 5.4 pointcut expression 5.5 use cases aop 6. validation, binding, and conversion 6.1 bean validation 6.2 spring validator 6.3 data binding 6.4 type conversion 7. spring mvc 7.1 servlet stack 7.2 controller 7.3 request input 7.4 response output 7.5 rest api design 7.6 error handling 7.7 interceptors and filters 7.8 multipart and files 7.9 view rendering 8. spring webflux and reactive programming 8.1 reactive fundamentals 8.2 project reactor 8.3 webflux server 8.4 webclient 8.5 reactive data access 8.6 mvc vs webflux 9. modern rest clients 9.1 resttemplate 9.2 restclient 9.3 http interface 9.4 client resiliency 10. spring boot fundamentals 10.1 bootstrapping 10.2 @springbootapplication 10.3 auto-configuration 10.4 starters 10.5 embedded server 10.6 application lifecycle 10.7 devtools 11. advanced spring boot configuration 11.1 dependency management 11.2 maven plugin 11.3 gradle plugin 11.4 logging in boot 11.5 json handling 11.6 task execution 12. data access and transactions 12.1 jdbc with spring 12.2 spring data jdbc 12.3 jpa and hibernate 12.4 spring data jpa 12.5 transaction management 12.6 database migration 12.7 r2dbc 12.8 nosql 13. caching 13.1 cache abstraction 13.2 cache provider 13.3 cache design 14. scheduling and async 14.1 scheduling 14.2 async 14.3 background jobs 15. messaging and event-driven architecture 15.1 spring events 15.2 jms 15.3 rabbitmq / amqp 15.4 kafka 15.5 spring cloud stream 15.6 event-driven architecture 16. spring security 16.1 fundamentals 16.2 filter chain 16.3 modern configuration 16.4 csrf, cors, and sessions 16.5 method security 16.6 oauth2 client 16.7 resource server 16.8 authorization server 16.9 security testing 17. testing spring and spring boot 17.1 unit testing 17.2 spring testcontext 17.3 spring boot testing 17.4 test slice 17.5 web testing 17.6 database testing 17.7 messaging testing 17.8 contract testing 17.9 performance testing 18. actuator and production-ready features 18.1 actuator basics 18.2 main endpoints 18.3 health 18.4 info endpoint 18.5 metrics 18.6 tracing 18.7 audit 19. native, aot, and startup optimization 19.1 aot processing 19.2 graalvm native image 19.3 runtime hints 19.4 crac and checkpoint restore 19.5 startup optimization 20. docker, kubernetes, and deployment 20.1 container image 20.2 jvm in container 20.3 docker compose 20.4 kubernetes 20.5 cloud-native configuration 21. spring cloud and microservices 21.1 config server 21.2 service discovery 21.3 spring cloud gateway 21.4 openfeign 21.5 resilience 21.6 distributed systems patterns 22. api design and documentation 22.1 api contract 22.2 dtos and mapping 22.3 api versioning 22.4 error contract 23. advanced spring internals 23.1 auto-configuration internals 23.2 advanced bean registration 23.3 proxy internals 23.4 annotation model 23.5 spring factories and imports 23.6 runtime performance internals 24. migrations 24.1 spring framework 5 -> 6 24.2 spring boot 2 -> 3 24.3 spring framework 6 -> 7 24.4 spring boot 3 -> 4 24.5 legacy migration 25. spring framework evolution by version 25.1 spring framework 1.x 25.2 spring framework 2.x 25.3 spring framework 3.x 25.4 spring framework 4.x 25.5 spring framework 5.x 25.6 spring framework 6.x 25.7 spring framework 7.x 26. spring boot evolution by version 26.1 spring boot 1.x 26.2 spring boot 2.x 26.3 spring boot 3.x 26.4 spring boot 4.0 26.5 spring boot 4.1 27. progressive study path 27.1 phase 1 - spring core basics 27.2 phase 2 - spring boot basics 27.3 phase 3 - web mvc and rest 27.4 phase 4 - data and transactions 27.5 phase 5 - security 27.6 phase 6 - production readiness 27.7 phase 7 - async, caching, and messaging 27.8 phase 8 - reactive and modern concurrency 27.9 phase 9 - spring cloud 27.10 phase 10 - advanced topics and internals 27.11 phase 11 - modern migrations 28. consolidation projects 28.1 project 1 - spring core lab 28.2 project 2 - spring boot rest api 28.3 project 3 - crud with jpa 28.4 project 4 - secure api 28.5 project 5 - production-ready microservice 28.6 project 6 - messaging service 28.7 project 7 - reactive api 28.8 project 8 - custom spring boot starter 28.9 project 9 - native image lab 28.10 project 10 - modular monolith 29. competency checklist 29.1 junior spring level 29.2 mid-level spring 29.3 senior spring level 29.4 advanced/platform level"
     },
     {
+      "id": "dev-system-design-architecture",
+      "title": "Microservices Architecture",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "system-design",
+        "label": "System Design"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "default",
+      "sourcePath": "notes/dev/system_design/architecture.md",
+      "url": "/notes/dev/system_design/architecture/",
+      "breadcrumbs": [
+        "Dev",
+        "System Design"
+      ],
+      "headings": [],
+      "searchText": "microservices architecture dev system design"
+    },
+    {
+      "id": "dev-system-design-roadmap-system-design-and-architecture",
+      "title": "System Design and Software Architecture Roadmap — Fundamentals to Advanced",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "system-design",
+        "label": "System Design"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/system_design/roadmap_system_design_and_architecture.md",
+      "url": "/notes/dev/system_design/roadmap_system_design_and_architecture/",
+      "breadcrumbs": [
+        "Dev",
+        "System Design"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "System Design and Software Architecture Roadmap — Fundamentals to Advanced",
+          "anchor": "system-design-and-software-architecture-roadmap-fundamentals-to-advanced"
+        },
+        {
+          "level": 2,
+          "text": "1. Prerequisites",
+          "anchor": "1-prerequisites"
+        },
+        {
+          "level": 3,
+          "text": "1.1 Software engineering fundamentals",
+          "anchor": "1-1-software-engineering-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.2 Backend fundamentals",
+          "anchor": "1-2-backend-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.3 Infrastructure fundamentals",
+          "anchor": "1-3-infrastructure-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.4 Data fundamentals",
+          "anchor": "1-4-data-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.5 Communication fundamentals",
+          "anchor": "1-5-communication-fundamentals"
+        },
+        {
+          "level": 2,
+          "text": "2. Architecture Thinking",
+          "anchor": "2-architecture-thinking"
+        },
+        {
+          "level": 3,
+          "text": "2.1 Architecture fundamentals",
+          "anchor": "2-1-architecture-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "2.2 Architectural drivers",
+          "anchor": "2-2-architectural-drivers"
+        },
+        {
+          "level": 3,
+          "text": "2.3 Quality attributes",
+          "anchor": "2-3-quality-attributes"
+        },
+        {
+          "level": 3,
+          "text": "2.4 Architectural trade-offs",
+          "anchor": "2-4-architectural-trade-offs"
+        },
+        {
+          "level": 3,
+          "text": "2.5 Architecture decision-making",
+          "anchor": "2-5-architecture-decision-making"
+        },
+        {
+          "level": 3,
+          "text": "2.6 Architectural thinking skills",
+          "anchor": "2-6-architectural-thinking-skills"
+        },
+        {
+          "level": 2,
+          "text": "3. Requirements and Constraints",
+          "anchor": "3-requirements-and-constraints"
+        },
+        {
+          "level": 3,
+          "text": "3.1 Functional requirements",
+          "anchor": "3-1-functional-requirements"
+        },
+        {
+          "level": 3,
+          "text": "3.2 Non-functional requirements",
+          "anchor": "3-2-non-functional-requirements"
+        },
+        {
+          "level": 3,
+          "text": "3.3 Capacity requirements",
+          "anchor": "3-3-capacity-requirements"
+        },
+        {
+          "level": 3,
+          "text": "3.4 Availability and recovery requirements",
+          "anchor": "3-4-availability-and-recovery-requirements"
+        },
+        {
+          "level": 3,
+          "text": "3.5 Security and compliance requirements",
+          "anchor": "3-5-security-and-compliance-requirements"
+        },
+        {
+          "level": 3,
+          "text": "3.6 Constraints",
+          "anchor": "3-6-constraints"
+        },
+        {
+          "level": 2,
+          "text": "4. System Design Interview Method",
+          "anchor": "4-system-design-interview-method"
+        },
+        {
+          "level": 3,
+          "text": "4.1 Problem clarification",
+          "anchor": "4-1-problem-clarification"
+        },
+        {
+          "level": 3,
+          "text": "4.2 Back-of-the-envelope estimation",
+          "anchor": "4-2-back-of-the-envelope-estimation"
+        },
+        {
+          "level": 3,
+          "text": "4.3 High-level design",
+          "anchor": "4-3-high-level-design"
+        },
+        {
+          "level": 3,
+          "text": "4.4 Data model design",
+          "anchor": "4-4-data-model-design"
+        },
+        {
+          "level": 3,
+          "text": "4.5 API design",
+          "anchor": "4-5-api-design"
+        },
+        {
+          "level": 3,
+          "text": "4.6 Deep dives",
+          "anchor": "4-6-deep-dives"
+        },
+        {
+          "level": 3,
+          "text": "4.7 Trade-off communication",
+          "anchor": "4-7-trade-off-communication"
+        },
+        {
+          "level": 2,
+          "text": "5. Core Architectural Styles",
+          "anchor": "5-core-architectural-styles"
+        },
+        {
+          "level": 3,
+          "text": "5.1 Layered architecture",
+          "anchor": "5-1-layered-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.2 Clean architecture",
+          "anchor": "5-2-clean-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.3 Hexagonal architecture",
+          "anchor": "5-3-hexagonal-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.4 Onion architecture",
+          "anchor": "5-4-onion-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.5 Domain-driven design architecture",
+          "anchor": "5-5-domain-driven-design-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.6 Event-driven architecture",
+          "anchor": "5-6-event-driven-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.7 Microservices architecture",
+          "anchor": "5-7-microservices-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.8 Modular monolith",
+          "anchor": "5-8-modular-monolith"
+        },
+        {
+          "level": 3,
+          "text": "5.9 Serverless architecture",
+          "anchor": "5-9-serverless-architecture"
+        },
+        {
+          "level": 3,
+          "text": "5.10 Space-based architecture",
+          "anchor": "5-10-space-based-architecture"
+        },
+        {
+          "level": 2,
+          "text": "6. Architectural Patterns",
+          "anchor": "6-architectural-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.1 Structural patterns",
+          "anchor": "6-1-structural-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.2 Distributed system patterns",
+          "anchor": "6-2-distributed-system-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.3 Data patterns",
+          "anchor": "6-3-data-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.4 Integration patterns",
+          "anchor": "6-4-integration-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.5 Cloud patterns",
+          "anchor": "6-5-cloud-patterns"
+        },
+        {
+          "level": 3,
+          "text": "6.6 Reliability patterns",
+          "anchor": "6-6-reliability-patterns"
+        },
+        {
+          "level": 2,
+          "text": "7. Distributed Systems Fundamentals",
+          "anchor": "7-distributed-systems-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "7.1 Distributed system concepts",
+          "anchor": "7-1-distributed-system-concepts"
+        },
+        {
+          "level": 3,
+          "text": "7.2 CAP and PACELC",
+          "anchor": "7-2-cap-and-pacelc"
+        },
+        {
+          "level": 3,
+          "text": "7.3 Consistency models",
+          "anchor": "7-3-consistency-models"
+        },
+        {
+          "level": 3,
+          "text": "7.4 Time and ordering",
+          "anchor": "7-4-time-and-ordering"
+        },
+        {
+          "level": 3,
+          "text": "7.5 Consensus",
+          "anchor": "7-5-consensus"
+        },
+        {
+          "level": 3,
+          "text": "7.6 Replication",
+          "anchor": "7-6-replication"
+        },
+        {
+          "level": 3,
+          "text": "7.7 Partitioning",
+          "anchor": "7-7-partitioning"
+        },
+        {
+          "level": 3,
+          "text": "7.8 Distributed failure modes",
+          "anchor": "7-8-distributed-failure-modes"
+        },
+        {
+          "level": 2,
+          "text": "8. Scalability",
+          "anchor": "8-scalability"
+        },
+        {
+          "level": 3,
+          "text": "8.1 Scalability fundamentals",
+          "anchor": "8-1-scalability-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "8.2 Application scaling",
+          "anchor": "8-2-application-scaling"
+        },
+        {
+          "level": 3,
+          "text": "8.3 Database scaling",
+          "anchor": "8-3-database-scaling"
+        },
+        {
+          "level": 3,
+          "text": "8.4 Cache scaling",
+          "anchor": "8-4-cache-scaling"
+        },
+        {
+          "level": 3,
+          "text": "8.5 Queue scaling",
+          "anchor": "8-5-queue-scaling"
+        },
+        {
+          "level": 3,
+          "text": "8.6 Frontend and edge scaling",
+          "anchor": "8-6-frontend-and-edge-scaling"
+        },
+        {
+          "level": 2,
+          "text": "9. Performance Engineering",
+          "anchor": "9-performance-engineering"
+        },
+        {
+          "level": 3,
+          "text": "9.1 Performance fundamentals",
+          "anchor": "9-1-performance-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "9.2 Latency analysis",
+          "anchor": "9-2-latency-analysis"
+        },
+        {
+          "level": 3,
+          "text": "9.3 Performance optimization",
+          "anchor": "9-3-performance-optimization"
+        },
+        {
+          "level": 3,
+          "text": "9.4 Load testing",
+          "anchor": "9-4-load-testing"
+        },
+        {
+          "level": 3,
+          "text": "9.5 Capacity planning",
+          "anchor": "9-5-capacity-planning"
+        },
+        {
+          "level": 3,
+          "text": "9.6 Queueing theory awareness",
+          "anchor": "9-6-queueing-theory-awareness"
+        },
+        {
+          "level": 2,
+          "text": "10. Reliability and Resilience",
+          "anchor": "10-reliability-and-resilience"
+        },
+        {
+          "level": 3,
+          "text": "10.1 Reliability fundamentals",
+          "anchor": "10-1-reliability-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "10.2 Failure handling",
+          "anchor": "10-2-failure-handling"
+        },
+        {
+          "level": 3,
+          "text": "10.3 High availability",
+          "anchor": "10-3-high-availability"
+        },
+        {
+          "level": 3,
+          "text": "10.4 Disaster recovery",
+          "anchor": "10-4-disaster-recovery"
+        },
+        {
+          "level": 3,
+          "text": "10.5 Chaos engineering",
+          "anchor": "10-5-chaos-engineering"
+        },
+        {
+          "level": 3,
+          "text": "10.6 Incident response",
+          "anchor": "10-6-incident-response"
+        },
+        {
+          "level": 2,
+          "text": "11. Data Architecture",
+          "anchor": "11-data-architecture"
+        },
+        {
+          "level": 3,
+          "text": "11.1 Data modeling",
+          "anchor": "11-1-data-modeling"
+        },
+        {
+          "level": 3,
+          "text": "11.2 Database selection",
+          "anchor": "11-2-database-selection"
+        },
+        {
+          "level": 3,
+          "text": "11.3 Transactional architecture",
+          "anchor": "11-3-transactional-architecture"
+        },
+        {
+          "level": 3,
+          "text": "11.4 Analytical architecture",
+          "anchor": "11-4-analytical-architecture"
+        },
+        {
+          "level": 3,
+          "text": "11.5 Data consistency",
+          "anchor": "11-5-data-consistency"
+        },
+        {
+          "level": 3,
+          "text": "11.6 Data migration",
+          "anchor": "11-6-data-migration"
+        },
+        {
+          "level": 3,
+          "text": "11.7 Data governance",
+          "anchor": "11-7-data-governance"
+        },
+        {
+          "level": 2,
+          "text": "12. Caching Architecture",
+          "anchor": "12-caching-architecture"
+        },
+        {
+          "level": 3,
+          "text": "12.1 Cache fundamentals",
+          "anchor": "12-1-cache-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "12.2 Cache patterns",
+          "anchor": "12-2-cache-patterns"
+        },
+        {
+          "level": 3,
+          "text": "12.3 Cache invalidation",
+          "anchor": "12-3-cache-invalidation"
+        },
+        {
+          "level": 3,
+          "text": "12.4 Cache failure modes",
+          "anchor": "12-4-cache-failure-modes"
+        },
+        {
+          "level": 3,
+          "text": "12.5 Cache technologies",
+          "anchor": "12-5-cache-technologies"
+        },
+        {
+          "level": 2,
+          "text": "13. Messaging and Event Streaming",
+          "anchor": "13-messaging-and-event-streaming"
+        },
+        {
+          "level": 3,
+          "text": "13.1 Messaging fundamentals",
+          "anchor": "13-1-messaging-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "13.2 Message delivery guarantees",
+          "anchor": "13-2-message-delivery-guarantees"
+        },
+        {
+          "level": 3,
+          "text": "13.3 Queue-based architecture",
+          "anchor": "13-3-queue-based-architecture"
+        },
+        {
+          "level": 3,
+          "text": "13.4 Event streaming architecture",
+          "anchor": "13-4-event-streaming-architecture"
+        },
+        {
+          "level": 3,
+          "text": "13.5 Event design",
+          "anchor": "13-5-event-design"
+        },
+        {
+          "level": 3,
+          "text": "13.6 Messaging technologies",
+          "anchor": "13-6-messaging-technologies"
+        },
+        {
+          "level": 2,
+          "text": "14. API and Integration Architecture",
+          "anchor": "14-api-and-integration-architecture"
+        },
+        {
+          "level": 3,
+          "text": "14.1 API styles",
+          "anchor": "14-1-api-styles"
+        },
+        {
+          "level": 3,
+          "text": "14.2 REST API design",
+          "anchor": "14-2-rest-api-design"
+        },
+        {
+          "level": 3,
+          "text": "14.3 gRPC architecture",
+          "anchor": "14-3-grpc-architecture"
+        },
+        {
+          "level": 3,
+          "text": "14.4 GraphQL architecture",
+          "anchor": "14-4-graphql-architecture"
+        },
+        {
+          "level": 3,
+          "text": "14.5 API gateway architecture",
+          "anchor": "14-5-api-gateway-architecture"
+        },
+        {
+          "level": 3,
+          "text": "14.6 Integration patterns",
+          "anchor": "14-6-integration-patterns"
+        },
+        {
+          "level": 2,
+          "text": "15. Security Architecture",
+          "anchor": "15-security-architecture"
+        },
+        {
+          "level": 3,
+          "text": "15.1 Security principles",
+          "anchor": "15-1-security-principles"
+        },
+        {
+          "level": 3,
+          "text": "15.2 Identity and access",
+          "anchor": "15-2-identity-and-access"
+        },
+        {
+          "level": 3,
+          "text": "15.3 Application security architecture",
+          "anchor": "15-3-application-security-architecture"
+        },
+        {
+          "level": 3,
+          "text": "15.4 Data security",
+          "anchor": "15-4-data-security"
+        },
+        {
+          "level": 3,
+          "text": "15.5 Infrastructure security",
+          "anchor": "15-5-infrastructure-security"
+        },
+        {
+          "level": 3,
+          "text": "15.6 Security operations",
+          "anchor": "15-6-security-operations"
+        },
+        {
+          "level": 2,
+          "text": "16. Observability Architecture",
+          "anchor": "16-observability-architecture"
+        },
+        {
+          "level": 3,
+          "text": "16.1 Observability fundamentals",
+          "anchor": "16-1-observability-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "16.2 Logging architecture",
+          "anchor": "16-2-logging-architecture"
+        },
+        {
+          "level": 3,
+          "text": "16.3 Metrics architecture",
+          "anchor": "16-3-metrics-architecture"
+        },
+        {
+          "level": 3,
+          "text": "16.4 Tracing architecture",
+          "anchor": "16-4-tracing-architecture"
+        },
+        {
+          "level": 3,
+          "text": "16.5 Alerting architecture",
+          "anchor": "16-5-alerting-architecture"
+        },
+        {
+          "level": 3,
+          "text": "16.6 Observability tools",
+          "anchor": "16-6-observability-tools"
+        },
+        {
+          "level": 2,
+          "text": "17. Cloud Architecture",
+          "anchor": "17-cloud-architecture"
+        },
+        {
+          "level": 3,
+          "text": "17.1 Cloud fundamentals",
+          "anchor": "17-1-cloud-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "17.2 Compute architecture",
+          "anchor": "17-2-compute-architecture"
+        },
+        {
+          "level": 3,
+          "text": "17.3 Cloud networking",
+          "anchor": "17-3-cloud-networking"
+        },
+        {
+          "level": 3,
+          "text": "17.4 Cloud storage",
+          "anchor": "17-4-cloud-storage"
+        },
+        {
+          "level": 3,
+          "text": "17.5 Cloud-native architecture",
+          "anchor": "17-5-cloud-native-architecture"
+        },
+        {
+          "level": 3,
+          "text": "17.6 Cloud cost architecture",
+          "anchor": "17-6-cloud-cost-architecture"
+        },
+        {
+          "level": 2,
+          "text": "18. Microservices Architecture",
+          "anchor": "18-microservices-architecture"
+        },
+        {
+          "level": 3,
+          "text": "18.1 Microservice fundamentals",
+          "anchor": "18-1-microservice-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "18.2 Service decomposition",
+          "anchor": "18-2-service-decomposition"
+        },
+        {
+          "level": 3,
+          "text": "18.3 Inter-service communication",
+          "anchor": "18-3-inter-service-communication"
+        },
+        {
+          "level": 3,
+          "text": "18.4 Distributed data management",
+          "anchor": "18-4-distributed-data-management"
+        },
+        {
+          "level": 3,
+          "text": "18.5 Microservice operations",
+          "anchor": "18-5-microservice-operations"
+        },
+        {
+          "level": 3,
+          "text": "18.6 Microservice anti-patterns",
+          "anchor": "18-6-microservice-anti-patterns"
+        },
+        {
+          "level": 2,
+          "text": "19. Monolith and Modular Architecture",
+          "anchor": "19-monolith-and-modular-architecture"
+        },
+        {
+          "level": 3,
+          "text": "19.1 Monolith fundamentals",
+          "anchor": "19-1-monolith-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "19.2 Modular monolith",
+          "anchor": "19-2-modular-monolith"
+        },
+        {
+          "level": 3,
+          "text": "19.3 Monolith modernization",
+          "anchor": "19-3-monolith-modernization"
+        },
+        {
+          "level": 3,
+          "text": "19.4 When to choose monolith",
+          "anchor": "19-4-when-to-choose-monolith"
+        },
+        {
+          "level": 3,
+          "text": "19.5 When to choose microservices",
+          "anchor": "19-5-when-to-choose-microservices"
+        },
+        {
+          "level": 2,
+          "text": "20. Frontend and Client Architecture",
+          "anchor": "20-frontend-and-client-architecture"
+        },
+        {
+          "level": 3,
+          "text": "20.1 Frontend architecture fundamentals",
+          "anchor": "20-1-frontend-architecture-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "20.2 Web performance architecture",
+          "anchor": "20-2-web-performance-architecture"
+        },
+        {
+          "level": 3,
+          "text": "20.3 Frontend state architecture",
+          "anchor": "20-3-frontend-state-architecture"
+        },
+        {
+          "level": 3,
+          "text": "20.4 Micro-frontend architecture",
+          "anchor": "20-4-micro-frontend-architecture"
+        },
+        {
+          "level": 3,
+          "text": "20.5 Mobile client architecture",
+          "anchor": "20-5-mobile-client-architecture"
+        },
+        {
+          "level": 2,
+          "text": "21. Search, Recommendation, and AI System Architecture",
+          "anchor": "21-search-recommendation-and-ai-system-architecture"
+        },
+        {
+          "level": 3,
+          "text": "21.1 Search architecture",
+          "anchor": "21-1-search-architecture"
+        },
+        {
+          "level": 3,
+          "text": "21.2 Recommendation architecture",
+          "anchor": "21-2-recommendation-architecture"
+        },
+        {
+          "level": 3,
+          "text": "21.3 AI application architecture",
+          "anchor": "21-3-ai-application-architecture"
+        },
+        {
+          "level": 3,
+          "text": "21.4 RAG architecture",
+          "anchor": "21-4-rag-architecture"
+        },
+        {
+          "level": 3,
+          "text": "21.5 Agentic architecture",
+          "anchor": "21-5-agentic-architecture"
+        },
+        {
+          "level": 2,
+          "text": "22. DevOps, Platform, and Deployment Architecture",
+          "anchor": "22-devops-platform-and-deployment-architecture"
+        },
+        {
+          "level": 3,
+          "text": "22.1 CI/CD architecture",
+          "anchor": "22-1-ci-cd-architecture"
+        },
+        {
+          "level": 3,
+          "text": "22.2 Deployment strategies",
+          "anchor": "22-2-deployment-strategies"
+        },
+        {
+          "level": 3,
+          "text": "22.3 Infrastructure as Code",
+          "anchor": "22-3-infrastructure-as-code"
+        },
+        {
+          "level": 3,
+          "text": "22.4 Platform engineering",
+          "anchor": "22-4-platform-engineering"
+        },
+        {
+          "level": 3,
+          "text": "22.5 Kubernetes architecture",
+          "anchor": "22-5-kubernetes-architecture"
+        },
+        {
+          "level": 3,
+          "text": "22.6 Release engineering",
+          "anchor": "22-6-release-engineering"
+        },
+        {
+          "level": 2,
+          "text": "23. Enterprise Architecture and Governance",
+          "anchor": "23-enterprise-architecture-and-governance"
+        },
+        {
+          "level": 3,
+          "text": "23.1 Enterprise architecture fundamentals",
+          "anchor": "23-1-enterprise-architecture-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "23.2 Architecture frameworks",
+          "anchor": "23-2-architecture-frameworks"
+        },
+        {
+          "level": 3,
+          "text": "23.3 Architecture governance",
+          "anchor": "23-3-architecture-governance"
+        },
+        {
+          "level": 3,
+          "text": "23.4 Architecture documentation",
+          "anchor": "23-4-architecture-documentation"
+        },
+        {
+          "level": 3,
+          "text": "23.5 Architecture review",
+          "anchor": "23-5-architecture-review"
+        },
+        {
+          "level": 2,
+          "text": "24. Architecture Documentation and Diagramming",
+          "anchor": "24-architecture-documentation-and-diagramming"
+        },
+        {
+          "level": 3,
+          "text": "24.1 Documentation principles",
+          "anchor": "24-1-documentation-principles"
+        },
+        {
+          "level": 3,
+          "text": "24.2 C4 model",
+          "anchor": "24-2-c4-model"
+        },
+        {
+          "level": 3,
+          "text": "24.3 ADRs",
+          "anchor": "24-3-adrs"
+        },
+        {
+          "level": 3,
+          "text": "24.4 Diagrams",
+          "anchor": "24-4-diagrams"
+        },
+        {
+          "level": 3,
+          "text": "24.5 Diagramming tools",
+          "anchor": "24-5-diagramming-tools"
+        },
+        {
+          "level": 2,
+          "text": "25. Cost Architecture and FinOps",
+          "anchor": "25-cost-architecture-and-finops"
+        },
+        {
+          "level": 3,
+          "text": "25.1 Cost fundamentals",
+          "anchor": "25-1-cost-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "25.2 Cost modeling",
+          "anchor": "25-2-cost-modeling"
+        },
+        {
+          "level": 3,
+          "text": "25.3 Cost optimization",
+          "anchor": "25-3-cost-optimization"
+        },
+        {
+          "level": 3,
+          "text": "25.4 FinOps practices",
+          "anchor": "25-4-finops-practices"
+        },
+        {
+          "level": 2,
+          "text": "26. Architecture Migration and Evolution",
+          "anchor": "26-architecture-migration-and-evolution"
+        },
+        {
+          "level": 3,
+          "text": "26.1 Legacy modernization",
+          "anchor": "26-1-legacy-modernization"
+        },
+        {
+          "level": 3,
+          "text": "26.2 Migration patterns",
+          "anchor": "26-2-migration-patterns"
+        },
+        {
+          "level": 3,
+          "text": "26.3 Database migration architecture",
+          "anchor": "26-3-database-migration-architecture"
+        },
+        {
+          "level": 3,
+          "text": "26.4 Cloud migration",
+          "anchor": "26-4-cloud-migration"
+        },
+        {
+          "level": 3,
+          "text": "26.5 Evolutionary architecture",
+          "anchor": "26-5-evolutionary-architecture"
+        },
+        {
+          "level": 2,
+          "text": "27. Architecture Evaluation",
+          "anchor": "27-architecture-evaluation"
+        },
+        {
+          "level": 3,
+          "text": "27.1 Evaluation methods",
+          "anchor": "27-1-evaluation-methods"
+        },
+        {
+          "level": 3,
+          "text": "27.2 Architecture scenarios",
+          "anchor": "27-2-architecture-scenarios"
+        },
+        {
+          "level": 3,
+          "text": "27.3 Fitness functions",
+          "anchor": "27-3-fitness-functions"
+        },
+        {
+          "level": 3,
+          "text": "27.4 Production readiness",
+          "anchor": "27-4-production-readiness"
+        },
+        {
+          "level": 2,
+          "text": "28. Common System Design Problems",
+          "anchor": "28-common-system-design-problems"
+        },
+        {
+          "level": 3,
+          "text": "28.1 Social and content systems",
+          "anchor": "28-1-social-and-content-systems"
+        },
+        {
+          "level": 3,
+          "text": "28.2 Data and storage systems",
+          "anchor": "28-2-data-and-storage-systems"
+        },
+        {
+          "level": 3,
+          "text": "28.3 Communication systems",
+          "anchor": "28-3-communication-systems"
+        },
+        {
+          "level": 3,
+          "text": "28.4 Commerce and financial systems",
+          "anchor": "28-4-commerce-and-financial-systems"
+        },
+        {
+          "level": 3,
+          "text": "28.5 Infrastructure systems",
+          "anchor": "28-5-infrastructure-systems"
+        },
+        {
+          "level": 3,
+          "text": "28.6 AI and search systems",
+          "anchor": "28-6-ai-and-search-systems"
+        },
+        {
+          "level": 2,
+          "text": "29. Standards, Frameworks, and Current Ecosystem Awareness",
+          "anchor": "29-standards-frameworks-and-current-ecosystem-awareness"
+        },
+        {
+          "level": 3,
+          "text": "29.1 Architecture standards and frameworks",
+          "anchor": "29-1-architecture-standards-and-frameworks"
+        },
+        {
+          "level": 3,
+          "text": "29.2 Cloud architecture frameworks",
+          "anchor": "29-2-cloud-architecture-frameworks"
+        },
+        {
+          "level": 3,
+          "text": "29.3 Reliability frameworks",
+          "anchor": "29-3-reliability-frameworks"
+        },
+        {
+          "level": 3,
+          "text": "29.4 Security standards and guidance",
+          "anchor": "29-4-security-standards-and-guidance"
+        },
+        {
+          "level": 3,
+          "text": "29.5 Cloud-native ecosystem",
+          "anchor": "29-5-cloud-native-ecosystem"
+        },
+        {
+          "level": 3,
+          "text": "29.6 Architecture tooling",
+          "anchor": "29-6-architecture-tooling"
+        },
+        {
+          "level": 2,
+          "text": "30. Learning Path",
+          "anchor": "30-learning-path"
+        },
+        {
+          "level": 3,
+          "text": "30.1 Phase 1 — Fundamentals",
+          "anchor": "30-1-phase-1-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "30.2 Phase 2 — System design basics",
+          "anchor": "30-2-phase-2-system-design-basics"
+        },
+        {
+          "level": 3,
+          "text": "30.3 Phase 3 — Distributed systems",
+          "anchor": "30-3-phase-3-distributed-systems"
+        },
+        {
+          "level": 3,
+          "text": "30.4 Phase 4 — Software architecture",
+          "anchor": "30-4-phase-4-software-architecture"
+        },
+        {
+          "level": 3,
+          "text": "30.5 Phase 5 — Production architecture",
+          "anchor": "30-5-phase-5-production-architecture"
+        },
+        {
+          "level": 3,
+          "text": "30.6 Phase 6 — Enterprise and governance",
+          "anchor": "30-6-phase-6-enterprise-and-governance"
+        },
+        {
+          "level": 3,
+          "text": "30.7 Phase 7 — Advanced architecture",
+          "anchor": "30-7-phase-7-advanced-architecture"
+        },
+        {
+          "level": 2,
+          "text": "31. Practical Projects",
+          "anchor": "31-practical-projects"
+        },
+        {
+          "level": 3,
+          "text": "31.1 Project 1 — URL Shortener",
+          "anchor": "31-1-project-1-url-shortener"
+        },
+        {
+          "level": 3,
+          "text": "31.2 Project 2 — Notification Platform",
+          "anchor": "31-2-project-2-notification-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.3 Project 3 — Chat System",
+          "anchor": "31-3-project-3-chat-system"
+        },
+        {
+          "level": 3,
+          "text": "31.4 Project 4 — E-Commerce Platform",
+          "anchor": "31-4-project-4-e-commerce-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.5 Project 5 — Event Streaming Platform",
+          "anchor": "31-5-project-5-event-streaming-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.6 Project 6 — Multi-Tenant SaaS Platform",
+          "anchor": "31-6-project-6-multi-tenant-saas-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.7 Project 7 — Observability Platform",
+          "anchor": "31-7-project-7-observability-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.8 Project 8 — RAG AI Assistant Architecture",
+          "anchor": "31-8-project-8-rag-ai-assistant-architecture"
+        },
+        {
+          "level": 3,
+          "text": "31.9 Project 9 — Kubernetes Platform",
+          "anchor": "31-9-project-9-kubernetes-platform"
+        },
+        {
+          "level": 3,
+          "text": "31.10 Project 10 — Legacy Modernization Plan",
+          "anchor": "31-10-project-10-legacy-modernization-plan"
+        },
+        {
+          "level": 3,
+          "text": "31.11 Project 11 — High-Scale Rate Limiter",
+          "anchor": "31-11-project-11-high-scale-rate-limiter"
+        },
+        {
+          "level": 3,
+          "text": "31.12 Project 12 — Global File Storage System",
+          "anchor": "31-12-project-12-global-file-storage-system"
+        },
+        {
+          "level": 2,
+          "text": "32. Competency Checklist",
+          "anchor": "32-competency-checklist"
+        },
+        {
+          "level": 3,
+          "text": "32.1 Junior system design competency",
+          "anchor": "32-1-junior-system-design-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.2 Mid-level system design competency",
+          "anchor": "32-2-mid-level-system-design-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.3 Senior architecture competency",
+          "anchor": "32-3-senior-architecture-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.4 Staff/principal architecture competency",
+          "anchor": "32-4-staff-principal-architecture-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.5 Production readiness competency",
+          "anchor": "32-5-production-readiness-competency"
+        }
+      ],
+      "searchText": "system design and software architecture roadmap — fundamentals to advanced dev system design system design and software architecture roadmap — fundamentals to advanced 1. prerequisites 1.1 software engineering fundamentals 1.2 backend fundamentals 1.3 infrastructure fundamentals 1.4 data fundamentals 1.5 communication fundamentals 2. architecture thinking 2.1 architecture fundamentals 2.2 architectural drivers 2.3 quality attributes 2.4 architectural trade-offs 2.5 architecture decision-making 2.6 architectural thinking skills 3. requirements and constraints 3.1 functional requirements 3.2 non-functional requirements 3.3 capacity requirements 3.4 availability and recovery requirements 3.5 security and compliance requirements 3.6 constraints 4. system design interview method 4.1 problem clarification 4.2 back-of-the-envelope estimation 4.3 high-level design 4.4 data model design 4.5 api design 4.6 deep dives 4.7 trade-off communication 5. core architectural styles 5.1 layered architecture 5.2 clean architecture 5.3 hexagonal architecture 5.4 onion architecture 5.5 domain-driven design architecture 5.6 event-driven architecture 5.7 microservices architecture 5.8 modular monolith 5.9 serverless architecture 5.10 space-based architecture 6. architectural patterns 6.1 structural patterns 6.2 distributed system patterns 6.3 data patterns 6.4 integration patterns 6.5 cloud patterns 6.6 reliability patterns 7. distributed systems fundamentals 7.1 distributed system concepts 7.2 cap and pacelc 7.3 consistency models 7.4 time and ordering 7.5 consensus 7.6 replication 7.7 partitioning 7.8 distributed failure modes 8. scalability 8.1 scalability fundamentals 8.2 application scaling 8.3 database scaling 8.4 cache scaling 8.5 queue scaling 8.6 frontend and edge scaling 9. performance engineering 9.1 performance fundamentals 9.2 latency analysis 9.3 performance optimization 9.4 load testing 9.5 capacity planning 9.6 queueing theory awareness 10. reliability and resilience 10.1 reliability fundamentals 10.2 failure handling 10.3 high availability 10.4 disaster recovery 10.5 chaos engineering 10.6 incident response 11. data architecture 11.1 data modeling 11.2 database selection 11.3 transactional architecture 11.4 analytical architecture 11.5 data consistency 11.6 data migration 11.7 data governance 12. caching architecture 12.1 cache fundamentals 12.2 cache patterns 12.3 cache invalidation 12.4 cache failure modes 12.5 cache technologies 13. messaging and event streaming 13.1 messaging fundamentals 13.2 message delivery guarantees 13.3 queue-based architecture 13.4 event streaming architecture 13.5 event design 13.6 messaging technologies 14. api and integration architecture 14.1 api styles 14.2 rest api design 14.3 grpc architecture 14.4 graphql architecture 14.5 api gateway architecture 14.6 integration patterns 15. security architecture 15.1 security principles 15.2 identity and access 15.3 application security architecture 15.4 data security 15.5 infrastructure security 15.6 security operations 16. observability architecture 16.1 observability fundamentals 16.2 logging architecture 16.3 metrics architecture 16.4 tracing architecture 16.5 alerting architecture 16.6 observability tools 17. cloud architecture 17.1 cloud fundamentals 17.2 compute architecture 17.3 cloud networking 17.4 cloud storage 17.5 cloud-native architecture 17.6 cloud cost architecture 18. microservices architecture 18.1 microservice fundamentals 18.2 service decomposition 18.3 inter-service communication 18.4 distributed data management 18.5 microservice operations 18.6 microservice anti-patterns 19. monolith and modular architecture 19.1 monolith fundamentals 19.2 modular monolith 19.3 monolith modernization 19.4 when to choose monolith 19.5 when to choose microservices 20. frontend and client architecture 20.1 frontend architecture fundamentals 20.2 web performance architecture 20.3 frontend state architecture 20.4 micro-frontend architecture 20.5 mobile client architecture 21. search, recommendation, and ai system architecture 21.1 search architecture 21.2 recommendation architecture 21.3 ai application architecture 21.4 rag architecture 21.5 agentic architecture 22. devops, platform, and deployment architecture 22.1 ci/cd architecture 22.2 deployment strategies 22.3 infrastructure as code 22.4 platform engineering 22.5 kubernetes architecture 22.6 release engineering 23. enterprise architecture and governance 23.1 enterprise architecture fundamentals 23.2 architecture frameworks 23.3 architecture governance 23.4 architecture documentation 23.5 architecture review 24. architecture documentation and diagramming 24.1 documentation principles 24.2 c4 model 24.3 adrs 24.4 diagrams 24.5 diagramming tools 25. cost architecture and finops 25.1 cost fundamentals 25.2 cost modeling 25.3 cost optimization 25.4 finops practices 26. architecture migration and evolution 26.1 legacy modernization 26.2 migration patterns 26.3 database migration architecture 26.4 cloud migration 26.5 evolutionary architecture 27. architecture evaluation 27.1 evaluation methods 27.2 architecture scenarios 27.3 fitness functions 27.4 production readiness 28. common system design problems 28.1 social and content systems 28.2 data and storage systems 28.3 communication systems 28.4 commerce and financial systems 28.5 infrastructure systems 28.6 ai and search systems 29. standards, frameworks, and current ecosystem awareness 29.1 architecture standards and frameworks 29.2 cloud architecture frameworks 29.3 reliability frameworks 29.4 security standards and guidance 29.5 cloud-native ecosystem 29.6 architecture tooling 30. learning path 30.1 phase 1 — fundamentals 30.2 phase 2 — system design basics 30.3 phase 3 — distributed systems 30.4 phase 4 — software architecture 30.5 phase 5 — production architecture 30.6 phase 6 — enterprise and governance 30.7 phase 7 — advanced architecture 31. practical projects 31.1 project 1 — url shortener 31.2 project 2 — notification platform 31.3 project 3 — chat system 31.4 project 4 — e-commerce platform 31.5 project 5 — event streaming platform 31.6 project 6 — multi-tenant saas platform 31.7 project 7 — observability platform 31.8 project 8 — rag ai assistant architecture 31.9 project 9 — kubernetes platform 31.10 project 10 — legacy modernization plan 31.11 project 11 — high-scale rate limiter 31.12 project 12 — global file storage system 32. competency checklist 32.1 junior system design competency 32.2 mid-level system design competency 32.3 senior architecture competency 32.4 staff/principal architecture competency 32.5 production readiness competency"
+    },
+    {
       "id": "dev-web-roadmap-web-infrastructure-protocols",
       "title": "Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced",
       "summary": "",
@@ -13314,7 +14475,6 @@
       "slug": "dev",
       "label": "Dev",
       "items": [
-        "dev-architecture",
         "dev-books"
       ],
       "children": [
@@ -13671,6 +14831,15 @@
           ]
         },
         {
+          "slug": "system-design",
+          "label": "System Design",
+          "items": [
+            "dev-system-design-architecture",
+            "dev-system-design-roadmap-system-design-and-architecture"
+          ],
+          "children": []
+        },
+        {
           "slug": "web",
           "label": "Web",
           "items": [
@@ -13744,7 +14913,7 @@
       {
         "slug": "dev",
         "label": "Engineering",
-        "count": 63
+        "count": 64
       },
       {
         "slug": "etc",
@@ -13761,11 +14930,6 @@
       {
         "slug": "anime-list",
         "label": "Anime List",
-        "count": 1
-      },
-      {
-        "slug": "architecture",
-        "label": "Architecture",
         "count": 1
       },
       {
@@ -13822,6 +14986,11 @@
         "slug": "springboot",
         "label": "Spring Boot",
         "count": 17
+      },
+      {
+        "slug": "system-design",
+        "label": "System Design",
+        "count": 2
       },
       {
         "slug": "trip",
