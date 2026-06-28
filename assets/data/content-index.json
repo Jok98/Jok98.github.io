@@ -1329,6 +1329,896 @@
       "searchText": "java milestones & main features dev java java milestones & main features digital version : 8 (lts): 9: 10: 11 (lts): 12: 16: 17 (lts): 21 (lts): 22: 23: 24: 25: handwriten version :"
     },
     {
+      "id": "dev-java-roadmap-java",
+      "title": "Roadmap Java — Basi → Avanzato → Java 26",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "java",
+        "label": "Java"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/java/roadmap_java.md",
+      "url": "/notes/dev/java/roadmap_java/",
+      "breadcrumbs": [
+        "Dev",
+        "Java"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Roadmap Java — Basi → Avanzato → Java 26",
+          "anchor": "roadmap-java-basi-avanzato-java-26"
+        },
+        {
+          "level": 2,
+          "text": "1. Ambiente di sviluppo e strumenti",
+          "anchor": "1-ambiente-di-sviluppo-e-strumenti"
+        },
+        {
+          "level": 3,
+          "text": "1.1 Installazione e gestione JDK",
+          "anchor": "1-1-installazione-e-gestione-jdk"
+        },
+        {
+          "level": 3,
+          "text": "1.2 Tool base del JDK",
+          "anchor": "1-2-tool-base-del-jdk"
+        },
+        {
+          "level": 3,
+          "text": "1.3 IDE e ambiente locale",
+          "anchor": "1-3-ide-e-ambiente-locale"
+        },
+        {
+          "level": 3,
+          "text": "1.4 Build tool",
+          "anchor": "1-4-build-tool"
+        },
+        {
+          "level": 3,
+          "text": "1.5 Struttura progetto Java",
+          "anchor": "1-5-struttura-progetto-java"
+        },
+        {
+          "level": 2,
+          "text": "2. Fondamenti del linguaggio",
+          "anchor": "2-fondamenti-del-linguaggio"
+        },
+        {
+          "level": 3,
+          "text": "2.1 Sintassi base",
+          "anchor": "2-1-sintassi-base"
+        },
+        {
+          "level": 3,
+          "text": "2.2 Tipi primitivi",
+          "anchor": "2-2-tipi-primitivi"
+        },
+        {
+          "level": 3,
+          "text": "2.3 Wrapper type",
+          "anchor": "2-3-wrapper-type"
+        },
+        {
+          "level": 3,
+          "text": "2.4 Variabili e costanti",
+          "anchor": "2-4-variabili-e-costanti"
+        },
+        {
+          "level": 3,
+          "text": "2.5 Operatori",
+          "anchor": "2-5-operatori"
+        },
+        {
+          "level": 3,
+          "text": "2.6 Controllo di flusso",
+          "anchor": "2-6-controllo-di-flusso"
+        },
+        {
+          "level": 3,
+          "text": "2.7 Array",
+          "anchor": "2-7-array"
+        },
+        {
+          "level": 3,
+          "text": "2.8 Stringhe",
+          "anchor": "2-8-stringhe"
+        },
+        {
+          "level": 2,
+          "text": "3. Programmazione orientata agli oggetti",
+          "anchor": "3-programmazione-orientata-agli-oggetti"
+        },
+        {
+          "level": 3,
+          "text": "3.1 Classi e oggetti",
+          "anchor": "3-1-classi-e-oggetti"
+        },
+        {
+          "level": 3,
+          "text": "3.2 Incapsulamento",
+          "anchor": "3-2-incapsulamento"
+        },
+        {
+          "level": 3,
+          "text": "3.3 Access modifier",
+          "anchor": "3-3-access-modifier"
+        },
+        {
+          "level": 3,
+          "text": "3.4 Ereditarietà",
+          "anchor": "3-4-ereditariet"
+        },
+        {
+          "level": 3,
+          "text": "3.5 Classi astratte",
+          "anchor": "3-5-classi-astratte"
+        },
+        {
+          "level": 3,
+          "text": "3.6 Interfacce",
+          "anchor": "3-6-interfacce"
+        },
+        {
+          "level": 3,
+          "text": "3.7 Object",
+          "anchor": "3-7-object"
+        },
+        {
+          "level": 3,
+          "text": "3.8 Classi annidate",
+          "anchor": "3-8-classi-annidate"
+        },
+        {
+          "level": 3,
+          "text": "3.9 Enum",
+          "anchor": "3-9-enum"
+        },
+        {
+          "level": 2,
+          "text": "4. Modellazione del dominio",
+          "anchor": "4-modellazione-del-dominio"
+        },
+        {
+          "level": 3,
+          "text": "4.1 Principi di modellazione",
+          "anchor": "4-1-principi-di-modellazione"
+        },
+        {
+          "level": 3,
+          "text": "4.2 Immutabilità",
+          "anchor": "4-2-immutabilit"
+        },
+        {
+          "level": 3,
+          "text": "4.3 Record",
+          "anchor": "4-3-record"
+        },
+        {
+          "level": 3,
+          "text": "4.4 Sealed types",
+          "anchor": "4-4-sealed-types"
+        },
+        {
+          "level": 3,
+          "text": "4.5 Pattern matching per dominio",
+          "anchor": "4-5-pattern-matching-per-dominio"
+        },
+        {
+          "level": 2,
+          "text": "5. Exception handling",
+          "anchor": "5-exception-handling"
+        },
+        {
+          "level": 3,
+          "text": "5.1 Fondamenti",
+          "anchor": "5-1-fondamenti"
+        },
+        {
+          "level": 3,
+          "text": "5.2 Gestione moderna",
+          "anchor": "5-2-gestione-moderna"
+        },
+        {
+          "level": 3,
+          "text": "5.3 Strategie",
+          "anchor": "5-3-strategie"
+        },
+        {
+          "level": 2,
+          "text": "6. Collections Framework",
+          "anchor": "6-collections-framework"
+        },
+        {
+          "level": 3,
+          "text": "6.1 Interfacce principali",
+          "anchor": "6-1-interfacce-principali"
+        },
+        {
+          "level": 3,
+          "text": "6.2 Implementazioni List",
+          "anchor": "6-2-implementazioni-list"
+        },
+        {
+          "level": 3,
+          "text": "6.3 Implementazioni Set",
+          "anchor": "6-3-implementazioni-set"
+        },
+        {
+          "level": 3,
+          "text": "6.4 Implementazioni Map",
+          "anchor": "6-4-implementazioni-map"
+        },
+        {
+          "level": 3,
+          "text": "6.5 Queue e Deque",
+          "anchor": "6-5-queue-e-deque"
+        },
+        {
+          "level": 3,
+          "text": "6.6 Utility collections",
+          "anchor": "6-6-utility-collections"
+        },
+        {
+          "level": 3,
+          "text": "6.7 Sequenced Collections",
+          "anchor": "6-7-sequenced-collections"
+        },
+        {
+          "level": 2,
+          "text": "7. Generics e type system",
+          "anchor": "7-generics-e-type-system"
+        },
+        {
+          "level": 3,
+          "text": "7.1 Generics base",
+          "anchor": "7-1-generics-base"
+        },
+        {
+          "level": 3,
+          "text": "7.2 Bound",
+          "anchor": "7-2-bound"
+        },
+        {
+          "level": 3,
+          "text": "7.3 Wildcard",
+          "anchor": "7-3-wildcard"
+        },
+        {
+          "level": 3,
+          "text": "7.4 Type erasure",
+          "anchor": "7-4-type-erasure"
+        },
+        {
+          "level": 3,
+          "text": "7.5 Generics avanzati",
+          "anchor": "7-5-generics-avanzati"
+        },
+        {
+          "level": 2,
+          "text": "8. I/O, NIO e file system",
+          "anchor": "8-i-o-nio-e-file-system"
+        },
+        {
+          "level": 3,
+          "text": "8.1 I/O classico",
+          "anchor": "8-1-i-o-classico"
+        },
+        {
+          "level": 3,
+          "text": "8.2 NIO",
+          "anchor": "8-2-nio"
+        },
+        {
+          "level": 3,
+          "text": "8.3 Channel e buffer",
+          "anchor": "8-3-channel-e-buffer"
+        },
+        {
+          "level": 3,
+          "text": "8.4 Watch e monitoring file system",
+          "anchor": "8-4-watch-e-monitoring-file-system"
+        },
+        {
+          "level": 3,
+          "text": "8.5 Serializzazione dati",
+          "anchor": "8-5-serializzazione-dati"
+        },
+        {
+          "level": 2,
+          "text": "9. Date, time, numeri e localizzazione",
+          "anchor": "9-date-time-numeri-e-localizzazione"
+        },
+        {
+          "level": 3,
+          "text": "9.1 Date/time moderna",
+          "anchor": "9-1-date-time-moderna"
+        },
+        {
+          "level": 3,
+          "text": "9.2 Date/time legacy",
+          "anchor": "9-2-date-time-legacy"
+        },
+        {
+          "level": 3,
+          "text": "9.3 Numeri",
+          "anchor": "9-3-numeri"
+        },
+        {
+          "level": 3,
+          "text": "9.4 Localizzazione",
+          "anchor": "9-4-localizzazione"
+        },
+        {
+          "level": 2,
+          "text": "10. Java funzionale",
+          "anchor": "10-java-funzionale"
+        },
+        {
+          "level": 3,
+          "text": "10.1 Lambda",
+          "anchor": "10-1-lambda"
+        },
+        {
+          "level": 3,
+          "text": "10.2 Functional interface",
+          "anchor": "10-2-functional-interface"
+        },
+        {
+          "level": 3,
+          "text": "10.3 Method reference",
+          "anchor": "10-3-method-reference"
+        },
+        {
+          "level": 3,
+          "text": "10.4 Stream API",
+          "anchor": "10-4-stream-api"
+        },
+        {
+          "level": 3,
+          "text": "10.5 Collector",
+          "anchor": "10-5-collector"
+        },
+        {
+          "level": 3,
+          "text": "10.6 Optional",
+          "anchor": "10-6-optional"
+        },
+        {
+          "level": 3,
+          "text": "10.7 Programmazione funzionale pratica",
+          "anchor": "10-7-programmazione-funzionale-pratica"
+        },
+        {
+          "level": 3,
+          "text": "10.8 Stream Gatherers",
+          "anchor": "10-8-stream-gatherers"
+        },
+        {
+          "level": 2,
+          "text": "11. Moduli Java e packaging",
+          "anchor": "11-moduli-java-e-packaging"
+        },
+        {
+          "level": 3,
+          "text": "11.1 JPMS",
+          "anchor": "11-1-jpms"
+        },
+        {
+          "level": 3,
+          "text": "11.2 Classpath vs module path",
+          "anchor": "11-2-classpath-vs-module-path"
+        },
+        {
+          "level": 3,
+          "text": "11.3 Runtime image",
+          "anchor": "11-3-runtime-image"
+        },
+        {
+          "level": 2,
+          "text": "12. Concorrenza classica",
+          "anchor": "12-concorrenza-classica"
+        },
+        {
+          "level": 3,
+          "text": "12.1 Thread base",
+          "anchor": "12-1-thread-base"
+        },
+        {
+          "level": 3,
+          "text": "12.2 Memory model",
+          "anchor": "12-2-memory-model"
+        },
+        {
+          "level": 3,
+          "text": "12.3 Sincronizzazione",
+          "anchor": "12-3-sincronizzazione"
+        },
+        {
+          "level": 3,
+          "text": "12.4 java.util.concurrent",
+          "anchor": "12-4-java-util-concurrent"
+        },
+        {
+          "level": 3,
+          "text": "12.5 Lock avanzati e atomics",
+          "anchor": "12-5-lock-avanzati-e-atomics"
+        },
+        {
+          "level": 3,
+          "text": "12.6 Async programming",
+          "anchor": "12-6-async-programming"
+        },
+        {
+          "level": 2,
+          "text": "13. Concorrenza moderna: Project Loom",
+          "anchor": "13-concorrenza-moderna-project-loom"
+        },
+        {
+          "level": 3,
+          "text": "13.1 Virtual threads",
+          "anchor": "13-1-virtual-threads"
+        },
+        {
+          "level": 3,
+          "text": "13.2 Structured Concurrency",
+          "anchor": "13-2-structured-concurrency"
+        },
+        {
+          "level": 3,
+          "text": "13.3 Scoped Values",
+          "anchor": "13-3-scoped-values"
+        },
+        {
+          "level": 3,
+          "text": "13.4 Migrazione enterprise",
+          "anchor": "13-4-migrazione-enterprise"
+        },
+        {
+          "level": 2,
+          "text": "14. Networking e HTTP",
+          "anchor": "14-networking-e-http"
+        },
+        {
+          "level": 3,
+          "text": "14.1 Networking base",
+          "anchor": "14-1-networking-base"
+        },
+        {
+          "level": 3,
+          "text": "14.2 HTTP Client",
+          "anchor": "14-2-http-client"
+        },
+        {
+          "level": 3,
+          "text": "14.3 Resilienza client",
+          "anchor": "14-3-resilienza-client"
+        },
+        {
+          "level": 2,
+          "text": "15. Sicurezza e crittografia",
+          "anchor": "15-sicurezza-e-crittografia"
+        },
+        {
+          "level": 3,
+          "text": "15.1 Fondamenti security",
+          "anchor": "15-1-fondamenti-security"
+        },
+        {
+          "level": 3,
+          "text": "15.2 Crypto API",
+          "anchor": "15-2-crypto-api"
+        },
+        {
+          "level": 3,
+          "text": "15.3 Serialization security",
+          "anchor": "15-3-serialization-security"
+        },
+        {
+          "level": 3,
+          "text": "15.4 Platform security evolution",
+          "anchor": "15-4-platform-security-evolution"
+        },
+        {
+          "level": 2,
+          "text": "16. Reflection, annotation e metaprogramming",
+          "anchor": "16-reflection-annotation-e-metaprogramming"
+        },
+        {
+          "level": 3,
+          "text": "16.1 Reflection",
+          "anchor": "16-1-reflection"
+        },
+        {
+          "level": 3,
+          "text": "16.2 Annotation",
+          "anchor": "16-2-annotation"
+        },
+        {
+          "level": 3,
+          "text": "16.3 Dynamic proxy",
+          "anchor": "16-3-dynamic-proxy"
+        },
+        {
+          "level": 3,
+          "text": "16.4 MethodHandles e VarHandles",
+          "anchor": "16-4-methodhandles-e-varhandles"
+        },
+        {
+          "level": 3,
+          "text": "16.5 Class-File API",
+          "anchor": "16-5-class-file-api"
+        },
+        {
+          "level": 2,
+          "text": "17. JVM internals",
+          "anchor": "17-jvm-internals"
+        },
+        {
+          "level": 3,
+          "text": "17.1 Architettura JVM",
+          "anchor": "17-1-architettura-jvm"
+        },
+        {
+          "level": 3,
+          "text": "17.2 Memoria",
+          "anchor": "17-2-memoria"
+        },
+        {
+          "level": 3,
+          "text": "17.3 JIT e ottimizzazione",
+          "anchor": "17-3-jit-e-ottimizzazione"
+        },
+        {
+          "level": 3,
+          "text": "17.4 Class loading e startup",
+          "anchor": "17-4-class-loading-e-startup"
+        },
+        {
+          "level": 3,
+          "text": "17.5 Osservabilità runtime",
+          "anchor": "17-5-osservabilit-runtime"
+        },
+        {
+          "level": 2,
+          "text": "18. Garbage Collection e performance",
+          "anchor": "18-garbage-collection-e-performance"
+        },
+        {
+          "level": 3,
+          "text": "18.1 Fondamenti GC",
+          "anchor": "18-1-fondamenti-gc"
+        },
+        {
+          "level": 3,
+          "text": "18.2 Garbage collector",
+          "anchor": "18-2-garbage-collector"
+        },
+        {
+          "level": 3,
+          "text": "18.3 GC tuning",
+          "anchor": "18-3-gc-tuning"
+        },
+        {
+          "level": 3,
+          "text": "18.4 Performance engineering",
+          "anchor": "18-4-performance-engineering"
+        },
+        {
+          "level": 2,
+          "text": "19. Foreign Function, Memory e native interop",
+          "anchor": "19-foreign-function-memory-e-native-interop"
+        },
+        {
+          "level": 3,
+          "text": "19.1 JNI",
+          "anchor": "19-1-jni"
+        },
+        {
+          "level": 3,
+          "text": "19.2 Foreign Function & Memory API",
+          "anchor": "19-2-foreign-function-memory-api"
+        },
+        {
+          "level": 3,
+          "text": "19.3 Off-heap e performance",
+          "anchor": "19-3-off-heap-e-performance"
+        },
+        {
+          "level": 2,
+          "text": "20. Vector API e calcolo ad alte prestazioni",
+          "anchor": "20-vector-api-e-calcolo-ad-alte-prestazioni"
+        },
+        {
+          "level": 3,
+          "text": "20.1 SIMD",
+          "anchor": "20-1-simd"
+        },
+        {
+          "level": 3,
+          "text": "20.2 Vector API",
+          "anchor": "20-2-vector-api"
+        },
+        {
+          "level": 2,
+          "text": "21. Testing",
+          "anchor": "21-testing"
+        },
+        {
+          "level": 3,
+          "text": "21.1 Unit testing",
+          "anchor": "21-1-unit-testing"
+        },
+        {
+          "level": 3,
+          "text": "21.2 Mocking",
+          "anchor": "21-2-mocking"
+        },
+        {
+          "level": 3,
+          "text": "21.3 Integration testing",
+          "anchor": "21-3-integration-testing"
+        },
+        {
+          "level": 3,
+          "text": "21.4 Quality gates",
+          "anchor": "21-4-quality-gates"
+        },
+        {
+          "level": 2,
+          "text": "22. Logging, monitoring e observability",
+          "anchor": "22-logging-monitoring-e-observability"
+        },
+        {
+          "level": 3,
+          "text": "22.1 Logging",
+          "anchor": "22-1-logging"
+        },
+        {
+          "level": 3,
+          "text": "22.2 Metriche",
+          "anchor": "22-2-metriche"
+        },
+        {
+          "level": 3,
+          "text": "22.3 Tracing",
+          "anchor": "22-3-tracing"
+        },
+        {
+          "level": 3,
+          "text": "22.4 JVM diagnostics",
+          "anchor": "22-4-jvm-diagnostics"
+        },
+        {
+          "level": 2,
+          "text": "23. Java enterprise e microservizi",
+          "anchor": "23-java-enterprise-e-microservizi"
+        },
+        {
+          "level": 3,
+          "text": "23.1 JDBC e database",
+          "anchor": "23-1-jdbc-e-database"
+        },
+        {
+          "level": 3,
+          "text": "23.2 Spring Boot",
+          "anchor": "23-2-spring-boot"
+        },
+        {
+          "level": 3,
+          "text": "23.3 Persistence",
+          "anchor": "23-3-persistence"
+        },
+        {
+          "level": 3,
+          "text": "23.4 Microservizi",
+          "anchor": "23-4-microservizi"
+        },
+        {
+          "level": 3,
+          "text": "23.5 Messaging",
+          "anchor": "23-5-messaging"
+        },
+        {
+          "level": 3,
+          "text": "23.6 Container e cloud",
+          "anchor": "23-6-container-e-cloud"
+        },
+        {
+          "level": 2,
+          "text": "24. Evoluzione Java per versione",
+          "anchor": "24-evoluzione-java-per-versione"
+        },
+        {
+          "level": 3,
+          "text": "24.1 Java 1.0",
+          "anchor": "24-1-java-1-0"
+        },
+        {
+          "level": 3,
+          "text": "24.2 Java 1.1",
+          "anchor": "24-2-java-1-1"
+        },
+        {
+          "level": 3,
+          "text": "24.3 Java 1.2",
+          "anchor": "24-3-java-1-2"
+        },
+        {
+          "level": 3,
+          "text": "24.4 Java 1.3",
+          "anchor": "24-4-java-1-3"
+        },
+        {
+          "level": 3,
+          "text": "24.5 Java 1.4",
+          "anchor": "24-5-java-1-4"
+        },
+        {
+          "level": 3,
+          "text": "24.6 Java 5",
+          "anchor": "24-6-java-5"
+        },
+        {
+          "level": 3,
+          "text": "24.7 Java 6",
+          "anchor": "24-7-java-6"
+        },
+        {
+          "level": 3,
+          "text": "24.8 Java 7",
+          "anchor": "24-8-java-7"
+        },
+        {
+          "level": 3,
+          "text": "24.9 Java 8",
+          "anchor": "24-9-java-8"
+        },
+        {
+          "level": 3,
+          "text": "24.10 Java 9",
+          "anchor": "24-10-java-9"
+        },
+        {
+          "level": 3,
+          "text": "24.11 Java 10",
+          "anchor": "24-11-java-10"
+        },
+        {
+          "level": 3,
+          "text": "24.12 Java 11",
+          "anchor": "24-12-java-11"
+        },
+        {
+          "level": 3,
+          "text": "24.13 Java 12",
+          "anchor": "24-13-java-12"
+        },
+        {
+          "level": 3,
+          "text": "24.14 Java 13",
+          "anchor": "24-14-java-13"
+        },
+        {
+          "level": 3,
+          "text": "24.15 Java 14",
+          "anchor": "24-15-java-14"
+        },
+        {
+          "level": 3,
+          "text": "24.16 Java 15",
+          "anchor": "24-16-java-15"
+        },
+        {
+          "level": 3,
+          "text": "24.17 Java 16",
+          "anchor": "24-17-java-16"
+        },
+        {
+          "level": 3,
+          "text": "24.18 Java 17",
+          "anchor": "24-18-java-17"
+        },
+        {
+          "level": 3,
+          "text": "24.19 Java 18",
+          "anchor": "24-19-java-18"
+        },
+        {
+          "level": 3,
+          "text": "24.20 Java 19",
+          "anchor": "24-20-java-19"
+        },
+        {
+          "level": 3,
+          "text": "24.21 Java 20",
+          "anchor": "24-21-java-20"
+        },
+        {
+          "level": 3,
+          "text": "24.22 Java 21",
+          "anchor": "24-22-java-21"
+        },
+        {
+          "level": 3,
+          "text": "24.23 Java 22",
+          "anchor": "24-23-java-22"
+        },
+        {
+          "level": 3,
+          "text": "24.24 Java 23",
+          "anchor": "24-24-java-23"
+        },
+        {
+          "level": 3,
+          "text": "24.25 Java 24",
+          "anchor": "24-25-java-24"
+        },
+        {
+          "level": 3,
+          "text": "24.26 Java 25",
+          "anchor": "24-26-java-25"
+        },
+        {
+          "level": 3,
+          "text": "24.27 Java 26",
+          "anchor": "24-27-java-26"
+        },
+        {
+          "level": 2,
+          "text": "25. Percorso di studio progressivo",
+          "anchor": "25-percorso-di-studio-progressivo"
+        },
+        {
+          "level": 3,
+          "text": "25.1 Fase 1 — Java base",
+          "anchor": "25-1-fase-1-java-base"
+        },
+        {
+          "level": 3,
+          "text": "25.2 Fase 2 — Java Core",
+          "anchor": "25-2-fase-2-java-core"
+        },
+        {
+          "level": 3,
+          "text": "25.3 Fase 3 — Java 8",
+          "anchor": "25-3-fase-3-java-8"
+        },
+        {
+          "level": 3,
+          "text": "25.4 Fase 4 — Java 9-17",
+          "anchor": "25-4-fase-4-java-9-17"
+        },
+        {
+          "level": 3,
+          "text": "25.5 Fase 5 — Java 18-21",
+          "anchor": "25-5-fase-5-java-18-21"
+        },
+        {
+          "level": 3,
+          "text": "25.6 Fase 6 — Java 22-26",
+          "anchor": "25-6-fase-6-java-22-26"
+        },
+        {
+          "level": 3,
+          "text": "25.7 Fase 7 — JVM e performance",
+          "anchor": "25-7-fase-7-jvm-e-performance"
+        },
+        {
+          "level": 3,
+          "text": "25.8 Fase 8 — Enterprise Java",
+          "anchor": "25-8-fase-8-enterprise-java"
+        }
+      ],
+      "searchText": "roadmap java — basi → avanzato → java 26 dev java roadmap java — basi → avanzato → java 26 1. ambiente di sviluppo e strumenti 1.1 installazione e gestione jdk 1.2 tool base del jdk 1.3 ide e ambiente locale 1.4 build tool 1.5 struttura progetto java 2. fondamenti del linguaggio 2.1 sintassi base 2.2 tipi primitivi 2.3 wrapper type 2.4 variabili e costanti 2.5 operatori 2.6 controllo di flusso 2.7 array 2.8 stringhe 3. programmazione orientata agli oggetti 3.1 classi e oggetti 3.2 incapsulamento 3.3 access modifier 3.4 ereditarietà 3.5 classi astratte 3.6 interfacce 3.7 object 3.8 classi annidate 3.9 enum 4. modellazione del dominio 4.1 principi di modellazione 4.2 immutabilità 4.3 record 4.4 sealed types 4.5 pattern matching per dominio 5. exception handling 5.1 fondamenti 5.2 gestione moderna 5.3 strategie 6. collections framework 6.1 interfacce principali 6.2 implementazioni list 6.3 implementazioni set 6.4 implementazioni map 6.5 queue e deque 6.6 utility collections 6.7 sequenced collections 7. generics e type system 7.1 generics base 7.2 bound 7.3 wildcard 7.4 type erasure 7.5 generics avanzati 8. i/o, nio e file system 8.1 i/o classico 8.2 nio 8.3 channel e buffer 8.4 watch e monitoring file system 8.5 serializzazione dati 9. date, time, numeri e localizzazione 9.1 date/time moderna 9.2 date/time legacy 9.3 numeri 9.4 localizzazione 10. java funzionale 10.1 lambda 10.2 functional interface 10.3 method reference 10.4 stream api 10.5 collector 10.6 optional 10.7 programmazione funzionale pratica 10.8 stream gatherers 11. moduli java e packaging 11.1 jpms 11.2 classpath vs module path 11.3 runtime image 12. concorrenza classica 12.1 thread base 12.2 memory model 12.3 sincronizzazione 12.4 java.util.concurrent 12.5 lock avanzati e atomics 12.6 async programming 13. concorrenza moderna: project loom 13.1 virtual threads 13.2 structured concurrency 13.3 scoped values 13.4 migrazione enterprise 14. networking e http 14.1 networking base 14.2 http client 14.3 resilienza client 15. sicurezza e crittografia 15.1 fondamenti security 15.2 crypto api 15.3 serialization security 15.4 platform security evolution 16. reflection, annotation e metaprogramming 16.1 reflection 16.2 annotation 16.3 dynamic proxy 16.4 methodhandles e varhandles 16.5 class-file api 17. jvm internals 17.1 architettura jvm 17.2 memoria 17.3 jit e ottimizzazione 17.4 class loading e startup 17.5 osservabilità runtime 18. garbage collection e performance 18.1 fondamenti gc 18.2 garbage collector 18.3 gc tuning 18.4 performance engineering 19. foreign function, memory e native interop 19.1 jni 19.2 foreign function & memory api 19.3 off-heap e performance 20. vector api e calcolo ad alte prestazioni 20.1 simd 20.2 vector api 21. testing 21.1 unit testing 21.2 mocking 21.3 integration testing 21.4 quality gates 22. logging, monitoring e observability 22.1 logging 22.2 metriche 22.3 tracing 22.4 jvm diagnostics 23. java enterprise e microservizi 23.1 jdbc e database 23.2 spring boot 23.3 persistence 23.4 microservizi 23.5 messaging 23.6 container e cloud 24. evoluzione java per versione 24.1 java 1.0 24.2 java 1.1 24.3 java 1.2 24.4 java 1.3 24.5 java 1.4 24.6 java 5 24.7 java 6 24.8 java 7 24.9 java 8 24.10 java 9 24.11 java 10 24.12 java 11 24.13 java 12 24.14 java 13 24.15 java 14 24.16 java 15 24.17 java 16 24.18 java 17 24.19 java 18 24.20 java 19 24.21 java 20 24.22 java 21 24.23 java 22 24.24 java 23 24.25 java 24 24.26 java 25 24.27 java 26 25. percorso di studio progressivo 25.1 fase 1 — java base 25.2 fase 2 — java core 25.3 fase 3 — java 8 25.4 fase 4 — java 9-17 25.5 fase 5 — java 18-21 25.6 fase 6 — java 22-26 25.7 fase 7 — jvm e performance 25.8 fase 8 — enterprise java"
+    },
+    {
       "id": "dev-linux-arch-arch-installation",
       "title": "Arch Installation",
       "summary": "I've built a script for installing Arch.",
@@ -3335,7 +4225,8 @@
           "label": "Java",
           "items": [
             "dev-java-1-0-lambda",
-            "dev-java-main-features"
+            "dev-java-main-features",
+            "dev-java-roadmap-java"
           ],
           "children": []
         },
@@ -3514,7 +4405,7 @@
       {
         "slug": "dev",
         "label": "Engineering",
-        "count": 54
+        "count": 55
       },
       {
         "slug": "etc",
@@ -3561,7 +4452,7 @@
       {
         "slug": "java",
         "label": "Java",
-        "count": 2
+        "count": 3
       },
       {
         "slug": "linux",
