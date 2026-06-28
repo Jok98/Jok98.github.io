@@ -11928,6 +11928,1076 @@
       "searchText": "spring & spring boot roadmap - basics -> advanced dev spring boot spring & spring boot roadmap - basics -> advanced 1. technical prerequisites 1.1 required java 1.2 web and http 1.3 database 1.4 application architecture 2. spring ecosystem 2.1 spring framework 2.2 spring boot 2.3 spring data 2.4 spring security 2.5 spring cloud 2.6 spring integration 2.7 spring batch 2.8 spring for graphql 2.9 spring modulith 2.10 spring ai 3. spring framework core 3.1 inversion of control 3.2 applicationcontext 3.3 bean definition 3.4 bean scope 3.5 dependency injection 3.6 component scanning 3.7 java configuration 3.8 xml configuration 3.9 bean lifecycle 3.10 container extension points 4. configuration, environment, and properties 4.1 environment abstraction 4.2 profiles 4.3 externalized configuration 4.4 configuration properties 4.5 conditional configuration 4.6 spring expression language 4.7 @value 5. aop and cross-cutting concerns 5.1 aop concepts 5.2 spring aop 5.3 advice types 5.4 pointcut expression 5.5 use cases aop 6. validation, binding, and conversion 6.1 bean validation 6.2 spring validator 6.3 data binding 6.4 type conversion 7. spring mvc 7.1 servlet stack 7.2 controller 7.3 request input 7.4 response output 7.5 rest api design 7.6 error handling 7.7 interceptors and filters 7.8 multipart and files 7.9 view rendering 8. spring webflux and reactive programming 8.1 reactive fundamentals 8.2 project reactor 8.3 webflux server 8.4 webclient 8.5 reactive data access 8.6 mvc vs webflux 9. modern rest clients 9.1 resttemplate 9.2 restclient 9.3 http interface 9.4 client resiliency 10. spring boot fundamentals 10.1 bootstrapping 10.2 @springbootapplication 10.3 auto-configuration 10.4 starters 10.5 embedded server 10.6 application lifecycle 10.7 devtools 11. advanced spring boot configuration 11.1 dependency management 11.2 maven plugin 11.3 gradle plugin 11.4 logging in boot 11.5 json handling 11.6 task execution 12. data access and transactions 12.1 jdbc with spring 12.2 spring data jdbc 12.3 jpa and hibernate 12.4 spring data jpa 12.5 transaction management 12.6 database migration 12.7 r2dbc 12.8 nosql 13. caching 13.1 cache abstraction 13.2 cache provider 13.3 cache design 14. scheduling and async 14.1 scheduling 14.2 async 14.3 background jobs 15. messaging and event-driven architecture 15.1 spring events 15.2 jms 15.3 rabbitmq / amqp 15.4 kafka 15.5 spring cloud stream 15.6 event-driven architecture 16. spring security 16.1 fundamentals 16.2 filter chain 16.3 modern configuration 16.4 csrf, cors, and sessions 16.5 method security 16.6 oauth2 client 16.7 resource server 16.8 authorization server 16.9 security testing 17. testing spring and spring boot 17.1 unit testing 17.2 spring testcontext 17.3 spring boot testing 17.4 test slice 17.5 web testing 17.6 database testing 17.7 messaging testing 17.8 contract testing 17.9 performance testing 18. actuator and production-ready features 18.1 actuator basics 18.2 main endpoints 18.3 health 18.4 info endpoint 18.5 metrics 18.6 tracing 18.7 audit 19. native, aot, and startup optimization 19.1 aot processing 19.2 graalvm native image 19.3 runtime hints 19.4 crac and checkpoint restore 19.5 startup optimization 20. docker, kubernetes, and deployment 20.1 container image 20.2 jvm in container 20.3 docker compose 20.4 kubernetes 20.5 cloud-native configuration 21. spring cloud and microservices 21.1 config server 21.2 service discovery 21.3 spring cloud gateway 21.4 openfeign 21.5 resilience 21.6 distributed systems patterns 22. api design and documentation 22.1 api contract 22.2 dtos and mapping 22.3 api versioning 22.4 error contract 23. advanced spring internals 23.1 auto-configuration internals 23.2 advanced bean registration 23.3 proxy internals 23.4 annotation model 23.5 spring factories and imports 23.6 runtime performance internals 24. migrations 24.1 spring framework 5 -> 6 24.2 spring boot 2 -> 3 24.3 spring framework 6 -> 7 24.4 spring boot 3 -> 4 24.5 legacy migration 25. spring framework evolution by version 25.1 spring framework 1.x 25.2 spring framework 2.x 25.3 spring framework 3.x 25.4 spring framework 4.x 25.5 spring framework 5.x 25.6 spring framework 6.x 25.7 spring framework 7.x 26. spring boot evolution by version 26.1 spring boot 1.x 26.2 spring boot 2.x 26.3 spring boot 3.x 26.4 spring boot 4.0 26.5 spring boot 4.1 27. progressive study path 27.1 phase 1 - spring core basics 27.2 phase 2 - spring boot basics 27.3 phase 3 - web mvc and rest 27.4 phase 4 - data and transactions 27.5 phase 5 - security 27.6 phase 6 - production readiness 27.7 phase 7 - async, caching, and messaging 27.8 phase 8 - reactive and modern concurrency 27.9 phase 9 - spring cloud 27.10 phase 10 - advanced topics and internals 27.11 phase 11 - modern migrations 28. consolidation projects 28.1 project 1 - spring core lab 28.2 project 2 - spring boot rest api 28.3 project 3 - crud with jpa 28.4 project 4 - secure api 28.5 project 5 - production-ready microservice 28.6 project 6 - messaging service 28.7 project 7 - reactive api 28.8 project 8 - custom spring boot starter 28.9 project 9 - native image lab 28.10 project 10 - modular monolith 29. competency checklist 29.1 junior spring level 29.2 mid-level spring 29.3 senior spring level 29.4 advanced/platform level"
     },
     {
+      "id": "dev-web-roadmap-web-infrastructure-protocols",
+      "title": "Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced",
+      "summary": "",
+      "area": {
+        "slug": "dev",
+        "label": "Engineering"
+      },
+      "topic": {
+        "slug": "web",
+        "label": "Web"
+      },
+      "tags": [],
+      "order": null,
+      "layout": "",
+      "sourcePath": "notes/dev/web/roadmap_web_infrastructure_protocols.md",
+      "url": "/notes/dev/web/roadmap_web_infrastructure_protocols/",
+      "breadcrumbs": [
+        "Dev",
+        "Web"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced",
+          "anchor": "web-infrastructure-and-protocols-roadmap-fundamentals-to-advanced"
+        },
+        {
+          "level": 2,
+          "text": "1. Prerequisites",
+          "anchor": "1-prerequisites"
+        },
+        {
+          "level": 3,
+          "text": "1.1 Networking fundamentals",
+          "anchor": "1-1-networking-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.2 Linux and operating system fundamentals",
+          "anchor": "1-2-linux-and-operating-system-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.3 Security fundamentals",
+          "anchor": "1-3-security-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.4 Cloud and infrastructure fundamentals",
+          "anchor": "1-4-cloud-and-infrastructure-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "1.5 Tooling fundamentals",
+          "anchor": "1-5-tooling-fundamentals"
+        },
+        {
+          "level": 2,
+          "text": "2. Web Infrastructure Mental Model",
+          "anchor": "2-web-infrastructure-mental-model"
+        },
+        {
+          "level": 3,
+          "text": "2.1 Request lifecycle",
+          "anchor": "2-1-request-lifecycle"
+        },
+        {
+          "level": 3,
+          "text": "2.2 Web infrastructure components",
+          "anchor": "2-2-web-infrastructure-components"
+        },
+        {
+          "level": 3,
+          "text": "2.3 Client-side infrastructure concerns",
+          "anchor": "2-3-client-side-infrastructure-concerns"
+        },
+        {
+          "level": 3,
+          "text": "2.4 Server-side infrastructure concerns",
+          "anchor": "2-4-server-side-infrastructure-concerns"
+        },
+        {
+          "level": 3,
+          "text": "2.5 Edge infrastructure concerns",
+          "anchor": "2-5-edge-infrastructure-concerns"
+        },
+        {
+          "level": 2,
+          "text": "3. URI, URL, Origin, and Resource Identity",
+          "anchor": "3-uri-url-origin-and-resource-identity"
+        },
+        {
+          "level": 3,
+          "text": "3.1 URI and URL basics",
+          "anchor": "3-1-uri-and-url-basics"
+        },
+        {
+          "level": 3,
+          "text": "3.2 HTTP and HTTPS schemes",
+          "anchor": "3-2-http-and-https-schemes"
+        },
+        {
+          "level": 3,
+          "text": "3.3 Origin model",
+          "anchor": "3-3-origin-model"
+        },
+        {
+          "level": 3,
+          "text": "3.4 Resource identity",
+          "anchor": "3-4-resource-identity"
+        },
+        {
+          "level": 2,
+          "text": "4. DNS",
+          "anchor": "4-dns"
+        },
+        {
+          "level": 3,
+          "text": "4.1 DNS fundamentals",
+          "anchor": "4-1-dns-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "4.2 DNS record types",
+          "anchor": "4-2-dns-record-types"
+        },
+        {
+          "level": 3,
+          "text": "4.3 DNS resolution flow",
+          "anchor": "4-3-dns-resolution-flow"
+        },
+        {
+          "level": 3,
+          "text": "4.4 DNS transport",
+          "anchor": "4-4-dns-transport"
+        },
+        {
+          "level": 3,
+          "text": "4.5 DNS security",
+          "anchor": "4-5-dns-security"
+        },
+        {
+          "level": 3,
+          "text": "4.6 DNS operations",
+          "anchor": "4-6-dns-operations"
+        },
+        {
+          "level": 3,
+          "text": "4.7 DNS troubleshooting",
+          "anchor": "4-7-dns-troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "5. IP Networking for Web Infrastructure",
+          "anchor": "5-ip-networking-for-web-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "5.1 IP fundamentals",
+          "anchor": "5-1-ip-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "5.2 IPv4",
+          "anchor": "5-2-ipv4"
+        },
+        {
+          "level": 3,
+          "text": "5.3 IPv6",
+          "anchor": "5-3-ipv6"
+        },
+        {
+          "level": 3,
+          "text": "5.4 Routing",
+          "anchor": "5-4-routing"
+        },
+        {
+          "level": 3,
+          "text": "5.5 Web-facing network design",
+          "anchor": "5-5-web-facing-network-design"
+        },
+        {
+          "level": 3,
+          "text": "5.6 Network troubleshooting",
+          "anchor": "5-6-network-troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "6. TCP, UDP, and Transport Behavior",
+          "anchor": "6-tcp-udp-and-transport-behavior"
+        },
+        {
+          "level": 3,
+          "text": "6.1 TCP fundamentals",
+          "anchor": "6-1-tcp-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "6.2 TCP states",
+          "anchor": "6-2-tcp-states"
+        },
+        {
+          "level": 3,
+          "text": "6.3 TCP performance",
+          "anchor": "6-3-tcp-performance"
+        },
+        {
+          "level": 3,
+          "text": "6.4 UDP fundamentals",
+          "anchor": "6-4-udp-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "6.5 Socket-level concerns",
+          "anchor": "6-5-socket-level-concerns"
+        },
+        {
+          "level": 3,
+          "text": "6.6 Transport troubleshooting",
+          "anchor": "6-6-transport-troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "7. TLS, PKI, and HTTPS",
+          "anchor": "7-tls-pki-and-https"
+        },
+        {
+          "level": 3,
+          "text": "7.1 TLS fundamentals",
+          "anchor": "7-1-tls-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "7.2 TLS versions",
+          "anchor": "7-2-tls-versions"
+        },
+        {
+          "level": 3,
+          "text": "7.3 Certificates",
+          "anchor": "7-3-certificates"
+        },
+        {
+          "level": 3,
+          "text": "7.4 Certificate automation",
+          "anchor": "7-4-certificate-automation"
+        },
+        {
+          "level": 3,
+          "text": "7.5 HTTPS operations",
+          "anchor": "7-5-https-operations"
+        },
+        {
+          "level": 3,
+          "text": "7.6 TLS troubleshooting",
+          "anchor": "7-6-tls-troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "8. HTTP Semantics",
+          "anchor": "8-http-semantics"
+        },
+        {
+          "level": 3,
+          "text": "8.1 HTTP fundamentals",
+          "anchor": "8-1-http-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "8.2 HTTP methods",
+          "anchor": "8-2-http-methods"
+        },
+        {
+          "level": 3,
+          "text": "8.3 HTTP status codes",
+          "anchor": "8-3-http-status-codes"
+        },
+        {
+          "level": 3,
+          "text": "8.4 HTTP headers",
+          "anchor": "8-4-http-headers"
+        },
+        {
+          "level": 3,
+          "text": "8.5 HTTP body and representation",
+          "anchor": "8-5-http-body-and-representation"
+        },
+        {
+          "level": 3,
+          "text": "8.6 HTTP content negotiation",
+          "anchor": "8-6-http-content-negotiation"
+        },
+        {
+          "level": 3,
+          "text": "8.7 HTTP conditional requests",
+          "anchor": "8-7-http-conditional-requests"
+        },
+        {
+          "level": 2,
+          "text": "9. HTTP Versions and Evolution",
+          "anchor": "9-http-versions-and-evolution"
+        },
+        {
+          "level": 3,
+          "text": "9.1 HTTP/0.9 and HTTP/1.0",
+          "anchor": "9-1-http-0-9-and-http-1-0"
+        },
+        {
+          "level": 3,
+          "text": "9.2 HTTP/1.1",
+          "anchor": "9-2-http-1-1"
+        },
+        {
+          "level": 3,
+          "text": "9.3 HTTP/2",
+          "anchor": "9-3-http-2"
+        },
+        {
+          "level": 3,
+          "text": "9.4 HTTP/3",
+          "anchor": "9-4-http-3"
+        },
+        {
+          "level": 3,
+          "text": "9.5 QUIC",
+          "anchor": "9-5-quic"
+        },
+        {
+          "level": 3,
+          "text": "9.6 Protocol negotiation",
+          "anchor": "9-6-protocol-negotiation"
+        },
+        {
+          "level": 2,
+          "text": "10. HTTP Caching",
+          "anchor": "10-http-caching"
+        },
+        {
+          "level": 3,
+          "text": "10.1 Cache fundamentals",
+          "anchor": "10-1-cache-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "10.2 Cache headers",
+          "anchor": "10-2-cache-headers"
+        },
+        {
+          "level": 3,
+          "text": "10.3 Cache strategies",
+          "anchor": "10-3-cache-strategies"
+        },
+        {
+          "level": 3,
+          "text": "10.4 CDN caching",
+          "anchor": "10-4-cdn-caching"
+        },
+        {
+          "level": 3,
+          "text": "10.5 Cache troubleshooting",
+          "anchor": "10-5-cache-troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "11. Cookies, Sessions, and Browser State",
+          "anchor": "11-cookies-sessions-and-browser-state"
+        },
+        {
+          "level": 3,
+          "text": "11.1 Cookie fundamentals",
+          "anchor": "11-1-cookie-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "11.2 Session management",
+          "anchor": "11-2-session-management"
+        },
+        {
+          "level": 3,
+          "text": "11.3 Browser storage",
+          "anchor": "11-3-browser-storage"
+        },
+        {
+          "level": 3,
+          "text": "11.4 State security",
+          "anchor": "11-4-state-security"
+        },
+        {
+          "level": 2,
+          "text": "12. Browser Networking and Security Boundaries",
+          "anchor": "12-browser-networking-and-security-boundaries"
+        },
+        {
+          "level": 3,
+          "text": "12.1 Browser networking stack",
+          "anchor": "12-1-browser-networking-stack"
+        },
+        {
+          "level": 3,
+          "text": "12.2 Same-origin policy",
+          "anchor": "12-2-same-origin-policy"
+        },
+        {
+          "level": 3,
+          "text": "12.3 CORS",
+          "anchor": "12-3-cors"
+        },
+        {
+          "level": 3,
+          "text": "12.4 Fetch metadata",
+          "anchor": "12-4-fetch-metadata"
+        },
+        {
+          "level": 3,
+          "text": "12.5 Cross-origin isolation",
+          "anchor": "12-5-cross-origin-isolation"
+        },
+        {
+          "level": 2,
+          "text": "13. Web Security Headers and Browser Defenses",
+          "anchor": "13-web-security-headers-and-browser-defenses"
+        },
+        {
+          "level": 3,
+          "text": "13.1 Transport security headers",
+          "anchor": "13-1-transport-security-headers"
+        },
+        {
+          "level": 3,
+          "text": "13.2 Content Security Policy",
+          "anchor": "13-2-content-security-policy"
+        },
+        {
+          "level": 3,
+          "text": "13.3 Framing and embedding defenses",
+          "anchor": "13-3-framing-and-embedding-defenses"
+        },
+        {
+          "level": 3,
+          "text": "13.4 Content sniffing and referrer controls",
+          "anchor": "13-4-content-sniffing-and-referrer-controls"
+        },
+        {
+          "level": 3,
+          "text": "13.5 Permissions and privacy headers",
+          "anchor": "13-5-permissions-and-privacy-headers"
+        },
+        {
+          "level": 2,
+          "text": "14. Web Authentication and Authorization Protocols",
+          "anchor": "14-web-authentication-and-authorization-protocols"
+        },
+        {
+          "level": 3,
+          "text": "14.1 Authentication fundamentals",
+          "anchor": "14-1-authentication-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "14.2 HTTP authentication",
+          "anchor": "14-2-http-authentication"
+        },
+        {
+          "level": 3,
+          "text": "14.3 OAuth 2.x",
+          "anchor": "14-3-oauth-2-x"
+        },
+        {
+          "level": 3,
+          "text": "14.4 OpenID Connect",
+          "anchor": "14-4-openid-connect"
+        },
+        {
+          "level": 3,
+          "text": "14.5 SAML",
+          "anchor": "14-5-saml"
+        },
+        {
+          "level": 3,
+          "text": "14.6 WebAuthn and passkeys",
+          "anchor": "14-6-webauthn-and-passkeys"
+        },
+        {
+          "level": 3,
+          "text": "14.7 Authorization models",
+          "anchor": "14-7-authorization-models"
+        },
+        {
+          "level": 2,
+          "text": "15. Realtime and Bidirectional Protocols",
+          "anchor": "15-realtime-and-bidirectional-protocols"
+        },
+        {
+          "level": 3,
+          "text": "15.1 Long polling",
+          "anchor": "15-1-long-polling"
+        },
+        {
+          "level": 3,
+          "text": "15.2 Server-Sent Events",
+          "anchor": "15-2-server-sent-events"
+        },
+        {
+          "level": 3,
+          "text": "15.3 WebSocket",
+          "anchor": "15-3-websocket"
+        },
+        {
+          "level": 3,
+          "text": "15.4 WebRTC",
+          "anchor": "15-4-webrtc"
+        },
+        {
+          "level": 3,
+          "text": "15.5 WebTransport",
+          "anchor": "15-5-webtransport"
+        },
+        {
+          "level": 3,
+          "text": "15.6 Realtime infrastructure design",
+          "anchor": "15-6-realtime-infrastructure-design"
+        },
+        {
+          "level": 2,
+          "text": "16. Proxies, Reverse Proxies, and Gateways",
+          "anchor": "16-proxies-reverse-proxies-and-gateways"
+        },
+        {
+          "level": 3,
+          "text": "16.1 Proxy fundamentals",
+          "anchor": "16-1-proxy-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "16.2 Reverse proxy responsibilities",
+          "anchor": "16-2-reverse-proxy-responsibilities"
+        },
+        {
+          "level": 3,
+          "text": "16.3 Common reverse proxies",
+          "anchor": "16-3-common-reverse-proxies"
+        },
+        {
+          "level": 3,
+          "text": "16.4 Proxy headers",
+          "anchor": "16-4-proxy-headers"
+        },
+        {
+          "level": 3,
+          "text": "16.5 API gateways",
+          "anchor": "16-5-api-gateways"
+        },
+        {
+          "level": 2,
+          "text": "17. Load Balancing",
+          "anchor": "17-load-balancing"
+        },
+        {
+          "level": 3,
+          "text": "17.1 Load balancing fundamentals",
+          "anchor": "17-1-load-balancing-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "17.2 Load balancer layers",
+          "anchor": "17-2-load-balancer-layers"
+        },
+        {
+          "level": 3,
+          "text": "17.3 Load balancing algorithms",
+          "anchor": "17-3-load-balancing-algorithms"
+        },
+        {
+          "level": 3,
+          "text": "17.4 Session persistence",
+          "anchor": "17-4-session-persistence"
+        },
+        {
+          "level": 3,
+          "text": "17.5 Load balancer operations",
+          "anchor": "17-5-load-balancer-operations"
+        },
+        {
+          "level": 2,
+          "text": "18. CDN and Edge Infrastructure",
+          "anchor": "18-cdn-and-edge-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "18.1 CDN fundamentals",
+          "anchor": "18-1-cdn-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "18.2 Static asset delivery",
+          "anchor": "18-2-static-asset-delivery"
+        },
+        {
+          "level": 3,
+          "text": "18.3 Dynamic acceleration",
+          "anchor": "18-3-dynamic-acceleration"
+        },
+        {
+          "level": 3,
+          "text": "18.4 Edge compute",
+          "anchor": "18-4-edge-compute"
+        },
+        {
+          "level": 3,
+          "text": "18.5 CDN security",
+          "anchor": "18-5-cdn-security"
+        },
+        {
+          "level": 2,
+          "text": "19. Web Servers and Application Infrastructure",
+          "anchor": "19-web-servers-and-application-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "19.1 Web server fundamentals",
+          "anchor": "19-1-web-server-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "19.2 Common web servers",
+          "anchor": "19-2-common-web-servers"
+        },
+        {
+          "level": 3,
+          "text": "19.3 Application server patterns",
+          "anchor": "19-3-application-server-patterns"
+        },
+        {
+          "level": 3,
+          "text": "19.4 Static hosting",
+          "anchor": "19-4-static-hosting"
+        },
+        {
+          "level": 3,
+          "text": "19.5 Serverless web infrastructure",
+          "anchor": "19-5-serverless-web-infrastructure"
+        },
+        {
+          "level": 2,
+          "text": "20. API Protocols and Data Exchange",
+          "anchor": "20-api-protocols-and-data-exchange"
+        },
+        {
+          "level": 3,
+          "text": "20.1 REST over HTTP",
+          "anchor": "20-1-rest-over-http"
+        },
+        {
+          "level": 3,
+          "text": "20.2 GraphQL transport",
+          "anchor": "20-2-graphql-transport"
+        },
+        {
+          "level": 3,
+          "text": "20.3 gRPC",
+          "anchor": "20-3-grpc"
+        },
+        {
+          "level": 3,
+          "text": "20.4 Webhooks",
+          "anchor": "20-4-webhooks"
+        },
+        {
+          "level": 3,
+          "text": "20.5 Data formats",
+          "anchor": "20-5-data-formats"
+        },
+        {
+          "level": 3,
+          "text": "20.6 API contracts",
+          "anchor": "20-6-api-contracts"
+        },
+        {
+          "level": 2,
+          "text": "21. Email and Adjacent Web Protocols",
+          "anchor": "21-email-and-adjacent-web-protocols"
+        },
+        {
+          "level": 3,
+          "text": "21.1 Email transport",
+          "anchor": "21-1-email-transport"
+        },
+        {
+          "level": 3,
+          "text": "21.2 Email authentication",
+          "anchor": "21-2-email-authentication"
+        },
+        {
+          "level": 3,
+          "text": "21.3 Email retrieval",
+          "anchor": "21-3-email-retrieval"
+        },
+        {
+          "level": 3,
+          "text": "21.4 Web push",
+          "anchor": "21-4-web-push"
+        },
+        {
+          "level": 2,
+          "text": "22. Web Performance Infrastructure",
+          "anchor": "22-web-performance-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "22.1 Performance fundamentals",
+          "anchor": "22-1-performance-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "22.2 Core Web Vitals infrastructure impact",
+          "anchor": "22-2-core-web-vitals-infrastructure-impact"
+        },
+        {
+          "level": 3,
+          "text": "22.3 Resource delivery optimization",
+          "anchor": "22-3-resource-delivery-optimization"
+        },
+        {
+          "level": 3,
+          "text": "22.4 Network-level optimization",
+          "anchor": "22-4-network-level-optimization"
+        },
+        {
+          "level": 3,
+          "text": "22.5 Load testing",
+          "anchor": "22-5-load-testing"
+        },
+        {
+          "level": 2,
+          "text": "23. Web Security Infrastructure",
+          "anchor": "23-web-security-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "23.1 Common web risks",
+          "anchor": "23-1-common-web-risks"
+        },
+        {
+          "level": 3,
+          "text": "23.2 WAF",
+          "anchor": "23-2-waf"
+        },
+        {
+          "level": 3,
+          "text": "23.3 DDoS protection",
+          "anchor": "23-3-ddos-protection"
+        },
+        {
+          "level": 3,
+          "text": "23.4 Bot management",
+          "anchor": "23-4-bot-management"
+        },
+        {
+          "level": 3,
+          "text": "23.5 Security scanning",
+          "anchor": "23-5-security-scanning"
+        },
+        {
+          "level": 3,
+          "text": "23.6 Incident response",
+          "anchor": "23-6-incident-response"
+        },
+        {
+          "level": 2,
+          "text": "24. Observability for Web Infrastructure",
+          "anchor": "24-observability-for-web-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "24.1 Logging",
+          "anchor": "24-1-logging"
+        },
+        {
+          "level": 3,
+          "text": "24.2 Metrics",
+          "anchor": "24-2-metrics"
+        },
+        {
+          "level": 3,
+          "text": "24.3 Distributed tracing",
+          "anchor": "24-3-distributed-tracing"
+        },
+        {
+          "level": 3,
+          "text": "24.4 Synthetic monitoring",
+          "anchor": "24-4-synthetic-monitoring"
+        },
+        {
+          "level": 3,
+          "text": "24.5 Real user monitoring",
+          "anchor": "24-5-real-user-monitoring"
+        },
+        {
+          "level": 3,
+          "text": "24.6 Alerting",
+          "anchor": "24-6-alerting"
+        },
+        {
+          "level": 2,
+          "text": "25. Deployment Infrastructure",
+          "anchor": "25-deployment-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "25.1 Deployment models",
+          "anchor": "25-1-deployment-models"
+        },
+        {
+          "level": 3,
+          "text": "25.2 Release strategies",
+          "anchor": "25-2-release-strategies"
+        },
+        {
+          "level": 3,
+          "text": "25.3 Infrastructure as Code",
+          "anchor": "25-3-infrastructure-as-code"
+        },
+        {
+          "level": 3,
+          "text": "25.4 CI/CD for web infrastructure",
+          "anchor": "25-4-ci-cd-for-web-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "25.5 Configuration and secrets",
+          "anchor": "25-5-configuration-and-secrets"
+        },
+        {
+          "level": 2,
+          "text": "26. Kubernetes and Cloud-Native Web Networking",
+          "anchor": "26-kubernetes-and-cloud-native-web-networking"
+        },
+        {
+          "level": 3,
+          "text": "26.1 Kubernetes web primitives",
+          "anchor": "26-1-kubernetes-web-primitives"
+        },
+        {
+          "level": 3,
+          "text": "26.2 Kubernetes ingress",
+          "anchor": "26-2-kubernetes-ingress"
+        },
+        {
+          "level": 3,
+          "text": "26.3 Gateway API",
+          "anchor": "26-3-gateway-api"
+        },
+        {
+          "level": 3,
+          "text": "26.4 Service mesh",
+          "anchor": "26-4-service-mesh"
+        },
+        {
+          "level": 3,
+          "text": "26.5 Cloud load balancing",
+          "anchor": "26-5-cloud-load-balancing"
+        },
+        {
+          "level": 2,
+          "text": "27. Reliability Engineering for Web Infrastructure",
+          "anchor": "27-reliability-engineering-for-web-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "27.1 Availability fundamentals",
+          "anchor": "27-1-availability-fundamentals"
+        },
+        {
+          "level": 3,
+          "text": "27.2 Resilience patterns",
+          "anchor": "27-2-resilience-patterns"
+        },
+        {
+          "level": 3,
+          "text": "27.3 Multi-region architecture",
+          "anchor": "27-3-multi-region-architecture"
+        },
+        {
+          "level": 3,
+          "text": "27.4 Capacity planning",
+          "anchor": "27-4-capacity-planning"
+        },
+        {
+          "level": 3,
+          "text": "27.5 Incident management",
+          "anchor": "27-5-incident-management"
+        },
+        {
+          "level": 2,
+          "text": "28. Protocol and Infrastructure Troubleshooting",
+          "anchor": "28-protocol-and-infrastructure-troubleshooting"
+        },
+        {
+          "level": 3,
+          "text": "28.1 DNS troubleshooting checklist",
+          "anchor": "28-1-dns-troubleshooting-checklist"
+        },
+        {
+          "level": 3,
+          "text": "28.2 TCP troubleshooting checklist",
+          "anchor": "28-2-tcp-troubleshooting-checklist"
+        },
+        {
+          "level": 3,
+          "text": "28.3 TLS troubleshooting checklist",
+          "anchor": "28-3-tls-troubleshooting-checklist"
+        },
+        {
+          "level": 3,
+          "text": "28.4 HTTP troubleshooting checklist",
+          "anchor": "28-4-http-troubleshooting-checklist"
+        },
+        {
+          "level": 3,
+          "text": "28.5 CDN troubleshooting checklist",
+          "anchor": "28-5-cdn-troubleshooting-checklist"
+        },
+        {
+          "level": 3,
+          "text": "28.6 Load balancer troubleshooting checklist",
+          "anchor": "28-6-load-balancer-troubleshooting-checklist"
+        },
+        {
+          "level": 2,
+          "text": "29. Current Standards and Ecosystem Awareness",
+          "anchor": "29-current-standards-and-ecosystem-awareness"
+        },
+        {
+          "level": 3,
+          "text": "29.1 Core protocol standards",
+          "anchor": "29-1-core-protocol-standards"
+        },
+        {
+          "level": 3,
+          "text": "29.2 Browser platform awareness",
+          "anchor": "29-2-browser-platform-awareness"
+        },
+        {
+          "level": 3,
+          "text": "29.3 Security standards and guidance",
+          "anchor": "29-3-security-standards-and-guidance"
+        },
+        {
+          "level": 3,
+          "text": "29.4 Infrastructure ecosystem",
+          "anchor": "29-4-infrastructure-ecosystem"
+        },
+        {
+          "level": 2,
+          "text": "30. Learning Path",
+          "anchor": "30-learning-path"
+        },
+        {
+          "level": 3,
+          "text": "30.1 Phase 1 — Web networking basics",
+          "anchor": "30-1-phase-1-web-networking-basics"
+        },
+        {
+          "level": 3,
+          "text": "30.2 Phase 2 — HTTP and browser infrastructure",
+          "anchor": "30-2-phase-2-http-and-browser-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "30.3 Phase 3 — Production web infrastructure",
+          "anchor": "30-3-phase-3-production-web-infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "30.4 Phase 4 — Advanced protocols",
+          "anchor": "30-4-phase-4-advanced-protocols"
+        },
+        {
+          "level": 3,
+          "text": "30.5 Phase 5 — Security and reliability",
+          "anchor": "30-5-phase-5-security-and-reliability"
+        },
+        {
+          "level": 3,
+          "text": "30.6 Phase 6 — Cloud-native infrastructure",
+          "anchor": "30-6-phase-6-cloud-native-infrastructure"
+        },
+        {
+          "level": 2,
+          "text": "31. Practical Projects",
+          "anchor": "31-practical-projects"
+        },
+        {
+          "level": 3,
+          "text": "31.1 Project 1 — DNS and TLS Lab",
+          "anchor": "31-1-project-1-dns-and-tls-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.2 Project 2 — HTTP Server and Reverse Proxy",
+          "anchor": "31-2-project-2-http-server-and-reverse-proxy"
+        },
+        {
+          "level": 3,
+          "text": "31.3 Project 3 — HTTP Caching Lab",
+          "anchor": "31-3-project-3-http-caching-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.4 Project 4 — Load Balancing Lab",
+          "anchor": "31-4-project-4-load-balancing-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.5 Project 5 — CDN and Edge Security Lab",
+          "anchor": "31-5-project-5-cdn-and-edge-security-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.6 Project 6 — WebSocket and SSE Lab",
+          "anchor": "31-6-project-6-websocket-and-sse-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.7 Project 7 — OAuth and OIDC Lab",
+          "anchor": "31-7-project-7-oauth-and-oidc-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.8 Project 8 — Kubernetes Web Ingress Lab",
+          "anchor": "31-8-project-8-kubernetes-web-ingress-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.9 Project 9 — Observability Lab",
+          "anchor": "31-9-project-9-observability-lab"
+        },
+        {
+          "level": 3,
+          "text": "31.10 Project 10 — Web Infrastructure Incident Drill",
+          "anchor": "31-10-project-10-web-infrastructure-incident-drill"
+        },
+        {
+          "level": 2,
+          "text": "32. Competency Checklist",
+          "anchor": "32-competency-checklist"
+        },
+        {
+          "level": 3,
+          "text": "32.1 Junior web infrastructure competency",
+          "anchor": "32-1-junior-web-infrastructure-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.2 Mid-level web infrastructure competency",
+          "anchor": "32-2-mid-level-web-infrastructure-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.3 Senior web infrastructure competency",
+          "anchor": "32-3-senior-web-infrastructure-competency"
+        },
+        {
+          "level": 3,
+          "text": "32.4 Advanced web infrastructure competency",
+          "anchor": "32-4-advanced-web-infrastructure-competency"
+        }
+      ],
+      "searchText": "web infrastructure and protocols roadmap — fundamentals to advanced dev web web infrastructure and protocols roadmap — fundamentals to advanced 1. prerequisites 1.1 networking fundamentals 1.2 linux and operating system fundamentals 1.3 security fundamentals 1.4 cloud and infrastructure fundamentals 1.5 tooling fundamentals 2. web infrastructure mental model 2.1 request lifecycle 2.2 web infrastructure components 2.3 client-side infrastructure concerns 2.4 server-side infrastructure concerns 2.5 edge infrastructure concerns 3. uri, url, origin, and resource identity 3.1 uri and url basics 3.2 http and https schemes 3.3 origin model 3.4 resource identity 4. dns 4.1 dns fundamentals 4.2 dns record types 4.3 dns resolution flow 4.4 dns transport 4.5 dns security 4.6 dns operations 4.7 dns troubleshooting 5. ip networking for web infrastructure 5.1 ip fundamentals 5.2 ipv4 5.3 ipv6 5.4 routing 5.5 web-facing network design 5.6 network troubleshooting 6. tcp, udp, and transport behavior 6.1 tcp fundamentals 6.2 tcp states 6.3 tcp performance 6.4 udp fundamentals 6.5 socket-level concerns 6.6 transport troubleshooting 7. tls, pki, and https 7.1 tls fundamentals 7.2 tls versions 7.3 certificates 7.4 certificate automation 7.5 https operations 7.6 tls troubleshooting 8. http semantics 8.1 http fundamentals 8.2 http methods 8.3 http status codes 8.4 http headers 8.5 http body and representation 8.6 http content negotiation 8.7 http conditional requests 9. http versions and evolution 9.1 http/0.9 and http/1.0 9.2 http/1.1 9.3 http/2 9.4 http/3 9.5 quic 9.6 protocol negotiation 10. http caching 10.1 cache fundamentals 10.2 cache headers 10.3 cache strategies 10.4 cdn caching 10.5 cache troubleshooting 11. cookies, sessions, and browser state 11.1 cookie fundamentals 11.2 session management 11.3 browser storage 11.4 state security 12. browser networking and security boundaries 12.1 browser networking stack 12.2 same-origin policy 12.3 cors 12.4 fetch metadata 12.5 cross-origin isolation 13. web security headers and browser defenses 13.1 transport security headers 13.2 content security policy 13.3 framing and embedding defenses 13.4 content sniffing and referrer controls 13.5 permissions and privacy headers 14. web authentication and authorization protocols 14.1 authentication fundamentals 14.2 http authentication 14.3 oauth 2.x 14.4 openid connect 14.5 saml 14.6 webauthn and passkeys 14.7 authorization models 15. realtime and bidirectional protocols 15.1 long polling 15.2 server-sent events 15.3 websocket 15.4 webrtc 15.5 webtransport 15.6 realtime infrastructure design 16. proxies, reverse proxies, and gateways 16.1 proxy fundamentals 16.2 reverse proxy responsibilities 16.3 common reverse proxies 16.4 proxy headers 16.5 api gateways 17. load balancing 17.1 load balancing fundamentals 17.2 load balancer layers 17.3 load balancing algorithms 17.4 session persistence 17.5 load balancer operations 18. cdn and edge infrastructure 18.1 cdn fundamentals 18.2 static asset delivery 18.3 dynamic acceleration 18.4 edge compute 18.5 cdn security 19. web servers and application infrastructure 19.1 web server fundamentals 19.2 common web servers 19.3 application server patterns 19.4 static hosting 19.5 serverless web infrastructure 20. api protocols and data exchange 20.1 rest over http 20.2 graphql transport 20.3 grpc 20.4 webhooks 20.5 data formats 20.6 api contracts 21. email and adjacent web protocols 21.1 email transport 21.2 email authentication 21.3 email retrieval 21.4 web push 22. web performance infrastructure 22.1 performance fundamentals 22.2 core web vitals infrastructure impact 22.3 resource delivery optimization 22.4 network-level optimization 22.5 load testing 23. web security infrastructure 23.1 common web risks 23.2 waf 23.3 ddos protection 23.4 bot management 23.5 security scanning 23.6 incident response 24. observability for web infrastructure 24.1 logging 24.2 metrics 24.3 distributed tracing 24.4 synthetic monitoring 24.5 real user monitoring 24.6 alerting 25. deployment infrastructure 25.1 deployment models 25.2 release strategies 25.3 infrastructure as code 25.4 ci/cd for web infrastructure 25.5 configuration and secrets 26. kubernetes and cloud-native web networking 26.1 kubernetes web primitives 26.2 kubernetes ingress 26.3 gateway api 26.4 service mesh 26.5 cloud load balancing 27. reliability engineering for web infrastructure 27.1 availability fundamentals 27.2 resilience patterns 27.3 multi-region architecture 27.4 capacity planning 27.5 incident management 28. protocol and infrastructure troubleshooting 28.1 dns troubleshooting checklist 28.2 tcp troubleshooting checklist 28.3 tls troubleshooting checklist 28.4 http troubleshooting checklist 28.5 cdn troubleshooting checklist 28.6 load balancer troubleshooting checklist 29. current standards and ecosystem awareness 29.1 core protocol standards 29.2 browser platform awareness 29.3 security standards and guidance 29.4 infrastructure ecosystem 30. learning path 30.1 phase 1 — web networking basics 30.2 phase 2 — http and browser infrastructure 30.3 phase 3 — production web infrastructure 30.4 phase 4 — advanced protocols 30.5 phase 5 — security and reliability 30.6 phase 6 — cloud-native infrastructure 31. practical projects 31.1 project 1 — dns and tls lab 31.2 project 2 — http server and reverse proxy 31.3 project 3 — http caching lab 31.4 project 4 — load balancing lab 31.5 project 5 — cdn and edge security lab 31.6 project 6 — websocket and sse lab 31.7 project 7 — oauth and oidc lab 31.8 project 8 — kubernetes web ingress lab 31.9 project 9 — observability lab 31.10 project 10 — web infrastructure incident drill 32. competency checklist 32.1 junior web infrastructure competency 32.2 mid-level web infrastructure competency 32.3 senior web infrastructure competency 32.4 advanced web infrastructure competency"
+    },
+    {
       "id": "etc-anime-list",
       "title": "Anime List",
       "summary": "document.addEventListener('DOMContentLoaded', () => { const sectionsContainer = document.getElementById('anime-sections'); const counterSpan = document.getElementById('anime-counter-value'); const toggleAllButton = document.getElementById('toggle-all'); const searchInput = document.getElementById('anime-search'); const dataUrl = '/assets/data/anime_list.json';",
@@ -12599,6 +13669,14 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "web",
+          "label": "Web",
+          "items": [
+            "dev-web-roadmap-web-infrastructure-protocols"
+          ],
+          "children": []
         }
       ]
     },
@@ -12666,7 +13744,7 @@
       {
         "slug": "dev",
         "label": "Engineering",
-        "count": 62
+        "count": 63
       },
       {
         "slug": "etc",
@@ -12748,6 +13826,11 @@
       {
         "slug": "trip",
         "label": "Trip",
+        "count": 1
+      },
+      {
+        "slug": "web",
+        "label": "Web",
         "count": 1
       }
     ],

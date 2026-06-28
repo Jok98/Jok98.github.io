@@ -547,6 +547,17 @@
 
     ]
   }
+,
+  {
+    "name": "web",
+    "contents": [
+      {
+        "content": "roadmap_web_infrastructure_protocols.md",
+        "link": "notes/dev/web/roadmap_web_infrastructure_protocols"
+      }
+    ],
+    "subsections": []
+  }
 
     ]
   }
@@ -642,12 +653,6 @@
   }
 
     ]
-  }
-,
-  {
-    "name": "uni",
-    "contents": [],
-    "subsections": []
   }
 
 ]
