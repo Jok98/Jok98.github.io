@@ -1,6 +1,18 @@
 ---
 layout: page
+title: Study Books by Macro Topic
+navTitle: Books
+summary: Curated study books grouped by computer science, systems, Linux, C, algorithms, networking, databases, design, security, and infrastructure topics.
+area: dev
+topic: books
+tags:
+  - books
+  - study-path
+  - computer-science
+  - systems
+order: 10
 ---
+
 # Books
 
 ## 1) Computer architecture and systems

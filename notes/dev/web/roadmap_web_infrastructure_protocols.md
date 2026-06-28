@@ -1,6 +1,20 @@
 ---
 layout: page
+title: Web Infrastructure and Protocols Roadmap
+navTitle: Web Infrastructure
+summary: Roadmap for learning DNS, HTTP, TLS, browsers, caching, proxies, CDNs, security, deployment, observability, and web reliability.
+area: dev
+topic: web
+tags:
+  - web
+  - http
+  - dns
+  - tls
+  - infrastructure
+  - roadmap
+order: 10
 ---
+
 # Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Katakana
+navTitle: Katakana
+summary: Japanese kana practice sheet for katakana reading and writing.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - kana
+  - katakana
+  - writing
+order: 60
 ---
 
 |     | ア (a)  | イ (i)   | ウ (u)   | エ (e)  | オ (o)  |

@@ -1,6 +1,19 @@
 ---
 layout: page
+title: Data Structures and Algorithms Roadmap
+navTitle: DSA
+summary: Roadmap for learning complexity analysis, core data structures, algorithms, problem-solving patterns, and practical DSA projects.
+area: dev
+topic: dsa
+tags:
+  - dsa
+  - algorithms
+  - data-structures
+  - problem-solving
+  - roadmap
+order: 10
 ---
+
 # Data Structures and Algorithms Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

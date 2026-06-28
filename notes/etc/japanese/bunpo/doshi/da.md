@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Japanese Copula Da
+navTitle: Da Copula
+summary: Japanese grammar note about the copula da/desu and present, past, negative, and polite forms.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - grammar
+  - verbs
+  - copula
+order: 30
 ---
 
 # だ (Essere)

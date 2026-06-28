@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Japanese Irregular Verbs
+navTitle: Irregular Verbs
+summary: Japanese grammar note for irregular verbs such as suru and kuru.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - grammar
+  - verbs
+  - irregular
+order: 40
 ---
 
 # Irregular Verbs

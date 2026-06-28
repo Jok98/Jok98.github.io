@@ -110,6 +110,99 @@ layout: page
 # Note Title
 ```
 
+## Note Metadata
+
+Use front matter to control how a note appears in Jekyll, navigation, filters,
+search, and generated indexes.
+
+Recommended complete template:
+
+```markdown
+---
+layout: page
+title: Kubernetes Roadmap
+navTitle: Kubernetes
+summary: Roadmap for learning Kubernetes from fundamentals to advanced topics.
+area: dev
+topic: devops
+tags:
+  - kubernetes
+  - devops
+  - roadmap
+order: 10
+---
+
+# Kubernetes Roadmap - Fundamentals to Advanced
+```
+
+Supported metadata:
+
+| Field | Required | Purpose |
+| --- | --- | --- |
+| `layout` | Yes | Jekyll layout. Use `page` for normal notes. |
+| `title` | Recommended | Main metadata title. Used by the generated content index before the first Markdown H1. |
+| `navTitle` | Optional | Short title for navigation/search. Takes precedence over `title`. |
+| `nav_title` | Optional | Snake-case alias for `navTitle`. |
+| `summary` | Recommended | Short description shown in navigation contexts and included in search text. |
+| `area` | Optional | High-level grouping/filter, for example `dev`, `etc`, or `uni`. Defaults to the first folder under `notes/`. |
+| `topic` | Optional | Topic grouping/filter, for example `java`, `devops`, `database`. Defaults to the second folder under `notes/` when available. |
+| `tags` | Optional | Search keywords. Use a YAML list or an inline list. |
+| `order` | Optional | Numeric sort key inside the same group. Lower numbers appear first. |
+| `permalink` | Optional | Custom Jekyll URL. Use only when a note needs a non-standard URL. |
+
+Title precedence in `assets/data/content-index.json` is:
+
+```text
+navTitle
+nav_title
+title
+first Markdown H1
+humanized file name
+```
+
+This means:
+
+- Use `title` when the metadata title should drive the site navigation.
+- Use `navTitle` when the page title can be long but the sidebar/search label
+  should be shorter.
+- Keep the first `# H1` for the readable title inside the page body.
+
+Examples:
+
+```markdown
+---
+layout: page
+title: Java Roadmap
+summary: Java learning path from fundamentals to modern JVM topics.
+area: dev
+topic: java
+tags: [java, jvm, roadmap]
+order: 20
+---
+
+# Java Roadmap - Basics to Advanced
+```
+
+```markdown
+---
+layout: page
+title: Sistemi di Supporto alle Decisioni
+navTitle: Decision Support Systems
+summary: University notes about decision support systems.
+area: uni
+topic: sistemi-supporto-decisioni
+tags:
+  - university
+  - decision-support
+order: 10
+---
+
+# Sistemi di Supporto alle Decisioni
+```
+
+Keep metadata values simple. The local parser supports scalar values and simple
+lists, but it is not a full YAML parser for nested objects.
+
 After adding, moving, or renaming notes:
 
 ```shell

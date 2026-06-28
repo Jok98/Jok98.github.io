@@ -1,6 +1,20 @@
 ---
 layout: page
+title: Database Roadmap
+navTitle: Database
+summary: Roadmap for learning database fundamentals, SQL, modeling, indexing, transactions, storage engines, distributed databases, and operations.
+area: dev
+topic: database
+tags:
+  - database
+  - sql
+  - postgresql
+  - mysql
+  - nosql
+  - roadmap
+order: 10
 ---
+
 # Database Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

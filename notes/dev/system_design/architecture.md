@@ -1,7 +1,18 @@
 ---
 layout: default
 title: Microservices Architecture
+navTitle: Microservices Architecture
+summary: Notes about microservices architecture concepts, service boundaries, communication, deployment, and distributed-system trade-offs.
+area: dev
+topic: system-design
+tags:
+  - architecture
+  - microservices
+  - distributed-systems
+  - system-design
+order: 20
 ---
+
 ```tree
 Microservices Architecture
 |

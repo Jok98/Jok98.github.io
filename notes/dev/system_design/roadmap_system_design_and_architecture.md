@@ -1,6 +1,19 @@
 ---
 layout: page
+title: System Design and Software Architecture Roadmap
+navTitle: System Design
+summary: Roadmap for learning system design, software architecture, distributed systems, scalability, reliability, data architecture, cloud, and governance.
+area: dev
+topic: system-design
+tags:
+  - system-design
+  - software-architecture
+  - distributed-systems
+  - scalability
+  - roadmap
+order: 10
 ---
+
 # System Design and Software Architecture Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Japanese Godan U Verbs
+navTitle: Godan U Verbs
+summary: Japanese grammar note for godan u-ending verbs and their present, past, negative, and polite forms.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - grammar
+  - verbs
+  - godan
+order: 20
 ---
 
 # Godan (五段)  -う

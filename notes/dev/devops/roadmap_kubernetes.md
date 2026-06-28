@@ -1,6 +1,19 @@
 ---
 layout: page
+title: Kubernetes Roadmap
+navTitle: Kubernetes
+summary: Roadmap for learning Kubernetes fundamentals, architecture, workloads, networking, storage, security, observability, operations, and platform engineering.
+area: dev
+topic: devops
+tags:
+  - kubernetes
+  - devops
+  - cloud-native
+  - platform-engineering
+  - roadmap
+order: 10
 ---
+
 # Kubernetes Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

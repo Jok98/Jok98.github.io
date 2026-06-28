@@ -1,6 +1,15 @@
 ---
 layout: cv
 title: Resume
+navTitle: Resume
+summary: Software Engineer CV with experience, skills, education, selected projects, and international background.
+area: personal
+topic: cv
+tags:
+  - cv
+  - resume
+  - software-engineer
+order: 10
 permalink: /cv/
 ---
 

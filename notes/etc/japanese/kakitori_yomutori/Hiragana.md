@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Hiragana
+navTitle: Hiragana
+summary: Japanese kana practice sheet for hiragana reading and writing.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - kana
+  - hiragana
+  - writing
+order: 50
 ---
 
 |     | あ (a)  | い (i)   | う (u)   | え (e)  | お (o)  |

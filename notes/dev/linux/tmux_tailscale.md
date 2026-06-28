@@ -1,6 +1,17 @@
 ---
 layout: default
-title: Tmux e Tailscale
+title: Tmux and Tailscale
+navTitle: Tmux and Tailscale
+summary: Practical guide for stable remote work with SSH, tmux sessions, and Tailscale connectivity.
+area: dev
+topic: linux
+tags:
+  - linux
+  - ssh
+  - tmux
+  - tailscale
+  - remote-work
+order: 30
 ---
 
 # Tmux e Tailscale

@@ -1,3 +1,19 @@
+---
+layout: page
+title: Decision Support Systems Roadmap
+navTitle: Decision Support Systems
+summary: University roadmap for decision support systems, database review, recommender systems, data warehousing, OLAP, and analytics concepts.
+area: uni
+topic: sistemi-supporto-decisioni
+tags:
+  - university
+  - decision-support-systems
+  - databases
+  - recommender-systems
+  - data-warehouse
+order: 10
+---
+
 # 1. Introduction and Database Review
 
 ## 1.1 Course Structure

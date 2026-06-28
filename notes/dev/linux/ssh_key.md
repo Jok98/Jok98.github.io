@@ -1,7 +1,18 @@
 ---
 layout: default
 title: SSH Key
+navTitle: SSH Key
+summary: Quick reference for creating and using ED25519 SSH keys.
+area: dev
+topic: linux
+tags:
+  - linux
+  - ssh
+  - security
+  - keys
+order: 20
 ---
+
 ## SSH Key
 
 | Algorithm     | Public key         | Private key       |

@@ -1,6 +1,19 @@
 ---
 layout: page
+title: Linux Kernel Roadmap
+navTitle: Linux Kernel
+summary: Roadmap for learning Linux kernel architecture, boot, scheduling, memory, filesystems, networking, drivers, tracing, and kernel development.
+area: dev
+topic: linux
+tags:
+  - linux
+  - kernel
+  - operating-systems
+  - systems
+  - roadmap
+order: 10
 ---
+
 # Linux Kernel Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

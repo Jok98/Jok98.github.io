@@ -1,6 +1,20 @@
 ---
 layout: page
+title: Artificial Intelligence Roadmap
+navTitle: Artificial Intelligence
+summary: Roadmap for learning AI fundamentals, machine learning, deep learning, LLMs, agents, evaluation, safety, and production AI systems.
+area: dev
+topic: ai
+tags:
+  - ai
+  - machine-learning
+  - deep-learning
+  - llm
+  - agents
+  - roadmap
+order: 10
 ---
+
 # Artificial Intelligence Roadmap — Fundamentals to Advanced
 
 ## 1. Prerequisites

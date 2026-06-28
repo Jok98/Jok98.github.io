@@ -1,6 +1,15 @@
 ---
 layout: anime
 title: Anime List
+navTitle: Anime List
+summary: Personal anime watch list organized by status and searchable sections.
+area: etc
+topic: anime-list
+tags:
+  - anime
+  - watchlist
+  - personal
+order: 10
 ---
 
 <h2 class="anime-counter">Anime Counter: <span id="anime-counter-value">0</span></h2>

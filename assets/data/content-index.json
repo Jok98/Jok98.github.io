@@ -4,8 +4,8 @@
   "items": [
     {
       "id": "dev-ai-roadmap-artificial-intelligence",
-      "title": "Artificial Intelligence Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "Artificial Intelligence",
+      "summary": "Roadmap for learning AI fundamentals, machine learning, deep learning, LLMs, agents, evaluation, safety, and production AI systems.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -14,8 +14,15 @@
         "slug": "ai",
         "label": "Ai"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "ai",
+        "machine-learning",
+        "deep-learning",
+        "llm",
+        "agents",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/ai/roadmap_artificial_intelligence.md",
       "url": "/notes/dev/ai/roadmap_artificial_intelligence/",
@@ -1325,12 +1332,12 @@
           "anchor": "38-5-ai-safety-and-governance-competency"
         }
       ],
-      "searchText": "artificial intelligence roadmap — fundamentals to advanced dev ai artificial intelligence roadmap — fundamentals to advanced 1. prerequisites 1.1 programming fundamentals 1.2 software engineering fundamentals 1.3 data fundamentals 1.4 computer science fundamentals 1.5 hardware fundamentals 2. ai landscape 2.1 artificial intelligence fundamentals 2.2 core ai disciplines 2.3 ai system types 2.4 ai development lifecycle 2.5 ai roles 3. mathematics for ai 3.1 linear algebra 3.2 calculus 3.3 probability 3.4 statistics 3.5 optimization 3.6 information theory 4. python ai ecosystem 4.1 core libraries 4.2 deep learning frameworks 4.3 nlp and llm libraries 4.4 computer vision libraries 4.5 mlops libraries 4.6 inference libraries 5. data engineering for ai 5.1 data collection 5.2 data storage 5.3 data formats 5.4 data cleaning 5.5 data labeling 5.6 data pipelines 6. exploratory data analysis 6.1 dataset understanding 6.2 visualization 6.3 statistical analysis 6.4 data leakage analysis 7. classical machine learning 7.1 ml fundamentals 7.2 supervised learning 7.3 unsupervised learning 7.4 semi-supervised and weakly supervised learning 7.5 feature engineering 7.6 model selection 7.7 classical ml evaluation 8. deep learning foundations 8.1 neural network basics 8.2 activation functions 8.3 loss functions 8.4 optimization in deep learning 8.5 regularization 8.6 neural network architectures 8.7 training diagnostics 9. computer vision 9.1 image fundamentals 9.2 cnns 9.3 vision architectures 9.4 vision tasks 9.5 object detection 9.6 image segmentation 9.7 vision data engineering 10. natural language processing 10.1 text fundamentals 10.2 tokenization 10.3 classical nlp 10.4 word embeddings 10.5 sequence models 10.6 nlp evaluation 11. transformers 11.1 transformer fundamentals 11.2 attention mechanisms 11.3 transformer model families 11.4 training transformers 11.5 transformer limitations 12. large language models 12.1 llm fundamentals 12.2 llm capabilities 12.3 llm limitations 12.4 llm model selection 12.5 llm apis 12.6 llm decoding 13. prompt engineering 13.1 prompt fundamentals 13.2 prompting techniques 13.3 structured output 13.4 prompt evaluation 13.5 prompt security 14. retrieval-augmented generation 14.1 rag fundamentals 14.2 document ingestion 14.3 chunking strategies 14.4 embeddings 14.5 vector databases 14.6 retrieval strategies 14.7 rag evaluation 14.8 advanced rag 15. ai agents 15.1 agent fundamentals 15.2 agent architectures 15.3 tool use 15.4 model context protocol 15.5 agent memory 15.6 agent planning 15.7 agent evaluation 15.8 agent safety 16. multimodal ai 16.1 multimodal fundamentals 16.2 vision-language models 16.3 audio ai 16.4 video ai 16.5 multimodal rag 17. generative ai 17.1 generative modeling fundamentals 17.2 diffusion models 17.3 generative adversarial networks 17.4 variational autoencoders 17.5 generative ai product patterns 17.6 generative ai risks 18. fine-tuning and adaptation 18.1 fine-tuning fundamentals 18.2 parameter-efficient fine-tuning 18.3 llm fine-tuning data 18.4 alignment methods 18.5 fine-tuning evaluation 18.6 fine-tuning operations 19. reinforcement learning 19.1 rl fundamentals 19.2 classical rl 19.3 deep rl 19.4 rlhf and preference optimization 19.5 rl applications 20. recommendation systems 20.1 recommender fundamentals 20.2 collaborative filtering 20.3 content-based recommendation 20.4 deep recommenders 20.5 recommender evaluation 21. graph machine learning 21.1 graph fundamentals 21.2 graph neural networks 21.3 graph ml tasks 21.4 knowledge graphs and ai 22. time-series ai 22.1 time-series fundamentals 22.2 classical time-series models 22.3 deep time-series models 22.4 time-series tasks 22.5 time-series evaluation 23. evaluation and benchmarking 23.1 evaluation fundamentals 23.2 ml evaluation 23.3 llm evaluation 23.4 rag evaluation 23.5 agent evaluation 23.6 evaluation methods 23.7 evaluation risks 24. ai safety and security 24.1 ai safety fundamentals 24.2 llm security risks 24.3 adversarial ml 24.4 guardrails 24.5 ai application security 24.6 privacy 24.7 responsible ai 25. explainability and interpretability 25.1 explainability fundamentals 25.2 classical ml explainability 25.3 deep learning interpretability 25.4 llm interpretability 26. mlops 26.1 mlops fundamentals 26.2 experiment management 26.3 feature stores 26.4 model registry 26.5 ml pipelines 26.6 model monitoring 27. llmops and agentops 27.1 llmops fundamentals 27.2 prompt operations 27.3 llm observability 27.4 agent operations 27.5 model gateway 28. deployment and inference 28.1 deployment patterns 28.2 model serving 28.3 llm inference optimization 28.4 quantization 28.5 distillation and compression 28.6 edge ai deployment 29. ai infrastructure 29.1 compute infrastructure 29.2 distributed training 29.3 storage infrastructure 29.4 network infrastructure 29.5 kubernetes for ai 29.6 cost optimization 30. ai product engineering 30.1 product discovery 30.2 ai ux 30.3 human-in-the-loop workflows 30.4 ai product metrics 30.5 ai product risks 31. ai governance and compliance 31.1 governance fundamentals 31.2 documentation artifacts 31.3 ai risk management 31.4 regulatory awareness 31.5 ai audit readiness 32. ai ethics and societal impact 32.1 fairness 32.2 transparency 32.3 accountability 32.4 environmental impact 33. ai for software engineering 33.1 code intelligence 33.2 ai coding agents 33.3 code rag 33.4 ai-assisted sdlc 33.5 risks in ai coding 34. ai research literacy 34.1 reading papers 34.2 research evaluation 34.3 keeping up to date 34.4 reproducibility 35. current ecosystem awareness 35.1 core ml ecosystem 35.2 gpu and acceleration ecosystem 35.3 llm ecosystem 35.4 safety and governance ecosystem 35.5 deployment ecosystem 36. learning path 36.1 phase 1 — foundations 36.2 phase 2 — classical machine learning 36.3 phase 3 — deep learning 36.4 phase 4 — nlp, vision, and multimodal 36.5 phase 5 — llm engineering 36.6 phase 6 — agents and ai applications 36.7 phase 7 — mlops and production 36.8 phase 8 — advanced ai engineering 37. practical projects 37.1 project 1 — classical ml pipeline 37.2 project 2 — deep learning image classifier 37.3 project 3 — nlp text classifier 37.4 project 4 — rag document assistant 37.5 project 5 — tool-calling agent 37.6 project 6 — ai coding assistant for a repository 37.7 project 7 — fine-tuned domain assistant 37.8 project 8 — llm evaluation platform 37.9 project 9 — ai observability stack 37.10 project 10 — production inference service 37.11 project 11 — multimodal assistant 37.12 project 12 — ai governance registry 38. competency checklist 38.1 junior ai competency 38.2 mid-level ai competency 38.3 senior ai competency 38.4 advanced ai engineering competency 38.5 ai safety and governance competency"
+      "searchText": "artificial intelligence roadmap for learning ai fundamentals, machine learning, deep learning, llms, agents, evaluation, safety, and production ai systems. ai machine-learning deep-learning llm agents roadmap dev ai artificial intelligence roadmap — fundamentals to advanced 1. prerequisites 1.1 programming fundamentals 1.2 software engineering fundamentals 1.3 data fundamentals 1.4 computer science fundamentals 1.5 hardware fundamentals 2. ai landscape 2.1 artificial intelligence fundamentals 2.2 core ai disciplines 2.3 ai system types 2.4 ai development lifecycle 2.5 ai roles 3. mathematics for ai 3.1 linear algebra 3.2 calculus 3.3 probability 3.4 statistics 3.5 optimization 3.6 information theory 4. python ai ecosystem 4.1 core libraries 4.2 deep learning frameworks 4.3 nlp and llm libraries 4.4 computer vision libraries 4.5 mlops libraries 4.6 inference libraries 5. data engineering for ai 5.1 data collection 5.2 data storage 5.3 data formats 5.4 data cleaning 5.5 data labeling 5.6 data pipelines 6. exploratory data analysis 6.1 dataset understanding 6.2 visualization 6.3 statistical analysis 6.4 data leakage analysis 7. classical machine learning 7.1 ml fundamentals 7.2 supervised learning 7.3 unsupervised learning 7.4 semi-supervised and weakly supervised learning 7.5 feature engineering 7.6 model selection 7.7 classical ml evaluation 8. deep learning foundations 8.1 neural network basics 8.2 activation functions 8.3 loss functions 8.4 optimization in deep learning 8.5 regularization 8.6 neural network architectures 8.7 training diagnostics 9. computer vision 9.1 image fundamentals 9.2 cnns 9.3 vision architectures 9.4 vision tasks 9.5 object detection 9.6 image segmentation 9.7 vision data engineering 10. natural language processing 10.1 text fundamentals 10.2 tokenization 10.3 classical nlp 10.4 word embeddings 10.5 sequence models 10.6 nlp evaluation 11. transformers 11.1 transformer fundamentals 11.2 attention mechanisms 11.3 transformer model families 11.4 training transformers 11.5 transformer limitations 12. large language models 12.1 llm fundamentals 12.2 llm capabilities 12.3 llm limitations 12.4 llm model selection 12.5 llm apis 12.6 llm decoding 13. prompt engineering 13.1 prompt fundamentals 13.2 prompting techniques 13.3 structured output 13.4 prompt evaluation 13.5 prompt security 14. retrieval-augmented generation 14.1 rag fundamentals 14.2 document ingestion 14.3 chunking strategies 14.4 embeddings 14.5 vector databases 14.6 retrieval strategies 14.7 rag evaluation 14.8 advanced rag 15. ai agents 15.1 agent fundamentals 15.2 agent architectures 15.3 tool use 15.4 model context protocol 15.5 agent memory 15.6 agent planning 15.7 agent evaluation 15.8 agent safety 16. multimodal ai 16.1 multimodal fundamentals 16.2 vision-language models 16.3 audio ai 16.4 video ai 16.5 multimodal rag 17. generative ai 17.1 generative modeling fundamentals 17.2 diffusion models 17.3 generative adversarial networks 17.4 variational autoencoders 17.5 generative ai product patterns 17.6 generative ai risks 18. fine-tuning and adaptation 18.1 fine-tuning fundamentals 18.2 parameter-efficient fine-tuning 18.3 llm fine-tuning data 18.4 alignment methods 18.5 fine-tuning evaluation 18.6 fine-tuning operations 19. reinforcement learning 19.1 rl fundamentals 19.2 classical rl 19.3 deep rl 19.4 rlhf and preference optimization 19.5 rl applications 20. recommendation systems 20.1 recommender fundamentals 20.2 collaborative filtering 20.3 content-based recommendation 20.4 deep recommenders 20.5 recommender evaluation 21. graph machine learning 21.1 graph fundamentals 21.2 graph neural networks 21.3 graph ml tasks 21.4 knowledge graphs and ai 22. time-series ai 22.1 time-series fundamentals 22.2 classical time-series models 22.3 deep time-series models 22.4 time-series tasks 22.5 time-series evaluation 23. evaluation and benchmarking 23.1 evaluation fundamentals 23.2 ml evaluation 23.3 llm evaluation 23.4 rag evaluation 23.5 agent evaluation 23.6 evaluation methods 23.7 evaluation risks 24. ai safety and security 24.1 ai safety fundamentals 24.2 llm security risks 24.3 adversarial ml 24.4 guardrails 24.5 ai application security 24.6 privacy 24.7 responsible ai 25. explainability and interpretability 25.1 explainability fundamentals 25.2 classical ml explainability 25.3 deep learning interpretability 25.4 llm interpretability 26. mlops 26.1 mlops fundamentals 26.2 experiment management 26.3 feature stores 26.4 model registry 26.5 ml pipelines 26.6 model monitoring 27. llmops and agentops 27.1 llmops fundamentals 27.2 prompt operations 27.3 llm observability 27.4 agent operations 27.5 model gateway 28. deployment and inference 28.1 deployment patterns 28.2 model serving 28.3 llm inference optimization 28.4 quantization 28.5 distillation and compression 28.6 edge ai deployment 29. ai infrastructure 29.1 compute infrastructure 29.2 distributed training 29.3 storage infrastructure 29.4 network infrastructure 29.5 kubernetes for ai 29.6 cost optimization 30. ai product engineering 30.1 product discovery 30.2 ai ux 30.3 human-in-the-loop workflows 30.4 ai product metrics 30.5 ai product risks 31. ai governance and compliance 31.1 governance fundamentals 31.2 documentation artifacts 31.3 ai risk management 31.4 regulatory awareness 31.5 ai audit readiness 32. ai ethics and societal impact 32.1 fairness 32.2 transparency 32.3 accountability 32.4 environmental impact 33. ai for software engineering 33.1 code intelligence 33.2 ai coding agents 33.3 code rag 33.4 ai-assisted sdlc 33.5 risks in ai coding 34. ai research literacy 34.1 reading papers 34.2 research evaluation 34.3 keeping up to date 34.4 reproducibility 35. current ecosystem awareness 35.1 core ml ecosystem 35.2 gpu and acceleration ecosystem 35.3 llm ecosystem 35.4 safety and governance ecosystem 35.5 deployment ecosystem 36. learning path 36.1 phase 1 — foundations 36.2 phase 2 — classical machine learning 36.3 phase 3 — deep learning 36.4 phase 4 — nlp, vision, and multimodal 36.5 phase 5 — llm engineering 36.6 phase 6 — agents and ai applications 36.7 phase 7 — mlops and production 36.8 phase 8 — advanced ai engineering 37. practical projects 37.1 project 1 — classical ml pipeline 37.2 project 2 — deep learning image classifier 37.3 project 3 — nlp text classifier 37.4 project 4 — rag document assistant 37.5 project 5 — tool-calling agent 37.6 project 6 — ai coding assistant for a repository 37.7 project 7 — fine-tuned domain assistant 37.8 project 8 — llm evaluation platform 37.9 project 9 — ai observability stack 37.10 project 10 — production inference service 37.11 project 11 — multimodal assistant 37.12 project 12 — ai governance registry 38. competency checklist 38.1 junior ai competency 38.2 mid-level ai competency 38.3 senior ai competency 38.4 advanced ai engineering competency 38.5 ai safety and governance competency"
     },
     {
       "id": "dev-books",
       "title": "Books",
-      "summary": "",
+      "summary": "Curated study books grouped by computer science, systems, Linux, C, algorithms, networking, databases, design, security, and infrastructure topics.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -1339,8 +1346,13 @@
         "slug": "books",
         "label": "Books"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "books",
+        "study-path",
+        "computer-science",
+        "systems"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/books.md",
       "url": "/notes/dev/books/",
@@ -1404,7 +1416,7 @@
           "anchor": "12-containers-kubernetes-sre-observability"
         }
       ],
-      "searchText": "books dev books 1) computer architecture and systems 2) operating systems 3) linux from the kernel upward 4) low-level programming: c 5) data structures and algorithms 6) computer networking 7) databases and data-intensive systems 9) software engineering and design 10) security 12) containers, kubernetes, sre, observability"
+      "searchText": "books curated study books grouped by computer science, systems, linux, c, algorithms, networking, databases, design, security, and infrastructure topics. books study-path computer-science systems dev books 1) computer architecture and systems 2) operating systems 3) linux from the kernel upward 4) low-level programming: c 5) data structures and algorithms 6) computer networking 7) databases and data-intensive systems 9) software engineering and design 10) security 12) containers, kubernetes, sre, observability"
     },
     {
       "id": "dev-c-old-1-0-c-init",
@@ -1567,8 +1579,8 @@
     },
     {
       "id": "dev-database-roadmap-database",
-      "title": "Database Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "Database",
+      "summary": "Roadmap for learning database fundamentals, SQL, modeling, indexing, transactions, storage engines, distributed databases, and operations.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -1577,8 +1589,15 @@
         "slug": "database",
         "label": "Database"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "database",
+        "sql",
+        "postgresql",
+        "mysql",
+        "nosql",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/database/roadmap_database.md",
       "url": "/notes/dev/database/roadmap_database/",
@@ -2918,11 +2937,11 @@
           "anchor": "37-4-advanced-database-engineering-competency"
         }
       ],
-      "searchText": "database roadmap — fundamentals to advanced dev database database roadmap — fundamentals to advanced 1. prerequisites 1.1 computer science fundamentals 1.2 operating system fundamentals 1.3 networking fundamentals 1.4 programming prerequisites 1.5 math and logic prerequisites 2. database fundamentals 2.1 core database concepts 2.2 database categories 2.3 workload types 2.4 data lifecycle 2.5 database responsibilities 3. relational model 3.1 relational theory 3.2 keys 3.3 integrity constraints 3.4 normalization 3.5 denormalization 4. sql fundamentals 4.1 sql language categories 4.2 ddl 4.3 dml 4.4 dql 4.5 joins 4.6 aggregation 4.7 window functions 4.8 sql expressions 4.9 null semantics 4.10 transactions in sql 5. data modeling 5.1 conceptual modeling 5.2 logical modeling 5.3 physical modeling 5.4 cardinality modeling 5.5 temporal modeling 5.6 multi-tenancy modeling 5.7 domain-driven database design 6. data types 6.1 numeric types 6.2 text types 6.3 date and time types 6.4 boolean and enumerated types 6.5 binary types 6.6 json types 6.7 spatial types 6.8 specialized types 7. indexing 7.1 index fundamentals 7.2 index structures 7.3 index design 7.4 query-index matching 7.5 index maintenance 7.6 index anti-patterns 8. query execution and optimization 8.1 query lifecycle 8.2 query planner 8.3 execution plan analysis 8.4 scan types 8.5 join algorithms 8.6 sorting and grouping 8.7 query optimization techniques 8.8 common query anti-patterns 9. transactions and concurrency 9.1 acid 9.2 isolation levels 9.3 concurrency anomalies 9.4 locking 9.5 mvcc 9.6 transaction design 9.7 distributed transactions 10. storage engines and internals 10.1 storage fundamentals 10.2 row-oriented storage 10.3 column-oriented storage 10.4 b-tree storage 10.5 lsm-tree storage 10.6 logging and recovery 10.7 memory management 11. postgresql 11.1 postgresql fundamentals 11.2 postgresql sql features 11.3 postgresql indexes 11.4 postgresql mvcc 11.5 postgresql transactions 11.6 postgresql performance 11.7 postgresql replication 11.8 postgresql backup and recovery 11.9 postgresql extensions 11.10 postgresql operations 12. mysql and mariadb 12.1 mysql fundamentals 12.2 innodb 12.3 mysql sql features 12.4 mysql indexing 12.5 mysql transactions 12.6 mysql replication 12.7 mysql backup and recovery 12.8 mariadb 12.9 mysql operations 13. sql server and oracle database 13.1 sql server fundamentals 13.2 sql server performance 13.3 sql server high availability 13.4 oracle fundamentals 13.5 oracle performance and ha 14. sqlite and embedded databases 14.1 sqlite fundamentals 14.2 sqlite concurrency 14.3 embedded database use cases 14.4 other embedded databases 15. document databases 15.1 document database fundamentals 15.2 mongodb fundamentals 15.3 mongodb data modeling 15.4 mongodb indexing 15.5 mongodb aggregation 15.6 mongodb operations 15.7 other document databases 16. key-value and cache databases 16.1 key-value fundamentals 16.2 redis fundamentals 16.3 redis caching 16.4 redis persistence and ha 16.5 redis performance 16.6 other key-value stores 17. wide-column databases 17.1 wide-column fundamentals 17.2 cassandra fundamentals 17.3 cassandra data modeling 17.4 cassandra consistency 17.5 cassandra operations 17.6 other wide-column systems 18. graph databases 18.1 graph fundamentals 18.2 graph data modeling 18.3 neo4j 18.4 graph operations 18.5 other graph systems 19. search engines 19.1 search fundamentals 19.2 elasticsearch 19.3 opensearch 19.4 search modeling 19.5 search operations 20. time-series databases 20.1 time-series fundamentals 20.2 prometheus 20.3 influxdb 20.4 timescaledb 20.5 other time-series systems 21. vector databases and ai retrieval 21.1 vector fundamentals 21.2 vector indexes 21.3 vector database systems 21.4 rag storage design 21.5 vector operations 22. data warehousing and analytics 22.1 analytical fundamentals 22.2 columnar analytics 22.3 warehouse systems 22.4 data lake and lakehouse 22.5 analytics operations 23. distributed databases 23.1 distributed systems basics 23.2 cap and consistency models 23.3 replication strategies 23.4 sharding 23.5 consensus 23.6 distributed sql and newsql 24. replication, ha, and disaster recovery 24.1 replication fundamentals 24.2 high availability 24.3 backup strategy 24.4 recovery strategy 24.5 multi-region design 25. security 25.1 authentication 25.2 authorization 25.3 encryption 25.4 secrets management 25.5 sql injection prevention 25.6 auditing and compliance 26. migrations and schema evolution 26.1 migration fundamentals 26.2 migration tools 26.3 safe schema changes 26.4 zero-downtime migration 26.5 data migration 27. application integration 27.1 connection management 27.2 java integration 27.3 orm fundamentals 27.4 query building 27.5 application-level patterns 27.6 api and database boundary 28. observability and monitoring 28.1 database metrics 28.2 query monitoring 28.3 logging 28.4 alerting 28.5 dashboards 28.6 tools 29. performance engineering 29.1 performance methodology 29.2 query performance 29.3 write performance 29.4 read performance 29.5 connection performance 29.6 storage performance 29.7 capacity planning 30. cloud databases 30.1 managed relational databases 30.2 cloud nosql databases 30.3 cloud data warehouses 30.4 cloud operations 30.5 serverless databases 31. databases on kubernetes 31.1 kubernetes storage requirements 31.2 stateful workload design 31.3 database operators 31.4 kubernetes database risks 32. data pipelines and cdc 32.1 data ingestion 32.2 change data capture 32.3 streaming systems 32.4 etl and elt 32.5 data quality 33. governance, privacy, and compliance 33.1 data governance 33.2 privacy 33.3 compliance 33.4 data retention and deletion 34. version and ecosystem awareness 34.1 postgresql ecosystem awareness 34.2 mysql ecosystem awareness 34.3 mongodb ecosystem awareness 34.4 redis ecosystem awareness 34.5 other database ecosystem awareness 35. learning path 35.1 phase 1 — database basics 35.2 phase 2 — sql intermediate 35.3 phase 3 — relational design 35.4 phase 4 — transactions and performance 35.5 phase 5 — postgresql and mysql depth 35.6 phase 6 — nosql 35.7 phase 7 — distributed and cloud databases 35.8 phase 8 — advanced database engineering 36. practical projects 36.1 project 1 — sql basics lab 36.2 project 2 — e-commerce relational model 36.3 project 3 — query optimization lab 36.4 project 4 — transaction and locking lab 36.5 project 5 — postgresql production lab 36.6 project 6 — mysql innodb lab 36.7 project 7 — mongodb application model 36.8 project 8 — redis cache and queue 36.9 project 9 — cdc pipeline 36.10 project 10 — rag vector store 36.11 project 11 — data warehouse mini-project 36.12 project 12 — database on kubernetes 37. competency checklist 37.1 junior database competency 37.2 mid-level database competency 37.3 senior database competency 37.4 advanced database engineering competency"
+      "searchText": "database roadmap for learning database fundamentals, sql, modeling, indexing, transactions, storage engines, distributed databases, and operations. database sql postgresql mysql nosql roadmap dev database database roadmap — fundamentals to advanced 1. prerequisites 1.1 computer science fundamentals 1.2 operating system fundamentals 1.3 networking fundamentals 1.4 programming prerequisites 1.5 math and logic prerequisites 2. database fundamentals 2.1 core database concepts 2.2 database categories 2.3 workload types 2.4 data lifecycle 2.5 database responsibilities 3. relational model 3.1 relational theory 3.2 keys 3.3 integrity constraints 3.4 normalization 3.5 denormalization 4. sql fundamentals 4.1 sql language categories 4.2 ddl 4.3 dml 4.4 dql 4.5 joins 4.6 aggregation 4.7 window functions 4.8 sql expressions 4.9 null semantics 4.10 transactions in sql 5. data modeling 5.1 conceptual modeling 5.2 logical modeling 5.3 physical modeling 5.4 cardinality modeling 5.5 temporal modeling 5.6 multi-tenancy modeling 5.7 domain-driven database design 6. data types 6.1 numeric types 6.2 text types 6.3 date and time types 6.4 boolean and enumerated types 6.5 binary types 6.6 json types 6.7 spatial types 6.8 specialized types 7. indexing 7.1 index fundamentals 7.2 index structures 7.3 index design 7.4 query-index matching 7.5 index maintenance 7.6 index anti-patterns 8. query execution and optimization 8.1 query lifecycle 8.2 query planner 8.3 execution plan analysis 8.4 scan types 8.5 join algorithms 8.6 sorting and grouping 8.7 query optimization techniques 8.8 common query anti-patterns 9. transactions and concurrency 9.1 acid 9.2 isolation levels 9.3 concurrency anomalies 9.4 locking 9.5 mvcc 9.6 transaction design 9.7 distributed transactions 10. storage engines and internals 10.1 storage fundamentals 10.2 row-oriented storage 10.3 column-oriented storage 10.4 b-tree storage 10.5 lsm-tree storage 10.6 logging and recovery 10.7 memory management 11. postgresql 11.1 postgresql fundamentals 11.2 postgresql sql features 11.3 postgresql indexes 11.4 postgresql mvcc 11.5 postgresql transactions 11.6 postgresql performance 11.7 postgresql replication 11.8 postgresql backup and recovery 11.9 postgresql extensions 11.10 postgresql operations 12. mysql and mariadb 12.1 mysql fundamentals 12.2 innodb 12.3 mysql sql features 12.4 mysql indexing 12.5 mysql transactions 12.6 mysql replication 12.7 mysql backup and recovery 12.8 mariadb 12.9 mysql operations 13. sql server and oracle database 13.1 sql server fundamentals 13.2 sql server performance 13.3 sql server high availability 13.4 oracle fundamentals 13.5 oracle performance and ha 14. sqlite and embedded databases 14.1 sqlite fundamentals 14.2 sqlite concurrency 14.3 embedded database use cases 14.4 other embedded databases 15. document databases 15.1 document database fundamentals 15.2 mongodb fundamentals 15.3 mongodb data modeling 15.4 mongodb indexing 15.5 mongodb aggregation 15.6 mongodb operations 15.7 other document databases 16. key-value and cache databases 16.1 key-value fundamentals 16.2 redis fundamentals 16.3 redis caching 16.4 redis persistence and ha 16.5 redis performance 16.6 other key-value stores 17. wide-column databases 17.1 wide-column fundamentals 17.2 cassandra fundamentals 17.3 cassandra data modeling 17.4 cassandra consistency 17.5 cassandra operations 17.6 other wide-column systems 18. graph databases 18.1 graph fundamentals 18.2 graph data modeling 18.3 neo4j 18.4 graph operations 18.5 other graph systems 19. search engines 19.1 search fundamentals 19.2 elasticsearch 19.3 opensearch 19.4 search modeling 19.5 search operations 20. time-series databases 20.1 time-series fundamentals 20.2 prometheus 20.3 influxdb 20.4 timescaledb 20.5 other time-series systems 21. vector databases and ai retrieval 21.1 vector fundamentals 21.2 vector indexes 21.3 vector database systems 21.4 rag storage design 21.5 vector operations 22. data warehousing and analytics 22.1 analytical fundamentals 22.2 columnar analytics 22.3 warehouse systems 22.4 data lake and lakehouse 22.5 analytics operations 23. distributed databases 23.1 distributed systems basics 23.2 cap and consistency models 23.3 replication strategies 23.4 sharding 23.5 consensus 23.6 distributed sql and newsql 24. replication, ha, and disaster recovery 24.1 replication fundamentals 24.2 high availability 24.3 backup strategy 24.4 recovery strategy 24.5 multi-region design 25. security 25.1 authentication 25.2 authorization 25.3 encryption 25.4 secrets management 25.5 sql injection prevention 25.6 auditing and compliance 26. migrations and schema evolution 26.1 migration fundamentals 26.2 migration tools 26.3 safe schema changes 26.4 zero-downtime migration 26.5 data migration 27. application integration 27.1 connection management 27.2 java integration 27.3 orm fundamentals 27.4 query building 27.5 application-level patterns 27.6 api and database boundary 28. observability and monitoring 28.1 database metrics 28.2 query monitoring 28.3 logging 28.4 alerting 28.5 dashboards 28.6 tools 29. performance engineering 29.1 performance methodology 29.2 query performance 29.3 write performance 29.4 read performance 29.5 connection performance 29.6 storage performance 29.7 capacity planning 30. cloud databases 30.1 managed relational databases 30.2 cloud nosql databases 30.3 cloud data warehouses 30.4 cloud operations 30.5 serverless databases 31. databases on kubernetes 31.1 kubernetes storage requirements 31.2 stateful workload design 31.3 database operators 31.4 kubernetes database risks 32. data pipelines and cdc 32.1 data ingestion 32.2 change data capture 32.3 streaming systems 32.4 etl and elt 32.5 data quality 33. governance, privacy, and compliance 33.1 data governance 33.2 privacy 33.3 compliance 33.4 data retention and deletion 34. version and ecosystem awareness 34.1 postgresql ecosystem awareness 34.2 mysql ecosystem awareness 34.3 mongodb ecosystem awareness 34.4 redis ecosystem awareness 34.5 other database ecosystem awareness 35. learning path 35.1 phase 1 — database basics 35.2 phase 2 — sql intermediate 35.3 phase 3 — relational design 35.4 phase 4 — transactions and performance 35.5 phase 5 — postgresql and mysql depth 35.6 phase 6 — nosql 35.7 phase 7 — distributed and cloud databases 35.8 phase 8 — advanced database engineering 36. practical projects 36.1 project 1 — sql basics lab 36.2 project 2 — e-commerce relational model 36.3 project 3 — query optimization lab 36.4 project 4 — transaction and locking lab 36.5 project 5 — postgresql production lab 36.6 project 6 — mysql innodb lab 36.7 project 7 — mongodb application model 36.8 project 8 — redis cache and queue 36.9 project 9 — cdc pipeline 36.10 project 10 — rag vector store 36.11 project 11 — data warehouse mini-project 36.12 project 12 — database on kubernetes 37. competency checklist 37.1 junior database competency 37.2 mid-level database competency 37.3 senior database competency 37.4 advanced database engineering competency"
     },
     {
       "id": "dev-devops-old-docker-old-docker",
-      "title": "Docker",
+      "title": "DevOps",
       "summary": "Docker is a platform for developing, shipping, and running applications inside containers. Containers are lightweight, portable units that package an application along with its dependencies, allowing it to run consistently across different computing environments.",
       "area": {
         "slug": "dev",
@@ -3031,7 +3050,7 @@
           "anchor": "run-docker-compose"
         }
       ],
-      "searchText": "docker docker is a platform for developing, shipping, and running applications inside containers. containers are lightweight, portable units that package an application along with its dependencies, allowing it to run consistently across different computing environments. dev devops old docker old docker commands components advatages dockerfile first stage: build the application second stage: run the application layer caching copy the pom.xml file to cache the dependencies copy the source code to build the application example console logs create an image with spring boot create container image pom.xml docker compose docker-compose.yml run docker compose"
+      "searchText": "devops docker is a platform for developing, shipping, and running applications inside containers. containers are lightweight, portable units that package an application along with its dependencies, allowing it to run consistently across different computing environments. dev devops old docker old docker commands components advatages dockerfile first stage: build the application second stage: run the application layer caching copy the pom.xml file to cache the dependencies copy the source code to build the application example console logs create an image with spring boot create container image pom.xml docker compose docker-compose.yml run docker compose"
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-common-common-library-chart",
@@ -3070,7 +3089,7 @@
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-common-template-configmap-template-configmap-template",
-      "title": "Source: config-server/templates/configmap_from_file.yaml",
+      "title": "DevOps",
       "summary": "Is designed to create ConfigMaps from files in the folder config-repo. A ConfigMap will contain all non-sensitive configuration required by a specific Deployment. The ConfigMap will be mounted as a volume in the Pod that runs the Deployment. The Pod will read the configuration from the ConfigMap as files in its local filesystem. Ex. _configmap_from_file.yaml explaination: Ex. output:",
       "area": {
         "slug": "dev",
@@ -3108,7 +3127,7 @@
           "anchor": "source-config-server-templates-configmap-from-file-yaml"
         }
       ],
-      "searchText": "source: config-server/templates/configmap_from_file.yaml is designed to create configmaps from files in the folder config-repo. a configmap will contain all non-sensitive configuration required by a specific deployment. the configmap will be mounted as a volume in the pod that runs the deployment. the pod will read the configuration from the configmap as files in its local filesystem. ex. _configmap_from_file.yaml explaination: ex. output: dev devops old kubernetes old helm common template configmap template configmap template source: config-server/templates/configmap_from_file.yaml"
+      "searchText": "devops is designed to create configmaps from files in the folder config-repo. a configmap will contain all non-sensitive configuration required by a specific deployment. the configmap will be mounted as a volume in the pod that runs the deployment. the pod will read the configuration from the configmap as files in its local filesystem. ex. _configmap_from_file.yaml explaination: ex. output: dev devops old kubernetes old helm common template configmap template configmap template source: config-server/templates/configmap_from_file.yaml"
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-common-template-deployment-template-deployment-template",
@@ -3259,7 +3278,7 @@
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-components-component-charts",
-      "title": "Component Charts",
+      "title": "DevOps",
       "summary": "The charts for the microservices and the resource managers are stored in the components folder, and they all share the same file structure :",
       "area": {
         "slug": "dev",
@@ -3290,11 +3309,11 @@
           "anchor": "component-charts"
         }
       ],
-      "searchText": "component charts the charts for the microservices and the resource managers are stored in the components folder, and they all share the same file structure : dev devops old kubernetes old helm components component charts"
+      "searchText": "devops the charts for the microservices and the resource managers are stored in the components folder, and they all share the same file structure : dev devops old kubernetes old helm components component charts"
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-environment-environment-chart",
-      "title": "Environment Chart",
+      "title": "DevOps",
       "summary": "Contains the charts for the different environments(ex. dev-env, prod-env). These Charts.yaml file contains dependencies on both the common chart and the charts in the components folder The template folder contains a secrets.yaml template to create environment-specific credentials as Secrets. It is based on the named template for Secrets from the common chart and looks like this:",
       "area": {
         "slug": "dev",
@@ -3325,11 +3344,11 @@
           "anchor": "environment-chart"
         }
       ],
-      "searchText": "environment chart contains the charts for the different environments(ex. dev-env, prod-env). these charts.yaml file contains dependencies on both the common chart and the charts in the components folder the template folder contains a secrets.yaml template to create environment-specific credentials as secrets. it is based on the named template for secrets from the common chart and looks like this: dev devops old kubernetes old helm environment environment chart"
+      "searchText": "devops contains the charts for the different environments(ex. dev-env, prod-env). these charts.yaml file contains dependencies on both the common chart and the charts in the components folder the template folder contains a secrets.yaml template to create environment-specific credentials as secrets. it is based on the named template for secrets from the common chart and looks like this: dev devops old kubernetes old helm environment environment chart"
     },
     {
       "id": "dev-devops-old-kubernetes-old-helm-helm",
-      "title": "Helm",
+      "title": "DevOps",
       "summary": "Is used in a Kubernetes environment to bundle and configure the microservices for deployments. A package is known as a chart. A chart contains templates, default values for the templates and optional dependencies. Each component that needs to be deployed will have its own chart describing how to deploy it. Library charts named common are used to reduce the boilerplate definitions from the component charts. A library chart doesn't contain any deployable definitions but only reusable templates. To deploy all components into different types of environments the concept of parent charts and subcharts will be used. Each environment will be implemented as a parent chart that depends on different sets of subcharts. Helm charts can be published to a helm chart repository.",
       "area": {
         "slug": "dev",
@@ -3369,11 +3388,11 @@
           "anchor": "commands"
         }
       ],
-      "searchText": "helm is used in a kubernetes environment to bundle and configure the microservices for deployments. a package is known as a chart. a chart contains templates, default values for the templates and optional dependencies. each component that needs to be deployed will have its own chart describing how to deploy it. library charts named common are used to reduce the boilerplate definitions from the component charts. a library chart doesn't contain any deployable definitions but only reusable templates. to deploy all components into different types of environments the concept of parent charts and subcharts will be used. each environment will be implemented as a parent chart that depends on different sets of subcharts. helm charts can be published to a helm chart repository. dev devops old kubernetes old helm helm helm chart structure commands"
+      "searchText": "devops is used in a kubernetes environment to bundle and configure the microservices for deployments. a package is known as a chart. a chart contains templates, default values for the templates and optional dependencies. each component that needs to be deployed will have its own chart describing how to deploy it. library charts named common are used to reduce the boilerplate definitions from the component charts. a library chart doesn't contain any deployable definitions but only reusable templates. to deploy all components into different types of environments the concept of parent charts and subcharts will be used. each environment will be implemented as a parent chart that depends on different sets of subcharts. helm charts can be published to a helm chart repository. dev devops old kubernetes old helm helm helm chart structure commands"
     },
     {
       "id": "dev-devops-old-kubernetes-old-istio-istio",
-      "title": "Istio",
+      "title": "DevOps",
       "summary": "Istio is an open-source service mesh that provides a way to connect, secure, control, and observe services. It is a platform that provides key capabilities for microservices in a Kubernetes environment.",
       "area": {
         "slug": "dev",
@@ -3428,11 +3447,11 @@
           "anchor": "how-istio-works"
         }
       ],
-      "searchText": "istio istio is an open-source service mesh that provides a way to connect, secure, control, and observe services. it is a platform that provides key capabilities for microservices in a kubernetes environment. dev devops old kubernetes old istio istio service mesh components features istio architecture how istio works"
+      "searchText": "devops istio is an open-source service mesh that provides a way to connect, secure, control, and observe services. it is a platform that provides key capabilities for microservices in a kubernetes environment. dev devops old kubernetes old istio istio service mesh components features istio architecture how istio works"
     },
     {
       "id": "dev-devops-old-kubernetes-old-kubectl",
-      "title": "Kubectl",
+      "title": "DevOps",
       "summary": "Is a combination of :",
       "area": {
         "slug": "dev",
@@ -3466,11 +3485,11 @@
           "anchor": "contexts"
         }
       ],
-      "searchText": "kubectl is a combination of : dev devops old kubernetes old kubectl contexts"
+      "searchText": "devops is a combination of : dev devops old kubernetes old kubectl contexts"
     },
     {
       "id": "dev-devops-old-kubernetes-old-kubernetes",
-      "title": "Kubernetes",
+      "title": "DevOps",
       "summary": "Is a container orchestration platform for the management of containerized applications.",
       "area": {
         "slug": "dev",
@@ -3614,11 +3633,11 @@
           "anchor": "sequence-of-events"
         }
       ],
-      "searchText": "kubernetes is a container orchestration platform for the management of containerized applications. dev devops old kubernetes old kubernetes features container orchestration platforms kubernetes api objects node pod deployment replicaset service ingress namespace configmap secret daemonset run time components api server etcd controller manager scheduler kubelet kubeproxy container runtime kubernetes dns sequence of events"
+      "searchText": "devops is a container orchestration platform for the management of containerized applications. dev devops old kubernetes old kubernetes features container orchestration platforms kubernetes api objects node pod deployment replicaset service ingress namespace configmap secret daemonset run time components api server etcd controller manager scheduler kubelet kubeproxy container runtime kubernetes dns sequence of events"
     },
     {
       "id": "dev-devops-old-kubernetes-old-kubernetes-services",
-      "title": "Kubernetes Services",
+      "title": "DevOps",
       "summary": "Kubernetes has a built-in discovery service based on kubernetes services and the kube-proxy run time component. Kubernetes discovery service doesn't require a client library so it make it independent to the programming language.",
       "area": {
         "slug": "dev",
@@ -3662,7 +3681,7 @@
           "anchor": "spring-boot-s-support"
         }
       ],
-      "searchText": "kubernetes services kubernetes has a built-in discovery service based on kubernetes services and the kube-proxy run time component. kubernetes discovery service doesn't require a client library so it make it independent to the programming language. dev devops old kubernetes old kubernetes services replacing netflix eureka how kubernetes will be used spring boot's support"
+      "searchText": "devops kubernetes has a built-in discovery service based on kubernetes services and the kube-proxy run time component. kubernetes discovery service doesn't require a client library so it make it independent to the programming language. dev devops old kubernetes old kubernetes services replacing netflix eureka how kubernetes will be used spring boot's support"
     },
     {
       "id": "dev-devops-old-kubernetes-old-microservices-integration-kube-microservices-integration",
@@ -3705,7 +3724,7 @@
     },
     {
       "id": "dev-devops-old-kubernetes-old-minikube",
-      "title": "Minikube",
+      "title": "DevOps",
       "summary": "Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on a local machine.",
       "area": {
         "slug": "dev",
@@ -3764,12 +3783,12 @@
           "anchor": "create-a-service"
         }
       ],
-      "searchText": "minikube minikube is a tool that makes it easy to run kubernetes locally. minikube runs a single-node kubernetes cluster inside a vm on a local machine. dev devops old kubernetes old minikube profile create a cluster simple deployment nginx deployment create the deployment create a service"
+      "searchText": "devops minikube is a tool that makes it easy to run kubernetes locally. minikube runs a single-node kubernetes cluster inside a vm on a local machine. dev devops old kubernetes old minikube profile create a cluster simple deployment nginx deployment create the deployment create a service"
     },
     {
       "id": "dev-devops-roadmap-kubernetes",
-      "title": "Kubernetes Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "Kubernetes",
+      "summary": "Roadmap for learning Kubernetes fundamentals, architecture, workloads, networking, storage, security, observability, operations, and platform engineering.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -3778,8 +3797,14 @@
         "slug": "devops",
         "label": "DevOps"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "kubernetes",
+        "devops",
+        "cloud-native",
+        "platform-engineering",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/devops/roadmap_kubernetes.md",
       "url": "/notes/dev/devops/roadmap_kubernetes/",
@@ -4909,11 +4934,11 @@
           "anchor": "28-4-platform-advanced-kubernetes"
         }
       ],
-      "searchText": "kubernetes roadmap — fundamentals to advanced dev devops kubernetes roadmap — fundamentals to advanced 1. prerequisites 1.1 linux fundamentals 1.2 networking fundamentals 1.3 container fundamentals 1.4 yaml and configuration 1.5 cloud-native fundamentals 2. kubernetes mental model 2.1 core concepts 2.2 declarative model 2.3 kubernetes api model 2.4 controller model 3. local lab setup 3.1 cli tools 3.2 local clusters 3.3 cluster installation options 3.4 development workflow 4. kubernetes architecture 4.1 control plane components 4.2 node components 4.3 etcd 4.4 api request flow 4.5 scheduling flow 4.6 pod execution flow 5. kubernetes api objects 5.1 object metadata 5.2 labels and selectors 5.3 annotations 5.4 namespaces 5.5 object lifecycle 5.6 api operations 6. pods 6.1 pod basics 6.2 containers in pods 6.3 pod lifecycle 6.4 probes 6.5 lifecycle hooks 6.6 pod configuration 6.7 pod networking 6.8 pod troubleshooting 7. workloads 7.1 replicaset 7.2 deployment 7.3 statefulset 7.4 daemonset 7.5 job 7.6 cronjob 7.7 workload selection 8. services and service discovery 8.1 service basics 8.2 service types 8.3 endpoint management 8.4 dns 8.5 kube-proxy 9. ingress and gateway 9.1 ingress 9.2 gateway api 9.3 external traffic design 9.4 certificate management 10. configuration and secrets 10.1 configmap 10.2 secret 10.3 secret management patterns 10.4 downward api 10.5 configuration design 11. storage 11.1 volume basics 11.2 persistent storage 11.3 csi 11.4 snapshots and backups 11.5 stateful workload storage 11.6 storage troubleshooting 12. scheduling, placement, and resources 12.1 node selection 12.2 pod affinity and anti-affinity 12.3 taints and tolerations 12.4 topology spread 12.5 resource requests and limits 12.6 quality of service 12.7 priority and preemption 12.8 eviction 12.9 advanced resource management 13. autoscaling 13.1 horizontal pod autoscaler 13.2 vertical pod autoscaler 13.3 cluster autoscaler 13.4 karpenter 13.5 event-driven autoscaling 14. security 14.1 authentication 14.2 authorization 14.3 service accounts 14.4 pod security 14.5 admission control 14.6 policy engines 14.7 network security 14.8 secret security 14.9 supply chain security 14.10 audit and compliance 15. networking 15.1 cluster networking model 15.2 cni 15.3 networkpolicy 15.4 advanced networking 15.5 service mesh 15.6 network troubleshooting 16. observability 16.1 logs 16.2 events 16.3 metrics 16.4 dashboards 16.5 tracing 16.6 alerting 16.7 diagnostics 17. cluster operations 17.1 cluster lifecycle 17.2 node operations 17.3 upgrade management 17.4 backup and disaster recovery 17.5 high availability 17.6 capacity planning 17.7 cost management 18. workload reliability 18.1 rollouts 18.2 availability 18.3 resilience patterns 18.4 application lifecycle integration 18.5 failure scenarios 19. packaging and deployment 19.1 raw manifests 19.2 kustomize 19.3 helm 19.4 gitops 19.5 ci/cd 19.6 progressive delivery 20. extensibility 20.1 custom resource definitions 20.2 controllers and operators 20.3 admission webhooks 20.4 api aggregation 20.5 plugins and extensions 21. managed kubernetes 21.1 amazon eks 21.2 google gke 21.3 azure aks 21.4 managed cluster operations 22. multi-cluster and federation 22.1 multi-cluster basics 22.2 multi-cluster networking 22.3 multi-cluster deployment 23. troubleshooting and debugging 23.1 pod troubleshooting 23.2 deployment troubleshooting 23.3 service troubleshooting 23.4 node troubleshooting 23.5 control plane troubleshooting 23.6 debugging tools 24. governance and platform engineering 24.1 multi-tenancy 24.2 resource governance 24.3 platform apis 24.4 compliance 25. kubernetes version evolution 25.1 kubernetes 1.0 25.2 kubernetes 1.1 25.3 kubernetes 1.2 25.4 kubernetes 1.3 25.5 kubernetes 1.4 25.6 kubernetes 1.5 25.7 kubernetes 1.6 25.8 kubernetes 1.7 25.9 kubernetes 1.8 25.10 kubernetes 1.9 25.11 kubernetes 1.10 25.12 kubernetes 1.11 25.13 kubernetes 1.12 25.14 kubernetes 1.13 25.15 kubernetes 1.14 25.16 kubernetes 1.15 25.17 kubernetes 1.16 25.18 kubernetes 1.17 25.19 kubernetes 1.18 25.20 kubernetes 1.19 25.21 kubernetes 1.20 25.22 kubernetes 1.21 25.23 kubernetes 1.22 25.24 kubernetes 1.23 25.25 kubernetes 1.24 25.26 kubernetes 1.25 25.27 kubernetes 1.26 25.28 kubernetes 1.27 25.29 kubernetes 1.28 25.30 kubernetes 1.29 25.31 kubernetes 1.30 25.32 kubernetes 1.31 25.33 kubernetes 1.32 25.34 kubernetes 1.33 25.35 kubernetes 1.34 25.36 kubernetes 1.35 25.37 kubernetes 1.36 26. learning path 26.1 phase 1 — foundations 26.2 phase 2 — core kubernetes 26.3 phase 3 — networking and storage 26.4 phase 4 — security 26.5 phase 5 — operations 26.6 phase 6 — delivery and platform 26.7 phase 7 — advanced kubernetes 27. practical projects 27.1 project 1 — local kubernetes lab 27.2 project 2 — production-ready web app 27.3 project 3 — ingress and tls 27.4 project 4 — stateful application 27.5 project 5 — secure namespace 27.6 project 6 — observability stack 27.7 project 7 — gitops delivery 27.8 project 8 — helm chart 27.9 project 9 — custom operator 27.10 project 10 — multi-cluster platform 28. competency checklist 28.1 junior kubernetes 28.2 mid-level kubernetes 28.3 senior kubernetes 28.4 platform / advanced kubernetes"
+      "searchText": "kubernetes roadmap for learning kubernetes fundamentals, architecture, workloads, networking, storage, security, observability, operations, and platform engineering. kubernetes devops cloud-native platform-engineering roadmap dev devops kubernetes roadmap — fundamentals to advanced 1. prerequisites 1.1 linux fundamentals 1.2 networking fundamentals 1.3 container fundamentals 1.4 yaml and configuration 1.5 cloud-native fundamentals 2. kubernetes mental model 2.1 core concepts 2.2 declarative model 2.3 kubernetes api model 2.4 controller model 3. local lab setup 3.1 cli tools 3.2 local clusters 3.3 cluster installation options 3.4 development workflow 4. kubernetes architecture 4.1 control plane components 4.2 node components 4.3 etcd 4.4 api request flow 4.5 scheduling flow 4.6 pod execution flow 5. kubernetes api objects 5.1 object metadata 5.2 labels and selectors 5.3 annotations 5.4 namespaces 5.5 object lifecycle 5.6 api operations 6. pods 6.1 pod basics 6.2 containers in pods 6.3 pod lifecycle 6.4 probes 6.5 lifecycle hooks 6.6 pod configuration 6.7 pod networking 6.8 pod troubleshooting 7. workloads 7.1 replicaset 7.2 deployment 7.3 statefulset 7.4 daemonset 7.5 job 7.6 cronjob 7.7 workload selection 8. services and service discovery 8.1 service basics 8.2 service types 8.3 endpoint management 8.4 dns 8.5 kube-proxy 9. ingress and gateway 9.1 ingress 9.2 gateway api 9.3 external traffic design 9.4 certificate management 10. configuration and secrets 10.1 configmap 10.2 secret 10.3 secret management patterns 10.4 downward api 10.5 configuration design 11. storage 11.1 volume basics 11.2 persistent storage 11.3 csi 11.4 snapshots and backups 11.5 stateful workload storage 11.6 storage troubleshooting 12. scheduling, placement, and resources 12.1 node selection 12.2 pod affinity and anti-affinity 12.3 taints and tolerations 12.4 topology spread 12.5 resource requests and limits 12.6 quality of service 12.7 priority and preemption 12.8 eviction 12.9 advanced resource management 13. autoscaling 13.1 horizontal pod autoscaler 13.2 vertical pod autoscaler 13.3 cluster autoscaler 13.4 karpenter 13.5 event-driven autoscaling 14. security 14.1 authentication 14.2 authorization 14.3 service accounts 14.4 pod security 14.5 admission control 14.6 policy engines 14.7 network security 14.8 secret security 14.9 supply chain security 14.10 audit and compliance 15. networking 15.1 cluster networking model 15.2 cni 15.3 networkpolicy 15.4 advanced networking 15.5 service mesh 15.6 network troubleshooting 16. observability 16.1 logs 16.2 events 16.3 metrics 16.4 dashboards 16.5 tracing 16.6 alerting 16.7 diagnostics 17. cluster operations 17.1 cluster lifecycle 17.2 node operations 17.3 upgrade management 17.4 backup and disaster recovery 17.5 high availability 17.6 capacity planning 17.7 cost management 18. workload reliability 18.1 rollouts 18.2 availability 18.3 resilience patterns 18.4 application lifecycle integration 18.5 failure scenarios 19. packaging and deployment 19.1 raw manifests 19.2 kustomize 19.3 helm 19.4 gitops 19.5 ci/cd 19.6 progressive delivery 20. extensibility 20.1 custom resource definitions 20.2 controllers and operators 20.3 admission webhooks 20.4 api aggregation 20.5 plugins and extensions 21. managed kubernetes 21.1 amazon eks 21.2 google gke 21.3 azure aks 21.4 managed cluster operations 22. multi-cluster and federation 22.1 multi-cluster basics 22.2 multi-cluster networking 22.3 multi-cluster deployment 23. troubleshooting and debugging 23.1 pod troubleshooting 23.2 deployment troubleshooting 23.3 service troubleshooting 23.4 node troubleshooting 23.5 control plane troubleshooting 23.6 debugging tools 24. governance and platform engineering 24.1 multi-tenancy 24.2 resource governance 24.3 platform apis 24.4 compliance 25. kubernetes version evolution 25.1 kubernetes 1.0 25.2 kubernetes 1.1 25.3 kubernetes 1.2 25.4 kubernetes 1.3 25.5 kubernetes 1.4 25.6 kubernetes 1.5 25.7 kubernetes 1.6 25.8 kubernetes 1.7 25.9 kubernetes 1.8 25.10 kubernetes 1.9 25.11 kubernetes 1.10 25.12 kubernetes 1.11 25.13 kubernetes 1.12 25.14 kubernetes 1.13 25.15 kubernetes 1.14 25.16 kubernetes 1.15 25.17 kubernetes 1.16 25.18 kubernetes 1.17 25.19 kubernetes 1.18 25.20 kubernetes 1.19 25.21 kubernetes 1.20 25.22 kubernetes 1.21 25.23 kubernetes 1.22 25.24 kubernetes 1.23 25.25 kubernetes 1.24 25.26 kubernetes 1.25 25.27 kubernetes 1.26 25.28 kubernetes 1.27 25.29 kubernetes 1.28 25.30 kubernetes 1.29 25.31 kubernetes 1.30 25.32 kubernetes 1.31 25.33 kubernetes 1.32 25.34 kubernetes 1.33 25.35 kubernetes 1.34 25.36 kubernetes 1.35 25.37 kubernetes 1.36 26. learning path 26.1 phase 1 — foundations 26.2 phase 2 — core kubernetes 26.3 phase 3 — networking and storage 26.4 phase 4 — security 26.5 phase 5 — operations 26.6 phase 6 — delivery and platform 26.7 phase 7 — advanced kubernetes 27. practical projects 27.1 project 1 — local kubernetes lab 27.2 project 2 — production-ready web app 27.3 project 3 — ingress and tls 27.4 project 4 — stateful application 27.5 project 5 — secure namespace 27.6 project 6 — observability stack 27.7 project 7 — gitops delivery 27.8 project 8 — helm chart 27.9 project 9 — custom operator 27.10 project 10 — multi-cluster platform 28. competency checklist 28.1 junior kubernetes 28.2 mid-level kubernetes 28.3 senior kubernetes 28.4 platform / advanced kubernetes"
     },
     {
       "id": "dev-dsa-old-algorithms",
-      "title": "MergeSort",
+      "title": "DSA",
       "summary": "It uses two temporary arrays leftArray and rightArray to hold the data, then combines them by comparing the elements.",
       "area": {
         "slug": "dev",
@@ -4970,7 +4995,7 @@
           "anchor": "code"
         }
       ],
-      "searchText": "mergesort it uses two temporary arrays leftarray and rightarray to hold the data, then combines them by comparing the elements. dev dsa old mergesort description: split the array into two halves and recursively sort them. then merge the two sorted halves. time complexity: o(nlogn) in all cases recommended use: when you need a stable sort and have a large dataset. implementation: explanation: code:"
+      "searchText": "dsa it uses two temporary arrays leftarray and rightarray to hold the data, then combines them by comparing the elements. dev dsa old mergesort description: split the array into two halves and recursively sort them. then merge the two sorted halves. time complexity: o(nlogn) in all cases recommended use: when you need a stable sort and have a large dataset. implementation: explanation: code:"
     },
     {
       "id": "dev-dsa-old-dsa-study-plan",
@@ -5040,8 +5065,8 @@
     },
     {
       "id": "dev-dsa-roadmap-dsa",
-      "title": "Data Structures and Algorithms Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "DSA",
+      "summary": "Roadmap for learning complexity analysis, core data structures, algorithms, problem-solving patterns, and practical DSA projects.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -5050,8 +5075,14 @@
         "slug": "dsa",
         "label": "DSA"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "dsa",
+        "algorithms",
+        "data-structures",
+        "problem-solving",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/dsa/roadmap_dsa.md",
       "url": "/notes/dev/dsa/roadmap_dsa/",
@@ -6046,12 +6077,12 @@
           "anchor": "29-4-advanced-dsa-competency"
         }
       ],
-      "searchText": "data structures and algorithms roadmap — fundamentals to advanced dev dsa data structures and algorithms roadmap — fundamentals to advanced 1. prerequisites 1.1 programming fundamentals 1.2 mathematical foundations 1.3 computer science foundations 1.4 problem-solving fundamentals 1.5 tooling 2. complexity analysis 2.1 asymptotic notation 2.2 common complexity classes 2.3 time complexity analysis 2.4 space complexity analysis 2.5 practical performance 3. arrays and strings 3.1 arrays 3.2 array techniques 3.3 strings 3.4 string algorithms 3.5 common array and string patterns 4. linked lists 4.1 linked list fundamentals 4.2 singly linked list 4.3 doubly linked list 4.4 linked list techniques 4.5 common linked list problems 5. stacks and queues 5.1 stack 5.2 queue 5.3 deque 5.4 stack patterns 5.5 queue patterns 6. hashing and hash tables 6.1 hashing fundamentals 6.2 collision resolution 6.3 hash-based structures 6.4 hashing techniques 6.5 common hashing problems 7. recursion and backtracking 7.1 recursion fundamentals 7.2 recursion patterns 7.3 backtracking fundamentals 7.4 backtracking patterns 7.5 recursion optimization 8. sorting 8.1 sorting fundamentals 8.2 basic sorting algorithms 8.3 efficient comparison sorting 8.4 non-comparison sorting 8.5 sorting patterns 8.6 common sorting problems 9. searching and binary search 9.1 search fundamentals 9.2 binary search basics 9.3 binary search patterns 9.4 ternary search 9.5 common binary search problems 10. trees 10.1 tree fundamentals 10.2 binary trees 10.3 tree traversal 10.4 binary search trees 10.5 balanced trees 10.6 tree algorithms 10.7 advanced trees 11. heaps and priority queues 11.1 heap fundamentals 11.2 heap operations 11.3 priority queue 11.4 heap variants 11.5 heap patterns 12. tries and prefix structures 12.1 trie fundamentals 12.2 trie variants 12.3 trie applications 12.4 common trie problems 13. graphs 13.1 graph fundamentals 13.2 graph representation 13.3 graph traversal 13.4 directed graph algorithms 13.5 undirected graph algorithms 13.6 shortest path algorithms 13.7 minimum spanning tree 13.8 network flow 13.9 advanced graph algorithms 14. union-find / disjoint set union 14.1 dsu fundamentals 14.2 dsu variants 14.3 dsu applications 15. greedy algorithms 15.1 greedy fundamentals 15.2 greedy patterns 15.3 interval greedy 15.4 graph greedy 15.5 common greedy problems 16. dynamic programming 16.1 dp fundamentals 16.2 1d dp 16.3 2d dp 16.4 knapsack dp 16.5 sequence dp 16.6 interval dp 16.7 tree dp 16.8 graph dp 16.9 bitmask dp 16.10 digit dp 16.11 dp optimization 17. divide and conquer 17.1 divide and conquer fundamentals 17.2 classic algorithms 17.3 divide and conquer patterns 18. bit manipulation 18.1 bit fundamentals 18.2 bit operations 18.3 bit tricks 18.4 bitmask applications 18.5 common bit problems 19. math algorithms 19.1 number theory basics 19.2 prime algorithms 19.3 combinatorics 19.4 modular combinatorics 19.5 matrix algorithms 19.6 geometry algorithms 19.7 probability algorithms 20. advanced data structures 20.1 segment tree 20.2 fenwick tree 20.3 sparse table 20.4 balanced search structures 20.5 persistent data structures 20.6 probabilistic data structures 20.7 specialized structures 21. algorithmic paradigms 21.1 brute force 21.2 two pointers 21.3 sliding window 21.4 prefix and suffix computation 21.5 sweep line 21.6 meet-in-the-middle 21.7 randomized algorithms 22. competitive programming techniques 22.1 input/output optimization 22.2 implementation discipline 22.3 common competitive patterns 22.4 contest strategy 23. interview problem-solving 23.1 interview approach 23.2 interview pattern recognition 23.3 coding quality 23.4 testing in interviews 23.5 common interview topics 24. java-specific dsa 24.1 java collections 24.2 java implementation details 24.3 java performance considerations 24.4 java dsa templates 25. system design connections 25.1 data structure usage in systems 25.2 algorithm usage in systems 25.3 practical algorithms for backend engineering 26. learning path 26.1 phase 1 — foundations 26.2 phase 2 — core patterns 26.3 phase 3 — trees and heaps 26.4 phase 4 — graphs 26.5 phase 5 — dynamic programming 26.6 phase 6 — advanced algorithms 26.7 phase 7 — interview readiness 26.8 phase 8 — engineering-level dsa 27. practice projects 27.1 project 1 — data structure library 27.2 project 2 — algorithm visualizer 27.3 project 3 — competitive programming template 27.4 project 4 — search autocomplete engine 27.5 project 5 — cache system 27.6 project 6 — graph toolkit 27.7 project 7 — rate limiter library 27.8 project 8 — text search engine 27.9 project 9 — pathfinding simulator 27.10 project 10 — streaming analytics 28. problem sets by topic 28.1 arrays and strings 28.2 linked lists 28.3 stacks and queues 28.4 trees 28.5 graphs 28.6 dynamic programming 28.7 greedy 28.8 binary search 28.9 heaps 28.10 backtracking 29. competency checklist 29.1 junior dsa competency 29.2 mid-level dsa competency 29.3 senior dsa competency 29.4 advanced dsa competency"
+      "searchText": "dsa roadmap for learning complexity analysis, core data structures, algorithms, problem-solving patterns, and practical dsa projects. dsa algorithms data-structures problem-solving roadmap dev dsa data structures and algorithms roadmap — fundamentals to advanced 1. prerequisites 1.1 programming fundamentals 1.2 mathematical foundations 1.3 computer science foundations 1.4 problem-solving fundamentals 1.5 tooling 2. complexity analysis 2.1 asymptotic notation 2.2 common complexity classes 2.3 time complexity analysis 2.4 space complexity analysis 2.5 practical performance 3. arrays and strings 3.1 arrays 3.2 array techniques 3.3 strings 3.4 string algorithms 3.5 common array and string patterns 4. linked lists 4.1 linked list fundamentals 4.2 singly linked list 4.3 doubly linked list 4.4 linked list techniques 4.5 common linked list problems 5. stacks and queues 5.1 stack 5.2 queue 5.3 deque 5.4 stack patterns 5.5 queue patterns 6. hashing and hash tables 6.1 hashing fundamentals 6.2 collision resolution 6.3 hash-based structures 6.4 hashing techniques 6.5 common hashing problems 7. recursion and backtracking 7.1 recursion fundamentals 7.2 recursion patterns 7.3 backtracking fundamentals 7.4 backtracking patterns 7.5 recursion optimization 8. sorting 8.1 sorting fundamentals 8.2 basic sorting algorithms 8.3 efficient comparison sorting 8.4 non-comparison sorting 8.5 sorting patterns 8.6 common sorting problems 9. searching and binary search 9.1 search fundamentals 9.2 binary search basics 9.3 binary search patterns 9.4 ternary search 9.5 common binary search problems 10. trees 10.1 tree fundamentals 10.2 binary trees 10.3 tree traversal 10.4 binary search trees 10.5 balanced trees 10.6 tree algorithms 10.7 advanced trees 11. heaps and priority queues 11.1 heap fundamentals 11.2 heap operations 11.3 priority queue 11.4 heap variants 11.5 heap patterns 12. tries and prefix structures 12.1 trie fundamentals 12.2 trie variants 12.3 trie applications 12.4 common trie problems 13. graphs 13.1 graph fundamentals 13.2 graph representation 13.3 graph traversal 13.4 directed graph algorithms 13.5 undirected graph algorithms 13.6 shortest path algorithms 13.7 minimum spanning tree 13.8 network flow 13.9 advanced graph algorithms 14. union-find / disjoint set union 14.1 dsu fundamentals 14.2 dsu variants 14.3 dsu applications 15. greedy algorithms 15.1 greedy fundamentals 15.2 greedy patterns 15.3 interval greedy 15.4 graph greedy 15.5 common greedy problems 16. dynamic programming 16.1 dp fundamentals 16.2 1d dp 16.3 2d dp 16.4 knapsack dp 16.5 sequence dp 16.6 interval dp 16.7 tree dp 16.8 graph dp 16.9 bitmask dp 16.10 digit dp 16.11 dp optimization 17. divide and conquer 17.1 divide and conquer fundamentals 17.2 classic algorithms 17.3 divide and conquer patterns 18. bit manipulation 18.1 bit fundamentals 18.2 bit operations 18.3 bit tricks 18.4 bitmask applications 18.5 common bit problems 19. math algorithms 19.1 number theory basics 19.2 prime algorithms 19.3 combinatorics 19.4 modular combinatorics 19.5 matrix algorithms 19.6 geometry algorithms 19.7 probability algorithms 20. advanced data structures 20.1 segment tree 20.2 fenwick tree 20.3 sparse table 20.4 balanced search structures 20.5 persistent data structures 20.6 probabilistic data structures 20.7 specialized structures 21. algorithmic paradigms 21.1 brute force 21.2 two pointers 21.3 sliding window 21.4 prefix and suffix computation 21.5 sweep line 21.6 meet-in-the-middle 21.7 randomized algorithms 22. competitive programming techniques 22.1 input/output optimization 22.2 implementation discipline 22.3 common competitive patterns 22.4 contest strategy 23. interview problem-solving 23.1 interview approach 23.2 interview pattern recognition 23.3 coding quality 23.4 testing in interviews 23.5 common interview topics 24. java-specific dsa 24.1 java collections 24.2 java implementation details 24.3 java performance considerations 24.4 java dsa templates 25. system design connections 25.1 data structure usage in systems 25.2 algorithm usage in systems 25.3 practical algorithms for backend engineering 26. learning path 26.1 phase 1 — foundations 26.2 phase 2 — core patterns 26.3 phase 3 — trees and heaps 26.4 phase 4 — graphs 26.5 phase 5 — dynamic programming 26.6 phase 6 — advanced algorithms 26.7 phase 7 — interview readiness 26.8 phase 8 — engineering-level dsa 27. practice projects 27.1 project 1 — data structure library 27.2 project 2 — algorithm visualizer 27.3 project 3 — competitive programming template 27.4 project 4 — search autocomplete engine 27.5 project 5 — cache system 27.6 project 6 — graph toolkit 27.7 project 7 — rate limiter library 27.8 project 8 — text search engine 27.9 project 9 — pathfinding simulator 27.10 project 10 — streaming analytics 28. problem sets by topic 28.1 arrays and strings 28.2 linked lists 28.3 stacks and queues 28.4 trees 28.5 graphs 28.6 dynamic programming 28.7 greedy 28.8 binary search 28.9 heaps 28.10 backtracking 29. competency checklist 29.1 junior dsa competency 29.2 mid-level dsa competency 29.3 senior dsa competency 29.4 advanced dsa competency"
     },
     {
       "id": "dev-hardware-roadmap-fundamentals-hardware",
-      "title": "Hardware Fundamentals Roadmap — Basics to Advanced",
-      "summary": "",
+      "title": "Hardware Fundamentals",
+      "summary": "Roadmap for learning electronics, digital logic, computer architecture, CPUs, memory, storage, networking hardware, and hardware security.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -6060,8 +6091,14 @@
         "slug": "hardware",
         "label": "Hardware"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "hardware",
+        "computer-architecture",
+        "electronics",
+        "systems",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/hardware/roadmap_fundamentals_hardware.md",
       "url": "/notes/dev/hardware/roadmap_fundamentals_hardware/",
@@ -7041,7 +7078,7 @@
           "anchor": "30-4-advanced-hardware-competency"
         }
       ],
-      "searchText": "hardware fundamentals roadmap — basics to advanced dev hardware hardware fundamentals roadmap — basics to advanced 1. prerequisites 1.1 computer science fundamentals 1.2 mathematics fundamentals 1.3 physics fundamentals 1.4 programming fundamentals 1.5 lab and tool fundamentals 2. electricity and electronics 2.1 electrical basics 2.2 passive components 2.3 active components 2.4 digital electronics 2.5 analog electronics 2.6 power electronics 3. digital logic 3.1 boolean logic 3.2 combinational circuits 3.3 sequential circuits 3.4 timing 3.5 programmable logic 4. computer architecture 4.1 architecture fundamentals 4.2 instruction set architecture 4.3 cpu execution model 4.4 memory hierarchy 4.5 parallelism 4.6 system architecture 5. cpu fundamentals 5.1 cpu components 5.2 cpu specifications 5.3 cpu performance concepts 5.4 cpu microarchitecture 5.5 cpu power and thermals 5.6 cpu families and ecosystems 6. memory fundamentals 6.1 memory hierarchy 6.2 ram basics 6.3 ram specifications 6.4 memory performance 6.5 error detection and correction 6.6 advanced memory 7. motherboards and platform architecture 7.1 motherboard components 7.2 chipset and platform controller 7.3 cpu socket and compatibility 7.4 vrm and power delivery 7.5 expansion slots 7.6 platform firmware features 8. buses and interconnects 8.1 bus fundamentals 8.2 pci express 8.3 usb 8.4 thunderbolt 8.5 storage interconnects 8.6 low-speed embedded buses 8.7 coherent interconnects 9. storage hardware 9.1 storage fundamentals 9.2 hard disk drives 9.3 solid-state drives 9.4 nvme 9.5 raid 9.6 storage reliability 10. gpu and accelerators 10.1 gpu fundamentals 10.2 gpu specifications 10.3 gpu memory 10.4 gpu compute 10.5 ai accelerators 10.6 accelerator interconnects 11. networking hardware 11.1 network interface cards 11.2 ethernet 11.3 switching hardware 11.4 wireless hardware 11.5 cellular and modem hardware 11.6 network diagnostics hardware 12. firmware and boot 12.1 firmware fundamentals 12.2 boot sequence 12.3 uefi 12.4 secure boot and measured boot 12.5 firmware debugging 13. operating system and hardware interface 13.1 hardware abstraction 13.2 interrupts and exceptions 13.3 memory management interface 13.4 device discovery 13.5 linux hardware interfaces 14. power delivery and batteries 14.1 power supply basics 14.2 pc power supplies 14.3 voltage regulation 14.4 batteries 14.5 usb power delivery 15. cooling and thermal management 15.1 thermal fundamentals 15.2 cooling components 15.3 air cooling 15.4 liquid cooling 15.5 thermal diagnostics 16. display and graphics hardware 16.1 display fundamentals 16.2 display technologies 16.3 display interfaces 16.4 graphics pipeline 17. audio hardware 17.1 audio fundamentals 17.2 audio components 17.3 audio interfaces 17.4 audio diagnostics 18. embedded systems and microcontrollers 18.1 embedded fundamentals 18.2 mcu components 18.3 embedded communication 18.4 embedded debugging 18.5 embedded constraints 19. sensors and peripherals 19.1 sensor fundamentals 19.2 common sensors 19.3 input devices 19.4 output devices 19.5 peripheral integration 20. hardware security 20.1 hardware security fundamentals 20.2 tpm and secure elements 20.3 side-channel attacks 20.4 physical attacks 20.5 platform security 21. reliability, diagnostics, and repair 21.1 reliability fundamentals 21.2 hardware diagnostics 21.3 common failure modes 21.4 troubleshooting methodology 21.5 repair fundamentals 22. performance benchmarking 22.1 benchmarking fundamentals 22.2 cpu benchmarks 22.3 memory benchmarks 22.4 storage benchmarks 22.5 gpu benchmarks 22.6 network benchmarks 23. server and datacenter hardware 23.1 server platform fundamentals 23.2 server cpus and memory 23.3 datacenter storage 23.4 datacenter networking 23.5 hardware operations 24. ai and hpc hardware 24.1 ai hardware fundamentals 24.2 accelerator systems 24.3 hpc hardware 24.4 ai/hpc performance factors 25. mobile, laptop, and consumer hardware 25.1 laptop hardware 25.2 mobile socs 25.3 consumer pc hardware 25.4 hardware compatibility 26. hardware design and manufacturing 26.1 pcb fundamentals 26.2 schematic design 26.3 pcb layout 26.4 signal integrity 26.5 manufacturing 27. standards and current ecosystem awareness 27.1 cpu and platform standards 27.2 memory standards 27.3 i/o and expansion standards 27.4 wireless standards 27.5 storage standards 28. learning path 28.1 phase 1 — basic electronics 28.2 phase 2 — computer hardware basics 28.3 phase 3 — architecture and performance 28.4 phase 4 — diagnostics and troubleshooting 28.5 phase 5 — embedded and low-level interfaces 28.6 phase 6 — advanced systems 28.7 phase 7 — hardware design 29. practical projects 29.1 project 1 — pc hardware inventory and diagnostics 29.2 project 2 — build a workstation 29.3 project 3 — power and thermal lab 29.4 project 4 — storage performance lab 29.5 project 5 — network hardware lab 29.6 project 6 — microcontroller sensor node 29.7 project 7 — spi flash firmware dump 29.8 project 8 — fpga digital logic lab 29.9 project 9 — hardware security lab 29.10 project 10 — server hardware lab 30. competency checklist 30.1 junior hardware competency 30.2 mid-level hardware competency 30.3 senior hardware competency 30.4 advanced hardware competency"
+      "searchText": "hardware fundamentals roadmap for learning electronics, digital logic, computer architecture, cpus, memory, storage, networking hardware, and hardware security. hardware computer-architecture electronics systems roadmap dev hardware hardware fundamentals roadmap — basics to advanced 1. prerequisites 1.1 computer science fundamentals 1.2 mathematics fundamentals 1.3 physics fundamentals 1.4 programming fundamentals 1.5 lab and tool fundamentals 2. electricity and electronics 2.1 electrical basics 2.2 passive components 2.3 active components 2.4 digital electronics 2.5 analog electronics 2.6 power electronics 3. digital logic 3.1 boolean logic 3.2 combinational circuits 3.3 sequential circuits 3.4 timing 3.5 programmable logic 4. computer architecture 4.1 architecture fundamentals 4.2 instruction set architecture 4.3 cpu execution model 4.4 memory hierarchy 4.5 parallelism 4.6 system architecture 5. cpu fundamentals 5.1 cpu components 5.2 cpu specifications 5.3 cpu performance concepts 5.4 cpu microarchitecture 5.5 cpu power and thermals 5.6 cpu families and ecosystems 6. memory fundamentals 6.1 memory hierarchy 6.2 ram basics 6.3 ram specifications 6.4 memory performance 6.5 error detection and correction 6.6 advanced memory 7. motherboards and platform architecture 7.1 motherboard components 7.2 chipset and platform controller 7.3 cpu socket and compatibility 7.4 vrm and power delivery 7.5 expansion slots 7.6 platform firmware features 8. buses and interconnects 8.1 bus fundamentals 8.2 pci express 8.3 usb 8.4 thunderbolt 8.5 storage interconnects 8.6 low-speed embedded buses 8.7 coherent interconnects 9. storage hardware 9.1 storage fundamentals 9.2 hard disk drives 9.3 solid-state drives 9.4 nvme 9.5 raid 9.6 storage reliability 10. gpu and accelerators 10.1 gpu fundamentals 10.2 gpu specifications 10.3 gpu memory 10.4 gpu compute 10.5 ai accelerators 10.6 accelerator interconnects 11. networking hardware 11.1 network interface cards 11.2 ethernet 11.3 switching hardware 11.4 wireless hardware 11.5 cellular and modem hardware 11.6 network diagnostics hardware 12. firmware and boot 12.1 firmware fundamentals 12.2 boot sequence 12.3 uefi 12.4 secure boot and measured boot 12.5 firmware debugging 13. operating system and hardware interface 13.1 hardware abstraction 13.2 interrupts and exceptions 13.3 memory management interface 13.4 device discovery 13.5 linux hardware interfaces 14. power delivery and batteries 14.1 power supply basics 14.2 pc power supplies 14.3 voltage regulation 14.4 batteries 14.5 usb power delivery 15. cooling and thermal management 15.1 thermal fundamentals 15.2 cooling components 15.3 air cooling 15.4 liquid cooling 15.5 thermal diagnostics 16. display and graphics hardware 16.1 display fundamentals 16.2 display technologies 16.3 display interfaces 16.4 graphics pipeline 17. audio hardware 17.1 audio fundamentals 17.2 audio components 17.3 audio interfaces 17.4 audio diagnostics 18. embedded systems and microcontrollers 18.1 embedded fundamentals 18.2 mcu components 18.3 embedded communication 18.4 embedded debugging 18.5 embedded constraints 19. sensors and peripherals 19.1 sensor fundamentals 19.2 common sensors 19.3 input devices 19.4 output devices 19.5 peripheral integration 20. hardware security 20.1 hardware security fundamentals 20.2 tpm and secure elements 20.3 side-channel attacks 20.4 physical attacks 20.5 platform security 21. reliability, diagnostics, and repair 21.1 reliability fundamentals 21.2 hardware diagnostics 21.3 common failure modes 21.4 troubleshooting methodology 21.5 repair fundamentals 22. performance benchmarking 22.1 benchmarking fundamentals 22.2 cpu benchmarks 22.3 memory benchmarks 22.4 storage benchmarks 22.5 gpu benchmarks 22.6 network benchmarks 23. server and datacenter hardware 23.1 server platform fundamentals 23.2 server cpus and memory 23.3 datacenter storage 23.4 datacenter networking 23.5 hardware operations 24. ai and hpc hardware 24.1 ai hardware fundamentals 24.2 accelerator systems 24.3 hpc hardware 24.4 ai/hpc performance factors 25. mobile, laptop, and consumer hardware 25.1 laptop hardware 25.2 mobile socs 25.3 consumer pc hardware 25.4 hardware compatibility 26. hardware design and manufacturing 26.1 pcb fundamentals 26.2 schematic design 26.3 pcb layout 26.4 signal integrity 26.5 manufacturing 27. standards and current ecosystem awareness 27.1 cpu and platform standards 27.2 memory standards 27.3 i/o and expansion standards 27.4 wireless standards 27.5 storage standards 28. learning path 28.1 phase 1 — basic electronics 28.2 phase 2 — computer hardware basics 28.3 phase 3 — architecture and performance 28.4 phase 4 — diagnostics and troubleshooting 28.5 phase 5 — embedded and low-level interfaces 28.6 phase 6 — advanced systems 28.7 phase 7 — hardware design 29. practical projects 29.1 project 1 — pc hardware inventory and diagnostics 29.2 project 2 — build a workstation 29.3 project 3 — power and thermal lab 29.4 project 4 — storage performance lab 29.5 project 5 — network hardware lab 29.6 project 6 — microcontroller sensor node 29.7 project 7 — spi flash firmware dump 29.8 project 8 — fpga digital logic lab 29.9 project 9 — hardware security lab 29.10 project 10 — server hardware lab 30. competency checklist 30.1 junior hardware competency 30.2 mid-level hardware competency 30.3 senior hardware competency 30.4 advanced hardware competency"
     },
     {
       "id": "dev-java-old-1-0-lambda",
@@ -7187,8 +7224,8 @@
     },
     {
       "id": "dev-java-roadmap-java",
-      "title": "Java Roadmap - Basics -> Advanced -> Java 26",
-      "summary": "",
+      "title": "Java",
+      "summary": "Roadmap for learning modern Java, JVM fundamentals, OOP, collections, concurrency, modules, performance, testing, and enterprise Java.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -7197,8 +7234,13 @@
         "slug": "java",
         "label": "Java"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "java",
+        "jvm",
+        "backend",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/java/roadmap_java.md",
       "url": "/notes/dev/java/roadmap_java/",
@@ -8073,7 +8115,7 @@
           "anchor": "25-8-phase-8-enterprise-java"
         }
       ],
-      "searchText": "java roadmap - basics -> advanced -> java 26 dev java java roadmap - basics -> advanced -> java 26 1. development environment and tools 1.1 jdk installation and management 1.2 basic jdk tools 1.3 local environment 1.4 build tools 1.5 java project structure 2. language fundamentals 2.1 basic syntax 2.2 primitive types 2.3 wrapper types 2.4 variables and constants 2.5 operators 2.6 control flow 2.7 arrays 2.8 strings 3. object-oriented programming 3.1 classes and objects 3.2 encapsulation 3.3 access modifiers 3.4 inheritance 3.5 abstract classes 3.6 interfaces 3.7 object 3.8 nested classes 3.9 enum 4. domain modeling 4.1 modeling principles 4.2 immutability 4.3 record 4.4 sealed types 4.5 pattern matching for the domain 5. exception handling 5.1 fundamentals 5.2 modern handling 5.3 strategies 6. collections framework 6.1 main interfaces 6.2 list implementations 6.3 set implementations 6.4 map implementations 6.5 queues and deques 6.6 utility collections 6.7 sequenced collections 7. generics and the type system 7.1 basic generics 7.2 bounds 7.3 wildcards 7.4 type erasure 7.5 advanced generics 8. i/o, nio, and file systems 8.1 classic i/o 8.2 nio 8.3 channels and buffers 8.4 file system watch and monitoring 8.5 data serialization 9. date, time, numbers, and localization 9.1 modern date/time 9.2 legacy date/time 9.3 numbers 9.4 localization 10. functional java 10.1 lambdas 10.2 functional interfaces 10.3 method references 10.4 stream api 10.5 collectors 10.6 optional 10.7 practical functional programming 10.8 stream gatherers 11. java modules and packaging 11.1 jpms 11.2 classpath vs module path 11.3 runtime images 12. classic concurrency 12.1 basic threads 12.2 memory model 12.3 synchronization 12.4 java.util.concurrent 12.5 advanced locks and atomics 12.6 async programming 13. modern concurrency: project loom 13.1 virtual threads 13.2 structured concurrency 13.3 scoped values 13.4 enterprise migration 14. networking and http 14.1 networking basics 14.2 http client 14.3 client resilience 15. security and cryptography 15.1 security fundamentals 15.2 crypto api 15.3 serialization security 15.4 platform security evolution 16. reflection, annotations, and metaprogramming 16.1 reflection 16.2 annotations 16.3 dynamic proxy 16.4 methodhandles and varhandles 16.5 class-file api 17. jvm internals 17.1 jvm architecture 17.2 memory 17.3 jit and optimization 17.4 class loading and startup 17.5 runtime observability 18. garbage collection and performance 18.1 gc fundamentals 18.2 garbage collector 18.3 gc tuning 18.4 performance engineering 19. foreign function, memory, and native interop 19.1 jni 19.2 foreign function & memory api 19.3 off-heap and performance 20. vector api and high-performance computing 20.1 simd 20.2 vector api 21. testing 21.1 unit testing 21.2 mocking 21.3 integration testing 21.4 quality gates 22. logging, monitoring, and observability 22.1 logging 22.2 metrics 22.3 tracing 22.4 jvm diagnostics 23. enterprise java and microservices 23.1 jdbc and databases 23.2 spring boot 23.3 persistence 23.4 microservices 23.5 messaging 23.6 containers and cloud 24. java evolution by version 24.1 java 1.0 24.2 java 1.1 24.3 java 1.2 24.4 java 1.3 24.5 java 1.4 24.6 java 5 24.7 java 6 24.8 java 7 24.9 java 8 24.10 java 9 24.11 java 10 24.12 java 11 24.13 java 12 24.14 java 13 24.15 java 14 24.16 java 15 24.17 java 16 24.18 java 17 24.19 java 18 24.20 java 19 24.21 java 20 24.22 java 21 24.23 java 22 24.24 java 23 24.25 java 24 24.26 java 25 24.27 java 26 25. progressive study path 25.1 phase 1 - basic java 25.2 phase 2 - java core 25.3 phase 3 - java 8 25.4 phase 4 - java 9-17 25.5 phase 5 - java 18-21 25.6 phase 6 - java 22-26 25.7 phase 7 - jvm and performance 25.8 phase 8 - enterprise java"
+      "searchText": "java roadmap for learning modern java, jvm fundamentals, oop, collections, concurrency, modules, performance, testing, and enterprise java. java jvm backend roadmap dev java java roadmap - basics -> advanced -> java 26 1. development environment and tools 1.1 jdk installation and management 1.2 basic jdk tools 1.3 local environment 1.4 build tools 1.5 java project structure 2. language fundamentals 2.1 basic syntax 2.2 primitive types 2.3 wrapper types 2.4 variables and constants 2.5 operators 2.6 control flow 2.7 arrays 2.8 strings 3. object-oriented programming 3.1 classes and objects 3.2 encapsulation 3.3 access modifiers 3.4 inheritance 3.5 abstract classes 3.6 interfaces 3.7 object 3.8 nested classes 3.9 enum 4. domain modeling 4.1 modeling principles 4.2 immutability 4.3 record 4.4 sealed types 4.5 pattern matching for the domain 5. exception handling 5.1 fundamentals 5.2 modern handling 5.3 strategies 6. collections framework 6.1 main interfaces 6.2 list implementations 6.3 set implementations 6.4 map implementations 6.5 queues and deques 6.6 utility collections 6.7 sequenced collections 7. generics and the type system 7.1 basic generics 7.2 bounds 7.3 wildcards 7.4 type erasure 7.5 advanced generics 8. i/o, nio, and file systems 8.1 classic i/o 8.2 nio 8.3 channels and buffers 8.4 file system watch and monitoring 8.5 data serialization 9. date, time, numbers, and localization 9.1 modern date/time 9.2 legacy date/time 9.3 numbers 9.4 localization 10. functional java 10.1 lambdas 10.2 functional interfaces 10.3 method references 10.4 stream api 10.5 collectors 10.6 optional 10.7 practical functional programming 10.8 stream gatherers 11. java modules and packaging 11.1 jpms 11.2 classpath vs module path 11.3 runtime images 12. classic concurrency 12.1 basic threads 12.2 memory model 12.3 synchronization 12.4 java.util.concurrent 12.5 advanced locks and atomics 12.6 async programming 13. modern concurrency: project loom 13.1 virtual threads 13.2 structured concurrency 13.3 scoped values 13.4 enterprise migration 14. networking and http 14.1 networking basics 14.2 http client 14.3 client resilience 15. security and cryptography 15.1 security fundamentals 15.2 crypto api 15.3 serialization security 15.4 platform security evolution 16. reflection, annotations, and metaprogramming 16.1 reflection 16.2 annotations 16.3 dynamic proxy 16.4 methodhandles and varhandles 16.5 class-file api 17. jvm internals 17.1 jvm architecture 17.2 memory 17.3 jit and optimization 17.4 class loading and startup 17.5 runtime observability 18. garbage collection and performance 18.1 gc fundamentals 18.2 garbage collector 18.3 gc tuning 18.4 performance engineering 19. foreign function, memory, and native interop 19.1 jni 19.2 foreign function & memory api 19.3 off-heap and performance 20. vector api and high-performance computing 20.1 simd 20.2 vector api 21. testing 21.1 unit testing 21.2 mocking 21.3 integration testing 21.4 quality gates 22. logging, monitoring, and observability 22.1 logging 22.2 metrics 22.3 tracing 22.4 jvm diagnostics 23. enterprise java and microservices 23.1 jdbc and databases 23.2 spring boot 23.3 persistence 23.4 microservices 23.5 messaging 23.6 containers and cloud 24. java evolution by version 24.1 java 1.0 24.2 java 1.1 24.3 java 1.2 24.4 java 1.3 24.5 java 1.4 24.6 java 5 24.7 java 6 24.8 java 7 24.9 java 8 24.10 java 9 24.11 java 10 24.12 java 11 24.13 java 12 24.14 java 13 24.15 java 14 24.16 java 15 24.17 java 16 24.18 java 17 24.19 java 18 24.20 java 19 24.21 java 20 24.22 java 21 24.23 java 22 24.24 java 23 24.25 java 24 24.26 java 25 24.27 java 26 25. progressive study path 25.1 phase 1 - basic java 25.2 phase 2 - java core 25.3 phase 3 - java 8 25.4 phase 4 - java 9-17 25.5 phase 5 - java 18-21 25.6 phase 6 - java 22-26 25.7 phase 7 - jvm and performance 25.8 phase 8 - enterprise java"
     },
     {
       "id": "dev-linux-old-arch-arch-installation",
@@ -8161,8 +8203,8 @@
     },
     {
       "id": "dev-linux-roadmap-linux-kernel",
-      "title": "Linux Kernel Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "Linux Kernel",
+      "summary": "Roadmap for learning Linux kernel architecture, boot, scheduling, memory, filesystems, networking, drivers, tracing, and kernel development.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -8171,8 +8213,14 @@
         "slug": "linux",
         "label": "Linux"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "linux",
+        "kernel",
+        "operating-systems",
+        "systems",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/linux/roadmap_linux_kernel.md",
       "url": "/notes/dev/linux/roadmap_linux_kernel/",
@@ -9317,12 +9365,12 @@
           "anchor": "30-4-advanced-kernel-competency"
         }
       ],
-      "searchText": "linux kernel roadmap — fundamentals to advanced dev linux linux kernel roadmap — fundamentals to advanced 1. prerequisites 1.1 c programming fundamentals 1.2 c build and toolchain fundamentals 1.3 linux user-space fundamentals 1.4 operating system fundamentals 1.5 computer architecture fundamentals 1.6 git and collaboration fundamentals 2. kernel development environment 2.1 source tree setup 2.2 kernel source tree layout 2.3 build dependencies 2.4 kernel configuration 2.5 kernel build 2.6 bootable lab environment 2.7 development workflow 3. kernel architecture overview 3.1 kernel responsibilities 3.2 execution contexts 3.3 kernel address space 3.4 kernel/user boundary 3.5 monolithic modular kernel model 4. boot process 4.1 firmware and bootloader 4.2 early kernel boot 4.3 kernel initialization 4.4 init and user space handoff 4.5 boot debugging 5. processes and scheduling 5.1 process model 5.2 process lifecycle 5.3 scheduler fundamentals 5.4 scheduling classes 5.5 scheduler internals 5.6 real-time scheduling 5.7 scheduler observability 6. memory management 6.1 memory management fundamentals 6.2 page allocator 6.3 slab allocators 6.4 virtual memory areas 6.5 page cache 6.6 swap and reclaim 6.7 huge pages 6.8 numa memory management 6.9 memory debugging 7. system calls and user-kernel interfaces 7.1 system call fundamentals 7.2 adding a system call 7.3 ioctl interface 7.4 procfs 7.5 sysfs 7.6 netlink 7.7 uapi design 8. interrupts, timers, and deferred work 8.1 interrupt fundamentals 8.2 irq handling 8.3 softirqs and tasklets 8.4 workqueues 8.5 timers 8.6 timekeeping 9. concurrency and synchronization 9.1 concurrency fundamentals 9.2 atomic operations 9.3 spinlocks 9.4 mutexes and semaphores 9.5 reader-writer synchronization 9.6 rcu 9.7 memory barriers 9.8 lock debugging 10. virtual file system and filesystems 10.1 vfs fundamentals 10.2 path resolution 10.3 file operations 10.4 filesystem types 10.5 journaling and consistency 10.6 filesystem development 10.7 filesystem debugging 11. block layer and storage 11.1 block layer fundamentals 11.2 block i/o path 11.3 i/o schedulers 11.4 storage drivers 11.5 device mapper 11.6 writeback and dirty pages 11.7 storage debugging 12. device model and driver core 12.1 driver model fundamentals 12.2 device lifecycle 12.3 bus types 12.4 firmware description 12.5 device resources 12.6 udev integration 13. character drivers 13.1 character device fundamentals 13.2 character device registration 13.3 user data handling 13.4 blocking and polling 13.5 mmap in drivers 13.6 character driver testing 14. hardware drivers 14.1 platform drivers 14.2 pci drivers 14.3 usb drivers 14.4 i2c drivers 14.5 spi drivers 14.6 gpio and pinctrl 14.7 clock, reset, and regulator frameworks 14.8 dma 15. network stack and network drivers 15.1 networking fundamentals 15.2 packet receive path 15.3 packet transmit path 15.4 network device drivers 15.5 netfilter and nftables 15.6 traffic control 15.7 xdp and high-performance networking 15.8 network debugging 16. ebpf 16.1 ebpf fundamentals 16.2 bpf program types 16.3 bpf maps 16.4 bpf verifier 16.5 bpf tracing 16.6 bpf development tools 17. namespaces, cgroups, and containers 17.1 namespaces 17.2 cgroups 17.3 container primitives 17.4 container runtimes 17.5 kubernetes kernel interfaces 18. security and hardening 18.1 kernel security model 18.2 linux security modules 18.3 capabilities 18.4 seccomp 18.5 kernel hardening features 18.6 integrity and trust 18.7 vulnerability classes 18.8 security testing 19. tracing, profiling, and debugging 19.1 kernel logging 19.2 ftrace 19.3 perf 19.4 bpf tracing tools 19.5 crash debugging 19.6 kgdb and live debugging 19.7 static and dynamic analysis 20. testing 20.1 kernel selftests 20.2 kunit 20.3 ltp and external tests 20.4 filesystem testing 20.5 fuzzing 20.6 performance testing 20.7 continuous integration 21. architecture-specific development 21.1 x86 21.2 arm and arm64 21.3 risc-v 21.4 other architectures 21.5 cross-architecture concerns 22. virtualization 22.1 virtualization fundamentals 22.2 kvm 22.3 virtio 22.4 containers vs virtual machines 22.5 virtualization debugging 23. power management 23.1 power management fundamentals 23.2 cpu power management 23.3 device runtime pm 23.4 system suspend and resume 23.5 thermal management 24. rust for linux 24.1 rust kernel fundamentals 24.2 rust kernel apis 24.3 rust driver development 24.4 rust limitations and integration 25. kernel contribution workflow 25.1 documentation and process 25.2 finding maintainers 25.3 patch preparation 25.4 patch submission 25.5 review and merge process 25.6 stable and backport workflow 26. kernel subsystems 26.1 core kernel 26.2 memory management 26.3 filesystems 26.4 storage 26.5 networking 26.6 security 26.7 drivers 26.8 virtualization and containers 27. release and version awareness 27.1 release types 27.2 current active lines 27.3 release cadence 27.4 major historical milestones 27.5 version-specific learning targets 28. learning path 28.1 phase 1 — foundations 28.2 phase 2 — kernel basics 28.3 phase 3 — drivers 28.4 phase 4 — core subsystems 28.5 phase 5 — advanced kernel development 28.6 phase 6 — production operations 28.7 phase 7 — upstream contribution 29. practical projects 29.1 project 1 — kernel build lab 29.2 project 2 — hello kernel module 29.3 project 3 — character device driver 29.4 project 4 — procfs and sysfs interfaces 29.5 project 5 — platform driver 29.6 project 6 — interrupt and workqueue lab 29.7 project 7 — memory debugging lab 29.8 project 8 — ebpf tracing tool 29.9 project 9 — filesystem mini-lab 29.10 project 10 — network driver simulator 29.11 project 11 — kernel contribution patch 29.12 project 12 — kernel performance investigation 30. competency checklist 30.1 junior kernel competency 30.2 mid-level kernel competency 30.3 senior kernel competency 30.4 advanced kernel competency"
+      "searchText": "linux kernel roadmap for learning linux kernel architecture, boot, scheduling, memory, filesystems, networking, drivers, tracing, and kernel development. linux kernel operating-systems systems roadmap dev linux linux kernel roadmap — fundamentals to advanced 1. prerequisites 1.1 c programming fundamentals 1.2 c build and toolchain fundamentals 1.3 linux user-space fundamentals 1.4 operating system fundamentals 1.5 computer architecture fundamentals 1.6 git and collaboration fundamentals 2. kernel development environment 2.1 source tree setup 2.2 kernel source tree layout 2.3 build dependencies 2.4 kernel configuration 2.5 kernel build 2.6 bootable lab environment 2.7 development workflow 3. kernel architecture overview 3.1 kernel responsibilities 3.2 execution contexts 3.3 kernel address space 3.4 kernel/user boundary 3.5 monolithic modular kernel model 4. boot process 4.1 firmware and bootloader 4.2 early kernel boot 4.3 kernel initialization 4.4 init and user space handoff 4.5 boot debugging 5. processes and scheduling 5.1 process model 5.2 process lifecycle 5.3 scheduler fundamentals 5.4 scheduling classes 5.5 scheduler internals 5.6 real-time scheduling 5.7 scheduler observability 6. memory management 6.1 memory management fundamentals 6.2 page allocator 6.3 slab allocators 6.4 virtual memory areas 6.5 page cache 6.6 swap and reclaim 6.7 huge pages 6.8 numa memory management 6.9 memory debugging 7. system calls and user-kernel interfaces 7.1 system call fundamentals 7.2 adding a system call 7.3 ioctl interface 7.4 procfs 7.5 sysfs 7.6 netlink 7.7 uapi design 8. interrupts, timers, and deferred work 8.1 interrupt fundamentals 8.2 irq handling 8.3 softirqs and tasklets 8.4 workqueues 8.5 timers 8.6 timekeeping 9. concurrency and synchronization 9.1 concurrency fundamentals 9.2 atomic operations 9.3 spinlocks 9.4 mutexes and semaphores 9.5 reader-writer synchronization 9.6 rcu 9.7 memory barriers 9.8 lock debugging 10. virtual file system and filesystems 10.1 vfs fundamentals 10.2 path resolution 10.3 file operations 10.4 filesystem types 10.5 journaling and consistency 10.6 filesystem development 10.7 filesystem debugging 11. block layer and storage 11.1 block layer fundamentals 11.2 block i/o path 11.3 i/o schedulers 11.4 storage drivers 11.5 device mapper 11.6 writeback and dirty pages 11.7 storage debugging 12. device model and driver core 12.1 driver model fundamentals 12.2 device lifecycle 12.3 bus types 12.4 firmware description 12.5 device resources 12.6 udev integration 13. character drivers 13.1 character device fundamentals 13.2 character device registration 13.3 user data handling 13.4 blocking and polling 13.5 mmap in drivers 13.6 character driver testing 14. hardware drivers 14.1 platform drivers 14.2 pci drivers 14.3 usb drivers 14.4 i2c drivers 14.5 spi drivers 14.6 gpio and pinctrl 14.7 clock, reset, and regulator frameworks 14.8 dma 15. network stack and network drivers 15.1 networking fundamentals 15.2 packet receive path 15.3 packet transmit path 15.4 network device drivers 15.5 netfilter and nftables 15.6 traffic control 15.7 xdp and high-performance networking 15.8 network debugging 16. ebpf 16.1 ebpf fundamentals 16.2 bpf program types 16.3 bpf maps 16.4 bpf verifier 16.5 bpf tracing 16.6 bpf development tools 17. namespaces, cgroups, and containers 17.1 namespaces 17.2 cgroups 17.3 container primitives 17.4 container runtimes 17.5 kubernetes kernel interfaces 18. security and hardening 18.1 kernel security model 18.2 linux security modules 18.3 capabilities 18.4 seccomp 18.5 kernel hardening features 18.6 integrity and trust 18.7 vulnerability classes 18.8 security testing 19. tracing, profiling, and debugging 19.1 kernel logging 19.2 ftrace 19.3 perf 19.4 bpf tracing tools 19.5 crash debugging 19.6 kgdb and live debugging 19.7 static and dynamic analysis 20. testing 20.1 kernel selftests 20.2 kunit 20.3 ltp and external tests 20.4 filesystem testing 20.5 fuzzing 20.6 performance testing 20.7 continuous integration 21. architecture-specific development 21.1 x86 21.2 arm and arm64 21.3 risc-v 21.4 other architectures 21.5 cross-architecture concerns 22. virtualization 22.1 virtualization fundamentals 22.2 kvm 22.3 virtio 22.4 containers vs virtual machines 22.5 virtualization debugging 23. power management 23.1 power management fundamentals 23.2 cpu power management 23.3 device runtime pm 23.4 system suspend and resume 23.5 thermal management 24. rust for linux 24.1 rust kernel fundamentals 24.2 rust kernel apis 24.3 rust driver development 24.4 rust limitations and integration 25. kernel contribution workflow 25.1 documentation and process 25.2 finding maintainers 25.3 patch preparation 25.4 patch submission 25.5 review and merge process 25.6 stable and backport workflow 26. kernel subsystems 26.1 core kernel 26.2 memory management 26.3 filesystems 26.4 storage 26.5 networking 26.6 security 26.7 drivers 26.8 virtualization and containers 27. release and version awareness 27.1 release types 27.2 current active lines 27.3 release cadence 27.4 major historical milestones 27.5 version-specific learning targets 28. learning path 28.1 phase 1 — foundations 28.2 phase 2 — kernel basics 28.3 phase 3 — drivers 28.4 phase 4 — core subsystems 28.5 phase 5 — advanced kernel development 28.6 phase 6 — production operations 28.7 phase 7 — upstream contribution 29. practical projects 29.1 project 1 — kernel build lab 29.2 project 2 — hello kernel module 29.3 project 3 — character device driver 29.4 project 4 — procfs and sysfs interfaces 29.5 project 5 — platform driver 29.6 project 6 — interrupt and workqueue lab 29.7 project 7 — memory debugging lab 29.8 project 8 — ebpf tracing tool 29.9 project 9 — filesystem mini-lab 29.10 project 10 — network driver simulator 29.11 project 11 — kernel contribution patch 29.12 project 12 — kernel performance investigation 30. competency checklist 30.1 junior kernel competency 30.2 mid-level kernel competency 30.3 senior kernel competency 30.4 advanced kernel competency"
     },
     {
       "id": "dev-linux-ssh-key",
       "title": "SSH Key",
-      "summary": "ED25519",
+      "summary": "Quick reference for creating and using ED25519 SSH keys.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -9331,8 +9379,13 @@
         "slug": "linux",
         "label": "Linux"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "linux",
+        "ssh",
+        "security",
+        "keys"
+      ],
+      "order": 20,
       "layout": "default",
       "sourcePath": "notes/dev/linux/ssh_key.md",
       "url": "/notes/dev/linux/ssh_key/",
@@ -9367,12 +9420,12 @@
           "anchor": "test-connection"
         }
       ],
-      "searchText": "ssh key ed25519 dev linux ssh key generate ssh key run agent copy on github test connection"
+      "searchText": "ssh key quick reference for creating and using ed25519 ssh keys. linux ssh security keys dev linux ssh key generate ssh key run agent copy on github test connection"
     },
     {
       "id": "dev-linux-tmux-tailscale",
-      "title": "Tmux e Tailscale",
-      "summary": "Guida pratica per lavorare su una macchina remota in modo stabile:",
+      "title": "Tmux and Tailscale",
+      "summary": "Practical guide for stable remote work with SSH, tmux sessions, and Tailscale connectivity.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -9381,8 +9434,14 @@
         "slug": "linux",
         "label": "Linux"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "linux",
+        "ssh",
+        "tmux",
+        "tailscale",
+        "remote-work"
+      ],
+      "order": 30,
       "layout": "default",
       "sourcePath": "notes/dev/linux/tmux_tailscale.md",
       "url": "/notes/dev/linux/tmux_tailscale/",
@@ -9447,7 +9506,7 @@
           "anchor": "riferimenti"
         }
       ],
-      "searchText": "tmux e tailscale guida pratica per lavorare su una macchina remota in modo stabile: dev linux tmux e tailscale installazione tmux tailscale connessione remota con ssh uso base di tmux sessioni tasti principali configurazione tmux utile tailscale: comandi ricorrenti riferimenti"
+      "searchText": "tmux and tailscale practical guide for stable remote work with ssh, tmux sessions, and tailscale connectivity. linux ssh tmux tailscale remote-work dev linux tmux e tailscale installazione tmux tailscale connessione remota con ssh uso base di tmux sessioni tasti principali configurazione tmux utile tailscale: comandi ricorrenti riferimenti"
     },
     {
       "id": "dev-microservices-old-api-gateway",
@@ -9970,7 +10029,7 @@
     },
     {
       "id": "dev-springboot-old-aop",
-      "title": "AOP (Aspect-Oriented Programming)",
+      "title": "API Gateway",
       "summary": "It enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic. This results in cleaner, more modular code, making it easier to maintain.",
       "area": {
         "slug": "dev",
@@ -10032,7 +10091,7 @@
           "anchor": "example"
         }
       ],
-      "searchText": "aop (aspect-oriented programming) it enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic. this results in cleaner, more modular code, making it easier to maintain. dev spring boot old aop (aspect-oriented programming) concepts aspect join point advice pointcut weaving example"
+      "searchText": "api gateway it enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic. this results in cleaner, more modular code, making it easier to maintain. dev spring boot old aop (aspect-oriented programming) concepts aspect join point advice pointcut weaving example"
     },
     {
       "id": "dev-springboot-old-rest-api-api-documentation",
@@ -10231,7 +10290,7 @@
     },
     {
       "id": "dev-springboot-old-rest-api-rest-api",
-      "title": "Spring REST",
+      "title": "API Gateway",
       "summary": "Also known as:",
       "area": {
         "slug": "dev",
@@ -10304,7 +10363,7 @@
           "anchor": "customize-response"
         }
       ],
-      "searchText": "spring rest also known as: dev spring boot old rest api spring rest java json data binding @restcontroller post post with created location get put delete key annotations customize response"
+      "searchText": "api gateway also known as: dev spring boot old rest api spring rest java json data binding @restcontroller post post with created location get put delete key annotations customize response"
     },
     {
       "id": "dev-springboot-old-rest-api-servlet-mvc-webflux",
@@ -10471,7 +10530,7 @@
     },
     {
       "id": "dev-springboot-old-spring-cloud-spring-cloud",
-      "title": "Spring Cloud",
+      "title": "API Gateway",
       "summary": "pattern. SCS comes with built-in support for Apache Kafka and RabbitMQ.",
       "area": {
         "slug": "dev",
@@ -10524,11 +10583,11 @@
           "anchor": "to-tell-spring-what-destination-to-use-for-each-function"
         }
       ],
-      "searchText": "spring cloud pattern. scs comes with built-in support for apache kafka and rabbitmq. dev spring boot old spring cloud spring cloud spring cloud stream core concepts system messaging implementation to make spring aware of these functions to tell spring what destination to use for each function"
+      "searchText": "api gateway pattern. scs comes with built-in support for apache kafka and rabbitmq. dev spring boot old spring cloud spring cloud spring cloud stream core concepts system messaging implementation to make spring aware of these functions to tell spring what destination to use for each function"
     },
     {
       "id": "dev-springboot-old-spring-data-spring-data",
-      "title": "Spring Data",
+      "title": "API Gateway",
       "summary": "In Spring Data, an entity represents a database table, and a repository provides an abstraction to perform CRUD operations on the entity. Spring Data JPA automates the creation of the repository based on the interfaces you define.",
       "area": {
         "slug": "dev",
@@ -10591,7 +10650,7 @@
           "anchor": "service"
         }
       ],
-      "searchText": "spring data in spring data, an entity represents a database table, and a repository provides an abstraction to perform crud operations on the entity. spring data jpa automates the creation of the repository based on the interfaces you define. dev spring boot old spring data spring data configuration entity jpa mongo repository reactive repository service"
+      "searchText": "api gateway in spring data, an entity represents a database table, and a repository provides an abstraction to perform crud operations on the entity. spring data jpa automates the creation of the repository based on the interfaces you define. dev spring boot old spring data spring data configuration entity jpa mongo repository reactive repository service"
     },
     {
       "id": "dev-springboot-old-spring-security-jwt-refresh-token",
@@ -10622,7 +10681,7 @@
     },
     {
       "id": "dev-springboot-old-spring-security-spring-security",
-      "title": "Spring Security",
+      "title": "API Gateway",
       "summary": "When you send a request to the server, Spring Security will intercept the request and check if the user is authenticated.",
       "area": {
         "slug": "dev",
@@ -10670,11 +10729,11 @@
           "anchor": "custom-filter-chain"
         }
       ],
-      "searchText": "spring security when you send a request to the server, spring security will intercept the request and check if the user is authenticated. dev spring boot old spring security spring security how it works basic authentication filter chain custom filter chain"
+      "searchText": "api gateway when you send a request to the server, spring security will intercept the request and check if the user is authenticated. dev spring boot old spring security spring security how it works basic authentication filter chain custom filter chain"
     },
     {
       "id": "dev-springboot-old-springboot",
-      "title": "SpringBoot",
+      "title": "API Gateway",
       "summary": "code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of objects.",
       "area": {
         "slug": "dev",
@@ -10751,11 +10810,11 @@
           "anchor": "userdetailsservice"
         }
       ],
-      "searchText": "springboot code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of objects. dev spring boot old springboot spring/springboot fundamental concepts inversion of control (ioc) dependency injection types of injection in spring springboot annotation @springbootapplication @component specialized stereotypes @configuration userdetailsservice"
+      "searchText": "api gateway code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of objects. dev spring boot old springboot spring/springboot fundamental concepts inversion of control (ioc) dependency injection types of injection in spring springboot annotation @springbootapplication @component specialized stereotypes @configuration userdetailsservice"
     },
     {
       "id": "dev-springboot-old-springboot-study-plan",
-      "title": "Spring",
+      "title": "API Gateway",
       "summary": "",
       "area": {
         "slug": "dev",
@@ -10802,12 +10861,12 @@
           "anchor": "reactive-programming-and-webflux"
         }
       ],
-      "searchText": "spring dev spring boot old spring configuring spring applications spring core concepts springboot reactive programming and webflux"
+      "searchText": "api gateway dev spring boot old spring configuring spring applications spring core concepts springboot reactive programming and webflux"
     },
     {
       "id": "dev-springboot-roadmap-spring-springboot",
-      "title": "Spring & Spring Boot Roadmap - Basics -> Advanced",
-      "summary": "",
+      "title": "Spring Boot",
+      "summary": "Roadmap for learning Spring Framework, Spring Boot, data access, security, testing, production readiness, cloud, microservices, and modern migrations.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -10816,8 +10875,14 @@
         "slug": "springboot",
         "label": "Spring Boot"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "spring",
+        "spring-boot",
+        "java",
+        "backend",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/springboot/roadmap_spring_springboot.md",
       "url": "/notes/dev/springboot/roadmap_spring_springboot/",
@@ -11902,12 +11967,12 @@
           "anchor": "29-4-advanced-platform-level"
         }
       ],
-      "searchText": "spring & spring boot roadmap - basics -> advanced dev spring boot spring & spring boot roadmap - basics -> advanced 1. technical prerequisites 1.1 required java 1.2 web and http 1.3 database 1.4 application architecture 2. spring ecosystem 2.1 spring framework 2.2 spring boot 2.3 spring data 2.4 spring security 2.5 spring cloud 2.6 spring integration 2.7 spring batch 2.8 spring for graphql 2.9 spring modulith 2.10 spring ai 3. spring framework core 3.1 inversion of control 3.2 applicationcontext 3.3 bean definition 3.4 bean scope 3.5 dependency injection 3.6 component scanning 3.7 java configuration 3.8 xml configuration 3.9 bean lifecycle 3.10 container extension points 4. configuration, environment, and properties 4.1 environment abstraction 4.2 profiles 4.3 externalized configuration 4.4 configuration properties 4.5 conditional configuration 4.6 spring expression language 4.7 @value 5. aop and cross-cutting concerns 5.1 aop concepts 5.2 spring aop 5.3 advice types 5.4 pointcut expression 5.5 use cases aop 6. validation, binding, and conversion 6.1 bean validation 6.2 spring validator 6.3 data binding 6.4 type conversion 7. spring mvc 7.1 servlet stack 7.2 controller 7.3 request input 7.4 response output 7.5 rest api design 7.6 error handling 7.7 interceptors and filters 7.8 multipart and files 7.9 view rendering 8. spring webflux and reactive programming 8.1 reactive fundamentals 8.2 project reactor 8.3 webflux server 8.4 webclient 8.5 reactive data access 8.6 mvc vs webflux 9. modern rest clients 9.1 resttemplate 9.2 restclient 9.3 http interface 9.4 client resiliency 10. spring boot fundamentals 10.1 bootstrapping 10.2 @springbootapplication 10.3 auto-configuration 10.4 starters 10.5 embedded server 10.6 application lifecycle 10.7 devtools 11. advanced spring boot configuration 11.1 dependency management 11.2 maven plugin 11.3 gradle plugin 11.4 logging in boot 11.5 json handling 11.6 task execution 12. data access and transactions 12.1 jdbc with spring 12.2 spring data jdbc 12.3 jpa and hibernate 12.4 spring data jpa 12.5 transaction management 12.6 database migration 12.7 r2dbc 12.8 nosql 13. caching 13.1 cache abstraction 13.2 cache provider 13.3 cache design 14. scheduling and async 14.1 scheduling 14.2 async 14.3 background jobs 15. messaging and event-driven architecture 15.1 spring events 15.2 jms 15.3 rabbitmq / amqp 15.4 kafka 15.5 spring cloud stream 15.6 event-driven architecture 16. spring security 16.1 fundamentals 16.2 filter chain 16.3 modern configuration 16.4 csrf, cors, and sessions 16.5 method security 16.6 oauth2 client 16.7 resource server 16.8 authorization server 16.9 security testing 17. testing spring and spring boot 17.1 unit testing 17.2 spring testcontext 17.3 spring boot testing 17.4 test slice 17.5 web testing 17.6 database testing 17.7 messaging testing 17.8 contract testing 17.9 performance testing 18. actuator and production-ready features 18.1 actuator basics 18.2 main endpoints 18.3 health 18.4 info endpoint 18.5 metrics 18.6 tracing 18.7 audit 19. native, aot, and startup optimization 19.1 aot processing 19.2 graalvm native image 19.3 runtime hints 19.4 crac and checkpoint restore 19.5 startup optimization 20. docker, kubernetes, and deployment 20.1 container image 20.2 jvm in container 20.3 docker compose 20.4 kubernetes 20.5 cloud-native configuration 21. spring cloud and microservices 21.1 config server 21.2 service discovery 21.3 spring cloud gateway 21.4 openfeign 21.5 resilience 21.6 distributed systems patterns 22. api design and documentation 22.1 api contract 22.2 dtos and mapping 22.3 api versioning 22.4 error contract 23. advanced spring internals 23.1 auto-configuration internals 23.2 advanced bean registration 23.3 proxy internals 23.4 annotation model 23.5 spring factories and imports 23.6 runtime performance internals 24. migrations 24.1 spring framework 5 -> 6 24.2 spring boot 2 -> 3 24.3 spring framework 6 -> 7 24.4 spring boot 3 -> 4 24.5 legacy migration 25. spring framework evolution by version 25.1 spring framework 1.x 25.2 spring framework 2.x 25.3 spring framework 3.x 25.4 spring framework 4.x 25.5 spring framework 5.x 25.6 spring framework 6.x 25.7 spring framework 7.x 26. spring boot evolution by version 26.1 spring boot 1.x 26.2 spring boot 2.x 26.3 spring boot 3.x 26.4 spring boot 4.0 26.5 spring boot 4.1 27. progressive study path 27.1 phase 1 - spring core basics 27.2 phase 2 - spring boot basics 27.3 phase 3 - web mvc and rest 27.4 phase 4 - data and transactions 27.5 phase 5 - security 27.6 phase 6 - production readiness 27.7 phase 7 - async, caching, and messaging 27.8 phase 8 - reactive and modern concurrency 27.9 phase 9 - spring cloud 27.10 phase 10 - advanced topics and internals 27.11 phase 11 - modern migrations 28. consolidation projects 28.1 project 1 - spring core lab 28.2 project 2 - spring boot rest api 28.3 project 3 - crud with jpa 28.4 project 4 - secure api 28.5 project 5 - production-ready microservice 28.6 project 6 - messaging service 28.7 project 7 - reactive api 28.8 project 8 - custom spring boot starter 28.9 project 9 - native image lab 28.10 project 10 - modular monolith 29. competency checklist 29.1 junior spring level 29.2 mid-level spring 29.3 senior spring level 29.4 advanced/platform level"
+      "searchText": "spring boot roadmap for learning spring framework, spring boot, data access, security, testing, production readiness, cloud, microservices, and modern migrations. spring spring-boot java backend roadmap dev spring boot spring & spring boot roadmap - basics -> advanced 1. technical prerequisites 1.1 required java 1.2 web and http 1.3 database 1.4 application architecture 2. spring ecosystem 2.1 spring framework 2.2 spring boot 2.3 spring data 2.4 spring security 2.5 spring cloud 2.6 spring integration 2.7 spring batch 2.8 spring for graphql 2.9 spring modulith 2.10 spring ai 3. spring framework core 3.1 inversion of control 3.2 applicationcontext 3.3 bean definition 3.4 bean scope 3.5 dependency injection 3.6 component scanning 3.7 java configuration 3.8 xml configuration 3.9 bean lifecycle 3.10 container extension points 4. configuration, environment, and properties 4.1 environment abstraction 4.2 profiles 4.3 externalized configuration 4.4 configuration properties 4.5 conditional configuration 4.6 spring expression language 4.7 @value 5. aop and cross-cutting concerns 5.1 aop concepts 5.2 spring aop 5.3 advice types 5.4 pointcut expression 5.5 use cases aop 6. validation, binding, and conversion 6.1 bean validation 6.2 spring validator 6.3 data binding 6.4 type conversion 7. spring mvc 7.1 servlet stack 7.2 controller 7.3 request input 7.4 response output 7.5 rest api design 7.6 error handling 7.7 interceptors and filters 7.8 multipart and files 7.9 view rendering 8. spring webflux and reactive programming 8.1 reactive fundamentals 8.2 project reactor 8.3 webflux server 8.4 webclient 8.5 reactive data access 8.6 mvc vs webflux 9. modern rest clients 9.1 resttemplate 9.2 restclient 9.3 http interface 9.4 client resiliency 10. spring boot fundamentals 10.1 bootstrapping 10.2 @springbootapplication 10.3 auto-configuration 10.4 starters 10.5 embedded server 10.6 application lifecycle 10.7 devtools 11. advanced spring boot configuration 11.1 dependency management 11.2 maven plugin 11.3 gradle plugin 11.4 logging in boot 11.5 json handling 11.6 task execution 12. data access and transactions 12.1 jdbc with spring 12.2 spring data jdbc 12.3 jpa and hibernate 12.4 spring data jpa 12.5 transaction management 12.6 database migration 12.7 r2dbc 12.8 nosql 13. caching 13.1 cache abstraction 13.2 cache provider 13.3 cache design 14. scheduling and async 14.1 scheduling 14.2 async 14.3 background jobs 15. messaging and event-driven architecture 15.1 spring events 15.2 jms 15.3 rabbitmq / amqp 15.4 kafka 15.5 spring cloud stream 15.6 event-driven architecture 16. spring security 16.1 fundamentals 16.2 filter chain 16.3 modern configuration 16.4 csrf, cors, and sessions 16.5 method security 16.6 oauth2 client 16.7 resource server 16.8 authorization server 16.9 security testing 17. testing spring and spring boot 17.1 unit testing 17.2 spring testcontext 17.3 spring boot testing 17.4 test slice 17.5 web testing 17.6 database testing 17.7 messaging testing 17.8 contract testing 17.9 performance testing 18. actuator and production-ready features 18.1 actuator basics 18.2 main endpoints 18.3 health 18.4 info endpoint 18.5 metrics 18.6 tracing 18.7 audit 19. native, aot, and startup optimization 19.1 aot processing 19.2 graalvm native image 19.3 runtime hints 19.4 crac and checkpoint restore 19.5 startup optimization 20. docker, kubernetes, and deployment 20.1 container image 20.2 jvm in container 20.3 docker compose 20.4 kubernetes 20.5 cloud-native configuration 21. spring cloud and microservices 21.1 config server 21.2 service discovery 21.3 spring cloud gateway 21.4 openfeign 21.5 resilience 21.6 distributed systems patterns 22. api design and documentation 22.1 api contract 22.2 dtos and mapping 22.3 api versioning 22.4 error contract 23. advanced spring internals 23.1 auto-configuration internals 23.2 advanced bean registration 23.3 proxy internals 23.4 annotation model 23.5 spring factories and imports 23.6 runtime performance internals 24. migrations 24.1 spring framework 5 -> 6 24.2 spring boot 2 -> 3 24.3 spring framework 6 -> 7 24.4 spring boot 3 -> 4 24.5 legacy migration 25. spring framework evolution by version 25.1 spring framework 1.x 25.2 spring framework 2.x 25.3 spring framework 3.x 25.4 spring framework 4.x 25.5 spring framework 5.x 25.6 spring framework 6.x 25.7 spring framework 7.x 26. spring boot evolution by version 26.1 spring boot 1.x 26.2 spring boot 2.x 26.3 spring boot 3.x 26.4 spring boot 4.0 26.5 spring boot 4.1 27. progressive study path 27.1 phase 1 - spring core basics 27.2 phase 2 - spring boot basics 27.3 phase 3 - web mvc and rest 27.4 phase 4 - data and transactions 27.5 phase 5 - security 27.6 phase 6 - production readiness 27.7 phase 7 - async, caching, and messaging 27.8 phase 8 - reactive and modern concurrency 27.9 phase 9 - spring cloud 27.10 phase 10 - advanced topics and internals 27.11 phase 11 - modern migrations 28. consolidation projects 28.1 project 1 - spring core lab 28.2 project 2 - spring boot rest api 28.3 project 3 - crud with jpa 28.4 project 4 - secure api 28.5 project 5 - production-ready microservice 28.6 project 6 - messaging service 28.7 project 7 - reactive api 28.8 project 8 - custom spring boot starter 28.9 project 9 - native image lab 28.10 project 10 - modular monolith 29. competency checklist 29.1 junior spring level 29.2 mid-level spring 29.3 senior spring level 29.4 advanced/platform level"
     },
     {
       "id": "dev-system-design-architecture",
       "title": "Microservices Architecture",
-      "summary": "",
+      "summary": "Notes about microservices architecture concepts, service boundaries, communication, deployment, and distributed-system trade-offs.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -11916,8 +11981,13 @@
         "slug": "system-design",
         "label": "System Design"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "architecture",
+        "microservices",
+        "distributed-systems",
+        "system-design"
+      ],
+      "order": 20,
       "layout": "default",
       "sourcePath": "notes/dev/system_design/architecture.md",
       "url": "/notes/dev/system_design/architecture/",
@@ -11926,12 +11996,12 @@
         "System Design"
       ],
       "headings": [],
-      "searchText": "microservices architecture dev system design"
+      "searchText": "microservices architecture notes about microservices architecture concepts, service boundaries, communication, deployment, and distributed-system trade-offs. architecture microservices distributed-systems system-design dev system design"
     },
     {
       "id": "dev-system-design-roadmap-system-design-and-architecture",
-      "title": "System Design and Software Architecture Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "System Design",
+      "summary": "Roadmap for learning system design, software architecture, distributed systems, scalability, reliability, data architecture, cloud, and governance.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -11940,8 +12010,14 @@
         "slug": "system-design",
         "label": "System Design"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "system-design",
+        "software-architecture",
+        "distributed-systems",
+        "scalability",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/system_design/roadmap_system_design_and_architecture.md",
       "url": "/notes/dev/system_design/roadmap_system_design_and_architecture/",
@@ -13086,12 +13162,12 @@
           "anchor": "32-5-production-readiness-competency"
         }
       ],
-      "searchText": "system design and software architecture roadmap — fundamentals to advanced dev system design system design and software architecture roadmap — fundamentals to advanced 1. prerequisites 1.1 software engineering fundamentals 1.2 backend fundamentals 1.3 infrastructure fundamentals 1.4 data fundamentals 1.5 communication fundamentals 2. architecture thinking 2.1 architecture fundamentals 2.2 architectural drivers 2.3 quality attributes 2.4 architectural trade-offs 2.5 architecture decision-making 2.6 architectural thinking skills 3. requirements and constraints 3.1 functional requirements 3.2 non-functional requirements 3.3 capacity requirements 3.4 availability and recovery requirements 3.5 security and compliance requirements 3.6 constraints 4. system design interview method 4.1 problem clarification 4.2 back-of-the-envelope estimation 4.3 high-level design 4.4 data model design 4.5 api design 4.6 deep dives 4.7 trade-off communication 5. core architectural styles 5.1 layered architecture 5.2 clean architecture 5.3 hexagonal architecture 5.4 onion architecture 5.5 domain-driven design architecture 5.6 event-driven architecture 5.7 microservices architecture 5.8 modular monolith 5.9 serverless architecture 5.10 space-based architecture 6. architectural patterns 6.1 structural patterns 6.2 distributed system patterns 6.3 data patterns 6.4 integration patterns 6.5 cloud patterns 6.6 reliability patterns 7. distributed systems fundamentals 7.1 distributed system concepts 7.2 cap and pacelc 7.3 consistency models 7.4 time and ordering 7.5 consensus 7.6 replication 7.7 partitioning 7.8 distributed failure modes 8. scalability 8.1 scalability fundamentals 8.2 application scaling 8.3 database scaling 8.4 cache scaling 8.5 queue scaling 8.6 frontend and edge scaling 9. performance engineering 9.1 performance fundamentals 9.2 latency analysis 9.3 performance optimization 9.4 load testing 9.5 capacity planning 9.6 queueing theory awareness 10. reliability and resilience 10.1 reliability fundamentals 10.2 failure handling 10.3 high availability 10.4 disaster recovery 10.5 chaos engineering 10.6 incident response 11. data architecture 11.1 data modeling 11.2 database selection 11.3 transactional architecture 11.4 analytical architecture 11.5 data consistency 11.6 data migration 11.7 data governance 12. caching architecture 12.1 cache fundamentals 12.2 cache patterns 12.3 cache invalidation 12.4 cache failure modes 12.5 cache technologies 13. messaging and event streaming 13.1 messaging fundamentals 13.2 message delivery guarantees 13.3 queue-based architecture 13.4 event streaming architecture 13.5 event design 13.6 messaging technologies 14. api and integration architecture 14.1 api styles 14.2 rest api design 14.3 grpc architecture 14.4 graphql architecture 14.5 api gateway architecture 14.6 integration patterns 15. security architecture 15.1 security principles 15.2 identity and access 15.3 application security architecture 15.4 data security 15.5 infrastructure security 15.6 security operations 16. observability architecture 16.1 observability fundamentals 16.2 logging architecture 16.3 metrics architecture 16.4 tracing architecture 16.5 alerting architecture 16.6 observability tools 17. cloud architecture 17.1 cloud fundamentals 17.2 compute architecture 17.3 cloud networking 17.4 cloud storage 17.5 cloud-native architecture 17.6 cloud cost architecture 18. microservices architecture 18.1 microservice fundamentals 18.2 service decomposition 18.3 inter-service communication 18.4 distributed data management 18.5 microservice operations 18.6 microservice anti-patterns 19. monolith and modular architecture 19.1 monolith fundamentals 19.2 modular monolith 19.3 monolith modernization 19.4 when to choose monolith 19.5 when to choose microservices 20. frontend and client architecture 20.1 frontend architecture fundamentals 20.2 web performance architecture 20.3 frontend state architecture 20.4 micro-frontend architecture 20.5 mobile client architecture 21. search, recommendation, and ai system architecture 21.1 search architecture 21.2 recommendation architecture 21.3 ai application architecture 21.4 rag architecture 21.5 agentic architecture 22. devops, platform, and deployment architecture 22.1 ci/cd architecture 22.2 deployment strategies 22.3 infrastructure as code 22.4 platform engineering 22.5 kubernetes architecture 22.6 release engineering 23. enterprise architecture and governance 23.1 enterprise architecture fundamentals 23.2 architecture frameworks 23.3 architecture governance 23.4 architecture documentation 23.5 architecture review 24. architecture documentation and diagramming 24.1 documentation principles 24.2 c4 model 24.3 adrs 24.4 diagrams 24.5 diagramming tools 25. cost architecture and finops 25.1 cost fundamentals 25.2 cost modeling 25.3 cost optimization 25.4 finops practices 26. architecture migration and evolution 26.1 legacy modernization 26.2 migration patterns 26.3 database migration architecture 26.4 cloud migration 26.5 evolutionary architecture 27. architecture evaluation 27.1 evaluation methods 27.2 architecture scenarios 27.3 fitness functions 27.4 production readiness 28. common system design problems 28.1 social and content systems 28.2 data and storage systems 28.3 communication systems 28.4 commerce and financial systems 28.5 infrastructure systems 28.6 ai and search systems 29. standards, frameworks, and current ecosystem awareness 29.1 architecture standards and frameworks 29.2 cloud architecture frameworks 29.3 reliability frameworks 29.4 security standards and guidance 29.5 cloud-native ecosystem 29.6 architecture tooling 30. learning path 30.1 phase 1 — fundamentals 30.2 phase 2 — system design basics 30.3 phase 3 — distributed systems 30.4 phase 4 — software architecture 30.5 phase 5 — production architecture 30.6 phase 6 — enterprise and governance 30.7 phase 7 — advanced architecture 31. practical projects 31.1 project 1 — url shortener 31.2 project 2 — notification platform 31.3 project 3 — chat system 31.4 project 4 — e-commerce platform 31.5 project 5 — event streaming platform 31.6 project 6 — multi-tenant saas platform 31.7 project 7 — observability platform 31.8 project 8 — rag ai assistant architecture 31.9 project 9 — kubernetes platform 31.10 project 10 — legacy modernization plan 31.11 project 11 — high-scale rate limiter 31.12 project 12 — global file storage system 32. competency checklist 32.1 junior system design competency 32.2 mid-level system design competency 32.3 senior architecture competency 32.4 staff/principal architecture competency 32.5 production readiness competency"
+      "searchText": "system design roadmap for learning system design, software architecture, distributed systems, scalability, reliability, data architecture, cloud, and governance. system-design software-architecture distributed-systems scalability roadmap dev system design system design and software architecture roadmap — fundamentals to advanced 1. prerequisites 1.1 software engineering fundamentals 1.2 backend fundamentals 1.3 infrastructure fundamentals 1.4 data fundamentals 1.5 communication fundamentals 2. architecture thinking 2.1 architecture fundamentals 2.2 architectural drivers 2.3 quality attributes 2.4 architectural trade-offs 2.5 architecture decision-making 2.6 architectural thinking skills 3. requirements and constraints 3.1 functional requirements 3.2 non-functional requirements 3.3 capacity requirements 3.4 availability and recovery requirements 3.5 security and compliance requirements 3.6 constraints 4. system design interview method 4.1 problem clarification 4.2 back-of-the-envelope estimation 4.3 high-level design 4.4 data model design 4.5 api design 4.6 deep dives 4.7 trade-off communication 5. core architectural styles 5.1 layered architecture 5.2 clean architecture 5.3 hexagonal architecture 5.4 onion architecture 5.5 domain-driven design architecture 5.6 event-driven architecture 5.7 microservices architecture 5.8 modular monolith 5.9 serverless architecture 5.10 space-based architecture 6. architectural patterns 6.1 structural patterns 6.2 distributed system patterns 6.3 data patterns 6.4 integration patterns 6.5 cloud patterns 6.6 reliability patterns 7. distributed systems fundamentals 7.1 distributed system concepts 7.2 cap and pacelc 7.3 consistency models 7.4 time and ordering 7.5 consensus 7.6 replication 7.7 partitioning 7.8 distributed failure modes 8. scalability 8.1 scalability fundamentals 8.2 application scaling 8.3 database scaling 8.4 cache scaling 8.5 queue scaling 8.6 frontend and edge scaling 9. performance engineering 9.1 performance fundamentals 9.2 latency analysis 9.3 performance optimization 9.4 load testing 9.5 capacity planning 9.6 queueing theory awareness 10. reliability and resilience 10.1 reliability fundamentals 10.2 failure handling 10.3 high availability 10.4 disaster recovery 10.5 chaos engineering 10.6 incident response 11. data architecture 11.1 data modeling 11.2 database selection 11.3 transactional architecture 11.4 analytical architecture 11.5 data consistency 11.6 data migration 11.7 data governance 12. caching architecture 12.1 cache fundamentals 12.2 cache patterns 12.3 cache invalidation 12.4 cache failure modes 12.5 cache technologies 13. messaging and event streaming 13.1 messaging fundamentals 13.2 message delivery guarantees 13.3 queue-based architecture 13.4 event streaming architecture 13.5 event design 13.6 messaging technologies 14. api and integration architecture 14.1 api styles 14.2 rest api design 14.3 grpc architecture 14.4 graphql architecture 14.5 api gateway architecture 14.6 integration patterns 15. security architecture 15.1 security principles 15.2 identity and access 15.3 application security architecture 15.4 data security 15.5 infrastructure security 15.6 security operations 16. observability architecture 16.1 observability fundamentals 16.2 logging architecture 16.3 metrics architecture 16.4 tracing architecture 16.5 alerting architecture 16.6 observability tools 17. cloud architecture 17.1 cloud fundamentals 17.2 compute architecture 17.3 cloud networking 17.4 cloud storage 17.5 cloud-native architecture 17.6 cloud cost architecture 18. microservices architecture 18.1 microservice fundamentals 18.2 service decomposition 18.3 inter-service communication 18.4 distributed data management 18.5 microservice operations 18.6 microservice anti-patterns 19. monolith and modular architecture 19.1 monolith fundamentals 19.2 modular monolith 19.3 monolith modernization 19.4 when to choose monolith 19.5 when to choose microservices 20. frontend and client architecture 20.1 frontend architecture fundamentals 20.2 web performance architecture 20.3 frontend state architecture 20.4 micro-frontend architecture 20.5 mobile client architecture 21. search, recommendation, and ai system architecture 21.1 search architecture 21.2 recommendation architecture 21.3 ai application architecture 21.4 rag architecture 21.5 agentic architecture 22. devops, platform, and deployment architecture 22.1 ci/cd architecture 22.2 deployment strategies 22.3 infrastructure as code 22.4 platform engineering 22.5 kubernetes architecture 22.6 release engineering 23. enterprise architecture and governance 23.1 enterprise architecture fundamentals 23.2 architecture frameworks 23.3 architecture governance 23.4 architecture documentation 23.5 architecture review 24. architecture documentation and diagramming 24.1 documentation principles 24.2 c4 model 24.3 adrs 24.4 diagrams 24.5 diagramming tools 25. cost architecture and finops 25.1 cost fundamentals 25.2 cost modeling 25.3 cost optimization 25.4 finops practices 26. architecture migration and evolution 26.1 legacy modernization 26.2 migration patterns 26.3 database migration architecture 26.4 cloud migration 26.5 evolutionary architecture 27. architecture evaluation 27.1 evaluation methods 27.2 architecture scenarios 27.3 fitness functions 27.4 production readiness 28. common system design problems 28.1 social and content systems 28.2 data and storage systems 28.3 communication systems 28.4 commerce and financial systems 28.5 infrastructure systems 28.6 ai and search systems 29. standards, frameworks, and current ecosystem awareness 29.1 architecture standards and frameworks 29.2 cloud architecture frameworks 29.3 reliability frameworks 29.4 security standards and guidance 29.5 cloud-native ecosystem 29.6 architecture tooling 30. learning path 30.1 phase 1 — fundamentals 30.2 phase 2 — system design basics 30.3 phase 3 — distributed systems 30.4 phase 4 — software architecture 30.5 phase 5 — production architecture 30.6 phase 6 — enterprise and governance 30.7 phase 7 — advanced architecture 31. practical projects 31.1 project 1 — url shortener 31.2 project 2 — notification platform 31.3 project 3 — chat system 31.4 project 4 — e-commerce platform 31.5 project 5 — event streaming platform 31.6 project 6 — multi-tenant saas platform 31.7 project 7 — observability platform 31.8 project 8 — rag ai assistant architecture 31.9 project 9 — kubernetes platform 31.10 project 10 — legacy modernization plan 31.11 project 11 — high-scale rate limiter 31.12 project 12 — global file storage system 32. competency checklist 32.1 junior system design competency 32.2 mid-level system design competency 32.3 senior architecture competency 32.4 staff/principal architecture competency 32.5 production readiness competency"
     },
     {
       "id": "dev-web-roadmap-web-infrastructure-protocols",
-      "title": "Web Infrastructure and Protocols Roadmap — Fundamentals to Advanced",
-      "summary": "",
+      "title": "Web Infrastructure",
+      "summary": "Roadmap for learning DNS, HTTP, TLS, browsers, caching, proxies, CDNs, security, deployment, observability, and web reliability.",
       "area": {
         "slug": "dev",
         "label": "Engineering"
@@ -13100,8 +13176,15 @@
         "slug": "web",
         "label": "Web"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "web",
+        "http",
+        "dns",
+        "tls",
+        "infrastructure",
+        "roadmap"
+      ],
+      "order": 10,
       "layout": "page",
       "sourcePath": "notes/dev/web/roadmap_web_infrastructure_protocols.md",
       "url": "/notes/dev/web/roadmap_web_infrastructure_protocols/",
@@ -14156,12 +14239,12 @@
           "anchor": "32-4-advanced-web-infrastructure-competency"
         }
       ],
-      "searchText": "web infrastructure and protocols roadmap — fundamentals to advanced dev web web infrastructure and protocols roadmap — fundamentals to advanced 1. prerequisites 1.1 networking fundamentals 1.2 linux and operating system fundamentals 1.3 security fundamentals 1.4 cloud and infrastructure fundamentals 1.5 tooling fundamentals 2. web infrastructure mental model 2.1 request lifecycle 2.2 web infrastructure components 2.3 client-side infrastructure concerns 2.4 server-side infrastructure concerns 2.5 edge infrastructure concerns 3. uri, url, origin, and resource identity 3.1 uri and url basics 3.2 http and https schemes 3.3 origin model 3.4 resource identity 4. dns 4.1 dns fundamentals 4.2 dns record types 4.3 dns resolution flow 4.4 dns transport 4.5 dns security 4.6 dns operations 4.7 dns troubleshooting 5. ip networking for web infrastructure 5.1 ip fundamentals 5.2 ipv4 5.3 ipv6 5.4 routing 5.5 web-facing network design 5.6 network troubleshooting 6. tcp, udp, and transport behavior 6.1 tcp fundamentals 6.2 tcp states 6.3 tcp performance 6.4 udp fundamentals 6.5 socket-level concerns 6.6 transport troubleshooting 7. tls, pki, and https 7.1 tls fundamentals 7.2 tls versions 7.3 certificates 7.4 certificate automation 7.5 https operations 7.6 tls troubleshooting 8. http semantics 8.1 http fundamentals 8.2 http methods 8.3 http status codes 8.4 http headers 8.5 http body and representation 8.6 http content negotiation 8.7 http conditional requests 9. http versions and evolution 9.1 http/0.9 and http/1.0 9.2 http/1.1 9.3 http/2 9.4 http/3 9.5 quic 9.6 protocol negotiation 10. http caching 10.1 cache fundamentals 10.2 cache headers 10.3 cache strategies 10.4 cdn caching 10.5 cache troubleshooting 11. cookies, sessions, and browser state 11.1 cookie fundamentals 11.2 session management 11.3 browser storage 11.4 state security 12. browser networking and security boundaries 12.1 browser networking stack 12.2 same-origin policy 12.3 cors 12.4 fetch metadata 12.5 cross-origin isolation 13. web security headers and browser defenses 13.1 transport security headers 13.2 content security policy 13.3 framing and embedding defenses 13.4 content sniffing and referrer controls 13.5 permissions and privacy headers 14. web authentication and authorization protocols 14.1 authentication fundamentals 14.2 http authentication 14.3 oauth 2.x 14.4 openid connect 14.5 saml 14.6 webauthn and passkeys 14.7 authorization models 15. realtime and bidirectional protocols 15.1 long polling 15.2 server-sent events 15.3 websocket 15.4 webrtc 15.5 webtransport 15.6 realtime infrastructure design 16. proxies, reverse proxies, and gateways 16.1 proxy fundamentals 16.2 reverse proxy responsibilities 16.3 common reverse proxies 16.4 proxy headers 16.5 api gateways 17. load balancing 17.1 load balancing fundamentals 17.2 load balancer layers 17.3 load balancing algorithms 17.4 session persistence 17.5 load balancer operations 18. cdn and edge infrastructure 18.1 cdn fundamentals 18.2 static asset delivery 18.3 dynamic acceleration 18.4 edge compute 18.5 cdn security 19. web servers and application infrastructure 19.1 web server fundamentals 19.2 common web servers 19.3 application server patterns 19.4 static hosting 19.5 serverless web infrastructure 20. api protocols and data exchange 20.1 rest over http 20.2 graphql transport 20.3 grpc 20.4 webhooks 20.5 data formats 20.6 api contracts 21. email and adjacent web protocols 21.1 email transport 21.2 email authentication 21.3 email retrieval 21.4 web push 22. web performance infrastructure 22.1 performance fundamentals 22.2 core web vitals infrastructure impact 22.3 resource delivery optimization 22.4 network-level optimization 22.5 load testing 23. web security infrastructure 23.1 common web risks 23.2 waf 23.3 ddos protection 23.4 bot management 23.5 security scanning 23.6 incident response 24. observability for web infrastructure 24.1 logging 24.2 metrics 24.3 distributed tracing 24.4 synthetic monitoring 24.5 real user monitoring 24.6 alerting 25. deployment infrastructure 25.1 deployment models 25.2 release strategies 25.3 infrastructure as code 25.4 ci/cd for web infrastructure 25.5 configuration and secrets 26. kubernetes and cloud-native web networking 26.1 kubernetes web primitives 26.2 kubernetes ingress 26.3 gateway api 26.4 service mesh 26.5 cloud load balancing 27. reliability engineering for web infrastructure 27.1 availability fundamentals 27.2 resilience patterns 27.3 multi-region architecture 27.4 capacity planning 27.5 incident management 28. protocol and infrastructure troubleshooting 28.1 dns troubleshooting checklist 28.2 tcp troubleshooting checklist 28.3 tls troubleshooting checklist 28.4 http troubleshooting checklist 28.5 cdn troubleshooting checklist 28.6 load balancer troubleshooting checklist 29. current standards and ecosystem awareness 29.1 core protocol standards 29.2 browser platform awareness 29.3 security standards and guidance 29.4 infrastructure ecosystem 30. learning path 30.1 phase 1 — web networking basics 30.2 phase 2 — http and browser infrastructure 30.3 phase 3 — production web infrastructure 30.4 phase 4 — advanced protocols 30.5 phase 5 — security and reliability 30.6 phase 6 — cloud-native infrastructure 31. practical projects 31.1 project 1 — dns and tls lab 31.2 project 2 — http server and reverse proxy 31.3 project 3 — http caching lab 31.4 project 4 — load balancing lab 31.5 project 5 — cdn and edge security lab 31.6 project 6 — websocket and sse lab 31.7 project 7 — oauth and oidc lab 31.8 project 8 — kubernetes web ingress lab 31.9 project 9 — observability lab 31.10 project 10 — web infrastructure incident drill 32. competency checklist 32.1 junior web infrastructure competency 32.2 mid-level web infrastructure competency 32.3 senior web infrastructure competency 32.4 advanced web infrastructure competency"
+      "searchText": "web infrastructure roadmap for learning dns, http, tls, browsers, caching, proxies, cdns, security, deployment, observability, and web reliability. web http dns tls infrastructure roadmap dev web web infrastructure and protocols roadmap — fundamentals to advanced 1. prerequisites 1.1 networking fundamentals 1.2 linux and operating system fundamentals 1.3 security fundamentals 1.4 cloud and infrastructure fundamentals 1.5 tooling fundamentals 2. web infrastructure mental model 2.1 request lifecycle 2.2 web infrastructure components 2.3 client-side infrastructure concerns 2.4 server-side infrastructure concerns 2.5 edge infrastructure concerns 3. uri, url, origin, and resource identity 3.1 uri and url basics 3.2 http and https schemes 3.3 origin model 3.4 resource identity 4. dns 4.1 dns fundamentals 4.2 dns record types 4.3 dns resolution flow 4.4 dns transport 4.5 dns security 4.6 dns operations 4.7 dns troubleshooting 5. ip networking for web infrastructure 5.1 ip fundamentals 5.2 ipv4 5.3 ipv6 5.4 routing 5.5 web-facing network design 5.6 network troubleshooting 6. tcp, udp, and transport behavior 6.1 tcp fundamentals 6.2 tcp states 6.3 tcp performance 6.4 udp fundamentals 6.5 socket-level concerns 6.6 transport troubleshooting 7. tls, pki, and https 7.1 tls fundamentals 7.2 tls versions 7.3 certificates 7.4 certificate automation 7.5 https operations 7.6 tls troubleshooting 8. http semantics 8.1 http fundamentals 8.2 http methods 8.3 http status codes 8.4 http headers 8.5 http body and representation 8.6 http content negotiation 8.7 http conditional requests 9. http versions and evolution 9.1 http/0.9 and http/1.0 9.2 http/1.1 9.3 http/2 9.4 http/3 9.5 quic 9.6 protocol negotiation 10. http caching 10.1 cache fundamentals 10.2 cache headers 10.3 cache strategies 10.4 cdn caching 10.5 cache troubleshooting 11. cookies, sessions, and browser state 11.1 cookie fundamentals 11.2 session management 11.3 browser storage 11.4 state security 12. browser networking and security boundaries 12.1 browser networking stack 12.2 same-origin policy 12.3 cors 12.4 fetch metadata 12.5 cross-origin isolation 13. web security headers and browser defenses 13.1 transport security headers 13.2 content security policy 13.3 framing and embedding defenses 13.4 content sniffing and referrer controls 13.5 permissions and privacy headers 14. web authentication and authorization protocols 14.1 authentication fundamentals 14.2 http authentication 14.3 oauth 2.x 14.4 openid connect 14.5 saml 14.6 webauthn and passkeys 14.7 authorization models 15. realtime and bidirectional protocols 15.1 long polling 15.2 server-sent events 15.3 websocket 15.4 webrtc 15.5 webtransport 15.6 realtime infrastructure design 16. proxies, reverse proxies, and gateways 16.1 proxy fundamentals 16.2 reverse proxy responsibilities 16.3 common reverse proxies 16.4 proxy headers 16.5 api gateways 17. load balancing 17.1 load balancing fundamentals 17.2 load balancer layers 17.3 load balancing algorithms 17.4 session persistence 17.5 load balancer operations 18. cdn and edge infrastructure 18.1 cdn fundamentals 18.2 static asset delivery 18.3 dynamic acceleration 18.4 edge compute 18.5 cdn security 19. web servers and application infrastructure 19.1 web server fundamentals 19.2 common web servers 19.3 application server patterns 19.4 static hosting 19.5 serverless web infrastructure 20. api protocols and data exchange 20.1 rest over http 20.2 graphql transport 20.3 grpc 20.4 webhooks 20.5 data formats 20.6 api contracts 21. email and adjacent web protocols 21.1 email transport 21.2 email authentication 21.3 email retrieval 21.4 web push 22. web performance infrastructure 22.1 performance fundamentals 22.2 core web vitals infrastructure impact 22.3 resource delivery optimization 22.4 network-level optimization 22.5 load testing 23. web security infrastructure 23.1 common web risks 23.2 waf 23.3 ddos protection 23.4 bot management 23.5 security scanning 23.6 incident response 24. observability for web infrastructure 24.1 logging 24.2 metrics 24.3 distributed tracing 24.4 synthetic monitoring 24.5 real user monitoring 24.6 alerting 25. deployment infrastructure 25.1 deployment models 25.2 release strategies 25.3 infrastructure as code 25.4 ci/cd for web infrastructure 25.5 configuration and secrets 26. kubernetes and cloud-native web networking 26.1 kubernetes web primitives 26.2 kubernetes ingress 26.3 gateway api 26.4 service mesh 26.5 cloud load balancing 27. reliability engineering for web infrastructure 27.1 availability fundamentals 27.2 resilience patterns 27.3 multi-region architecture 27.4 capacity planning 27.5 incident management 28. protocol and infrastructure troubleshooting 28.1 dns troubleshooting checklist 28.2 tcp troubleshooting checklist 28.3 tls troubleshooting checklist 28.4 http troubleshooting checklist 28.5 cdn troubleshooting checklist 28.6 load balancer troubleshooting checklist 29. current standards and ecosystem awareness 29.1 core protocol standards 29.2 browser platform awareness 29.3 security standards and guidance 29.4 infrastructure ecosystem 30. learning path 30.1 phase 1 — web networking basics 30.2 phase 2 — http and browser infrastructure 30.3 phase 3 — production web infrastructure 30.4 phase 4 — advanced protocols 30.5 phase 5 — security and reliability 30.6 phase 6 — cloud-native infrastructure 31. practical projects 31.1 project 1 — dns and tls lab 31.2 project 2 — http server and reverse proxy 31.3 project 3 — http caching lab 31.4 project 4 — load balancing lab 31.5 project 5 — cdn and edge security lab 31.6 project 6 — websocket and sse lab 31.7 project 7 — oauth and oidc lab 31.8 project 8 — kubernetes web ingress lab 31.9 project 9 — observability lab 31.10 project 10 — web infrastructure incident drill 32. competency checklist 32.1 junior web infrastructure competency 32.2 mid-level web infrastructure competency 32.3 senior web infrastructure competency 32.4 advanced web infrastructure competency"
     },
     {
       "id": "etc-anime-list",
       "title": "Anime List",
-      "summary": "document.addEventListener('DOMContentLoaded', () => { const sectionsContainer = document.getElementById('anime-sections'); const counterSpan = document.getElementById('anime-counter-value'); const toggleAllButton = document.getElementById('toggle-all'); const searchInput = document.getElementById('anime-search'); const dataUrl = '/assets/data/anime_list.json';",
+      "summary": "Personal anime watch list organized by status and searchable sections.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14170,8 +14253,12 @@
         "slug": "anime-list",
         "label": "Anime List"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "anime",
+        "watchlist",
+        "personal"
+      ],
+      "order": 10,
       "layout": "anime",
       "sourcePath": "notes/etc/anime_list.md",
       "url": "/notes/etc/anime_list/",
@@ -14179,12 +14266,12 @@
         "Etc"
       ],
       "headings": [],
-      "searchText": "anime list document.addeventlistener('domcontentloaded', () => { const sectionscontainer = document.getelementbyid('anime-sections'); const counterspan = document.getelementbyid('anime-counter-value'); const toggleallbutton = document.getelementbyid('toggle-all'); const searchinput = document.getelementbyid('anime-search'); const dataurl = '/assets/data/anime_list.json'; etc"
+      "searchText": "anime list personal anime watch list organized by status and searchable sections. anime watchlist personal etc"
     },
     {
       "id": "etc-japanese-bunpo-doshi-da",
-      "title": "だ (Essere)",
-      "summary": "N. ない è la forma negativa di ある (Essere) e だ (Essere)",
+      "title": "Da Copula",
+      "summary": "Japanese grammar note about the copula da/desu and present, past, negative, and polite forms.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14193,8 +14280,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "grammar",
+        "verbs",
+        "copula"
+      ],
+      "order": 30,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/bunpo/doshi/da.md",
       "url": "/notes/etc/japanese/bunpo/doshi/da/",
@@ -14236,12 +14328,12 @@
           "anchor": "riassunto"
         }
       ],
-      "searchText": "だ (essere) n. ない è la forma negativa di ある (essere) e だ (essere) etc japanese bunpo doshi だ (essere) jisho-kei (辞書形) - forma del dizionario presente/futuro passato　だった　/　でした negativo　じゃない　/　でわない　/　でわりません negativo passato　じゃなかった　/　でわなかった　/　でわりませんでした だ　riassunto"
+      "searchText": "da copula japanese grammar note about the copula da/desu and present, past, negative, and polite forms. japanese grammar verbs copula etc japanese bunpo doshi だ (essere) jisho-kei (辞書形) - forma del dizionario presente/futuro passato　だった　/　でした negativo　じゃない　/　でわない　/　でわりません negativo passato　じゃなかった　/　でわなかった　/　でわりませんでした だ　riassunto"
     },
     {
       "id": "etc-japanese-bunpo-doshi-godan-u",
-      "title": "Godan (五段)  -う",
-      "summary": "",
+      "title": "Godan U Verbs",
+      "summary": "Japanese grammar note for godan u-ending verbs and their present, past, negative, and polite forms.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14250,8 +14342,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "grammar",
+        "verbs",
+        "godan"
+      ],
+      "order": 20,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/bunpo/doshi/godan_u.md",
       "url": "/notes/etc/japanese/bunpo/doshi/godan_u/",
@@ -14293,12 +14390,12 @@
           "anchor": "riassunto"
         }
       ],
-      "searchText": "godan (五段)  -う etc japanese bunpo doshi godan (五段)  -う presente/futuro passato negativo negativo passato 五段 -う　riassunto"
+      "searchText": "godan u verbs japanese grammar note for godan u-ending verbs and their present, past, negative, and polite forms. japanese grammar verbs godan etc japanese bunpo doshi godan (五段)  -う presente/futuro passato negativo negativo passato 五段 -う　riassunto"
     },
     {
       "id": "etc-japanese-bunpo-doshi-ichidan-ru",
-      "title": "Ichidan (一段)  -る",
-      "summary": "",
+      "title": "Ichidan Ru Verbs",
+      "summary": "Japanese grammar note for ichidan ru-ending verbs and their present, past, negative, and polite forms.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14307,8 +14404,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "grammar",
+        "verbs",
+        "ichidan"
+      ],
+      "order": 10,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/bunpo/doshi/ichidan_ru.md",
       "url": "/notes/etc/japanese/bunpo/doshi/ichidan_ru/",
@@ -14350,12 +14452,12 @@
           "anchor": "riassunto"
         }
       ],
-      "searchText": "ichidan (一段)  -る etc japanese bunpo doshi ichidan (一段)  -る presente/futuro passato た　/　ました negativo　ない　/　ません negativo passato　なかった　/　ませんでした 一段 -る　riassunto"
+      "searchText": "ichidan ru verbs japanese grammar note for ichidan ru-ending verbs and their present, past, negative, and polite forms. japanese grammar verbs ichidan etc japanese bunpo doshi ichidan (一段)  -る presente/futuro passato た　/　ました negativo　ない　/　ません negativo passato　なかった　/　ませんでした 一段 -る　riassunto"
     },
     {
       "id": "etc-japanese-bunpo-doshi-irregular",
       "title": "Irregular Verbs",
-      "summary": "",
+      "summary": "Japanese grammar note for irregular verbs such as suru and kuru.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14364,8 +14466,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "grammar",
+        "verbs",
+        "irregular"
+      ],
+      "order": 40,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/bunpo/doshi/irregular.md",
       "url": "/notes/etc/japanese/bunpo/doshi/irregular/",
@@ -14392,12 +14499,12 @@
           "anchor": "venire"
         }
       ],
-      "searchText": "irregular verbs etc japanese bunpo doshi irregular verbs する (fare) くる (venire)"
+      "searchText": "irregular verbs japanese grammar note for irregular verbs such as suru and kuru. japanese grammar verbs irregular etc japanese bunpo doshi irregular verbs する (fare) くる (venire)"
     },
     {
       "id": "etc-japanese-kakitori-yomutori-hiragana",
-      "title": "Japanese",
-      "summary": "",
+      "title": "Hiragana",
+      "summary": "Japanese kana practice sheet for hiragana reading and writing.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14406,8 +14513,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "kana",
+        "hiragana",
+        "writing"
+      ],
+      "order": 50,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/kakitori_yomutori/Hiragana.md",
       "url": "/notes/etc/japanese/kakitori_yomutori/Hiragana/",
@@ -14417,12 +14529,12 @@
         "Kakitori Yomutori"
       ],
       "headings": [],
-      "searchText": "japanese etc japanese kakitori yomutori"
+      "searchText": "hiragana japanese kana practice sheet for hiragana reading and writing. japanese kana hiragana writing etc japanese kakitori yomutori"
     },
     {
       "id": "etc-japanese-kakitori-yomutori-katakana",
-      "title": "Japanese",
-      "summary": "",
+      "title": "Katakana",
+      "summary": "Japanese kana practice sheet for katakana reading and writing.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14431,8 +14543,13 @@
         "slug": "japanese",
         "label": "Japanese"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japanese",
+        "kana",
+        "katakana",
+        "writing"
+      ],
+      "order": 60,
       "layout": "default",
       "sourcePath": "notes/etc/japanese/kakitori_yomutori/Katakana.md",
       "url": "/notes/etc/japanese/kakitori_yomutori/Katakana/",
@@ -14442,12 +14559,12 @@
         "Kakitori Yomutori"
       ],
       "headings": [],
-      "searchText": "japanese etc japanese kakitori yomutori"
+      "searchText": "katakana japanese kana practice sheet for katakana reading and writing. japanese kana katakana writing etc japanese kakitori yomutori"
     },
     {
       "id": "etc-trip-osaka-2024-diary",
-      "title": "Osaka 2024",
-      "summary": "My 4th trip to Japan in Kansai area, from 06-12-2024 to 20-01-2025.",
+      "title": "Osaka 2024 Trip",
+      "summary": "Trip diary for a Kansai journey in Japan from December 2024 to January 2025.",
       "area": {
         "slug": "etc",
         "label": "Personal"
@@ -14456,8 +14573,14 @@
         "slug": "trip",
         "label": "Trip"
       },
-      "tags": [],
-      "order": null,
+      "tags": [
+        "japan",
+        "osaka",
+        "kansai",
+        "trip",
+        "diary"
+      ],
+      "order": 10,
       "layout": "trip",
       "sourcePath": "notes/etc/trip/osaka_2024/diary.md",
       "url": "/notes/etc/trip/osaka_2024/diary/",
@@ -14467,23 +14590,29 @@
         "Osaka 2024"
       ],
       "headings": [],
-      "searchText": "osaka 2024 my 4th trip to japan in kansai area, from 06-12-2024 to 20-01-2025. etc trip osaka 2024"
+      "searchText": "osaka 2024 trip trip diary for a kansai journey in japan from december 2024 to january 2025. japan osaka kansai trip diary etc trip osaka 2024"
     },
     {
       "id": "uni-sistemisupportodecisioni-roadmap-sistemi-supporto-decisioni",
-      "title": "1. Introduction and Database Review",
-      "summary": "",
+      "title": "Decision Support Systems",
+      "summary": "University roadmap for decision support systems, database review, recommender systems, data warehousing, OLAP, and analytics concepts.",
       "area": {
         "slug": "uni",
         "label": "Uni"
       },
       "topic": {
-        "slug": "sistemisupportodecisioni",
-        "label": "Sistemisupportodecisioni"
+        "slug": "sistemi-supporto-decisioni",
+        "label": "Sistemi Supporto Decisioni"
       },
-      "tags": [],
-      "order": null,
-      "layout": "",
+      "tags": [
+        "university",
+        "decision-support-systems",
+        "databases",
+        "recommender-systems",
+        "data-warehouse"
+      ],
+      "order": 10,
+      "layout": "page",
       "sourcePath": "notes/uni/SistemiSupportoDecisioni/roadmap_Sistemi_Supporto_Decisioni.md",
       "url": "/notes/uni/SistemiSupportoDecisioni/roadmap_Sistemi_Supporto_Decisioni/",
       "breadcrumbs": [
@@ -14612,7 +14741,7 @@
           "anchor": "6-4-analysis-and-clustering"
         }
       ],
-      "searchText": "1. introduction and database review uni sistemisupportodecisioni 1. introduction and database review 1.1 course structure 1.2 database fundamentals 1.3 normalization of relations 2. business intelligence and dss 2.1 decision supporting systems (dss) 2.2 recommender systems 3. data warehouse and etl processes 3.1 components and architecture 3.2 logical modeling 3.3 etl subsystems 4. dimensional modelling 4.1 fundamentals of the multidimensional model 4.2 olap operations 4.3 practical applications 5. data visualization with tableau 5.1 basic operations 5.2 advanced features 5.3 report creation 6. data mining 6.1 data preparation and exploration 6.2 tools 6.3 classification models 6.4 analysis and clustering"
+      "searchText": "decision support systems university roadmap for decision support systems, database review, recommender systems, data warehousing, olap, and analytics concepts. university decision-support-systems databases recommender-systems data-warehouse uni sistemisupportodecisioni 1. introduction and database review 1.1 course structure 1.2 database fundamentals 1.3 normalization of relations 2. business intelligence and dss 2.1 decision supporting systems (dss) 2.2 recommender systems 3. data warehouse and etl processes 3.1 components and architecture 3.2 logical modeling 3.3 etl subsystems 4. dimensional modelling 4.1 fundamentals of the multidimensional model 4.2 olap operations 4.3 practical applications 5. data visualization with tableau 5.1 basic operations 5.2 advanced features 5.3 report creation 6. data mining 6.1 data preparation and exploration 6.2 tools 6.3 classification models 6.4 analysis and clustering"
     }
   ],
   "tree": [
@@ -15148,8 +15277,8 @@
         "count": 8
       },
       {
-        "slug": "sistemisupportodecisioni",
-        "label": "Sistemisupportodecisioni",
+        "slug": "sistemi-supporto-decisioni",
+        "label": "Sistemi Supporto Decisioni",
         "count": 1
       },
       {
@@ -15173,6 +15302,382 @@
         "count": 1
       }
     ],
-    "tags": []
+    "tags": [
+      {
+        "slug": "agents",
+        "label": "Agents",
+        "count": 1
+      },
+      {
+        "slug": "ai",
+        "label": "Ai",
+        "count": 1
+      },
+      {
+        "slug": "algorithms",
+        "label": "Algorithms",
+        "count": 1
+      },
+      {
+        "slug": "anime",
+        "label": "Anime",
+        "count": 1
+      },
+      {
+        "slug": "architecture",
+        "label": "Architecture",
+        "count": 1
+      },
+      {
+        "slug": "backend",
+        "label": "Backend",
+        "count": 2
+      },
+      {
+        "slug": "books",
+        "label": "Books",
+        "count": 1
+      },
+      {
+        "slug": "cloud-native",
+        "label": "Cloud Native",
+        "count": 1
+      },
+      {
+        "slug": "computer-architecture",
+        "label": "Computer Architecture",
+        "count": 1
+      },
+      {
+        "slug": "computer-science",
+        "label": "Computer Science",
+        "count": 1
+      },
+      {
+        "slug": "copula",
+        "label": "Copula",
+        "count": 1
+      },
+      {
+        "slug": "data-structures",
+        "label": "Data Structures",
+        "count": 1
+      },
+      {
+        "slug": "data-warehouse",
+        "label": "Data Warehouse",
+        "count": 1
+      },
+      {
+        "slug": "database",
+        "label": "Database",
+        "count": 1
+      },
+      {
+        "slug": "databases",
+        "label": "Databases",
+        "count": 1
+      },
+      {
+        "slug": "decision-support-systems",
+        "label": "Decision Support Systems",
+        "count": 1
+      },
+      {
+        "slug": "deep-learning",
+        "label": "Deep Learning",
+        "count": 1
+      },
+      {
+        "slug": "devops",
+        "label": "DevOps",
+        "count": 1
+      },
+      {
+        "slug": "diary",
+        "label": "Diary",
+        "count": 1
+      },
+      {
+        "slug": "distributed-systems",
+        "label": "Distributed Systems",
+        "count": 2
+      },
+      {
+        "slug": "dns",
+        "label": "Dns",
+        "count": 1
+      },
+      {
+        "slug": "dsa",
+        "label": "DSA",
+        "count": 1
+      },
+      {
+        "slug": "electronics",
+        "label": "Electronics",
+        "count": 1
+      },
+      {
+        "slug": "godan",
+        "label": "Godan",
+        "count": 1
+      },
+      {
+        "slug": "grammar",
+        "label": "Grammar",
+        "count": 4
+      },
+      {
+        "slug": "hardware",
+        "label": "Hardware",
+        "count": 1
+      },
+      {
+        "slug": "hiragana",
+        "label": "Hiragana",
+        "count": 1
+      },
+      {
+        "slug": "http",
+        "label": "Http",
+        "count": 1
+      },
+      {
+        "slug": "ichidan",
+        "label": "Ichidan",
+        "count": 1
+      },
+      {
+        "slug": "infrastructure",
+        "label": "Infrastructure",
+        "count": 1
+      },
+      {
+        "slug": "irregular",
+        "label": "Irregular",
+        "count": 1
+      },
+      {
+        "slug": "japan",
+        "label": "Japan",
+        "count": 1
+      },
+      {
+        "slug": "japanese",
+        "label": "Japanese",
+        "count": 6
+      },
+      {
+        "slug": "java",
+        "label": "Java",
+        "count": 2
+      },
+      {
+        "slug": "jvm",
+        "label": "Jvm",
+        "count": 1
+      },
+      {
+        "slug": "kana",
+        "label": "Kana",
+        "count": 2
+      },
+      {
+        "slug": "kansai",
+        "label": "Kansai",
+        "count": 1
+      },
+      {
+        "slug": "katakana",
+        "label": "Katakana",
+        "count": 1
+      },
+      {
+        "slug": "kernel",
+        "label": "Kernel",
+        "count": 1
+      },
+      {
+        "slug": "keys",
+        "label": "Keys",
+        "count": 1
+      },
+      {
+        "slug": "kubernetes",
+        "label": "Kubernetes",
+        "count": 1
+      },
+      {
+        "slug": "linux",
+        "label": "Linux",
+        "count": 3
+      },
+      {
+        "slug": "llm",
+        "label": "Llm",
+        "count": 1
+      },
+      {
+        "slug": "machine-learning",
+        "label": "Machine Learning",
+        "count": 1
+      },
+      {
+        "slug": "microservices",
+        "label": "Microservices",
+        "count": 1
+      },
+      {
+        "slug": "mysql",
+        "label": "Mysql",
+        "count": 1
+      },
+      {
+        "slug": "nosql",
+        "label": "Nosql",
+        "count": 1
+      },
+      {
+        "slug": "operating-systems",
+        "label": "Operating Systems",
+        "count": 1
+      },
+      {
+        "slug": "osaka",
+        "label": "Osaka",
+        "count": 1
+      },
+      {
+        "slug": "personal",
+        "label": "Personal",
+        "count": 1
+      },
+      {
+        "slug": "platform-engineering",
+        "label": "Platform Engineering",
+        "count": 1
+      },
+      {
+        "slug": "postgresql",
+        "label": "Postgresql",
+        "count": 1
+      },
+      {
+        "slug": "problem-solving",
+        "label": "Problem Solving",
+        "count": 1
+      },
+      {
+        "slug": "recommender-systems",
+        "label": "Recommender Systems",
+        "count": 1
+      },
+      {
+        "slug": "remote-work",
+        "label": "Remote Work",
+        "count": 1
+      },
+      {
+        "slug": "roadmap",
+        "label": "Roadmap",
+        "count": 10
+      },
+      {
+        "slug": "scalability",
+        "label": "Scalability",
+        "count": 1
+      },
+      {
+        "slug": "security",
+        "label": "Security",
+        "count": 1
+      },
+      {
+        "slug": "software-architecture",
+        "label": "Software Architecture",
+        "count": 1
+      },
+      {
+        "slug": "spring",
+        "label": "Spring",
+        "count": 1
+      },
+      {
+        "slug": "spring-boot",
+        "label": "Spring Boot",
+        "count": 1
+      },
+      {
+        "slug": "sql",
+        "label": "Sql",
+        "count": 1
+      },
+      {
+        "slug": "ssh",
+        "label": "SSH",
+        "count": 2
+      },
+      {
+        "slug": "study-path",
+        "label": "Study Path",
+        "count": 1
+      },
+      {
+        "slug": "system-design",
+        "label": "System Design",
+        "count": 2
+      },
+      {
+        "slug": "systems",
+        "label": "Systems",
+        "count": 3
+      },
+      {
+        "slug": "tailscale",
+        "label": "Tailscale",
+        "count": 1
+      },
+      {
+        "slug": "tls",
+        "label": "Tls",
+        "count": 1
+      },
+      {
+        "slug": "tmux",
+        "label": "Tmux",
+        "count": 1
+      },
+      {
+        "slug": "trip",
+        "label": "Trip",
+        "count": 1
+      },
+      {
+        "slug": "university",
+        "label": "University",
+        "count": 1
+      },
+      {
+        "slug": "verbs",
+        "label": "Verbs",
+        "count": 4
+      },
+      {
+        "slug": "watchlist",
+        "label": "Watchlist",
+        "count": 1
+      },
+      {
+        "slug": "web",
+        "label": "Web",
+        "count": 1
+      },
+      {
+        "slug": "writing",
+        "label": "Writing",
+        "count": 2
+      }
+    ]
   }
 }

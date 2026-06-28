@@ -1,6 +1,16 @@
 ---
 layout: default
-title: Japanese
+title: Japanese Ichidan Ru Verbs
+navTitle: Ichidan Ru Verbs
+summary: Japanese grammar note for ichidan ru-ending verbs and their present, past, negative, and polite forms.
+area: etc
+topic: japanese
+tags:
+  - japanese
+  - grammar
+  - verbs
+  - ichidan
+order: 10
 ---
 
 # Ichidan (一段)  -る

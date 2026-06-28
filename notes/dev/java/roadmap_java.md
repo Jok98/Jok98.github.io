@@ -1,6 +1,18 @@
 ---
 layout: page
+title: Java Roadmap
+navTitle: Java
+summary: Roadmap for learning modern Java, JVM fundamentals, OOP, collections, concurrency, modules, performance, testing, and enterprise Java.
+area: dev
+topic: java
+tags:
+  - java
+  - jvm
+  - backend
+  - roadmap
+order: 10
 ---
+
 # Java Roadmap - Basics -> Advanced -> Java 26
 
 ## 1. Development Environment and Tools

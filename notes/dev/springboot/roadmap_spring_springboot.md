@@ -1,6 +1,19 @@
 ---
 layout: page
+title: Spring and Spring Boot Roadmap
+navTitle: Spring Boot
+summary: Roadmap for learning Spring Framework, Spring Boot, data access, security, testing, production readiness, cloud, microservices, and modern migrations.
+area: dev
+topic: springboot
+tags:
+  - spring
+  - spring-boot
+  - java
+  - backend
+  - roadmap
+order: 10
 ---
+
 # Spring & Spring Boot Roadmap - Basics -> Advanced
 
 ## 1. Technical Prerequisites

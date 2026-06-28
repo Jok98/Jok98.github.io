@@ -1,6 +1,19 @@
 ---
 layout: page
+title: Hardware Fundamentals Roadmap
+navTitle: Hardware Fundamentals
+summary: Roadmap for learning electronics, digital logic, computer architecture, CPUs, memory, storage, networking hardware, and hardware security.
+area: dev
+topic: hardware
+tags:
+  - hardware
+  - computer-architecture
+  - electronics
+  - systems
+  - roadmap
+order: 10
 ---
+
 # Hardware Fundamentals Roadmap — Basics to Advanced
 
 ## 1. Prerequisites
