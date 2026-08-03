@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativa privacy di OkaneCheck</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 0; background: #f7fcf9; color: #0f1512; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 72px; }
+    h1, h2 { line-height: 1.2; }
+    h1 { color: #006b5b; }
+    h2 { margin-top: 2rem; }
+    p, li { line-height: 1.65; }
+    a { color: #006b5b; }
+    code { overflow-wrap: anywhere; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f1512; color: #e1e9e4; }
+      h1 { color: #75f8d7; }
+      a { color: #75f8d7; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Informativa privacy di OkaneCheck</h1>
+  <p>Ultimo aggiornamento: 3 agosto 2026</p>
+
+  <h2>Titolare e contatti</h2>
+  <p>OkaneCheck (<code>com.dev.okanecheck</code>) è pubblicata da
+    <strong>Matteo Moi</strong>, con nome sviluppatore <strong>Jok98</strong>
+    su Google Play.</p>
+  <p>Per richieste relative alla privacy:
+    <a href="mailto:matteo.moi1998@gmail.com">matteo.moi1998@gmail.com</a>.
+    Sito sviluppatore:
+    <a href="https://jok98.github.io/">jok98.github.io</a>.</p>
+
+  <h2>In sintesi</h2>
+  <p>OkaneCheck è un'app local-first per gestire un bilancio personale. Le
+    funzioni finanziarie principali non richiedono un account e salvano i dati
+    nel database privato dell'app sul dispositivo. Non sono integrati
+    pubblicità, profilazione o analytics e il titolare non gestisce un server
+    che riceve i dati finanziari.</p>
+  <p>Le sole funzioni opzionali che trasferiscono o accedono a dati esterni
+    sono il backup/ripristino nell'area privata Google Drive dell'utente. Il
+    rilevamento delle notifiche selezionate avviene invece sul dispositivo.</p>
+
+  <h2>Dati finanziari locali</h2>
+  <p>L'app può memorizzare mesi contabili, entrate, macroaree e tipologie,
+    budget, movimenti, note, risparmi e preferenze tecniche. Questi dati servono
+    a calcoli, riepiloghi, analisi, widget e gestione richiesta dall'utente.</p>
+
+  <h2>Accesso opzionale alle notifiche</h2>
+  <p>Il rilevamento è disattivato finché l'utente non accetta l'informativa
+    nell'app, seleziona almeno una sorgente e concede l'accesso speciale nelle
+    impostazioni Android. Revocando il consenso nell'app, il servizio non legge
+    titolo o testo anche se Android conserva ancora il permesso.</p>
+  <p>OkaneCheck esamina localmente titolo, testo, provenienza e orario delle sole
+    sorgenti selezionate. Il contenuto grezzo non viene salvato. Un formato
+    riconosciuto produce un candidato locale con esercente, importo, data/ora,
+    sorgente, hash tecnico anti-duplicato e stato. Nessun candidato diventa un
+    movimento senza conferma esplicita. Candidati e osservazioni non sono
+    inviati in rete, analytics o backup Drive.</p>
+
+  <h2>Backup opzionale in Google Drive</h2>
+  <p>Con consenso dell'utente, OkaneCheck richiede il solo scope
+    <code>drive.appdata</code> e mantiene un file JSON nell'area
+    <code>appDataFolder</code> dell'account. Il file contiene mesi, categorie,
+    tipologie, entrate, budget, risparmi, movimenti confermati e poche
+    preferenze necessarie al recupero. Non contiene notifiche grezze,
+    candidati, osservazioni, consenso, sorgenti selezionate o token OAuth.</p>
+  <p>Dopo l'attivazione, il backup può avvenire manualmente o in background
+    quando i dati cambiano e la rete è disponibile. Il restore valida il file
+    e sostituisce i dati locali soltanto dopo conferma. Non esiste
+    sincronizzazione o merge multi-dispositivo.</p>
+  <p>I dati viaggiano via HTTPS. Il file è protetto dall'account Google e
+    dall'isolamento dell'area privata, ma non usa una passphrase o cifratura
+    applicativa aggiuntiva. Si applicano anche condizioni e informativa di
+    Google.</p>
+
+  <h2>Autorizzazione Google</h2>
+  <p>Google Play services gestisce il consenso OAuth. OkaneCheck non crea un
+    account proprio, non legge email o profilo Google e non conserva l'access
+    token. Il token temporaneo serve soltanto alle API Drive autorizzate e
+    l'accesso può essere revocato dall'account Google.</p>
+
+  <h2>Condivisione e vendita</h2>
+  <p>Il titolare non vende dati personali e non li usa per pubblicità,
+    profilazione o data broker. Il solo trasferimento opzionale descritto è il
+    backup verso il Google Drive scelto dall'utente.</p>
+
+  <h2>Conservazione ed eliminazione</h2>
+  <ul>
+    <li>I dati locali restano finché l'utente li elimina nell'app, cancella i
+      dati applicazione o disinstalla OkaneCheck.</li>
+    <li>I candidati pendenti possono essere ignorati o eliminati. Revocare il
+      consenso ferma nuove letture ma non elimina i record già locali; record
+      confermati o ignorati possono restare per deduplicazione fino alla
+      cancellazione dei dati dell'app.</li>
+    <li>Il file Drive viene aggiornato dai backup successivi e rimane
+      nell'account anche dopo la disconnessione nell'app. Può essere eliminato
+      dai controlli Google Drive per i dati applicazione.</li>
+    <li>Token OAuth e diagnostica volatile non entrano nel backup.</li>
+  </ul>
+  <p>Non esistendo un account OkaneCheck o un server del titolare, il titolare
+    non può cancellare a distanza dati presenti soltanto sul dispositivo o nel
+    Drive personale dell'utente.</p>
+
+  <h2>Sicurezza</h2>
+  <p>Il database usa lo spazio privato Android; backup e restore validano
+    formato e integrità; le comunicazioni Drive usano HTTPS. L'utente deve
+    proteggere dispositivo e account Google e mantenere il sistema aggiornato.</p>
+
+  <h2>Destinatari e modifiche</h2>
+  <p>L'app è pensata per la gestione autonoma di finanze personali e non è
+    progettata specificamente per bambini. Il target di età deve essere
+    confermato dal titolare in Play Console. La policy sarà aggiornata quando
+    cambiano funzioni o trattamento dei dati.</p>
+</main>
+</body>
+</html>
