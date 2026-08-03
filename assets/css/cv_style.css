@@ -9,6 +9,11 @@ body.cv-page {
   print-color-adjust: exact;
 }
 
+body.cv-page::before {
+  content: none;
+  display: none;
+}
+
 body.cv-page * {
   box-sizing: border-box;
 }
@@ -331,15 +336,21 @@ body.cv-page * {
 
 @page {
   size: A4;
-  margin: 0.2in;
+  margin: 0;
 }
 
 @media print {
+  html,
   body.cv-page {
-    background: #ffffff;
+    background: #ffffff !important;
     color: #111827;
     font-size: 9.4pt;
     line-height: 1.25;
+  }
+
+  body.cv-page::before {
+    content: none !important;
+    display: none !important;
   }
 
   .cv-page-nav,
@@ -349,7 +360,7 @@ body.cv-page * {
 
   .cv-main {
     margin: 0;
-    padding: 0;
+    padding: 0.2in;
     box-shadow: none;
     border: none;
     max-width: none;

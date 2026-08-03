@@ -81,8 +81,8 @@ def build_item(path: Path, notes_root: Path) -> dict[str, Any]:
     title = value_or_default(
         front_matter.get("navTitle"),
         front_matter.get("nav_title"),
-        first_h1(headings),
         front_matter.get("title"),
+        first_h1(headings),
         humanize(path.stem),
     )
     summary = value_or_default(front_matter.get("summary"), first_paragraph(body), "")

@@ -2,17 +2,38 @@
 layout: default
 title: Jok98
 sidebar: false
+page_class: home-page
 ---
 
-<div class="cv-link-container">
-  <a href="/cv" class="cv-button"><i class="fas fa-file-alt"></i> View My CV</a>
-  <a href="/dist/cv.pdf" class="cv-button" download><i class="fas fa-download"></i> Download CV PDF</a>
-</div>
+<section class="home-overview" aria-labelledby="home-title">
+  <div class="home-copy">
+    <p class="eyebrow">Personal knowledge base</p>
+    <h1 id="home-title">Matteo Moi</h1>
+    <p class="home-subtitle">Software development notes, roadmaps, references, and travel logs organized for fast reading.</p>
+  </div>
 
-<h2>Notes & Resources</h2>
+  <div class="cv-link-container" aria-label="CV links">
+    <a href="/cv" class="cv-button"><i class="fas fa-file-alt" aria-hidden="true"></i> View CV</a>
+    <a href="/dist/cv.pdf" class="cv-button cv-button-secondary" download><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
+  </div>
+</section>
 
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="Search documents by title...">
-    <div id="search-results"></div>
-</div>
-<div id="sections-container"></div>
+<section class="notes-browser" aria-labelledby="notes-browser-title">
+  <div class="browser-header">
+    <div>
+      <p class="eyebrow">Library</p>
+      <h2 id="notes-browser-title">Notes &amp; Resources</h2>
+    </div>
+  </div>
+
+  <div class="browser-tools">
+    <div id="search-container">
+      <label class="visually-hidden" for="search-input">Search notes</label>
+      <input type="search" id="search-input" placeholder="Search notes..." autocomplete="off">
+      <div id="search-results"></div>
+    </div>
+    <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
+  </div>
+
+  <div id="sections-container"></div>
+</section>

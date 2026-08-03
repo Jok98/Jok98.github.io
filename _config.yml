@@ -1,5 +1,6 @@
 # using jekyll
 theme: minima
+site_version: "V4"
 # will create url without extensions
 permalink: pretty
 
