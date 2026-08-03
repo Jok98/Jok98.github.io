@@ -1,3 +1,13 @@
+---
+layout: default
+title: Ubuntu GUI Upgrade
+area: dev
+topic: linux
+tags: [linux, ubuntu, gnome, desktop]
+summary: Notes for installing GNOME software, themes, extensions, and desktop customization tools.
+order: 30
+---
+
 ```shell
 sudo apt install gnome-software
 ```

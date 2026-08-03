@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: だ and です
+area: etc
+topic: japanese
+tags: [japanese, grammar, verbs, copula]
+summary: Notes on informal and formal Japanese copula forms.
+order: 30
 ---
 
 # だ (Essere)

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Boot Actuator
+area: dev
+topic: springboot
+tags: [spring-boot, actuator, observability, monitoring]
+summary: Notes on Spring Boot Actuator endpoints for application monitoring and management.
+order: 30
 ---
 ## Actuactor
 

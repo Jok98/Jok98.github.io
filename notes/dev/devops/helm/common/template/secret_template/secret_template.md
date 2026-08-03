@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Secret Template
+area: dev
+topic: devops
+tags: [helm, kubernetes, secrets, templates]
+summary: Helm template notes for creating environment-specific Kubernetes Secrets.
+order: 48
 ---
 ### Secret template
 Is designed to create Secrets defined by values like credentials provided by the environments(ex. dev-env)<br>

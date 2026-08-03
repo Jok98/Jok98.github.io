@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Deployment Template
+area: dev
+topic: devops
+tags: [helm, kubernetes, deployment, templates]
+summary: Helm deployment template notes covering optional component-specific manifest sections.
+order: 47
 ---
 ## Deployment template
 - Different components will use different part of a `Deployment manifest`.

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Component Charts
+area: dev
+topic: devops
+tags: [helm, kubernetes, component-chart]
+summary: Notes on component chart structure, common chart dependencies, templates, and values.
+order: 51
 ---
 # Component Charts
 

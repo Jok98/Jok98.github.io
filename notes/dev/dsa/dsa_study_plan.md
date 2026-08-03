@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DSA
+title: DSA Study Plan
+area: dev
+topic: dsa
+tags: [dsa, study-plan, algorithms, data-structures]
+summary: Study checklist for complexity analysis, data structures, algorithms, and problem-solving topics.
+order: 20
 ---
 ## Complexity Analysis
 
@@ -196,7 +201,6 @@ title: DSA
 |----------------------|------|
 | P vs. NP             |      |
 | NP-Complete problems |      |
-
 
 
 

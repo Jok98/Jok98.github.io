@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: Ichidan Verbs
+area: etc
+topic: japanese
+tags: [japanese, grammar, verbs, ichidan]
+summary: Notes on Japanese ichidan verb conjugation patterns.
+order: 50
 ---
 
 # Ichidan (一段)  -る

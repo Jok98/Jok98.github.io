@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Microservices Architecture
+area: dev
+topic: architecture
+tags: [microservices, kubernetes, architecture, ingress]
+summary: Architecture sketch for a microservices landscape with Kubernetes, ingress, and platform components.
+order: 10
 ---
 ```tree
 Microservices Architecture
@@ -57,7 +62,6 @@ Microservices Architecture
         └── Visualization of logs and metrics
 
 ```
-
 
 
 

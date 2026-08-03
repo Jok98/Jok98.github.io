@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Feign
+area: dev
+topic: microservices
+tags: [microservices, feign, openfeign, http-client]
+summary: Notes on declarative service-to-service HTTP calls with Spring Cloud OpenFeign.
+order: 50
 ---
 # Feign
 

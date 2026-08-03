@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Resilience4j Circuit Breaker
+area: dev
+topic: microservices
+tags: [microservices, resilience4j, circuit-breaker, resilience]
+summary: Notes on circuit breaker purpose, states, fallback behavior, and failure isolation.
+order: 30
 ---
 # Resilience4j Circuit Breaker
 

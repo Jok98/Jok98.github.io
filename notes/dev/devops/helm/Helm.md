@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm
+area: dev
+topic: devops
+tags: [helm, kubernetes, charts, deployment]
+summary: Notes on Helm charts, library charts, parent charts, and Kubernetes deployment packaging.
+order: 40
 ---
 # Helm
 
@@ -53,7 +58,6 @@ Each environment will be implemented as a parent chart that depends on different
 - **list** lists all installations in the current namespace.
 - **upgrade** updates aan existing installation.
 - **uninstall** removes an installation.
-
 
 
 

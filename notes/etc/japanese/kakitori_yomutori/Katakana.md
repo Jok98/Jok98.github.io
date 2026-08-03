@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: Katakana
+area: etc
+topic: japanese
+tags: [japanese, kana, katakana, writing]
+summary: Katakana chart for Japanese reading and writing practice.
+order: 20
 ---
 
 |     | ア (a)  | イ (i)   | ウ (u)   | エ (e)  | オ (o)  |
@@ -15,7 +20,6 @@ title: Japanese
 | (r) | ラ (ra) | リ (ri)  | ル (ru)  | レ (re) | ロ (ro) |
 | (w) | ワ (wa) |         |         |        | ヲ (wo) |
 | (n) | ン (n)  |         |         |        |        |
-
 
 
 

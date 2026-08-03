@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: Hiragana
+area: etc
+topic: japanese
+tags: [japanese, kana, hiragana, writing]
+summary: Hiragana chart for Japanese reading and writing practice.
+order: 10
 ---
 
 |     | あ (a)  | い (i)   | う (u)   | え (e)  | お (o)  |

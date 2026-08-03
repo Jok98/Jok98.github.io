@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Minikube
+area: dev
+topic: devops
+tags: [kubernetes, minikube, local-development]
+summary: Notes on running local Kubernetes clusters with Minikube profiles.
+order: 75
 ---
 # Minikube
 
@@ -197,7 +202,6 @@ When using the Docker driver, the hostname is always localhost.<br>
 The node port, 30080, is forwarded from Docker Engine by the –ports option in the minikube start command.
 
 to continue pg 390
-
 
 
 

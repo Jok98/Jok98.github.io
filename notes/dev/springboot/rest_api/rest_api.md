@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring REST
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, jackson, serialization]
+summary: Notes on Spring REST APIs, JSON data binding, serialization, and request handling.
+order: 70
 ---
 # Spring REST
 
@@ -137,4 +142,3 @@ public class Book {
     //...
 }
 ```
-

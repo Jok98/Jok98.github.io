@@ -1,6 +1,11 @@
 ---
 layout: anime
 title: Anime List
+area: etc
+topic: anime
+tags: [anime, tracking, personal]
+summary: Personal anime list with counter, search, and expandable sections.
+order: 10
 ---
 
 <h2 class="anime-counter">Anime Counter: <span id="anime-counter-value">0</span></h2>

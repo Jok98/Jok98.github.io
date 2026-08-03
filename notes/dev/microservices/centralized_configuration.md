@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Spring Cloud Config Server
+area: dev
+topic: microservices
+tags: [microservices, spring-cloud, configuration, config-server]
+summary: Notes on centralized configuration with Spring Cloud Config Server and client setup.
+order: 20
 ---
 # Spring Cloud Config Server
 ## Client side
@@ -101,4 +106,3 @@ To use a profile as default, we need to add the following line to the `applicati
 ```properties
 spring.profiles.active=dev
 ```
-

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Kubernetes
+area: dev
+topic: devops
+tags: [kubernetes, orchestration, containers]
+summary: Kubernetes overview covering orchestration features and core platform capabilities.
+order: 55
 ---
 
 # Kubernetes

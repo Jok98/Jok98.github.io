@@ -1,3 +1,13 @@
+---
+layout: default
+title: Arch Installation
+area: dev
+topic: linux
+tags: [linux, arch, installation, workstation]
+summary: Notes and repository reference for Arch Linux workstation installation.
+order: 20
+---
+
 ## Arch
 
 I've built a script for installing Arch.

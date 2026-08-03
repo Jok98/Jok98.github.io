@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Boot
+area: dev
+topic: springboot
+tags: [spring-boot, spring, dependency-injection, ioc]
+summary: Spring Boot and Spring fundamentals covering IoC, dependency injection, and core concepts.
+order: 10
 ---
 # SpringBoot
 

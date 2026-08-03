@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring AOP
+area: dev
+topic: springboot
+tags: [spring, aop, cross-cutting-concerns]
+summary: Notes on aspect-oriented programming concepts in Spring.
+order: 40
 ---
 # AOP (Aspect-Oriented Programming)
 It enables to separate cross-cutting concerns (such as logging, transaction management, security, etc.) from the core business logic.<br>

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: HATEOAS
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, hateoas]
+summary: Notes on HATEOAS and hypermedia links in REST APIs.
+order: 105
 ---
 ## HATEOAS
 

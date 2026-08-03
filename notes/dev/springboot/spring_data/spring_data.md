@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Data
+area: dev
+topic: springboot
+tags: [spring-data, jpa, persistence, repository]
+summary: Notes on Spring Data entities, repositories, and datasource configuration.
+order: 140
 ---
 # Spring Data
 

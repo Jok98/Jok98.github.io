@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm ConfigMap Template
+area: dev
+topic: devops
+tags: [helm, kubernetes, configmap, templates]
+summary: Helm template notes for creating ConfigMaps from configuration files.
+order: 46
 ---
 ### ConfigMap template
 Is designed to create ConfigMaps from files in the folder config-repo.<br>

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Kubectl
+area: dev
+topic: devops
+tags: [kubernetes, kubectl, cli]
+summary: Kubernetes kubectl command reference.
+order: 60
 ---
 # Kubectl
 
@@ -39,4 +44,3 @@ To set the namespace:
 ```shell
 kubectl config set-context --current --namespace=<namespace-name>
 ```
-

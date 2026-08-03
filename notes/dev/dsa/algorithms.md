@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DSA
+title: Algorithms
+area: dev
+topic: dsa
+tags: [dsa, algorithms, mergesort, java]
+summary: Algorithm notes with MergeSort description, complexity, and Java implementation.
+order: 10
 ---
 # MergeSort
 ### `Description`: Split the array into two halves and recursively sort them. Then merge the two sorted halves.

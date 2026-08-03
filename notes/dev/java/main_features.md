@@ -1,3 +1,13 @@
+---
+layout: default
+title: Java Milestones and Main Features
+area: dev
+topic: java
+tags: [java, language-features, lts, roadmap]
+summary: Timeline of Java versions and major platform features.
+order: 20
+---
+
 # Java Milestones & Main Features
 
 ## Digital version :

@@ -1,3 +1,13 @@
+---
+layout: default
+title: JWT Refresh Token
+area: dev
+topic: springboot
+tags: [spring-security, jwt, refresh-token, authentication]
+summary: Notes on refresh token purpose, flow, storage options, and session revocation trade-offs.
+order: 150
+---
+
 🔄 Cos’è un Refresh Token?
 Un Refresh Token è un secondo token (separato dal JWT access token) che permette al client di ottenere un nuovo token di accesso senza rifare login.
 

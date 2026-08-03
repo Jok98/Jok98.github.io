@@ -1,3 +1,13 @@
+---
+layout: default
+title: RabbitMQ
+area: dev
+topic: microservices
+tags: [rabbitmq, messaging, queues, event-driven]
+summary: Notes on RabbitMQ concepts, exchanges, queues, producers, and consumers.
+order: 80
+---
+
 ## 🐰 Che cos’è RabbitMQ?
 
 RabbitMQ è un **broker di messaggistica** open-source che permette a diverse applicazioni o microservizi di comunicare in modo **asincrono** tramite messaggi.

@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Distributed Tracing
+area: dev
+topic: microservices
+tags: [microservices, distributed-tracing, opentelemetry, micrometer]
+summary: Notes on distributed tracing with trace IDs, Micrometer, OpenTelemetry, and Zipkin.
+order: 40
 ---
 # Distributed Tracing
 

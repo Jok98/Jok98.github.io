@@ -1,6 +1,11 @@
 ---
 layout: default
 title: SSH Key
+area: dev
+topic: linux
+tags: [linux, ssh, security, keys]
+summary: SSH key notes covering algorithms, generation, passphrases, and key management.
+order: 10
 ---
 ## SSH Key
 
@@ -36,5 +41,4 @@ cat ~/.ssh/id_ed25519.pub
 ```shell
 ssh -T git@github.com
 ```
-
 

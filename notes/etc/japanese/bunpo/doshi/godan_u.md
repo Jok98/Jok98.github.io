@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: Godan Verbs
+area: etc
+topic: japanese
+tags: [japanese, grammar, verbs, godan]
+summary: Notes on Japanese godan verb conjugation patterns.
+order: 40
 ---
 
 # Godan (五段)  -う

@@ -1,3 +1,13 @@
+---
+layout: default
+title: Servlet, Spring MVC, and WebFlux
+area: dev
+topic: springboot
+tags: [spring-boot, servlet, spring-mvc, webflux, rest-api]
+summary: Comparison notes for Servlet, Spring MVC, blocking I/O, and reactive WebFlux.
+order: 120
+---
+
 ## 🔍 Servlet: Le Fondamenta del Web Java
 
 ### Cosa sono le Servlet?

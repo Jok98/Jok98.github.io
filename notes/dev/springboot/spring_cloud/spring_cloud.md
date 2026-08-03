@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Cloud
+area: dev
+topic: springboot
+tags: [spring-cloud, messaging, kafka, rabbitmq]
+summary: Notes on Spring Cloud Stream concepts and messaging abstractions.
+order: 130
 ---
 # Spring Cloud
 

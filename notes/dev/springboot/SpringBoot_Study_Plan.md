@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Boot Study Plan
+area: dev
+topic: springboot
+tags: [spring-boot, spring, study-plan]
+summary: Study plan for Spring configuration, core concepts, and application development topics.
+order: 20
 ---
 # Spring
 

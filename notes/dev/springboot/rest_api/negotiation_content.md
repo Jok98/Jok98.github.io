@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Content Negotiation
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, content-negotiation, jackson]
+summary: Notes on XML and JSON content negotiation for Spring REST APIs.
+order: 115
 ---
 ## Negotiation Content
 

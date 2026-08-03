@@ -1,3 +1,13 @@
+---
+layout: default
+title: Kubernetes Microservices Integration
+area: dev
+topic: devops
+tags: [kubernetes, microservices, configmap, ingress, cert-manager]
+summary: Notes on replacing Spring Cloud infrastructure patterns with Kubernetes-native features.
+order: 80
+---
+
 ### Implementing kubernetes features to simplify the system landscape
 
 Microservices design patterns will be handled by kubernetes build-in capabilities.
@@ -9,4 +19,3 @@ Microservices design patterns will be handled by kubernetes build-in capabilitie
 
 
 ### Replacing the Spring Cloud Config Server
-

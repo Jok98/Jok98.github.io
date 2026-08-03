@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Naming Server
+area: dev
+topic: microservices
+tags: [microservices, eureka, service-discovery, naming-server]
+summary: Notes on Eureka naming server setup, service discovery, and client registration.
+order: 60
 ---
 # Naming Server
 ## On Server side

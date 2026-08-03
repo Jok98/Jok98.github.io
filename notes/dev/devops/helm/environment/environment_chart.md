@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Environment Chart
+area: dev
+topic: devops
+tags: [helm, kubernetes, environment-chart, secrets]
+summary: Notes on environment parent charts, chart dependencies, and environment-specific secrets.
+order: 52
 ---
 # Environment Chart
 Contains the `charts` for the different `environments`(ex. dev-env, prod-env).<br>

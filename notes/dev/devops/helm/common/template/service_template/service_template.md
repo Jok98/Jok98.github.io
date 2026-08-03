@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Service Template
+area: dev
+topic: devops
+tags: [helm, kubernetes, service, templates]
+summary: Helm service template notes for overriding common chart defaults per component.
+order: 49
 ---
 ### Service template
 

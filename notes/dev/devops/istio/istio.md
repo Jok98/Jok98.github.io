@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Istio
+area: dev
+topic: devops
+tags: [istio, service-mesh, kubernetes, observability]
+summary: Notes on Istio service mesh concepts, components, traffic management, and observability.
+order: 70
 ---
 
 # Istio

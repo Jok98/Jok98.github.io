@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Kubernetes Services
+area: dev
+topic: devops
+tags: [kubernetes, service-discovery, services, microservices]
+summary: Notes on Kubernetes Services, service discovery, and microservice deployment objects.
+order: 65
 ---
 # Kubernetes Services
 ### Replacing Netflix Eureka

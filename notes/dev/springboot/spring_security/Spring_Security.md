@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Spring Security
+area: dev
+topic: springboot
+tags: [spring-security, authentication, authorization]
+summary: Notes on Spring Security request interception, authentication, and authorization basics.
+order: 145
 ---
 # Spring Security
 

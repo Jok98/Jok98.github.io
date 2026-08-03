@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Ports
+area: dev
+topic: microservices
+tags: [microservices, ports, conventions]
+summary: Port reference for common microservice infrastructure components.
+order: 70
 ---
 |                            | Port           |
 |----------------------------|----------------|

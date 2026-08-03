@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Docker
+area: dev
+topic: devops
+tags: [docker, containers, cli]
+summary: Docker basics, commands, and container workflow notes.
+order: 10
 ---
 # Docker
 

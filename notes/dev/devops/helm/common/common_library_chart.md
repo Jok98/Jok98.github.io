@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Common Library Chart
+area: dev
+topic: devops
+tags: [helm, kubernetes, library-chart, templates]
+summary: Notes on reusable Helm common chart templates and named template conventions.
+order: 45
 ---
 ### Common library template
 - default values -> `common values.yaml`

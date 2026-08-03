@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Japanese
+title: Irregular Verbs
+area: etc
+topic: japanese
+tags: [japanese, grammar, verbs, irregular]
+summary: Notes on Japanese irregular verb conjugation patterns.
+order: 60
 ---
 
 # Irregular Verbs

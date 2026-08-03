@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: Exception Handling
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, exception-handling]
+summary: Notes on centralized and reusable Spring REST exception handling.
+order: 90
 ---
 ## Exception Handling
 

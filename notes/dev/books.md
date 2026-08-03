@@ -1,3 +1,13 @@
+---
+layout: default
+title: Study Path: Books by Macro-Topic
+area: dev
+topic: books
+tags: [study-plan, books, architecture, systems, devops]
+summary: Reading roadmap grouped by engineering macro-topic.
+order: 20
+---
+
 # Study Path: Books by Macro-Topic
 
 ## 1) Computer architecture and systems
@@ -46,5 +56,4 @@
 
 * [Kubernetes: Up & Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/)
 * [Docker Deep Dive](https://leanpub.com/dockerdeepdive)
-
 

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: REST Filtering
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, filtering, jackson]
+summary: Notes on static and dynamic filtering in Spring REST responses.
+order: 100
 ---
 ## Filtering
 

@@ -1,6 +1,11 @@
 ---
 layout: default
 title: API Gateway
+area: dev
+topic: microservices
+tags: [microservices, api-gateway, routing, security]
+summary: Notes on API Gateway responsibilities, features, routing, security, and integration patterns.
+order: 10
 ---
 # API Gateway
 

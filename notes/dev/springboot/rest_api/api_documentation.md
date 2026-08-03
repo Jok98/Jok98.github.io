@@ -1,6 +1,11 @@
 ---
 layout: default
-title: API Gateway
+title: API Documentation
+area: dev
+topic: springboot
+tags: [spring-boot, rest-api, openapi, documentation]
+summary: Notes on documenting Spring REST APIs with Springdoc OpenAPI.
+order: 80
 ---
 ## Api Documentation
 

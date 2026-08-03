@@ -1,6 +1,11 @@
 ---
 layout: default
-title: DevOps
+title: Helm Templates
+area: dev
+topic: devops
+tags: [helm, kubernetes, templates]
+summary: Notes on parameterizing Kubernetes manifests through reusable Helm templates.
+order: 50
 ---
 ## Templates
 
@@ -48,7 +53,6 @@ Helm templates support the declaration of variables to reference other objects
 ```yaml
 $name := .Release.Name
 ```
-
 
 
 
