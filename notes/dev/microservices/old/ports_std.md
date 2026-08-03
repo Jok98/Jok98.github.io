@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Ports
+show_title: true
 area: dev
 topic: microservices
 tags: [microservices, ports, conventions]

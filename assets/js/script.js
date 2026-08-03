@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const preferences = window.JokPreferences;
   let allContents = [];
   let contentTree = [];
   let itemsById = new Map();
-  let activeArea = 'all';
+  let foldersById = new Map();
+  let activeArea = 'current';
   let activeTopic = 'all';
   let searchInitialized = false;
 
@@ -10,42 +12,100 @@ document.addEventListener("DOMContentLoaded", () => {
   const topicFilters = document.getElementById("topic-filters");
   const searchInput = document.getElementById("search-input");
   const searchResults = document.getElementById("search-results");
+  const contentStatus = document.querySelector("[data-content-status]");
+  const hasContentBrowser = Boolean(sectionsContainer || topicFilters || searchInput);
 
-  fetch("/assets/data/content-index.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Navigation index request failed: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      allContents = normalizeIndexItems(data.items || []);
-      itemsById = new Map(allContents.map((item) => [item.id, item]));
-      contentTree = Array.isArray(data.tree) ? data.tree : [];
-      renderTopicFilters(data.facets || {});
-      renderIndexedNavigation();
-      initializeSearch();
-      if (sectionsContainer) {
+  if (hasContentBrowser) {
+    loadContentIndex();
+  }
+
+  function loadContentIndex() {
+    setContentLoading(true);
+    fetch("/assets/data/content-index.json")
+      .then(parseJsonResponse)
+      .then((data) => {
+        foldersById = new Map((data.folders || []).map((folder) => [folder.id, folder]));
+        allContents = normalizeIndexItems(data);
+        itemsById = new Map(allContents.map((item) => [item.id, item]));
+        contentTree = Array.isArray(data.tree) ? data.tree : [];
+        selectInitialAreaForCurrentPage();
+        renderTopicFilters();
+        renderIndexedNavigation();
+        initializeSearch();
         highlightCurrentEntry();
-      }
-    })
-    .catch(() => {
-      fetch("/assets/data/directories.json")
-        .then((response) => response.json())
-        .then((data) => {
-          if (sectionsContainer) {
-            data.forEach((section) => {
-              const sectionElement = createSectionElement(section);
-              sectionsContainer.appendChild(sectionElement);
-            });
-          }
-          allContents = collectLegacyContents(data);
-          initializeSearch();
-          if (sectionsContainer) {
-            highlightCurrentEntry();
-          }
-        });
-    });
+        setContentLoading(false);
+        setContentStatus("", "ready", true);
+      })
+      .catch(() => loadLegacyIndex());
+  }
+
+  function loadLegacyIndex() {
+    fetch("/assets/data/directories.json")
+      .then(parseJsonResponse)
+      .then((data) => {
+        if (!Array.isArray(data)) {
+          throw new Error("Legacy navigation index has an invalid format.");
+        }
+
+        if (sectionsContainer) {
+          sectionsContainer.innerHTML = "";
+          data.forEach((section) => {
+            sectionsContainer.appendChild(createSectionElement(section));
+          });
+        }
+        allContents = collectLegacyContents(data);
+        renderTopicFilters();
+        initializeSearch();
+        highlightCurrentEntry();
+        setContentLoading(false);
+        setContentStatus("Showing simplified navigation.", "fallback");
+      })
+      .catch(() => {
+        if (sectionsContainer) {
+          sectionsContainer.innerHTML = "";
+        }
+        if (topicFilters) {
+          topicFilters.innerHTML = "";
+        }
+        if (searchInput) {
+          searchInput.disabled = true;
+        }
+        setContentLoading(false);
+        setContentStatus("Notes navigation could not be loaded. Reload the page to try again.", "error");
+      });
+  }
+
+  function parseJsonResponse(response) {
+    if (!response.ok) {
+      throw new Error(`Navigation index request failed: ${response.status}`);
+    }
+    return response.json();
+  }
+
+  function selectInitialAreaForCurrentPage() {
+    const currentPath = normalizePath(window.location.pathname);
+    const currentItem = allContents.find((item) => normalizePath(item.url) === currentPath);
+    activeArea = currentItem && currentItem.area.slug === "archive" ? "archive" : "current";
+    activeTopic = "all";
+  }
+
+  function setContentLoading(isLoading) {
+    if (sectionsContainer) {
+      sectionsContainer.setAttribute("aria-busy", isLoading ? "true" : "false");
+    }
+    if (isLoading) {
+      setContentStatus("Loading notes…", "loading");
+    }
+  }
+
+  function setContentStatus(message, state, hidden = false) {
+    if (!contentStatus) {
+      return;
+    }
+    contentStatus.textContent = message;
+    contentStatus.dataset.state = state;
+    contentStatus.hidden = hidden;
+  }
 
   function initializeSearch() {
     if (!searchInput || !searchResults || searchInitialized) {
@@ -59,6 +119,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderSearchResults(value) {
+    if (!searchResults) {
+      return;
+    }
     const query = value.trim().toLowerCase();
     searchResults.innerHTML = "";
 
@@ -84,18 +147,52 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function normalizeIndexItems(items) {
-    return items.map((item) => ({
-      id: item.id,
-      title: item.title || item.sourcePath || "Untitled",
-      summary: item.summary || "",
-      url: item.url || "#",
-      area: normalizeFacet(item.area, "uncategorized", "Uncategorized"),
-      topic: normalizeFacet(item.topic, "uncategorized", "Uncategorized"),
-      breadcrumbs: Array.isArray(item.breadcrumbs) ? item.breadcrumbs : [],
-      order: item.order,
-      searchText: normalizeSearchText(item),
-    }));
+  function normalizeIndexItems(data) {
+    const items = Array.isArray(data.items) ? data.items : [];
+    const isCompactCatalog = Number(data.schemaVersion) >= 2 && foldersById.size > 0;
+
+    return items.map((item) => {
+      if (!isCompactCatalog) {
+        const breadcrumbs = Array.isArray(item.breadcrumbs) ? item.breadcrumbs : [];
+        return {
+          id: item.id,
+          title: item.title || item.sourcePath || "Untitled",
+          summary: item.summary || "",
+          url: item.url || "#",
+          area: normalizeFacet(item.area, "uncategorized", "Uncategorized"),
+          topic: normalizeFacet(item.topic, "uncategorized", "Uncategorized"),
+          breadcrumbs,
+          tags: Array.isArray(item.tags) ? item.tags : [],
+          order: item.order,
+          searchText: normalizeSearchText(item, breadcrumbs),
+        };
+      }
+
+      const folder = foldersById.get(item.folderId);
+      const folderParts = item.folderId ? item.folderId.split("/") : [];
+      const rootFolder = foldersById.get(folderParts[0]);
+      const breadcrumbs = getFolderBreadcrumbs(item.folderId);
+      const topicSlug = folderParts[folderParts.length - 1] || "uncategorized";
+      const normalized = {
+        id: item.id,
+        title: item.title || "Untitled",
+        summary: item.summary || "",
+        url: item.url || "#",
+        area: normalizeFacet(rootFolder, "uncategorized", "Uncategorized"),
+        topic: {
+          slug: topicSlug,
+          label: folder ? folder.label : humanizeSlug(topicSlug),
+        },
+        breadcrumbs,
+        tags: Array.isArray(item.tags) ? item.tags : [],
+        status: item.status || "active",
+        kind: item.kind || "note",
+        folderId: item.folderId || "",
+        order: item.order,
+      };
+      normalized.searchText = normalizeSearchText(normalized, breadcrumbs);
+      return normalized;
+    });
   }
 
   function normalizeFacet(value, fallbackSlug, fallbackLabel) {
@@ -104,12 +201,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return {
-      slug: value.slug || fallbackSlug,
-      label: value.label || value.slug || fallbackLabel,
+      slug: value.slug || value.id || value.path || fallbackSlug,
+      label: value.label || value.slug || value.id || fallbackLabel,
     };
   }
 
-  function normalizeSearchText(item) {
+  function getFolderBreadcrumbs(folderId) {
+    const labels = [];
+    let current = foldersById.get(folderId);
+    while (current) {
+      labels.unshift(current.label);
+      current = current.parentId ? foldersById.get(current.parentId) : null;
+    }
+    return labels;
+  }
+
+  function humanizeSlug(value) {
+    return String(value || "")
+      .split("-")
+      .filter(Boolean)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  }
+
+  function normalizeSearchText(item, breadcrumbs = []) {
     if (item.searchText) {
       return item.searchText.toLowerCase();
     }
@@ -117,28 +232,59 @@ document.addEventListener("DOMContentLoaded", () => {
     return [
       item.title,
       item.summary,
-      ...(item.breadcrumbs || []),
+      ...breadcrumbs,
+      ...(item.tags || []),
+      item.kind,
+      item.status,
       ...((item.headings || []).map((heading) => heading.text)),
     ].filter(Boolean).join(" ").toLowerCase();
   }
 
-  function renderTopicFilters(facets) {
+  function renderTopicFilters() {
     if (!topicFilters) {
       return;
     }
 
+    const areaFacets = buildFacetCounts(allContents, "area");
+    const topicSource = activeArea === "current"
+      ? allContents.filter((item) => item.area.slug !== "archive")
+      : allContents.filter((item) => item.area.slug === activeArea);
+    const topicFacets = buildFacetCounts(topicSource, "topic");
+
     topicFilters.innerHTML = "";
     topicFilters.appendChild(createFilterGroup("Areas", [
-      { slug: "all", label: "All", count: allContents.length },
-      ...(facets.areas || []),
+      { slug: "current", label: "Current", count: allContents.filter((item) => item.area.slug !== "archive").length },
+      ...areaFacets,
     ], "area"));
 
     topicFilters.appendChild(createFilterGroup("Topics", [
-      { slug: "all", label: "All", count: allContents.length },
-      ...(facets.topics || []),
+      { slug: "all", label: "All", count: topicSource.length },
+      ...topicFacets,
     ], "topic"));
 
     updateFilterButtons();
+  }
+
+  function buildFacetCounts(items, property) {
+    const counts = new Map();
+    items.forEach((item) => {
+      const facet = item[property];
+      if (!facet || !facet.slug) {
+        return;
+      }
+      const current = counts.get(facet.slug) || {
+        slug: facet.slug,
+        label: facet.label,
+        count: 0,
+      };
+      current.count += 1;
+      counts.set(facet.slug, current);
+    });
+    return Array.from(counts.values())
+      .sort((left, right) => (
+        Number(left.slug === "archive") - Number(right.slug === "archive")
+        || left.label.localeCompare(right.label)
+      ));
   }
 
   function createFilterGroup(title, filters, type) {
@@ -164,10 +310,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (type === "area") {
           activeArea = filter.slug;
           activeTopic = "all";
+          renderTopicFilters();
         } else {
           activeTopic = filter.slug;
+          updateFilterButtons();
         }
-        updateFilterButtons();
         renderIndexedNavigation();
         renderSearchResults(searchInput ? searchInput.value : "");
         highlightCurrentEntry();
@@ -309,7 +456,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getFilteredItems() {
     return allContents.filter((item) => {
-      const areaMatches = activeArea === "all" || item.area.slug === activeArea;
+      const areaMatches = activeArea === "current"
+        ? item.area.slug !== "archive"
+        : item.area.slug === activeArea;
       const topicMatches = activeTopic === "all" || item.topic.slug === activeTopic;
       return areaMatches && topicMatches;
     });
@@ -539,15 +688,38 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    setState(false);
+    const savedSidebarState = preferences
+      ? preferences.get().ui.sidebarExpanded
+      : false;
+    setState(savedSidebarState);
 
     sidebarToggle.addEventListener('click', () => {
       const isExpanded = sidebarLayout.classList.contains(expandedClass);
-      setState(!isExpanded);
+      const nextState = !isExpanded;
+      setState(nextState);
+      if (preferences) {
+        preferences.setUi("sidebarExpanded", nextState);
+      }
     });
   }
 
+  labelTaskCheckboxes();
   buildPageToc();
+
+  function labelTaskCheckboxes() {
+    document.querySelectorAll("input.task-list-item-checkbox").forEach((checkbox, index) => {
+      if (checkbox.labels.length || checkbox.hasAttribute("aria-label")) {
+        return;
+      }
+      const listItem = checkbox.closest("li");
+      const labelSource = listItem ? listItem.cloneNode(true) : null;
+      if (labelSource) {
+        labelSource.querySelectorAll("input, ol, ul").forEach((element) => element.remove());
+      }
+      const taskText = labelSource ? labelSource.textContent.replace(/\s+/g, " ").trim() : "";
+      checkbox.setAttribute("aria-label", taskText || `Task item ${index + 1}`);
+    });
+  }
 
   function createSectionElement(section) {
     const details = document.createElement("details");
@@ -621,10 +793,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function buildPageToc() {
     const toc = document.getElementById('page-toc');
+    const tocDisclosure = document.getElementById('page-toc-disclosure');
     const tocLinks = document.getElementById('page-toc-links');
+    const tocCount = document.getElementById('page-toc-count');
     const contentArea = document.querySelector('.content-area');
+    const pageLayout = document.querySelector('.page-layout');
 
-    if (!toc || !tocLinks || !contentArea) {
+    if (!toc || !tocDisclosure || !tocLinks || !contentArea || !pageLayout) {
       return;
     }
 
@@ -651,16 +826,57 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener('click', () => {
         linksById.forEach((item) => item.classList.remove('active'));
         link.classList.add('active');
+        if (window.matchMedia('(max-width: 1100px)').matches) {
+          tocDisclosure.open = false;
+        }
       });
 
       linksById.set(heading.id, link);
       tocLinks.appendChild(link);
     });
 
+    if (tocCount) {
+      tocCount.textContent = headings.length;
+      tocCount.setAttribute('aria-label', `${headings.length} page sections`);
+    }
+
     toc.hidden = false;
-    const pageLayout = document.querySelector('.page-layout');
-    if (pageLayout) {
-      pageLayout.classList.add('has-page-toc');
+    pageLayout.classList.add('has-page-toc');
+
+    const narrowViewport = window.matchMedia('(max-width: 1100px)');
+    let previousNarrowState;
+    const syncTocPlacement = () => {
+      if (narrowViewport.matches) {
+        const pageTitle = contentArea.querySelector('h1');
+        if (pageTitle) {
+          pageTitle.insertAdjacentElement('afterend', toc);
+        } else {
+          contentArea.prepend(toc);
+        }
+        if (previousNarrowState !== true) {
+          tocDisclosure.open = preferences
+            ? preferences.get().ui.tocExpandedMobile
+            : false;
+        }
+      } else {
+        pageLayout.appendChild(toc);
+        if (previousNarrowState !== false) {
+          tocDisclosure.open = true;
+        }
+      }
+      previousNarrowState = narrowViewport.matches;
+    };
+
+    syncTocPlacement();
+    tocDisclosure.addEventListener('toggle', () => {
+      if (narrowViewport.matches && preferences) {
+        preferences.setUi("tocExpandedMobile", tocDisclosure.open);
+      }
+    });
+    if (typeof narrowViewport.addEventListener === 'function') {
+      narrowViewport.addEventListener('change', syncTocPlacement);
+    } else if (typeof narrowViewport.addListener === 'function') {
+      narrowViewport.addListener(syncTocPlacement);
     }
 
     if ('IntersectionObserver' in window) {

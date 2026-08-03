@@ -140,6 +140,11 @@ summary {
   outline: none;
 }
 
+summary:focus-visible {
+  outline: 2px solid #7ce7db;
+  outline-offset: 4px;
+}
+
 summary:hover {
   color: #7ce7db;
 }
@@ -210,4 +215,54 @@ summary:hover {
   .anime-card__title {
     font-size: 0.95rem;
   }
+}
+
+html[data-theme="light"] body.anime-layout {
+  background:
+    radial-gradient(120% 120% at 50% 0%, rgba(7, 95, 174, 0.09), transparent 65%),
+    radial-gradient(140% 140% at 0% 100%, rgba(33, 143, 128, 0.08), transparent 70%),
+    linear-gradient(135deg, #f6fafc 0%, #edf4f7 100%);
+}
+
+html[data-theme="light"] .anime-wrapper {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(33, 143, 128, 0.25);
+  box-shadow: 0 18px 40px rgba(25, 45, 62, 0.14), inset 0 0 0 1px rgba(7, 95, 174, 0.06);
+}
+
+html[data-theme="light"] .anime-title,
+html[data-theme="light"] .anime-card__title,
+html[data-theme="light"] summary,
+html[data-theme="light"] .details-controls button,
+html[data-theme="light"] .search-icon {
+  color: #075b68;
+}
+
+html[data-theme="light"] .anime-card {
+  background: linear-gradient(160deg, rgba(72, 187, 170, 0.13), rgba(7, 95, 174, 0.07) 40%, #ffffff 100%);
+  border-color: rgba(33, 143, 128, 0.28);
+  box-shadow: 0 10px 24px rgba(25, 45, 62, 0.13);
+}
+
+html[data-theme="light"] .anime-card:hover {
+  box-shadow: 0 18px 32px rgba(25, 45, 62, 0.18);
+}
+
+html[data-theme="light"] .anime-card__image-wrapper {
+  background: #e7edf3;
+}
+
+html[data-theme="light"] .anime-card__title::first-letter,
+html[data-theme="light"] summary:hover,
+html[data-theme="light"] .details-controls button:hover {
+  color: #075f54;
+}
+
+html[data-theme="light"] #anime-search {
+  background: #ffffff;
+  color: #1d2935;
+}
+
+html[data-theme="light"] #anime-search::placeholder {
+  color: #5d6c7a;
 }

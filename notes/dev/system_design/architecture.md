@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Microservices Architecture
+show_title: true
 area: dev
 topic: architecture
 tags: [microservices, kubernetes, architecture, ingress]
@@ -62,6 +63,5 @@ Microservices Architecture
         └── Visualization of logs and metrics
 
 ```
-
 
 

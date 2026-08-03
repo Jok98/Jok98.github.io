@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Spring Boot Study Plan
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, spring, study-plan]
 summary: Study plan for Spring configuration, core concepts, and application development topics.
 order: 20
 ---
-# Spring
+## Spring
 
-## Configuring Spring Applications
+### Configuring Spring Applications
 
 | Topic                          | Description                                                   | Done |
 |--------------------------------|---------------------------------------------------------------|------|
@@ -18,7 +19,7 @@ order: 20
 | Java-Based Configuration       | Creating configuration classes using @Configuration and @Bean |      |
 | Spring Application Context     | Understanding ApplicationContext and BeanFactory              |      |
 
-## Spring Core Concepts
+### Spring Core Concepts
 
 - ## Spring Bean Lifecycle
 
@@ -72,7 +73,7 @@ order: 20
 
 ---
 
-# SpringBoot
+## SpringBoot
 
 - ## Configuration in Spring Boot
 
@@ -116,7 +117,7 @@ order: 20
 
 ---
 
-# Reactive Programming and WebFlux
+## Reactive Programming and WebFlux
 
 - ## Introduction to Reactive Programming
 

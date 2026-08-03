@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Spring Boot Actuator
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, actuator, observability, monitoring]

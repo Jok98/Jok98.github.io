@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/default_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    {% if page.extra_css %}
-    <link rel="stylesheet" href="{{ page.extra_css | relative_url }}">
-    {% endif %}
+    {% include head.html %}
 </head>
-<body>
-<header>
-    <nav class="navbar" aria-label="Main navigation">
-        <a href="/" class="nav-logo">Matteo Moi - Software Developer</a>
-        <div class="nav-links">
-            <a href="/" class="nav-link"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
-            <a href="/cv" class="nav-link"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
-            <a href="/dist/cv.pdf" class="nav-link" download><i class="fas fa-download" aria-hidden="true"></i> PDF</a>
-            <a href="https://github.com/Jok98" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            <span class="site-version">{{ site.site_version }}</span>
-        </div>
-    </nav>
-</header>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+{% include site-header.html %}
+{% assign is_note_page = false %}
+{% if page.path contains 'notes/' %}
+  {% assign is_note_page = true %}
+{% endif %}
+{% assign is_direct_note = false %}
+{% if is_note_page and page.layout == 'default' %}
+  {% assign is_direct_note = true %}
+{% endif %}
 {% if page.sidebar == false %}
-    <main class="page-content{% if page.page_class %} {{ page.page_class }}{% endif %}">
-        {{ content }}
+    <main id="main-content" tabindex="-1" data-pagefind-body class="page-content{% if page.page_class %} {{ page.page_class }}{% endif %}">
+        {% if is_note_page %}{% include note-context.html %}{% endif %}
+        {% if is_direct_note %}
+        <article class="post">
+          {% if page.show_title == true %}
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+          </header>
+          {% endif %}
+          <div class="post-content">
+            {{ content }}
+          </div>
+        </article>
+        {% else %}
+          {{ content }}
+        {% endif %}
     </main>
 {% else %}
     <div class="sidebar-controls">
@@ -36,26 +39,51 @@
         </button>
     </div>
     <div class="page-layout sidebar-collapsed">
-        <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true">
+        <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true" aria-label="Notes navigation">
             <h2 class="sidebar-title">Notes &amp; Resources</h2>
             <div id="search-container">
                 <label class="visually-hidden" for="search-input">Search notes</label>
                 <input type="search" id="search-input" placeholder="Search notes..." autocomplete="off">
-                <div id="search-results"></div>
+                <div id="search-results" aria-live="polite"></div>
             </div>
             <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
-            <div id="sections-container"></div>
+            <p class="browser-status" data-content-status role="status">Loading notes…</p>
+            <div id="sections-container" aria-busy="true"></div>
         </aside>
-        <main class="content-area{% if page.page_class %} {{ page.page_class }}{% endif %}">
-            {{ content }}
+        <main id="main-content" tabindex="-1" data-pagefind-body class="content-area{% if page.page_class %} {{ page.page_class }}{% endif %}">
+            {% if is_note_page %}{% include note-context.html %}{% endif %}
+            {% if is_direct_note %}
+            <article class="post">
+              {% if page.show_title == true %}
+              <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+              </header>
+              {% endif %}
+              <div class="post-content">
+                {{ content }}
+              </div>
+            </article>
+            {% else %}
+              {{ content }}
+            {% endif %}
         </main>
         <aside id="page-toc" class="page-toc" aria-label="On this page" hidden>
-            <h2 class="page-toc-title">On this page</h2>
-            <nav id="page-toc-links" class="page-toc-links"></nav>
+            <details id="page-toc-disclosure" class="page-toc-disclosure">
+                <summary class="page-toc-summary">
+                    <span>On this page</span>
+                    <span id="page-toc-count" class="nav-count" aria-label="Sections"></span>
+                </summary>
+                <nav id="page-toc-links" class="page-toc-links" aria-label="Page sections"></nav>
+            </details>
         </aside>
     </div>
 {% endif %}
-<button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-<script src="/assets/js/script.js"></script>
+{% include site-footer.html %}
+{% include back-to-top.html %}
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+{% if is_note_page %}
+<script src="{{ '/assets/js/catalog.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/note-context.js' | relative_url }}"></script>
+{% endif %}
 </body>
 </html>

@@ -13,27 +13,86 @@ page_class: home-page
   </div>
 
   <div class="cv-link-container" aria-label="CV links">
-    <a href="/cv" class="cv-button"><i class="fas fa-file-alt" aria-hidden="true"></i> View CV</a>
+    <a href="/explore/" class="cv-button"><i class="fas fa-folder-tree" aria-hidden="true"></i> Explore notes</a>
+    <a href="/cv" class="cv-button cv-button-secondary"><i class="fas fa-file-alt" aria-hidden="true"></i> View CV</a>
     <a href="/dist/cv.pdf" class="cv-button cv-button-secondary" download><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
   </div>
 </section>
 
-<section class="notes-browser" aria-labelledby="notes-browser-title">
+<section class="home-library" aria-labelledby="notes-browser-title">
   <div class="browser-header">
     <div>
       <p class="eyebrow">Library</p>
-      <h2 id="notes-browser-title">Notes &amp; Resources</h2>
+      <h2 id="notes-browser-title">Find your next note</h2>
     </div>
+    <a class="home-explorer-link" href="/explore/">Open full explorer <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 
-  <div class="browser-tools">
-    <div id="search-container">
-      <label class="visually-hidden" for="search-input">Search notes</label>
-      <input type="search" id="search-input" placeholder="Search notes..." autocomplete="off">
-      <div id="search-results"></div>
+  <form class="home-search" action="/explore/" method="get" role="search">
+    <label for="home-search-input">Search across the knowledge base</label>
+    <div>
+      <input id="home-search-input" name="q" type="search" placeholder="Java, Kubernetes, system design…" autocomplete="off">
+      <input name="view" type="hidden" value="list">
+      <button type="submit">Search</button>
     </div>
-    <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
+  </form>
+
+  <p class="browser-status" data-home-status role="status">Loading library overview…</p>
+
+  <div class="home-library-grid">
+    <section class="home-folder-section" aria-labelledby="home-folders-title">
+      <div class="home-section-heading">
+        <h3 id="home-folders-title">Browse active notes</h3>
+        <span data-home-active-count></span>
+      </div>
+      <ul class="home-folder-list" data-home-folders></ul>
+      <a class="home-archive-link" href="/explore/?path=archive&amp;view=list" data-home-archive>
+        <span><i class="fas fa-box-archive" aria-hidden="true"></i> Archive</span>
+        <span class="nav-count" data-home-archive-count aria-label="Archived notes"></span>
+      </a>
+    </section>
+
+    <section class="home-featured-section" aria-labelledby="home-featured-title">
+      <div class="home-section-heading">
+        <h3 id="home-featured-title">Featured roadmaps</h3>
+        <a href="/explore/?view=list&amp;kind=roadmap">View all</a>
+      </div>
+      <ol class="home-featured-list" data-home-featured></ol>
+    </section>
   </div>
 
-  <div id="sections-container"></div>
+  <section class="home-personal" data-home-personal aria-labelledby="home-personal-title">
+    <div class="home-section-heading">
+      <div>
+        <p class="eyebrow">Local to this browser</p>
+        <h3 id="home-personal-title">Your library</h3>
+      </div>
+      <span>No account or sync</span>
+    </div>
+    <div class="home-personal-grid">
+      <section aria-labelledby="home-favorites-title">
+        <div class="home-personal-heading">
+          <h4 id="home-favorites-title"><i class="fas fa-star" aria-hidden="true"></i> Favorites</h4>
+          <span class="nav-count" data-home-favorite-count>0</span>
+        </div>
+        <ol class="home-personal-list" data-home-favorites></ol>
+        <p class="home-personal-empty" data-home-favorites-empty>Open a note and use “Save” to keep it here.</p>
+      </section>
+      <section aria-labelledby="home-recent-title">
+        <div class="home-personal-heading">
+          <h4 id="home-recent-title"><i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Recently viewed</h4>
+          <button type="button" class="home-personal-clear" data-home-clear-recent hidden>Clear</button>
+        </div>
+        <ol class="home-personal-list" data-home-recent></ol>
+        <p class="home-personal-empty" data-home-recent-empty>Notes you open will appear here on this device.</p>
+      </section>
+    </div>
+  </section>
+
+  <noscript>
+    <p class="browser-status" data-state="error">Use the <a href="/explore/">static note list in Explorer</a> when JavaScript is disabled.</p>
+  </noscript>
 </section>
+
+<script src="/assets/js/catalog.js"></script>
+<script src="/assets/js/home.js"></script>

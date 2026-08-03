@@ -15,6 +15,10 @@ permalink: /cv/
 
 # Matteo Moi - Software Engineer
 
+<div class="cv-download">
+  <a class="cv-download-link" href="/dist/cv.pdf" download>Download PDF</a>
+</div>
+
 <div class="cv-header">
   <strong>Location:</strong> Sondrio, Italy | <strong>Email:</strong> <a href="mailto:matteo.moi1998@gmail.com">matteo.moi1998@gmail.com</a><br/>
   <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank">LinkedIn</a> |

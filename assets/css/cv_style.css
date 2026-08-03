@@ -18,6 +18,19 @@ body.cv-page * {
   box-sizing: border-box;
 }
 
+.cv-page .site-footer {
+  color: #4b5563;
+}
+
+.cv-page .site-footer a {
+  color: #1d4ed8;
+}
+
+.cv-page .site-footer a:hover,
+.cv-page .site-footer a:focus {
+  color: #163fa3;
+}
+
 .cv-page-nav {
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
@@ -354,6 +367,8 @@ body.cv-page * {
   }
 
   .cv-page-nav,
+  .cv-download,
+  .site-footer,
   #back-to-top {
     display: none !important;
   }

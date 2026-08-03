@@ -10,14 +10,16 @@
 - Il repository è un sito statico Jekyll senza backend, database o autenticazione.
 - Le note Markdown in `notes/` alimentano pagine con permalink leggibili e la navigazione client-side.
 - `assets/data/content-index.json` è l'indice principale; `directories.json` resta il fallback legacy.
+- `/explore/` usa il catalogo v2 e Pagefind; la lista statica conserva l'accesso alle note senza JavaScript.
 - `pages/cv.md` è la sorgente del CV; `dist/cv.html` e `dist/cv.pdf` sono artefatti generati e tracciati.
-- Il push su `main` attiva la rigenerazione degli indici e del CV tramite GitHub Actions.
-- Non è documentato alcun lavoro di prodotto attivo; le checklist nelle roadmap sono contenuto didattico.
+- `npm run check` è il gate locale e CI per indici, CV, Jekyll, Pagefind, link, E2E e accessibilità.
+- Il push su `main` può aggiornare gli artefatti verificati tramite un job GitHub Actions separato; la sorgente Pages resta esterna al repository.
+- La track chiusa `site-ux-file-explorer` documenta la revisione UX, il catalogo, la ricerca, le preferenze locali e il quality gate del sito.
 
 ## Prossima azione
 
-- Per ogni nuova richiesta, identificare prima se coinvolge contenuti, UI/layout, generatori, CV o pubblicazione.
-- Aprire il file di dettaglio pertinente e validare anche gli artefatti derivati interessati dalla modifica.
+- Per comprendere la revisione UX completata aprire `tracks/site-ux-file-explorer/START_HERE.md`.
+- Per altre richieste identificare prima se coinvolgono contenuti, UI/layout, generatori, CV o pubblicazione.
 
 ## Vincoli inderogabili
 

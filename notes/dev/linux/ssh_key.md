@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SSH Key
+show_title: true
 area: dev
 topic: linux
 tags: [linux, ssh, security, keys]
@@ -41,4 +42,3 @@ cat ~/.ssh/id_ed25519.pub
 ```shell
 ssh -T git@github.com
 ```
-

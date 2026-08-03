@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Content Negotiation
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, rest-api, content-negotiation, jackson]

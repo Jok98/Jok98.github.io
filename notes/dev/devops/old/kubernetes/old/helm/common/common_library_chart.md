@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Helm Common Library Chart
+show_title: true
 area: dev
 topic: devops
 tags: [helm, kubernetes, library-chart, templates]

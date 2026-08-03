@@ -1,6 +1,7 @@
 ---
 layout: default
 title: DSA Study Plan
+show_title: true
 area: dev
 topic: dsa
 tags: [dsa, study-plan, algorithms, data-structures]
@@ -201,7 +202,6 @@ order: 20
 |----------------------|------|
 | P vs. NP             |      |
 | NP-Complete problems |      |
-
 
 
 

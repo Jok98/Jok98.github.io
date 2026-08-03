@@ -1,6 +1,7 @@
 ---
 layout: default
 title: RabbitMQ
+show_title: true
 area: dev
 topic: microservices
 tags: [rabbitmq, messaging, queues, event-driven]

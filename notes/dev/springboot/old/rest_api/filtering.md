@@ -1,6 +1,7 @@
 ---
 layout: default
 title: REST Filtering
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, rest-api, filtering, jackson]

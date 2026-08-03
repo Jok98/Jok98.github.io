@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hiragana
+show_title: true
 area: etc
 topic: japanese
 tags: [japanese, kana, hiragana, writing]

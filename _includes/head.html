@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | default: "Matteo Moi" | escape }}</title>
+<meta name="description" content="{{ page.summary | default: site.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+<script src="{{ '/assets/js/preferences.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/default_style.css' | relative_url }}">
+{% if include.extra_css %}
+<link rel="stylesheet" href="{{ include.extra_css | relative_url }}">
+{% endif %}
+{% if page.extra_css and page.extra_css != include.extra_css %}
+<link rel="stylesheet" href="{{ page.extra_css | relative_url }}">
+{% endif %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">

@@ -1,28 +1,29 @@
 ---
 layout: default
 title: Spring Boot
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, spring, dependency-injection, ioc]
 summary: Spring Boot and Spring fundamentals covering IoC, dependency injection, and core concepts.
 order: 10
 ---
-# SpringBoot
+## SpringBoot
 
-# Spring/SpringBoot fundamental concepts
+## Spring/SpringBoot fundamental concepts
 
-## Inversion of Control (IoC)
+### Inversion of Control (IoC)
 
 **Definition**: IoC is a design principle where the control flow of a program is inverted. Instead of the application
 code controlling the flow, the framework takes control of the flow and instantiates and manages the lifecycle of
 objects.
 
-## Dependency Injection
+### Dependency Injection
 
 **Definition**: It is a technique where an object receives its dependencies from an external source (in this case Spring
 Framework) rather than creating them internally.
 
-### Types of Injection in Spring
+#### Types of Injection in Spring
 
 - **Constructor Injection**
 
@@ -69,13 +70,13 @@ class Client {
 }
 ```
 
-## SpringBoot Annotation
+### SpringBoot Annotation
 
 - **@SpringBootApplication**
 - **@Component**
 - **@Configuration**
 
-### @SpringBootApplication
+#### @SpringBootApplication
 
 ```java
 
@@ -95,7 +96,7 @@ This annotation is a shortcut that combines three fundamental annotations in Spr
 | @EnableAutoConfiguration | Enables the auto-configuration, which automatically configures your application based on the dependencies you have added.                                                              |
 | @ComponentScan           | Instructs Spring to scan the current package and its sub-packages for components, configurations, and services, allowing it to detect and register beans with the application context. |
 
-### @Component
+#### @Component
 
 It is used to mark a Java class as a "component" so that Spring can automatically detect and manage the class as a bean
 within its Inversion of Control (IoC) container without explicit configuration.
@@ -110,7 +111,7 @@ public class MyComponent {
 }
 ```
 
-#### Specialized Stereotypes
+##### Specialized Stereotypes
 
 | Annotation      | Description                                                                                 |
 |-----------------|---------------------------------------------------------------------------------------------|
@@ -119,7 +120,7 @@ public class MyComponent {
 | @Controller     | Used in Spring MVC to denote a controller class that handles HTTP requests                  |
 | @RestController | Combines @Controller and @ResponseBody. It is used in RESTful web services                  |
 
-### @Configuration
+#### @Configuration
 
 Purpose:
 
@@ -142,7 +143,7 @@ public class AppConfig {
 
 ---
 
-### UserDetailsService
+#### UserDetailsService
 Is the standard mechanism for SpringBoot to retrive a user from the db when it validates a token(jwt) or do a login.
 
 - implementation

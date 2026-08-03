@@ -27,6 +27,10 @@ CSS_FILES = (
     REPO_ROOT / "assets" / "css" / "default_style.css",
     REPO_ROOT / "assets" / "css" / "cv_style.css",
 )
+PDF_TIMESTAMP_PATTERN = re.compile(
+    rb"/(CreationDate|ModDate) \(D:\d{14}[+-]\d{2}'\d{2}'\)"
+)
+REPRODUCIBLE_PDF_TIMESTAMP = b"D:20000101000000+00'00'"
 
 
 def parse_args() -> argparse.Namespace:
@@ -303,6 +307,23 @@ def render_pdf(chromium: str, html_file: Path, pdf_file: Path) -> None:
                 output=result.stdout,
                 stderr=result.stderr,
             )
+    normalize_pdf_metadata(pdf_file)
+
+
+def normalize_pdf_metadata(pdf_file: Path) -> None:
+    """Remove Chromium's wall-clock timestamps without changing PDF offsets."""
+
+    pdf_bytes = pdf_file.read_bytes()
+    normalized_bytes, replacements = PDF_TIMESTAMP_PATTERN.subn(
+        lambda match: b"/" + match.group(1) + b" (" + REPRODUCIBLE_PDF_TIMESTAMP + b")",
+        pdf_bytes,
+    )
+    if replacements != 2:
+        raise RuntimeError(
+            f"Expected Chromium CreationDate and ModDate metadata in {pdf_file}, "
+            f"found {replacements}."
+        )
+    pdf_file.write_bytes(normalized_bytes)
 
 
 def main() -> int:

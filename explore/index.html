@@ -1,0 +1,87 @@
+---
+layout: default
+title: Explore notes
+summary: Browse the knowledge base through virtual folders or search across every note.
+sidebar: false
+page_class: explorer-page
+extra_css: /assets/css/explorer.css
+permalink: /explore/
+---
+
+<section class="explorer" data-explorer-root aria-labelledby="explorer-title">
+  <header class="explorer-intro">
+    <p class="eyebrow">Knowledge base</p>
+    <h1 id="explorer-title">Explore notes</h1>
+    <p>Browse stable, topic-based folders without exposing the legacy source tree. Search remains global unless you limit it to the current folder.</p>
+  </header>
+
+  <form class="explorer-search" data-explorer-search-form role="search">
+    <div class="explorer-search-field">
+      <label for="explorer-search-input">Search notes</label>
+      <input id="explorer-search-input" name="q" type="search" autocomplete="off" placeholder="Search titles, summaries, tags, and note content">
+    </div>
+    <div class="explorer-select-field">
+      <label for="explorer-search-scope">Scope</label>
+      <select id="explorer-search-scope" name="scope">
+        <option value="all">All folders</option>
+        <option value="current">Current folder</option>
+      </select>
+    </div>
+    <div class="explorer-select-field">
+      <label for="explorer-kind-filter">Type</label>
+      <select id="explorer-kind-filter" name="kind">
+        <option value="all">All types</option>
+      </select>
+    </div>
+    <button class="explorer-search-button" type="submit">Search</button>
+    <a class="explorer-clear" href="/explore/?view=list" data-explorer-clear>Clear</a>
+  </form>
+
+  <div class="explorer-shell" aria-busy="true">
+    <nav class="explorer-breadcrumbs" aria-label="Folder path">
+      <ol data-explorer-breadcrumbs></ol>
+    </nav>
+
+    <div class="explorer-toolbar">
+      <p class="explorer-status" data-explorer-status role="status">Loading catalog…</p>
+      <div class="explorer-view-toggle" aria-label="Note view">
+        <button type="button" data-explorer-view="list" aria-pressed="true"><i class="fas fa-list" aria-hidden="true"></i><span>List</span></button>
+        <button type="button" data-explorer-view="grid" aria-pressed="false"><i class="fas fa-grip" aria-hidden="true"></i><span>Grid</span></button>
+      </div>
+    </div>
+
+    <section class="explorer-folders" data-explorer-folder-section aria-labelledby="explorer-folder-title">
+      <h2 id="explorer-folder-title">Folders</h2>
+      <ul data-explorer-folders></ul>
+    </section>
+
+    <section class="explorer-notes" aria-labelledby="explorer-current-title">
+      <div class="explorer-section-heading">
+        <div>
+          <p class="eyebrow" data-explorer-context>Current folder</p>
+          <h2 id="explorer-current-title" tabindex="-1">Notes</h2>
+        </div>
+        <span class="explorer-result-count" data-explorer-result-count></span>
+      </div>
+      <ol class="explorer-note-list" data-explorer-items></ol>
+      <p class="explorer-empty" data-explorer-empty hidden></p>
+    </section>
+  </div>
+
+  {% assign static_notes = site.pages | where_exp: "site_page", "site_page.path contains 'notes/'" | sort: "title" %}
+  <details class="explorer-static-fallback" data-explorer-static-fallback>
+    <summary>Static note list ({{ static_notes | size }})</summary>
+    <ul>
+      {% for note in static_notes %}
+      <li><a href="{{ note.url | relative_url }}">{{ note.title | default: note.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </details>
+
+  <noscript>
+    <p class="browser-status" data-state="error">JavaScript is disabled. Use the complete static note list above.</p>
+  </noscript>
+</section>
+
+<script src="/assets/js/catalog.js"></script>
+<script src="/assets/js/explorer.js"></script>

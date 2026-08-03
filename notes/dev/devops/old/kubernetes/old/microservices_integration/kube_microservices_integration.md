@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Kubernetes Microservices Integration
+show_title: true
 area: dev
 topic: devops
 tags: [kubernetes, microservices, configmap, ingress, cert-manager]

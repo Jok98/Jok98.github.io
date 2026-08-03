@@ -1,95 +1,128 @@
-name: Update generated site assets
+name: Build and verify site
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: site-quality-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  update-generated-assets:
+  quality:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Backup current generated assets
-        run: |
-          cp assets/data/directories.json assets/data/directories.json.bak || echo "No previous directories.json to backup"
-          cp assets/data/content-index.json assets/data/content-index.json.bak || echo "No previous content-index.json to backup"
-          cp dist/cv.html dist/cv.html.bak || echo "No previous cv.html to backup"
-          cp dist/cv.pdf dist/cv.pdf.bak || echo "No previous cv.pdf to backup"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
 
-      - name: List Notes Directory
-        run: |
-          echo "Contents of notes directory:"
-          ls -R notes || echo "Notes directory not found"
+      - name: Set up Ruby and Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
-      - name: Generate content indexes
-        run: |
-          chmod +x scripts/create_json.sh
-          chmod +x scripts/create_content_index.py
-          ./scripts/create_json.sh
-          python3 scripts/create_content_index.py
-          echo "Generated directories.json content:"
-          cat assets/data/directories.json
-          echo "Generated content-index.json content:"
-          cat assets/data/content-index.json
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.12.0"
+          cache: npm
 
-      - name: Generate CV PDF
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Locate Chrome or Chromium
+        shell: bash
         run: |
-          chmod +x scripts/render_cv_pdf.py
-          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
-          if [ -z "$CHROME_BIN" ]; then
-            echo "Chrome/Chromium executable not found"
+          CHROMIUM_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROMIUM_BIN" ]; then
+            echo "Chrome/Chromium executable not found" >&2
             exit 1
           fi
-          "$CHROME_BIN" --version
-          python3 scripts/render_cv_pdf.py --chromium "$CHROME_BIN"
+          "$CHROMIUM_BIN" --version
+          echo "CHROMIUM_BIN=$CHROMIUM_BIN" >> "$GITHUB_ENV"
 
-      - name: Compare generated files
+      - name: Build and run the quality gate
+        run: npm run check
+
+      - name: Verify generated assets are committed on pull requests
+        if: github.event_name == 'pull_request'
         run: |
-          if diff assets/data/directories.json assets/data/directories.json.bak; then
-            echo "No changes in directories.json"
-          else
-            echo "directories.json has changed:"
-            diff assets/data/directories.json assets/data/directories.json.bak || true
-          fi
-          if diff assets/data/content-index.json assets/data/content-index.json.bak; then
-            echo "No changes in content-index.json"
-          else
-            echo "content-index.json has changed:"
-            diff assets/data/content-index.json assets/data/content-index.json.bak || true
-          fi
-          if diff dist/cv.html dist/cv.html.bak; then
-            echo "No changes in cv.html"
-          else
-            echo "cv.html has changed"
-          fi
-          if cmp -s dist/cv.pdf dist/cv.pdf.bak; then
-            echo "No changes in cv.pdf"
-          else
-            echo "cv.pdf has changed"
+          GENERATED_STATUS="$(git status --porcelain -- \
+            assets/data/directories.json \
+            assets/data/content-index.json \
+            assets/pagefind \
+            dist/cv.html \
+            dist/cv.pdf)"
+          if [ -n "$GENERATED_STATUS" ]; then
+            echo "$GENERATED_STATUS"
+            echo "Generated assets are stale. Run npm run build and commit the result." >&2
+            exit 1
           fi
 
-      - name: Debug Git
-        run: |
-          git status
-          git diff assets/data/directories.json assets/data/content-index.json dist/cv.html
-          git diff --stat dist/cv.pdf
+      - name: Upload verified generated assets
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-site-assets
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            assets/data/directories.json
+            assets/data/content-index.json
+            assets/pagefind
+            dist/cv.html
+            dist/cv.pdf
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  update-generated-assets:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: quality
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download verified generated assets
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-site-assets
+          path: .generated-assets
+
+      - name: Synchronize verified generated assets
+        shell: bash
         run: |
-          git add assets/data/directories.json assets/data/content-index.json dist/cv.html dist/cv.pdf
-          git commit -m "Update generated site assets [CI]" || echo "No changes to commit"
-          git push origin main
+          cp .generated-assets/assets/data/directories.json assets/data/directories.json
+          cp .generated-assets/assets/data/content-index.json assets/data/content-index.json
+          cp .generated-assets/dist/cv.html dist/cv.html
+          cp .generated-assets/dist/cv.pdf dist/cv.pdf
+          rsync --archive --delete .generated-assets/assets/pagefind/ assets/pagefind/
+
+      - name: Commit generated assets when changed
+        shell: bash
+        run: |
+          git add \
+            assets/data/directories.json \
+            assets/data/content-index.json \
+            assets/pagefind \
+            dist/cv.html \
+            dist/cv.pdf
+          if git diff --cached --quiet; then
+            echo "Generated assets are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update generated site assets"
+          git push origin HEAD:main

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Helm Templates
+show_title: true
 area: dev
 topic: devops
 tags: [helm, kubernetes, templates]
@@ -53,7 +54,6 @@ Helm templates support the declaration of variables to reference other objects
 ```yaml
 $name := .Release.Name
 ```
-
 
 
 

@@ -1,0 +1,30 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header{% if include.class %} class="{{ include.class }}"{% endif %}>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">Matteo Moi <span class="nav-role">· Software Developer</span></a>
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}" class="nav-link"{% if page.url == '/' %} aria-current="page"{% endif %}>
+        <i class="fas fa-home" aria-hidden="true"></i> Home
+      </a>
+      <a href="{{ '/explore/' | relative_url }}" class="nav-link"{% if page.url == '/explore/' %} aria-current="page"{% endif %}>
+        <i class="fas fa-folder-tree" aria-hidden="true"></i> Explore
+      </a>
+      <a href="{{ '/cv/' | relative_url }}" class="nav-link"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>
+        <i class="fas fa-file-alt" aria-hidden="true"></i> CV
+      </a>
+      <a href="{{ '/dist/cv.pdf' | relative_url }}" class="nav-link" download>
+        <i class="fas fa-download" aria-hidden="true"></i> PDF
+      </a>
+      <a href="https://github.com/Jok98" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="GitHub profile">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/matteo-moi/" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-icon" aria-label="LinkedIn profile">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <button type="button" class="nav-link nav-link-icon theme-toggle" data-theme-toggle aria-label="Change color theme">
+        <i class="fas fa-circle-half-stroke" aria-hidden="true"></i>
+      </button>
+      <span class="site-version" aria-label="Site version {{ site.site_version }}">{{ site.site_version }}</span>
+    </div>
+  </nav>
+</header>

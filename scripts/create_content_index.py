@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate a metadata-aware content index for the notes section.
+Generate the compact, metadata-aware catalog used by the notes explorer.
 
-This index is intentionally richer than assets/data/directories.json: it keeps
-filesystem compatibility while exposing titles, inferred topics, headings, tags,
-and search text for future topic navigation and page TOCs.
+The public URLs still follow the source files, while navigation folders are
+virtual and intentionally decoupled from the physical legacy tree.
 """
 
 from __future__ import annotations
@@ -21,9 +20,22 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTES_ROOT = REPO_ROOT / "notes"
 DEFAULT_OUTPUT = REPO_ROOT / "assets" / "data" / "content-index.json"
 
-AREA_LABELS = {
-    "dev": "Engineering",
-    "etc": "Personal",
+SCHEMA_VERSION = 2
+
+AREA_FOLDERS = {
+    "dev": ("engineering", "Engineering", 10),
+    "etc": ("personal", "Personal", 20),
+    "uni": ("university", "University", 30),
+}
+
+ROOT_FOLDER_LABELS = {
+    "archive": "Archive",
+    **{folder_id: label for folder_id, label, _ in AREA_FOLDERS.values()},
+}
+
+ROOT_FOLDER_ORDER = {
+    "archive": 90,
+    **{folder_id: order for folder_id, _, order in AREA_FOLDERS.values()},
 }
 
 
@@ -51,23 +63,38 @@ def main() -> int:
     notes_root = args.notes_root.resolve()
     output = args.output.resolve()
 
+    index = build_index(notes_root)
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    try:
+        output_label = output.relative_to(REPO_ROOT)
+    except ValueError:
+        output_label = output
+    print(
+        f"Generated content index: {output_label} "
+        f"({len(index['items'])} items, schema v{SCHEMA_VERSION})"
+    )
+    return 0
+
+
+def build_index(notes_root: Path) -> dict[str, Any]:
     items = [
         build_item(path, notes_root)
         for path in sorted(notes_root.rglob("*.md"), key=lambda item: item.as_posix().lower())
     ]
+    try:
+        source_root = notes_root.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        source_root = notes_root.name
 
-    index = {
-        "schemaVersion": 1,
-        "sourceRoot": notes_root.relative_to(REPO_ROOT).as_posix(),
+    return {
+        "schemaVersion": SCHEMA_VERSION,
+        "sourceRoot": source_root,
+        "folders": build_folders(items),
         "items": items,
-        "tree": build_tree(items),
         "facets": build_facets(items),
     }
-
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Generated content index: {output.relative_to(REPO_ROOT)} ({len(items)} items)")
-    return 0
 
 
 def build_item(path: Path, notes_root: Path) -> dict[str, Any]:
@@ -88,31 +115,49 @@ def build_item(path: Path, notes_root: Path) -> dict[str, Any]:
     summary = value_or_default(front_matter.get("summary"), first_paragraph(body), "")
     tags = normalize_list(front_matter.get("tags"))
     order = normalize_order(front_matter.get("order"))
+    status = infer_status(front_matter, relative_path)
+    kind = infer_kind(front_matter, relative_path, tags)
+    lang = slugify(value_or_default(front_matter.get("lang"), "en")) or "en"
 
     link_without_extension = relative_path.with_suffix("").as_posix()
-    breadcrumbs = [humanize(part) for part in relative_path.with_suffix("").parts[:-1]]
+    folder_id = virtual_folder_id(area_slug, topic_slug, status)
 
     return {
         "id": slugify(link_without_extension),
+        "folderId": folder_id,
         "title": title,
         "summary": summary,
-        "area": {
-            "slug": slugify(area_slug),
-            "label": AREA_LABELS.get(area_slug, humanize(area_slug)),
-        },
-        "topic": {
-            "slug": slugify(topic_slug),
-            "label": humanize(topic_slug),
-        },
         "tags": tags,
         "order": order,
-        "layout": front_matter.get("layout", ""),
-        "sourcePath": f"{notes_root.name}/{relative_path.as_posix()}",
+        "kind": kind,
+        "status": status,
+        "lang": lang,
         "url": f"/notes/{link_without_extension}/",
-        "breadcrumbs": breadcrumbs,
-        "headings": headings,
-        "searchText": build_search_text(title, summary, tags, breadcrumbs, headings),
     }
+
+
+def infer_status(front_matter: dict[str, Any], relative_path: Path) -> str:
+    explicit = slugify(value_or_default(front_matter.get("status")))
+    if explicit in {"active", "archived"}:
+        return explicit
+    return "archived" if any(part.lower() == "old" for part in relative_path.parts) else "active"
+
+
+def infer_kind(front_matter: dict[str, Any], relative_path: Path, tags: list[str]) -> str:
+    explicit = slugify(value_or_default(front_matter.get("kind")))
+    if explicit:
+        return explicit
+    if relative_path.stem.lower().startswith("roadmap") or "roadmap" in tags:
+        return "roadmap"
+    return "note"
+
+
+def virtual_folder_id(area_slug: str, topic_slug: str, status: str) -> str:
+    normalized_area = slugify(area_slug) or "uncategorized"
+    area_folder = AREA_FOLDERS.get(normalized_area, (normalized_area, humanize(normalized_area), 50))[0]
+    topic_folder = slugify(topic_slug) or "uncategorized"
+    prefix = f"archive/{area_folder}" if status == "archived" else area_folder
+    return f"{prefix}/{topic_folder}"
 
 
 def split_front_matter(raw_text: str) -> tuple[dict[str, Any], str]:
@@ -172,8 +217,15 @@ def clean_scalar(value: str) -> str:
 def extract_headings(body: str) -> list[dict[str, Any]]:
     headings = []
     seen: Counter[str] = Counter()
+    in_code_block = False
 
     for line in body.splitlines():
+        if line.lstrip().startswith("```"):
+            in_code_block = not in_code_block
+            continue
+        if in_code_block:
+            continue
+
         match = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
         if not match:
             continue
@@ -226,41 +278,64 @@ def infer_topic(relative_path: Path) -> str:
     return relative_path.stem
 
 
-def build_tree(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    root: dict[str, Any] = {"children": {}, "items": []}
+def build_folders(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    counts: Counter[str] = Counter()
 
     for item in items:
-        parts = Path(item["sourcePath"]).parts[1:-1]
-        node = root
-        for part in parts:
-            children = node.setdefault("children", {})
-            node = children.setdefault(part, {"name": part, "children": {}, "items": []})
-        node.setdefault("items", []).append(item["id"])
+        parts = item["folderId"].split("/")
+        for index in range(1, len(parts) + 1):
+            counts["/".join(parts[:index])] += 1
 
-    return [tree_node_to_json(slug, node) for slug, node in sorted(root["children"].items())]
+    folders = []
+    for path, count in counts.items():
+        parts = path.split("/")
+        parent_id = "/".join(parts[:-1]) or None
+        folders.append(
+            {
+                "id": path,
+                "parentId": parent_id,
+                "path": path,
+                "label": folder_label(parts[-1]),
+                "order": folder_order(parts),
+                "count": count,
+            }
+        )
+
+    return sorted(
+        folders,
+        key=lambda folder: (
+            folder["path"].count("/"),
+            root_sort_order(folder["path"]),
+            folder["order"],
+            folder["label"].lower(),
+        ),
+    )
 
 
-def tree_node_to_json(slug: str, node: dict[str, Any]) -> dict[str, Any]:
-    children = [
-        tree_node_to_json(child_slug, child_node)
-        for child_slug, child_node in sorted(node.get("children", {}).items())
-    ]
-    return {
-        "slug": slugify(slug),
-        "label": humanize(slug),
-        "items": sorted(node.get("items", [])),
-        "children": children,
-    }
+def folder_label(segment: str) -> str:
+    return ROOT_FOLDER_LABELS.get(segment, humanize(segment))
+
+
+def folder_order(parts: list[str]) -> int:
+    if len(parts) == 1:
+        return ROOT_FOLDER_ORDER.get(parts[0], 50)
+    if parts[0] == "archive" and len(parts) == 2:
+        return ROOT_FOLDER_ORDER.get(parts[1], 50)
+    return 100
+
+
+def root_sort_order(path: str) -> int:
+    return ROOT_FOLDER_ORDER.get(path.split("/", 1)[0], 50)
 
 
 def build_facets(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    areas = Counter(item["area"]["slug"] for item in items)
-    topics = Counter(item["topic"]["slug"] for item in items)
+    statuses = Counter(item["status"] for item in items)
+    kinds = Counter(item["kind"] for item in items)
     tags = Counter(tag for item in items for tag in item["tags"])
 
     return {
-        "areas": counter_to_facets(areas, {item["area"]["slug"]: item["area"]["label"] for item in items}),
-        "topics": counter_to_facets(topics, {item["topic"]["slug"]: item["topic"]["label"] for item in items}),
+        "statuses": counter_to_facets(statuses, {status: humanize(status) for status in statuses}),
+        "kinds": counter_to_facets(kinds, {kind: humanize(kind) for kind in kinds}),
         "tags": counter_to_facets(tags, {tag: humanize(tag) for tag in tags}),
     }
 
@@ -270,17 +345,6 @@ def counter_to_facets(counter: Counter[str], labels: dict[str, str]) -> list[dic
         {"slug": slug, "label": labels.get(slug, humanize(slug)), "count": count}
         for slug, count in sorted(counter.items())
     ]
-
-
-def build_search_text(
-    title: str,
-    summary: str,
-    tags: list[str],
-    breadcrumbs: list[str],
-    headings: list[dict[str, Any]],
-) -> str:
-    parts = [title, summary, *tags, *breadcrumbs, *(heading["text"] for heading in headings)]
-    return " ".join(part for part in parts if part).lower()
 
 
 def normalize_list(value: Any) -> list[str]:

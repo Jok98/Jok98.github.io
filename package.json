@@ -1,0 +1,23 @@
+{
+  "name": "jok98-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible build and quality gate for the Jok98 knowledge base.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "generate:indexes": "bash scripts/create_json.sh && python3 scripts/create_content_index.py",
+    "generate:cv": "python3 scripts/render_cv_pdf.py",
+    "build": "python3 scripts/build_site.py",
+    "test:unit": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/catalog.test.js tests/preferences.test.js",
+    "test:site": "python3 scripts/check_site.py _site",
+    "test:e2e": "node --test tests/site.e2e.test.js",
+    "check": "npm run test:unit && npm run build && npm run test:site && npm run test:e2e"
+  },
+  "devDependencies": {
+    "axe-core": "4.12.1",
+    "pagefind": "1.5.2",
+    "puppeteer-core": "25.4.0"
+  }
+}

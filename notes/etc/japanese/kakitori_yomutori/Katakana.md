@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Katakana
+show_title: true
 area: etc
 topic: japanese
 tags: [japanese, kana, katakana, writing]
@@ -20,6 +21,5 @@ order: 20
 | (r) | ラ (ra) | リ (ri)  | ル (ru)  | レ (re) | ロ (ro) |
 | (w) | ワ (wa) |         |         |        | ヲ (wo) |
 | (n) | ン (n)  |         |         |        |        |
-
 
 

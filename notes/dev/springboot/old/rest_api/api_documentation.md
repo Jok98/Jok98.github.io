@@ -1,6 +1,7 @@
 ---
 layout: default
 title: API Documentation
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-boot, rest-api, openapi, documentation]

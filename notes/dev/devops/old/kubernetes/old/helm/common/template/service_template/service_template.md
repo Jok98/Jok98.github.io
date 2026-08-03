@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Helm Service Template
+show_title: true
 area: dev
 topic: devops
 tags: [helm, kubernetes, service, templates]

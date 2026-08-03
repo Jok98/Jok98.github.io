@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Study Path: Books by Macro-Topic
+title: "Study Path: Books by Macro-Topic"
 area: dev
 topic: books
 tags: [study-plan, books, architecture, systems, devops]
@@ -56,4 +56,3 @@ order: 20
 
 * [Kubernetes: Up & Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/)
 * [Docker Deep Dive](https://leanpub.com/dockerdeepdive)
-

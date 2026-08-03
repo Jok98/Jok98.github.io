@@ -1,5 +1,9 @@
 # using jekyll
 theme: minima
+title: Matteo Moi
+description: Personal knowledge base for software development notes, roadmaps, references, and travel logs.
+url: https://jok98.github.io
+lang: en
 site_version: "V4"
 # will create url without extensions
 permalink: pretty
@@ -7,3 +11,15 @@ permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - kiroku
+  - node_modules
+  - package.json
+  - package-lock.json
+  - scripts
+  - tests
+  - vendor

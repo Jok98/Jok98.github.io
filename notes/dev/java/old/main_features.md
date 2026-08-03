@@ -82,9 +82,9 @@ order: 20
 ## Handwriten version :
 <details open> 
 
-<img src="/assets/utils/dev/java/main_features/main_feature-1.png"/>
+<img src="/assets/utils/dev/java/main_features/main_feature-1.png" alt="Handwritten Java main features notes, page 1" loading="lazy">
 
 
-<img src="/assets/utils/dev/java/main_features/main_feature-2.png"/>
+<img src="/assets/utils/dev/java/main_features/main_feature-2.png" alt="Handwritten Java main features notes, page 2" loading="lazy">
 
 </details>

@@ -2,7 +2,7 @@
 
 ## In corso
 
-- Nessuna attività di implementazione globale o cross-track è confermata.
+- Nessuna attività in corso.
 
 ## Da fare
 
@@ -12,6 +12,10 @@
 ## Bloccato
 
 - Nessuna attività registrata come bloccata.
+
+## Fatto
+
+- `site-ux-file-explorer`: roadmap M-01..M-06 completata il 2026-08-03; stato finale in `tracks/site-ux-file-explorer/START_HERE.md`.
 
 ## Regola di instradamento
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: JWT Refresh Token
+show_title: true
 area: dev
 topic: springboot
 tags: [spring-security, jwt, refresh-token, authentication]

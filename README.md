@@ -1,311 +1,229 @@
 # Jok98.github.io
 
-Personal website published with GitHub Pages:
-[https://jok98.github.io](https://jok98.github.io)
+Personal knowledge base published at [jok98.github.io](https://jok98.github.io).
+It contains technical notes and roadmaps, personal references, travel diaries,
+and a generated CV.
 
-This project contains study notes, technical roadmaps, personal references,
-travel diaries, and my CV. Pages are generated with Jekyll from Markdown files
-and JSON indexes used by the site's navigation.
+The site is static: Jekyll renders the Markdown sources, a compact catalog
+drives virtual folders and filters, and Pagefind provides browser-side
+full-text search. No runtime database or backend is required.
 
-## Structure
+## Main structure
 
 ```text
 .
-|-- _layouts/              # Shared Jekyll layouts
+|-- _includes/             # Shared header, footer, note context, and controls
+|-- _layouts/              # Jekyll page layouts
 |-- assets/
-|   |-- css/               # Site styles and page-specific styles
-|   |-- data/              # Generated JSON indexes for navigation and search
-|   |-- js/                # Navigation, search, filters, and TOC behavior
-|   `-- utils/             # Images, PDFs, and supporting assets
-|-- dist/                  # Generated CV HTML/PDF output
-|-- notes/                 # Markdown notes published on the site
-|-- pages/                 # Main pages, including the CV source
-|-- scripts/               # Asset generation scripts
-|-- index.html             # Home page
-`-- _config.yml            # Jekyll configuration
+|   |-- css/               # Shared and page-specific styles
+|   |-- data/              # Generated catalog v2 and legacy fallback index
+|   |-- js/                # Explorer, navigation, TOC, and page behavior
+|   `-- pagefind/          # Generated static full-text bundle
+|-- explore/               # Virtual file explorer at /explore/
+|-- dist/                  # Generated standalone CV HTML and PDF
+|-- notes/                 # Published Markdown notes
+|-- pages/                 # Main content sources, including the CV
+|-- scripts/               # Generators and generated-site checks
+|-- tests/                 # Python, JavaScript, browser, and accessibility checks
+|-- Gemfile                # Pinned Jekyll toolchain
+|-- package.json           # Pinned Pagefind and browser quality tooling
+`-- _config.yml            # Jekyll configuration and publication exclusions
 ```
 
-The main generated indexes are:
+## Requirements and setup
 
-- `assets/data/content-index.json`: metadata-rich index used by search,
-  filters, the directory tree, and page TOCs.
-- `assets/data/directories.json`: legacy/fallback index based on the filesystem
-  structure.
+Use the versions declared by `.ruby-version`, `Gemfile.lock`, and
+`package-lock.json`. The supported Node.js baseline is declared in
+`package.json`.
 
-## Local Requirements
+Local prerequisites:
 
-You need:
+- Ruby and Bundler;
+- Node.js and npm;
+- Python 3;
+- Chromium or Chrome for the CV PDF and browser checks.
 
-- Ruby
-- Python 3
-- Jekyll and the Minima theme
-- Chromium or Chrome, only when regenerating the CV PDF
-
-This repository does not use a `Gemfile`, so the Ruby gems can be installed
-directly in the user environment:
+Install the pinned dependencies:
 
 ```shell
-gem install --user-install jekyll minima erb
+bundle install
+npm ci
 ```
 
-If `jekyll` is not found after installation, add the user gem binary directory
-to the current shell `PATH`:
+If the browser is not auto-detected, set only its executable path:
 
 ```shell
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export CHROMIUM_BIN=/path/to/chromium
 ```
 
-Verify the setup:
+## Build and quality gate
+
+Generate every tracked artifact and the complete searchable site:
 
 ```shell
-jekyll --version
-python3 --version
+npm run build
 ```
 
-## Run Locally
+The build performs this ordered pipeline:
 
-First regenerate the navigation indexes:
+1. regenerate `assets/data/directories.json`;
+2. regenerate the schema-v2 catalog in `assets/data/content-index.json`;
+3. render `dist/cv.html` and the timestamp-normalized `dist/cv.pdf`;
+4. build Jekyll into `_site/`;
+5. index the built HTML with Pagefind and synchronize `assets/pagefind/`;
+6. rebuild Jekyll so the search bundle is present in `_site/`.
+
+Run the complete local gate:
 
 ```shell
-./scripts/create_json.sh
-python3 scripts/create_content_index.py
+npm run check
 ```
 
-Then start Jekyll:
+It runs the generator/router unit tests, the reproducible build, catalog and
+local-link validation, browser navigation checks, the no-JavaScript fallback,
+mobile TOC behavior, full-text search, and Axe checks for serious or critical
+accessibility violations on representative pages.
+
+Individual commands are also available:
 
 ```shell
-jekyll serve --host 127.0.0.1 --port 4000
+npm run test:unit
+npm run test:site
+npm run test:e2e
 ```
 
-Open:
-
-```text
-http://127.0.0.1:4000
-```
-
-If `jekyll` is not available in `PATH`, run it through the user gem directory:
+To inspect the already indexed build locally:
 
 ```shell
-"$(ruby -e 'print Gem.user_dir')/bin/jekyll" serve --host 127.0.0.1 --port 4000
+python3 -m http.server 4000 --directory _site
 ```
 
-Static build without the local server:
+Then open `http://127.0.0.1:4000`.
 
-```shell
-jekyll build
-```
+## Catalog and explorer
 
-The generated site is written to `_site/`.
+`assets/data/content-index.json` is a compact schema-v2 catalog. It contains:
 
-## Notes Workflow
+- flat virtual `folders` with stable parent relationships and counts;
+- one entry per note with `id`, `folderId`, `title`, `summary`, `tags`, `order`,
+  `kind`, `status`, `lang`, and the existing public `url`;
+- small facet summaries used by the UI.
 
-Published notes live in `notes/`.
+The folder model is independent from the physical legacy source tree.
+`/explore/?path=<folder>&view=list` is shareable, supports list/grid views,
+current-folder or global scope, content type filters, a separate Archive, and
+full-text search. If Pagefind cannot load, catalog search remains available; if
+JavaScript is disabled, Explorer exposes the complete static note list.
 
-Every Markdown note should include Jekyll front matter, at minimum:
+`assets/data/directories.json` remains only as a legacy navigation fallback.
 
-```markdown
----
-layout: page
----
-# Note Title
-```
+## Local preferences and privacy
 
-## Note Metadata
+The header theme control cycles through system, light, and dark modes. Note
+pages expose a Save control, while the home page shows favorites and recently
+viewed notes. Sidebar and mobile-TOC disclosure choices are also restored.
 
-Use front matter to control how a note appears in Jekyll, navigation, filters,
-search, and generated indexes.
+All of this state is stored under the versioned key
+`jok98.preferences.v1` in browser `localStorage`. The value contains only:
 
-Recommended complete template:
+- the theme name;
+- note URLs selected as favorites;
+- recently visited note URLs with local timestamps;
+- two UI booleans for sidebar and mobile TOC state.
+
+There is no account, remote synchronization, analytics payload, secret, or
+content copy in this state. If storage is unavailable, the same API falls back
+to memory for the current page. Clearing site data resets all preferences.
+
+No service worker, IndexedDB store, or offline cache is installed. The current
+requirements do not justify cache invalidation complexity beyond normal static
+asset delivery.
+
+## Adding or updating notes
+
+Published notes live under `notes/`. Keep exactly one visible H1 and add simple
+Jekyll front matter. A typical note is:
 
 ```markdown
 ---
 layout: page
 title: Kubernetes Roadmap
-navTitle: Kubernetes
-summary: Roadmap for learning Kubernetes from fundamentals to advanced topics.
+summary: Roadmap from Kubernetes fundamentals to advanced operations.
 area: dev
 topic: devops
-tags:
-  - kubernetes
-  - devops
-  - roadmap
+tags: [kubernetes, devops, roadmap]
+kind: roadmap
+status: active
+lang: en
 order: 10
 ---
 
-# Kubernetes Roadmap - Fundamentals to Advanced
+# Kubernetes Roadmap
 ```
 
-Supported metadata:
+Supported catalog metadata:
 
-| Field | Required | Purpose |
-| --- | --- | --- |
-| `layout` | Yes | Jekyll layout. Use `page` for normal notes. |
-| `title` | Recommended | Main metadata title. Used by the generated content index before the first Markdown H1. |
-| `navTitle` | Optional | Short title for navigation/search. Takes precedence over `title`. |
-| `nav_title` | Optional | Snake-case alias for `navTitle`. |
-| `summary` | Recommended | Short description shown in navigation contexts and included in search text. |
-| `area` | Optional | High-level grouping/filter, for example `dev`, `etc`, or `uni`. Defaults to the first folder under `notes/`. |
-| `topic` | Optional | Topic grouping/filter, for example `java`, `devops`, `database`. Defaults to the second folder under `notes/` when available. |
-| `tags` | Optional | Search keywords. Use a YAML list or an inline list. |
-| `order` | Optional | Numeric sort key inside the same group. Lower numbers appear first. |
-| `permalink` | Optional | Custom Jekyll URL. Use only when a note needs a non-standard URL. |
+- `title`, `navTitle`, or `nav_title` for the catalog title;
+- `summary`, `tags`, and `order` for presentation and catalog search;
+- `area` and `topic` for virtual-folder derivation;
+- `kind` for type filtering;
+- `status` to override the default `old`-path archive inference;
+- `lang` for note language;
+- `permalink` only when an established public URL requires it.
 
-Title precedence in `assets/data/content-index.json` is:
+Title precedence is `navTitle`, `nav_title`, `title`, first Markdown H1, then
+the humanized file name. Keep metadata scalar or list-based: the local parser
+does not implement arbitrary nested YAML objects.
 
-```text
-navTitle
-nav_title
-title
-first Markdown H1
-humanized file name
-```
-
-This means:
-
-- Use `title` when the metadata title should drive the site navigation.
-- Use `navTitle` when the page title can be long but the sidebar/search label
-  should be shorter.
-- Keep the first `# H1` for the readable title inside the page body.
-
-Examples:
-
-```markdown
----
-layout: page
-title: Java Roadmap
-summary: Java learning path from fundamentals to modern JVM topics.
-area: dev
-topic: java
-tags: [java, jvm, roadmap]
-order: 20
----
-
-# Java Roadmap - Basics to Advanced
-```
-
-```markdown
----
-layout: page
-title: Sistemi di Supporto alle Decisioni
-navTitle: Decision Support Systems
-summary: University notes about decision support systems.
-area: uni
-topic: sistemi-supporto-decisioni
-tags:
-  - university
-  - decision-support
-order: 10
----
-
-# Sistemi di Supporto alle Decisioni
-```
-
-Keep metadata values simple. The local parser supports scalar values and simple
-lists, but it is not a full YAML parser for nested objects.
-
-After adding, moving, or renaming notes:
-
-```shell
-./scripts/create_json.sh
-python3 scripts/create_content_index.py
-jekyll build
-```
-
-Quick check that all indexed URLs were generated:
-
-```shell
-python3 - <<'PY'
-import json
-from pathlib import Path
-
-index = json.loads(Path("assets/data/content-index.json").read_text())
-missing = [
-    item["url"]
-    for item in index["items"]
-    if not (Path("_site") / item["url"].strip("/") / "index.html").exists()
-]
-
-if missing:
-    print("Missing generated pages:")
-    print("\n".join(missing))
-    raise SystemExit(1)
-
-print(f"All indexed URLs generated: {len(index['items'])}")
-PY
-```
+After changing notes, run `npm run check` and commit the regenerated catalog,
+Pagefind bundle, and CV artifacts when they changed.
 
 ## CV
 
-The CV source is:
-
-```text
-pages/cv.md
-```
-
-Generate the standalone HTML and PDF outputs:
+The source of truth is `pages/cv.md`. Generate only the CV artifacts with:
 
 ```shell
-python3 scripts/render_cv_pdf.py
+npm run generate:cv
 ```
 
-Outputs:
-
-- `dist/cv.html`
-- `dist/cv.pdf`
-
-If Chromium/Chrome is not detected automatically:
+Or provide a browser explicitly:
 
 ```shell
 python3 scripts/render_cv_pdf.py --chromium /path/to/chromium
 ```
 
-Generate only the standalone HTML:
+The outputs are `dist/cv.html` and `dist/cv.pdf`. Chromium's wall-clock PDF
+metadata is normalized so repeated builds with the same browser produce the
+same bytes.
 
-```shell
-python3 scripts/render_cv_pdf.py --html-only
-```
+## Handwritten notes
 
-## Handwritten Notes
-
-Handwritten notes are handled separately:
-
-1. Source PDFs are stored on Google Drive and synced with an e-ink device.
-2. Files to publish are copied manually into `assets/utils/dev/`.
-3. PDFs can be converted to PNG with:
+Handwritten sources are managed separately and selected exports are copied to
+`assets/utils/dev/`. A PDF can be converted to 300-DPI PNG files with:
 
 ```shell
 pdftoppm -png -r 300 input.pdf out
 ```
 
-Parameters:
+## Continuous integration and publication
 
-- `-png`: PNG output format.
-- `-r 300`: 300 DPI resolution.
-- `input.pdf`: source PDF.
-- `out`: generated file prefix, for example `out-1.png`.
+`.github/workflows/execute-sh.yml` runs the same `npm run check` gate for pull
+requests and pushes to `main`.
 
-## Deploy
+- Pull requests fail when generated assets are stale or a quality check fails.
+- A successful `main` build uploads only verified generated assets to a
+  separate write-enabled job.
+- That job commits changed generated assets without force-pushing.
 
-Deployment is handled by GitHub Pages.
+The workflow deliberately does not change the repository's GitHub Pages
+publishing source. The current branch-based publication behavior is preserved;
+switching to a custom Pages deployment requires verifying the repository-level
+Pages setting first.
 
-The workflow is:
+## Known build warnings
 
-```text
-.github/workflows/execute-sh.yml
-```
-
-It runs on pushes to `main` and:
-
-1. regenerates `assets/data/directories.json`;
-2. regenerates `assets/data/content-index.json`;
-3. regenerates `dist/cv.html` and `dist/cv.pdf`;
-4. commits generated assets when they changed.
-
-## Build Notes
-
-Jekyll builds may show Liquid warnings for some Helm notes containing Go/Helm
-templates with `{{ ... }}`. These warnings are known and do not currently block
-the build.
-
-Sass warnings from the Minima theme may also appear for deprecated `@import`
-rules and color functions. These warnings do not block site generation either.
+Some archived Helm notes contain Go-template expressions such as `{{ ... }}`.
+Jekyll reports them as Liquid warnings, but the build succeeds and their URLs
+remain valid. Minima 2.5.2 also emits Sass deprecation warnings for upstream
+`@import` and color functions. Both warning groups are visible and currently
+non-blocking.

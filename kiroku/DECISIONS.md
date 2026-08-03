@@ -2,20 +2,21 @@
 
 ## Decisioni attive
 
-### Decisione: indice di contenuto ricco con fallback legacy
+### Decisione: catalogo compatto con fallback legacy
 
 Stato: active
 Area: navigazione
 
 Decisione:
-Usare `content-index.json` come contratto primario della navigazione e `directories.json` come fallback basato sul filesystem.
+Usare `content-index.json` schema v2 come contratto primario della navigazione e `directories.json` come fallback basato sul filesystem.
 
 Razionale:
-L'indice ricco abilita metadati, faccette, ricerca, ordinamento e TOC, mentre il fallback conserva accesso minimo alle note se il contratto principale non viene caricato.
+Il catalogo compatto separa cartelle virtuali e item, abilita faccette, ricerca e ordinamento senza duplicare heading e testo; il TOC deriva dal DOM e il fallback conserva accesso minimo se il contratto principale non viene caricato.
 
 Conseguenze:
 - Le modifiche strutturali alle note devono rigenerare entrambi gli indici.
-- `script.js` deve mantenere compatibilità con lo schema versione 1 finché il contratto non viene migrato esplicitamente.
+- Gli URL degli item restano invariati rispetto allo schema v1.
+- `script.js` mantiene temporaneamente l'adapter v1 durante la migrazione della UI.
 
 ### Decisione: una sorgente Markdown per CV web e PDF
 
@@ -38,14 +39,30 @@ Stato: active
 Area: delivery
 
 Decisione:
-Tracciare nel repository i due indici e gli output CV e rigenerarli con GitHub Actions a ogni push su `main`.
+Tracciare nel repository i due indici, il bundle Pagefind e gli output CV; rigenerarli con la stessa pipeline locale/CI e scriverli su `main` solo dopo il quality gate.
 
 Razionale:
 La UI consuma file statici e il workflow assicura che gli artefatti pubblicabili siano disponibili senza una pipeline applicativa separata.
 
 Conseguenze:
 - Gli artefatti non sono fonti di verità e non vanno corretti manualmente.
-- Un push può essere seguito da un commit automatico `Update generated site assets [CI]`.
+- Un push può essere seguito da un commit automatico `chore: update generated site assets`.
+- Il job che esegue codice e test resta read-only; il job di commit riceve solo gli artefatti verificati.
+
+### Decisione: preferenze versionate senza layer offline
+
+Stato: active
+Area: client
+
+Decisione:
+Usare `jok98.preferences.v1` per tema, URL preferiti, recenti e disclosure UI, con validazione e fallback in memoria; non introdurre service worker o IndexedDB.
+
+Razionale:
+Il sito è statico e non esiste un requisito verificato di account, sincronizzazione o accesso offline ai contenuti.
+
+Conseguenze:
+- La personalizzazione resta privata al browser e non contiene contenuti, segreti o analytics.
+- Un futuro supporto offline richiederà una decisione separata e una strategia esplicita di invalidazione.
 
 ## Decisioni sostituite o obsolete
 

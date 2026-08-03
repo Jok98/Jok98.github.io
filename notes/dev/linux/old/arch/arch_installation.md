@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Arch Installation
+show_title: true
 area: dev
 topic: linux
 tags: [linux, arch, installation, workstation]
