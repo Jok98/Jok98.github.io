@@ -8,7 +8,7 @@
 2. `scripts/create_content_index.py` produce `assets/data/content-index.json` schema v2 con cartelle virtuali piatte, item compatti e faccette; gli URL restano derivati dai percorsi sorgente.
 3. `scripts/create_json.sh` produce `assets/data/directories.json` dalla sola struttura del filesystem.
 4. Jekyll applica i layout e genera URL senza estensione grazie a `permalink: pretty`.
-5. `assets/js/script.js` accetta schema v2 e v1, costruisce filtri/navigazione e genera il TOC dal DOM; se il caricamento fallisce, usa l'indice legacy.
+5. `assets/js/script.js` accetta schema v2 e v1, costruisce la sidebar contestuale e genera il TOC dal DOM; se il caricamento fallisce, usa l'indice legacy.
 6. `/explore/`, `assets/js/catalog.js` e `assets/js/explorer.js` rendono cartelle, breadcrumb, route e ricerca catalogo senza routing SPA.
 7. La home usa lo stesso catalogo per cartelle attive e roadmap in evidenza; `note-context.js` aggiunge breadcrumb e navigazione precedente/successiva alle note.
 8. `scripts/build_site.py` costruisce Jekyll, genera Pagefind sotto `assets/pagefind/` e ricostruisce il sito; Explorer configura esplicitamente bundle e base URL, conservando la ricerca catalogo se il full-text fallisce.
@@ -47,6 +47,7 @@
 
 - Architettura statica e data-driven: il browser legge JSON locali e costruisce la navigazione senza servizi remoti applicativi.
 - Fallback progressivo: il catalogo v2 è primario, l'adapter v1 copre la migrazione e l'indice filesystem mantiene una navigazione minima in caso di errore.
+- Responsabilità UX separate: la sidebar apre solo il ramo corrente e offre quick find; Explorer possiede cartelle globali, filtri e ricerca full-text.
 - Personalizzazione locale minima: lo storage contiene solo preferenze validate e la UI resta utilizzabile quando `localStorage` è bloccato.
 - Separazione sorgente/derivato: contenuti e stili sono fonti di verità; indici e CV standalone si rigenerano.
 - Layout specializzati solo per esperienze che divergono dalla pagina note standard.
@@ -56,7 +57,8 @@
 - Precedenza titolo nell'indice: `navTitle`, `nav_title`, `title`, primo H1, nome file umanizzato.
 - Il layout `page` evita il doppio titolo per i file sotto `notes/`; `show_title` forza un H1 dal front matter quando il Markdown non ne possiede uno.
 - I layout impostano lingua, description, canonical, skip link e landmark principale tramite la shell condivisa.
-- La home imposta `sidebar: false`; le altre pagine con layout predefinito ricevono sidebar collassabile e TOC da JavaScript.
+- La home imposta `sidebar: false`; le altre pagine con layout predefinito ricevono sidebar contestuale e TOC da JavaScript.
+- Su desktop la sidebar è sticky e persiste l'espansione; sotto 1100 px è un drawer che parte chiuso e gestisce backdrop, focus, `inert` ed `Esc`.
 - La home e l'header promuovono `/explore/`; la lista statica generata nella pagina Explorer conserva accesso a tutti i 73 URL senza JavaScript o se il catalogo fallisce.
 - Su viewport stretti il TOC generato viene spostato subito dopo l'H1 e resta chiuso finché l'utente non lo espande.
 - I link a CSS, JavaScript, dati e pagine usano prevalentemente percorsi assoluti dalla root.

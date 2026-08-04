@@ -16,6 +16,7 @@
 ## Fatto
 
 - `site-ux-file-explorer`: roadmap M-01..M-06 completata il 2026-08-03; stato finale in `tracks/site-ux-file-explorer/START_HERE.md`.
+- `sidebar-navigation-refinement`: sidebar contestuale e drawer mobile completati il 2026-08-03; stato finale in `tracks/sidebar-navigation-refinement/START_HERE.md`.
 
 ## Regola di instradamento
 

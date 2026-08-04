@@ -110,6 +110,16 @@ test("an archived note retains explorer context and mobile TOC order", async () 
       await page.$eval("[data-note-breadcrumbs]", (element) => element.textContent),
       /Explorer.*Archive.*Engineering/s,
     );
+    await page.waitForSelector("#sections-container .active-link");
+    await page.click("#sidebar-toggle");
+    await page.waitForFunction(() => document.activeElement?.id === "sidebar-close");
+    assert.deepEqual(
+      await page.$$eval("#sections-container details[open] > summary .section-name", (items) => (
+        items.map((item) => item.textContent.trim())
+      )),
+      ["Archive", "C"],
+    );
+    await page.keyboard.press("Escape");
 
     await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
     await open(page, "/notes/dev/java/roadmap_java/");
@@ -133,12 +143,116 @@ test("explorer keeps a complete static fallback without JavaScript", async () =>
       await page.$$eval("[data-explorer-static-fallback] li", (items) => items.length),
       73,
     );
+    await open(page, "/notes/dev/linux/ssh_key/");
+    assert.equal(
+      await page.$eval(".navbar a[href='/explore/']", (link) => link.textContent.trim()),
+      "Explore",
+    );
+  });
+});
+
+
+test("note sidebar opens only the current branch and swaps the tree for quick results", async () => {
+  await withPage(async (page) => {
+    await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
+    await open(page, "/notes/dev/linux/ssh_key/");
+    await page.evaluate(() => localStorage.removeItem(window.JokPreferences.STORAGE_KEY));
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.waitForSelector("#sections-container .active-link");
+    await page.click("#sidebar-toggle");
+    await page.waitForFunction(() => document.activeElement?.id === "sidebar-close");
+
+    assert.equal(await page.$("#topic-filters"), null);
+    assert.match(
+      await page.$eval("[data-sidebar-context]", (element) => element.textContent),
+      /Engineering \/ Linux/,
+    );
+    assert.deepEqual(
+      await page.$$eval("#sections-container details[open] > summary .section-name", (items) => (
+        items.map((item) => item.textContent.trim())
+      )),
+      ["Engineering", "Linux"],
+    );
+
+    await page.type("#search-input", "roadmap");
+    await page.waitForSelector("#search-results a");
+    assert.deepEqual(
+      await page.$eval("#sections-container", (element) => ({ hidden: element.hidden })),
+      { hidden: true },
+    );
+    assert.equal(
+      await page.$eval("#search-results", (element) => element.hidden),
+      false,
+    );
+
+    await page.$eval("#search-input", (input) => {
+      input.value = "";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    });
+    assert.equal(await page.$eval("#sections-container", (element) => element.hidden), false);
+    assert.equal(await page.$eval("#search-results", (element) => element.hidden), true);
+  });
+});
+
+
+test("mobile sidebar behaves as a focus-managed drawer", async () => {
+  await withPage(async (page) => {
+    await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
+    await open(page, "/notes/dev/linux/ssh_key/");
+    await page.evaluate(() => localStorage.removeItem(window.JokPreferences.STORAGE_KEY));
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.waitForSelector("#sections-container .active-link");
+    await page.click("#sidebar-toggle");
+    await page.waitForFunction(() => document.activeElement?.id === "sidebar-close");
+
+    assert.deepEqual(
+      await page.evaluate(() => ({
+        bodyLocked: document.body.classList.contains("sidebar-drawer-open"),
+        expanded: document.getElementById("sidebar-toggle").getAttribute("aria-expanded"),
+        hidden: document.getElementById("notes-sidebar").getAttribute("aria-hidden"),
+        modal: document.getElementById("notes-sidebar").getAttribute("aria-modal"),
+        focus: document.activeElement.id,
+      })),
+      { bodyLocked: true, expanded: "true", hidden: "false", modal: "true", focus: "sidebar-close" },
+    );
+
+    await page.keyboard.down("Shift");
+    await page.keyboard.press("Tab");
+    await page.keyboard.up("Shift");
+    assert.equal(
+      await page.evaluate(() => document.getElementById("notes-sidebar").contains(document.activeElement)),
+      true,
+    );
+
+    const axePath = require.resolve("axe-core/axe.min.js");
+    await page.addScriptTag({ path: axePath });
+    const violations = await page.evaluate(async () => {
+      const result = await axe.run(document, {
+        runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] },
+      });
+      return result.violations
+        .filter((violation) => ["serious", "critical"].includes(violation.impact))
+        .map((violation) => violation.id);
+    });
+    assert.deepEqual(violations, []);
+
+    await page.keyboard.press("Escape");
+    assert.deepEqual(
+      await page.evaluate(() => ({
+        bodyLocked: document.body.classList.contains("sidebar-drawer-open"),
+        hidden: document.getElementById("notes-sidebar").getAttribute("aria-hidden"),
+        backdropHidden: document.getElementById("sidebar-backdrop").hidden,
+        focus: document.activeElement.id,
+      })),
+      { bodyLocked: false, hidden: "true", backdropHidden: true, focus: "sidebar-toggle" },
+    );
   });
 });
 
 
 test("theme, favorites, recent notes, and sidebar state persist locally", async () => {
   await withPage(async (page) => {
+    await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
     await open(page, "/");
     await page.evaluate(() => localStorage.removeItem(window.JokPreferences.STORAGE_KEY));
     await page.reload({ waitUntil: "domcontentloaded" });

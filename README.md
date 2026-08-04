@@ -117,11 +117,25 @@ JavaScript is disabled, Explorer exposes the complete static note list.
 
 `assets/data/directories.json` remains only as a legacy navigation fallback.
 
+## Note navigation
+
+Note pages use a contextual sidebar rather than duplicating the global
+Explorer. Only the current area/topic path is expanded automatically; other
+branches remain collapsed. Quick find searches catalog titles and summaries,
+while the sidebar link to Explorer provides full-text search and global
+filters.
+
+On desktop the sidebar is sticky and its expanded state is restored. At
+1100 px and below it becomes a focus-managed drawer with backdrop and `Esc`
+support; the drawer starts closed on page load so it never obscures content
+automatically. The header's Explorer link remains usable without JavaScript.
+
 ## Local preferences and privacy
 
 The header theme control cycles through system, light, and dark modes. Note
 pages expose a Save control, while the home page shows favorites and recently
-viewed notes. Sidebar and mobile-TOC disclosure choices are also restored.
+viewed notes. Desktop-sidebar and mobile-TOC disclosure choices are also
+restored.
 
 All of this state is stored under the versioned key
 `jok98.preferences.v1` in browser `localStorage`. The value contains only:

@@ -707,38 +707,12 @@ main {
   display: none;
 }
 
-.topic-filters {
-  min-width: 0;
-}
-
-.filter-group + .filter-group {
-  margin-top: 12px;
-}
-
-.filter-title {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-.filter-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  max-height: 118px;
-  overflow-y: auto;
-  padding-right: 2px;
-}
-
 button {
   font: inherit;
 }
 
-.filter-button,
-.sidebar-toggle {
+.sidebar-toggle,
+.sidebar-close {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -751,23 +725,15 @@ button {
   transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
 
-.filter-button {
-  min-height: 30px;
-  padding: 5px 8px;
-  font-size: 0.82rem;
-  line-height: 1.2;
-}
-
-.filter-button:hover,
-.filter-button:focus,
 .sidebar-toggle:hover,
-.sidebar-toggle:focus {
+.sidebar-toggle:focus,
+.sidebar-close:hover,
+.sidebar-close:focus {
   color: #ffffff;
   border-color: var(--accent-blue);
   background-color: var(--surface-hover);
 }
 
-.filter-button.active,
 .sidebar-toggle[aria-expanded="true"] {
   color: #071311;
   border-color: var(--accent);
@@ -967,15 +933,21 @@ button {
   font-size: 0.92rem;
 }
 
-.sidebar-controls {
+.content-navigation-controls {
   display: flex;
   justify-content: flex-start;
-  padding: 18px 28px 0;
+  width: min(880px, 100%);
+  margin: 0 auto 12px;
 }
 
-.sidebar-toggle {
+.sidebar-toggle,
+.sidebar-close {
   min-height: 38px;
   padding: 8px 12px;
+}
+
+.page-layout.sidebar-expanded .content-navigation-controls {
+  display: none;
 }
 
 .page-layout {
@@ -989,11 +961,11 @@ button {
 }
 
 .page-layout.sidebar-expanded {
-  grid-template-columns: minmax(280px, 350px) minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
 }
 
 .page-layout.sidebar-expanded.has-page-toc {
-  grid-template-columns: minmax(280px, 330px) minmax(0, 1fr) minmax(220px, 280px);
+  grid-template-columns: minmax(260px, 290px) minmax(0, 1fr) minmax(220px, 280px);
 }
 
 .page-layout.sidebar-collapsed {
@@ -1030,6 +1002,23 @@ button {
   padding: 14px;
 }
 
+.sidebar-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.sidebar-eyebrow {
+  margin: 0 0 3px;
+  color: var(--subtle);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .sidebar-title,
 .page-toc-title {
   margin: 0 0 12px;
@@ -1037,19 +1026,40 @@ button {
   font-size: 1rem;
 }
 
+.sidebar-header .sidebar-title {
+  margin: 0;
+}
+
+.sidebar-close {
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background-color: #111417;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.sidebar-context {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(72, 194, 177, 0.08);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.sidebar-context[hidden] {
+  display: none;
+}
+
 .notes-sidebar #search-results {
-  max-height: 220px;
-  overflow-y: auto;
-}
-
-.notes-sidebar .topic-filters {
-  margin: 14px 0 14px;
-  padding-bottom: 14px;
+  margin-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--line-soft);
-}
-
-.notes-sidebar .filter-controls {
-  max-height: 110px;
 }
 
 .notes-sidebar #sections-container {
@@ -1091,6 +1101,35 @@ button {
 }
 
 .notes-sidebar .content-link-meta {
+  display: none;
+}
+
+.notes-sidebar #search-results .content-link-meta {
+  display: block;
+}
+
+.sidebar-explorer-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  color: var(--accent-blue);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.sidebar-explorer-link:hover,
+.sidebar-explorer-link:focus {
+  border-color: var(--accent-blue);
+  color: #ffffff;
+  background: var(--surface-hover);
+}
+
+.sidebar-backdrop {
   display: none;
 }
 
@@ -1449,10 +1488,45 @@ img {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .notes-sidebar,
   .page-toc {
     position: static;
     max-height: none;
+  }
+
+  .notes-sidebar,
+  .page-layout.sidebar-collapsed .notes-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 60;
+    display: block;
+    width: min(88vw, 340px);
+    max-height: 100dvh;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    visibility: hidden;
+    transform: translateX(-104%);
+    transition: transform 0.2s ease;
+  }
+
+  .page-layout.sidebar-expanded .notes-sidebar {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: block;
+    background: rgba(4, 8, 11, 0.68);
+    backdrop-filter: blur(2px);
+  }
+
+  .sidebar-backdrop[hidden] {
+    display: none;
+  }
+
+  body.sidebar-drawer-open {
+    overflow: hidden;
   }
 
   .content-area > .page-toc {
@@ -1522,12 +1596,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .filter-controls,
-  .notes-sidebar .filter-controls {
-    max-height: none;
-    overflow-y: visible;
-  }
-
   .notes-browser {
     padding: 14px;
   }
@@ -1540,7 +1608,6 @@ img {
     min-height: 40px;
   }
 
-  .sidebar-controls,
   .page-layout {
     padding-inline: 14px;
   }
@@ -1683,8 +1750,8 @@ html[data-theme="light"] #search-results:not(:empty) {
 
 html[data-theme="light"] .home-search,
 html[data-theme="light"] #search-input,
-html[data-theme="light"] .filter-button,
 html[data-theme="light"] .sidebar-toggle,
+html[data-theme="light"] .sidebar-close,
 html[data-theme="light"] .nav-count {
   background: #f8fafc;
 }
@@ -1716,10 +1783,12 @@ html[data-theme="light"] .home-personal-list button:hover,
 html[data-theme="light"] .home-personal-list button:focus,
 html[data-theme="light"] .home-personal-clear:hover,
 html[data-theme="light"] .home-personal-clear:focus,
-html[data-theme="light"] .filter-button:hover,
-html[data-theme="light"] .filter-button:focus,
 html[data-theme="light"] .sidebar-toggle:hover,
 html[data-theme="light"] .sidebar-toggle:focus,
+html[data-theme="light"] .sidebar-close:hover,
+html[data-theme="light"] .sidebar-close:focus,
+html[data-theme="light"] .sidebar-explorer-link:hover,
+html[data-theme="light"] .sidebar-explorer-link:focus,
 html[data-theme="light"] .content-link:hover,
 html[data-theme="light"] .content-link:focus,
 html[data-theme="light"] .page-toc-link:hover,

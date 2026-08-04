@@ -12,6 +12,7 @@
 - Gli indici JSON e gli output CV sono versionati per poter essere serviti come asset statici.
 - Non risultano backend, persistenza, API applicative o autenticazione; la toolchain JavaScript è solo di build/test e non introduce dipendenze runtime remote.
 - La track `site-ux-file-explorer` è completata e documenta la roadmap realizzata per UX, catalogo, ricerca, build e preferenze locali.
+- La track `sidebar-navigation-refinement` è completata: la sidebar delle note è contestuale e diventa drawer accessibile sotto 1100 px.
 
 ## Verificato di recente
 
@@ -23,7 +24,7 @@ Snapshot 2026-08-03:
 - `npm run check` rigenera due indici, due output CV, Pagefind e `_site`, poi valida test unitari, 73 URL/link, browser e accessibilità.
 - Il workflow esegue il gate read-only su pull request e `main`; un job di scrittura separato committa solo artefatti verificati.
 - Le preferenze locali usano `jok98.preferences.v1`, con fallback in memoria; non esistono service worker, IndexedDB, account, analytics o sincronizzazione applicativa.
-- Il gate finale copre 3 test Python, 9 Node, 73 note/78 HTML e 7 E2E, inclusi Axe su tutti i layout rappresentativi in tema chiaro e scuro.
+- Il gate finale copre 3 test Python, 9 Node, 73 note/78 HTML e 9 E2E, inclusi sidebar desktop/mobile, Axe e tutti i layout rappresentativi in tema chiaro e scuro.
 - Lo stato Git iniziale era pulito al commit `2123997`; la track non ha creato commit, push o deploy.
 
 ## Questioni aperte

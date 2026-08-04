@@ -64,6 +64,21 @@ Conseguenze:
 - La personalizzazione resta privata al browser e non contiene contenuti, segreti o analytics.
 - Un futuro supporto offline richiederà una decisione separata e una strategia esplicita di invalidazione.
 
+### Decisione: sidebar contestuale, Explorer globale
+
+Stato: active
+Area: navigazione
+
+Decisione:
+Usare la sidebar delle note per il ramo corrente e il salto rapido per titolo/summary; mantenere cartelle globali, filtri e full-text in `/explore/`.
+
+Razionale:
+Duplicare l'intero Explorer in una colonna stretta produce densità, rami aperti e scroll annidati che sottraggono spazio alla lettura.
+
+Conseguenze:
+- Solo gli antenati della nota attiva vengono espansi automaticamente.
+- Sotto 1100 px lo stesso `aside` diventa drawer accessibile; senza JavaScript il link Explorer nell'header resta disponibile.
+
 ## Decisioni sostituite o obsolete
 
 - Nessuna decisione sostituita è documentata nel repository analizzato.

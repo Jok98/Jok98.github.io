@@ -32,25 +32,39 @@
         {% endif %}
     </main>
 {% else %}
-    <div class="sidebar-controls">
-        <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-controls="notes-sidebar">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-            <span class="toggle-label">Show navigation</span>
-        </button>
-    </div>
     <div class="page-layout sidebar-collapsed">
-        <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true" aria-label="Notes navigation">
-            <h2 class="sidebar-title">Notes &amp; Resources</h2>
-            <div id="search-container">
-                <label class="visually-hidden" for="search-input">Search notes</label>
-                <input type="search" id="search-input" placeholder="Search notes..." autocomplete="off">
-                <div id="search-results" aria-live="polite"></div>
+        <aside id="notes-sidebar" class="notes-sidebar" aria-hidden="true" aria-label="Notes navigation" inert>
+            <div class="sidebar-header">
+                <div>
+                    <p class="sidebar-eyebrow">Current location</p>
+                    <h2 class="sidebar-title">Navigation</h2>
+                </div>
+                <button type="button" id="sidebar-close" class="sidebar-close" aria-controls="notes-sidebar" aria-label="Close notes navigation">
+                    <i class="fas fa-xmark" aria-hidden="true"></i>
+                    <span>Close</span>
+                </button>
             </div>
-            <div id="topic-filters" class="topic-filters" aria-label="Filter notes"></div>
+            <p class="sidebar-context" data-sidebar-context hidden></p>
+            <div id="search-container">
+                <label class="visually-hidden" for="search-input">Quickly find a note by title or summary</label>
+                <input type="search" id="search-input" placeholder="Quick find a note…" autocomplete="off" aria-controls="search-results sections-container">
+                <div id="search-results" aria-live="polite" hidden></div>
+            </div>
             <p class="browser-status" data-content-status role="status">Loading notes…</p>
             <div id="sections-container" aria-busy="true"></div>
+            <a class="sidebar-explorer-link" href="{{ '/explore/' | relative_url }}">
+                <i class="fas fa-folder-tree" aria-hidden="true"></i>
+                <span>Browse all notes in Explorer</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </aside>
         <main id="main-content" tabindex="-1" data-pagefind-body class="content-area{% if page.page_class %} {{ page.page_class }}{% endif %}">
+            <div class="content-navigation-controls" data-pagefind-ignore>
+                <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-controls="notes-sidebar">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                    <span class="toggle-label">Open navigation</span>
+                </button>
+            </div>
             {% if is_note_page %}{% include note-context.html %}{% endif %}
             {% if is_direct_note %}
             <article class="post">
@@ -76,6 +90,7 @@
                 <nav id="page-toc-links" class="page-toc-links" aria-label="Page sections"></nav>
             </details>
         </aside>
+        <div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
     </div>
 {% endif %}
 {% include site-footer.html %}

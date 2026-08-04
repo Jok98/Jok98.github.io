@@ -15,10 +15,11 @@
 - `npm run check` è il gate locale e CI per indici, CV, Jekyll, Pagefind, link, E2E e accessibilità.
 - Il push su `main` può aggiornare gli artefatti verificati tramite un job GitHub Actions separato; la sorgente Pages resta esterna al repository.
 - La track chiusa `site-ux-file-explorer` documenta la revisione UX, il catalogo, la ricerca, le preferenze locali e il quality gate del sito.
+- La track chiusa `sidebar-navigation-refinement` documenta sidebar contestuale, quick find e drawer responsive.
 
 ## Prossima azione
 
-- Per comprendere la revisione UX completata aprire `tracks/site-ux-file-explorer/START_HERE.md`.
+- Per comprendere la UX completata aprire `tracks/site-ux-file-explorer/START_HERE.md` e, per la sidebar, `tracks/sidebar-navigation-refinement/START_HERE.md`.
 - Per altre richieste identificare prima se coinvolgono contenuti, UI/layout, generatori, CV o pubblicazione.
 
 ## Vincoli inderogabili
