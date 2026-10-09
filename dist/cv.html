@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <style>
-/* assets/css/default_style.css */
+/* assets\css\default_style.css */
 :root {
   color-scheme: dark;
   --bg: #101214;
@@ -1820,7 +1820,7 @@ html[data-theme="light"] ::selection {
 }
 
 
-/* assets/css/cv_style.css */
+/* assets\css\cv_style.css */
 body.cv-page {
   font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
   background: #f6f8fb;
@@ -2181,7 +2181,7 @@ body.cv-page * {
     background: #ffffff !important;
     color: #111827;
     font-size: 9.4pt;
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   body.cv-page::before {
@@ -2217,7 +2217,7 @@ body.cv-page * {
 
   .cv-main h2 {
     font-size: 10pt;
-    margin: 7pt 0 3pt;
+    margin: 5.5pt 0 2.5pt;
     padding-bottom: 2pt;
     letter-spacing: 0.03em;
   }
@@ -2247,7 +2247,7 @@ body.cv-page * {
   .section-cards,
   .projects-section,
   .experience-list {
-    gap: 5.5pt;
+    gap: 4pt;
   }
 
   .cv-card,
@@ -2263,7 +2263,7 @@ body.cv-page * {
   .cv-card,
   .experience-item,
   .project-card {
-    padding: 5pt 7pt;
+    padding: 4.5pt 7pt;
   }
 
   .skill-lines {
@@ -2370,8 +2370,8 @@ body.cv-page::before {
     <ul class="skill-lines">
       <li><strong>Backend:</strong> Java 8/17/21, Spring Boot, REST APIs, OpenAPI, Maven, MapStruct, JPA/Hibernate, Flyway, JUnit, Mockito, Testcontainers.</li>
       <li><strong>IAM &amp; Security:</strong> Keycloak, OAuth2/OIDC, JWT, Spring Security, authentication, authorization.</li>
-      <li><strong>Data &amp; Integration:</strong> Data adapters, DTO/domain conversion, PostgreSQL, Oracle, MySQL, MongoDB, JasperReports/JasperSoft, XML payloads.</li>
-      <li><strong>Architecture/Ops:</strong> Microservices, DDD, event-driven design, Kafka, RabbitMQ, OpenFeign, Resilience4j, Docker, Kubernetes, Helm, Argo CD, GitOps, Istio.</li>
+      <li><strong>Data &amp; Integration:</strong> IBM MQ/JMS, AWS SQS, DynamoDB, Secrets Manager, MongoDB, PostgreSQL, Oracle, MySQL; REST/XML payloads, legacy message formats, data adapters, DTO/domain conversion.</li>
+      <li><strong>Architecture/Ops:</strong> Microservices, DDD, event-driven design, Kafka, RabbitMQ, OpenFeign, Resilience4j, AWS, Docker, LocalStack, Kubernetes, Helm, Argo CD, GitOps, Istio.</li>
       <li><strong>Tooling:</strong> GitHub Actions, GitLab CI, Prometheus, Grafana, Loki, OpenTelemetry, Linux, Arch, Hyprland/Omarchy, JavaFX, jlink, jpackage, shell scripting.</li>
     </ul>
   </section>
@@ -2383,12 +2383,14 @@ body.cv-page::before {
       <h3>Kirey</h3>
       <div>
         <span class="experience-role">Software Engineer</span>
-        <span class="experience-domain">HR / Time &amp; Attendance</span>
+        <span class="experience-domain">HR / Time &amp; Attendance · Insurance</span>
         <span class="experience-dates">August 2026 - Present</span>
       </div>
     </div>
     <ul>
       <li>Support Stellantis customizations on ADP's HR and Time &amp; Attendance platform as a Kirey consultant, using legacy Java 8 and proprietary frameworks.</li>
+      <li>Contribute to a Spring Boot integration that routes insurance messages from IBM MQ to document and customer-communication workflows, converting legacy payloads for document, SMS, and email processing.</li>
+      <li>Implement asynchronous processing and configurable route lookup with AWS SQS and DynamoDB, plus centralized secret management and Docker/LocalStack end-to-end validation.</li>
     </ul>
   </section>
 
@@ -2443,7 +2445,7 @@ body.cv-page::before {
 <h2>Languages</h2>
 <p><strong>Italian:</strong> Native | <strong>English:</strong> Technical working proficiency | <strong>Japanese:</strong> Basic</p>
 <h2>International Experience</h2>
-<p><strong>Japan:</strong> studied Japanese language and culture in Sapporo, Fukuoka, and Kobe, strengthening adaptability and cross-cultural communication.</p>
+<p><strong>Japan:</strong> Studied Japanese language and culture in Sapporo, Fukuoka, and Kobe.</p>
 </main>
 </body>
 </html>

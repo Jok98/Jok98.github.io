@@ -358,7 +358,7 @@ body.cv-page * {
     background: #ffffff !important;
     color: #111827;
     font-size: 9.4pt;
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   body.cv-page::before {
@@ -394,7 +394,7 @@ body.cv-page * {
 
   .cv-main h2 {
     font-size: 10pt;
-    margin: 7pt 0 3pt;
+    margin: 5.5pt 0 2.5pt;
     padding-bottom: 2pt;
     letter-spacing: 0.03em;
   }
@@ -424,7 +424,7 @@ body.cv-page * {
   .section-cards,
   .projects-section,
   .experience-list {
-    gap: 5.5pt;
+    gap: 4pt;
   }
 
   .cv-card,
@@ -440,7 +440,7 @@ body.cv-page * {
   .cv-card,
   .experience-item,
   .project-card {
-    padding: 5pt 7pt;
+    padding: 4.5pt 7pt;
   }
 
   .skill-lines {

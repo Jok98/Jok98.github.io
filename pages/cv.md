@@ -53,8 +53,8 @@ permalink: /cv/
     <ul class="skill-lines">
       <li><strong>Backend:</strong> Java 8/17/21, Spring Boot, REST APIs, OpenAPI, Maven, MapStruct, JPA/Hibernate, Flyway, JUnit, Mockito, Testcontainers.</li>
       <li><strong>IAM &amp; Security:</strong> Keycloak, OAuth2/OIDC, JWT, Spring Security, authentication, authorization.</li>
-      <li><strong>Data &amp; Integration:</strong> Data adapters, DTO/domain conversion, PostgreSQL, Oracle, MySQL, MongoDB, JasperReports/JasperSoft, XML payloads.</li>
-      <li><strong>Architecture/Ops:</strong> Microservices, DDD, event-driven design, Kafka, RabbitMQ, OpenFeign, Resilience4j, Docker, Kubernetes, Helm, Argo CD, GitOps, Istio.</li>
+      <li><strong>Data &amp; Integration:</strong> IBM MQ/JMS, AWS SQS, DynamoDB, Secrets Manager, MongoDB, PostgreSQL, Oracle, MySQL; REST/XML payloads, legacy message formats, data adapters, DTO/domain conversion.</li>
+      <li><strong>Architecture/Ops:</strong> Microservices, DDD, event-driven design, Kafka, RabbitMQ, OpenFeign, Resilience4j, AWS, Docker, LocalStack, Kubernetes, Helm, Argo CD, GitOps, Istio.</li>
       <li><strong>Tooling:</strong> GitHub Actions, GitLab CI, Prometheus, Grafana, Loki, OpenTelemetry, Linux, Arch, Hyprland/Omarchy, JavaFX, jlink, jpackage, shell scripting.</li>
     </ul>
   </section>
@@ -68,12 +68,14 @@ permalink: /cv/
       <h3>Kirey</h3>
       <div>
         <span class="experience-role">Software Engineer</span>
-        <span class="experience-domain">HR / Time &amp; Attendance</span>
+        <span class="experience-domain">HR / Time &amp; Attendance · Insurance</span>
         <span class="experience-dates">August 2026 - Present</span>
       </div>
     </div>
     <ul>
       <li>Support Stellantis customizations on ADP's HR and Time &amp; Attendance platform as a Kirey consultant, using legacy Java 8 and proprietary frameworks.</li>
+      <li>Contribute to a Spring Boot integration that routes insurance messages from IBM MQ to document and customer-communication workflows, converting legacy payloads for document, SMS, and email processing.</li>
+      <li>Implement asynchronous processing and configurable route lookup with AWS SQS and DynamoDB, plus centralized secret management and Docker/LocalStack end-to-end validation.</li>
     </ul>
   </section>
 
@@ -132,4 +134,4 @@ permalink: /cv/
 
 ## International Experience
 
-**Japan:** studied Japanese language and culture in Sapporo, Fukuoka, and Kobe, strengthening adaptability and cross-cultural communication.
+**Japan:** Studied Japanese language and culture in Sapporo, Fukuoka, and Kobe.
